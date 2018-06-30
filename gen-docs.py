@@ -1,9 +1,14 @@
 #! /usr/bin/env python3
 
+import argparse
 import requests
 import time
 
 from subprocess import call
+
+parser = argparse.ArgumentParser(description='Wait for pushes to Bitcoin COre and then build docs')
+parser.add_argument('--skip-first-build', action="store_true", help='Skip the first build')
+args = parser.parse_args()
 
 def BuildDocSite():
     call(['git', 'pull'], cwd='../bitcoin')
@@ -15,7 +20,9 @@ def BuildDocSite():
     print("Finished build\n\n")
 
 # On start, update repo, build, and push to github
-BuildDocSite()
+if not args.skip_first_build:
+    print("Doing first build")
+    BuildDocSite()
 
 r = requests.get('https://api.github.com/networks/bitcoin/bitcoin/events')
 data = r.json()
