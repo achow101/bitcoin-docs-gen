@@ -13,7 +13,7 @@ args = parser.parse_args()
 def BuildDocSite():
     call(['git', 'pull'], cwd='../bitcoin')
     call(['make', 'docs'], cwd='../bitcoin')
-    call(['cp', '-r', 'doc/doxygen/html', '../bitcoin-docs-gen'], cwd='../bitcoin')
+    call(['cp', '-a', 'doc/doxygen/html/.', '../bitcoin-docs-gen/docs'], cwd='../bitcoin')
     call(['git', 'add', 'html/'])
     call(['git', 'commit', '-m', 'Update docs'])
     call(['git', 'push'])
