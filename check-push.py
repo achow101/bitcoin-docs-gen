@@ -8,10 +8,11 @@ from subprocess import call
 def BuildDocSite():
     call(['git', 'pull'], cwd='../bitcoin')
     call(['make', 'docs'], cwd='../bitcoin')
-    call(['cp', 'doc/doxygen/html', '../bitcoin-docs-gen'], cwd='../bitcoin')
+    call(['cp', '-r', 'doc/doxygen/html', '../bitcoin-docs-gen'], cwd='../bitcoin')
     call(['git', 'add', 'html/'])
     call(['git', 'commit', '-m', 'Update docs'])
     call(['git', 'push'])
+    print("Finished build\n\n")
 
 # On start, update repo, build, and push to github
 BuildDocSite()
@@ -20,7 +21,7 @@ r = requests.get('https://api.github.com/networks/bitcoin/bitcoin/events')
 data = r.json()
 best_id = data[0]['id']
 etag = r.headers['etag']
-poll_time = r.headers['X-Poll-Interval']
+poll_time = int(r.headers['X-Poll-Interval'])
 
 while True:
     # Wait for poll time
@@ -41,4 +42,4 @@ while True:
             BuildDocSite()
             break
     best_id = data[0]['id']
-    poll_time = r.headers['X-Poll-Interval']
+    poll_time = int(r.headers['X-Poll-Interval'])
