@@ -14,7 +14,7 @@ def BuildDocSite():
     call(['git', 'pull'], cwd='../bitcoin')
     call(['make', 'docs'], cwd='../bitcoin')
     call(['cp', '-a', 'doc/doxygen/html/.', '../bitcoin-docs-gen/docs'], cwd='../bitcoin')
-    call(['git', 'add', 'html/'])
+    call(['git', 'add', 'docs/'])
     call(['git', 'commit', '-m', 'Update docs'])
     call(['git', 'push'])
     print("Finished build\n\n")
