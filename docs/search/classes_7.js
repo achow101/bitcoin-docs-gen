@@ -1,7 +1,7 @@
 var searchData=
 [
   ['handler',['Handler',['../classinterfaces_1_1_handler.html',1,'interfaces']]],
-  ['helpmessagedialog',['HelpMessageDialog',['../class_help_message_dialog.html',1,'HelpMessageDialog'],['../class_ui_1_1_help_message_dialog.html',1,'Ui::HelpMessageDialog']]],
+  ['helpmessagedialog',['HelpMessageDialog',['../class_help_message_dialog.html',1,'']]],
   ['httpclosure',['HTTPClosure',['../class_h_t_t_p_closure.html',1,'']]],
   ['httpevent',['HTTPEvent',['../class_h_t_t_p_event.html',1,'']]],
   ['httppathhandler',['HTTPPathHandler',['../struct_h_t_t_p_path_handler.html',1,'']]],

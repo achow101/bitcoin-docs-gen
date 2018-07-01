@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ui',['Ui',['../namespace_ui.html',1,'']]]
+  ['wallet_5fcrypto_5ftests',['wallet_crypto_tests',['../namespacewallet__crypto__tests.html',1,'']]]
 ];

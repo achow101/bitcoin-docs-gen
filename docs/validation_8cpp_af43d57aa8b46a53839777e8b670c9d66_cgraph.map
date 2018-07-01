@@ -1,27 +1,51 @@
 <map id="FindForkInGlobalIndex" name="FindForkInGlobalIndex">
-<area shape="rect" id="node2" href="$validation_8h.html#a9d9b2d3b31edbd48ce62f4e2a73cc04c" title="LookupBlockIndex" alt="" coords="207,209,336,236"/>
-<area shape="rect" id="node4" href="$class_c_chain.html#af1786dc229c215dea7f727c11df2c8dc" title="Efficiently check whether a block is present in this chain. " alt="" coords="882,381,1009,408"/>
-<area shape="rect" id="node5" href="$class_c_block_index.html#ae1f702384690c6b8302e026a84172ef3" title="Efficiently find an ancestor of this block. " alt="" coords="610,432,789,459"/>
-<area shape="rect" id="node6" href="$class_c_chain.html#ad4758bc8872ce065a9579f77c3171d40" title="Return the maximal height in the chain. " alt="" coords="643,483,755,509"/>
-<area shape="rect" id="node7" href="$class_c_chain.html#a578545bde95163bee37b1be28e7b2755" title="Returns the index entry for the tip of this chain, or nullptr if none. " alt="" coords="899,229,991,256"/>
-<area shape="rect" id="node8" href="$class_c_chain.html#a0af94042e68f7dbc86260d3a54f08a3f" title="Returns the index entry for the genesis block of this chain, or nullptr if none. " alt="" coords="638,533,761,560"/>
-<area shape="rect" id="node3" href="$validation_8h.html#af43d57aa8b46a53839777e8b670c9d66" title="Find the last common block between the parameter chain and a locator. " alt="" coords="388,381,541,408"/>
-<area shape="rect" id="node9" href="$validation_8h.html#a04e493dc156338a1b2f457f7a7feaaa9" title="Mark a block as precious and reorganize. " alt="" coords="411,108,518,135"/>
-<area shape="rect" id="node18" href="$validation_8h.html#adf70cddb5b3b3218a7f22da08dc4a456" title="Mark a block as invalid. " alt="" coords="409,319,520,345"/>
-<area shape="rect" id="node20" href="$validation_8h.html#a4e6712c44a9b994e9d588cbac295001a" title="Remove invalidity status from a block and its descendants. " alt="" coords="384,209,545,236"/>
-<area shape="rect" id="node22" href="$validation_8h.html#ada1eab9ccd84d9a98f598eba9bd35330" title="Return the spend height, which is one more than the inputs.GetBestBlock(). " alt="" coords="405,57,524,84"/>
-<area shape="rect" id="node26" href="$validation_8h.html#a0657e7220e2c33df7a210032ca61b7fe" title="Determine what nVersion a new block should use. " alt="" coords="389,159,541,185"/>
-<area shape="rect" id="node10" href="$class_c_chain_state.html#a9e55c3c2a30535273288ae68fdfcac88" title="CChainState::PreciousBlock" alt="" coords="605,112,794,139"/>
-<area shape="rect" id="node11" href="$class_c_block_index.html#ad8b5a6560e7c0d4222066e2922178683" title="Check whether this block index entry is valid up to the passed validity level. " alt="" coords="873,111,1018,137"/>
-<area shape="rect" id="node12" href="$validation_8cpp.html#a8cfbc84b7aa211f3368d4d3813be276c" title="Find the best known block, and make it the tip of the block chain. " alt="" coords="880,161,1011,188"/>
-<area shape="rect" id="node13" href="$class_c_chain_state.html#a5a24c6da53ff4b725e2d1c8b4af007fe" title="Make the best chain active, in multiple steps. " alt="" coords="1085,154,1265,195"/>
-<area shape="rect" id="node14" href="$class_args_manager.html#adb5d644d273b3a259f792affcdca8283" title="Return string argument or default value. " alt="" coords="1313,161,1461,188"/>
-<area shape="rect" id="node15" href="$class_args_manager.html#a113a1b8c5471d2fff0108058be8b86af" title="Return true if the argument was originally passed as a negated option, i.e. " alt="" coords="1509,132,1696,159"/>
-<area shape="rect" id="node17" href="$class_args_manager_helper.html#aa4f8f77dc468b29cffe50513c78a87cd" title="ArgsManagerHelper::\lGetArg" alt="" coords="1530,183,1675,225"/>
-<area shape="rect" id="node16" href="$class_args_manager_helper.html#a863ddbcfbd113cf88cf622a0a4e32c1d" title="Convert regular argument into the network&#45;specific setting. " alt="" coords="1744,125,1889,166"/>
-<area shape="rect" id="node19" href="$class_c_chain_state.html#a656ebb0e37670a16714f0be1c572468b" title="CChainState::InvalidateBlock" alt="" coords="602,331,797,357"/>
-<area shape="rect" id="node21" href="$class_c_chain_state.html#a7ed855ca1761c2176651c8082aa9f529" title="CChainState::ResetBlockFailure\lFlags" alt="" coords="593,163,805,205"/>
-<area shape="rect" id="node23" href="$class_c_coins_view_cache.html#a943a3d13f2ba6936002d7a87b969edba" title="Retrieve the block hash whose state this CCoinsView currently represents. " alt="" coords="605,46,794,87"/>
-<area shape="rect" id="node24" href="$classbase__blob.html#aba89c6722866a5850882a509d27d7bbd" title="base_blob::IsNull" alt="" coords="884,5,1007,32"/>
-<area shape="rect" id="node25" href="$class_c_coins_view.html#af81f2907d360a2548d59a61388e5e5cb" title="Retrieve the block hash whose state this CCoinsView currently represents. " alt="" coords="853,56,1037,83"/>
+<area shape="rect" id="node2" href="$validation_8h.html#a9d9b2d3b31edbd48ce62f4e2a73cc04c" title="LookupBlockIndex" alt="" coords="212,884,348,911"/>
+<area shape="rect" id="node4" href="$class_c_chain.html#a1ab1fe2932227af222699c64847e838b" title="Efficiently check whether a block is present in this chain. " alt="" coords="941,1336,1071,1363"/>
+<area shape="rect" id="node5" href="$class_c_block_index.html#ae1f702384690c6b8302e026a84172ef3" title="Efficiently find an ancestor of this block. " alt="" coords="635,1429,822,1456"/>
+<area shape="rect" id="node6" href="$class_c_chain.html#a0c4ffb8501acfb8a7e1c0f5e6322ada3" title="Return the maximal height in the chain. " alt="" coords="670,1480,787,1507"/>
+<area shape="rect" id="node7" href="$class_c_chain.html#a7482d06d8e8143f46326cf9c12c06daf" title="Returns the index entry for the tip of this chain, or nullptr if none. " alt="" coords="1164,1248,1257,1275"/>
+<area shape="rect" id="node8" href="$class_c_chain.html#a1eee0372da596a8fc68369e480adc2f1" title="Returns the index entry for the genesis block of this chain, or nullptr if none. " alt="" coords="665,1531,792,1557"/>
+<area shape="rect" id="node3" href="$validation_8h.html#af43d57aa8b46a53839777e8b670c9d66" title="Find the last common block between the parameter chain and a locator. " alt="" coords="399,1379,558,1405"/>
+<area shape="rect" id="node9" href="$validation_8h.html#a04e493dc156338a1b2f457f7a7feaaa9" title="Mark a block as precious and reorganize. " alt="" coords="423,1011,534,1037"/>
+<area shape="rect" id="node13" href="$validation_8h.html#adf70cddb5b3b3218a7f22da08dc4a456" title="Mark a block as invalid. " alt="" coords="420,1061,537,1088"/>
+<area shape="rect" id="node17" href="$validation_8h.html#a4e6712c44a9b994e9d588cbac295001a" title="Remove invalidity status from a block and its descendants. " alt="" coords="396,1197,561,1224"/>
+<area shape="rect" id="node19" href="$validation_8h.html#ada1eab9ccd84d9a98f598eba9bd35330" title="Return the spend height, which is one more than the inputs.GetBestBlock(). " alt="" coords="415,136,543,163"/>
+<area shape="rect" id="node25" href="$validation_8h.html#a0657e7220e2c33df7a210032ca61b7fe" title="Determine what nVersion a new block should use. " alt="" coords="397,212,560,239"/>
+<area shape="rect" id="node28" href="$validation_8h.html#a7725a9cdef7f65f84b084d43b4a312ef" title="Get block file info entry for one block file. " alt="" coords="417,440,540,467"/>
+<area shape="rect" id="node29" href="$validation_8h.html#a4b0f164432912c7b1b0e3535c13ad01c" title="Dump the mempool to disk. " alt="" coords="419,491,539,517"/>
+<area shape="rect" id="node44" href="$validation_8h.html#adea951730b49ef41e5390df5be8d3f1b" title="Load the mempool from disk. " alt="" coords="423,820,535,847"/>
+<area shape="rect" id="node10" href="$class_c_chain_state.html#a9e55c3c2a30535273288ae68fdfcac88" title="CChainState::PreciousBlock" alt="" coords="629,1073,828,1100"/>
+<area shape="rect" id="node11" href="$class_c_block_index.html#ab79ac7f3db34001898a371ecce27808f" title="Check whether this block index entry is valid up to the passed validity level. " alt="" coords="933,1016,1079,1043"/>
+<area shape="rect" id="node12" href="$validation_8cpp.html#a8cfbc84b7aa211f3368d4d3813be276c" title="Find the best known block, and make it the tip of the block chain. " alt="" coords="937,1067,1075,1093"/>
+<area shape="rect" id="node14" href="$class_c_chain_state.html#a656ebb0e37670a16714f0be1c572468b" title="CChainState::InvalidateBlock" alt="" coords="626,1139,831,1165"/>
+<area shape="rect" id="node15" href="$validation_8cpp.html#a5edcd96316574fd4a7f3ae0922a5cfd6" title="Check whether we are doing an initial block download (synchronizing from disk or network) ..." alt="" coords="925,1117,1087,1144"/>
+<area shape="rect" id="node16" href="$utiltime_8cpp.html#a46fac5fba8ba905b5f9acb364f5d8c6f" title="GetTimeMicros() and GetTimeMillis() both return the system time, but in different units..." alt="" coords="1173,1041,1249,1068"/>
+<area shape="rect" id="node18" href="$class_c_chain_state.html#a7ed855ca1761c2176651c8082aa9f529" title="CChainState::ResetBlockFailure\lFlags" alt="" coords="896,1270,1116,1311"/>
+<area shape="rect" id="node20" href="$class_c_coins_view_cache.html#a943a3d13f2ba6936002d7a87b969edba" title="Retrieve the block hash whose state this CCoinsView currently represents. " alt="" coords="631,45,826,86"/>
+<area shape="rect" id="node23" href="$random_8cpp.html#af3aedae75efabb170337a497457f7ecf" title="GetRandHash" alt="" coords="673,111,784,137"/>
+<area shape="rect" id="node21" href="$classbase__blob.html#aff2f3d1d623d91b6895a6a153434770e" title="base_blob::IsNull" alt="" coords="941,56,1071,83"/>
+<area shape="rect" id="node22" href="$class_c_coins_view.html#a556cf7661ff49df1ada5cd0ad552f8db" title="Retrieve the block hash whose state this CCoinsView currently represents. " alt="" coords="912,5,1100,32"/>
+<area shape="rect" id="node24" href="$random_8cpp.html#ada0c29949c4d1ac0cc027d93c4771423" title="Functions to gather random data via the OpenSSL PRNG. " alt="" coords="949,111,1063,137"/>
+<area shape="rect" id="node26" href="$versionbits_8cpp.html#a90d3b0a121694c9559dddcdd848757be" title="VersionBitsState" alt="" coords="665,161,793,188"/>
+<area shape="rect" id="node27" href="$versionbits_8cpp.html#a279d99fe39f8851b35236ef9850007f3" title="VersionBitsMask" alt="" coords="665,212,792,239"/>
+<area shape="rect" id="node30" href="$utiltime_8cpp.html#a0c5a06b50cd805b1923552114494c029" title="GetTimeMicros" alt="" coords="670,263,787,289"/>
+<area shape="rect" id="node31" href="$class_c_tx_mem_pool.html#a6b37a6b649aac008a68ce97fa00d18ff" title="CTxMemPool::infoAll" alt="" coords="653,313,804,340"/>
+<area shape="rect" id="node33" href="$namespacefsbridge.html#a19c84cec4ae9accfbc88a83e48f7ee92" title="fsbridge::fopen" alt="" coords="670,617,787,644"/>
+<area shape="rect" id="node34" href="$util_8cpp.html#a7ebe0bd091f7334aaead43904601e008" title="GetDataDir" alt="" coords="681,567,776,593"/>
+<area shape="rect" id="node40" href="$util_8cpp.html#aedd7d9ab25c6cfb8c81a4aaa917b104e" title="FileCommit" alt="" coords="682,364,775,391"/>
+<area shape="rect" id="node41" href="$class_c_auto_file.html#aea31c0348f31ea40f592e2b7af6c2045" title="Get wrapped FILE* without transfer of ownership. " alt="" coords="673,415,785,441"/>
+<area shape="rect" id="node42" href="$class_c_auto_file.html#abcbafe943bfe392c09363078fa8a4e77" title="CAutoFile::fclose" alt="" coords="665,465,792,492"/>
+<area shape="rect" id="node43" href="$util_8cpp.html#a579657da2b55b131ecd453bf1b0d2314" title="RenameOver" alt="" coords="677,516,781,543"/>
+<area shape="rect" id="node32" href="$class_c_tx_mem_pool.html#a8ef17a0d4768188418f718fb5e97d7ac" title="CTxMemPool::GetSortedDepth\lAndScore" alt="" coords="897,306,1115,347"/>
+<area shape="rect" id="node35" href="$class_args_manager.html#ad515c5fe6f15638602fd06e800381526" title="Return true if the given argument has been manually set. " alt="" coords="921,643,1091,669"/>
+<area shape="rect" id="node36" href="$class_args_manager.html#a565c101a8d753ca2d71c7069a9d411c1" title="Return string argument or default value. " alt="" coords="926,795,1086,821"/>
+<area shape="rect" id="node37" href="$util_8cpp.html#a15cb85964fe08c264605537f44570d3c" title="GetDefaultDataDir" alt="" coords="936,491,1076,517"/>
+<area shape="rect" id="node38" href="$chainparamsbase_8cpp.html#a06ef5bfd0efb53d13bbf4276726e84ab" title="Return the currently selected parameters. " alt="" coords="955,541,1057,568"/>
+<area shape="rect" id="node39" href="$class_c_base_chain_params.html#af56a637b20c9f496108bffc3166ea53a" title="CBaseChainParams::DataDir" alt="" coords="904,592,1108,619"/>
+<area shape="rect" id="node45" href="$chainparams_8cpp.html#ace5c5b706d71a324a417dd2db394fd4a" title="Return the currently selected parameters. " alt="" coords="693,668,764,695"/>
+<area shape="rect" id="node46" href="$class_c_auto_file.html#a78d666b1ef5dff5fd3f4ee33692b6d1d" title="Return true if the wrapped FILE* is nullptr, false otherwise. " alt="" coords="667,719,790,745"/>
+<area shape="rect" id="node47" href="$class_c_tx_mem_pool.html#a076041ea11b38722d1419c1640bf6ac4" title="Affect CreateNewBlock prioritisation of transactions. " alt="" coords="609,769,848,796"/>
+<area shape="rect" id="node48" href="$class_c_validation_state.html#af4c51946b39b2234b8004d58fbc164a5" title="CValidationState::IsValid" alt="" coords="641,820,817,847"/>
+<area shape="rect" id="node49" href="$class_c_tx_mem_pool.html#a93b2aa8c01fa291d183a82a9e0beeb35" title="CTxMemPool::exists" alt="" coords="654,871,803,897"/>
+<area shape="rect" id="node50" href="$init_8cpp.html#a6f201ca9fe6b594f1985c12b4482ea5a" title="ShutdownRequested" alt="" coords="653,921,805,948"/>
 </map>

@@ -1,15 +1,51 @@
 <map id="MoneyRange" name="MoneyRange">
-<area shape="rect" id="node2" href="$group__map_wallet.html#gaa60b69c7d4ea6063ed83b13d7c6fe695" title="CWallet::GetCredit" alt="" coords="187,5,321,32"/>
-<area shape="rect" id="node3" href="$group__map_wallet.html#gac1abe6ee00d6a8f20e92e164c423a6d5" title="CWallet::GetChange" alt="" coords="183,56,325,83"/>
-<area shape="rect" id="node4" href="$group__map_wallet.html#gab443cb2d3a96e324587625e6b41ebcbf" title="CWallet::GetDebit" alt="" coords="189,107,319,133"/>
-<area shape="rect" id="node5" href="$group__map_wallet.html#gaf3c82ba365c720dd3d929b86bf432ef6" title="CWalletTx::GetAvailableCredit" alt="" coords="153,157,355,184"/>
-<area shape="rect" id="node8" href="$group__map_wallet.html#ga19f221e15bbcdd6fa3b7496c65428885" title="CWalletTx::GetAvailableWatch\lOnlyCredit" alt="" coords="152,209,356,250"/>
-<area shape="rect" id="node11" href="$class_c_transaction.html#aa4ce691dbb2ce32838d94d15801f6644" title="CTransaction::GetValueOut" alt="" coords="163,275,345,301"/>
-<area shape="rect" id="node12" href="$class_payment_server.html#a358c2a0b03c42eef883030f55cdc8a03" title="PaymentServer::verifyAmount" alt="" coords="155,325,353,352"/>
-<area shape="rect" id="node14" href="$server_8h.html#abee2131e97f3e3d0ab3bdc47916e29f4" title="AmountFromValue" alt="" coords="189,376,319,403"/>
-<area shape="rect" id="node6" href="$group___actions.html#gaa6522c2833bc0a84d216cf102b51ba05" title="CWallet::GetBalance" alt="" coords="441,107,586,133"/>
-<area shape="rect" id="node7" href="$group___actions.html#ga6e6e1497535d499242c2f2a76d1cbe63" title="CWallet::GetUnconfirmedBalance" alt="" coords="404,157,623,184"/>
-<area shape="rect" id="node9" href="$group___actions.html#ga92a58ebac7d7d398597657600db56611" title="CWallet::GetWatchOnlyBalance" alt="" coords="408,208,619,235"/>
-<area shape="rect" id="node10" href="$group___actions.html#gab0c110f14f0429f9de594b2293837621" title="CWallet::GetUnconfirmedWatch\lOnlyBalance" alt="" coords="408,259,619,301"/>
-<area shape="rect" id="node13" href="$class_payment_server.html#a19092e1d4d7c6eee3ec9d4390d11a092" title="PaymentServer::processPayment\lRequest" alt="" coords="404,325,623,366"/>
+<area shape="rect" id="node2" href="$tx__verify_8h.html#aa74aecf12c08298c9b949965841c20c1" title="Transaction validation functions. " alt="" coords="469,784,603,811"/>
+<area shape="rect" id="node12" href="$class_peer_logic_validation.html#a124965d7310e0df08cc027d4e1cbbe7b" title="Overridden from CValidationInterface. " alt="" coords="1810,284,1957,325"/>
+<area shape="rect" id="node13" href="$blockchain_8h.html#a7305038a43cc5f399ca00e00c6f07186" title="Mempool information to JSON. " alt="" coords="1018,96,1169,123"/>
+<area shape="rect" id="node15" href="$class_c_chain_state.html#a6c0c017d41977fe6552ecfd1fc7c887d" title="Apply the effects of this block (with given index) on the UTXO set represented by coins..." alt="" coords="1271,1050,1469,1076"/>
+<area shape="rect" id="node31" href="$namespace_consensus.html#a71d434a6ed8cd5fe5cd096c2eea58a07" title="Check whether all inputs of this transaction are valid (no double spends and amounts) This does not m..." alt="" coords="440,1227,632,1254"/>
+<area shape="rect" id="node34" href="$group__map_wallet.html#ga9a8ab6f6af8354783f96034e9223e0f2" title="CWallet::GetCredit" alt="" coords="195,1216,333,1243"/>
+<area shape="rect" id="node35" href="$group__map_wallet.html#ga9bec62a32e693ed55169ef4a455f3e69" title="CWallet::GetChange" alt="" coords="190,1267,338,1294"/>
+<area shape="rect" id="node36" href="$group__map_wallet.html#gabc7c37fb7922c68460690b6cf653e203" title="CWallet::GetDebit" alt="" coords="197,1318,331,1344"/>
+<area shape="rect" id="node37" href="$group__map_wallet.html#gafc5a3b08c3e48e176e389cf172ae79b7" title="CWalletTx::GetAvailableCredit" alt="" coords="711,1652,918,1679"/>
+<area shape="rect" id="node41" href="$group__map_wallet.html#gab051347dd888cfb249662861e5de4ec8" title="CWalletTx::GetAvailableWatch\lOnlyCredit" alt="" coords="161,1470,367,1512"/>
+<area shape="rect" id="node44" href="$class_c_transaction.html#aef472df5cb11c53281d975ee9e7cf133" title="CTransaction::GetValueOut" alt="" coords="168,1166,360,1192"/>
+<area shape="rect" id="node45" href="$class_payment_server.html#a358c2a0b03c42eef883030f55cdc8a03" title="PaymentServer::verifyAmount" alt="" coords="157,1566,371,1592"/>
+<area shape="rect" id="node49" href="$server_8h.html#abee2131e97f3e3d0ab3bdc47916e29f4" title="AmountFromValue" alt="" coords="1023,1531,1163,1558"/>
+<area shape="rect" id="node3" href="$validation_8h.html#a86ed1d2d0837b905d74c2e4192b6c06a" title="Convert CValidationState to a human&#45;readable message for logging. " alt="" coords="735,822,895,848"/>
+<area shape="rect" id="node28" href="$validation_8h.html#adf3a2eef0a7ce0071f4d00a4ddf26943" title="Functions for validating blocks and updating the block tree. " alt="" coords="1046,478,1141,504"/>
+<area shape="rect" id="node30" href="$class_c_wallet_scan_state.html#a8012f2b0c336f7ee0b842d875f4fa4e6" title="CWalletScanState::CWallet\lScanState" alt="" coords="720,681,909,722"/>
+<area shape="rect" id="node4" href="$struct_c_importing_now.html#a0e449b23ac612ff3ff491d989fd08a18" title="CImportingNow::~CImportingNow" alt="" coords="976,646,1211,672"/>
+<area shape="rect" id="node5" href="$group___actions.html#gaded9964331f3d9e749fdb547cd7ed9ea" title="Call after CreateTransaction unless you want to abort. " alt="" coords="994,1379,1193,1406"/>
+<area shape="rect" id="node6" href="$namespacefeebumper.html#a77c8ee472d015d24111564e708750b66" title="Commit the bumpfee transaction. " alt="" coords="1259,1354,1481,1380"/>
+<area shape="rect" id="node8" href="$rawtransaction_8cpp.html#a5b2abfea4548c97e780cfae39f9ac11b" title="signrawtransaction" alt="" coords="1812,1315,1955,1342"/>
+<area shape="rect" id="node9" href="$rpcwallet_8cpp.html#a7424e87562c3781c88662ebfb6ef7e4a" title="GetLabelDestination" alt="" coords="1294,1456,1446,1483"/>
+<area shape="rect" id="node10" href="$class_block_assembler.html#a24b566785f9f88bc72d744095b89c607" title="Construct a new block template with coinbase to scriptPubKeyIn. " alt="" coords="1782,908,1985,949"/>
+<area shape="rect" id="node11" href="$mining_8h.html#a4910d289954727eb7c4c24a6b3c50c55" title="Generate blocks (mine) " alt="" coords="2035,723,2156,750"/>
+<area shape="rect" id="node16" href="$validation_8h.html#a12c39e969c9077605ae8a91730fb78d3" title="Check a block is completely valid from start to finish (only works on top of our current best block..." alt="" coords="1567,974,1694,1000"/>
+<area shape="rect" id="node18" href="$class_c_verify_d_b.html#af12e07230f20d23cf01d417d0e785c49" title="CVerifyDB::VerifyDB" alt="" coords="1557,1050,1704,1076"/>
+<area shape="rect" id="node19" href="$validation_8h.html#a0d01c135cc5a05475e3dc3910c9888da" title="Flush all state, indexes and buffers to disk. " alt="" coords="1028,771,1159,798"/>
+<area shape="rect" id="node20" href="$validation_8h.html#afccc404d3f648d7834ee7522ca348b41" title="Prune block files and flush state to disk. " alt="" coords="1311,872,1429,899"/>
+<area shape="rect" id="node21" href="$class_c_chain_state.html#ae4c089f033fefc9f5e10cda9af6a3a9a" title="Store block on disk. " alt="" coords="1276,400,1464,427"/>
+<area shape="rect" id="node22" href="$validation_8h.html#a290fce59049c0951b8eb73f0129bf6f0" title="Process an incoming block. " alt="" coords="1564,400,1697,427"/>
+<area shape="rect" id="node23" href="$validation_8h.html#a173f79e71650a53a095bc1d88d77d6f9" title="Prune block files up to a given height. " alt="" coords="1287,822,1453,848"/>
+<area shape="rect" id="node24" href="$class_c_chain_state.html#afc0586502e4dd4092c4a0707d329f6eb" title="CChainState::RewindBlock\lIndex" alt="" coords="1277,705,1463,746"/>
+<area shape="rect" id="node25" href="$validation_8h.html#a2e51de180124822c526ac8f82777fa32" title="When there are blocks in the active chain with missing data, rewind the chainstate and remove them fr..." alt="" coords="1564,712,1697,739"/>
+<area shape="rect" id="node26" href="$class_c_chain_state.html#a059db2048ce030760838426613dfc3e7" title="If a block header hasn&#39;t already been seen, call CheckBlockHeader on it, ensure that it doesn&#39;t desce..." alt="" coords="999,580,1187,621"/>
+<area shape="rect" id="node27" href="$validation_8h.html#aa597978e5628b461b272c75aa28eb531" title="Update the chain tip based on database information. " alt="" coords="1040,1024,1147,1051"/>
+<area shape="rect" id="node7" href="$rpcwallet_8h.html#a7c13054932c9e3b351bd6277fa9361d7" title="signrawtransactionwithwallet" alt="" coords="1529,1354,1732,1380"/>
+<area shape="rect" id="node14" href="$struct_c_coin.html#a2a0a2532bdacb03b087b3b0a400830ec" title="CCoin::SerializationOp" alt="" coords="1289,96,1451,123"/>
+<area shape="rect" id="node17" href="$class_c_script_check.html#a4bad3434ddad70669f634879a8af132e" title="CScriptCheck::GetScriptError" alt="" coords="1780,712,1987,739"/>
+<area shape="rect" id="node29" href="$class_partially_downloaded_block.html#ae31ee4302e77d9757aae8b96df99486a" title="PartiallyDownloadedBlock\l::FillBlock" alt="" coords="1539,317,1722,358"/>
+<area shape="rect" id="node32" href="$class_c_tx_mem_pool.html#a6dba6bce4139392751321438a29b6b09" title="CTxMemPool::clear" alt="" coords="743,1312,886,1339"/>
+<area shape="rect" id="node33" href="$validation_8h.html#ac98b87e479f71b7be2b990a10c4ebc2d" title="Unload database information. " alt="" coords="1026,1480,1161,1507"/>
+<area shape="rect" id="node38" href="$group___actions.html#gafb8dee3ffdf2bc5e7499b10bb65efdaf" title="CWallet::GetBalance" alt="" coords="1018,1582,1169,1608"/>
+<area shape="rect" id="node40" href="$group___actions.html#ga7dbe4899ff7d8562376d803b02481228" title="CWallet::GetUnconfirmedBalance" alt="" coords="977,1632,1209,1659"/>
+<area shape="rect" id="node39" href="$rpcwallet_8cpp.html#a74b85c92ee6a84277c73b74f2e212bff" title="listtransactions" alt="" coords="1311,1582,1429,1608"/>
+<area shape="rect" id="node42" href="$group___actions.html#ga4e1047525a8f418485ce3a84057265d3" title="CWallet::GetWatchOnlyBalance" alt="" coords="428,1470,644,1496"/>
+<area shape="rect" id="node43" href="$group___actions.html#ga639be9d778aeeb8b71aa653f0089cdff" title="CWallet::GetUnconfirmedWatch\lOnlyBalance" alt="" coords="427,1521,645,1562"/>
+<area shape="rect" id="node46" href="$class_payment_server.html#a19092e1d4d7c6eee3ec9d4390d11a092" title="PaymentServer::processPayment\lRequest" alt="" coords="419,1586,653,1628"/>
+<area shape="rect" id="node47" href="$class_payment_server.html#adf4f844b3ce7f053690fd9260210640d" title="PaymentServer::handleURIOrFile" alt="" coords="701,1535,928,1562"/>
+<area shape="rect" id="node48" href="$class_payment_server.html#a5b8e2e6380142fb7ad631400bcfc6f28" title="PaymentServer::netRequest\lFinished" alt="" coords="715,1586,915,1628"/>
+<area shape="rect" id="node50" href="$rawtransaction_8h.html#a69f132a19b8e91bd9b0b1330b5323f0a" title="Sign a transaction with the given keystore and previous transactions. " alt="" coords="1309,1531,1431,1558"/>
 </map>

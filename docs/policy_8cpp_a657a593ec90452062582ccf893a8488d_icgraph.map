@@ -1,26 +1,51 @@
 <map id="GetVirtualTransactionSize" name="GetVirtualTransactionSize">
-<area shape="rect" id="node2" href="$group__map_wallet.html#gadae1921a30bbc7e0836a528ebb936cb2" title="CalculateMaximumSignedTxSize" alt="" coords="228,5,443,32"/>
-<area shape="rect" id="node3" href="$policy_8h.html#a985476acceccd69b4e462ab89d4aa47e" title="GetVirtualTransactionSize" alt="" coords="248,56,423,83"/>
-<area shape="rect" id="node4" href="$policy_8h.html#abdfeb84d3c92630172693bf1a2623702" title="GetVirtualTransactionInputSize" alt="" coords="234,107,437,133"/>
-<area shape="rect" id="node11" href="$class_transaction_desc.html#a6ae7f995de691f91a24e0b1bcf0a1a95" title="TransactionDesc::toHTML" alt="" coords="247,157,423,184"/>
-<area shape="rect" id="node13" href="$class_c_tx_mem_pool_entry.html#a89325fcaa8efbd1d6fe68c39d7d676b0" title="CTxMemPoolEntry::GetTxSize" alt="" coords="234,340,437,367"/>
-<area shape="rect" id="node5" href="$group__map_wallet.html#ga54ed66b164ac802f485f2dacbdc1dc03" title="CalculateMaximumSignedInputSize" alt="" coords="507,99,737,125"/>
-<area shape="rect" id="node6" href="$class_c_merkle_tx.html#a5e7ef444cc0c2b875fba9c729ce83b10" title="CMerkleTx::IsCoinBase" alt="" coords="835,73,997,100"/>
-<area shape="rect" id="node9" href="$class_c_wallet_tx.html#a99de459cf10cb75ac79097346e84270a" title="CWalletTx::GetSpendSize" alt="" coords="828,124,1004,151"/>
-<area shape="rect" id="node7" href="$group__map_wallet.html#ga796c23450c8482e10e0c75ae5c1fa8ed" title="CWallet::ReacceptWalletTransactions" alt="" coords="1079,23,1324,49"/>
-<area shape="rect" id="node8" href="$group___actions.html#gadf2b4ac337ddb271555985cec82e43e6" title="CWallet::GetAddressBalances" alt="" coords="1101,73,1301,100"/>
-<area shape="rect" id="node10" href="$class_c_output.html#a56551bc8b2b0bc6246051035c7385af1" title="COutput::COutput" alt="" coords="1137,124,1265,151"/>
-<area shape="rect" id="node12" href="$class_transaction_table_priv.html#a5abfd796c5a65c0a2be564465556b99f" title="TransactionTablePriv\l::describe" alt="" coords="549,150,695,191"/>
-<area shape="rect" id="node14" href="$class_c_block_policy_estimator.html#af34606ec5f6af217e23b47b8c3b2e361" title="Process a transaction accepted to the mempool. " alt="" coords="543,215,701,257"/>
-<area shape="rect" id="node15" href="$class_c_tx_mem_pool.html#ad510f436f380764056491d458adde906" title="CTxMemPool::addUnchecked" alt="" coords="817,229,1015,256"/>
-<area shape="rect" id="node16" href="$class_c_block_policy_estimator.html#adac45c8dba3d152590fc65b0ac831bda" title="Process a transaction confirmed in a block. " alt="" coords="543,333,701,374"/>
-<area shape="rect" id="node19" href="$class_c_tx_mem_pool.html#a8ae043194110fec37d5d8c810be7c9ec" title="Try to calculate all in&#45;mempool ancestors of entry. " alt="" coords="525,398,719,439"/>
-<area shape="rect" id="node24" href="$class_compare_tx_mem_pool_entry_by_descendant_score.html#afbe2af9d6fb5c019a5b18b5f703c1a5f" title="CompareTxMemPoolEntryByDescendant\lScore::GetModFeeAndSize" alt="" coords="491,463,753,505"/>
-<area shape="rect" id="node25" href="$class_compare_tx_mem_pool_entry_by_score.html#afb1f8bc8ea1b3734007c61c1171aca63" title="CompareTxMemPoolEntryByScore\l::operator()" alt="" coords="509,529,735,570"/>
-<area shape="rect" id="node17" href="$class_c_block_policy_estimator.html#a65e487a203acb59995c667ab91b87444" title="Process all the transactions that have been included in a block. " alt="" coords="837,289,995,330"/>
-<area shape="rect" id="node18" href="$class_c_tx_mem_pool.html#af0d277f190f134638cb0aa18e2099094" title="Called when a block is connected. " alt="" coords="1099,296,1304,323"/>
-<area shape="rect" id="node20" href="$class_block_assembler.html#ac88956b3067e44661e837505d1540aa0" title="Add transactions based on feerate including unconfirmed ancestors Increments nPackagesSelected / nDes..." alt="" coords="807,355,1025,381"/>
-<area shape="rect" id="node21" href="$rbf_8h.html#a5c495f7484e6725aa5cd36afb8b836d0" title="IsRBFOptIn" alt="" coords="870,405,962,432"/>
-<area shape="rect" id="node22" href="$class_c_tx_mem_pool.html#ab30fadfa811829e79accca41da6a8328" title="If sanity&#45;checking is turned on, check makes sure the pool is consistent (does not contain two transa..." alt="" coords="843,456,989,483"/>
-<area shape="rect" id="node23" href="$class_c_tx_mem_pool.html#a076041ea11b38722d1419c1640bf6ac4" title="Affect CreateNewBlock prioritisation of transactions. " alt="" coords="801,507,1031,533"/>
+<area shape="rect" id="node2" href="$group__map_wallet.html#gadae1921a30bbc7e0836a528ebb936cb2" title="CalculateMaximumSignedTxSize" alt="" coords="239,600,468,627"/>
+<area shape="rect" id="node3" href="$policy_8h.html#a985476acceccd69b4e462ab89d4aa47e" title="GetVirtualTransactionSize" alt="" coords="261,651,446,677"/>
+<area shape="rect" id="node4" href="$policy_8h.html#abdfeb84d3c92630172693bf1a2623702" title="GetVirtualTransactionInputSize" alt="" coords="245,701,462,728"/>
+<area shape="rect" id="node9" href="$class_transaction_desc.html#a6ae7f995de691f91a24e0b1bcf0a1a95" title="TransactionDesc::toHTML" alt="" coords="262,1092,445,1119"/>
+<area shape="rect" id="node12" href="$class_c_tx_mem_pool_entry.html#a500fcb2039ceb24798d8ddb7d548b7b5" title="CTxMemPoolEntry::GetTxSize" alt="" coords="249,752,457,779"/>
+<area shape="rect" id="node48" href="$namespacefeebumper.html#a7e40f2905a1758fc62bf6ec2880b2af4" title="Create bumpfee transaction. " alt="" coords="246,1012,461,1039"/>
+<area shape="rect" id="node5" href="$group__map_wallet.html#ga54ed66b164ac802f485f2dacbdc1dc03" title="CalculateMaximumSignedInputSize" alt="" coords="533,81,779,108"/>
+<area shape="rect" id="node6" href="$group___actions.html#gac583d3981eaba225db79414b5159ef31" title="Create a new transaction paying the recipients with a set of coins selected by SelectCoins(); Also cr..." alt="" coords="852,107,1043,133"/>
+<area shape="rect" id="node7" href="$class_c_merkle_tx.html#a639c70fc4b2520a87c32a98ecd75d403" title="CMerkleTx::IsCoinBase" alt="" coords="865,5,1030,32"/>
+<area shape="rect" id="node8" href="$class_c_wallet_tx.html#ae2dee05b67c940ec3ecc94d81b16e4dd" title="CWalletTx::GetSpendSize" alt="" coords="857,56,1038,83"/>
+<area shape="rect" id="node10" href="$class_transaction_table_priv.html#a5abfd796c5a65c0a2be564465556b99f" title="TransactionTablePriv\l::describe" alt="" coords="581,1114,731,1155"/>
+<area shape="rect" id="node11" href="$class_transaction_table_model.html#a416d0751ab9a95ecd87d3f7bed4f0b06" title="TransactionTableModel\l::data" alt="" coords="865,1114,1029,1155"/>
+<area shape="rect" id="node13" href="$class_c_block_policy_estimator.html#af34606ec5f6af217e23b47b8c3b2e361" title="Process a transaction accepted to the mempool. " alt="" coords="575,829,737,870"/>
+<area shape="rect" id="node14" href="$class_c_tx_mem_pool.html#ad510f436f380764056491d458adde906" title="CTxMemPool::addUnchecked" alt="" coords="844,840,1051,867"/>
+<area shape="rect" id="node15" href="$class_c_block_policy_estimator.html#adac45c8dba3d152590fc65b0ac831bda" title="Process a transaction confirmed in a block. " alt="" coords="575,946,737,987"/>
+<area shape="rect" id="node17" href="$blockchain_8h.html#ac5ec0fb7871f93c9889aecd50e2e408f" title="Callback for when block tip changed. " alt="" coords="1133,1309,1299,1336"/>
+<area shape="rect" id="node20" href="$class_c_tx_mem_pool_entry.html#a0f7612dbb388fabdeebcef62be009dd5" title="CTxMemPoolEntry::CTxMemPool\lEntry" alt="" coords="543,181,769,222"/>
+<area shape="rect" id="node21" href="$class_c_tx_mem_pool.html#a8b80b12f4c98a8efccc8e7c83e4f469d" title="Try to calculate all in&#45;mempool ancestors of entry. " alt="" coords="555,377,757,418"/>
+<area shape="rect" id="node30" href="$validation_8h.html#a86ed1d2d0837b905d74c2e4192b6c06a" title="Convert CValidationState to a human&#45;readable message for logging. " alt="" coords="867,789,1027,816"/>
+<area shape="rect" id="node46" href="$class_compare_tx_mem_pool_entry_by_descendant_score.html#a5ab0aeb23973cf300c7b6db45560c051" title="CompareTxMemPoolEntryByDescendant\lScore::GetModFeeAndSize" alt="" coords="516,246,796,287"/>
+<area shape="rect" id="node47" href="$class_compare_tx_mem_pool_entry_by_score.html#a3605dbdf73e6d83e72bc7e0394e74513" title="CompareTxMemPoolEntryByScore\l::operator()" alt="" coords="536,311,776,353"/>
+<area shape="rect" id="node16" href="$class_c_block_policy_estimator.html#af4bf4d8e0b4e30410ff6c70b509f400b" title="Process all the transactions that have been included in a block. " alt="" coords="866,946,1029,987"/>
+<area shape="rect" id="node18" href="$init_8h.html#ac5f038c2b480cf9ef5e19e3eba8dbaf9" title="Shutdown" alt="" coords="1437,1223,1523,1249"/>
+<area shape="rect" id="node19" href="$init_8h.html#a50b568a1d0cbbcde470f678bbbd60ecf" title="Bitcoin core main initialization. " alt="" coords="1694,739,1790,765"/>
+<area shape="rect" id="node22" href="$class_block_assembler.html#ac88956b3067e44661e837505d1540aa0" title="Add transactions based on feerate including unconfirmed ancestors Increments nPackagesSelected / nDes..." alt="" coords="1627,536,1857,563"/>
+<area shape="rect" id="node25" href="$rbf_8h.html#a5c495f7484e6725aa5cd36afb8b836d0" title="IsRBFOptIn" alt="" coords="902,208,993,235"/>
+<area shape="rect" id="node26" href="$blockchain_8h.html#a3b8a8939a31de29ceb0ea581341eeb92" title="Mempool to JSON. " alt="" coords="883,283,1011,309"/>
+<area shape="rect" id="node27" href="$class_c_tx_mem_pool.html#ad74247cc4eb672fb9063d4e9503f4cf0" title="If sanity&#45;checking is turned on, check makes sure the pool is consistent (does not contain two transa..." alt="" coords="1667,333,1817,360"/>
+<area shape="rect" id="node29" href="$class_c_tx_mem_pool.html#a076041ea11b38722d1419c1640bf6ac4" title="Affect CreateNewBlock prioritisation of transactions. " alt="" coords="1905,241,2144,268"/>
+<area shape="rect" id="node23" href="$class_block_assembler.html#a24b566785f9f88bc72d744095b89c607" title="Construct a new block template with coinbase to scriptPubKeyIn. " alt="" coords="1923,638,2126,679"/>
+<area shape="rect" id="node24" href="$mining_8h.html#a4910d289954727eb7c4c24a6b3c50c55" title="Generate blocks (mine) " alt="" coords="2192,587,2313,613"/>
+<area shape="rect" id="node28" href="$class_peer_logic_validation.html#a124965d7310e0df08cc027d4e1cbbe7b" title="Overridden from CValidationInterface. " alt="" coords="1951,377,2098,418"/>
+<area shape="rect" id="node31" href="$struct_c_importing_now.html#a0e449b23ac612ff3ff491d989fd08a18" title="CImportingNow::~CImportingNow" alt="" coords="1099,840,1333,867"/>
+<area shape="rect" id="node32" href="$group___actions.html#gaded9964331f3d9e749fdb547cd7ed9ea" title="Call after CreateTransaction unless you want to abort. " alt="" coords="1117,891,1315,917"/>
+<area shape="rect" id="node33" href="$blockchain_8h.html#a7305038a43cc5f399ca00e00c6f07186" title="Mempool information to JSON. " alt="" coords="1141,1141,1291,1168"/>
+<area shape="rect" id="node34" href="$rawtransaction_8cpp.html#a5b2abfea4548c97e780cfae39f9ac11b" title="signrawtransaction" alt="" coords="1145,1411,1287,1437"/>
+<area shape="rect" id="node35" href="$class_c_chain_state.html#a6c0c017d41977fe6552ecfd1fc7c887d" title="Apply the effects of this block (with given index) on the UTXO set represented by coins..." alt="" coords="1381,789,1579,816"/>
+<area shape="rect" id="node36" href="$validation_8h.html#a12c39e969c9077605ae8a91730fb78d3" title="Check a block is completely valid from start to finish (only works on top of our current best block..." alt="" coords="1679,789,1805,816"/>
+<area shape="rect" id="node37" href="$class_c_verify_d_b.html#af12e07230f20d23cf01d417d0e785c49" title="CVerifyDB::VerifyDB" alt="" coords="1669,688,1815,715"/>
+<area shape="rect" id="node38" href="$validation_8h.html#a0d01c135cc5a05475e3dc3910c9888da" title="Flush all state, indexes and buffers to disk. " alt="" coords="1151,1016,1281,1043"/>
+<area shape="rect" id="node39" href="$validation_8h.html#afccc404d3f648d7834ee7522ca348b41" title="Prune block files and flush state to disk. " alt="" coords="1421,1016,1539,1043"/>
+<area shape="rect" id="node40" href="$class_c_chain_state.html#ae4c089f033fefc9f5e10cda9af6a3a9a" title="Store block on disk. " alt="" coords="1386,536,1574,563"/>
+<area shape="rect" id="node41" href="$validation_8h.html#a290fce59049c0951b8eb73f0129bf6f0" title="Process an incoming block. " alt="" coords="1675,485,1809,512"/>
+<area shape="rect" id="node42" href="$validation_8h.html#a173f79e71650a53a095bc1d88d77d6f9" title="Prune block files up to a given height. " alt="" coords="1397,1101,1563,1128"/>
+<area shape="rect" id="node43" href="$class_c_chain_state.html#afc0586502e4dd4092c4a0707d329f6eb" title="CChainState::RewindBlock\lIndex" alt="" coords="1387,942,1573,983"/>
+<area shape="rect" id="node44" href="$class_c_chain_state.html#a059db2048ce030760838426613dfc3e7" title="If a block header hasn&#39;t already been seen, call CheckBlockHeader on it, ensure that it doesn&#39;t desce..." alt="" coords="1122,1243,1310,1285"/>
+<area shape="rect" id="node45" href="$validation_8h.html#aa597978e5628b461b272c75aa28eb531" title="Update the chain tip based on database information. " alt="" coords="1427,739,1533,765"/>
+<area shape="rect" id="node49" href="$group___actions.html#ga15a558d8fa0db299f38ed1e45a60aaaf" title="Insert additional inputs into the transaction by calling CreateTransaction();. " alt="" coords="567,1012,745,1039"/>
+<area shape="rect" id="node50" href="$rpcwallet_8h.html#a7c13054932c9e3b351bd6277fa9361d7" title="signrawtransactionwithwallet" alt="" coords="846,1063,1049,1089"/>
 </map>

@@ -1,8 +1,6 @@
 var searchData=
 [
   ['params_2eh',['params.h',['../params_8h.html',1,'']]],
-  ['paymentrequest_2epb_2ecc',['paymentrequest.pb.cc',['../paymentrequest_8pb_8cc.html',1,'']]],
-  ['paymentrequest_2epb_2eh',['paymentrequest.pb.h',['../paymentrequest_8pb_8h.html',1,'']]],
   ['paymentrequestplus_2ecpp',['paymentrequestplus.cpp',['../paymentrequestplus_8cpp.html',1,'']]],
   ['paymentrequestplus_2eh',['paymentrequestplus.h',['../paymentrequestplus_8h.html',1,'']]],
   ['paymentserver_2ecpp',['paymentserver.cpp',['../paymentserver_8cpp.html',1,'']]],
@@ -17,8 +15,10 @@ var searchData=
   ['pow_2eh',['pow.h',['../pow_8h.html',1,'']]],
   ['prevector_2ecpp',['prevector.cpp',['../prevector_8cpp.html',1,'']]],
   ['prevector_2eh',['prevector.h',['../prevector_8h.html',1,'']]],
-  ['protocol_2ecpp',['protocol.cpp',['../protocol_8cpp.html',1,'(Global Namespace)'],['../rpc_2protocol_8cpp.html',1,'(Global Namespace)']]],
-  ['protocol_2eh',['protocol.h',['../protocol_8h.html',1,'(Global Namespace)'],['../rpc_2protocol_8h.html',1,'(Global Namespace)']]],
+  ['protocol_2ecpp',['protocol.cpp',['../rpc_2protocol_8cpp.html',1,'']]],
+  ['protocol_2ecpp',['protocol.cpp',['../protocol_8cpp.html',1,'']]],
+  ['protocol_2eh',['protocol.h',['../rpc_2protocol_8h.html',1,'']]],
+  ['protocol_2eh',['protocol.h',['../protocol_8h.html',1,'']]],
   ['pubkey_2ecpp',['pubkey.cpp',['../pubkey_8cpp.html',1,'']]],
   ['pubkey_2eh',['pubkey.h',['../pubkey_8h.html',1,'']]]
 ];

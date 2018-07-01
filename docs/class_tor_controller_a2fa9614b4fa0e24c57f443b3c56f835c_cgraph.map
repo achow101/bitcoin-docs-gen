@@ -1,20 +1,51 @@
 <map id="TorController::reconnect_cb" name="TorController::reconnect_cb">
-<area shape="rect" id="node2" href="$class_tor_controller.html#ae5d4304836fce79574ec540c5ada8269" title="Reconnect, after getting disconnected. " alt="" coords="236,157,404,183"/>
-<area shape="rect" id="node3" href="$class_tor_control_connection.html#a36b6359caf9a304efe310b9b7141a939" title="Connect to a Tor control port. " alt="" coords="479,81,628,123"/>
-<area shape="rect" id="node7" href="$class_tor_controller.html#a59d56a1525a08235b07dd9eadbae0d1f" title="Callback after successful connection. " alt="" coords="460,157,647,183"/>
-<area shape="rect" id="node8" href="$class_tor_controller.html#a81392f33f0c7e069762668ec3a757075" title="Callback after connection lost or failed connection attempt. " alt="" coords="452,227,655,254"/>
-<area shape="rect" id="node4" href="$class_tor_control_connection.html#addb42114063641eab12be2fc39b859d5" title="Disconnect from Tor control port. " alt="" coords="703,5,852,47"/>
-<area shape="rect" id="node5" href="$class_tor_control_connection.html#a7d7e2393f19cb41c32223def3df769ea" title="Libevent handlers: internal. " alt="" coords="703,71,852,112"/>
-<area shape="rect" id="node6" href="$class_tor_control_connection.html#a8b22b26822247f8be7d739e14a045e98" title="TorControlConnection\l::eventcb" alt="" coords="703,136,852,177"/>
-<area shape="rect" id="node9" href="$class_c_net_addr.html#a6fe20b8da9701ca5dc2af078e2e8ac25" title="CNetAddr::IsValid" alt="" coords="713,202,841,229"/>
-<area shape="rect" id="node10" href="$net_8cpp.html#a040c40f60af5f50a128fc1aac4cb5ebd" title="RemoveLocal" alt="" coords="726,253,829,279"/>
-<area shape="rect" id="node19" href="$netbase_8cpp.html#a0813a315d41aebd2edea6c4298b90a37" title="Convert milliseconds to a struct timeval for e.g. " alt="" coords="721,303,834,330"/>
-<area shape="rect" id="node11" href="$class_c_service.html#a225473158bc07c87a6a862160d73cfea" title="CService::ToString" alt="" coords="900,253,1033,279"/>
-<area shape="rect" id="node12" href="$class_c_service.html#a224204c838b12eeb49ca7eabe6f75004" title="CService::ToStringIPPort" alt="" coords="1081,253,1252,279"/>
-<area shape="rect" id="node13" href="$class_c_net_addr.html#a7021b79e9a33c342b68db09dbb6c2293" title="CNetAddr::IsIPv4" alt="" coords="1315,151,1442,178"/>
-<area shape="rect" id="node14" href="$class_c_net_addr.html#a4db37b4997ff3b8c57959f2aa915a9a3" title="CNetAddr::IsTor" alt="" coords="1517,202,1636,229"/>
-<area shape="rect" id="node15" href="$class_c_net_addr.html#ab0848a1ba29b6f72fcc3b6ba8d7c8fbb" title="CNetAddr::IsInternal" alt="" coords="1505,303,1648,330"/>
-<area shape="rect" id="node16" href="$class_c_net_addr.html#a0c8d9b5ed3824546ff4dccca3b28b073" title="CNetAddr::ToStringIP" alt="" coords="1303,253,1454,279"/>
-<area shape="rect" id="node18" href="$class_c_service.html#a95d6f24b6a613fca24734ba4e38ef3dc" title="CService::ToStringPort" alt="" coords="1300,354,1457,381"/>
-<area shape="rect" id="node17" href="$utilstrencodings_8cpp.html#aed1944a78afffe9d5f3129e656dc8aa6" title="EncodeBase32" alt="" coords="1521,253,1632,279"/>
+<area shape="rect" id="node2" href="$class_tor_controller.html#ae5d4304836fce79574ec540c5ada8269" title="Reconnect, after getting disconnected. " alt="" coords="249,249,425,276"/>
+<area shape="rect" id="node14" href="$class_args_manager.html#a565c101a8d753ca2d71c7069a9d411c1" title="Return string argument or default value. " alt="" coords="2158,656,2318,683"/>
+<area shape="rect" id="node3" href="$class_tor_control_connection.html#a36b6359caf9a304efe310b9b7141a939" title="Connect to a Tor control port. " alt="" coords="493,195,652,237"/>
+<area shape="rect" id="node8" href="$class_tor_controller.html#a59d56a1525a08235b07dd9eadbae0d1f" title="Callback after successful connection. " alt="" coords="473,321,672,348"/>
+<area shape="rect" id="node48" href="$class_tor_controller.html#a81392f33f0c7e069762668ec3a757075" title="Callback after connection lost or failed connection attempt. " alt="" coords="1455,43,1672,69"/>
+<area shape="rect" id="node4" href="$class_tor_control_connection.html#addb42114063641eab12be2fc39b859d5" title="Disconnect from Tor control port. " alt="" coords="744,97,903,138"/>
+<area shape="rect" id="node5" href="$class_tor_control_connection.html#a7d7e2393f19cb41c32223def3df769ea" title="Libevent handlers: internal. " alt="" coords="744,162,903,203"/>
+<area shape="rect" id="node7" href="$class_tor_control_connection.html#a8b22b26822247f8be7d739e14a045e98" title="TorControlConnection\l::eventcb" alt="" coords="744,227,903,269"/>
+<area shape="rect" id="node6" href="$utilstrencodings_8cpp.html#aa5ce96ec36f4413f820cec9c1831c070" title="atoi" alt="" coords="1063,93,1109,120"/>
+<area shape="rect" id="node9" href="$class_tor_control_connection.html#a5d0292a1389bb0f78d15fe6c06a2baeb" title="Send a command, register a handler for the reply. " alt="" coords="1484,321,1643,362"/>
+<area shape="rect" id="node10" href="$class_tor_controller.html#aee36fcd1cd60d7f4eb007d909894b1c3" title="Callback for PROTOCOLINFO result. " alt="" coords="720,321,927,348"/>
+<area shape="rect" id="node11" href="$torcontrol_8cpp.html#a3bcc380129e28cdd0d99f253477873b1" title="SplitTorReplyLine" alt="" coords="1263,296,1389,323"/>
+<area shape="rect" id="node12" href="$torcontrol_8cpp.html#aef4e3c2281283409db7b0c878a6c2043" title="Parse reply arguments in the form &#39;METHODS=COOKIE,SAFECOOKIE COOKIEFILE=&quot;.../control_auth_cookie&quot;&#39;. " alt="" coords="1727,268,1890,295"/>
+<area shape="rect" id="node18" href="$class_tor_controller.html#ae36bc33cb3088384517c68f71e9944ce" title="Callback for AUTHENTICATE result. " alt="" coords="1245,499,1407,525"/>
+<area shape="rect" id="node43" href="$random_8cpp.html#ada0c29949c4d1ac0cc027d93c4771423" title="Functions to gather random data via the OpenSSL PRNG. " alt="" coords="1029,195,1143,221"/>
+<area shape="rect" id="node44" href="$utilstrencodings_8h.html#ace13a819ca4e98c22847d26b3b357e75" title="HexStr" alt="" coords="1293,43,1359,69"/>
+<area shape="rect" id="node45" href="$class_tor_controller.html#a86f1396b9f242183ffe777e0951eb997" title="Callback for AUTHCHALLENGE result. " alt="" coords="975,245,1197,272"/>
+<area shape="rect" id="node13" href="$namespacefsbridge.html#a19c84cec4ae9accfbc88a83e48f7ee92" title="fsbridge::fopen" alt="" coords="1965,236,2083,263"/>
+<area shape="rect" id="node15" href="$class_args_manager.html#a279ccbf7bbe9de5dceb8c6bfd1736583" title="Return true if the argument was originally passed as a negated option, i.e. " alt="" coords="2373,601,2576,628"/>
+<area shape="rect" id="node17" href="$class_args_manager_helper.html#aa4f8f77dc468b29cffe50513c78a87cd" title="ArgsManagerHelper::\lGetArg" alt="" coords="2396,653,2553,694"/>
+<area shape="rect" id="node16" href="$class_args_manager_helper.html#a863ddbcfbd113cf88cf622a0a4e32c1d" title="Convert regular argument into the network&#45;specific setting. " alt="" coords="2624,594,2781,635"/>
+<area shape="rect" id="node19" href="$netbase_8cpp.html#a82f06e9cca43021fa1c4f234a7fe5e2a" title="LookupNumeric" alt="" coords="1747,544,1870,571"/>
+<area shape="rect" id="node22" href="$netbase_8cpp.html#afb67b4c7e1edb97af6f3edf4014491e9" title="SetProxy" alt="" coords="1524,387,1603,413"/>
+<area shape="rect" id="node29" href="$net_8cpp.html#a2f6d62a9d456bf38003df3815b707f46" title="Make a particular network entirely off&#45;limits (no automatic connects to it) " alt="" coords="1518,437,1609,464"/>
+<area shape="rect" id="node30" href="$net_8cpp.html#af6d341a24d761a509fca026458cf2f72" title="GetListenPort" alt="" coords="1754,603,1863,629"/>
+<area shape="rect" id="node32" href="$class_tor_controller.html#a78b762c14a006b2f509261a95963ff67" title="Callback for ADD_ONION result. " alt="" coords="1496,489,1631,530"/>
+<area shape="rect" id="node20" href="$netbase_8cpp.html#a56a2f4bcb9fb77b5efe358f804f642cc" title="Lookup" alt="" coords="1990,504,2058,531"/>
+<area shape="rect" id="node21" href="$utilstrencodings_8cpp.html#a1b1ce2ba1ffe40785e65ec3ad5a20e79" title="SplitHostPort" alt="" coords="2185,591,2291,617"/>
+<area shape="rect" id="node23" href="$classproxy_type.html#a2d9ece3a71e623ae96475995beb53b2e" title="proxyType::IsValid" alt="" coords="1957,287,2091,313"/>
+<area shape="rect" id="node24" href="$class_c_net_addr.html#a52a1b506f07e5450057e12a8b5a7fbcd" title="CNetAddr::IsValid" alt="" coords="2172,135,2304,161"/>
+<area shape="rect" id="node25" href="$class_c_net_addr.html#a639dff0ffea6ad930353784686def39b" title="CNetAddr::IsRFC3849" alt="" coords="2395,84,2554,111"/>
+<area shape="rect" id="node27" href="$class_c_net_addr.html#ab6a1988f734e2f0c4a67ebaefe8b01c8" title="CNetAddr::IsInternal" alt="" coords="2627,211,2778,237"/>
+<area shape="rect" id="node28" href="$class_c_net_addr.html#a16ff4478f02f06f5a9a038a24d5da2f9" title="CNetAddr::IsIPv4" alt="" coords="2639,337,2767,364"/>
+<area shape="rect" id="node26" href="$class_c_net_addr.html#a0793d30a6baae6e3d4e06084ec33eddd" title="CNetAddr::GetByte" alt="" coords="2631,109,2775,136"/>
+<area shape="rect" id="node31" href="$chainparams_8cpp.html#ace5c5b706d71a324a417dd2db394fd4a" title="Return the currently selected parameters. " alt="" coords="1989,555,2059,581"/>
+<area shape="rect" id="node33" href="$utilstrencodings_8cpp.html#aa179dc54b52ee4d555344dd5472ccb6b" title="Remove unsafe chars. " alt="" coords="1753,204,1864,231"/>
+<area shape="rect" id="node34" href="$class_c_service.html#a336f9848fe9364e260c76499be0351a5" title="CService::ToString" alt="" coords="1955,388,2093,415"/>
+<area shape="rect" id="node39" href="$class_tor_controller.html#a55913c25c46f3d6cd49acb173664c350" title="Get name fo file to store private key in. " alt="" coords="1720,478,1897,519"/>
+<area shape="rect" id="node41" href="$net_8cpp.html#abb92a02eecc581e8927c8a6e31968645" title="AddLocal" alt="" coords="1769,376,1849,403"/>
+<area shape="rect" id="node35" href="$class_c_service.html#a39b82301356b0dfc2a92befc727b77be" title="CService::ToStringIPPort" alt="" coords="2151,388,2325,415"/>
+<area shape="rect" id="node36" href="$class_c_net_addr.html#a3fba9e0b18f531c0ed15794a30e8165d" title="CNetAddr::IsTor" alt="" coords="2643,489,2763,516"/>
+<area shape="rect" id="node37" href="$class_c_net_addr.html#a7ec845c27b63853fb0db08a4d154266f" title="CNetAddr::ToStringIP" alt="" coords="2397,337,2552,364"/>
+<area shape="rect" id="node38" href="$class_c_service.html#a1e0f0b98239a9097044695a9e439bb46" title="CService::ToStringPort" alt="" coords="2393,388,2556,415"/>
+<area shape="rect" id="node40" href="$util_8cpp.html#a7ebe0bd091f7334aaead43904601e008" title="GetDataDir" alt="" coords="1977,453,2071,480"/>
+<area shape="rect" id="node42" href="$class_c_net_addr.html#a35131b2792434d1c9a860c583b610ab6" title="CNetAddr::IsRoutable" alt="" coords="1945,337,2103,364"/>
+<area shape="rect" id="node46" href="$utilstrencodings_8cpp.html#a5a787187ddd5c52baae692350ec5a2cb" title="ParseHex" alt="" coords="1285,93,1367,120"/>
+<area shape="rect" id="node47" href="$utilstrencodings_8cpp.html#aa59e8a8c5a39cb5041f93bb95dd02119" title="HexDigit" alt="" coords="1525,93,1601,120"/>
+<area shape="rect" id="node49" href="$net_8cpp.html#a040c40f60af5f50a128fc1aac4cb5ebd" title="RemoveLocal" alt="" coords="1755,147,1862,173"/>
+<area shape="rect" id="node50" href="$netbase_8cpp.html#a0813a315d41aebd2edea6c4298b90a37" title="Convert milliseconds to a struct timeval for e.g. " alt="" coords="1751,93,1866,120"/>
 </map>

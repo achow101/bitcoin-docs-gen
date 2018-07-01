@@ -1,28 +1,51 @@
 <map id="CCoinsViewCache::GetBestBlock" name="CCoinsViewCache::GetBestBlock">
-<area shape="rect" id="node2" href="$validation_8h.html#ada1eab9ccd84d9a98f598eba9bd35330" title="Return the spend height, which is one more than the inputs.GetBestBlock(). " alt="" coords="278,237,397,264"/>
-<area shape="rect" id="node25" href="$class_c_chain_state.html#a6c0c017d41977fe6552ecfd1fc7c887d" title="Apply the effects of this block (with given index) on the UTXO set represented by coins..." alt="" coords="244,288,431,315"/>
-<area shape="rect" id="node26" href="$class_c_verify_d_b.html#af12e07230f20d23cf01d417d0e785c49" title="CVerifyDB::VerifyDB" alt="" coords="480,313,627,340"/>
-<area shape="rect" id="node27" href="$class_c_chain_state.html#a57682556dc35715fba5f0c6075efcc6e" title="Disconnect chainActive&#39;s tip. " alt="" coords="243,389,432,416"/>
-<area shape="rect" id="node3" href="$validation_8h.html#a9d9b2d3b31edbd48ce62f4e2a73cc04c" title="LookupBlockIndex" alt="" coords="489,237,618,264"/>
-<area shape="rect" id="node24" href="$class_c_tx_mem_pool.html#ab30fadfa811829e79accca41da6a8328" title="If sanity&#45;checking is turned on, check makes sure the pool is consistent (does not contain two transa..." alt="" coords="481,187,626,213"/>
-<area shape="rect" id="node4" href="$namespace_checkpoints.html#afe6d974f9851567cd7f0c6066e0919b5" title="Returns last CBlockIndex* that is a checkpoint. " alt="" coords="675,5,889,32"/>
-<area shape="rect" id="node5" href="$class_base_index.html#a770e60b2fcbc0b8adaaeb54f18eb9c8a" title="Notifies listeners of the new active block chain on&#45;disk. " alt="" coords="681,56,883,83"/>
-<area shape="rect" id="node6" href="$group__map_wallet.html#ga009ea6afd94f2c5d560ae063883628b5" title="CWallet::MarkConflicted" alt="" coords="977,128,1143,155"/>
-<area shape="rect" id="node7" href="$class_c_wallet.html#a880d5c8c69fa55759c1e3782ccb7ae41" title="CWallet::GetKeyBirthTimes" alt="" coords="690,107,874,133"/>
-<area shape="rect" id="node9" href="$class_c_wallet.html#aa004d53bb2aab03d6993f58518b9b903" title="Compute smart timestamp for a transaction being added to the wallet. " alt="" coords="685,208,879,235"/>
-<area shape="rect" id="node10" href="$class_c_merkle_tx.html#a0600dfab890747c0d4d1cfeb09a0b8c2" title="Return depth of transaction in blockchain: &lt;0 : conflicts with a transaction this deep in the blockch..." alt="" coords="687,259,877,301"/>
-<area shape="rect" id="node17" href="$blockchain_8cpp.html#a0d3ec9ae23b08828dd7ca646766ca637" title="gettxout" alt="" coords="747,325,817,352"/>
-<area shape="rect" id="node18" href="$validation_8h.html#af43d57aa8b46a53839777e8b670c9d66" title="Find the last common block between the parameter chain and a locator. " alt="" coords="705,376,859,403"/>
-<area shape="rect" id="node23" href="$validation_8h.html#aa597978e5628b461b272c75aa28eb531" title="Update the chain tip based on database information. " alt="" coords="731,427,833,453"/>
-<area shape="rect" id="node8" href="$wallet__tests_8cpp.html#a73ce3a42e0b56b2e4516e55871d8590e" title="dumpwallet" alt="" coords="1016,77,1104,104"/>
-<area shape="rect" id="node11" href="$group__map_wallet.html#gac4430bbdacf1a1b11f2f7010eef016c9" title="Return whether transaction can be abandoned. " alt="" coords="967,347,1153,389"/>
-<area shape="rect" id="node12" href="$group__map_wallet.html#ga9a4633bfb89da7a4afa04356a74b7970" title="CWallet::AbandonTransaction" alt="" coords="962,413,1158,440"/>
-<area shape="rect" id="node13" href="$group__map_wallet.html#ga796c23450c8482e10e0c75ae5c1fa8ed" title="CWallet::ReacceptWalletTransactions" alt="" coords="937,464,1183,491"/>
-<area shape="rect" id="node14" href="$group___actions.html#ga6e6e1497535d499242c2f2a76d1cbe63" title="CWallet::GetUnconfirmedBalance" alt="" coords="951,179,1169,205"/>
-<area shape="rect" id="node15" href="$group___actions.html#gab0c110f14f0429f9de594b2293837621" title="CWallet::GetUnconfirmedWatch\lOnlyBalance" alt="" coords="955,230,1165,271"/>
-<area shape="rect" id="node16" href="$group___actions.html#gadf2b4ac337ddb271555985cec82e43e6" title="CWallet::GetAddressBalances" alt="" coords="960,296,1160,323"/>
-<area shape="rect" id="node19" href="$class_base_index.html#a10dbed01cf8ad8126b6195844a62d281" title="Initialize internal state from the database and block index. " alt="" coords="1005,515,1115,541"/>
-<area shape="rect" id="node20" href="$class_base_index.html#a2babb71bb9b93aadba06dae6e62d721b" title="Start initializes the sync state and registers the instance as a ValidationInterface so that it stays..." alt="" coords="1231,489,1351,516"/>
-<area shape="rect" id="node22" href="$class_tx_index.html#a2ebe57b9a6d64ab90a9c6f8390649b48" title="Override base class init to migrate from old database. " alt="" coords="1243,540,1338,567"/>
-<area shape="rect" id="node21" href="$class_base_index.html#a8960ca12b00a8a6c38428a07849ef88a" title="Write update index entries for a newly connected block. " alt="" coords="1399,489,1555,516"/>
+<area shape="rect" id="node2" href="$validation_8h.html#a86ed1d2d0837b905d74c2e4192b6c06a" title="Convert CValidationState to a human&#45;readable message for logging. " alt="" coords="424,736,584,762"/>
+<area shape="rect" id="node16" href="$class_c_chain_state.html#a6c0c017d41977fe6552ecfd1fc7c887d" title="Apply the effects of this block (with given index) on the UTXO set represented by coins..." alt="" coords="891,1125,1089,1152"/>
+<area shape="rect" id="node19" href="$class_c_verify_d_b.html#af12e07230f20d23cf01d417d0e785c49" title="CVerifyDB::VerifyDB" alt="" coords="1191,1429,1337,1456"/>
+<area shape="rect" id="node26" href="$class_c_chain_state.html#a57682556dc35715fba5f0c6075efcc6e" title="Disconnect chainActive&#39;s tip. " alt="" coords="891,1176,1089,1202"/>
+<area shape="rect" id="node39" href="$validation_8h.html#ada1eab9ccd84d9a98f598eba9bd35330" title="Return the spend height, which is one more than the inputs.GetBestBlock(). " alt="" coords="248,1530,376,1557"/>
+<area shape="rect" id="node3" href="$struct_c_importing_now.html#a0e449b23ac612ff3ff491d989fd08a18" title="CImportingNow::~CImportingNow" alt="" coords="1427,614,1661,641"/>
+<area shape="rect" id="node4" href="$group___actions.html#gaded9964331f3d9e749fdb547cd7ed9ea" title="Call after CreateTransaction unless you want to abort. " alt="" coords="632,209,831,236"/>
+<area shape="rect" id="node5" href="$namespacefeebumper.html#a77c8ee472d015d24111564e708750b66" title="Commit the bumpfee transaction. " alt="" coords="879,114,1101,141"/>
+<area shape="rect" id="node7" href="$rawtransaction_8cpp.html#a5b2abfea4548c97e780cfae39f9ac11b" title="signrawtransaction" alt="" coords="1473,89,1615,116"/>
+<area shape="rect" id="node8" href="$rpcwallet_8cpp.html#a7424e87562c3781c88662ebfb6ef7e4a" title="GetLabelDestination" alt="" coords="1468,282,1620,309"/>
+<area shape="rect" id="node10" href="$class_block_assembler.html#a24b566785f9f88bc72d744095b89c607" title="Construct a new block template with coinbase to scriptPubKeyIn. " alt="" coords="1443,531,1645,572"/>
+<area shape="rect" id="node11" href="$mining_8h.html#a4910d289954727eb7c4c24a6b3c50c55" title="Generate blocks (mine) " alt="" coords="1724,538,1845,565"/>
+<area shape="rect" id="node13" href="$class_peer_logic_validation.html#a124965d7310e0df08cc027d4e1cbbe7b" title="Overridden from CValidationInterface. " alt="" coords="1471,1422,1617,1463"/>
+<area shape="rect" id="node14" href="$blockchain_8h.html#a7305038a43cc5f399ca00e00c6f07186" title="Mempool information to JSON. " alt="" coords="1709,1968,1860,1994"/>
+<area shape="rect" id="node17" href="$validation_8h.html#a12c39e969c9077605ae8a91730fb78d3" title="Check a block is completely valid from start to finish (only works on top of our current best block..." alt="" coords="1201,413,1327,440"/>
+<area shape="rect" id="node21" href="$validation_8h.html#a0d01c135cc5a05475e3dc3910c9888da" title="Flush all state, indexes and buffers to disk. " alt="" coords="666,856,797,882"/>
+<area shape="rect" id="node24" href="$validation_8h.html#afccc404d3f648d7834ee7522ca348b41" title="Prune block files and flush state to disk. " alt="" coords="931,653,1049,680"/>
+<area shape="rect" id="node29" href="$validation_8h.html#a290fce59049c0951b8eb73f0129bf6f0" title="Process an incoming block. " alt="" coords="1197,1020,1331,1046"/>
+<area shape="rect" id="node31" href="$class_c_chain_state.html#ae4c089f033fefc9f5e10cda9af6a3a9a" title="Store block on disk. " alt="" coords="896,805,1084,832"/>
+<area shape="rect" id="node33" href="$validation_8h.html#a173f79e71650a53a095bc1d88d77d6f9" title="Prune block files up to a given height. " alt="" coords="907,1074,1073,1101"/>
+<area shape="rect" id="node34" href="$class_c_chain_state.html#afc0586502e4dd4092c4a0707d329f6eb" title="CChainState::RewindBlock\lIndex" alt="" coords="897,536,1083,578"/>
+<area shape="rect" id="node35" href="$validation_8h.html#a2e51de180124822c526ac8f82777fa32" title="When there are blocks in the active chain with missing data, rewind the chainstate and remove them fr..." alt="" coords="1197,544,1331,570"/>
+<area shape="rect" id="node36" href="$class_c_chain_state.html#a059db2048ce030760838426613dfc3e7" title="If a block header hasn&#39;t already been seen, call CheckBlockHeader on it, ensure that it doesn&#39;t desce..." alt="" coords="637,1312,825,1354"/>
+<area shape="rect" id="node38" href="$validation_8h.html#aa597978e5628b461b272c75aa28eb531" title="Update the chain tip based on database information. " alt="" coords="1211,704,1317,730"/>
+<area shape="rect" id="node9" href="$class_list_coins_testing_setup.html#a8ce37c5d8d073c901b91153f83c47ee8" title="ListCoinsTestingSetup\l::AddTx" alt="" coords="909,216,1071,258"/>
+<area shape="rect" id="node6" href="$rpcwallet_8h.html#a7c13054932c9e3b351bd6277fa9361d7" title="signrawtransactionwithwallet" alt="" coords="1163,114,1365,141"/>
+<area shape="rect" id="node12" href="$rpcwallet_8cpp.html#a236a42206aa464fbb10bae6e6243092b" title="generate" alt="" coords="1949,538,2029,565"/>
+<area shape="rect" id="node15" href="$struct_c_coin.html#a2a0a2532bdacb03b087b3b0a400830ec" title="CCoin::SerializationOp" alt="" coords="1908,2272,2071,2298"/>
+<area shape="rect" id="node18" href="$class_c_script_check.html#a4bad3434ddad70669f634879a8af132e" title="CScriptCheck::GetScriptError" alt="" coords="1441,470,1647,497"/>
+<area shape="rect" id="node20" href="$blockchain_8cpp.html#a0d3ec9ae23b08828dd7ca646766ca637" title="gettxout" alt="" coords="1506,1917,1582,1944"/>
+<area shape="rect" id="node22" href="$init_8h.html#ac5f038c2b480cf9ef5e19e3eba8dbaf9" title="Shutdown" alt="" coords="947,906,1033,933"/>
+<area shape="rect" id="node23" href="$struct_c_coins_stats.html#a3f68ce1f423e40599c8d3c4bf2d97aa9" title="CCoinsStats::CCoinsStats" alt="" coords="1171,1074,1357,1101"/>
+<area shape="rect" id="node27" href="$class_c_chain_state.html#a7b8212270ad8b00cc1daad6f38623654" title="Connect a new block to chainActive. " alt="" coords="899,957,1081,984"/>
+<area shape="rect" id="node28" href="$class_c_chain_state.html#a5a24c6da53ff4b725e2d1c8b4af007fe" title="Make the best chain active, in multiple steps. " alt="" coords="895,1008,1085,1050"/>
+<area shape="rect" id="node25" href="$init_8h.html#a50b568a1d0cbbcde470f678bbbd60ecf" title="Bitcoin core main initialization. " alt="" coords="1496,701,1592,728"/>
+<area shape="rect" id="node30" href="$classsubmitblock___state_catcher.html#a89abec4d0d8ea6b2cd651439e3a4f45f" title="Notifies listeners of a block validation result. " alt="" coords="1449,1584,1639,1626"/>
+<area shape="rect" id="node32" href="$validation_8h.html#adb7b04c54228efef3b7bbafd0830839e" title="Import blocks from an external file. " alt="" coords="1185,805,1343,832"/>
+<area shape="rect" id="node37" href="$validation_8h.html#a3028c49720732b5f1b558552f468af72" title="Process incoming block headers. " alt="" coords="897,1328,1083,1354"/>
+<area shape="rect" id="node40" href="$validation_8h.html#a9d9b2d3b31edbd48ce62f4e2a73cc04c" title="LookupBlockIndex" alt="" coords="922,1774,1058,1801"/>
+<area shape="rect" id="node50" href="$class_c_tx_mem_pool.html#ad74247cc4eb672fb9063d4e9503f4cf0" title="If sanity&#45;checking is turned on, check makes sure the pool is consistent (does not contain two transa..." alt="" coords="429,1530,579,1557"/>
+<area shape="rect" id="node41" href="$namespace_checkpoints.html#afe6d974f9851567cd7f0c6066e0919b5" title="Returns last CBlockIndex* that is a checkpoint. " alt="" coords="1149,2069,1379,2096"/>
+<area shape="rect" id="node42" href="$class_base_index.html#a770e60b2fcbc0b8adaaeb54f18eb9c8a" title="Notifies listeners of the new active block chain on&#45;disk. " alt="" coords="1156,2120,1372,2146"/>
+<area shape="rect" id="node43" href="$group__map_wallet.html#ga009ea6afd94f2c5d560ae063883628b5" title="CWallet::MarkConflicted" alt="" coords="1459,1968,1629,1994"/>
+<area shape="rect" id="node44" href="$class_c_wallet.html#a880d5c8c69fa55759c1e3782ccb7ae41" title="CWallet::GetKeyBirthTimes" alt="" coords="1169,2170,1359,2197"/>
+<area shape="rect" id="node45" href="$class_c_wallet.html#a4f8c7e9bc50d2e5a17e83235607bbbec" title="Compute smart timestamp for a transaction being added to the wallet. " alt="" coords="1161,2221,1367,2248"/>
+<area shape="rect" id="node46" href="$class_c_merkle_tx.html#a2b536484ff937f98d400d29c740670ab" title="Return depth of transaction in blockchain: &lt;0 : conflicts with a transaction this deep in the blockch..." alt="" coords="1165,1632,1363,1674"/>
+<area shape="rect" id="node47" href="$class_peer_logic_validation.html#ab3d9000f1eff3fc687db4645297c6f96" title="Send queued protocol messages to be sent to a give node. " alt="" coords="1191,1851,1337,1892"/>
+<area shape="rect" id="node48" href="$blockchain_8h.html#a3b8a8939a31de29ceb0ea581341eeb92" title="Mempool to JSON. " alt="" coords="1721,2346,1849,2373"/>
+<area shape="rect" id="node49" href="$validation_8h.html#af43d57aa8b46a53839777e8b670c9d66" title="Find the last common block between the parameter chain and a locator. " alt="" coords="1185,1698,1343,1725"/>
 </map>

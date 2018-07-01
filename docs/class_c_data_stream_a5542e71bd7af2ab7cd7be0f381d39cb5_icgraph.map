@@ -1,14 +1,51 @@
 <map id="CDataStream::reserve" name="CDataStream::reserve">
-<area shape="rect" id="node2" href="$class_c_d_b_batch.html#a91b5d889a8d7e56c4f0bbf446e246111" title="CDBBatch::Write" alt="" coords="208,191,332,217"/>
-<area shape="rect" id="node12" href="$class_c_d_b_batch.html#a0b9ed3a5fa7fb461cd668c5a5c7ccd42" title="CDBBatch::Erase" alt="" coords="207,241,333,268"/>
-<area shape="rect" id="node3" href="$class_c_d_b_wrapper.html#a6600aa8c2b30880dd7e032ea21f74aed" title="CDBWrapper::Write" alt="" coords="419,115,557,141"/>
-<area shape="rect" id="node10" href="$class_tx_index_1_1_d_b.html#a1a74538fe62aa9bea4c4ad27a090b902" title="Write a batch of transaction positions to the DB. " alt="" coords="409,165,567,192"/>
-<area shape="rect" id="node11" href="$class_c_block_tree_d_b.html#af5509ed62ce84023882fe243e4cd21ba" title="CBlockTreeDB::WriteBatchSync" alt="" coords="381,216,595,243"/>
-<area shape="rect" id="node4" href="$class_base_index_1_1_d_b.html#abe7afe749f8e643c2eaacb626cbe4f65" title="Write block locator of the chain that the txindex is in sync with. " alt="" coords="661,23,839,65"/>
-<area shape="rect" id="node7" href="$class_tx_index_1_1_d_b.html#a7eeb3325ee83f6fe2736278a7952ba5c" title="Migrate txindex data from the block tree DB, where it may be for older nodes that have not been upgra..." alt="" coords="909,136,1084,163"/>
-<area shape="rect" id="node8" href="$class_c_block_tree_d_b.html#a55914903b15bc119d0c4952af8fdf721" title="CBlockTreeDB::WriteReindexing" alt="" coords="643,140,857,167"/>
-<area shape="rect" id="node9" href="$class_c_block_tree_d_b.html#af2f65b70ac5d8a198d4f29a7e909c08a" title="CBlockTreeDB::WriteFlag" alt="" coords="663,191,837,217"/>
-<area shape="rect" id="node5" href="$class_base_index.html#a96a7407421fbf877509248bbe64f8d87" title="Sync the index with the block index starting from the current best block. " alt="" coords="915,5,1078,32"/>
-<area shape="rect" id="node6" href="$class_base_index.html#aec33bcb4ab5a0b0de416b4f3c4a1774b" title="Write the current chain block locator to the DB. " alt="" coords="905,56,1088,83"/>
-<area shape="rect" id="node13" href="$class_c_d_b_wrapper.html#a583311ba1b0eb24d07511aad3325d61f" title="CDBWrapper::Erase" alt="" coords="417,267,559,293"/>
+<area shape="rect" id="node2" href="$class_c_d_b_batch.html#a91b5d889a8d7e56c4f0bbf446e246111" title="CDBBatch::Write" alt="" coords="261,165,387,192"/>
+<area shape="rect" id="node13" href="$class_c_d_b_batch.html#a0b9ed3a5fa7fb461cd668c5a5c7ccd42" title="CDBBatch::Erase" alt="" coords="259,368,389,395"/>
+<area shape="rect" id="node15" href="$class_c_d_b_iterator.html#aa16a3cbdc2e514996a73ef1e3bc67209" title="CDBIterator::Seek" alt="" coords="255,976,393,1003"/>
+<area shape="rect" id="node16" href="$class_c_d_b_wrapper.html#a839a7dcca6afbf52a30c3efaead7bef0" title="CDBWrapper::Read" alt="" coords="253,723,395,749"/>
+<area shape="rect" id="node26" href="$class_c_d_b_wrapper.html#aa87b3ce4d3e14fed988d75d363a329b6" title="CDBWrapper::Exists" alt="" coords="251,1027,397,1053"/>
+<area shape="rect" id="node29" href="$class_c_d_b_wrapper.html#a18c8853f1d6d2d5e6489789f345889be" title="CDBWrapper::EstimateSize" alt="" coords="227,1077,421,1104"/>
+<area shape="rect" id="node31" href="$class_c_d_b_wrapper.html#af8af15fcb12ccde4b340951cd81afb81" title="Compact a certain range of keys in the database. " alt="" coords="220,64,428,91"/>
+<area shape="rect" id="node32" href="$class_berkeley_batch.html#afbf2d778e5791c88149b8c6c1cab0ab8" title="BerkeleyBatch::Read" alt="" coords="247,1153,401,1180"/>
+<area shape="rect" id="node47" href="$class_berkeley_batch.html#ac31c83ec96f7bd149f856d28e97dba23" title="BerkeleyBatch::Write" alt="" coords="247,1204,401,1231"/>
+<area shape="rect" id="node48" href="$class_berkeley_batch.html#af17c19ee65042d1c497f61d4560e9639" title="BerkeleyBatch::Erase" alt="" coords="245,1255,403,1281"/>
+<area shape="rect" id="node49" href="$class_berkeley_batch.html#a739cd356431ea488faad8f82e3cd285d" title="BerkeleyBatch::Exists" alt="" coords="245,1356,403,1383"/>
+<area shape="rect" id="node3" href="$class_c_d_b_wrapper.html#a6600aa8c2b30880dd7e032ea21f74aed" title="CDBWrapper::Write" alt="" coords="521,165,662,192"/>
+<area shape="rect" id="node6" href="$class_tx_index_1_1_d_b.html#a7eeb3325ee83f6fe2736278a7952ba5c" title="Migrate txindex data from the block tree DB, where it may be for older nodes that have not been upgra..." alt="" coords="1032,343,1216,369"/>
+<area shape="rect" id="node9" href="$class_tx_index_1_1_d_b.html#a1a74538fe62aa9bea4c4ad27a090b902" title="Write a batch of transaction positions to the DB. " alt="" coords="513,5,670,32"/>
+<area shape="rect" id="node10" href="$class_c_coins_view_d_b.html#aeb6c04068de59681a8bbc85f81f50c34" title="Do a bulk modification (multiple Coin changes + BestBlock change). " alt="" coords="774,495,965,521"/>
+<area shape="rect" id="node11" href="$class_c_block_tree_d_b.html#aa4b53c1cae368f02f56244af5f2499d7" title="CBlockTreeDB::WriteBatchSync" alt="" coords="483,56,700,83"/>
+<area shape="rect" id="node12" href="$class_c_coins_view_d_b.html#a72c1d718a15df89eadab97ce3b34fa56" title="Attempt to update from an older database format. Returns whether an error occurred. " alt="" coords="503,267,680,293"/>
+<area shape="rect" id="node4" href="$class_c_d_b_wrapper.html#aac6220002df70f327ab09893e08902f5" title="CDBWrapper::CDBWrapper" alt="" coords="774,368,965,395"/>
+<area shape="rect" id="node5" href="$class_base_index_1_1_d_b.html#abe7afe749f8e643c2eaacb626cbe4f65" title="Write block locator of the chain that the txindex is in sync with. " alt="" coords="778,150,961,191"/>
+<area shape="rect" id="node7" href="$class_c_block_tree_d_b.html#a55914903b15bc119d0c4952af8fdf721" title="CBlockTreeDB::WriteReindexing" alt="" coords="761,317,978,344"/>
+<area shape="rect" id="node8" href="$class_c_block_tree_d_b.html#af2f65b70ac5d8a198d4f29a7e909c08a" title="CBlockTreeDB::WriteFlag" alt="" coords="782,216,957,243"/>
+<area shape="rect" id="node14" href="$class_c_d_b_wrapper.html#a583311ba1b0eb24d07511aad3325d61f" title="CDBWrapper::Erase" alt="" coords="518,317,665,344"/>
+<area shape="rect" id="node17" href="$class_base_index_1_1_d_b.html#ad7a39256bcec05d4af7a1255fb898cfd" title="Read block locator of the chain that the txindex is in sync with. " alt="" coords="483,925,700,952"/>
+<area shape="rect" id="node19" href="$class_tx_index_1_1_d_b.html#ad3761b9c1360128982614719acc5def4" title="Read the disk location of the transaction data with the given hash. " alt="" coords="505,723,678,749"/>
+<area shape="rect" id="node20" href="$class_c_coins_view_d_b.html#a2a018edc94bdca2b96a126688f22770d" title="Retrieve the Coin (unspent transaction output) for a given outpoint. " alt="" coords="505,773,678,800"/>
+<area shape="rect" id="node21" href="$class_c_coins_view_d_b.html#aac696880a5bb854dcdcb20d8a035be9b" title="Retrieve the block hash whose state this CCoinsView currently represents. " alt="" coords="487,571,695,597"/>
+<area shape="rect" id="node22" href="$class_c_coins_view_d_b.html#aec0d3d60ab629a23873894e44b6bc266" title="Retrieve the range of blocks that may have been only partially written. " alt="" coords="481,520,701,547"/>
+<area shape="rect" id="node23" href="$class_c_block_tree_d_b.html#a3f597e6bab0a7003cbf7ea86cb434e85" title="CBlockTreeDB::ReadBlockFileInfo" alt="" coords="478,824,705,851"/>
+<area shape="rect" id="node24" href="$class_c_block_tree_d_b.html#adb1276fe2f0e0c4c106660948c581711" title="CBlockTreeDB::ReadLastBlockFile" alt="" coords="476,672,707,699"/>
+<area shape="rect" id="node25" href="$class_c_block_tree_d_b.html#acd779c4653fd9a87fffe95d53ce7c6d3" title="CBlockTreeDB::ReadFlag" alt="" coords="782,773,957,800"/>
+<area shape="rect" id="node18" href="$class_base_index.html#a10dbed01cf8ad8126b6195844a62d281" title="Initialize internal state from the database and block index. " alt="" coords="812,925,927,952"/>
+<area shape="rect" id="node27" href="$class_c_coins_view_d_b.html#a3fcf56cd1715d603eccacc500ef03609" title="Just check whether a given outpoint is unspent. " alt="" coords="500,976,683,1003"/>
+<area shape="rect" id="node28" href="$class_c_block_tree_d_b.html#acf4896a92ba492ceb9741c9b23aa9b1d" title="CBlockTreeDB::ReadReindexing" alt="" coords="483,1027,700,1053"/>
+<area shape="rect" id="node30" href="$class_c_coins_view_d_b.html#aff2543247ac56cc5f708aa9be387e72b" title="Estimate database size (0 if not implemented) " alt="" coords="488,1077,695,1104"/>
+<area shape="rect" id="node33" href="$class_wallet_batch.html#a79ad2ac5d901ecb4ef37ac877a335b76" title="WalletBatch::ReadBestBlock" alt="" coords="492,1229,691,1256"/>
+<area shape="rect" id="node35" href="$class_wallet_batch.html#a4ba38551200a5cbfbaafbb5826a009b8" title="WalletBatch::ReadPool" alt="" coords="510,1305,673,1332"/>
+<area shape="rect" id="node40" href="$class_wallet_batch.html#a606f7c548971463452a57379407a6ce7" title="WalletBatch::ReadAccount" alt="" coords="498,1356,685,1383"/>
+<area shape="rect" id="node42" href="$class_wallet_batch.html#af17758ea2f62ca2d80def7ae780e81f8" title="WalletBatch::LoadWallet" alt="" coords="505,1128,677,1155"/>
+<area shape="rect" id="node44" href="$class_wallet_batch.html#a32af4723c4cb7cb41958b42b13f78f78" title="WalletBatch::FindWalletTx" alt="" coords="501,1179,681,1205"/>
+<area shape="rect" id="node34" href="$class_c_wallet.html#a4e2993ef73d9b72e53839b66b6bd7a5d" title="CWallet::CreateWalletFromFile" alt="" coords="765,1229,973,1256"/>
+<area shape="rect" id="node36" href="$group___actions.html#gaa869ffae7560168064463f3157633a8b" title="Reserves a key from the keypool and sets nIndex to its index. " alt="" coords="755,1280,984,1307"/>
+<area shape="rect" id="node37" href="$group___actions.html#gac452f46eafeb2b4adfe86f7208048032" title="CWallet::GetKeyFromPool" alt="" coords="779,1331,959,1357"/>
+<area shape="rect" id="node38" href="$group___actions.html#ga23a900513e363e8e79d604cab9a7c7fc" title="Marks all keys in the keypool up to and including reserve_key as used. " alt="" coords="776,1382,963,1423"/>
+<area shape="rect" id="node39" href="$class_c_wallet.html#a9f4c2a7ac3ad42f05d79953220578606" title="CWallet::MarkPreSplitKeys" alt="" coords="777,1448,962,1475"/>
+<area shape="rect" id="node41" href="$group__map_wallet.html#gab22effc451411872c3559d0512214d5b" title="CWallet::GetLabelDestination" alt="" coords="766,1499,973,1525"/>
+<area shape="rect" id="node43" href="$group___actions.html#ga5d7b244b8ed0cbe24233ee0b6ca3cae0" title="CWallet::LoadWallet" alt="" coords="797,1077,941,1104"/>
+<area shape="rect" id="node45" href="$class_wallet_batch.html#ac79856b5948d8a13415547fd3e9374f2" title="WalletBatch::ZapSelectTx" alt="" coords="777,1128,961,1155"/>
+<area shape="rect" id="node46" href="$class_wallet_batch.html#a50a18be2146809a540975db37225775f" title="WalletBatch::ZapWalletTx" alt="" coords="779,1179,960,1205"/>
+<area shape="rect" id="node50" href="$class_berkeley_batch.html#ae8f502cca937a7339e3e8fc39c9791e1" title="BerkeleyBatch::BerkeleyBatch" alt="" coords="484,1407,699,1433"/>
 </map>

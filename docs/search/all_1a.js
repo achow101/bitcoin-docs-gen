@@ -13,7 +13,5 @@ var searchData=
   ['zmqnotificationinterface_2ecpp',['zmqnotificationinterface.cpp',['../zmqnotificationinterface_8cpp.html',1,'']]],
   ['zmqnotificationinterface_2eh',['zmqnotificationinterface.h',['../zmqnotificationinterface_8h.html',1,'']]],
   ['zmqpublishnotifier_2ecpp',['zmqpublishnotifier.cpp',['../zmqpublishnotifier_8cpp.html',1,'']]],
-  ['zmqpublishnotifier_2eh',['zmqpublishnotifier.h',['../zmqpublishnotifier_8h.html',1,'']]],
-  ['zr_5f',['ZR_',['../paymentrequest_8pb_8cc.html#a511c5446dcc7b716040bd7dd949d4a40',1,'paymentrequest.pb.cc']]],
-  ['zr_5fhelper_5f',['ZR_HELPER_',['../paymentrequest_8pb_8cc.html#a37d88b145f65d6c3e35425f6a76ce6c3',1,'paymentrequest.pb.cc']]]
+  ['zmqpublishnotifier_2eh',['zmqpublishnotifier.h',['../zmqpublishnotifier_8h.html',1,'']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['sc',['SC',['../ecmult__static__context_8h.html#a6bb7a09d1931dfbdd6d373cfe6e23357',1,'ecmult_static_context.h']]],
   ['scoped_5flockable',['SCOPED_LOCKABLE',['../threadsafety_8h.html#a954d07e5a857905a2f333504beacef0d',1,'threadsafety.h']]],
   ['script_5ferr_5flast',['SCRIPT_ERR_LAST',['../script__error_8h.html#ad2180cf2b7ac694b7a5eec94bd9d75d2',1,'script_error.h']]],
   ['secp256k1_5fapi',['SECP256K1_API',['../secp256k1_8h.html#a3f1967acd0fe26283877c61b3f2694a5',1,'secp256k1.h']]],
@@ -66,8 +65,8 @@ var searchData=
   ['shared_5flock_5ffunction',['SHARED_LOCK_FUNCTION',['../threadsafety_8h.html#ae4b3dac87ecaa43e3150b794536bdbf1',1,'threadsafety.h']]],
   ['shared_5flocks_5frequired',['SHARED_LOCKS_REQUIRED',['../threadsafety_8h.html#a0ce030fe76250c8ed0eb53d8f1d29d33',1,'threadsafety.h']]],
   ['shared_5ftrylock_5ffunction',['SHARED_TRYLOCK_FUNCTION',['../threadsafety_8h.html#ac5742059d9119e1d6cec82e336341dd5',1,'threadsafety.h']]],
-  ['sigma0',['Sigma0',['../hash__impl_8h.html#a613f88ad88919b6ed21ff223070f9a21',1,'Sigma0():&#160;hash_impl.h'],['../hash__impl_8h.html#a672bd39bdf2f6dc295a23ddd109175ff',1,'sigma0():&#160;hash_impl.h']]],
-  ['sigma1',['Sigma1',['../hash__impl_8h.html#a6d34508d6d962274083fcd992fb4e340',1,'Sigma1():&#160;hash_impl.h'],['../hash__impl_8h.html#a0347251dc63b7abe5d4c500544c24a97',1,'sigma1():&#160;hash_impl.h']]],
+  ['sigma0',['sigma0',['../hash__impl_8h.html#a672bd39bdf2f6dc295a23ddd109175ff',1,'sigma0():&#160;hash_impl.h'],['../hash__impl_8h.html#a613f88ad88919b6ed21ff223070f9a21',1,'Sigma0():&#160;hash_impl.h']]],
+  ['sigma1',['sigma1',['../hash__impl_8h.html#a0347251dc63b7abe5d4c500544c24a97',1,'sigma1():&#160;hash_impl.h'],['../hash__impl_8h.html#a6d34508d6d962274083fcd992fb4e340',1,'Sigma1():&#160;hash_impl.h']]],
   ['sipround',['SIPROUND',['../hash_8cpp.html#abd545ba6d36990ee5903ff4d0e6edecf',1,'hash.cpp']]],
   ['sixperem_5fsp_5fcp',['SIXPEREM_SP_CP',['../bitcoinunits_8h.html#a4f81a2092131809d327ac966db1601b5',1,'bitcoinunits.h']]],
   ['sixperem_5fsp_5fhtml',['SIXPEREM_SP_HTML',['../bitcoinunits_8h.html#a285b47226a42a51d316b20e042e92f33',1,'bitcoinunits.h']]],
@@ -75,7 +74,7 @@ var searchData=
   ['socket_5ferror',['SOCKET_ERROR',['../compat_8h.html#a633b0396ff93d336a088412a190a5072',1,'compat.h']]],
   ['spinner_5fframes',['SPINNER_FRAMES',['../guiconstants_8h.html#a8109f9a4ff164249f039bcf5abc6d509',1,'guiconstants.h']]],
   ['stacktop',['stacktop',['../interpreter_8cpp.html#aaf94de5290fb16fe0fc816330febe57e',1,'interpreter.cpp']]],
-  ['stdc_5fheaders',['STDC_HEADERS',['../bitcoin-config_8h.html#a550e5c272cc3cf3814651721167dcd23',1,'STDC_HEADERS():&#160;bitcoin-config.h'],['../libsecp256k1-config_8h.html#a550e5c272cc3cf3814651721167dcd23',1,'STDC_HEADERS():&#160;libsecp256k1-config.h'],['../univalue-config_8h.html#a550e5c272cc3cf3814651721167dcd23',1,'STDC_HEADERS():&#160;univalue-config.h']]],
+  ['stdc_5fheaders',['STDC_HEADERS',['../bitcoin-config_8h.html#a550e5c272cc3cf3814651721167dcd23',1,'STDC_HEADERS():&#160;bitcoin-config.h'],['../libsecp256k1-config_8h.html#a550e5c272cc3cf3814651721167dcd23',1,'STDC_HEADERS():&#160;libsecp256k1-config.h']]],
   ['strerror_5fr_5fchar_5fp',['STRERROR_R_CHAR_P',['../bitcoin-config_8h.html#a346ec31a85326bc6ca1c8160bab2a261',1,'bitcoin-config.h']]],
   ['stringize',['STRINGIZE',['../clientversion_8h.html#ad9ac3d6162a4c18e51a0852093eab9bd',1,'clientversion.h']]],
   ['strprintf',['strprintf',['../tinyformat_8h.html#a56c674871a61baaad36ad52238c08857',1,'tinyformat.h']]],

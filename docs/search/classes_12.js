@@ -10,7 +10,7 @@ var searchData=
   ['trafficgraphwidget',['TrafficGraphWidget',['../class_traffic_graph_widget.html',1,'']]],
   ['transactioncompressor',['TransactionCompressor',['../struct_transaction_compressor.html',1,'']]],
   ['transactiondesc',['TransactionDesc',['../class_transaction_desc.html',1,'']]],
-  ['transactiondescdialog',['TransactionDescDialog',['../class_ui_1_1_transaction_desc_dialog.html',1,'Ui::TransactionDescDialog'],['../class_transaction_desc_dialog.html',1,'TransactionDescDialog']]],
+  ['transactiondescdialog',['TransactionDescDialog',['../class_transaction_desc_dialog.html',1,'']]],
   ['transactionfilterproxy',['TransactionFilterProxy',['../class_transaction_filter_proxy.html',1,'']]],
   ['transactionnotification',['TransactionNotification',['../struct_transaction_notification.html',1,'']]],
   ['transactionrecord',['TransactionRecord',['../class_transaction_record.html',1,'']]],

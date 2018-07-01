@@ -75,12 +75,7 @@ var searchData=
   ['_7enotificator',['~Notificator',['../class_notificator.html#a38d79072ff215da9214047c9a8d27e58',1,'Notificator']]],
   ['_7eopenuridialog',['~OpenURIDialog',['../class_open_u_r_i_dialog.html#a520d941b768178803559f9f6d2a87717',1,'OpenURIDialog']]],
   ['_7eoptionsdialog',['~OptionsDialog',['../class_options_dialog.html#afe1e5729e15ddf1c9e6f5b9cb6157c57',1,'OptionsDialog']]],
-  ['_7eoutput',['~Output',['../classpayments_1_1_output.html#aedfb8407d5cea2c56aab48a0d0bca70d',1,'payments::Output']]],
   ['_7eoverviewpage',['~OverviewPage',['../class_overview_page.html#a7fd68a7bebc327e3bbef2226b41298aa',1,'OverviewPage']]],
-  ['_7epayment',['~Payment',['../classpayments_1_1_payment.html#a610143e0c805489c5d082212166cec59',1,'payments::Payment']]],
-  ['_7epaymentack',['~PaymentACK',['../classpayments_1_1_payment_a_c_k.html#a2beb8ff0f703347cfc3222822412e212',1,'payments::PaymentACK']]],
-  ['_7epaymentdetails',['~PaymentDetails',['../classpayments_1_1_payment_details.html#a33932eaeea2d150364502cf74511eb83',1,'payments::PaymentDetails']]],
-  ['_7epaymentrequest',['~PaymentRequest',['../classpayments_1_1_payment_request.html#ab04c6f03dda6bac8e08922d1e24040ab',1,'payments::PaymentRequest']]],
   ['_7epaymentserver',['~PaymentServer',['../class_payment_server.html#a0845e975f03691b16abd47edfa152c06',1,'PaymentServer']]],
   ['_7epeertablemodel',['~PeerTableModel',['../class_peer_table_model.html#a8ff8426848434b1349bdb947fe38c6ab',1,'PeerTableModel']]],
   ['_7ependingwallettx',['~PendingWalletTx',['../classinterfaces_1_1_pending_wallet_tx.html#a8a1ce7f85acefece8641681be7994a49',1,'interfaces::PendingWalletTx']]],
@@ -117,6 +112,5 @@ var searchData=
   ['_7ewallettestingsetup',['~WalletTestingSetup',['../struct_wallet_testing_setup.html#a33e783ffa83796a3611f0b0d9796e0ad',1,'WalletTestingSetup']]],
   ['_7ewalletview',['~WalletView',['../class_wallet_view.html#ab341d74706ad40dc732cc9daa16b425d',1,'WalletView']]],
   ['_7eworkqueue',['~WorkQueue',['../class_work_queue.html#a99827207d576d64a2d48ab26544fa99e',1,'WorkQueue']]],
-  ['_7ex509certificates',['~X509Certificates',['../classpayments_1_1_x509_certificates.html#aece0ad64b09ef513a76c508487ef9a27',1,'payments::X509Certificates']]],
   ['_7ezero_5fafter_5ffree_5fallocator',['~zero_after_free_allocator',['../structzero__after__free__allocator.html#a97457dfa90f1ccf67dfb9aa0f8ef6050',1,'zero_after_free_allocator']]]
 ];

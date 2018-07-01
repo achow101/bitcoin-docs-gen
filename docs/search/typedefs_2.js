@@ -9,7 +9,7 @@ var searchData=
   ['ckeyingmaterial',['CKeyingMaterial',['../keystore_8h.html#a64709c9a3acc8f5694515789a183ad7b',1,'CKeyingMaterial():&#160;keystore.h'],['../crypter_8h.html#a64709c9a3acc8f5694515789a183ad7b',1,'CKeyingMaterial():&#160;crypter.h']]],
   ['clock',['clock',['../namespacebenchmark.html#aa3c075d51851c11a208575d7ad779655',1,'benchmark']]],
   ['coinset',['CoinSet',['../coin__selection_8cpp.html#ab21c9fc35f2e7aee21996a06a1c1d28e',1,'CoinSet():&#160;coin_selection.cpp'],['../coinselector__tests_8cpp.html#ab21c9fc35f2e7aee21996a06a1c1d28e',1,'CoinSet():&#160;coinselector_tests.cpp']]],
-  ['coinslist',['CoinsList',['../classinterfaces_1_1_wallet.html#a9788a19e0d45460edb2fb52cd5cc609c',1,'interfaces::Wallet']]],
+  ['coinslist',['CoinsList',['../classinterfaces_1_1_wallet.html#acb0ab20d05b6b2caf92bf0ba485f0fc1',1,'interfaces::Wallet']]],
   ['connectioncb',['ConnectionCB',['../class_tor_control_connection.html#aad3779dc10154d3547d7956abc856c53',1,'TorControlConnection']]],
   ['const_5fiterator',['const_iterator',['../classindirectmap.html#a371ffa4701085c3aa09ed79c72986483',1,'indirectmap::const_iterator()'],['../classlimitedmap.html#ab0a3e4f2ec7c82359300c83a35ae2500',1,'limitedmap::const_iterator()'],['../class_c_data_stream.html#abcfd79b72607505b22f18424e313b4c5',1,'CDataStream::const_iterator()']]],
   ['const_5fpointer',['const_pointer',['../classprevector.html#ae322a41a56ba4c7aad96a2270b9f34fc',1,'prevector::const_pointer()'],['../structsecure__allocator.html#abf76dd1c45de47c15d7a8c53cb2d8ab9',1,'secure_allocator::const_pointer()'],['../structzero__after__free__allocator.html#a197fbd41cb35428c2ed27c23b742ec9b',1,'zero_after_free_allocator::const_pointer()']]],

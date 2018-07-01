@@ -1,7 +1,8 @@
 var searchData=
 [
   ['indirectmap_2eh',['indirectmap.h',['../indirectmap_8h.html',1,'']]],
-  ['init_2ecpp',['init.cpp',['../init_8cpp.html',1,'(Global Namespace)'],['../wallet_2init_8cpp.html',1,'(Global Namespace)']]],
+  ['init_2ecpp',['init.cpp',['../init_8cpp.html',1,'']]],
+  ['init_2ecpp',['init.cpp',['../wallet_2init_8cpp.html',1,'']]],
   ['init_2eh',['init.h',['../init_8h.html',1,'']]],
   ['interpreter_2ecpp',['interpreter.cpp',['../interpreter_8cpp.html',1,'']]],
   ['interpreter_2eh',['interpreter.h',['../interpreter_8h.html',1,'']]],

@@ -7,7 +7,6 @@ var searchData=
   ['enable_5favx2',['ENABLE_AVX2',['../bitcoin-config_8h.html#a0bb5159a8e7228211ef230e4e186f17b',1,'bitcoin-config.h']]],
   ['enable_5fmodule_5frecovery',['ENABLE_MODULE_RECOVERY',['../libsecp256k1-config_8h.html#aabee9d96497d59be9118603daa72938c',1,'libsecp256k1-config.h']]],
   ['enable_5fsse41',['ENABLE_SSE41',['../bitcoin-config_8h.html#ab866816cfa3b57ceb4c50d661477063e',1,'bitcoin-config.h']]],
-  ['enable_5fwallet',['ENABLE_WALLET',['../bitcoin-config_8h.html#a8a1b716170d18826ac6a863ab76424af',1,'bitcoin-config.h']]],
   ['enable_5fzmq',['ENABLE_ZMQ',['../bitcoin-config_8h.html#ada5583a1202abe6f0cab5ba235ba46a1',1,'bitcoin-config.h']]],
   ['end',['END',['../utilstrencodings_8h.html#ac32457d3f041434e57a2924847796fda',1,'utilstrencodings.h']]],
   ['enter_5fcritical_5fsection',['ENTER_CRITICAL_SECTION',['../sync_8h.html#a1262d24e5b9a4fa0a1adc4de02958efb',1,'sync.h']]],

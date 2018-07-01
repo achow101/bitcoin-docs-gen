@@ -111,7 +111,7 @@ var searchData=
   ['cnodestats',['CNodeStats',['../class_c_node_stats.html',1,'']]],
   ['cnodestination',['CNoDestination',['../class_c_no_destination.html',1,'']]],
   ['coin',['Coin',['../class_coin.html',1,'']]],
-  ['coincontroldialog',['CoinControlDialog',['../class_coin_control_dialog.html',1,'CoinControlDialog'],['../class_ui_1_1_coin_control_dialog.html',1,'Ui::CoinControlDialog']]],
+  ['coincontroldialog',['CoinControlDialog',['../class_coin_control_dialog.html',1,'']]],
   ['coincontroltreewidget',['CoinControlTreeWidget',['../class_coin_control_tree_widget.html',1,'']]],
   ['coineligibilityfilter',['CoinEligibilityFilter',['../struct_coin_eligibility_filter.html',1,'']]],
   ['coinselectionparams',['CoinSelectionParams',['../struct_coin_selection_params.html',1,'']]],
