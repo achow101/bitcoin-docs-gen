@@ -24,7 +24,7 @@ if not args.skip_first_build:
     print("Doing first build")
     BuildDocSite()
 
-r = requests.get('https://api.github.com/networks/bitcoin/bitcoin/events')
+r = requests.get('https://api.github.com/repos/bitcoin/bitcoin/events')
 data = r.json()
 best_id = data[0]['id']
 etag = r.headers['etag']
@@ -35,10 +35,10 @@ while True:
     time.sleep(poll_time)
 
     # Make requests in loop until we get new info
-    r = requests.get('https://api.github.com/networks/bitcoin/bitcoin/events', headers={'If-None-Match' : etag})
+    r = requests.get('https://api.github.com/repos/bitcoin/bitcoin/events', headers={'If-None-Match' : etag})
     while r.status_code == 304:
         time.sleep(poll_time)
-        r = requests.get('https://api.github.com/networks/bitcoin/bitcoin/events', headers={'If-None-Match' : etag})
+        r = requests.get('https://api.github.com/repos/bitcoin/bitcoin/events', headers={'If-None-Match' : etag})
     data = r.json()
 
     # Check if there was a PushEvent
