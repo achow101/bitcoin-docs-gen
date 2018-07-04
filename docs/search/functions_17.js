@@ -17,7 +17,7 @@ var searchData=
   ['withorversion',['WithOrVersion',['../streams_8h.html#a8ba1059d85ff49c5596a1a8cbc80b6a2',1,'streams.h']]],
   ['witnessifier',['Witnessifier',['../class_witnessifier.html#a964a7b54ef8518a7f4444ac933d39384',1,'Witnessifier']]],
   ['witnessv0keyhash',['WitnessV0KeyHash',['../struct_witness_v0_key_hash.html#a60ebe7ed1f397d364b15dcc0ca1c00ec',1,'WitnessV0KeyHash::WitnessV0KeyHash()'],['../struct_witness_v0_key_hash.html#a44fc07bba5ec6ed939d7ae3bfabfcaec',1,'WitnessV0KeyHash::WitnessV0KeyHash(const uint160 &amp;hash)']]],
-  ['witnessv0scripthash',['WitnessV0ScriptHash',['../struct_witness_v0_script_hash.html#a9606cdc999cc11c11460239e2e876534',1,'WitnessV0ScriptHash::WitnessV0ScriptHash()'],['../struct_witness_v0_script_hash.html#a7155d2f030dd72dc668a92a834c10081',1,'WitnessV0ScriptHash::WitnessV0ScriptHash(const uint256 &amp;hash)']]],
+  ['witnessv0scripthash',['WitnessV0ScriptHash',['../struct_witness_v0_script_hash.html#a9606cdc999cc11c11460239e2e876534',1,'WitnessV0ScriptHash::WitnessV0ScriptHash()'],['../struct_witness_v0_script_hash.html#a7155d2f030dd72dc668a92a834c10081',1,'WitnessV0ScriptHash::WitnessV0ScriptHash(const uint256 &amp;hash)'],['../struct_witness_v0_script_hash.html#a7d35a8561d11a860dbbf7a658c23a090',1,'WitnessV0ScriptHash::WitnessV0ScriptHash(const CScript &amp;script)']]],
   ['workqueue',['WorkQueue',['../class_work_queue.html#ab2a78beabe5dc7ab44c7808d943f09f1',1,'WorkQueue']]],
   ['wrapbigendian',['WrapBigEndian',['../serialize_8h.html#a35ad282a6aaa50b2e2fa7ae4df4aac7b',1,'serialize.h']]],
   ['wrapvarint',['WrapVarInt',['../serialize_8h.html#a34a2832c24336aea3c1bf29fa109bc4e',1,'serialize.h']]],

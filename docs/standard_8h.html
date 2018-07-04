@@ -215,7 +215,7 @@ Variables</h2></td></tr>
 <li><a class="el" href="struct_witness_unknown.html" title="CTxDestination subtype to encode any future Witness version. ">WitnessUnknown</a>: TX_WITNESS_UNKNOWN destination (P2W???) A CTxDestination is the internal data type encoded in a bitcoin address </li>
 </ul>
 
-<p>Definition at line <a class="el" href="standard_8h_source.html#l00122">122</a> of file <a class="el" href="standard_8h_source.html">standard.h</a>.</p>
+<p>Definition at line <a class="el" href="standard_8h_source.html#l00123">123</a> of file <a class="el" href="standard_8h_source.html">standard.h</a>.</p>
 
 </div>
 </div>
@@ -284,7 +284,7 @@ Variables</h2></td></tr>
 <p>Parse a standard scriptPubKey for the destination address. </p>
 <p>Assigns result to the addressRet parameter and returns true if successful. For multisig scripts, instead use ExtractDestinations. Currently only works for P2PK, P2PKH, P2SH, P2WPKH, and P2WSH scripts. </p>
 
-<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00159">159</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
+<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00165">165</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -342,7 +342,7 @@ Here is the caller graph for this function:</div>
 <p>For multisig scripts, this populates the addressRet vector with the pubkey IDs and nRequiredRet with the n required to spend. For other destinations, addressRet is populated with a single value and nRequiredRet is set to 1. Returns true if successful. Currently does not extract address from pay-to-witness scripts.</p>
 <p>Note: this function confuses destinations (a subset of CScripts that are encodable as an address) with key identifiers (of keys involved in a <a class="el" href="class_c_script.html" title="Serialized script, used inside transaction inputs and outputs. ">CScript</a>), and its use should be phased out. </p>
 
-<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00206">206</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
+<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00212">212</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -377,7 +377,7 @@ Here is the caller graph for this function:</div>
 <p>Generate a Bitcoin scriptPubKey for the given CTxDestination. </p>
 <p>Returns a P2PKH script for a <a class="el" href="class_c_key_i_d.html" title="A reference to a CKey: the Hash160 of its serialized public key. ">CKeyID</a> destination, a P2SH script for a <a class="el" href="class_c_script_i_d.html" title="A reference to a CScript: the Hash160 of its serialization (see script.h) ">CScriptID</a>, and an empty script for <a class="el" href="class_c_no_destination.html">CNoDestination</a>. </p>
 
-<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00295">295</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
+<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00301">301</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -414,7 +414,7 @@ Here is the caller graph for this function:</div>
 
 <p>Generate a multisig script. </p>
 
-<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00308">308</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
+<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00314">314</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -448,7 +448,7 @@ Here is the caller graph for this function:</div>
 
 <p>Generate a P2PK script for the given pubkey. </p>
 
-<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00303">303</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
+<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00309">309</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -484,12 +484,13 @@ Here is the caller graph for this function:</div>
 <p>If the redeem script is P2PK or P2PKH, this returns a P2WPKH script, otherwise it returns a P2WSH script.</p>
 <p>TODO: replace calls to GetScriptForWitness with GetScriptForDestination using the various witness-specific CTxDestination subtypes. </p>
 
-<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00319">319</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
+<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00325">325</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="standard_8h_a9230738c0c1cfbe24edfd385e502ad83_cgraph.svg" width="1384" height="536"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="standard_8h_a9230738c0c1cfbe24edfd385e502ad83_cgraph.svg" width="1384" height="544"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -518,7 +519,7 @@ Here is the caller graph for this function:</div>
 
 <p>Get the name of a txnouttype as a C string, or nullptr if unknown. </p>
 
-<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00021">21</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
+<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00027">27</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -552,7 +553,7 @@ Here is the caller graph for this function:</div>
 
 <p>Check whether a CTxDestination is a <a class="el" href="class_c_no_destination.html">CNoDestination</a>. </p>
 
-<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00337">337</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
+<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00341">341</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -605,7 +606,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if script matches standard template </dd></dl>
 
-<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00084">84</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
+<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00090">90</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -637,7 +638,7 @@ Here is the caller graph for this function:</div>
 <p>A data carrying output is an unspendable output containing data. </p>
 <p>The script type is designated as TX_NULL_DATA. </p>
 
-<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00016">16</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
+<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00017">17</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
 
 </div>
 </div>
@@ -653,14 +654,14 @@ Here is the caller graph for this function:</div>
 
 <p>Maximum size of TX_NULL_DATA scripts that this node considers standard. </p>
 
-<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00017">17</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
+<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00018">18</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 4 2018 09:29:56 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 4 2018 09:38:29 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
