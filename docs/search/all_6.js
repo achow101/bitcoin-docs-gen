@@ -253,7 +253,6 @@ var searchData=
   ['frelaytxes',['fRelayTxes',['../struct_node_eviction_candidate.html#ae731ffd18e237d5d4055a52fbbd231ac',1,'NodeEvictionCandidate::fRelayTxes()'],['../class_c_node_stats.html#a2a5592713ed3de8d19057b0c86632af2',1,'CNodeStats::fRelayTxes()'],['../class_c_node.html#ab387bb0c4ffd42e3f0aea233dca0e301',1,'CNode::fRelayTxes()'],['../net_8cpp.html#a7935254c613d6f3cdadd3ce45f7efbff',1,'fRelayTxes():&#160;net.cpp'],['../net_8h.html#a7935254c613d6f3cdadd3ce45f7efbff',1,'fRelayTxes():&#160;net.cpp']]],
   ['frelevantservices',['fRelevantServices',['../struct_node_eviction_candidate.html#ac7c9a7aebfb7fce1e97a49f49ed68ab9',1,'NodeEvictionCandidate']]],
   ['freopen',['freopen',['../namespacefsbridge.html#a48c28561938a368ff7dbbf4515920f50',1,'fsbridge']]],
-  ['frequestshutdown',['fRequestShutdown',['../init_8cpp.html#ad099182cc3731bd097628912ebe4cc7d',1,'init.cpp']]],
   ['frequirestandard',['fRequireStandard',['../class_c_chain_params.html#abc615d2750d847e1eac0ecb7fc8d2da8',1,'CChainParams::fRequireStandard()'],['../validation_8cpp.html#aeb58edf621890f752a9883c90a785ccf',1,'fRequireStandard():&#160;validation.cpp'],['../validation_8h.html#aeb58edf621890f752a9883c90a785ccf',1,'fRequireStandard():&#160;validation.cpp']]],
   ['fresh',['FRESH',['../struct_c_coins_cache_entry.html#a1d5ac74da0f6ff5ab056e47ce79753c7aae43958b088ff7b6e4f0daaafff00816',1,'CCoinsCacheEntry']]],
   ['frompeer',['fromPeer',['../struct_c_orphan_tx.html#a06fa313a474fd4e6d0ed20bda7cbe69c',1,'COrphanTx']]],

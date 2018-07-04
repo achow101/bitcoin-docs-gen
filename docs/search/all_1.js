@@ -6,6 +6,7 @@ var searchData=
   ['abandontransaction',['abandonTransaction',['../classinterfaces_1_1_wallet.html#ae9334a2ab694535b0a48201ca8ba4a2b',1,'interfaces::Wallet::abandonTransaction()'],['../group__map_wallet.html#ga9a4633bfb89da7a4afa04356a74b7970',1,'CWallet::AbandonTransaction()']]],
   ['abandontx',['abandonTx',['../class_transaction_view.html#a8dc3e9fc910cec4f6764d84c21941180',1,'TransactionView']]],
   ['abortrescan',['abortRescan',['../classinterfaces_1_1_wallet.html#a6800b176d05af90b8de45d41bb2bab76',1,'interfaces::Wallet::abortRescan()'],['../class_c_wallet.html#aeab3c7de69056b5a277dd94f96a100fb',1,'CWallet::AbortRescan()'],['../rpcdump_8cpp.html#a9df6d8c784683e22309cb2627d21b1f2',1,'abortrescan(const JSONRPCRequest &amp;request):&#160;rpcdump.cpp'],['../rpcwallet_8cpp.html#a9df6d8c784683e22309cb2627d21b1f2',1,'abortrescan(const JSONRPCRequest &amp;request):&#160;rpcdump.cpp']]],
+  ['abortshutdown',['AbortShutdown',['../shutdown_8cpp.html#adab92c6e8227f58931d4e9b676c437d2',1,'AbortShutdown():&#160;shutdown.cpp'],['../shutdown_8h.html#adab92c6e8227f58931d4e9b676c437d2',1,'AbortShutdown():&#160;shutdown.cpp']]],
   ['aboutaction',['aboutAction',['../class_bitcoin_g_u_i.html#a7d2e593f05118c4f43ace4a7e5bac097',1,'BitcoinGUI']]],
   ['aboutclicked',['aboutClicked',['../class_bitcoin_g_u_i.html#a684a65883555153c40ccff323adc22e9',1,'BitcoinGUI']]],
   ['aboutqtaction',['aboutQtAction',['../class_bitcoin_g_u_i.html#ac31e10c2366196d4d75ad1a7da4968d8',1,'BitcoinGUI']]],

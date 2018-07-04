@@ -97,7 +97,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="validationinterface_8h_source.html">validationinterface.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="init_8h_source.html">init.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="block_8h_source.html">primitives/block.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="scheduler_8h_source.html">scheduler.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="sync_8h_source.html">sync.h</a>&gt;</code><br />
@@ -111,7 +110,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for validationinterface.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8cpp__incl.svg" width="4919" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8cpp__incl.svg" width="4520" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="validationinterface_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -159,7 +159,7 @@ Functions</h2></td></tr>
 <p>Pushes a function to callback onto the notification queue, guaranteeing any callbacks generated prior to now are finished when the function is called. </p>
 <p>Be very careful blocking on func to be called if any locks are held - validation interface clients may not be able to make progress as they often wait for things like cs_main, so blocking until func is called with cs_main will result in a deadlock (that DEBUG_LOCKORDER will miss). </p>
 
-<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00119">119</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00118">118</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -183,7 +183,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00072">72</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00071">71</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -210,7 +210,7 @@ Here is the caller graph for this function:</div>
 
 <p>Register a wallet to receive updates from core. </p>
 
-<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00077">77</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00076">76</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -243,7 +243,7 @@ Here is the caller graph for this function:</div>
 
 <p>This is a synonym for the following, which asserts certain locks are not held: std::promise&lt;void&gt; promise; CallFunctionInValidationInterfaceQueue([&amp;promise] { promise.set_value(); }); promise.get_future().wait();. </p>
 
-<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00123">123</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00122">122</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -276,7 +276,7 @@ Here is the caller graph for this function:</div>
 
 <p>Unregister all wallets from core. </p>
 
-<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00103">103</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00102">102</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -303,7 +303,7 @@ Here is the caller graph for this function:</div>
 
 <p>Unregister a wallet from core. </p>
 
-<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00090">90</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00089">89</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -324,7 +324,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 4 2018 12:40:47 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 4 2018 13:35:40 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

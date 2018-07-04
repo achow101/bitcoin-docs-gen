@@ -93,7 +93,6 @@ var searchData=
   ['freespacechecker',['FreespaceChecker',['../class_freespace_checker.html#a3b09323069e9e4306b4cdaed2852e0d8',1,'FreespaceChecker']]],
   ['freindex',['fReindex',['../validation_8cpp.html#a96ebd8ae8166b2e0890ea557c95d378a',1,'validation.cpp']]],
   ['freopen',['freopen',['../namespacefsbridge.html#a48c28561938a368ff7dbbf4515920f50',1,'fsbridge']]],
-  ['frequestshutdown',['fRequestShutdown',['../init_8cpp.html#ad099182cc3731bd097628912ebe4cc7d',1,'init.cpp']]],
   ['front',['front',['../classprevector.html#acb71926f63896b2bd6f4da4ffe515d19',1,'prevector::front()'],['../classprevector.html#a069f049e79ba7988fe404e145c863f0b',1,'prevector::front() const ']]],
   ['functioncallback',['FunctionCallback',['../class_function_callback.html#aec0560a8c878b04bc1466f576710739a',1,'FunctionCallback']]],
   ['fundtransaction',['FundTransaction',['../group___actions.html#ga15a558d8fa0db299f38ed1e45a60aaaf',1,'CWallet']]]
