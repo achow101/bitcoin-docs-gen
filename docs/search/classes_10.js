@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['rebind',['rebind',['../structzero__after__free__allocator_1_1rebind.html',1,'zero_after_free_allocator']]],
   ['rebind',['rebind',['../structsecure__allocator_1_1rebind.html',1,'secure_allocator']]],
+  ['rebind',['rebind',['../structzero__after__free__allocator_1_1rebind.html',1,'zero_after_free_allocator']]],
   ['receivecoinsdialog',['ReceiveCoinsDialog',['../class_receive_coins_dialog.html',1,'']]],
   ['receiverequestdialog',['ReceiveRequestDialog',['../class_receive_request_dialog.html',1,'']]],
   ['recentrequestentry',['RecentRequestEntry',['../class_recent_request_entry.html',1,'']]],

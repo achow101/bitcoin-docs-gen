@@ -16,6 +16,7 @@ var searchData=
   ['width',['WIDTH',['../classbase__uint.html#a6af1fd0c0821f81b7d0197490f104718',1,'base_uint::WIDTH()'],['../classbase__blob.html#a41c4b49573103dc6afc184acdb19d123',1,'base_blob::WIDTH()']]],
   ['window',['window',['../class_bitcoin_application.html#a5b6f0bbe1f8a1c1f3174079233a5af76',1,'BitcoinApplication']]],
   ['withintarget',['withinTarget',['../struct_estimator_bucket.html#a83642861f96b23d40a1acd6224b58769',1,'EstimatorBucket']]],
+  ['witness_5fscript',['witness_script',['../struct_signature_data.html#adf378063234367395a35bd87453e2606',1,'SignatureData']]],
   ['wnaf',['wnaf',['../structbench__inv__t.html#ad3f27ccce40e43c4d9efd6942b911de1',1,'bench_inv_t']]],
   ['writeoptions',['writeoptions',['../class_c_d_b_wrapper.html#a9e8fd519131e35de3bb211f7388d9a18',1,'CDBWrapper']]],
   ['wtx',['wtx',['../class_wallet_model_transaction.html#a0515301adbc428219c1e230b45099574',1,'WalletModelTransaction']]],

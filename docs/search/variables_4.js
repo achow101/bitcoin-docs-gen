@@ -47,5 +47,6 @@ var searchData=
   ['dtxrate',['dTxRate',['../struct_chain_tx_data.html#a66b2339aa072c011b56ad18c5d37f39e',1,'ChainTxData']]],
   ['dummy',['dummy',['../structtinyformat_1_1detail_1_1is__convertible_1_1fail.html#a5d18f7fcac212bbe55692586aee8954d',1,'tinyformat::detail::is_convertible::fail::dummy()'],['../structtinyformat_1_1detail_1_1is__convertible_1_1succeed.html#a7f25789e5f4b4d4fbc8999f9f096cbf6',1,'tinyformat::detail::is_convertible::succeed::dummy()']]],
   ['dummy_5fsignature_5fcreator',['DUMMY_SIGNATURE_CREATOR',['../sign_8cpp.html#adeb428a7d137dcfc2a1f29dd1a562ca8',1,'DUMMY_SIGNATURE_CREATOR():&#160;sign.cpp'],['../sign_8h.html#adeb428a7d137dcfc2a1f29dd1a562ca8',1,'DUMMY_SIGNATURE_CREATOR():&#160;sign.cpp']]],
+  ['dummy_5fsigning_5fprovider',['DUMMY_SIGNING_PROVIDER',['../sign_8cpp.html#a129cc81972e09e3ba1c29777eb9d0ed0',1,'DUMMY_SIGNING_PROVIDER():&#160;sign.cpp'],['../sign_8h.html#a129cc81972e09e3ba1c29777eb9d0ed0',1,'DUMMY_SIGNING_PROVIDER():&#160;sign.cpp']]],
   ['dustrelayfee',['dustRelayFee',['../policy_8cpp.html#ad66662a4eb8d932f748525ccd4c902cc',1,'dustRelayFee():&#160;policy.cpp'],['../policy_8h.html#ad66662a4eb8d932f748525ccd4c902cc',1,'dustRelayFee():&#160;policy.cpp']]]
 ];
