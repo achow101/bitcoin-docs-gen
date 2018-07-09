@@ -294,7 +294,7 @@ var searchData=
   ['sending',['Sending',['../struct_address_table_entry.html#afe73719f8e77468e712ed9006f437639af6c38ef25827387d391de520f32ec7cf',1,'AddressTableEntry']]],
   ['sendingtab',['SendingTab',['../class_address_book_page.html#a7ef3cf6c3e4613894af313a05335dbe3a0317158231d27f7965037521fea1998d',1,'AddressBookPage']]],
   ['sendmessage',['SendMessage',['../class_c_z_m_q_abstract_publish_notifier.html#a1bec52cf2e0ef829bbd067cac11acfdd',1,'CZMQAbstractPublishNotifier']]],
-  ['sendmessages',['SendMessages',['../class_net_events_interface.html#a80a4cd6e28aab00f0fbee34bac4f34bb',1,'NetEventsInterface::SendMessages()'],['../class_peer_logic_validation.html#ab3d9000f1eff3fc687db4645297c6f96',1,'PeerLogicValidation::SendMessages()']]],
+  ['sendmessages',['SendMessages',['../class_net_events_interface.html#a45dadd7c44329a4d0e7e19964bf7fe09',1,'NetEventsInterface::SendMessages()'],['../class_peer_logic_validation.html#a04dab16e6310bf18d432111cb6b126ad',1,'PeerLogicValidation::SendMessages()']]],
   ['sendtoaddress',['SendToAddress',['../class_transaction_record.html#afb76f5876fba21c3d2c388b98a35d685a92ce91a965ee8cd1c3ca60fe415b0eb0',1,'TransactionRecord']]],
   ['sendtoother',['SendToOther',['../class_transaction_record.html#afb76f5876fba21c3d2c388b98a35d685a6bcc2354c3ab1fcaaeb8c1aab51dc889',1,'TransactionRecord']]],
   ['sendtoself',['SendToSelf',['../class_transaction_record.html#afb76f5876fba21c3d2c388b98a35d685abbd291cccd8b7d4c1dadfbd69db12c6d',1,'TransactionRecord']]],

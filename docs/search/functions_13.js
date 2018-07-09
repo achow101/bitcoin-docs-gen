@@ -84,7 +84,7 @@ var searchData=
   ['sendcoinsreturn',['SendCoinsReturn',['../struct_wallet_model_1_1_send_coins_return.html#a40641a33f68416c2e10493db08e8b789',1,'WalletModel::SendCoinsReturn']]],
   ['sendconfirmationdialog',['SendConfirmationDialog',['../class_send_confirmation_dialog.html#ad7cb11e5fe1c218a3e607c621061c3b1',1,'SendConfirmationDialog']]],
   ['sendmessage',['SendMessage',['../class_c_z_m_q_abstract_publish_notifier.html#a1bec52cf2e0ef829bbd067cac11acfdd',1,'CZMQAbstractPublishNotifier']]],
-  ['sendmessages',['SendMessages',['../class_net_events_interface.html#a80a4cd6e28aab00f0fbee34bac4f34bb',1,'NetEventsInterface::SendMessages()'],['../class_peer_logic_validation.html#ab3d9000f1eff3fc687db4645297c6f96',1,'PeerLogicValidation::SendMessages()']]],
+  ['sendmessages',['SendMessages',['../class_net_events_interface.html#a45dadd7c44329a4d0e7e19964bf7fe09',1,'NetEventsInterface::SendMessages()'],['../class_peer_logic_validation.html#a04dab16e6310bf18d432111cb6b126ad',1,'PeerLogicValidation::SendMessages()']]],
   ['sequencelocks',['SequenceLocks',['../tx__verify_8cpp.html#af23a43e92a13ed6bac9f342aa5f935c6',1,'SequenceLocks(const CTransaction &amp;tx, int flags, std::vector&lt; int &gt; *prevHeights, const CBlockIndex &amp;block):&#160;tx_verify.cpp'],['../tx__verify_8h.html#af23a43e92a13ed6bac9f342aa5f935c6',1,'SequenceLocks(const CTransaction &amp;tx, int flags, std::vector&lt; int &gt; *prevHeights, const CBlockIndex &amp;block):&#160;tx_verify.cpp']]],
   ['ser_5fdouble_5fto_5fuint64',['ser_double_to_uint64',['../serialize_8h.html#adda9ffcaeecf5875154f1ea3aba87a64',1,'serialize.h']]],
   ['ser_5ffloat_5fto_5fuint32',['ser_float_to_uint32',['../serialize_8h.html#a5c61b62776def6f9edd0b5538e556f38',1,'serialize.h']]],

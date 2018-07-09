@@ -133,9 +133,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adaa77fc4eee771d8e64b6c61f52c4266"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_peer_logic_validation.html#adaa77fc4eee771d8e64b6c61f52c4266">ProcessMessages</a> (<a class="el" href="class_c_node.html">CNode</a> *pfrom, std::atomic&lt; bool &gt; &amp;interrupt) override</td></tr>
 <tr class="memdesc:adaa77fc4eee771d8e64b6c61f52c4266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process protocol messages received from a given node.  <a href="#adaa77fc4eee771d8e64b6c61f52c4266">More...</a><br /></td></tr>
 <tr class="separator:adaa77fc4eee771d8e64b6c61f52c4266"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3d9000f1eff3fc687db4645297c6f96"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_peer_logic_validation.html#ab3d9000f1eff3fc687db4645297c6f96">SendMessages</a> (<a class="el" href="class_c_node.html">CNode</a> *pto, std::atomic&lt; bool &gt; &amp;interrupt) override <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(pto-&gt; cs_sendProcessing)</td></tr>
-<tr class="memdesc:ab3d9000f1eff3fc687db4645297c6f96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send queued protocol messages to be sent to a give node.  <a href="#ab3d9000f1eff3fc687db4645297c6f96">More...</a><br /></td></tr>
-<tr class="separator:ab3d9000f1eff3fc687db4645297c6f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04dab16e6310bf18d432111cb6b126ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_peer_logic_validation.html#a04dab16e6310bf18d432111cb6b126ad">SendMessages</a> (<a class="el" href="class_c_node.html">CNode</a> *pto) override <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(pto-&gt; cs_sendProcessing)</td></tr>
+<tr class="memdesc:a04dab16e6310bf18d432111cb6b126ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send queued protocol messages to be sent to a give node.  <a href="#a04dab16e6310bf18d432111cb6b126ad">More...</a><br /></td></tr>
+<tr class="separator:a04dab16e6310bf18d432111cb6b126ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a847dcca3d1a4475ba1bfcaae6da76bad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_peer_logic_validation.html#a847dcca3d1a4475ba1bfcaae6da76bad">ConsiderEviction</a> (<a class="el" href="class_c_node.html">CNode</a> *pto, int64_t time_in_seconds)</td></tr>
 <tr class="memdesc:a847dcca3d1a4475ba1bfcaae6da76bad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consider evicting an outbound peer based on the amount of time they've been behind our tip.  <a href="#a847dcca3d1a4475ba1bfcaae6da76bad">More...</a><br /></td></tr>
 <tr class="separator:a847dcca3d1a4475ba1bfcaae6da76bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -405,7 +405,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_peer_logic_validation_a847dcca3d1a4475ba1bfcaae6da76bad_icgraph.svg" width="352" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_peer_logic_validation_a847dcca3d1a4475ba1bfcaae6da76bad_icgraph.svg" width="352" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -610,6 +611,13 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Process protocol messages received from a given node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfrom</td><td>The node which we have received messages from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interrupt</td><td>Interrupt condition for processing threads </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="class_net_events_interface.html#aa91d320a8ab79997fd7e8773096121e9">NetEventsInterface</a>.</p>
 
@@ -624,7 +632,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ab3d9000f1eff3fc687db4645297c6f96"></a>
+<a class="anchor" id="a04dab16e6310bf18d432111cb6b126ad"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -635,18 +643,8 @@ Here is the call graph for this function:</div>
           <td class="memname">bool PeerLogicValidation::SendMessages </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_c_node.html">CNode</a> *&#160;</td>
-          <td class="paramname"><em>pto</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::atomic&lt; bool &gt; &amp;&#160;</td>
-          <td class="paramname"><em>interrupt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; cs_sendProcessing)</td>
+          <td class="paramname"><em>pto</em></td><td>)</td>
+          <td> -&gt; cs_sendProcessing)</td>
         </tr>
       </table>
   </td>
@@ -660,20 +658,20 @@ Here is the call graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pto</td><td>The node which we are sending messages to. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">interrupt</td><td>Interrupt condition for processing threads </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if there is more work to be done </dd></dl>
 
-<p>Implements <a class="el" href="class_net_events_interface.html#a80a4cd6e28aab00f0fbee34bac4f34bb">NetEventsInterface</a>.</p>
+<p>Implements <a class="el" href="class_net_events_interface.html#a45dadd7c44329a4d0e7e19964bf7fe09">NetEventsInterface</a>.</p>
 
 <p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l03221">3221</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_peer_logic_validation_ab3d9000f1eff3fc687db4645297c6f96_cgraph.svg" width="1134" height="2239"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_peer_logic_validation_a04dab16e6310bf18d432111cb6b126ad_cgraph.svg" width="1134" height="2239"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -774,7 +772,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net__processing_8h_source.html#l00090">90</a> of file <a class="el" href="net__processing_8h_source.html">net_processing.h</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8h_source.html#l00094">94</a> of file <a class="el" href="net__processing_8h_source.html">net_processing.h</a>.</p>
 
 </div>
 </div>
@@ -785,7 +783,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 9 2018 13:57:22 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 9 2018 14:52:15 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
