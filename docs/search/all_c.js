@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['label',['label',['../struct_address_table_entry.html#a4a427495652b7716f84aa88b2cb4f296',1,'AddressTableEntry::label()'],['../class_send_coins_recipient.html#a0152933f2c0cb9164d2fcb36bca83666',1,'SendCoinsRecipient::label()'],['../class_address_table_model.html#a432276ac4504e926466072561c5ddb33aaf8f25cebb70b8a394d6c0f23c941a32',1,'AddressTableModel::Label()'],['../class_recent_requests_table_model.html#a720ff50ef9f8e016a5d2bbd8fd7fb41da6122ebd2a6dc081e6b25727cd4962fad',1,'RecentRequestsTableModel::Label()']]],
+  ['label',['Label',['../class_address_table_model.html#a432276ac4504e926466072561c5ddb33aaf8f25cebb70b8a394d6c0f23c941a32',1,'AddressTableModel::Label()'],['../class_recent_requests_table_model.html#a720ff50ef9f8e016a5d2bbd8fd7fb41da6122ebd2a6dc081e6b25727cd4962fad',1,'RecentRequestsTableModel::Label()'],['../struct_address_table_entry.html#a4a427495652b7716f84aa88b2cb4f296',1,'AddressTableEntry::label()'],['../class_send_coins_recipient.html#a0152933f2c0cb9164d2fcb36bca83666',1,'SendCoinsRecipient::label()']]],
   ['label_5fcolumn_5fwidth',['LABEL_COLUMN_WIDTH',['../class_receive_coins_dialog.html#a348824c8475841e6e0cb35fdf9090656a51bc59ac21abedb1b2f4119e9723da21',1,'ReceiveCoinsDialog']]],
   ['labelblocksicon',['labelBlocksIcon',['../class_bitcoin_g_u_i.html#a785b5775f7c3eed2d4aa9785875ed1cb',1,'BitcoinGUI']]],
   ['labelforaddress',['labelForAddress',['../class_address_table_model.html#a1c39ce19eecfc9f3ace10435b162607f',1,'AddressTableModel']]],
@@ -25,7 +25,7 @@ var searchData=
   ['le32toh',['le32toh',['../endian_8h.html#a3b4e83868bbf53b2572b736fc146a319',1,'endian.h']]],
   ['le64toh',['le64toh',['../endian_8h.html#afc03933561fbd136419c5e9649f975df',1,'endian.h']]],
   ['learnallrelatedscripts',['LearnAllRelatedScripts',['../class_c_wallet.html#a3289f497f44df1ad3d758ee2291bece4',1,'CWallet']]],
-  ['learnrelatedscripts',['learnRelatedScripts',['../classinterfaces_1_1_wallet.html#aec8b3cdba7c085ca617bb8fedfd6b2fc',1,'interfaces::Wallet::learnRelatedScripts()'],['../class_c_wallet.html#a209237e7f3f95ca6f5faab3357c2340b',1,'CWallet::LearnRelatedScripts()']]],
+  ['learnrelatedscripts',['LearnRelatedScripts',['../class_c_wallet.html#a209237e7f3f95ca6f5faab3357c2340b',1,'CWallet::LearnRelatedScripts()'],['../classinterfaces_1_1_wallet.html#aec8b3cdba7c085ca617bb8fedfd6b2fc',1,'interfaces::Wallet::learnRelatedScripts()']]],
   ['leave_5fcritical_5fsection',['LEAVE_CRITICAL_SECTION',['../sync_8h.html#a2b89bac48633dc1532691f1106a55f6c',1,'sync.h']]],
   ['left',['left',['../structmemusage_1_1stl__tree__node.html#a64defd9406daa36f6a35a6b2d7d356ed',1,'memusage::stl_tree_node']]],
   ['leftmempool',['leftMempool',['../struct_estimator_bucket.html#a75ca2a4f4a3264c75c69755bc93e79e5',1,'EstimatorBucket']]],

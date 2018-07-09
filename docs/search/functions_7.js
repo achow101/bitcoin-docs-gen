@@ -228,6 +228,7 @@ var searchData=
   ['getnumblocks',['getNumBlocks',['../classinterfaces_1_1_node.html#ad84d08f89120b9a365713a4429e30e01',1,'interfaces::Node']]],
   ['getnumconnections',['getNumConnections',['../class_client_model.html#ab893445b458943e3112770b026195067',1,'ClientModel']]],
   ['getnumcores',['GetNumCores',['../util_8cpp.html#ae39f49506868759c202b588f7ae2c2d7',1,'GetNumCores():&#160;util.cpp'],['../util_8h.html#ae39f49506868759c202b588f7ae2c2d7',1,'GetNumCores():&#160;util.cpp']]],
+  ['getnumtransactions',['GetNumTransactions',['../class_c_partial_merkle_tree.html#a259e282eba7e61ae72c3569ec3ad23b1',1,'CPartialMerkleTree']]],
   ['getobfuscatekey',['GetObfuscateKey',['../namespacedbwrapper__private.html#ab98d46ebc2a1c16becdf271f913b33a3',1,'dbwrapper_private']]],
   ['getobjmap',['getObjMap',['../class_uni_value.html#af4df6d15c7f9e06b1743f0b562777281',1,'UniValue']]],
   ['getoldestkeypooltime',['GetOldestKeyPoolTime',['../group___actions.html#ga2555a9442e58b3c5593fef21f1b39d2d',1,'CWallet']]],
