@@ -33,6 +33,7 @@ var searchData=
   ['sha256_2ecpp',['sha256.cpp',['../sha256_8cpp.html',1,'']]],
   ['sha256_2eh',['sha256.h',['../sha256_8h.html',1,'']]],
   ['sha256_5favx2_2ecpp',['sha256_avx2.cpp',['../sha256__avx2_8cpp.html',1,'']]],
+  ['sha256_5fshani_2ecpp',['sha256_shani.cpp',['../sha256__shani_8cpp.html',1,'']]],
   ['sha256_5fsse4_2ecpp',['sha256_sse4.cpp',['../sha256__sse4_8cpp.html',1,'']]],
   ['sha256_5fsse41_2ecpp',['sha256_sse41.cpp',['../sha256__sse41_8cpp.html',1,'']]],
   ['sha512_2ecpp',['sha512.cpp',['../sha512_8cpp.html',1,'']]],

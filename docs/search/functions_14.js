@@ -111,6 +111,8 @@ var searchData=
   ['transactiontablemodel',['TransactionTableModel',['../class_transaction_table_model.html#addebfd4c35896f17a6a9fec9f40eeeb7',1,'TransactionTableModel']]],
   ['transactiontablepriv',['TransactionTablePriv',['../class_transaction_table_priv.html#a2fbb11118bf2b7b54aa35f6ba8646dee',1,'TransactionTablePriv']]],
   ['transactionview',['TransactionView',['../class_transaction_view.html#a6bad80e62c684ad1e77250510c9323aa',1,'TransactionView']]],
+  ['transform',['Transform',['../namespacesha256__shani.html#a97d2e267c87add9a1172d948e05ba471',1,'sha256_shani']]],
+  ['transform_5f2way',['Transform_2way',['../namespacesha256d64__shani.html#a89a75e7c1bb74c818a5e24761563b7ba',1,'sha256d64_shani']]],
   ['transform_5f4way',['Transform_4way',['../namespacesha256d64__sse41.html#acdc3f643aa1b61d0a185e718ced1ca44',1,'sha256d64_sse41']]],
   ['transform_5f8way',['Transform_8way',['../namespacesha256d64__avx2.html#adec1500e9e3a0f51cdea56a7a89b0807',1,'sha256d64_avx2']]],
   ['traverseandbuild',['TraverseAndBuild',['../class_c_partial_merkle_tree.html#a62bdcaf5b5ee6c6327ef67fb027a5fef',1,'CPartialMerkleTree']]],

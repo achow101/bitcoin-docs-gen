@@ -115,6 +115,10 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacesha256d64__avx2"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesha256d64__avx2.html">sha256d64_avx2</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacesha256d64__shani"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesha256d64__shani.html">sha256d64_shani</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacesha256__shani"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesha256__shani.html">sha256_shani</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacesha256"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesha256.html">sha256</a></td></tr>
 <tr class="memdesc:namespacesha256"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal SHA-256 implementation. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,6 +129,10 @@ Functions</h2></td></tr>
 <tr class="separator:acdc3f643aa1b61d0a185e718ced1ca44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adec1500e9e3a0f51cdea56a7a89b0807"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesha256d64__avx2.html#adec1500e9e3a0f51cdea56a7a89b0807">sha256d64_avx2::Transform_8way</a> (unsigned char *out, const unsigned char *in)</td></tr>
 <tr class="separator:adec1500e9e3a0f51cdea56a7a89b0807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89a75e7c1bb74c818a5e24761563b7ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesha256d64__shani.html#a89a75e7c1bb74c818a5e24761563b7ba">sha256d64_shani::Transform_2way</a> (unsigned char *out, const unsigned char *in)</td></tr>
+<tr class="separator:a89a75e7c1bb74c818a5e24761563b7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97d2e267c87add9a1172d948e05ba471"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesha256__shani.html#a97d2e267c87add9a1172d948e05ba471">sha256_shani::Transform</a> (uint32_t *s, const unsigned char *chunk, size_t blocks)</td></tr>
+<tr class="separator:a97d2e267c87add9a1172d948e05ba471"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc2dcb8510bce07b21a96bd56aafa712"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sha256_8cpp.html#abc2dcb8510bce07b21a96bd56aafa712">SHA256AutoDetect</a> ()</td></tr>
 <tr class="memdesc:abc2dcb8510bce07b21a96bd56aafa712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Autodetect the best available SHA256 implementation.  <a href="#abc2dcb8510bce07b21a96bd56aafa712">More...</a><br /></td></tr>
 <tr class="separator:abc2dcb8510bce07b21a96bd56aafa712"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,12 +157,13 @@ Functions</h2></td></tr>
 <p>Autodetect the best available SHA256 implementation. </p>
 <p>Returns the name of the implementation. </p>
 
-<p>Definition at line <a class="el" href="sha256_8cpp_source.html#l00555">555</a> of file <a class="el" href="sha256_8cpp_source.html">sha256.cpp</a>.</p>
+<p>Definition at line <a class="el" href="sha256_8cpp_source.html#l00573">573</a> of file <a class="el" href="sha256_8cpp_source.html">sha256.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sha256_8cpp_abc2dcb8510bce07b21a96bd56aafa712_cgraph.svg" width="454" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sha256_8cpp_abc2dcb8510bce07b21a96bd56aafa712_cgraph.svg" width="454" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -200,7 +209,7 @@ Here is the caller graph for this function:</div>
 <p>Compute multiple double-SHA256's of 64-byte blobs. </p>
 <p>output: pointer to a blocks*32 byte output buffer input: pointer to a blocks*64 byte input buffer blocks: the number of hashes to compute. </p>
 
-<p>Definition at line <a class="el" href="sha256_8cpp_source.html#l00648">648</a> of file <a class="el" href="sha256_8cpp_source.html">sha256.cpp</a>.</p>
+<p>Definition at line <a class="el" href="sha256_8cpp_source.html#l00698">698</a> of file <a class="el" href="sha256_8cpp_source.html">sha256.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -214,7 +223,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 9 2018 19:07:43 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 9 2018 19:19:28 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
