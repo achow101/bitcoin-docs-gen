@@ -13,5 +13,7 @@ var searchData=
   ['zmqnotificationinterface_2ecpp',['zmqnotificationinterface.cpp',['../zmqnotificationinterface_8cpp.html',1,'']]],
   ['zmqnotificationinterface_2eh',['zmqnotificationinterface.h',['../zmqnotificationinterface_8h.html',1,'']]],
   ['zmqpublishnotifier_2ecpp',['zmqpublishnotifier.cpp',['../zmqpublishnotifier_8cpp.html',1,'']]],
-  ['zmqpublishnotifier_2eh',['zmqpublishnotifier.h',['../zmqpublishnotifier_8h.html',1,'']]]
+  ['zmqpublishnotifier_2eh',['zmqpublishnotifier.h',['../zmqpublishnotifier_8h.html',1,'']]],
+  ['zmqrpc_2ecpp',['zmqrpc.cpp',['../zmqrpc_8cpp.html',1,'']]],
+  ['zmqrpc_2eh',['zmqrpc.h',['../zmqrpc_8h.html',1,'']]]
 ];
