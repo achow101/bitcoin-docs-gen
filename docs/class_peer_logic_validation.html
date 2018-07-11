@@ -171,9 +171,6 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a406070080c92a1aa3f6ed8f9b4295df7 inherit pro_methods_class_c_validation_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_validation_interface.html#a406070080c92a1aa3f6ed8f9b4295df7">ChainStateFlushed</a> (const <a class="el" href="struct_c_block_locator.html">CBlockLocator</a> &amp;locator)</td></tr>
 <tr class="memdesc:a406070080c92a1aa3f6ed8f9b4295df7 inherit pro_methods_class_c_validation_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies listeners of the new active block chain on-disk.  <a href="#a406070080c92a1aa3f6ed8f9b4295df7">More...</a><br /></td></tr>
 <tr class="separator:a406070080c92a1aa3f6ed8f9b4295df7 inherit pro_methods_class_c_validation_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a981f5160a2370db0cd616c00d8bd5270 inherit pro_methods_class_c_validation_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_validation_interface.html#a981f5160a2370db0cd616c00d8bd5270">Inventory</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;hash)</td></tr>
-<tr class="memdesc:a981f5160a2370db0cd616c00d8bd5270 inherit pro_methods_class_c_validation_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies listeners about an inventory item being seen on the network.  <a href="#a981f5160a2370db0cd616c00d8bd5270">More...</a><br /></td></tr>
-<tr class="separator:a981f5160a2370db0cd616c00d8bd5270 inherit pro_methods_class_c_validation_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3473492a52200fb5678c0db596a5093a inherit pro_methods_class_c_validation_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_validation_interface.html#a3473492a52200fb5678c0db596a5093a">ResendWalletTransactions</a> (int64_t nBestBlockTime, <a class="el" href="class_c_connman.html">CConnman</a> *connman)</td></tr>
 <tr class="memdesc:a3473492a52200fb5678c0db596a5093a inherit pro_methods_class_c_validation_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells listeners to broadcast their data.  <a href="#a3473492a52200fb5678c0db596a5093a">More...</a><br /></td></tr>
 <tr class="separator:a3473492a52200fb5678c0db596a5093a inherit pro_methods_class_c_validation_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -349,7 +346,7 @@ Here is the call graph for this function:</div>
 <p>Evict extra outbound peers. </p>
 <p>If we think our tip may be stale, connect to an extra outbound </p>
 
-<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l03182">3182</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l03176">3176</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -393,7 +390,7 @@ Here is the caller graph for this function:</div>
 
 <p>Consider evicting an outbound peer based on the amount of time they've been behind our tip. </p>
 
-<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l03074">3074</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l03068">3068</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -427,7 +424,7 @@ Here is the caller graph for this function:</div>
 
 <p>If we have extra outbound peers, try to disconnect the one with the oldest block announcement. </p>
 
-<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l03127">3127</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l03121">3121</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -620,7 +617,7 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="class_net_events_interface.html#aa91d320a8ab79997fd7e8773096121e9">NetEventsInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l02952">2952</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l02946">2946</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -664,7 +661,7 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="class_net_events_interface.html#a45dadd7c44329a4d0e7e19964bf7fe09">NetEventsInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l03221">3221</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l03215">3215</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -781,7 +778,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 11 2018 11:22:30 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 11 2018 14:38:28 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

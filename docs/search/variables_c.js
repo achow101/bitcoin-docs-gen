@@ -147,7 +147,6 @@ var searchData=
   ['mapper',['mapper',['../class_edit_address_dialog.html#a9f94ebd0f13752be4bc279258983a7a1',1,'EditAddressDialog::mapper()'],['../class_options_dialog.html#ac9211061e50638b7f73e9bba835c5b53',1,'OptionsDialog::mapper()']]],
   ['mapperthirdpartytxurls',['mapperThirdPartyTxUrls',['../class_transaction_view.html#a44fe33f8549627ea35e0ab549d3acf48',1,'TransactionView']]],
   ['maprecvbytespermsgcmd',['mapRecvBytesPerMsgCmd',['../class_c_node_stats.html#ac14c5f2621d1535b2a7d9295585e2950',1,'CNodeStats::mapRecvBytesPerMsgCmd()'],['../class_c_node.html#a2fb06d8be1f078b8796dc5098f114d38',1,'CNode::mapRecvBytesPerMsgCmd()']]],
-  ['maprequestcount',['mapRequestCount',['../class_c_wallet.html#ade5f0fc0e722433b421c32f97bd873a8',1,'CWallet']]],
   ['mapscripts',['mapScripts',['../class_c_basic_key_store.html#a8e9fa81382129c1535a0ee7b0d9c8f3b',1,'CBasicKeyStore']]],
   ['mapsendbytespermsgcmd',['mapSendBytesPerMsgCmd',['../class_c_node_stats.html#a2979ff9e54e01402bfdb32f94276832b',1,'CNodeStats::mapSendBytesPerMsgCmd()'],['../class_c_node.html#a51e1156224dc77de9c0812f599f1bff4',1,'CNode::mapSendBytesPerMsgCmd()']]],
   ['mapsighashtypes',['mapSigHashTypes',['../core__write_8cpp.html#ae9b6b8f8a1b5c4049aff8e55a936c460',1,'core_write.cpp']]],

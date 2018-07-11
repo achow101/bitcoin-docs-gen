@@ -14,7 +14,6 @@ var searchData=
   ['color_5fblack',['COLOR_BLACK',['../guiconstants_8h.html#aba2a7fe77a7501e5844370eec0185207',1,'guiconstants.h']]],
   ['color_5fnegative',['COLOR_NEGATIVE',['../guiconstants_8h.html#ab6dd490a1fad1e7a1b19b8379a4a155b',1,'guiconstants.h']]],
   ['color_5ftx_5fstatus_5fdanger',['COLOR_TX_STATUS_DANGER',['../guiconstants_8h.html#a028e29bf3377918bf8bcaae57a756f54',1,'guiconstants.h']]],
-  ['color_5ftx_5fstatus_5foffline',['COLOR_TX_STATUS_OFFLINE',['../guiconstants_8h.html#a63c2f5fd5f1780fb3a77e6fdd9f33427',1,'guiconstants.h']]],
   ['color_5ftx_5fstatus_5fopenuntildate',['COLOR_TX_STATUS_OPENUNTILDATE',['../guiconstants_8h.html#a4828579cf1a85e087452ef6d828bf175',1,'guiconstants.h']]],
   ['color_5funconfirmed',['COLOR_UNCONFIRMED',['../guiconstants_8h.html#a3a7798e924111d2de3ca86ab4dbec5bf',1,'guiconstants.h']]],
   ['compactsize',['COMPACTSIZE',['../serialize_8h.html#abea2415cbb9469ff5b90adf057d7e440',1,'serialize.h']]],

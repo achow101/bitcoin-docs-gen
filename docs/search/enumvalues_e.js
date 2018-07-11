@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['offline',['Offline',['../class_transaction_status.html#aaa6cc19ca3509bbae72d0df1661f85cbaf8b9ab6fc1d08781bb94301e358171b6',1,'TransactionStatus']]],
   ['ok',['OK',['../class_address_table_model.html#a3d502b85fc09461e779dae4589c29956af4012fcd28039528046c825a7370ad95',1,'AddressTableModel::OK()'],['../class_wallet_model.html#afb93f64411320dce4692c2190b7d35ccae8b83ccd04b2460f6ec5797b92776968',1,'WalletModel::OK()'],['../netbase_8cpp.html#a016a344931d1ff79d2489292ad877b37ae0aa021e21dddbd6d8cecec71e9cf564',1,'OK():&#160;netbase.cpp'],['../namespacefeebumper.html#a08fe575802ef410f95f786253c489bc6ae0aa021e21dddbd6d8cecec71e9cf564',1,'feebumper::OK()']]],
   ['op_5f0',['OP_0',['../script_8h.html#a63e349a6089a54da9fe09a3d858648bdaccd484dad2223fffdbdc2637c4f1e40e',1,'script.h']]],
   ['op_5f0notequal',['OP_0NOTEQUAL',['../script_8h.html#a63e349a6089a54da9fe09a3d858648bdab0bd0f4a5f20026157c1e8f7851e9c73',1,'script.h']]],

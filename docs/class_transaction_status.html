@@ -108,16 +108,14 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="class_transaction_status.html#aaa6cc19ca3509bbae72d0df1661f85cba354f91f2bd2c4be35b366d02fe186e22">Confirmed</a>, 
 <a class="el" href="class_transaction_status.html#aaa6cc19ca3509bbae72d0df1661f85cba4a0e6eac1d0db61fb9b1c96c6cbe592a">OpenUntilDate</a>, 
 <a class="el" href="class_transaction_status.html#aaa6cc19ca3509bbae72d0df1661f85cbab91223e8b704793715b0e54637417a1c">OpenUntilBlock</a>, 
-<a class="el" href="class_transaction_status.html#aaa6cc19ca3509bbae72d0df1661f85cbaf8b9ab6fc1d08781bb94301e358171b6">Offline</a>, 
+<a class="el" href="class_transaction_status.html#aaa6cc19ca3509bbae72d0df1661f85cba6aa37fcd802ffec2cc13db46dcc41c03">Unconfirmed</a>, 
 <br />
-&#160;&#160;<a class="el" href="class_transaction_status.html#aaa6cc19ca3509bbae72d0df1661f85cba6aa37fcd802ffec2cc13db46dcc41c03">Unconfirmed</a>, 
-<a class="el" href="class_transaction_status.html#aaa6cc19ca3509bbae72d0df1661f85cba75c0b79a4c38c5777cdae1a565d6ba5e">Confirming</a>, 
+&#160;&#160;<a class="el" href="class_transaction_status.html#aaa6cc19ca3509bbae72d0df1661f85cba75c0b79a4c38c5777cdae1a565d6ba5e">Confirming</a>, 
 <a class="el" href="class_transaction_status.html#aaa6cc19ca3509bbae72d0df1661f85cbae06a462705a0126fda4b82e47915d812">Conflicted</a>, 
 <a class="el" href="class_transaction_status.html#aaa6cc19ca3509bbae72d0df1661f85cbaeff36253a0dd1e9347884be75cadbfc4">Abandoned</a>, 
+<a class="el" href="class_transaction_status.html#aaa6cc19ca3509bbae72d0df1661f85cba6b7a65301bf5a9eb371b34f2dcbd0e30">Immature</a>, 
 <br />
-&#160;&#160;<a class="el" href="class_transaction_status.html#aaa6cc19ca3509bbae72d0df1661f85cba6b7a65301bf5a9eb371b34f2dcbd0e30">Immature</a>, 
-<a class="el" href="class_transaction_status.html#aaa6cc19ca3509bbae72d0df1661f85cba25cc8866b321de53d71467d11bba19b7">MaturesWarning</a>, 
-<a class="el" href="class_transaction_status.html#aaa6cc19ca3509bbae72d0df1661f85cbaa00ed76c9186371bd649ffeec45d37e9">NotAccepted</a>
+&#160;&#160;<a class="el" href="class_transaction_status.html#aaa6cc19ca3509bbae72d0df1661f85cbaa00ed76c9186371bd649ffeec45d37e9">NotAccepted</a>
 <br />
  }</td></tr>
 <tr class="separator:aaa6cc19ca3509bbae72d0df1661f85cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,9 +176,6 @@ Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="aaa6cc19ca3509bbae72d0df1661f85cbab91223e8b704793715b0e54637417a1c"></a>OpenUntilBlock&#160;</td><td class="fielddoc">
 <p>Transaction not yet final, waiting for block. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aaa6cc19ca3509bbae72d0df1661f85cbaf8b9ab6fc1d08781bb94301e358171b6"></a>Offline&#160;</td><td class="fielddoc">
-<p>Not sent to any other nodes. </p>
-</td></tr>
 <tr><td class="fieldname"><a class="anchor" id="aaa6cc19ca3509bbae72d0df1661f85cba6aa37fcd802ffec2cc13db46dcc41c03"></a>Unconfirmed&#160;</td><td class="fielddoc">
 <p>Not yet mined into a block. </p>
 </td></tr>
@@ -196,9 +191,6 @@ Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="aaa6cc19ca3509bbae72d0df1661f85cba6b7a65301bf5a9eb371b34f2dcbd0e30"></a>Immature&#160;</td><td class="fielddoc">
 <p>Generated (mined) transactions. </p>
 <p>Mined but waiting for maturity </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aaa6cc19ca3509bbae72d0df1661f85cba25cc8866b321de53d71467d11bba19b7"></a>MaturesWarning&#160;</td><td class="fielddoc">
-<p>Transaction will likely not mature because no nodes have confirmed. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="aaa6cc19ca3509bbae72d0df1661f85cbaa00ed76c9186371bd649ffeec45d37e9"></a>NotAccepted&#160;</td><td class="fielddoc">
 <p>Mined but not accepted. </p>
@@ -248,7 +240,7 @@ Public Attributes</h2></td></tr>
 
 <p>Transaction counts towards available balance. </p>
 
-<p>Definition at line <a class="el" href="transactionrecord_8h_source.html#l00048">48</a> of file <a class="el" href="transactionrecord_8h_source.html">transactionrecord.h</a>.</p>
+<p>Definition at line <a class="el" href="transactionrecord_8h_source.html#l00046">46</a> of file <a class="el" href="transactionrecord_8h_source.html">transactionrecord.h</a>.</p>
 
 </div>
 </div>
@@ -264,7 +256,7 @@ Public Attributes</h2></td></tr>
 
 <p>Current number of blocks (to know whether cached status is still valid) </p>
 
-<p>Definition at line <a class="el" href="transactionrecord_8h_source.html#l00067">67</a> of file <a class="el" href="transactionrecord_8h_source.html">transactionrecord.h</a>.</p>
+<p>Definition at line <a class="el" href="transactionrecord_8h_source.html#l00065">65</a> of file <a class="el" href="transactionrecord_8h_source.html">transactionrecord.h</a>.</p>
 
 </div>
 </div>
@@ -278,7 +270,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionrecord_8h_source.html#l00060">60</a> of file <a class="el" href="transactionrecord_8h_source.html">transactionrecord.h</a>.</p>
+<p>Definition at line <a class="el" href="transactionrecord_8h_source.html#l00058">58</a> of file <a class="el" href="transactionrecord_8h_source.html">transactionrecord.h</a>.</p>
 
 </div>
 </div>
@@ -292,7 +284,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionrecord_8h_source.html#l00054">54</a> of file <a class="el" href="transactionrecord_8h_source.html">transactionrecord.h</a>.</p>
+<p>Definition at line <a class="el" href="transactionrecord_8h_source.html#l00052">52</a> of file <a class="el" href="transactionrecord_8h_source.html">transactionrecord.h</a>.</p>
 
 </div>
 </div>
@@ -306,7 +298,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionrecord_8h_source.html#l00069">69</a> of file <a class="el" href="transactionrecord_8h_source.html">transactionrecord.h</a>.</p>
+<p>Definition at line <a class="el" href="transactionrecord_8h_source.html#l00067">67</a> of file <a class="el" href="transactionrecord_8h_source.html">transactionrecord.h</a>.</p>
 
 </div>
 </div>
@@ -322,7 +314,7 @@ Public Attributes</h2></td></tr>
 
 <p>Timestamp if status==OpenUntilDate, otherwise number of additional blocks that need to be mined before finalization. </p>
 
-<p>Definition at line <a class="el" href="transactionrecord_8h_source.html#l00061">61</a> of file <a class="el" href="transactionrecord_8h_source.html">transactionrecord.h</a>.</p>
+<p>Definition at line <a class="el" href="transactionrecord_8h_source.html#l00059">59</a> of file <a class="el" href="transactionrecord_8h_source.html">transactionrecord.h</a>.</p>
 
 </div>
 </div>
@@ -338,7 +330,7 @@ Public Attributes</h2></td></tr>
 
 <p>Sorting key based on status. </p>
 
-<p>Definition at line <a class="el" href="transactionrecord_8h_source.html#l00050">50</a> of file <a class="el" href="transactionrecord_8h_source.html">transactionrecord.h</a>.</p>
+<p>Definition at line <a class="el" href="transactionrecord_8h_source.html#l00048">48</a> of file <a class="el" href="transactionrecord_8h_source.html">transactionrecord.h</a>.</p>
 
 </div>
 </div>
@@ -352,7 +344,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionrecord_8h_source.html#l00059">59</a> of file <a class="el" href="transactionrecord_8h_source.html">transactionrecord.h</a>.</p>
+<p>Definition at line <a class="el" href="transactionrecord_8h_source.html#l00057">57</a> of file <a class="el" href="transactionrecord_8h_source.html">transactionrecord.h</a>.</p>
 
 </div>
 </div>
@@ -362,7 +354,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 11 2018 11:22:30 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 11 2018 14:38:28 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

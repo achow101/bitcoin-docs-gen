@@ -1,7 +1,6 @@
 var searchData=
 [
   ['mapportupnp',['MapPortUPnP',['../class_options_model.html#a5c6c9ca8a01aca9f53e91f118e4878d2adebfbde1e6e83a85acc14c15bb9309ed',1,'OptionsModel']]],
-  ['matureswarning',['MaturesWarning',['../class_transaction_status.html#aaa6cc19ca3509bbae72d0df1661f85cba25cc8866b321de53d71467d11bba19b7',1,'TransactionStatus']]],
   ['max_5fbase58_5ftypes',['MAX_BASE58_TYPES',['../class_c_chain_params.html#aa294058ec2e3586bd8d03d6c39667058a6b21a525c7fab64a5df656e708f71a98',1,'CChainParams']]],
   ['max_5fversion_5fbits_5fdeployments',['MAX_VERSION_BITS_DEPLOYMENTS',['../namespace_consensus.html#ac6c2c4d710cea840f692c6312ec91f69ace4f4c0abc6f72eb25de94b481a29824',1,'Consensus']]],
   ['maxtxfee',['MAXTXFEE',['../policy_2fees_8h.html#ad4442247e3a53b4e0e9142797e833186aa0e98aa16a33821e31e85316b70d8eb0',1,'fees.h']]],

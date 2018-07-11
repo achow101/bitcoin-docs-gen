@@ -36,7 +36,6 @@ var searchData=
   ['interruptnet',['interruptNet',['../class_c_connman.html#a4353881f4ed5f9fb22f13acdf1608a0a',1,'CConnman']]],
   ['intro',['intro',['../class_freespace_checker.html#a89e3ed2c89e445347d223b15952a4bdd',1,'FreespaceChecker']]],
   ['inv',['INV',['../namespace_net_msg_type.html#afabe3cd738cb766597ff4c1ee1e47cbd',1,'NetMsgType']]],
-  ['inventory',['Inventory',['../struct_main_signals_instance.html#a41f2e791837774c38cefc5ce4f6b5aa0',1,'MainSignalsInstance']]],
   ['involveswatchaddress',['involvesWatchAddress',['../class_transaction_record.html#ac938161128e04ca5d044d8a19827b0e2',1,'TransactionRecord']]],
   ['ip',['ip',['../class_c_net_addr.html#acff7ce68f33f8dfbfe6d79d80928d417',1,'CNetAddr::ip()'],['../struct_proxy_setting.html#a93fc0c945b2e624ed0d6fc33e03fa3df',1,'ProxySetting::ip()']]],
   ['is_5fabandoned',['is_abandoned',['../structinterfaces_1_1_wallet_tx_status.html#a49203a451ac6eaaade1e3b9e51e6c75e',1,'interfaces::WalletTxStatus']]],
