@@ -91,7 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_c_crypto_key_store-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -178,36 +178,39 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a8c0f6b63fb04193df16243c4459b7c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81bd70e18aa75f566526620a74f9cd88"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crypto_key_store.html#a81bd70e18aa75f566526620a74f9cd88">Unlock</a> (const <a class="el" href="keystore_8h.html#a64709c9a3acc8f5694515789a183ad7b">CKeyingMaterial</a> &amp;vMasterKeyIn)</td></tr>
 <tr class="separator:a81bd70e18aa75f566526620a74f9cd88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eab28e7b189f66f1e8c64e9646005f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="keystore_8h.html#a6c476ecc6771e6bf6bf022a735216a27">CryptedKeyMap</a> mapCryptedKeys&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crypto_key_store.html#a2eab28e7b189f66f1e8c64e9646005f7">GUARDED_BY</a> (<a class="el" href="class_c_basic_key_store.html#ab2851bed8f1f651b32c707e59b86a323">cs_KeyStore</a>)</td></tr>
+<tr class="separator:a2eab28e7b189f66f1e8c64e9646005f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_c_basic_key_store"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_c_basic_key_store')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_c_basic_key_store.html">CBasicKeyStore</a></td></tr>
+<tr class="memitem:a0bd330aef561fd25691db3ad2565f0dc inherit pro_methods_class_c_basic_key_store"><td class="memItemLeft" align="right" valign="top"><a class="el" href="keystore_8h.html#a4dc9f57afc8615aef701e40cf20d024f">KeyMap</a> mapKeys&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_basic_key_store.html#a0bd330aef561fd25691db3ad2565f0dc">GUARDED_BY</a> (<a class="el" href="class_c_basic_key_store.html#ab2851bed8f1f651b32c707e59b86a323">cs_KeyStore</a>)</td></tr>
+<tr class="separator:a0bd330aef561fd25691db3ad2565f0dc inherit pro_methods_class_c_basic_key_store"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0216ae381747fdf437baffbb036f13d inherit pro_methods_class_c_basic_key_store"><td class="memItemLeft" align="right" valign="top"><a class="el" href="keystore_8h.html#a0dc8b3cbf913905bc7ca8aaefcc1fe20">WatchKeyMap</a> mapWatchKeys&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_basic_key_store.html#aa0216ae381747fdf437baffbb036f13d">GUARDED_BY</a> (<a class="el" href="class_c_basic_key_store.html#ab2851bed8f1f651b32c707e59b86a323">cs_KeyStore</a>)</td></tr>
+<tr class="separator:aa0216ae381747fdf437baffbb036f13d inherit pro_methods_class_c_basic_key_store"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69b3bca0e65afc5247a0084a40fa52e9 inherit pro_methods_class_c_basic_key_store"><td class="memItemLeft" align="right" valign="top"><a class="el" href="keystore_8h.html#afb22a3e7e10e8048d2fb3fb72fe38345">ScriptMap</a> mapScripts&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_basic_key_store.html#a69b3bca0e65afc5247a0084a40fa52e9">GUARDED_BY</a> (<a class="el" href="class_c_basic_key_store.html#ab2851bed8f1f651b32c707e59b86a323">cs_KeyStore</a>)</td></tr>
+<tr class="separator:a69b3bca0e65afc5247a0084a40fa52e9 inherit pro_methods_class_c_basic_key_store"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0354f5a797ae9dada1d9a7f68837c249 inherit pro_methods_class_c_basic_key_store"><td class="memItemLeft" align="right" valign="top"><a class="el" href="keystore_8h.html#a501c3a7b9932bbc7168dc7b3fc5d149e">WatchOnlySet</a> setWatchOnly&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_basic_key_store.html#a0354f5a797ae9dada1d9a7f68837c249">GUARDED_BY</a> (<a class="el" href="class_c_basic_key_store.html#ab2851bed8f1f651b32c707e59b86a323">cs_KeyStore</a>)</td></tr>
+<tr class="separator:a0354f5a797ae9dada1d9a7f68837c249 inherit pro_methods_class_c_basic_key_store"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbd18b3adbe681247f7ae685cb629fc1 inherit pro_methods_class_c_basic_key_store"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_basic_key_store.html#abbd18b3adbe681247f7ae685cb629fc1">ImplicitlyLearnRelatedKeyScripts</a> (const <a class="el" href="class_c_pub_key.html">CPubKey</a> &amp;pubkey) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="class_c_basic_key_store.html#ab2851bed8f1f651b32c707e59b86a323">cs_KeyStore</a>)</td></tr>
 <tr class="separator:abbd18b3adbe681247f7ae685cb629fc1 inherit pro_methods_class_c_basic_key_store"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:ad1fb9b23eee7a352617209ee2e4f3498"><td class="memItemLeft" align="right" valign="top"><a class="el" href="keystore_8h.html#a6c476ecc6771e6bf6bf022a735216a27">CryptedKeyMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crypto_key_store.html#ad1fb9b23eee7a352617209ee2e4f3498">mapCryptedKeys</a></td></tr>
-<tr class="separator:ad1fb9b23eee7a352617209ee2e4f3498"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_class_c_basic_key_store"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_c_basic_key_store')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_c_basic_key_store.html">CBasicKeyStore</a></td></tr>
-<tr class="memitem:ab2851bed8f1f651b32c707e59b86a323 inherit pro_attribs_class_c_basic_key_store"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_critical_section.html">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_basic_key_store.html#ab2851bed8f1f651b32c707e59b86a323">cs_KeyStore</a></td></tr>
-<tr class="separator:ab2851bed8f1f651b32c707e59b86a323 inherit pro_attribs_class_c_basic_key_store"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac520003e5c3d863bf71fde247c6e0672 inherit pro_attribs_class_c_basic_key_store"><td class="memItemLeft" align="right" valign="top"><a class="el" href="keystore_8h.html#a4dc9f57afc8615aef701e40cf20d024f">KeyMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_basic_key_store.html#ac520003e5c3d863bf71fde247c6e0672">mapKeys</a></td></tr>
-<tr class="separator:ac520003e5c3d863bf71fde247c6e0672 inherit pro_attribs_class_c_basic_key_store"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2eae1f07fa35b29eec28aeb6bc35baea inherit pro_attribs_class_c_basic_key_store"><td class="memItemLeft" align="right" valign="top"><a class="el" href="keystore_8h.html#a0dc8b3cbf913905bc7ca8aaefcc1fe20">WatchKeyMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_basic_key_store.html#a2eae1f07fa35b29eec28aeb6bc35baea">mapWatchKeys</a></td></tr>
-<tr class="separator:a2eae1f07fa35b29eec28aeb6bc35baea inherit pro_attribs_class_c_basic_key_store"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e9fa81382129c1535a0ee7b0d9c8f3b inherit pro_attribs_class_c_basic_key_store"><td class="memItemLeft" align="right" valign="top"><a class="el" href="keystore_8h.html#afb22a3e7e10e8048d2fb3fb72fe38345">ScriptMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_basic_key_store.html#a8e9fa81382129c1535a0ee7b0d9c8f3b">mapScripts</a></td></tr>
-<tr class="separator:a8e9fa81382129c1535a0ee7b0d9c8f3b inherit pro_attribs_class_c_basic_key_store"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3391cb491e315403ad9af6afd1313da inherit pro_attribs_class_c_basic_key_store"><td class="memItemLeft" align="right" valign="top"><a class="el" href="keystore_8h.html#a501c3a7b9932bbc7168dc7b3fc5d149e">WatchOnlySet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_basic_key_store.html#ac3391cb491e315403ad9af6afd1313da">setWatchOnly</a></td></tr>
-<tr class="separator:ac3391cb491e315403ad9af6afd1313da inherit pro_attribs_class_c_basic_key_store"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a8fede55b2720cc39f5c744982f79006f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="keystore_8h.html#a64709c9a3acc8f5694515789a183ad7b">CKeyingMaterial</a> vMasterKey&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crypto_key_store.html#a8fede55b2720cc39f5c744982f79006f">GUARDED_BY</a> (<a class="el" href="class_c_basic_key_store.html#ab2851bed8f1f651b32c707e59b86a323">cs_KeyStore</a>)</td></tr>
+<tr class="separator:a8fede55b2720cc39f5c744982f79006f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ac74e458a90ce17a95e238bad724df3fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="keystore_8h.html#a64709c9a3acc8f5694515789a183ad7b">CKeyingMaterial</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crypto_key_store.html#ac74e458a90ce17a95e238bad724df3fd">vMasterKey</a></td></tr>
-<tr class="separator:ac74e458a90ce17a95e238bad724df3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07a39725ad9526fd105741fa87a5da53"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crypto_key_store.html#a07a39725ad9526fd105741fa87a5da53">fUseCrypto</a></td></tr>
 <tr class="memdesc:a07a39725ad9526fd105741fa87a5da53"><td class="mdescLeft">&#160;</td><td class="mdescRight">if fUseCrypto is true, mapKeys must be empty if fUseCrypto is false, vMasterKey must be empty  <a href="#a07a39725ad9526fd105741fa87a5da53">More...</a><br /></td></tr>
 <tr class="separator:a07a39725ad9526fd105741fa87a5da53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46872ff611730d228f7d1a92c1d8526e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crypto_key_store.html#a46872ff611730d228f7d1a92c1d8526e">fDecryptionThoroughlyChecked</a></td></tr>
 <tr class="memdesc:a46872ff611730d228f7d1a92c1d8526e"><td class="mdescLeft">&#160;</td><td class="mdescRight">keeps track of whether Unlock has run a thorough check before  <a href="#a46872ff611730d228f7d1a92c1d8526e">More...</a><br /></td></tr>
 <tr class="separator:a46872ff611730d228f7d1a92c1d8526e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_c_basic_key_store"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_c_basic_key_store')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_c_basic_key_store.html">CBasicKeyStore</a></td></tr>
+<tr class="memitem:ab2851bed8f1f651b32c707e59b86a323 inherit pro_attribs_class_c_basic_key_store"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_critical_section.html">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_basic_key_store.html#ab2851bed8f1f651b32c707e59b86a323">cs_KeyStore</a></td></tr>
+<tr class="separator:ab2851bed8f1f651b32c707e59b86a323 inherit pro_attribs_class_c_basic_key_store"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Keystore which keeps the private keys encrypted. </p>
@@ -522,6 +525,54 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a8fede55b2720cc39f5c744982f79006f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="keystore_8h.html#a64709c9a3acc8f5694515789a183ad7b">CKeyingMaterial</a> vMasterKey CCryptoKeyStore::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_basic_key_store.html#ab2851bed8f1f651b32c707e59b86a323">cs_KeyStore</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2eab28e7b189f66f1e8c64e9646005f7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="keystore_8h.html#a6c476ecc6771e6bf6bf022a735216a27">CryptedKeyMap</a> mapCryptedKeys CCryptoKeyStore::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_basic_key_store.html#ab2851bed8f1f651b32c707e59b86a323">cs_KeyStore</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a59d19911aeddf00c974378b508e9d114"></a>
 <div class="memitem">
 <div class="memproto">
@@ -760,28 +811,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ad1fb9b23eee7a352617209ee2e4f3498"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="keystore_8h.html#a6c476ecc6771e6bf6bf022a735216a27">CryptedKeyMap</a> CCryptoKeyStore::mapCryptedKeys</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="crypter_8h_source.html#l00135">135</a> of file <a class="el" href="crypter_8h_source.html">crypter.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a251b9ed228a19ab39d542985b425fc85"></a>
 <div class="memitem">
 <div class="memproto">
@@ -799,28 +828,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ac74e458a90ce17a95e238bad724df3fd"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="keystore_8h.html#a64709c9a3acc8f5694515789a183ad7b">CKeyingMaterial</a> CCryptoKeyStore::vMasterKey</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="crypter_8h_source.html#l00119">119</a> of file <a class="el" href="crypter_8h_source.html">crypter.h</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/wallet/<a class="el" href="crypter_8h_source.html">crypter.h</a></li>
 <li>src/wallet/<a class="el" href="crypter_8cpp_source.html">crypter.cpp</a></li>
@@ -828,7 +835,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 11 2018 14:38:27 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 11 2018 19:12:06 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

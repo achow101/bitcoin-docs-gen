@@ -117,7 +117,7 @@ var searchData=
   ['recipient',['recipient',['../class_recent_request_entry.html#a8a01ad96cb5b7e4df2bbfe0a89cad4b1',1,'RecentRequestEntry::recipient()'],['../class_send_coins_entry.html#a4e85380414804e14b7bd7229d428c8a3',1,'SendCoinsEntry::recipient()']]],
   ['recipients',['recipients',['../class_wallet_model_transaction.html#a72bcaecaa08a1768b0023c7b833aa35b',1,'WalletModelTransaction']]],
   ['recommendednumconfirmations',['RecommendedNumConfirmations',['../class_transaction_record.html#a1cdf534b1ab2495c839f87beb053eaf8',1,'TransactionRecord']]],
-  ['reconnect',['Reconnect',['../class_tor_controller.html#ae5d4304836fce79574ec540c5ada8269',1,'TorController::Reconnect()'],['../class_tor_controller.html#ab1d071e936a3d0060bad73e84cb9775b',1,'TorController::reconnect()']]],
+  ['reconnect',['reconnect',['../class_tor_controller.html#ab1d071e936a3d0060bad73e84cb9775b',1,'TorController::reconnect()'],['../class_tor_controller.html#ae5d4304836fce79574ec540c5ada8269',1,'TorController::Reconnect()']]],
   ['reconnect_5fcb',['reconnect_cb',['../class_tor_controller.html#a2fa9614b4fa0e24c57f443b3c56f835c',1,'TorController']]],
   ['reconnect_5fev',['reconnect_ev',['../class_tor_controller.html#ab18e159e5ccad27e30c91ffad82edc89',1,'TorController']]],
   ['reconnect_5ftimeout',['reconnect_timeout',['../class_tor_controller.html#acb85d5d34fe9c86307d0a8730ce7cf1d',1,'TorController']]],

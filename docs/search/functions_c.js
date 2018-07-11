@@ -13,7 +13,7 @@ var searchData=
   ['limitorphantxsize',['LimitOrphanTxSize',['../net__processing_8cpp.html#a03c1ac9fc43feb8f1d67e92f17cceb38',1,'net_processing.cpp']]],
   ['listaccountcreditdebit',['ListAccountCreditDebit',['../group___actions.html#ga57b932672ce2723fb0f95802c870b12a',1,'CWallet::ListAccountCreditDebit()'],['../class_wallet_batch.html#addb58c1ab9e1fc72ae1a40d9ac85cae4',1,'WalletBatch::ListAccountCreditDebit()']]],
   ['listactivelogcategories',['ListActiveLogCategories',['../logging_8cpp.html#a0f5558f5de78753cbe2585d90ab1f40f',1,'ListActiveLogCategories():&#160;logging.cpp'],['../logging_8h.html#a0f5558f5de78753cbe2585d90ab1f40f',1,'ListActiveLogCategories():&#160;logging.cpp']]],
-  ['listcoins',['ListCoins',['../group___actions.html#ga309e57699628a1822c6688ae5056897d',1,'CWallet::ListCoins()'],['../classinterfaces_1_1_wallet.html#a0d9857753519671b52edde1d9e0a663a',1,'interfaces::Wallet::listCoins()']]],
+  ['listcoins',['listCoins',['../classinterfaces_1_1_wallet.html#a0d9857753519671b52edde1d9e0a663a',1,'interfaces::Wallet::listCoins()'],['../group___actions.html#ga309e57699628a1822c6688ae5056897d',1,'CWallet::ListCoins()']]],
   ['listcoinstestingsetup',['ListCoinsTestingSetup',['../class_list_coins_testing_setup.html#adadca010ddbfc563e99928862ade6027',1,'ListCoinsTestingSetup']]],
   ['listcommands',['listCommands',['../class_c_r_p_c_table.html#a358e9047a2facc6052efad2e6c5a0d6e',1,'CRPCTable']]],
   ['listensocket',['ListenSocket',['../struct_c_connman_1_1_listen_socket.html#a839d24d26f7443396e4faa25fa7fdb76',1,'CConnman::ListenSocket']]],

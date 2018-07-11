@@ -42,7 +42,6 @@ var searchData=
   ['vin',['vin',['../class_c_transaction.html#ad64447ea044ec850313696fc99412d95',1,'CTransaction::vin()'],['../struct_c_mutable_transaction.html#ad6b1a0a773293fd153a1d384923631da',1,'CMutableTransaction::vin()']]],
   ['vinventoryblocktosend',['vInventoryBlockToSend',['../class_c_node.html#a0c940addacc47f19170b460b03068fac',1,'CNode']]],
   ['vkeys',['vKeys',['../class_c_affected_keys_visitor.html#ab4064a4624c9aa2ed604cad1b2b29031',1,'CAffectedKeysVisitor']]],
-  ['vmasterkey',['vMasterKey',['../class_c_crypto_key_store.html#ac74e458a90ce17a95e238bad724df3fd',1,'CCryptoKeyStore']]],
   ['vmatchedtxn',['vMatchedTxn',['../class_c_merkle_block.html#a73bbbdcb5d83588b15461c02d0228999',1,'CMerkleBlock']]],
   ['vnodes',['vNodes',['../class_c_connman.html#adce92c07b7355e841906b59cafdbe0c5',1,'CConnman']]],
   ['vnodesdisconnected',['vNodesDisconnected',['../class_c_connman.html#a320b487f2f4437c2518cf6d2b37f95fd',1,'CConnman']]],

@@ -44,7 +44,6 @@ var searchData=
   ['setknown',['setKnown',['../class_c_node.html#ab1b30fa8e48005752f6b0bcf43eca478',1,'CNode']]],
   ['setlockedcoins',['setLockedCoins',['../class_c_wallet.html#a658aebcd4c617f5a29f5df3d8878c450',1,'CWallet']]],
   ['setselected',['setSelected',['../class_c_coin_control.html#ad8f80901aa608a4073cb9138f07d3e4e',1,'CCoinControl']]],
-  ['setwatchonly',['setWatchOnly',['../class_c_basic_key_store.html#ac3391cb491e315403ad9af6afd1313da',1,'CBasicKeyStore']]],
   ['sha',['sha',['../class_c_hash256.html#af06b992e00e1bd7290388aed522a535f',1,'CHash256::sha()'],['../class_c_hash160.html#a5b104e31076a06ece47c1134bbed0a81',1,'CHash160::sha()']]],
   ['short_5fblock_5fperiods',['SHORT_BLOCK_PERIODS',['../class_c_block_policy_estimator.html#abab803b5991e9e3bbe9141f4b5f31a29',1,'CBlockPolicyEstimator']]],
   ['short_5fdecay',['SHORT_DECAY',['../class_c_block_policy_estimator.html#a58765bf67583994796d58c0bf994f150',1,'CBlockPolicyEstimator']]],
