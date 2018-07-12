@@ -107,11 +107,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5368279e4a1549d3c1d15d8aa2179708"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crypter.html#a5368279e4a1549d3c1d15d8aa2179708">SetKeyFromPassphrase</a> (const <a class="el" href="secure_8h.html#a396ed773a5ac24aec28c8f7dc413c7ac">SecureString</a> &amp;strKeyData, const std::vector&lt; unsigned char &gt; &amp;chSalt, const unsigned int nRounds, const unsigned int nDerivationMethod)</td></tr>
 <tr class="separator:a5368279e4a1549d3c1d15d8aa2179708"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a329901fe08961af3db216022b4f21369"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crypter.html#a329901fe08961af3db216022b4f21369">Encrypt</a> (const <a class="el" href="keystore_8h.html#a64709c9a3acc8f5694515789a183ad7b">CKeyingMaterial</a> &amp;vchPlaintext, std::vector&lt; unsigned char &gt; &amp;vchCiphertext) const </td></tr>
+<tr class="memitem:a329901fe08961af3db216022b4f21369"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crypter.html#a329901fe08961af3db216022b4f21369">Encrypt</a> (const <a class="el" href="crypter_8h.html#a64709c9a3acc8f5694515789a183ad7b">CKeyingMaterial</a> &amp;vchPlaintext, std::vector&lt; unsigned char &gt; &amp;vchCiphertext) const </td></tr>
 <tr class="separator:a329901fe08961af3db216022b4f21369"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5a813381a88db619331a9d5492cd339"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crypter.html#ac5a813381a88db619331a9d5492cd339">Decrypt</a> (const std::vector&lt; unsigned char &gt; &amp;vchCiphertext, <a class="el" href="keystore_8h.html#a64709c9a3acc8f5694515789a183ad7b">CKeyingMaterial</a> &amp;vchPlaintext) const </td></tr>
+<tr class="memitem:ac5a813381a88db619331a9d5492cd339"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crypter.html#ac5a813381a88db619331a9d5492cd339">Decrypt</a> (const std::vector&lt; unsigned char &gt; &amp;vchCiphertext, <a class="el" href="crypter_8h.html#a64709c9a3acc8f5694515789a183ad7b">CKeyingMaterial</a> &amp;vchPlaintext) const </td></tr>
 <tr class="separator:ac5a813381a88db619331a9d5492cd339"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d948dd4796e2420e1dd9c1ddbf7974e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crypter.html#a0d948dd4796e2420e1dd9c1ddbf7974e">SetKey</a> (const <a class="el" href="keystore_8h.html#a64709c9a3acc8f5694515789a183ad7b">CKeyingMaterial</a> &amp;chNewKey, const std::vector&lt; unsigned char &gt; &amp;chNewIV)</td></tr>
+<tr class="memitem:a0d948dd4796e2420e1dd9c1ddbf7974e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crypter.html#a0d948dd4796e2420e1dd9c1ddbf7974e">SetKey</a> (const <a class="el" href="crypter_8h.html#a64709c9a3acc8f5694515789a183ad7b">CKeyingMaterial</a> &amp;chNewKey, const std::vector&lt; unsigned char &gt; &amp;chNewIV)</td></tr>
 <tr class="separator:a0d948dd4796e2420e1dd9c1ddbf7974e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6910b4cff4ee40e33fbb3789dc12c139"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crypter.html#a6910b4cff4ee40e33fbb3789dc12c139">CleanKey</a> ()</td></tr>
 <tr class="separator:a6910b4cff4ee40e33fbb3789dc12c139"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -308,7 +308,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="keystore_8h.html#a64709c9a3acc8f5694515789a183ad7b">CKeyingMaterial</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="crypter_8h.html#a64709c9a3acc8f5694515789a183ad7b">CKeyingMaterial</a> &amp;&#160;</td>
           <td class="paramname"><em>vchPlaintext</em>&#160;</td>
         </tr>
         <tr>
@@ -344,7 +344,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">bool CCrypter::Encrypt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="keystore_8h.html#a64709c9a3acc8f5694515789a183ad7b">CKeyingMaterial</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="crypter_8h.html#a64709c9a3acc8f5694515789a183ad7b">CKeyingMaterial</a> &amp;&#160;</td>
           <td class="paramname"><em>vchPlaintext</em>, </td>
         </tr>
         <tr>
@@ -386,7 +386,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">bool CCrypter::SetKey </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="keystore_8h.html#a64709c9a3acc8f5694515789a183ad7b">CKeyingMaterial</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="crypter_8h.html#a64709c9a3acc8f5694515789a183ad7b">CKeyingMaterial</a> &amp;&#160;</td>
           <td class="paramname"><em>chNewKey</em>, </td>
         </tr>
         <tr>
@@ -572,7 +572,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 12 2018 11:51:53 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 12 2018 12:38:42 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
