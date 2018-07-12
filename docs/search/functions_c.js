@@ -52,6 +52,7 @@ var searchData=
   ['locking_5fcallback',['locking_callback',['../util_8cpp.html#a14c505d4e13201511840a8d450cf2cff',1,'util.cpp']]],
   ['lockingfailed',['LockingFailed',['../class_locked_pool_manager.html#a8ba9f1bea4a8cdd680eb5d48f8def5a9',1,'LockedPoolManager']]],
   ['lockpoints',['LockPoints',['../struct_lock_points.html#aae4272817e78779c4e62c13a347fce9f',1,'LockPoints']]],
+  ['log2f_5fold',['log2f_old',['../glibc__compat_8cpp.html#ac78ba35ed6f6a7a61f8101f1c03059cd',1,'glibc_compat.cpp']]],
   ['logging',['logging',['../misc_8cpp.html#a102e2c91951128d7a170700149aae5c3',1,'misc.cpp']]],
   ['logprintstr',['LogPrintStr',['../class_b_c_log_1_1_logger.html#a7326a0d81dfe27f8c475c1e0038fbd18',1,'BCLog::Logger']]],
   ['logtimestampstr',['LogTimestampStr',['../class_b_c_log_1_1_logger.html#a2381530dfc5ab680bcab33f653bab404',1,'BCLog::Logger']]],

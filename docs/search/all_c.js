@@ -114,6 +114,7 @@ var searchData=
   ['lockingfailed_5fcallback',['LockingFailed_Callback',['../class_locked_pool.html#ae6ea659ae70ee30e555e02f5b71871c6',1,'LockedPool']]],
   ['lockpoints',['LockPoints',['../struct_lock_points.html',1,'LockPoints'],['../class_c_tx_mem_pool_entry.html#ad6809157651778ea15287394e3178124',1,'CTxMemPoolEntry::lockPoints()'],['../struct_lock_points.html#aae4272817e78779c4e62c13a347fce9f',1,'LockPoints::LockPoints()']]],
   ['locks_5fexcluded',['LOCKS_EXCLUDED',['../threadsafety_8h.html#a6bb97382864d0bd2cd4dd5191bb03f6c',1,'threadsafety.h']]],
+  ['log2f_5fold',['log2f_old',['../glibc__compat_8cpp.html#ac78ba35ed6f6a7a61f8101f1c03059cd',1,'glibc_compat.cpp']]],
   ['logcategories',['LogCategories',['../logging_8cpp.html#a13059f8b48211f06d9aff7d05d1aa37b',1,'logging.cpp']]],
   ['logflags',['LogFlags',['../namespace_b_c_log.html#ad1037484206121adbcda9f9c824ab6b2',1,'BCLog']]],
   ['logger',['Logger',['../class_b_c_log_1_1_logger.html',1,'BCLog']]],

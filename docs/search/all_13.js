@@ -558,7 +558,7 @@ var searchData=
   ['sighash_5fsingle',['SIGHASH_SINGLE',['../interpreter_8h.html#abc5c98fcc1211af2b80116dd6e0a035dad9bb96e76cf9f1b6ebbf50373f4f9ca5',1,'interpreter.h']]],
   ['siglen',['siglen',['../structbenchmark__verify__t.html#a75e2235d538ab592d540c45118218843',1,'benchmark_verify_t']]],
   ['sigma0',['sigma0',['../hash__impl_8h.html#a672bd39bdf2f6dc295a23ddd109175ff',1,'sigma0():&#160;hash_impl.h'],['../hash__impl_8h.html#a613f88ad88919b6ed21ff223070f9a21',1,'Sigma0():&#160;hash_impl.h']]],
-  ['sigma1',['sigma1',['../hash__impl_8h.html#a0347251dc63b7abe5d4c500544c24a97',1,'sigma1():&#160;hash_impl.h'],['../hash__impl_8h.html#a6d34508d6d962274083fcd992fb4e340',1,'Sigma1():&#160;hash_impl.h']]],
+  ['sigma1',['Sigma1',['../hash__impl_8h.html#a6d34508d6d962274083fcd992fb4e340',1,'Sigma1():&#160;hash_impl.h'],['../hash__impl_8h.html#a0347251dc63b7abe5d4c500544c24a97',1,'sigma1():&#160;hash_impl.h']]],
   ['sign',['Sign',['../class_c_key.html#a3b161899b4fa79f5a7036d2ccf12ce3a',1,'CKey::Sign()'],['../classorg_1_1bitcoin_1_1_native_secp256k1.html#aa8223a4dd78910bd0d2b150184d4a294',1,'org.bitcoin.NativeSecp256k1.sign()']]],
   ['sign_2ecpp',['sign.cpp',['../sign_8cpp.html',1,'']]],
   ['sign_2eh',['sign.h',['../sign_8h.html',1,'']]],

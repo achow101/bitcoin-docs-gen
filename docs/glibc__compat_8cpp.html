@@ -96,10 +96,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for glibc_compat.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="glibc__compat_8cpp__incl.svg" width="222" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="glibc__compat_8cpp__incl.svg" width="222" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="glibc__compat_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -118,6 +120,10 @@ Functions</h2></td></tr>
 <tr class="separator:abd31287f98e497fbe41cc8b8bdee6c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb0c9f8029e0f7d5ed735bce73b3704b"><td class="memItemLeft" align="right" valign="top">FDELT_TYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="glibc__compat_8cpp.html#aeb0c9f8029e0f7d5ed735bce73b3704b">alias</a> (&quot;__fdelt_warn&quot;)))</td></tr>
 <tr class="separator:aeb0c9f8029e0f7d5ed735bce73b3704b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac78ba35ed6f6a7a61f8101f1c03059cd"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="glibc__compat_8cpp.html#ac78ba35ed6f6a7a61f8101f1c03059cd">log2f_old</a> (float x)</td></tr>
+<tr class="separator:ac78ba35ed6f6a7a61f8101f1c03059cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7680c70f3c84d8744dc7e3733f0a959d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="glibc__compat_8cpp.html#a7680c70f3c84d8744dc7e3733f0a959d">__wrap_log2f</a> (float x)</td></tr>
+<tr class="separator:a7680c70f3c84d8744dc7e3733f0a959d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a424ac71631da5ada2976630ff67051d1"></a>
@@ -180,12 +186,39 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="glibc__compat_8cpp_source.html#l00023">23</a> of file <a class="el" href="glibc__compat_8cpp_source.html">glibc_compat.cpp</a>.</p>
+<p>Definition at line <a class="el" href="glibc__compat_8cpp_source.html#l00024">24</a> of file <a class="el" href="glibc__compat_8cpp_source.html">glibc_compat.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="glibc__compat_8cpp_a1328f53597b071dd4f8333c9ad609883_cgraph.svg" width="254" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="glibc__compat_8cpp_a1328f53597b071dd4f8333c9ad609883_cgraph.svg" width="254" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7680c70f3c84d8744dc7e3733f0a959d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float __wrap_log2f </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="glibc__compat_8cpp_source.html#l00071">71</a> of file <a class="el" href="glibc__compat_8cpp_source.html">glibc_compat.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="glibc__compat_8cpp_a7680c70f3c84d8744dc7e3733f0a959d_cgraph.svg" width="242" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -209,6 +242,30 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="glibc__compat_8cpp_aeb0c9f8029e0f7d5ed735bce73b3704b_icgraph.svg" width="211" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac78ba35ed6f6a7a61f8101f1c03059cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float log2f_old </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="glibc__compat_8cpp_ac78ba35ed6f6a7a61f8101f1c03059cd_icgraph.svg" width="242" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -244,7 +301,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="glibc__compat_8cpp_source.html#l00017">17</a> of file <a class="el" href="glibc__compat_8cpp_source.html">glibc_compat.cpp</a>.</p>
+<p>Definition at line <a class="el" href="glibc__compat_8cpp_source.html#l00018">18</a> of file <a class="el" href="glibc__compat_8cpp_source.html">glibc_compat.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -297,7 +354,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 12 2018 12:38:40 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 12 2018 15:48:51 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
