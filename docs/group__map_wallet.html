@@ -205,8 +205,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga9a4633bfb89da7a4afa04356a74b7970"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga009ea6afd94f2c5d560ae063883628b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga009ea6afd94f2c5d560ae063883628b5">CWallet::MarkConflicted</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;hashBlock, const <a class="el" href="classuint256.html">uint256</a> &amp;hashTx)</td></tr>
 <tr class="separator:ga009ea6afd94f2c5d560ae063883628b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad5eb08811c81d9f9b59c8ba0795e3bc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gad5eb08811c81d9f9b59c8ba0795e3bc7">CWallet::SyncTransaction</a> (const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx, const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindex=nullptr, int posInBlock=0) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(cs_wallet)</td></tr>
-<tr class="separator:gad5eb08811c81d9f9b59c8ba0795e3bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga09e75fcbc98be305e68e99495570687c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga09e75fcbc98be305e68e99495570687c">CWallet::SyncTransaction</a> (const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx, const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindex=nullptr, int posInBlock=0, bool update_tx=true) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(cs_wallet)</td></tr>
+<tr class="separator:ga09e75fcbc98be305e68e99495570687c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae44ec090ec7c87725fb22d33887ad1a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gae44ec090ec7c87725fb22d33887ad1a7">CWallet::TransactionAddedToMempool</a> (const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx) override</td></tr>
 <tr class="memdesc:gae44ec090ec7c87725fb22d33887ad1a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies listeners of a transaction having been added to mempool.  <a href="#gae44ec090ec7c87725fb22d33887ad1a7">More...</a><br /></td></tr>
 <tr class="separator:gae44ec090ec7c87725fb22d33887ad1a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3189,7 +3189,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="gad5eb08811c81d9f9b59c8ba0795e3bc7"></a>
+<a class="anchor" id="ga09e75fcbc98be305e68e99495570687c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -3212,7 +3212,13 @@ Here is the call graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>posInBlock</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>posInBlock</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>update_tx</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3232,7 +3238,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_gad5eb08811c81d9f9b59c8ba0795e3bc7_cgraph.svg" width="388" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga09e75fcbc98be305e68e99495570687c_cgraph.svg" width="388" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -3422,7 +3429,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 13 2018 10:02:14 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 13 2018 19:36:53 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

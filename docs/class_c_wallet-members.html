@@ -304,7 +304,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr><td class="entry"><a class="el" href="class_c_wallet.html#a845a2f2911b9b022f0e58ab577e795ea">ShowProgress</a></td><td class="entry"><a class="el" href="class_c_wallet.html">CWallet</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="group___actions.html#ga199df06fa484b1142a6ae64e04519c45">SignTransaction</a>(CMutableTransaction &amp;tx) EXCLUSIVE_LOCKS_REQUIRED(cs_wallet)</td><td class="entry"><a class="el" href="class_c_wallet.html">CWallet</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="group__map_wallet.html#gac555c90c12f8141f809df7113e8f225f">SyncMetaData</a>(std::pair&lt; TxSpends::iterator, TxSpends::iterator &gt;)</td><td class="entry"><a class="el" href="class_c_wallet.html">CWallet</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="group__map_wallet.html#gad5eb08811c81d9f9b59c8ba0795e3bc7">SyncTransaction</a>(const CTransactionRef &amp;tx, const CBlockIndex *pindex=nullptr, int posInBlock=0) EXCLUSIVE_LOCKS_REQUIRED(cs_wallet)</td><td class="entry"><a class="el" href="class_c_wallet.html">CWallet</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="group__map_wallet.html#ga09e75fcbc98be305e68e99495570687c">SyncTransaction</a>(const CTransactionRef &amp;tx, const CBlockIndex *pindex=nullptr, int posInBlock=0, bool update_tx=true) EXCLUSIVE_LOCKS_REQUIRED(cs_wallet)</td><td class="entry"><a class="el" href="class_c_wallet.html">CWallet</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="group___actions.html#ga9730278506e0a4f1c65239b951525b55">TopUpKeyPool</a>(unsigned int kpSize=0)</td><td class="entry"><a class="el" href="class_c_wallet.html">CWallet</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="group__map_wallet.html#gae44ec090ec7c87725fb22d33887ad1a7">TransactionAddedToMempool</a>(const CTransactionRef &amp;tx) override</td><td class="entry"><a class="el" href="class_c_wallet.html">CWallet</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="group__map_wallet.html#ga7cf842d8c4df5b39bbd1110d805f4433">TransactionCanBeAbandoned</a>(const uint256 &amp;hashTx) const </td><td class="entry"><a class="el" href="class_c_wallet.html">CWallet</a></td><td class="entry"></td></tr>
@@ -335,7 +335,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 13 2018 10:02:16 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 13 2018 19:36:55 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

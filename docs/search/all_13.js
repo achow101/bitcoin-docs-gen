@@ -755,6 +755,6 @@ var searchData=
   ['sync_5flog_5finterval',['SYNC_LOG_INTERVAL',['../base_8cpp.html#a37bb0d03677c57f6be7406d5988eb78d',1,'base.cpp']]],
   ['syncmetadata',['SyncMetaData',['../group__map_wallet.html#gac555c90c12f8141f809df7113e8f225f',1,'CWallet']]],
   ['syncoptions',['syncoptions',['../class_c_d_b_wrapper.html#aac0086b6867ab79acc706f93a2908de0',1,'CDBWrapper']]],
-  ['synctransaction',['SyncTransaction',['../group__map_wallet.html#gad5eb08811c81d9f9b59c8ba0795e3bc7',1,'CWallet']]],
+  ['synctransaction',['SyncTransaction',['../group__map_wallet.html#ga09e75fcbc98be305e68e99495570687c',1,'CWallet']]],
   ['syncwithvalidationinterfacequeue',['SyncWithValidationInterfaceQueue',['../validationinterface_8cpp.html#aef788fda8c339bb297d6f97f431dfa88',1,'SyncWithValidationInterfaceQueue():&#160;validationinterface.cpp'],['../validationinterface_8h.html#aef788fda8c339bb297d6f97f431dfa88',1,'SyncWithValidationInterfaceQueue():&#160;validationinterface.cpp']]]
 ];
