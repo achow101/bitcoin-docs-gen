@@ -1,7 +1,7 @@
 var searchData=
 [
   ['chainparams',['CHAINPARAMS',['../util_8h.html#a317721a7331c499cfe39b49b39c26cbdabcb0c59d5765851c4578834af171ab27',1,'util.h']]],
-  ['change_5fauto',['CHANGE_AUTO',['../wallet_2wallet_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3ab12ec73e5b1b21ac8e6440f916fe569c',1,'wallet.h']]],
+  ['change_5fauto',['CHANGE_AUTO',['../outputtype_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3ab12ec73e5b1b21ac8e6440f916fe569c',1,'outputtype.h']]],
   ['changepass',['ChangePass',['../class_ask_passphrase_dialog.html#a96abf4d3c36c1ef9e268fb546ae76538abc3f96ab0f90c0a3b0606407b4f662cc',1,'AskPassphraseDialog']]],
   ['cmd_5ferror',['CMD_ERROR',['../class_r_p_c_console.html#a8924901fe2574698b55f173ef576c83ea4fc93a8a069d0715af06f055512f1f6a',1,'RPCConsole']]],
   ['cmd_5freply',['CMD_REPLY',['../class_r_p_c_console.html#a8924901fe2574698b55f173ef576c83ea0d4fa044fd843a7c5e3c3fbbcb2a3ea2',1,'RPCConsole']]],

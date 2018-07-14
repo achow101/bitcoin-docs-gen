@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['p2sh_5fsegwit',['P2SH_SEGWIT',['../wallet_2wallet_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3adca4c7228b48e4a611d32dc21a0e341a',1,'wallet.h']]],
+  ['p2sh_5fsegwit',['P2SH_SEGWIT',['../outputtype_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3adca4c7228b48e4a611d32dc21a0e341a',1,'outputtype.h']]],
   ['paymentrequestexpired',['PaymentRequestExpired',['../class_wallet_model.html#afb93f64411320dce4692c2190b7d35ccad7ab4fdf885aa5cb2a0f281523949a40',1,'WalletModel']]],
   ['paytxfee',['PAYTXFEE',['../policy_2fees_8h.html#ad4442247e3a53b4e0e9142797e833186a95f46a99077db9073bdd43dc6530696b',1,'fees.h']]],
   ['periodic',['PERIODIC',['../validation_8cpp.html#ae2877520fcc46d869b4f5e9768227e25ad9d83fc826ae0d42075af007a477e2c9',1,'validation.cpp']]],

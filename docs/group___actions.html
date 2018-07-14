@@ -125,7 +125,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga15a558d8fa0db299f38ed1e45a60aaaf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actions.html#ga15a558d8fa0db299f38ed1e45a60aaaf">CWallet::FundTransaction</a> (<a class="el" href="struct_c_mutable_transaction.html">CMutableTransaction</a> &amp;tx, <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;nFeeRet, int &amp;nChangePosInOut, std::string &amp;strFailReason, bool lockUnspents, const std::set&lt; int &gt; &amp;setSubtractFeeFromOutputs, <a class="el" href="class_c_coin_control.html">CCoinControl</a>)</td></tr>
 <tr class="memdesc:ga15a558d8fa0db299f38ed1e45a60aaaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert additional inputs into the transaction by calling <a class="el" href="group___actions.html#gac583d3981eaba225db79414b5159ef31" title="Create a new transaction paying the recipients with a set of coins selected by SelectCoins(); Also cr...">CreateTransaction()</a>;.  <a href="#ga15a558d8fa0db299f38ed1e45a60aaaf">More...</a><br /></td></tr>
 <tr class="separator:ga15a558d8fa0db299f38ed1e45a60aaaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3b62fa3eb391c354d1e940d0573ce838"><td class="memItemLeft" align="right" valign="top"><a class="el" href="wallet_2wallet_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3">OutputType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actions.html#ga3b62fa3eb391c354d1e940d0573ce838">CWallet::TransactionChangeType</a> (<a class="el" href="wallet_2wallet_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3">OutputType</a> change_type, const std::vector&lt; <a class="el" href="struct_c_recipient.html">CRecipient</a> &gt; &amp;vecSend)</td></tr>
+<tr class="memitem:ga3b62fa3eb391c354d1e940d0573ce838"><td class="memItemLeft" align="right" valign="top"><a class="el" href="outputtype_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3">OutputType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actions.html#ga3b62fa3eb391c354d1e940d0573ce838">CWallet::TransactionChangeType</a> (<a class="el" href="outputtype_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3">OutputType</a> change_type, const std::vector&lt; <a class="el" href="struct_c_recipient.html">CRecipient</a> &gt; &amp;vecSend)</td></tr>
 <tr class="separator:ga3b62fa3eb391c354d1e940d0573ce838"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac583d3981eaba225db79414b5159ef31"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actions.html#gac583d3981eaba225db79414b5159ef31">CWallet::CreateTransaction</a> (const std::vector&lt; <a class="el" href="struct_c_recipient.html">CRecipient</a> &gt; &amp;vecSend, <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx, <a class="el" href="class_c_reserve_key.html">CReserveKey</a> &amp;reservekey, <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;nFeeRet, int &amp;nChangePosInOut, std::string &amp;strFailReason, const <a class="el" href="class_c_coin_control.html">CCoinControl</a> &amp;coin_control, bool sign=true)</td></tr>
 <tr class="memdesc:gac583d3981eaba225db79414b5159ef31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new transaction paying the recipients with a set of coins selected by <a class="el" href="group___actions.html#gac0fe2ddfb8fbabdf6d11578395b3d00a" title="Select a set of coins such that nValueRet &gt;= nTargetValue and at least all coins from coinControl are...">SelectCoins()</a>; Also create the change output, when needed.  <a href="#gac583d3981eaba225db79414b5159ef31">More...</a><br /></td></tr>
@@ -491,7 +491,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_gac583d3981eaba225db79414b5159ef31_cgraph.svg" width="1662" height="1234"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_gac583d3981eaba225db79414b5159ef31_cgraph.svg" width="1662" height="1234"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1927,9 +1928,9 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="wallet_2wallet_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3">OutputType</a> CWallet::TransactionChangeType </td>
+          <td class="memname"><a class="el" href="outputtype_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3">OutputType</a> CWallet::TransactionChangeType </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="wallet_2wallet_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3">OutputType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="outputtype_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3">OutputType</a>&#160;</td>
           <td class="paramname"><em>change_type</em>, </td>
         </tr>
         <tr>
@@ -2069,7 +2070,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 14 2018 03:26:09 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 14 2018 03:32:46 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

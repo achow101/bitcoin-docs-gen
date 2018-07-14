@@ -29,7 +29,7 @@ var searchData=
   ['leave_5fcritical_5fsection',['LEAVE_CRITICAL_SECTION',['../sync_8h.html#a2b89bac48633dc1532691f1106a55f6c',1,'sync.h']]],
   ['left',['left',['../structmemusage_1_1stl__tree__node.html#a64defd9406daa36f6a35a6b2d7d356ed',1,'memusage::stl_tree_node']]],
   ['leftmempool',['leftMempool',['../struct_estimator_bucket.html#a75ca2a4f4a3264c75c69755bc93e79e5',1,'EstimatorBucket']]],
-  ['legacy',['LEGACY',['../wallet_2wallet_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3a456d016bd133625e5036aa9a556f2730',1,'wallet.h']]],
+  ['legacy',['LEGACY',['../outputtype_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3a456d016bd133625e5036aa9a556f2730',1,'outputtype.h']]],
   ['length',['length',['../struct_witness_unknown.html#a929350df3ba4e4151eaafbea986c7246',1,'WitnessUnknown']]],
   ['leveldb',['LEVELDB',['../namespace_b_c_log.html#ad1037484206121adbcda9f9c824ab6b2a9637cd35e793d3f83562d6690b707a83',1,'BCLog']]],
   ['lf_5fcb',['lf_cb',['../class_locked_pool.html#a7e5b3a74f2178639d2adb22b82d5e870',1,'LockedPool']]],

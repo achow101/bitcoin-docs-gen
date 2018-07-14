@@ -22,7 +22,7 @@ var searchData=
   ['add_5fonion_5fcb',['add_onion_cb',['../class_tor_controller.html#a78b762c14a006b2f509261a95963ff67',1,'TorController']]],
   ['addaccountingentry',['AddAccountingEntry',['../group___actions.html#gacf627cfb290d5b45d4c1f091e42301ac',1,'CWallet::AddAccountingEntry(const CAccountingEntry &amp;)'],['../group___actions.html#ga1cf18640f2c6902d0942780927ecbcab',1,'CWallet::AddAccountingEntry(const CAccountingEntry &amp;, WalletBatch *batch)']]],
   ['addaddressknown',['AddAddressKnown',['../class_c_node.html#a923c9640a28f97cf9c23a21ae8e13c97',1,'CNode']]],
-  ['addandgetdestinationforscript',['AddAndGetDestinationForScript',['../class_c_wallet.html#a8b4bc1dd593642b1de10a999adc50cb1',1,'CWallet']]],
+  ['addandgetdestinationforscript',['AddAndGetDestinationForScript',['../outputtype_8cpp.html#a136c8c443d59fe92455f431c7eab8c10',1,'AddAndGetDestinationForScript(CKeyStore &amp;keystore, const CScript &amp;script, OutputType type):&#160;outputtype.cpp'],['../outputtype_8h.html#ab523423c80fa468e62f6c74aaae55673',1,'AddAndGetDestinationForScript(CKeyStore &amp;keystore, const CScript &amp;script, OutputType):&#160;outputtype.cpp']]],
   ['addarg',['AddArg',['../class_args_manager.html#a453e50e62e5cde685d804185819fc93c',1,'ArgsManager']]],
   ['addargs',['AddArgs',['../class_args_manager_helper.html#a49a4fb1c9bcd3d4d010223effa45fb6a',1,'ArgsManagerHelper']]],
   ['addblock',['AddBlock',['../class_c_block_file_info.html#a66867569ffe06068b8c6eb1139934fbf',1,'CBlockFileInfo']]],

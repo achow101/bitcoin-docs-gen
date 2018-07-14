@@ -128,7 +128,7 @@ var searchData=
   ['chainstateflushed',['ChainStateFlushed',['../struct_main_signals_instance.html#a1d3165fb7ea5b78afb1358c50dcf3214',1,'MainSignalsInstance::ChainStateFlushed()'],['../class_base_index.html#a770e60b2fcbc0b8adaaeb54f18eb9c8a',1,'BaseIndex::ChainStateFlushed()'],['../class_c_validation_interface.html#a406070080c92a1aa3f6ed8f9b4295df7',1,'CValidationInterface::ChainStateFlushed()'],['../class_c_main_signals.html#ae30b2e985a136c42158e2a3190dcf3f1',1,'CMainSignals::ChainStateFlushed()'],['../group__map_wallet.html#gadabead3d4280f27df269edd4d02174af',1,'CWallet::ChainStateFlushed()']]],
   ['chaintxdata',['ChainTxData',['../struct_chain_tx_data.html',1,'ChainTxData'],['../class_c_chain_params.html#af19672935456e477dca41b7cea9d3cdb',1,'CChainParams::chainTxData()']]],
   ['change',['change',['../structinterfaces_1_1_wallet_tx.html#a7345599871a75cbf25f40ac957b28fb5',1,'interfaces::WalletTx']]],
-  ['change_5fauto',['CHANGE_AUTO',['../wallet_2wallet_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3ab12ec73e5b1b21ac8e6440f916fe569c',1,'wallet.h']]],
+  ['change_5fauto',['CHANGE_AUTO',['../outputtype_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3ab12ec73e5b1b21ac8e6440f916fe569c',1,'outputtype.h']]],
   ['change_5fcapacity',['change_capacity',['../classprevector.html#a0e673654d3b7d8d6f79534e17f68741a',1,'prevector']]],
   ['change_5foutput_5fsize',['change_output_size',['../struct_coin_selection_params.html#a8936b8b7834c8b7e7566d4d11d8ec8df',1,'CoinSelectionParams']]],
   ['change_5fspend_5fsize',['change_spend_size',['../struct_coin_selection_params.html#a261ba7c764d025f5c6de04b0a3e20b90',1,'CoinSelectionParams']]],

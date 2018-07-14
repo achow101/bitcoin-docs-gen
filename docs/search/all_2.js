@@ -56,7 +56,7 @@ var searchData=
   ['be32',['BE32',['../hash__impl_8h.html#a1d0e2eaadc95216b3a3c775409a6093e',1,'hash_impl.h']]],
   ['be32toh',['be32toh',['../endian_8h.html#aa36318f723228c3c8b6e086a76ef640a',1,'endian.h']]],
   ['be64toh',['be64toh',['../endian_8h.html#a7e9c4c9533cf8d9486c8b512ccb43e22',1,'endian.h']]],
-  ['bech32',['bech32',['../namespacebech32.html',1,'bech32'],['../wallet_2wallet_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3ad4fd7223ebde09ed36b615658d29d7bc',1,'BECH32():&#160;wallet.h']]],
+  ['bech32',['bech32',['../namespacebech32.html',1,'bech32'],['../outputtype_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3ad4fd7223ebde09ed36b615658d29d7bc',1,'BECH32():&#160;outputtype.h']]],
   ['bech32_2ecpp',['bech32.cpp',['../bech32_8cpp.html',1,'']]],
   ['bech32_2ecpp',['bech32.cpp',['../bench_2bech32_8cpp.html',1,'']]],
   ['bech32_2eh',['bech32.h',['../bech32_8h.html',1,'']]],

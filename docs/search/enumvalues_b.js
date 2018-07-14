@@ -5,7 +5,7 @@ var searchData=
   ['labelrole',['LabelRole',['../class_transaction_table_model.html#a4b248508c36df598476affbf9871d1e6a286d79e8b1e0bfc8cb6bb72bbec78de2',1,'TransactionTableModel']]],
   ['language',['Language',['../class_options_model.html#a5c6c9ca8a01aca9f53e91f118e4878d2a6b5dd4d156c9a7909b2651e0ccb56e7c',1,'OptionsModel']]],
   ['lastmonth',['LastMonth',['../class_transaction_view.html#a73d1bbedc72fa131591aadb3aba150f8ab119e2fd1a4a132c780c82cfe982f218',1,'TransactionView']]],
-  ['legacy',['LEGACY',['../wallet_2wallet_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3a456d016bd133625e5036aa9a556f2730',1,'wallet.h']]],
+  ['legacy',['LEGACY',['../outputtype_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3a456d016bd133625e5036aa9a556f2730',1,'outputtype.h']]],
   ['leveldb',['LEVELDB',['../namespace_b_c_log.html#ad1037484206121adbcda9f9c824ab6b2a9637cd35e793d3f83562d6690b707a83',1,'BCLog']]],
   ['libevent',['LIBEVENT',['../namespace_b_c_log.html#ad1037484206121adbcda9f9c824ab6b2abaed4f3ec3875ec3b40a2e0610c9202f',1,'BCLog']]],
   ['listen',['Listen',['../class_options_model.html#a5c6c9ca8a01aca9f53e91f118e4878d2a7be688a04a30d15aca32bb4ded521974',1,'OptionsModel']]],
