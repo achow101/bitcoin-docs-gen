@@ -116,7 +116,7 @@ var searchData=
   ['getdefaultdatadir',['GetDefaultDataDir',['../util_8cpp.html#a15cb85964fe08c264605537f44570d3c',1,'GetDefaultDataDir():&#160;util.cpp'],['../util_8h.html#a15cb85964fe08c264605537f44570d3c',1,'GetDefaultDataDir():&#160;util.cpp']]],
   ['getdefaultdatadirectory',['getDefaultDataDirectory',['../class_intro.html#aad225845533fc7f451648dc7c9643e6a',1,'Intro']]],
   ['getdefaultport',['GetDefaultPort',['../class_c_chain_params.html#afdb7793273cdb87cc5fd75450eb2258b',1,'CChainParams']]],
-  ['getdepthinmainchain',['GetDepthInMainChain',['../class_c_merkle_tx.html#a2b536484ff937f98d400d29c740670ab',1,'CMerkleTx::GetDepthInMainChain(const CBlockIndex *&amp;pindexRet) const '],['../class_c_merkle_tx.html#a33b4b2069da9eb54cb37e0ceb9266bed',1,'CMerkleTx::GetDepthInMainChain() const ']]],
+  ['getdepthinmainchain',['GetDepthInMainChain',['../class_c_merkle_tx.html#a33b4b2069da9eb54cb37e0ceb9266bed',1,'CMerkleTx']]],
   ['getdesirableserviceflags',['GetDesirableServiceFlags',['../protocol_8cpp.html#a4a92bd3e5b80138a55fafae4c4770ecd',1,'GetDesirableServiceFlags(ServiceFlags services):&#160;protocol.cpp'],['../protocol_8h.html#a4a92bd3e5b80138a55fafae4c4770ecd',1,'GetDesirableServiceFlags(ServiceFlags services):&#160;protocol.cpp']]],
   ['getdestdata',['GetDestData',['../class_c_wallet.html#ad295a5a7044642c829b1772c855a2da5',1,'CWallet']]],
   ['getdestinationforkey',['GetDestinationForKey',['../wallet_2wallet_8cpp.html#a1737e7b2e484a2193cd373e9583ecc60',1,'GetDestinationForKey(const CPubKey &amp;key, OutputType type):&#160;wallet.cpp'],['../wallet_2wallet_8h.html#ab149e7a2489c66c40025927a0f8bbaf8',1,'GetDestinationForKey(const CPubKey &amp;key, OutputType):&#160;wallet.cpp']]],
