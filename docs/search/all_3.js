@@ -367,7 +367,6 @@ var searchData=
   ['compareblocksbyheight',['CompareBlocksByHeight',['../struct_compare_blocks_by_height.html',1,'']]],
   ['comparectxmempooliter',['CompareCTxMemPoolIter',['../struct_compare_c_tx_mem_pool_iter.html',1,'']]],
   ['comparedepthandscore',['CompareDepthAndScore',['../class_c_tx_mem_pool.html#a8544d756fb965d312077e9feccb0f4a4',1,'CTxMemPool']]],
-  ['compareinvmempoolorder',['CompareInvMempoolOrder',['../class_compare_inv_mempool_order.html',1,'CompareInvMempoolOrder'],['../class_compare_inv_mempool_order.html#ab81595ec0e2a66d6be86c893e309a975',1,'CompareInvMempoolOrder::CompareInvMempoolOrder()']]],
   ['compareiteratorbyhash',['CompareIteratorByHash',['../struct_c_tx_mem_pool_1_1_compare_iterator_by_hash.html',1,'CTxMemPool']]],
   ['compareto',['CompareTo',['../classbase__uint.html#ac9777c80cfcf1355cf17258027ca35bb',1,'base_uint']]],
   ['comparetxiterbyancestorcount',['CompareTxIterByAncestorCount',['../struct_compare_tx_iter_by_ancestor_count.html',1,'']]],

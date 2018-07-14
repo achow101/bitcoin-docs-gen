@@ -110,8 +110,8 @@ Collaboration diagram for PeerLogicValidation:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac6409655ba8cde94c1420cfbd3cfd51c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_peer_logic_validation.html#ac6409655ba8cde94c1420cfbd3cfd51c">PeerLogicValidation</a> (<a class="el" href="class_c_connman.html">CConnman</a> *<a class="el" href="class_peer_logic_validation.html#aa9781fcb90dd8cec39b429fdc489e198">connman</a>, <a class="el" href="class_c_scheduler.html">CScheduler</a> &amp;scheduler)</td></tr>
-<tr class="separator:ac6409655ba8cde94c1420cfbd3cfd51c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac78447f386f57c189c82396e3d153ac2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_peer_logic_validation.html#ac78447f386f57c189c82396e3d153ac2">PeerLogicValidation</a> (<a class="el" href="class_c_connman.html">CConnman</a> *<a class="el" href="class_peer_logic_validation.html#aa9781fcb90dd8cec39b429fdc489e198">connman</a>, <a class="el" href="class_c_scheduler.html">CScheduler</a> &amp;scheduler, bool enable_bip61)</td></tr>
+<tr class="separator:ac78447f386f57c189c82396e3d153ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6be1affbdc736f974fd8acb52d1439b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_peer_logic_validation.html#a6be1affbdc736f974fd8acb52d1439b9">BlockConnected</a> (const std::shared_ptr&lt; const <a class="el" href="class_c_block.html">CBlock</a> &gt; &amp;pblock, const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindexConnected, const std::vector&lt; <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &gt; &amp;vtxConflicted) override</td></tr>
 <tr class="memdesc:a6be1affbdc736f974fd8acb52d1439b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overridden from <a class="el" href="class_c_validation_interface.html">CValidationInterface</a>.  <a href="#a6be1affbdc736f974fd8acb52d1439b9">More...</a><br /></td></tr>
 <tr class="separator:a6be1affbdc736f974fd8acb52d1439b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,6 +152,9 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aa9781fcb90dd8cec39b429fdc489e198"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20db0a2ffae94ecbcfe2e39017ac7ef9"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_peer_logic_validation.html#a20db0a2ffae94ecbcfe2e39017ac7ef9">m_stale_tip_check_time</a></td></tr>
 <tr class="separator:a20db0a2ffae94ecbcfe2e39017ac7ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a73f65f2c7c2cbb745ec9dd6ac79faf"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_peer_logic_validation.html#a0a73f65f2c7c2cbb745ec9dd6ac79faf">m_enable_bip61</a></td></tr>
+<tr class="memdesc:a0a73f65f2c7c2cbb745ec9dd6ac79faf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next time to check for stale tip.  <a href="#a0a73f65f2c7c2cbb745ec9dd6ac79faf">More...</a><br /></td></tr>
+<tr class="separator:a0a73f65f2c7c2cbb745ec9dd6ac79faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -187,9 +190,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="net__processing_8h_source.html#l00043">43</a> of file <a class="el" href="net__processing_8h_source.html">net_processing.h</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8h_source.html#l00020">20</a> of file <a class="el" href="net__processing_8h_source.html">net_processing.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ac6409655ba8cde94c1420cfbd3cfd51c"></a>
+<a class="anchor" id="ac78447f386f57c189c82396e3d153ac2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -206,7 +209,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="class_c_scheduler.html">CScheduler</a> &amp;&#160;</td>
-          <td class="paramname"><em>scheduler</em>&#160;</td>
+          <td class="paramname"><em>scheduler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable_bip61</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -221,12 +230,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00812">812</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00833">833</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_peer_logic_validation_ac6409655ba8cde94c1420cfbd3cfd51c_cgraph.svg" width="1199" height="350"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_peer_logic_validation_ac78447f386f57c189c82396e3d153ac2_cgraph.svg" width="1199" height="416"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -270,7 +280,7 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="class_c_validation_interface.html#aeb34ef6814685cabc29062ed7be25441">CValidationInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00953">953</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00976">976</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
 
 </div>
 </div>
@@ -318,7 +328,7 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="class_c_validation_interface.html#a5c8ac00b2b08a57c28e8bbc991f34ed4">CValidationInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00829">829</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00852">852</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -346,19 +356,21 @@ Here is the call graph for this function:</div>
 <p>Evict extra outbound peers. </p>
 <p>If we think our tip may be stale, connect to an extra outbound </p>
 
-<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l03176">3176</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l03199">3199</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_peer_logic_validation_ad9ba8b8657346c1ce86e061d5fdaeb53_cgraph.svg" width="975" height="286"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_peer_logic_validation_ad9ba8b8657346c1ce86e061d5fdaeb53_cgraph.svg" width="975" height="351"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_peer_logic_validation_ad9ba8b8657346c1ce86e061d5fdaeb53_icgraph.svg" width="408" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_peer_logic_validation_ad9ba8b8657346c1ce86e061d5fdaeb53_icgraph.svg" width="408" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -390,7 +402,7 @@ Here is the caller graph for this function:</div>
 
 <p>Consider evicting an outbound peer based on the amount of time they've been behind our tip. </p>
 
-<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l03068">3068</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l03091">3091</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -424,7 +436,7 @@ Here is the caller graph for this function:</div>
 
 <p>If we have extra outbound peers, try to disconnect the one with the oldest block announcement. </p>
 
-<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l03121">3121</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l03144">3144</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -436,7 +448,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_peer_logic_validation_ac89bf1ee08fd8960559d19ab87564b0d_icgraph.svg" width="648" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_peer_logic_validation_ac89bf1ee08fd8960559d19ab87564b0d_icgraph.svg" width="648" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -478,7 +491,7 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="class_net_events_interface.html#ab536ccb2880f00cde46a6d30519f9629">NetEventsInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00590">590</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00611">611</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -515,7 +528,7 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="class_net_events_interface.html#a4052c74c2d1fdaa6febae796b58f33de">NetEventsInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00578">578</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00599">599</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -563,7 +576,7 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="class_c_validation_interface.html#a07bcbde7de90f5cfbc76f185465d4281">CValidationInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00872">872</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00895">895</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -617,7 +630,7 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="class_net_events_interface.html#aa91d320a8ab79997fd7e8773096121e9">NetEventsInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l02946">2946</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l02969">2969</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -661,12 +674,13 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="class_net_events_interface.html#a45dadd7c44329a4d0e7e19964bf7fe09">NetEventsInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l03215">3215</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l03240">3240</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_peer_logic_validation_a04dab16e6310bf18d432111cb6b126ad_cgraph.svg" width="1134" height="2239"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_peer_logic_validation_a04dab16e6310bf18d432111cb6b126ad_cgraph.svg" width="1134" height="2076"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -715,12 +729,13 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="class_c_validation_interface.html#a794911828f9350d82bc1941ba82e7463">CValidationInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00917">917</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00940">940</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_peer_logic_validation_a91f72d94f777c7af376dbaddd98aaf3f_cgraph.svg" width="1120" height="1598"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_peer_logic_validation_a91f72d94f777c7af376dbaddd98aaf3f_cgraph.svg" width="1371" height="1598"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -745,7 +760,32 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net__processing_8h_source.html#l00045">45</a> of file <a class="el" href="net__processing_8h_source.html">net_processing.h</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8h_source.html#l00022">22</a> of file <a class="el" href="net__processing_8h_source.html">net_processing.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0a73f65f2c7c2cbb745ec9dd6ac79faf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool PeerLogicValidation::m_enable_bip61</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Next time to check for stale tip. </p>
+<p>Enable BIP61 (sending reject messages) </p>
+
+<p>Definition at line <a class="el" href="net__processing_8h_source.html#l00074">74</a> of file <a class="el" href="net__processing_8h_source.html">net_processing.h</a>.</p>
 
 </div>
 </div>
@@ -767,7 +807,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net__processing_8h_source.html#l00094">94</a> of file <a class="el" href="net__processing_8h_source.html">net_processing.h</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8h_source.html#l00071">71</a> of file <a class="el" href="net__processing_8h_source.html">net_processing.h</a>.</p>
 
 </div>
 </div>
@@ -778,7 +818,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 14 2018 02:48:21 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 14 2018 03:13:02 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

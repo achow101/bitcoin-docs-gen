@@ -37,7 +37,7 @@ var searchData=
   ['paymentserver',['PaymentServer',['../class_payment_server.html#a4a66f55c11f4757b121179d5d6988ab2',1,'PaymentServer']]],
   ['peerlayoutabouttochange',['peerLayoutAboutToChange',['../class_r_p_c_console.html#ae2d43a386af5a7cd92b4b000f102785d',1,'RPCConsole']]],
   ['peerlayoutchanged',['peerLayoutChanged',['../class_r_p_c_console.html#af952ebc6484c8f7d1262fa0bceed41bf',1,'RPCConsole']]],
-  ['peerlogicvalidation',['PeerLogicValidation',['../class_peer_logic_validation.html#ac6409655ba8cde94c1420cfbd3cfd51c',1,'PeerLogicValidation']]],
+  ['peerlogicvalidation',['PeerLogicValidation',['../class_peer_logic_validation.html#ac78447f386f57c189c82396e3d153ac2',1,'PeerLogicValidation']]],
   ['peerselected',['peerSelected',['../class_r_p_c_console.html#a2487fa6a90cddcbb17ae4bb13ecc5359',1,'RPCConsole']]],
   ['peertablemodel',['PeerTableModel',['../class_peer_table_model.html#ada6b46d5ffa8006f1286967666dc539c',1,'PeerTableModel']]],
   ['perblockconnecttrace',['PerBlockConnectTrace',['../struct_per_block_connect_trace.html#ac6b90e71bfd1f0e1820a40de200dd6c8',1,'PerBlockConnectTrace']]],

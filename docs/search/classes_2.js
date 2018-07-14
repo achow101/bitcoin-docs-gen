@@ -119,7 +119,6 @@ var searchData=
   ['combinerall',['CombinerAll',['../struct_combiner_all.html',1,'']]],
   ['compareblocksbyheight',['CompareBlocksByHeight',['../struct_compare_blocks_by_height.html',1,'']]],
   ['comparectxmempooliter',['CompareCTxMemPoolIter',['../struct_compare_c_tx_mem_pool_iter.html',1,'']]],
-  ['compareinvmempoolorder',['CompareInvMempoolOrder',['../class_compare_inv_mempool_order.html',1,'']]],
   ['compareiteratorbyhash',['CompareIteratorByHash',['../struct_c_tx_mem_pool_1_1_compare_iterator_by_hash.html',1,'CTxMemPool']]],
   ['comparetxiterbyancestorcount',['CompareTxIterByAncestorCount',['../struct_compare_tx_iter_by_ancestor_count.html',1,'']]],
   ['comparetxmempoolentrybyancestorfee',['CompareTxMemPoolEntryByAncestorFee',['../class_compare_tx_mem_pool_entry_by_ancestor_fee.html',1,'']]],

@@ -201,7 +201,6 @@ var searchData=
   ['compactrange',['CompactRange',['../class_c_d_b_wrapper.html#af8af15fcb12ccde4b340951cd81afb81',1,'CDBWrapper']]],
   ['compare',['Compare',['../classbase__blob.html#ad879a458caebb43e218df20acda9cfc8',1,'base_blob']]],
   ['comparedepthandscore',['CompareDepthAndScore',['../class_c_tx_mem_pool.html#a8544d756fb965d312077e9feccb0f4a4',1,'CTxMemPool']]],
-  ['compareinvmempoolorder',['CompareInvMempoolOrder',['../class_compare_inv_mempool_order.html#ab81595ec0e2a66d6be86c893e309a975',1,'CompareInvMempoolOrder']]],
   ['compareto',['CompareTo',['../classbase__uint.html#ac9777c80cfcf1355cf17258027ca35bb',1,'base_uint']]],
   ['complete',['complete',['../class_c_net_message.html#a440150fa0e6a84699780048baca55da8',1,'CNetMessage']]],
   ['compressamount',['CompressAmount',['../compressor_8cpp.html#aefeac6ddbc2dc630ed959051cea092ac',1,'CompressAmount(uint64_t n):&#160;compressor.cpp'],['../compressor_8h.html#aececde1cd29d059e9e0b9509d08ed003',1,'CompressAmount(uint64_t nAmount):&#160;compressor.cpp']]],
