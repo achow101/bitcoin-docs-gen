@@ -185,6 +185,7 @@ var searchData=
   ['markaddressgood',['MarkAddressGood',['../class_c_connman.html#a85dedb235a648a1b8370228ba62ebacb',1,'CConnman']]],
   ['markconflicted',['MarkConflicted',['../group__map_wallet.html#ga009ea6afd94f2c5d560ae063883628b5',1,'CWallet']]],
   ['markdirty',['MarkDirty',['../class_c_wallet_tx.html#ac8a376bcb955e437489504dc596b43cf',1,'CWalletTx::MarkDirty()'],['../group__map_wallet.html#ga26fd9a9f48230daf346500d2afb6115e',1,'CWallet::MarkDirty()']]],
+  ['markinputsdirty',['MarkInputsDirty',['../group__map_wallet.html#ga0dacf79877a2436b217dd1001b92230f',1,'CWallet']]],
   ['markpresplitkeys',['MarkPreSplitKeys',['../class_c_wallet.html#a9f4c2a7ac3ad42f05d79953220578606',1,'CWallet']]],
   ['markreplaced',['MarkReplaced',['../group__map_wallet.html#ga1dcacd3a98d22486288b83a4febe824f',1,'CWallet']]],
   ['markreservekeysasused',['MarkReserveKeysAsUsed',['../group___actions.html#ga23a900513e363e8e79d604cab9a7c7fc',1,'CWallet']]],
