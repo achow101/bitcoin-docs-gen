@@ -16,10 +16,12 @@ var searchData=
   ['width',['WIDTH',['../classbase__uint.html#a6af1fd0c0821f81b7d0197490f104718',1,'base_uint::WIDTH()'],['../classbase__blob.html#a41c4b49573103dc6afc184acdb19d123',1,'base_blob::WIDTH()']]],
   ['window',['window',['../class_bitcoin_application.html#a5b6f0bbe1f8a1c1f3174079233a5af76',1,'BitcoinApplication']]],
   ['withintarget',['withinTarget',['../struct_estimator_bucket.html#a83642861f96b23d40a1acd6224b58769',1,'EstimatorBucket']]],
-  ['witness_5fscript',['witness_script',['../struct_signature_data.html#adf378063234367395a35bd87453e2606',1,'SignatureData']]],
+  ['witness',['witness',['../struct_signature_data.html#a3a62dfdb8c62eee4a9f397622f84c437',1,'SignatureData']]],
+  ['witness_5fscript',['witness_script',['../struct_signature_data.html#adf378063234367395a35bd87453e2606',1,'SignatureData::witness_script()'],['../struct_p_s_b_t_input.html#afc199fdc7a536053a4fd418d244e764b',1,'PSBTInput::witness_script()'],['../struct_p_s_b_t_output.html#a3bbf65afe4864b6e0f491479bc052117',1,'PSBTOutput::witness_script()']]],
+  ['witness_5futxo',['witness_utxo',['../struct_p_s_b_t_input.html#af8bfa83cd96c957d861306d7ed5e4352',1,'PSBTInput']]],
   ['wnaf',['wnaf',['../structbench__inv__t.html#ad3f27ccce40e43c4d9efd6942b911de1',1,'bench_inv_t']]],
   ['writeoptions',['writeoptions',['../class_c_d_b_wrapper.html#a9e8fd519131e35de3bb211f7388d9a18',1,'CDBWrapper']]],
   ['wtx',['wtx',['../class_wallet_model_transaction.html#a0515301adbc428219c1e230b45099574',1,'WalletModelTransaction']]],
-  ['wtxn',['wtxn',['../coinselector__tests_8cpp.html#aa12c94924d3155e96b4a2b87870f34b5',1,'coinselector_tests.cpp']]],
+  ['wtxn',['wtxn',['../coin__selection_8cpp.html#aa12c94924d3155e96b4a2b87870f34b5',1,'wtxn():&#160;coin_selection.cpp'],['../coinselector__tests_8cpp.html#aa12c94924d3155e96b4a2b87870f34b5',1,'wtxn():&#160;coinselector_tests.cpp']]],
   ['wtxordered',['wtxOrdered',['../class_c_wallet.html#a2620c000d747ea03db198c38dce9f7b7',1,'CWallet']]]
 ];

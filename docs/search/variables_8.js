@@ -17,6 +17,7 @@ var searchData=
   ['hashsequence',['hashSequence',['../struct_precomputed_transaction_data.html#a93646b43037a1b5dbde94cb8a70d4834',1,'PrecomputedTransactionData']]],
   ['hashserialized',['hashSerialized',['../struct_c_coins_stats.html#a0ce8e745d7a62e4ae41f943333c81d7c',1,'CCoinsStats']]],
   ['have_5fwatch_5fonly',['have_watch_only',['../structinterfaces_1_1_wallet_balances.html#ad356f5b61d8d0f7e6f770f2a45fcca02',1,'interfaces::WalletBalances']]],
+  ['hd_5fkeypaths',['hd_keypaths',['../struct_p_s_b_t_input.html#af140a14e8c99cad490615f90811355d9',1,'PSBTInput::hd_keypaths()'],['../struct_p_s_b_t_output.html#a22e650a8a46855d8754d50f8424d9c00',1,'PSBTOutput::hd_keypaths()']]],
   ['hd_5fseed_5fid',['hd_seed_id',['../class_c_key_metadata.html#af9a03aa0f4b93e765b1c71677bffc95a',1,'CKeyMetadata']]],
   ['hdchain',['hdChain',['../class_c_wallet.html#a87b49ad17b16d703868ecc872311ae9e',1,'CWallet']]],
   ['hdkeypath',['hdKeypath',['../class_c_key_metadata.html#abe171b19d4440c30b73cb59c57be1beb',1,'CKeyMetadata']]],

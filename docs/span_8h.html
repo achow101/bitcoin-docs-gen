@@ -98,15 +98,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &lt;type_traits&gt;</code><br />
 <code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for span.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="span_8h__incl.svg" width="195" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="span_8h__incl.svg" width="302" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="span_8h__dep__incl.svg" width="3603" height="560"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="span_8h__dep__incl.svg" width="3640" height="560"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="span_8h_source.html">Go to the source code of this file.</a></p>
@@ -119,12 +122,47 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a4464473cb655d6f0513c8f5b330fd2fc"><td class="memTemplParams" colspan="2">template&lt;typename A , int N&gt; </td></tr>
+<tr class="memitem:a4464473cb655d6f0513c8f5b330fd2fc"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_span.html">Span</a>&lt; A &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="span_8h.html#a4464473cb655d6f0513c8f5b330fd2fc">MakeSpan</a> (A(&amp;a)[N])</td></tr>
+<tr class="memdesc:a4464473cb655d6f0513c8f5b330fd2fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a span to a container exposing data() and size().  <a href="#a4464473cb655d6f0513c8f5b330fd2fc">More...</a><br /></td></tr>
+<tr class="separator:a4464473cb655d6f0513c8f5b330fd2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a335964f564708c116f1819366b215347"><td class="memTemplParams" colspan="2">template&lt;typename V &gt; </td></tr>
 <tr class="memitem:a335964f564708c116f1819366b215347"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_span.html">Span</a>&lt; typename std::remove_pointer&lt; decltype(std::declval&lt; V &gt;).data())&gt;::type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="span_8h.html#a335964f564708c116f1819366b215347">MakeSpan</a> (V &amp;v)</td></tr>
-<tr class="memdesc:a335964f564708c116f1819366b215347"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a span to a container exposing data() and size().  <a href="#a335964f564708c116f1819366b215347">More...</a><br /></td></tr>
 <tr class="separator:a335964f564708c116f1819366b215347"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a4464473cb655d6f0513c8f5b330fd2fc"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename A , int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="class_span.html">Span</a>&lt;A&gt; MakeSpan </td>
+          <td>(</td>
+          <td class="paramtype">A(&amp;)&#160;</td>
+          <td class="paramname"><em>a</em>[N]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a span to a container exposing data() and size(). </p>
+<p>This correctly deals with constness: the returned <a class="el" href="class_span.html" title="A Span is an object that can refer to a contiguous sequence of objects. ">Span</a>'s element type will be whatever data() returns a pointer to. If either the passed container is const, or its element type is const, the resulting span will have a const element type.</p>
+<p>std::span will have a constructor that implements this functionality directly. </p>
+
+<p>Definition at line <a class="el" href="span_8h_source.html#l00055">55</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="span_8h_a4464473cb655d6f0513c8f5b330fd2fc_icgraph.svg" width="512" height="286"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a335964f564708c116f1819366b215347"></a>
 <div class="memitem">
 <div class="memproto">
@@ -141,11 +179,7 @@ template&lt;typename V &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Create a span to a container exposing data() and size(). </p>
-<p>This correctly deals with constness: the returned <a class="el" href="class_span.html" title="A Span is an object that can refer to a contiguous sequence of objects. ">Span</a>'s element type will be whatever data() returns a pointer to. If either the passed container is const, or its element type is const, the resulting span will have a const element type.</p>
-<p>std::span will have a constructor that implements this functionality directly. </p>
-
-<p>Definition at line <a class="el" href="span_8h_source.html#l00038">38</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
+<p>Definition at line <a class="el" href="span_8h_source.html#l00058">58</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -154,19 +188,12 @@ Here is the call graph for this function:</div>
 </div>
 </p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="span_8h_a335964f564708c116f1819366b215347_icgraph.svg" width="303" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 16 2018 13:52:01 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 1 2018 22:04:08 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

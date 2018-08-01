@@ -107,6 +107,8 @@ Collaboration diagram for CInputCoin:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a31df84b05ef1b95087c11a576944dfda"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_input_coin.html#a31df84b05ef1b95087c11a576944dfda">CInputCoin</a> (const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx, unsigned int i)</td></tr>
 <tr class="separator:a31df84b05ef1b95087c11a576944dfda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70a19bb174b1f969d0d6f785cc39ac9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_input_coin.html#a70a19bb174b1f969d0d6f785cc39ac9e">CInputCoin</a> (const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx, unsigned int i, int input_bytes)</td></tr>
+<tr class="separator:a70a19bb174b1f969d0d6f785cc39ac9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c8fc557d4adb3f95d3259cdac9d5365"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_input_coin.html#a5c8fc557d4adb3f95d3259cdac9d5365">operator&lt;</a> (const <a class="el" href="class_c_input_coin.html">CInputCoin</a> &amp;rhs) const </td></tr>
 <tr class="separator:a5c8fc557d4adb3f95d3259cdac9d5365"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5ae04e4a9a1218203bd6a5488323027"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_input_coin.html#af5ae04e4a9a1218203bd6a5488323027">operator!=</a> (const <a class="el" href="class_c_input_coin.html">CInputCoin</a> &amp;rhs) const </td></tr>
@@ -122,10 +124,9 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a71dd0837a9066371a9c5522aa7cbfd3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aece87823a75e9bc2dc6c39e92c13eb4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_input_coin.html#aece87823a75e9bc2dc6c39e92c13eb4e">effective_value</a></td></tr>
 <tr class="separator:aece87823a75e9bc2dc6c39e92c13eb4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7aaa664fa5d80ac5a1e1c38df502916"><td class="memItemLeft" align="right" valign="top"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_input_coin.html#ac7aaa664fa5d80ac5a1e1c38df502916">fee</a> = 0</td></tr>
-<tr class="separator:ac7aaa664fa5d80ac5a1e1c38df502916"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7cb63184c037e87045fb5f093d35b5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_input_coin.html#ad7cb63184c037e87045fb5f093d35b5d">long_term_fee</a> = 0</td></tr>
-<tr class="separator:ad7cb63184c037e87045fb5f093d35b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a098d0d3cd6ee5dff5511de7ee1604275"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_input_coin.html#a098d0d3cd6ee5dff5511de7ee1604275">m_input_bytes</a> {-1}</td></tr>
+<tr class="memdesc:a098d0d3cd6ee5dff5511de7ee1604275"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-computed estimated size of this output as a fully-signed input in a transaction.  <a href="#a098d0d3cd6ee5dff5511de7ee1604275">More...</a><br /></td></tr>
+<tr class="separator:a098d0d3cd6ee5dff5511de7ee1604275"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -167,6 +168,48 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a70a19bb174b1f969d0d6f785cc39ac9e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CInputCoin::CInputCoin </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;&#160;</td>
+          <td class="paramname"><em>tx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>input_bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="coinselection_8h_source.html#l00031">31</a> of file <a class="el" href="coinselection_8h_source.html">coinselection.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="af5ae04e4a9a1218203bd6a5488323027"></a>
 <div class="memitem">
@@ -190,7 +233,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coinselection_8h_source.html#l00041">41</a> of file <a class="el" href="coinselection_8h_source.html">coinselection.h</a>.</p>
+<p>Definition at line <a class="el" href="coinselection_8h_source.html#l00047">47</a> of file <a class="el" href="coinselection_8h_source.html">coinselection.h</a>.</p>
 
 </div>
 </div>
@@ -216,7 +259,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coinselection_8h_source.html#l00037">37</a> of file <a class="el" href="coinselection_8h_source.html">coinselection.h</a>.</p>
+<p>Definition at line <a class="el" href="coinselection_8h_source.html#l00043">43</a> of file <a class="el" href="coinselection_8h_source.html">coinselection.h</a>.</p>
 
 </div>
 </div>
@@ -242,14 +285,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coinselection_8h_source.html#l00045">45</a> of file <a class="el" href="coinselection_8h_source.html">coinselection.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_input_coin_a9955c1f1a57b8d6a242ac92c42904c8c_cgraph.svg" width="1947" height="220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
+<p>Definition at line <a class="el" href="coinselection_8h_source.html#l00051">51</a> of file <a class="el" href="coinselection_8h_source.html">coinselection.h</a>.</p>
 
 </div>
 </div>
@@ -264,35 +300,24 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coinselection_8h_source.html#l00033">33</a> of file <a class="el" href="coinselection_8h_source.html">coinselection.h</a>.</p>
+<p>Definition at line <a class="el" href="coinselection_8h_source.html#l00038">38</a> of file <a class="el" href="coinselection_8h_source.html">coinselection.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac7aaa664fa5d80ac5a1e1c38df502916"></a>
+<a class="anchor" id="a098d0d3cd6ee5dff5511de7ee1604275"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> CInputCoin::fee = 0</td>
+          <td class="memname">int CInputCoin::m_input_bytes {-1}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coinselection_8h_source.html#l00034">34</a> of file <a class="el" href="coinselection_8h_source.html">coinselection.h</a>.</p>
+<p>Pre-computed estimated size of this output as a fully-signed input in a transaction. </p>
+<p>Can be -1 if it could not be calculated </p>
 
-</div>
-</div>
-<a class="anchor" id="ad7cb63184c037e87045fb5f093d35b5d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> CInputCoin::long_term_fee = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="coinselection_8h_source.html#l00035">35</a> of file <a class="el" href="coinselection_8h_source.html">coinselection.h</a>.</p>
+<p>Definition at line <a class="el" href="coinselection_8h_source.html#l00041">41</a> of file <a class="el" href="coinselection_8h_source.html">coinselection.h</a>.</p>
 
 </div>
 </div>
@@ -306,7 +331,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coinselection_8h_source.html#l00031">31</a> of file <a class="el" href="coinselection_8h_source.html">coinselection.h</a>.</p>
+<p>Definition at line <a class="el" href="coinselection_8h_source.html#l00036">36</a> of file <a class="el" href="coinselection_8h_source.html">coinselection.h</a>.</p>
 
 </div>
 </div>
@@ -320,7 +345,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coinselection_8h_source.html#l00032">32</a> of file <a class="el" href="coinselection_8h_source.html">coinselection.h</a>.</p>
+<p>Definition at line <a class="el" href="coinselection_8h_source.html#l00037">37</a> of file <a class="el" href="coinselection_8h_source.html">coinselection.h</a>.</p>
 
 </div>
 </div>
@@ -330,7 +355,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 16 2018 13:52:02 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 1 2018 22:04:09 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

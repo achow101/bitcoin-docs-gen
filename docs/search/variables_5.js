@@ -4,7 +4,7 @@ var searchData=
   ['ecmult_5fgen_5fctx',['ecmult_gen_ctx',['../structsecp256k1__context__struct.html#aacc2071a68f9c5a6c05eb783f523b9eb',1,'secp256k1_context_struct']]],
   ['editstatus',['editStatus',['../class_address_table_model.html#a557a0fd8f7b973af0ae1626728cc8827',1,'AddressTableModel']]],
   ['effective_5ffee',['effective_fee',['../struct_coin_selection_params.html#a87f2161f92eb89cd682dd48f8d110579',1,'CoinSelectionParams']]],
-  ['effective_5fvalue',['effective_value',['../class_c_input_coin.html#aece87823a75e9bc2dc6c39e92c13eb4e',1,'CInputCoin']]],
+  ['effective_5fvalue',['effective_value',['../class_c_input_coin.html#aece87823a75e9bc2dc6c39e92c13eb4e',1,'CInputCoin::effective_value()'],['../struct_output_group.html#ae3a8ecd4cb7affb74f172c4d18b071be',1,'OutputGroup::effective_value()']]],
   ['elapsed',['elapsed',['../struct_b_i_p9_stats.html#a539a52b857154af782fa3c8c0c6e1af4',1,'BIP9Stats']]],
   ['enabled',['enabled',['../classorg_1_1bitcoin_1_1_secp256k1_context.html#a4b55929ee5660128656cf3e0b6dffca8',1,'org::bitcoin::Secp256k1Context']]],
   ['enablewallet',['enableWallet',['../class_bitcoin_g_u_i.html#abc2a8a6cce2f0fb9cd56eeaea0ef48cf',1,'BitcoinGUI']]],

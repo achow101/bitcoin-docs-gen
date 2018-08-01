@@ -111,7 +111,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for core_write.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__write_8cpp__incl.svg" width="3576" height="650"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__write_8cpp__incl.svg" width="3480" height="650"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="core__write_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -122,11 +123,15 @@ Functions</h2></td></tr>
 <tr class="separator:a513e384f1d458abddd1bf9be05125947"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3baef73fdbf49896ad4c68bc27fbd2b0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core__write_8cpp.html#a3baef73fdbf49896ad4c68bc27fbd2b0">FormatScript</a> (const <a class="el" href="class_c_script.html">CScript</a> &amp;script)</td></tr>
 <tr class="separator:a3baef73fdbf49896ad4c68bc27fbd2b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17c818de6e4c81b67bae4c49491a8df6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core__write_8cpp.html#a17c818de6e4c81b67bae4c49491a8df6">SighashToStr</a> (unsigned char sighash_type)</td></tr>
+<tr class="separator:a17c818de6e4c81b67bae4c49491a8df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accaf6e3c14d2f3045f85984aa9cec2c8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core__write_8cpp.html#accaf6e3c14d2f3045f85984aa9cec2c8">ScriptToAsmStr</a> (const <a class="el" href="class_c_script.html">CScript</a> &amp;script, const bool fAttemptSighashDecode)</td></tr>
 <tr class="memdesc:accaf6e3c14d2f3045f85984aa9cec2c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the assembly string representation of a <a class="el" href="class_c_script.html" title="Serialized script, used inside transaction inputs and outputs. ">CScript</a> object.  <a href="#accaf6e3c14d2f3045f85984aa9cec2c8">More...</a><br /></td></tr>
 <tr class="separator:accaf6e3c14d2f3045f85984aa9cec2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2f8819dc2e2c7602a88e5daf58d2cb7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core__write_8cpp.html#ae2f8819dc2e2c7602a88e5daf58d2cb7">EncodeHexTx</a> (const <a class="el" href="class_c_transaction.html">CTransaction</a> &amp;tx, const int serializeFlags)</td></tr>
 <tr class="separator:ae2f8819dc2e2c7602a88e5daf58d2cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0008f40d9c179d229ead567d0d356023"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core__write_8cpp.html#a0008f40d9c179d229ead567d0d356023">ScriptToUniv</a> (const <a class="el" href="class_c_script.html">CScript</a> &amp;script, <a class="el" href="class_uni_value.html">UniValue</a> &amp;out, bool include_address)</td></tr>
+<tr class="separator:a0008f40d9c179d229ead567d0d356023"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a51bf7268adbdcd58e7af445ea4db61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core__write_8cpp.html#a4a51bf7268adbdcd58e7af445ea4db61">ScriptPubKeyToUniv</a> (const <a class="el" href="class_c_script.html">CScript</a> &amp;scriptPubKey, <a class="el" href="class_uni_value.html">UniValue</a> &amp;out, bool fIncludeHex)</td></tr>
 <tr class="separator:a4a51bf7268adbdcd58e7af445ea4db61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14497f9c37438be66cf5904854fc2530"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core__write_8cpp.html#a14497f9c37438be66cf5904854fc2530">TxToUniv</a> (const <a class="el" href="class_c_transaction.html">CTransaction</a> &amp;tx, const <a class="el" href="classuint256.html">uint256</a> &amp;hashBlock, <a class="el" href="class_uni_value.html">UniValue</a> &amp;entry, bool include_hex, int serialize_flags)</td></tr>
@@ -162,7 +167,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="core__write_8cpp_source.html#l00124">124</a> of file <a class="el" href="core__write_8cpp_source.html">core_write.cpp</a>.</p>
+<p>Definition at line <a class="el" href="core__write_8cpp_source.html#l00131">131</a> of file <a class="el" href="core__write_8cpp_source.html">core_write.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -174,7 +179,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__write_8cpp_ae2f8819dc2e2c7602a88e5daf58d2cb7_icgraph.svg" width="2464" height="478"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__write_8cpp_ae2f8819dc2e2c7602a88e5daf58d2cb7_icgraph.svg" width="2471" height="751"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -235,7 +241,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="core__write_8cpp_source.html#l00131">131</a> of file <a class="el" href="core__write_8cpp_source.html">core_write.cpp</a>.</p>
+<p>Definition at line <a class="el" href="core__write_8cpp_source.html#l00154">154</a> of file <a class="el" href="core__write_8cpp_source.html">core_write.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -247,7 +253,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__write_8cpp_a4a51bf7268adbdcd58e7af445ea4db61_icgraph.svg" width="962" height="339"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__write_8cpp_a4a51bf7268adbdcd58e7af445ea4db61_icgraph.svg" width="982" height="414"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -286,7 +293,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="core__write_8cpp_source.html#l00080">80</a> of file <a class="el" href="core__write_8cpp_source.html">core_write.cpp</a>.</p>
+<p>Definition at line <a class="el" href="core__write_8cpp_source.html#l00087">87</a> of file <a class="el" href="core__write_8cpp_source.html">core_write.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -298,7 +305,84 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__write_8cpp_accaf6e3c14d2f3045f85984aa9cec2c8_icgraph.svg" width="1255" height="416"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__write_8cpp_accaf6e3c14d2f3045f85984aa9cec2c8_icgraph.svg" width="1150" height="460"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0008f40d9c179d229ead567d0d356023"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ScriptToUniv </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_script.html">CScript</a> &amp;&#160;</td>
+          <td class="paramname"><em>script</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_uni_value.html">UniValue</a> &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>include_address</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="core__write_8cpp_source.html#l00138">138</a> of file <a class="el" href="core__write_8cpp_source.html">core_write.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__write_8cpp_a0008f40d9c179d229ead567d0d356023_cgraph.svg" width="1787" height="899"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__write_8cpp_a0008f40d9c179d229ead567d0d356023_icgraph.svg" width="415" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a17c818de6e4c81b67bae4c49491a8df6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string SighashToStr </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>sighash_type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="core__write_8cpp_source.html#l00073">73</a> of file <a class="el" href="core__write_8cpp_source.html">core_write.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__write_8cpp_a17c818de6e4c81b67bae4c49491a8df6_icgraph.svg" width="420" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -346,7 +430,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="core__write_8cpp_source.html#l00157">157</a> of file <a class="el" href="core__write_8cpp_source.html">core_write.cpp</a>.</p>
+<p>Definition at line <a class="el" href="core__write_8cpp_source.html#l00180">180</a> of file <a class="el" href="core__write_8cpp_source.html">core_write.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -358,7 +442,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__write_8cpp_a14497f9c37438be66cf5904854fc2530_icgraph.svg" width="744" height="214"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__write_8cpp_a14497f9c37438be66cf5904854fc2530_icgraph.svg" width="787" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -390,7 +475,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__write_8cpp_a513e384f1d458abddd1bf9be05125947_icgraph.svg" width="1058" height="736"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__write_8cpp_a513e384f1d458abddd1bf9be05125947_icgraph.svg" width="1088" height="1004"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -418,7 +504,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 16 2018 13:52:00 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 1 2018 22:04:06 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

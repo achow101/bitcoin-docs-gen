@@ -20,6 +20,7 @@ var searchData=
   ['util_2eh',['util.h',['../util_8h.html',1,'']]],
   ['utilitydialog_2ecpp',['utilitydialog.cpp',['../utilitydialog_8cpp.html',1,'']]],
   ['utilitydialog_2eh',['utilitydialog.h',['../utilitydialog_8h.html',1,'']]],
+  ['utilmemory_2eh',['utilmemory.h',['../utilmemory_8h.html',1,'']]],
   ['utilmoneystr_2ecpp',['utilmoneystr.cpp',['../utilmoneystr_8cpp.html',1,'']]],
   ['utilmoneystr_2eh',['utilmoneystr.h',['../utilmoneystr_8h.html',1,'']]],
   ['utilstrencodings_2ecpp',['utilstrencodings.cpp',['../utilstrencodings_8cpp.html',1,'']]],

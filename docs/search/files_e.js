@@ -17,8 +17,9 @@ var searchData=
   ['prevector_2eh',['prevector.h',['../prevector_8h.html',1,'']]],
   ['protocol_2ecpp',['protocol.cpp',['../rpc_2protocol_8cpp.html',1,'']]],
   ['protocol_2ecpp',['protocol.cpp',['../protocol_8cpp.html',1,'']]],
-  ['protocol_2eh',['protocol.h',['../rpc_2protocol_8h.html',1,'']]],
   ['protocol_2eh',['protocol.h',['../protocol_8h.html',1,'']]],
+  ['protocol_2eh',['protocol.h',['../rpc_2protocol_8h.html',1,'']]],
+  ['psbt_5fwallet_5ftests_2ecpp',['psbt_wallet_tests.cpp',['../psbt__wallet__tests_8cpp.html',1,'']]],
   ['pubkey_2ecpp',['pubkey.cpp',['../pubkey_8cpp.html',1,'']]],
   ['pubkey_2eh',['pubkey.h',['../pubkey_8h.html',1,'']]]
 ];

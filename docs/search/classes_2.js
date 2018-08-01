@@ -115,6 +115,7 @@ var searchData=
   ['coincontroltreewidget',['CoinControlTreeWidget',['../class_coin_control_tree_widget.html',1,'']]],
   ['coineligibilityfilter',['CoinEligibilityFilter',['../struct_coin_eligibility_filter.html',1,'']]],
   ['coinselectionparams',['CoinSelectionParams',['../struct_coin_selection_params.html',1,'']]],
+  ['coinsviewscanreserver',['CoinsViewScanReserver',['../class_coins_view_scan_reserver.html',1,'']]],
   ['column',['Column',['../struct_c_s_v_model_writer_1_1_column.html',1,'CSVModelWriter']]],
   ['combinerall',['CombinerAll',['../struct_combiner_all.html',1,'']]],
   ['compareblocksbyheight',['CompareBlocksByHeight',['../struct_compare_blocks_by_height.html',1,'']]],

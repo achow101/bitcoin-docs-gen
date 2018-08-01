@@ -8,6 +8,7 @@ var searchData=
   ['unit',['unit',['../class_bitcoin_amount_field.html#a16bddf5c239da4adbf0121cb4be1e022',1,'BitcoinAmountField::unit()'],['../class_tx_view_delegate.html#a4281e394dd7e90ecd8401fdca7b0413a',1,'TxViewDelegate::unit()']]],
   ['unitdisplaycontrol',['unitDisplayControl',['../class_bitcoin_g_u_i.html#a98c3911483371f87ebb20ca5ef2e5548',1,'BitcoinGUI']]],
   ['unitlist',['unitlist',['../class_bitcoin_units.html#a148dab31b39a0fe432ca718201ba48a5',1,'BitcoinUnits']]],
+  ['unknown',['unknown',['../struct_p_s_b_t_input.html#ae59f1973ba3614e404d171c54aa6ce37',1,'PSBTInput::unknown()'],['../struct_p_s_b_t_output.html#ae84b2e331c80913bddcbdab4fb1494fc',1,'PSBTOutput::unknown()'],['../struct_partially_signed_transaction.html#a7710a833000f6bd4ef41a76503e1d941',1,'PartiallySignedTransaction::unknown()']]],
   ['unlockaction',['unlockAction',['../class_coin_control_dialog.html#a593151c4d9014d2dc4a8dcfc0dc7a87b',1,'CoinControlDialog']]],
   ['untrackedtxs',['untrackedTxs',['../class_c_block_policy_estimator.html#a1fab85289584c4b2a0a48ce97eb3cb0f',1,'CBlockPolicyEstimator']]],
   ['updatedblocktip',['UpdatedBlockTip',['../struct_main_signals_instance.html#a4215c80b8e02c3a79ca1bfe26e79c56d',1,'MainSignalsInstance']]],

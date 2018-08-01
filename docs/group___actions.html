@@ -111,12 +111,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gae7789156b33243baddf47d45c399d79c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_c_tx_out.html">CTxOut</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actions.html#gae7789156b33243baddf47d45c399d79c">CWallet::FindNonChangeParentOutput</a> (const <a class="el" href="class_c_transaction.html">CTransaction</a> &amp;tx, int output) const </td></tr>
 <tr class="memdesc:gae7789156b33243baddf47d45c399d79c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find non-change parent output.  <a href="#gae7789156b33243baddf47d45c399d79c">More...</a><br /></td></tr>
 <tr class="separator:gae7789156b33243baddf47d45c399d79c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga39addd78e270c62f59cca81e7a852d60"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actions.html#ga39addd78e270c62f59cca81e7a852d60">CWallet::OutputEligibleForSpending</a> (const <a class="el" href="class_c_output.html">COutput</a> &amp;output, const <a class="el" href="struct_coin_eligibility_filter.html">CoinEligibilityFilter</a> &amp;eligibility_filter) const </td></tr>
-<tr class="memdesc:ga39addd78e270c62f59cca81e7a852d60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a given output is spendable by this wallet.  <a href="#ga39addd78e270c62f59cca81e7a852d60">More...</a><br /></td></tr>
-<tr class="separator:ga39addd78e270c62f59cca81e7a852d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5539f17c0c649b8512436763faf0ac45"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actions.html#ga5539f17c0c649b8512436763faf0ac45">CWallet::SelectCoinsMinConf</a> (const <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;nTargetValue, const <a class="el" href="struct_coin_eligibility_filter.html">CoinEligibilityFilter</a> &amp;eligibility_filter, std::vector&lt; <a class="el" href="class_c_output.html">COutput</a> &gt; vCoins, std::set&lt; <a class="el" href="class_c_input_coin.html">CInputCoin</a> &gt; &amp;setCoinsRet, <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;nValueRet, const <a class="el" href="struct_coin_selection_params.html">CoinSelectionParams</a> &amp;<a class="el" href="coinselector__tests_8cpp.html#a8f567b7f1ae6851fc3c2fb5c2f61b62a">coin_selection_params</a>, bool &amp;bnb_used) const </td></tr>
-<tr class="memdesc:ga5539f17c0c649b8512436763faf0ac45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuffle and select coins until nTargetValue is reached while avoiding small change; This method is stochastic for some inputs and upon completion the coin set and corresponding actual target value is assembled.  <a href="#ga5539f17c0c649b8512436763faf0ac45">More...</a><br /></td></tr>
-<tr class="separator:ga5539f17c0c649b8512436763faf0ac45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga68cfe5d9f1b41d7811fd8542308e7193"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actions.html#ga68cfe5d9f1b41d7811fd8542308e7193">CWallet::SelectCoinsMinConf</a> (const <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;nTargetValue, const <a class="el" href="struct_coin_eligibility_filter.html">CoinEligibilityFilter</a> &amp;eligibility_filter, std::vector&lt; <a class="el" href="struct_output_group.html">OutputGroup</a> &gt; groups, std::set&lt; <a class="el" href="class_c_input_coin.html">CInputCoin</a> &gt; &amp;setCoinsRet, <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;nValueRet, const <a class="el" href="struct_coin_selection_params.html">CoinSelectionParams</a> &amp;<a class="el" href="coinselector__tests_8cpp.html#a8f567b7f1ae6851fc3c2fb5c2f61b62a">coin_selection_params</a>, bool &amp;bnb_used) const </td></tr>
+<tr class="memdesc:ga68cfe5d9f1b41d7811fd8542308e7193"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuffle and select coins until nTargetValue is reached while avoiding small change; This method is stochastic for some inputs and upon completion the coin set and corresponding actual target value is assembled.  <a href="#ga68cfe5d9f1b41d7811fd8542308e7193">More...</a><br /></td></tr>
+<tr class="separator:ga68cfe5d9f1b41d7811fd8542308e7193"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac0fe2ddfb8fbabdf6d11578395b3d00a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actions.html#gac0fe2ddfb8fbabdf6d11578395b3d00a">CWallet::SelectCoins</a> (const std::vector&lt; <a class="el" href="class_c_output.html">COutput</a> &gt; &amp;vAvailableCoins, const <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;nTargetValue, std::set&lt; <a class="el" href="class_c_input_coin.html">CInputCoin</a> &gt; &amp;setCoinsRet, <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;nValueRet, const <a class="el" href="class_c_coin_control.html">CCoinControl</a> &amp;coin_control, <a class="el" href="struct_coin_selection_params.html">CoinSelectionParams</a> &amp;<a class="el" href="coinselector__tests_8cpp.html#a8f567b7f1ae6851fc3c2fb5c2f61b62a">coin_selection_params</a>, bool &amp;bnb_used) const </td></tr>
 <tr class="memdesc:gac0fe2ddfb8fbabdf6d11578395b3d00a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select a set of coins such that nValueRet &gt;= nTargetValue and at least all coins from coinControl are selected; Never select unconfirmed coins if they are not ours.  <a href="#gac0fe2ddfb8fbabdf6d11578395b3d00a">More...</a><br /></td></tr>
 <tr class="separator:gac0fe2ddfb8fbabdf6d11578395b3d00a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,7 +214,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03081">3081</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03095">3095</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -252,7 +249,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03088">3088</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03102">3102</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -331,19 +328,21 @@ Here is the call graph for this function:</div>
 
 <p>populate vCoins with vector of available COutputs. </p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02215">2215</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02235">2235</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga166120ae0071c8ccb0976d2c62f9a56c_cgraph.svg" width="2276" height="1284"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga166120ae0071c8ccb0976d2c62f9a56c_cgraph.svg" width="2276" height="1284"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga166120ae0071c8ccb0976d2c62f9a56c_icgraph.svg" width="568" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga166120ae0071c8ccb0976d2c62f9a56c_icgraph.svg" width="650" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -405,19 +404,21 @@ Here is the caller graph for this function:</div>
 
 <p>Call after CreateTransaction unless you want to abort. </p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03028">3028</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03042">3042</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_gaded9964331f3d9e749fdb547cd7ed9ea_cgraph.svg" width="1182" height="2382"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_gaded9964331f3d9e749fdb547cd7ed9ea_cgraph.svg" width="1182" height="2382"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_gaded9964331f3d9e749fdb547cd7ed9ea_icgraph.svg" width="924" height="180"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_gaded9964331f3d9e749fdb547cd7ed9ea_icgraph.svg" width="1111" height="180"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -486,12 +487,13 @@ Here is the caller graph for this function:</div>
 <p>Create a new transaction paying the recipients with a set of coins selected by <a class="el" href="group___actions.html#gac0fe2ddfb8fbabdf6d11578395b3d00a" title="Select a set of coins such that nValueRet &gt;= nTargetValue and at least all coins from coinControl are...">SelectCoins()</a>; Also create the change output, when needed. </p>
 <dl class="section note"><dt>Note</dt><dd>passing nChangePosInOut as -1 will result in setting a random position </dd></dl>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02638">2638</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02647">2647</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_gac583d3981eaba225db79414b5159ef31_cgraph.svg" width="1662" height="1234"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_gac583d3981eaba225db79414b5159ef31_cgraph.svg" width="1662" height="1234"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -518,7 +520,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03206">3206</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03220">3220</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -543,7 +545,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03624">3624</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03648">3648</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -587,7 +589,7 @@ Here is the caller graph for this function:</div>
 
 <p>Find non-change parent output. </p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02370">2370</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02390">2390</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -654,7 +656,7 @@ Here is the call graph for this function:</div>
 
 <p>Insert additional inputs into the transaction by calling <a class="el" href="group___actions.html#gac583d3981eaba225db79414b5159ef31" title="Create a new transaction paying the recipients with a set of coins selected by SelectCoins(); Also cr...">CreateTransaction()</a>;. </p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02556">2556</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02565">2565</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -666,7 +668,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga15a558d8fa0db299f38ed1e45a60aaaf_icgraph.svg" width="494" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga15a558d8fa0db299f38ed1e45a60aaaf_icgraph.svg" width="580" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -685,12 +688,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03477">3477</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03501">3501</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_gadf2b4ac337ddb271555985cec82e43e6_cgraph.svg" width="1487" height="1392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_gadf2b4ac337ddb271555985cec82e43e6_cgraph.svg" width="1487" height="1392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -716,7 +720,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03517">3517</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03541">3541</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -748,7 +752,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02200">2200</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02220">2220</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -783,19 +787,21 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02082">2082</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02102">2102</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_gae070923b904360013ff759342d1ec070_cgraph.svg" width="1392" height="1742"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_gae070923b904360013ff759342d1ec070_cgraph.svg" width="1392" height="1742"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_gae070923b904360013ff759342d1ec070_icgraph.svg" width="499" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_gae070923b904360013ff759342d1ec070_icgraph.svg" width="580" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -814,7 +820,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02114">2114</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02134">2134</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -826,7 +832,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_gad91469884e16fc85665f27e29161ee34_icgraph.svg" width="615" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_gad91469884e16fc85665f27e29161ee34_icgraph.svg" width="696" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -845,7 +852,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02143">2143</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02163">2163</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -880,7 +887,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03427">3427</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03447">3447</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -892,7 +899,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_gac452f46eafeb2b4adfe86f7208048032_icgraph.svg" width="915" height="428"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_gac452f46eafeb2b4adfe86f7208048032_icgraph.svg" width="1074" height="443"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -912,7 +920,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03610">3610</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03634">3634</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -937,7 +945,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03226">3226</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03240">3240</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -978,12 +986,13 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02163">2163</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02183">2183</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga84eceaf4e068f3d5167f909a7d7d7d86_cgraph.svg" width="1482" height="1646"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga84eceaf4e068f3d5167f909a7d7d7d86_cgraph.svg" width="1482" height="1646"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1009,12 +1018,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03459">3459</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03483">3483</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga2555a9442e58b3c5593fef21f1b39d2d_icgraph.svg" width="535" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga2555a9442e58b3c5593fef21f1b39d2d_icgraph.svg" width="616" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1044,7 +1054,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03630">3630</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03654">3654</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1069,7 +1079,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03687">3687</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03711">3711</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1081,7 +1091,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_gaef7bc7ec0afff07a559e74847791f501_icgraph.svg" width="474" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_gaef7bc7ec0afff07a559e74847791f501_icgraph.svg" width="555" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1100,19 +1111,21 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02099">2099</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02119">2119</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga7dbe4899ff7d8562376d803b02481228_cgraph.svg" width="1474" height="1691"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga7dbe4899ff7d8562376d803b02481228_cgraph.svg" width="1474" height="1691"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga7dbe4899ff7d8562376d803b02481228_icgraph.svg" width="580" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga7dbe4899ff7d8562376d803b02481228_icgraph.svg" width="662" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1131,12 +1144,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02128">2128</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02148">2148</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga639be9d778aeeb8b71aa653f0089cdff_cgraph.svg" width="1460" height="1691"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga639be9d778aeeb8b71aa653f0089cdff_cgraph.svg" width="1460" height="1691"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1166,12 +1180,13 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03716">3716</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03740">3740</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga04d98efdc8e2e7d98123b5295dfe85e1_icgraph.svg" width="474" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga04d98efdc8e2e7d98123b5295dfe85e1_icgraph.svg" width="555" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1191,7 +1206,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03402">3402</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03422">3422</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1215,12 +1230,13 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03646">3646</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03670">3670</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga493d06f41ca9571f2a42c8581a3952d8_icgraph.svg" width="1135" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga493d06f41ca9571f2a42c8581a3952d8_icgraph.svg" width="1322" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1239,12 +1255,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03276">3276</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03293">3293</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_gac0f27992dcdb4b011f606469ac140397_icgraph.svg" width="559" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_gac0f27992dcdb4b011f606469ac140397_icgraph.svg" width="640" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1274,7 +1291,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03076">3076</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03090">3090</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1300,7 +1317,7 @@ Here is the call graph for this function:</div>
 
 <p>Return list of available coins and locked coins grouped by non-change output address. </p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02324">2324</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02344">2344</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1332,12 +1349,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03724">3724</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03748">3748</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga36d7d63b90c5af26e08b03481bf540fc_icgraph.svg" width="494" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga36d7d63b90c5af26e08b03481bf540fc_icgraph.svg" width="575" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1367,7 +1385,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03282">3282</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03299">3299</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1399,7 +1417,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03101">3101</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03115">3115</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1431,12 +1449,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03698">3698</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03722">3722</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga07b29d9b072977f02b2f223e3b6dcf88_icgraph.svg" width="535" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga07b29d9b072977f02b2f223e3b6dcf88_icgraph.svg" width="616" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1458,7 +1477,7 @@ Here is the caller graph for this function:</div>
 
 <p>Marks all keys in the keypool up to and including reserve_key as used. </p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03663">3663</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03687">3687</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1484,7 +1503,7 @@ Here is the call graph for this function:</div>
 
 <p>Mark old keypool keys as used, and generate all new keys. </p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03245">3245</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03259">3259</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1496,44 +1515,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga7353ba1e79fc4167fbfbe79b41698fa7_icgraph.svg" width="300" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga7353ba1e79fc4167fbfbe79b41698fa7_icgraph.svg" width="620" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ga39addd78e270c62f59cca81e7a852d60"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CWallet::OutputEligibleForSpending </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_c_output.html">COutput</a> &amp;&#160;</td>
-          <td class="paramname"><em>output</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_coin_eligibility_filter.html">CoinEligibilityFilter</a> &amp;&#160;</td>
-          <td class="paramname"><em>eligibility_filter</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Whether a given output is spendable by this wallet. </p>
-
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02387">2387</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga39addd78e270c62f59cca81e7a852d60_cgraph.svg" width="780" height="180"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -1586,7 +1569,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03358">3358</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03378">3378</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1627,7 +1610,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03410">3410</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03430">3430</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1651,7 +1634,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03654">3654</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03678">3678</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1718,12 +1701,13 @@ Here is the caller graph for this function:</div>
 
 <p>Select a set of coins such that nValueRet &gt;= nTargetValue and at least all coins from coinControl are selected; Never select unconfirmed coins if they are not ours. </p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02456">2456</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02461">2461</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_gac0fe2ddfb8fbabdf6d11578395b3d00a_cgraph.svg" width="860" height="202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_gac0fe2ddfb8fbabdf6d11578395b3d00a_cgraph.svg" width="860" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1736,7 +1720,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ga5539f17c0c649b8512436763faf0ac45"></a>
+<a class="anchor" id="ga68cfe5d9f1b41d7811fd8542308e7193"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1755,8 +1739,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="class_c_output.html">COutput</a> &gt;&#160;</td>
-          <td class="paramname"><em>vCoins</em>, </td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="struct_output_group.html">OutputGroup</a> &gt;&#160;</td>
+          <td class="paramname"><em>groups</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1792,19 +1776,21 @@ Here is the caller graph for this function:</div>
 
 <p>Shuffle and select coins until nTargetValue is reached while avoiding small change; This method is stochastic for some inputs and upon completion the coin set and corresponding actual target value is assembled. </p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02404">2404</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02407">2407</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga5539f17c0c649b8512436763faf0ac45_cgraph.svg" width="2074" height="654"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga68cfe5d9f1b41d7811fd8542308e7193_cgraph.svg" width="2074" height="630"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga5539f17c0c649b8512436763faf0ac45_icgraph.svg" width="452" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga68cfe5d9f1b41d7811fd8542308e7193_icgraph.svg" width="452" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1840,7 +1826,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03188">3188</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03202">3202</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1852,7 +1838,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga53e5528d7005608594e73f500bc5bb8f_icgraph.svg" width="918" height="508"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga53e5528d7005608594e73f500bc5bb8f_icgraph.svg" width="1076" height="508"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1872,7 +1859,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02533">2533</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02542">2542</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1884,7 +1871,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga199df06fa484b1142a6ae64e04519c45_icgraph.svg" width="876" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga199df06fa484b1142a6ae64e04519c45_icgraph.svg" width="1063" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1904,7 +1892,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03303">3303</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03320">3320</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1916,7 +1904,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga9730278506e0a4f1c65239b951525b55_icgraph.svg" width="899" height="443"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga9730278506e0a4f1c65239b951525b55_icgraph.svg" width="1058" height="443"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1946,7 +1935,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02610">2610</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l02619">2619</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1963,12 +1952,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03710">3710</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03734">3734</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga8a3798fa1d20374a0965dfb76b027114_icgraph.svg" width="484" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga8a3798fa1d20374a0965dfb76b027114_icgraph.svg" width="566" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1988,12 +1978,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03704">3704</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03728">3728</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga4ec396195d8682b32c1883b1331d3d23_icgraph.svg" width="462" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga4ec396195d8682b32c1883b1331d3d23_icgraph.svg" width="543" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2023,7 +2014,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03132">3132</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03146">3146</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2035,7 +2026,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga01a1096ab883f9278d00c7b0d555bb2a_icgraph.svg" width="503" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___actions_ga01a1096ab883f9278d00c7b0d555bb2a_icgraph.svg" width="584" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2055,7 +2047,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03164">3164</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03178">3178</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2069,7 +2061,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 16 2018 13:52:02 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 1 2018 22:04:08 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

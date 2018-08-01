@@ -8,6 +8,7 @@ var searchData=
   ['params',['params',['../class_j_s_o_n_r_p_c_request.html#a117b16971204e6a9da388211b456feff',1,'JSONRPCRequest']]],
   ['parent',['parent',['../class_c_d_b_batch.html#ada97b008a0576893b5b5e3308122ebae',1,'CDBBatch::parent()'],['../class_c_d_b_iterator.html#aa315b1efef256ea4933e63d57f94f2c5',1,'CDBIterator::parent()'],['../structmemusage_1_1stl__tree__node.html#a8e6c22fbf8cc17d6d4a84710d283396a',1,'memusage::stl_tree_node::parent()'],['../class_address_table_priv.html#ab0b98e86cab673315860630eafbd6561',1,'AddressTablePriv::parent()'],['../class_notificator.html#a3670b12cec8a24e2cb013d243e2315d8',1,'Notificator::parent()'],['../class_transaction_table_priv.html#a358d460cf7c3074fba12d03cdc5f638d',1,'TransactionTablePriv::parent()']]],
   ['parents',['parents',['../struct_c_tx_mem_pool_1_1_tx_links.html#ab1e8d3e60a2e6aafd6862f883bab0e80',1,'CTxMemPool::TxLinks']]],
+  ['partial_5fsigs',['partial_sigs',['../struct_p_s_b_t_input.html#a6ccc681e5317c0226c4e8e60246f1e8f',1,'PSBTInput']]],
   ['pass',['pass',['../struct_estimation_result.html#a36752b93d923078f673ec0ee373bece6',1,'EstimationResult']]],
   ['password',['password',['../struct_proxy_credentials.html#a380630fa3a709e51f7a692e757c876d7',1,'ProxyCredentials']]],
   ['path',['path',['../class_h_t_t_p_work_item.html#aad6cb131efdc3207e8338d87bbb26d27',1,'HTTPWorkItem']]],
@@ -81,6 +82,7 @@ var searchData=
   ['ptxto',['ptxTo',['../class_c_script_check.html#ac22505a5889791918c2271fd2692e32a',1,'CScriptCheck']]],
   ['pubkey',['pubkey',['../struct_c_ext_pub_key.html#ab18c8520919d20bbfd068565ae566ea8',1,'CExtPubKey::pubkey()'],['../structbenchmark__verify__t.html#af79770b187ad7a6dd6bc816682e02a8c',1,'benchmark_verify_t::pubkey()']]],
   ['pubkeylen',['pubkeylen',['../structbenchmark__verify__t.html#a49a11cf3776db6f6df107d4632da6627',1,'benchmark_verify_t']]],
+  ['pubkeys',['pubkeys',['../struct_flat_signing_provider.html#a7a40935ffd498d33557a4963a6d9e4e4',1,'FlatSigningProvider']]],
   ['public_5fkey_5fsize',['PUBLIC_KEY_SIZE',['../class_c_pub_key.html#ab84ce21c19c827eb33e187a5b4704fe3',1,'CPubKey']]],
   ['purpose',['purpose',['../structinterfaces_1_1_wallet_address.html#acbd1531c4c88c370ef5e34e3f2a6e8a2',1,'interfaces::WalletAddress::purpose()'],['../class_c_address_book_data.html#ae5fece7c73830859076950851eba04e8',1,'CAddressBookData::purpose()']]],
   ['pwallet',['pwallet',['../class_witnessifier.html#a872f9ec975ecc95d720de0e60e99344b',1,'Witnessifier::pwallet()'],['../class_describe_wallet_address_visitor.html#ae202b44e2db01bebdb92dd730c910836',1,'DescribeWalletAddressVisitor::pwallet()'],['../class_c_wallet_tx.html#a1b899e0b16df208207d774190b052a7c',1,'CWalletTx::pwallet()'],['../class_c_reserve_key.html#aab8a4052c0b9a4337248ae53e77c6115',1,'CReserveKey::pwallet()']]]

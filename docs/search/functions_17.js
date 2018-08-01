@@ -1,13 +1,15 @@
 var searchData=
 [
-  ['wait',['wait',['../class_c_semaphore.html#a1c108bd981fe68527ec8ef5e7b0d116c',1,'CSemaphore::wait()'],['../class_c_check_queue.html#a4ff3e0e8241491efa1803eeb3a53e7fa',1,'CCheckQueue::Wait()'],['../class_c_check_queue_control.html#ab31d809a76b876d21608c0c5d0e3baf0',1,'CCheckQueueControl::Wait()']]],
+  ['wait',['Wait',['../class_c_check_queue.html#a4ff3e0e8241491efa1803eeb3a53e7fa',1,'CCheckQueue::Wait()'],['../class_c_check_queue_control.html#ab31d809a76b876d21608c0c5d0e3baf0',1,'CCheckQueueControl::Wait()'],['../class_c_semaphore.html#a1c108bd981fe68527ec8ef5e7b0d116c',1,'CSemaphore::wait()']]],
   ['wakemessagehandler',['WakeMessageHandler',['../class_c_connman.html#a999ec42f1515f77096556c94c29c6538',1,'CConnman']]],
   ['wallet',['wallet',['../class_wallet_model.html#a1c5870f02d5221d26a9a50f188c42d1f',1,'WalletModel']]],
   ['walletaddress',['WalletAddress',['../structinterfaces_1_1_wallet_address.html#a1423218c6c4e3a874f177ec75db2f92c',1,'interfaces::WalletAddress']]],
   ['walletbatch',['WalletBatch',['../class_wallet_batch.html#a6a35037edff3e3c685cb68c82bd54d2b',1,'WalletBatch::WalletBatch(WalletDatabase &amp;database, const char *pszMode=&quot;r+&quot;, bool _fFlushOnClose=true)'],['../class_wallet_batch.html#a193d74cb16a3655308cf8d3935fd2d95',1,'WalletBatch::WalletBatch(const WalletBatch &amp;)=delete']]],
+  ['walletcreatefundedpsbt',['walletcreatefundedpsbt',['../rpcwallet_8cpp.html#afca55ac7a3c6c274b8b7b3e6eab9cd86',1,'rpcwallet.cpp']]],
   ['walletframe',['WalletFrame',['../class_wallet_frame.html#aa4450f6d4e118cba1572880f6d0d61d3',1,'WalletFrame']]],
   ['walletmodel',['WalletModel',['../class_wallet_model.html#ac0d2832c06b91e9f0aecb2c7d45fce81',1,'WalletModel']]],
   ['walletmodeltransaction',['WalletModelTransaction',['../class_wallet_model_transaction.html#aab5bd2eb6244b6f0e12d8511d64caf82',1,'WalletModelTransaction']]],
+  ['walletprocesspsbt',['walletprocesspsbt',['../rpcwallet_8cpp.html#a9c99ceacf389a1ce91977c6f7ffa5022',1,'rpcwallet.cpp']]],
   ['walletrescanreserver',['WalletRescanReserver',['../class_wallet_rescan_reserver.html#ad1f56ea94777344b1eb8b2aa8be6e713',1,'WalletRescanReserver']]],
   ['wallettestingsetup',['WalletTestingSetup',['../struct_wallet_testing_setup.html#a0125ada997b4b16803624bfd537d8902',1,'WalletTestingSetup']]],
   ['walletview',['WalletView',['../class_wallet_view.html#a8c584ab249ed6d5ca68c4f936ad74161',1,'WalletView']]],
@@ -51,5 +53,6 @@ var searchData=
   ['writetxs',['WriteTxs',['../class_tx_index_1_1_d_b.html#a1a74538fe62aa9bea4c4ad27a090b902',1,'TxIndex::DB']]],
   ['writevarint',['WriteVarInt',['../serialize_8h.html#a31466706d9fbdc232a71c8537f6546bc',1,'WriteVarInt(CSizeComputer &amp;os, I n):&#160;serialize.h'],['../serialize_8h.html#aeef501dcc440b0b3e6db7fd1bb2d8a8c',1,'WriteVarInt(Stream &amp;os, I n):&#160;serialize.h']]],
   ['writeversion',['WriteVersion',['../class_berkeley_batch.html#a1a8d93f8f46e534ec0a15290d4d01cd6',1,'BerkeleyBatch::WriteVersion()'],['../class_wallet_batch.html#ac4fe5c8223a895a9edf89173407d1595',1,'WalletBatch::WriteVersion()']]],
+  ['writewalletflags',['WriteWalletFlags',['../class_wallet_batch.html#a4df5a852a679f75a25224045a9db5d01',1,'WalletBatch']]],
   ['writewatchonly',['WriteWatchOnly',['../class_wallet_batch.html#a9acc3acfab37505bc68ae2a57d669168',1,'WalletBatch']]]
 ];

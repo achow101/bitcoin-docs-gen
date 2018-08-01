@@ -124,9 +124,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a36b6359caf9a304efe310b9b7141a939"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tor_control_connection.html#a36b6359caf9a304efe310b9b7141a939">Connect</a> (const std::string &amp;target, const <a class="el" href="class_tor_control_connection.html#aad3779dc10154d3547d7956abc856c53">ConnectionCB</a> &amp;<a class="el" href="class_tor_control_connection.html#a773b95f858d1dbb38c8e85f8936090f1">connected</a>, const <a class="el" href="class_tor_control_connection.html#aad3779dc10154d3547d7956abc856c53">ConnectionCB</a> &amp;<a class="el" href="class_tor_control_connection.html#a98d88047b6f1f841783439060051e384">disconnected</a>)</td></tr>
 <tr class="memdesc:a36b6359caf9a304efe310b9b7141a939"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to a Tor control port.  <a href="#a36b6359caf9a304efe310b9b7141a939">More...</a><br /></td></tr>
 <tr class="separator:a36b6359caf9a304efe310b9b7141a939"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addb42114063641eab12be2fc39b859d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tor_control_connection.html#addb42114063641eab12be2fc39b859d5">Disconnect</a> ()</td></tr>
-<tr class="memdesc:addb42114063641eab12be2fc39b859d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect from Tor control port.  <a href="#addb42114063641eab12be2fc39b859d5">More...</a><br /></td></tr>
-<tr class="separator:addb42114063641eab12be2fc39b859d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab956fc8db185b0559a2c17acab81b8e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tor_control_connection.html#ab956fc8db185b0559a2c17acab81b8e9">Disconnect</a> ()</td></tr>
+<tr class="memdesc:ab956fc8db185b0559a2c17acab81b8e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect from Tor control port.  <a href="#ab956fc8db185b0559a2c17acab81b8e9">More...</a><br /></td></tr>
+<tr class="separator:ab956fc8db185b0559a2c17acab81b8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d0292a1389bb0f78d15fe6c06a2baeb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tor_control_connection.html#a5d0292a1389bb0f78d15fe6c06a2baeb">Command</a> (const std::string &amp;cmd, const <a class="el" href="class_tor_control_connection.html#a7dd498411dcfeb0fa193b9d2738d028e">ReplyHandlerCB</a> &amp;reply_handler)</td></tr>
 <tr class="memdesc:a5d0292a1389bb0f78d15fe6c06a2baeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a command, register a handler for the reply.  <a href="#a5d0292a1389bb0f78d15fe6c06a2baeb">More...</a><br /></td></tr>
 <tr class="separator:a5d0292a1389bb0f78d15fe6c06a2baeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,7 +274,7 @@ Private Attributes</h2></td></tr>
 <p>Send a command, register a handler for the reply. </p>
 <p>A trailing CRLF is automatically added. Return true on success. </p>
 
-<p>Definition at line <a class="el" href="torcontrol_8cpp_source.html#l00234">234</a> of file <a class="el" href="torcontrol_8cpp_source.html">torcontrol.cpp</a>.</p>
+<p>Definition at line <a class="el" href="torcontrol_8cpp_source.html#l00233">233</a> of file <a class="el" href="torcontrol_8cpp_source.html">torcontrol.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -323,7 +323,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_tor_control_connection_a36b6359caf9a304efe310b9b7141a939_cgraph.svg" width="475" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_tor_control_connection_a36b6359caf9a304efe310b9b7141a939_cgraph.svg" width="475" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -336,12 +337,12 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="addb42114063641eab12be2fc39b859d5"></a>
+<a class="anchor" id="ab956fc8db185b0559a2c17acab81b8e9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool TorControlConnection::Disconnect </td>
+          <td class="memname">void TorControlConnection::Disconnect </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -356,7 +357,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_tor_control_connection_addb42114063641eab12be2fc39b859d5_icgraph.svg" width="1083" height="71"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_tor_control_connection_ab956fc8db185b0559a2c17acab81b8e9_icgraph.svg" width="1083" height="71"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -630,7 +632,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 16 2018 13:52:04 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 1 2018 22:04:11 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

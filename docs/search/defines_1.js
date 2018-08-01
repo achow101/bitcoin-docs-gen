@@ -25,6 +25,7 @@ var searchData=
   ['array_5fsize',['ARRAY_SIZE',['../unitester_8cpp.html#a3c7c6a69f690fc8d2abf0e385280a532',1,'unitester.cpp']]],
   ['arraylen',['ARRAYLEN',['../utilstrencodings_8h.html#a35bf72ac971bd331fba0b3e8117bcbf9',1,'utilstrencodings.h']]],
   ['asize',['ASIZE',['../bench_2lockedpool_8cpp.html#a58e35f7556aa03458018b870493f6299',1,'lockedpool.cpp']]],
+  ['assert_5fexclusive_5flock',['ASSERT_EXCLUSIVE_LOCK',['../threadsafety_8h.html#a22ea0c3451cfc5be90c3a52472433cb1',1,'threadsafety.h']]],
   ['assertlockheld',['AssertLockHeld',['../sync_8h.html#acd61d0cb3b49f367728193720014aed0',1,'sync.h']]],
   ['assertlocknotheld',['AssertLockNotHeld',['../sync_8h.html#a2bc429e4b3e667009b3aea3a6fab8e97',1,'sync.h']]],
   ['asymp_5futf8',['ASYMP_UTF8',['../coincontroldialog_8h.html#ac2df21b2f79900806ea9851599028386',1,'coincontroldialog.h']]]

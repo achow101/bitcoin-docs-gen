@@ -285,6 +285,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6ce6b5559e96dff1ec1b3efcf8520552"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b72a258279fae3fee5191efb5a05c17"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_wallet.html#a8b72a258279fae3fee5191efb5a05c17">hdEnabled</a> ()=0</td></tr>
 <tr class="separator:a8b72a258279fae3fee5191efb5a05c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cc22f64603739f85581ff7a2eed48c2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_wallet.html#a5cc22f64603739f85581ff7a2eed48c2">IsWalletFlagSet</a> (uint64_t flag)=0</td></tr>
+<tr class="separator:a5cc22f64603739f85581ff7a2eed48c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f11e70bff77d0537689f275e7d22080"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="outputtype_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3">OutputType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_wallet.html#a9f11e70bff77d0537689f275e7d22080">getDefaultAddressType</a> ()=0</td></tr>
 <tr class="separator:a9f11e70bff77d0537689f275e7d22080"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ec4ecc1eaa7afb414f9e696e321b10e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="outputtype_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3">OutputType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_wallet.html#a6ec4ecc1eaa7afb414f9e696e321b10e">getDefaultChangeType</a> ()=0</td></tr>
@@ -319,7 +321,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for address book changed messages. </p>
 
-<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00262">262</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00265">265</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -352,7 +354,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for show progress messages. </p>
 
-<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00250">250</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00253">253</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -368,7 +370,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for status changed messages. </p>
 
-<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00254">254</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00257">257</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -384,7 +386,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for transaction changed messages. </p>
 
-<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00266">266</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00269">269</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -400,7 +402,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for unload message. </p>
 
-<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00246">246</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00249">249</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -416,7 +418,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for watchonly changed messages. </p>
 
-<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00270">270</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00273">273</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -2136,6 +2138,30 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a5cc22f64603739f85581ff7a2eed48c2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool interfaces::Wallet::IsWalletFlagSet </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>flag</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aec8b3cdba7c085ca617bb8fedfd6b2fc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2691,7 +2717,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 16 2018 13:52:04 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 1 2018 22:04:12 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

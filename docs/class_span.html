@@ -90,6 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_span-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Span&lt; C &gt; Class Template Reference</div>  </div>
@@ -107,10 +108,26 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4dcabac963e28edaad0a3ed4c3060404"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4c01b98d157015c01ce2516db8e37a1"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_span.html#aa4c01b98d157015c01ce2516db8e37a1">Span</a> (C *<a class="el" href="class_span.html#a5bd541f0c699ad882c478cff2580207d">data</a>, std::ptrdiff_t <a class="el" href="class_span.html#ad3ffcd37799bda81da7cf4486726b830">size</a>) noexcept</td></tr>
 <tr class="separator:aa4c01b98d157015c01ce2516db8e37a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7e6e816c3a9206aedc8b542fbc6b52e"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_span.html#ad7e6e816c3a9206aedc8b542fbc6b52e">Span</a> (C *<a class="el" href="class_span.html#a5bd541f0c699ad882c478cff2580207d">data</a>, C *<a class="el" href="class_span.html#a8c6578914bd873d7c1a6b6072ef0bef2">end</a>) noexcept</td></tr>
+<tr class="separator:ad7e6e816c3a9206aedc8b542fbc6b52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bd541f0c699ad882c478cff2580207d"><td class="memItemLeft" align="right" valign="top">constexpr C *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_span.html#a5bd541f0c699ad882c478cff2580207d">data</a> () const noexcept</td></tr>
 <tr class="separator:a5bd541f0c699ad882c478cff2580207d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91d6aef791a1abb906d78298ffefebb1"><td class="memItemLeft" align="right" valign="top">constexpr C *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_span.html#a91d6aef791a1abb906d78298ffefebb1">begin</a> () const noexcept</td></tr>
+<tr class="separator:a91d6aef791a1abb906d78298ffefebb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c6578914bd873d7c1a6b6072ef0bef2"><td class="memItemLeft" align="right" valign="top">constexpr C *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_span.html#a8c6578914bd873d7c1a6b6072ef0bef2">end</a> () const noexcept</td></tr>
+<tr class="separator:a8c6578914bd873d7c1a6b6072ef0bef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3ffcd37799bda81da7cf4486726b830"><td class="memItemLeft" align="right" valign="top">constexpr std::ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_span.html#ad3ffcd37799bda81da7cf4486726b830">size</a> () const noexcept</td></tr>
 <tr class="separator:ad3ffcd37799bda81da7cf4486726b830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5afcf86218ace420d6d11598b9cc617a"><td class="memItemLeft" align="right" valign="top">constexpr C &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_span.html#a5afcf86218ace420d6d11598b9cc617a">operator[]</a> (std::ptrdiff_t pos) const noexcept</td></tr>
+<tr class="separator:a5afcf86218ace420d6d11598b9cc617a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04cb2db1b7efc764ca4c02d941921bcf"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_span.html">Span</a>&lt; C &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_span.html#a04cb2db1b7efc764ca4c02d941921bcf">subspan</a> (std::ptrdiff_t offset) const noexcept</td></tr>
+<tr class="separator:a04cb2db1b7efc764ca4c02d941921bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad45575937e1f504bd5a704ccb67c61d"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_span.html">Span</a>&lt; C &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_span.html#aad45575937e1f504bd5a704ccb67c61d">subspan</a> (std::ptrdiff_t offset, std::ptrdiff_t count) const noexcept</td></tr>
+<tr class="separator:aad45575937e1f504bd5a704ccb67c61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a220199867615694ef8de3818def0d413"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_span.html">Span</a>&lt; C &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_span.html#a220199867615694ef8de3818def0d413">first</a> (std::ptrdiff_t count) const noexcept</td></tr>
+<tr class="separator:a220199867615694ef8de3818def0d413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79c28d4eca933b4454a77d4fe2fca8dd"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_span.html">Span</a>&lt; C &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_span.html#a79c28d4eca933b4454a77d4fe2fca8dd">last</a> (std::ptrdiff_t count) const noexcept</td></tr>
+<tr class="separator:a79c28d4eca933b4454a77d4fe2fca8dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -118,6 +135,21 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a8bdb0c066e48977de2af9073decbca84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a198ed58d9a049e4460036476da552ae2"><td class="memItemLeft" align="right" valign="top">std::ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_span.html#a198ed58d9a049e4460036476da552ae2">m_size</a></td></tr>
 <tr class="separator:a198ed58d9a049e4460036476da552ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a887d80ab76080fe3e353fa20a34a4cf1"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_span.html#a887d80ab76080fe3e353fa20a34a4cf1">operator==</a> (const <a class="el" href="class_span.html">Span</a> &amp;a, const <a class="el" href="class_span.html">Span</a> &amp;b) noexcept</td></tr>
+<tr class="separator:a887d80ab76080fe3e353fa20a34a4cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1024a991a7da28a3073b2f1a4987850"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_span.html#ac1024a991a7da28a3073b2f1a4987850">operator!=</a> (const <a class="el" href="class_span.html">Span</a> &amp;a, const <a class="el" href="class_span.html">Span</a> &amp;b) noexcept</td></tr>
+<tr class="separator:ac1024a991a7da28a3073b2f1a4987850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7733d1e3368ecb52740a380e364800ce"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_span.html#a7733d1e3368ecb52740a380e364800ce">operator&lt;</a> (const <a class="el" href="class_span.html">Span</a> &amp;a, const <a class="el" href="class_span.html">Span</a> &amp;b) noexcept</td></tr>
+<tr class="separator:a7733d1e3368ecb52740a380e364800ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82de561986a5572e6d4398b6ac7f6e56"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_span.html#a82de561986a5572e6d4398b6ac7f6e56">operator&lt;=</a> (const <a class="el" href="class_span.html">Span</a> &amp;a, const <a class="el" href="class_span.html">Span</a> &amp;b) noexcept</td></tr>
+<tr class="separator:a82de561986a5572e6d4398b6ac7f6e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87da5a28a8a479e11f9c21635bb4b212"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_span.html#a87da5a28a8a479e11f9c21635bb4b212">operator&gt;</a> (const <a class="el" href="class_span.html">Span</a> &amp;a, const <a class="el" href="class_span.html">Span</a> &amp;b) noexcept</td></tr>
+<tr class="separator:a87da5a28a8a479e11f9c21635bb4b212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace1f223b28439638a257fc667570aba6"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_span.html#ace1f223b28439638a257fc667570aba6">operator&gt;=</a> (const <a class="el" href="class_span.html">Span</a> &amp;a, const <a class="el" href="class_span.html">Span</a> &amp;b) noexcept</td></tr>
+<tr class="separator:ace1f223b28439638a257fc667570aba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename C&gt;<br />
@@ -126,7 +158,7 @@ class Span&lt; C &gt;</h3>
 <p>A <a class="el" href="class_span.html" title="A Span is an object that can refer to a contiguous sequence of objects. ">Span</a> is an object that can refer to a contiguous sequence of objects. </p>
 <p>It implements a subset of C++20's std::span. </p>
 
-<p>Definition at line <a class="el" href="span_8h_source.html#l00016">16</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
+<p>Definition at line <a class="el" href="span_8h_source.html#l00017">17</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4dcabac963e28edaad0a3ed4c3060404"></a>
 <div class="memitem">
@@ -151,7 +183,7 @@ template&lt;typename C&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="span_8h_source.html#l00022">22</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
+<p>Definition at line <a class="el" href="span_8h_source.html#l00023">23</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
 
 </div>
 </div>
@@ -189,11 +221,76 @@ template&lt;typename C&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="span_8h_source.html#l00023">23</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
+<p>Definition at line <a class="el" href="span_8h_source.html#l00024">24</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad7e6e816c3a9206aedc8b542fbc6b52e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename C&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="class_span.html">Span</a>&lt; C &gt;::<a class="el" href="class_span.html">Span</a> </td>
+          <td>(</td>
+          <td class="paramtype">C *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">C *&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="span_8h_source.html#l00025">25</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a91d6aef791a1abb906d78298ffefebb1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename C&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr C* <a class="el" href="class_span.html">Span</a>&lt; C &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="span_8h_source.html#l00028">28</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a5bd541f0c699ad882c478cff2580207d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -217,14 +314,126 @@ template&lt;typename C&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="span_8h_source.html#l00025">25</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
+<p>Definition at line <a class="el" href="span_8h_source.html#l00027">27</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_span_a5bd541f0c699ad882c478cff2580207d_icgraph.svg" width="446" height="212"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_span_a5bd541f0c699ad882c478cff2580207d_icgraph.svg" width="243" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8c6578914bd873d7c1a6b6072ef0bef2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename C&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr C* <a class="el" href="class_span.html">Span</a>&lt; C &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="span_8h_source.html#l00029">29</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a220199867615694ef8de3818def0d413"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename C&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="class_span.html">Span</a>&lt;C&gt; <a class="el" href="class_span.html">Span</a>&lt; C &gt;::first </td>
+          <td>(</td>
+          <td class="paramtype">std::ptrdiff_t&#160;</td>
+          <td class="paramname"><em>count</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="span_8h_source.html#l00035">35</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a79c28d4eca933b4454a77d4fe2fca8dd"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename C&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="class_span.html">Span</a>&lt;C&gt; <a class="el" href="class_span.html">Span</a>&lt; C &gt;::last </td>
+          <td>(</td>
+          <td class="paramtype">std::ptrdiff_t&#160;</td>
+          <td class="paramname"><em>count</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="span_8h_source.html#l00036">36</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5afcf86218ace420d6d11598b9cc617a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename C&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr C&amp; <a class="el" href="class_span.html">Span</a>&lt; C &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">std::ptrdiff_t&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="span_8h_source.html#l00031">31</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
 
 </div>
 </div>
@@ -251,7 +460,7 @@ template&lt;typename C&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="span_8h_source.html#l00026">26</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
+<p>Definition at line <a class="el" href="span_8h_source.html#l00030">30</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -259,6 +468,301 @@ Here is the caller graph for this function:</div>
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_span_ad3ffcd37799bda81da7cf4486726b830_icgraph.svg" width="239" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="a04cb2db1b7efc764ca4c02d941921bcf"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename C&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="class_span.html">Span</a>&lt;C&gt; <a class="el" href="class_span.html">Span</a>&lt; C &gt;::subspan </td>
+          <td>(</td>
+          <td class="paramtype">std::ptrdiff_t&#160;</td>
+          <td class="paramname"><em>offset</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="span_8h_source.html#l00033">33</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aad45575937e1f504bd5a704ccb67c61d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename C&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="class_span.html">Span</a>&lt;C&gt; <a class="el" href="class_span.html">Span</a>&lt; C &gt;::subspan </td>
+          <td>(</td>
+          <td class="paramtype">std::ptrdiff_t&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::ptrdiff_t&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="span_8h_source.html#l00034">34</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a class="anchor" id="ac1024a991a7da28a3073b2f1a4987850"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename C&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_span.html">Span</a>&lt; C &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_span.html">Span</a>&lt; C &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="span_8h_source.html#l00039">39</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7733d1e3368ecb52740a380e364800ce"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename C&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_span.html">Span</a>&lt; C &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_span.html">Span</a>&lt; C &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="span_8h_source.html#l00040">40</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a82de561986a5572e6d4398b6ac7f6e56"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename C&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_span.html">Span</a>&lt; C &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_span.html">Span</a>&lt; C &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="span_8h_source.html#l00041">41</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a887d80ab76080fe3e353fa20a34a4cf1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename C&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_span.html">Span</a>&lt; C &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_span.html">Span</a>&lt; C &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="span_8h_source.html#l00038">38</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a87da5a28a8a479e11f9c21635bb4b212"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename C&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_span.html">Span</a>&lt; C &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_span.html">Span</a>&lt; C &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="span_8h_source.html#l00042">42</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ace1f223b28439638a257fc667570aba6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename C&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_span.html">Span</a>&lt; C &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_span.html">Span</a>&lt; C &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="span_8h_source.html#l00043">43</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
 
 </div>
 </div>
@@ -283,7 +787,7 @@ template&lt;typename C&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="span_8h_source.html#l00018">18</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
+<p>Definition at line <a class="el" href="span_8h_source.html#l00019">19</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
 
 </div>
 </div>
@@ -307,7 +811,7 @@ template&lt;typename C&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="span_8h_source.html#l00019">19</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
+<p>Definition at line <a class="el" href="span_8h_source.html#l00020">20</a> of file <a class="el" href="span_8h_source.html">span.h</a>.</p>
 
 </div>
 </div>
@@ -317,7 +821,7 @@ template&lt;typename C&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 16 2018 13:52:04 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 1 2018 22:04:11 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

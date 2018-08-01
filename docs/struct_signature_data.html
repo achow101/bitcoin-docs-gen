@@ -117,6 +117,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:af691f9dbac2bcce7bc45d56bbd808be5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_signature_data.html#af691f9dbac2bcce7bc45d56bbd808be5">complete</a> = false</td></tr>
 <tr class="memdesc:af691f9dbac2bcce7bc45d56bbd808be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores whether the scriptSig and scriptWitness are complete.  <a href="#af691f9dbac2bcce7bc45d56bbd808be5">More...</a><br /></td></tr>
 <tr class="separator:af691f9dbac2bcce7bc45d56bbd808be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a62dfdb8c62eee4a9f397622f84c437"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_signature_data.html#a3a62dfdb8c62eee4a9f397622f84c437">witness</a> = false</td></tr>
+<tr class="memdesc:a3a62dfdb8c62eee4a9f397622f84c437"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores whether the input this SigData corresponds to is a witness input.  <a href="#a3a62dfdb8c62eee4a9f397622f84c437">More...</a><br /></td></tr>
+<tr class="separator:a3a62dfdb8c62eee4a9f397622f84c437"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a715404cf78b9a78a13851ecf0fa6cfbd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_script.html">CScript</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_signature_data.html#a715404cf78b9a78a13851ecf0fa6cfbd">scriptSig</a></td></tr>
 <tr class="memdesc:a715404cf78b9a78a13851ecf0fa6cfbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scriptSig of an input. Contains complete signatures or the traditional partial signatures format.  <a href="#a715404cf78b9a78a13851ecf0fa6cfbd">More...</a><br /></td></tr>
 <tr class="separator:a715404cf78b9a78a13851ecf0fa6cfbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,10 +135,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a202cf5cba0b58980a0f1951588b1744b"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="class_c_key_i_d.html">CKeyID</a>, <a class="el" href="sign_8h.html#a423149d75b2fd4374004050af6d777eb">SigPair</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_signature_data.html#a202cf5cba0b58980a0f1951588b1744b">signatures</a></td></tr>
 <tr class="memdesc:a202cf5cba0b58980a0f1951588b1744b"><td class="mdescLeft">&#160;</td><td class="mdescRight">BIP 174 style partial signatures for the input. May contain all signatures necessary for producing a final scriptSig or scriptWitness.  <a href="#a202cf5cba0b58980a0f1951588b1744b">More...</a><br /></td></tr>
 <tr class="separator:a202cf5cba0b58980a0f1951588b1744b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66eeca5097032558571e3be329f72393"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="class_c_key_i_d.html">CKeyID</a>, <a class="el" href="class_c_pub_key.html">CPubKey</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_signature_data.html#a66eeca5097032558571e3be329f72393">misc_pubkeys</a></td></tr>
+<tr class="separator:a66eeca5097032558571e3be329f72393"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00063">63</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="sign_8h_source.html#l00091">91</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a26a74230d3f551e73f8b9e872744b465"></a>
 <div class="memitem">
@@ -158,7 +163,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00071">71</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="sign_8h_source.html#l00101">101</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
 
 </div>
 </div>
@@ -184,14 +189,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00072">72</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_signature_data_aee920d76f133d8d46195452fee5c1fa2_cgraph.svg" width="1943" height="1727"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
+<p>Definition at line <a class="el" href="sign_8h_source.html#l00102">102</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
 
 </div>
 </div>
@@ -210,12 +208,20 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sign_8cpp_source.html#l00342">342</a> of file <a class="el" href="sign_8cpp_source.html">sign.cpp</a>.</p>
+<p>Definition at line <a class="el" href="sign_8cpp_source.html#l00371">371</a> of file <a class="el" href="sign_8cpp_source.html">sign.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="struct_signature_data_a1894478950861e00b97536969df230be_cgraph.svg" width="1098" height="419"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_signature_data_a1894478950861e00b97536969df230be_icgraph.svg" width="848" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -234,7 +240,21 @@ Here is the call graph for this function:</div>
 
 <p>Stores whether the scriptSig and scriptWitness are complete. </p>
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00064">64</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="sign_8h_source.html#l00092">92</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a66eeca5097032558571e3be329f72393"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="class_c_key_i_d.html">CKeyID</a>, <a class="el" href="class_c_pub_key.html">CPubKey</a>&gt; SignatureData::misc_pubkeys</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sign_8h_source.html#l00099">99</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
 
 </div>
 </div>
@@ -250,7 +270,7 @@ Here is the call graph for this function:</div>
 
 <p>The redeemScript (if any) for the input. </p>
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00066">66</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="sign_8h_source.html#l00095">95</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
 
 </div>
 </div>
@@ -266,7 +286,7 @@ Here is the call graph for this function:</div>
 
 <p>The scriptSig of an input. Contains complete signatures or the traditional partial signatures format. </p>
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00065">65</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="sign_8h_source.html#l00094">94</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
 
 </div>
 </div>
@@ -282,7 +302,7 @@ Here is the call graph for this function:</div>
 
 <p>The scriptWitness of an input. Contains complete signatures or the traditional partial signatures format. scriptWitness is part of a transaction input per BIP 144. </p>
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00068">68</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="sign_8h_source.html#l00097">97</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
 
 </div>
 </div>
@@ -298,7 +318,23 @@ Here is the call graph for this function:</div>
 
 <p>BIP 174 style partial signatures for the input. May contain all signatures necessary for producing a final scriptSig or scriptWitness. </p>
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00069">69</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="sign_8h_source.html#l00098">98</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a62dfdb8c62eee4a9f397622f84c437"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SignatureData::witness = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stores whether the input this SigData corresponds to is a witness input. </p>
+
+<p>Definition at line <a class="el" href="sign_8h_source.html#l00093">93</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
 
 </div>
 </div>
@@ -314,7 +350,7 @@ Here is the call graph for this function:</div>
 
 <p>The witnessScript (if any) for the input. witnessScripts are used in P2WSH outputs. </p>
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00067">67</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="sign_8h_source.html#l00096">96</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
 
 </div>
 </div>
@@ -325,7 +361,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 16 2018 13:52:04 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 1 2018 22:04:11 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

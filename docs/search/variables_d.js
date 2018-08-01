@@ -138,6 +138,7 @@ var searchData=
   ['nodeid',['nodeid',['../class_c_node_stats.html#ad2bceab1a335d59f42af37178b72fee7',1,'CNodeStats']]],
   ['nodestatestats',['nodeStateStats',['../struct_c_node_combined_stats.html#a6ce7320fa9ca5a3706ec4caf76ac34a1',1,'CNodeCombinedStats']]],
   ['nodestats',['nodeStats',['../struct_c_node_combined_stats.html#ad26d590ef79b08623b2b6658b59e9a69',1,'CNodeCombinedStats']]],
+  ['non_5fwitness_5futxo',['non_witness_utxo',['../struct_p_s_b_t_input.html#a6587f0ce615e5fa8bbab56d9b292673a',1,'PSBTInput']]],
   ['nonce',['nonce',['../class_c_block_header_and_short_tx_i_ds.html#a8caab11c7070b7eaa147321619bfacb0',1,'CBlockHeaderAndShortTxIDs']]],
   ['norderpos',['nOrderPos',['../class_c_wallet_tx.html#af51e160ff1d9d78986e9f239c7ac7a35',1,'CWalletTx::nOrderPos()'],['../class_c_accounting_entry.html#a9c5f78f13a657c1f1fc860a70ef072d5',1,'CAccountingEntry::nOrderPos()']]],
   ['norderposnext',['nOrderPosNext',['../class_c_wallet.html#af56cb17b19742506fc8d9449fc60884e',1,'CWallet']]],

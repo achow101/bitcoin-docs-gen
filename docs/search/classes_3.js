@@ -8,6 +8,7 @@ var searchData=
   ['descendant_5fscore',['descendant_score',['../structdescendant__score.html',1,'']]],
   ['describeaddressvisitor',['DescribeAddressVisitor',['../class_describe_address_visitor.html',1,'']]],
   ['describewalletaddressvisitor',['DescribeWalletAddressVisitor',['../class_describe_wallet_address_visitor.html',1,'']]],
+  ['descriptor',['Descriptor',['../struct_descriptor.html',1,'']]],
   ['deserialize_5ftype',['deserialize_type',['../structdeserialize__type.html',1,'']]],
   ['direct_5for_5findirect',['direct_or_indirect',['../unionprevector_1_1direct__or__indirect.html',1,'prevector']]],
   ['disconnectedblocktransactions',['DisconnectedBlockTransactions',['../struct_disconnected_block_transactions.html',1,'']]],

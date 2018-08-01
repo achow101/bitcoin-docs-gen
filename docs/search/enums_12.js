@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['walletfeature',['WalletFeature',['../wallet_2wallet_8h.html#a39a6b71da3eb95cddc0836d3b27ac7c9',1,'wallet.h']]],
-  ['watchonlyfilter',['WatchOnlyFilter',['../class_transaction_filter_proxy.html#ab41d9f1ee436dd8f037eeca709c2b472',1,'TransactionFilterProxy']]]
+  ['varintmode',['VarIntMode',['../serialize_8h.html#a33400c046934b2056d171e99fc88e745',1,'serialize.h']]],
+  ['verifyresult',['VerifyResult',['../class_berkeley_environment.html#a898177d0cb22503c06cf8c40d70d6b56',1,'BerkeleyEnvironment']]],
+  ['vtype',['VType',['../class_uni_value.html#a2f9803e567ede73e88302b01e394cc63',1,'UniValue']]]
 ];

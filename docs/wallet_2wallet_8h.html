@@ -127,12 +127,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for wallet.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h__incl.svg" width="3716" height="679"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h__incl.svg" width="3660" height="604"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h__dep__incl.svg" width="3062" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h__dep__incl.svg" width="3335" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="wallet_2wallet_8h_source.html">Go to the source code of this file.</a></p>
@@ -164,8 +166,6 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DEPRECATED Internal transfers.  <a href="class_c_accounting_entry.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_coin_selection_params.html">CoinSelectionParams</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_coin_eligibility_filter.html">CoinEligibilityFilter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet.html">CWallet</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="class_c_wallet.html" title="A CWallet is an extension of a keystore, which also maintains a set of transactions and balances...">CWallet</a> is an extension of a keystore, which also maintains a set of transactions and balances, and provides the ability to create new transactions.  <a href="class_c_wallet.html#details">More...</a><br /></td></tr>
@@ -201,6 +201,9 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:a39a6b71da3eb95cddc0836d3b27ac7c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">(client) version numbers for particular wallet features  <a href="wallet_2wallet_8h.html#a39a6b71da3eb95cddc0836d3b27ac7c9">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:a39a6b71da3eb95cddc0836d3b27ac7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a399ea1efa219e50cce4be2b4bbf703f8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8">WalletFlags</a> : uint64_t { <a class="el" href="wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a47b6a219e3ca6733b2a251be3e5def86">WALLET_FLAG_DISABLE_PRIVATE_KEYS</a> = (1ULL &lt;&lt; 32)
+ }</td></tr>
+<tr class="separator:a399ea1efa219e50cce4be2b4bbf703f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -244,7 +247,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00169">169</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00179">179</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -283,6 +286,24 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a399ea1efa219e50cce4be2b4bbf703f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8">WalletFlags</a> : uint64_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a399ea1efa219e50cce4be2b4bbf703f8a47b6a219e3ca6733b2a251be3e5def86"></a>WALLET_FLAG_DISABLE_PRIVATE_KEYS&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00103">103</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ad523200398c9a7518de131353d4a6ac5"></a>
 <div class="memitem">
@@ -303,7 +324,8 @@ Variables</h2></td></tr>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h_ad523200398c9a7518de131353d4a6ac5_icgraph.svg" width="486" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h_ad523200398c9a7518de131353d4a6ac5_icgraph.svg" width="567" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -335,7 +357,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h_a59fb74ca7a0b34f8f86ec58464a72f8a_icgraph.svg" width="1076" height="1026"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h_a59fb74ca7a0b34f8f86ec58464a72f8a_icgraph.svg" width="1235" height="1219"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -359,7 +382,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h_ab8562a8762a7793fdf5b8ae9465e1b85_icgraph.svg" width="1083" height="1392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h_ab8562a8762a7793fdf5b8ae9465e1b85_icgraph.svg" width="1242" height="1539"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -383,7 +407,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h_a9bc62b5b6dea0a67f248bc07019a851f_icgraph.svg" width="1043" height="1000"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h_a9bc62b5b6dea0a67f248bc07019a851f_icgraph.svg" width="1202" height="1152"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -408,7 +433,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h_a44f59518880060eb908ce080cbb39377_icgraph.svg" width="512" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h_a44f59518880060eb908ce080cbb39377_icgraph.svg" width="594" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -466,7 +492,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 16 2018 13:52:00 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 1 2018 22:04:06 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
