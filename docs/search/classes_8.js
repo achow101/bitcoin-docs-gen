@@ -9,5 +9,6 @@ var searchData=
   ['is_5fwchar_3c_20const_20wchar_5ft_5bn_5d_3e',['is_wchar&lt; const wchar_t[n]&gt;',['../structtinyformat_1_1detail_1_1is__wchar_3_01const_01wchar__t[n]_4.html',1,'tinyformat::detail']]],
   ['is_5fwchar_3c_20wchar_5ft_20_2a_20_3e',['is_wchar&lt; wchar_t * &gt;',['../structtinyformat_1_1detail_1_1is__wchar_3_01wchar__t_01_5_01_4.html',1,'tinyformat::detail']]],
   ['is_5fwchar_3c_20wchar_5ft_5bn_5d_3e',['is_wchar&lt; wchar_t[n]&gt;',['../structtinyformat_1_1detail_1_1is__wchar_3_01wchar__t[n]_4.html',1,'tinyformat::detail']]],
+  ['itemdelegate',['ItemDelegate',['../class_g_u_i_util_1_1_item_delegate.html',1,'GUIUtil']]],
   ['iterator',['iterator',['../classprevector_1_1iterator.html',1,'prevector']]]
 ];
