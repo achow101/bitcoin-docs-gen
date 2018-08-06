@@ -124,6 +124,7 @@ var searchData=
   ['getdeterministicrandomizer',['GetDeterministicRandomizer',['../class_c_connman.html#a44c2cca63b2b459b9964233ca310236e',1,'CConnman']]],
   ['getdifficulty',['GetDifficulty',['../blockchain_8cpp.html#a65a78b16d228932a6142656509a8bce4',1,'GetDifficulty(const CBlockIndex *blockindex):&#160;blockchain.cpp'],['../blockchain_8h.html#a65a78b16d228932a6142656509a8bce4',1,'GetDifficulty(const CBlockIndex *blockindex):&#160;blockchain.cpp']]],
   ['getdiscardrate',['GetDiscardRate',['../wallet_2fees_8cpp.html#a8bbd3b782624edbdd4f98975bb1cc39e',1,'GetDiscardRate(const CWallet &amp;wallet, const CBlockPolicyEstimator &amp;estimator):&#160;fees.cpp'],['../wallet_2fees_8h.html#a8bbd3b782624edbdd4f98975bb1cc39e',1,'GetDiscardRate(const CWallet &amp;wallet, const CBlockPolicyEstimator &amp;estimator):&#160;fees.cpp']]],
+  ['getdisplayname',['GetDisplayName',['../class_c_wallet.html#ab129ad6034baff3185348cf3a8cb86ee',1,'CWallet']]],
   ['getdisplayunit',['getDisplayUnit',['../class_options_model.html#a3a78bccf5eeaa4fc27e408adbaf64087',1,'OptionsModel']]],
   ['getdouble',['getdouble',['../classbase__uint.html#aa701be5115bacf02c299b05598cf616d',1,'base_uint']]],
   ['getduplicateaddresswarning',['getDuplicateAddressWarning',['../class_edit_address_dialog.html#ab54c25192a66876263e5cfceb05746fa',1,'EditAddressDialog']]],
