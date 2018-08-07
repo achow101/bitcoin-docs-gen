@@ -162,10 +162,18 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Format a string that describes several potential problems detected by the core. </p>
-<p>strFor can have three values:</p><ul>
-<li>"statusbar": get all warnings</li>
-<li>"gui": get all warnings, translated (where possible) for GUI This function only returns the highest priority warning of the set selected by strFor. </li>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">strFor</td><td>can have the following values:<ul>
+<li>"statusbar": get the most important warning</li>
+<li>"gui": get all warnings, translated (where possible) for GUI, separated by <hr/>
+ </li>
 </ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the warning string selected by strFor </dd></dl>
 
 <p>Definition at line <a class="el" href="warnings_8cpp_source.html#l00040">40</a> of file <a class="el" href="warnings_8cpp_source.html">warnings.cpp</a>.</p>
 
@@ -280,7 +288,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 7 2018 14:24:21 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 7 2018 14:33:54 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
