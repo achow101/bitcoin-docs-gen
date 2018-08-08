@@ -34,6 +34,7 @@ var searchData=
   ['bitcoin_5fpid_5ffilename',['BITCOIN_PID_FILENAME',['../util_8cpp.html#a9c6941232aba4a4c523285e8de1e8d92',1,'BITCOIN_PID_FILENAME():&#160;util.cpp'],['../util_8h.html#a9c6941232aba4a4c523285e8de1e8d92',1,'BITCOIN_PID_FILENAME():&#160;util.cpp']]],
   ['blind',['blind',['../structsecp256k1__ecmult__gen__context.html#af2f3064a367e86f936ab1c8b93d6f27e',1,'secp256k1_ecmult_gen_context']]],
   ['block',['block',['../struct_c_block_template.html#a13261cbac4dc94f996d1b3ff78e41139',1,'CBlockTemplate::block()'],['../namespace_net_msg_type.html#a1842ab3e065d8bc5180974b9e3f44377',1,'NetMsgType::BLOCK()']]],
+  ['block_5fchain_5fsize',['BLOCK_CHAIN_SIZE',['../intro_8cpp.html#a88553e157c601648074f352719eb2af2',1,'intro.cpp']]],
   ['block_5fheight',['block_height',['../structinterfaces_1_1_wallet_tx_status.html#a2ccc5928a2846bff7c195b785923cf45',1,'interfaces::WalletTxStatus']]],
   ['blockchecked',['BlockChecked',['../struct_main_signals_instance.html#a4c7b20a164a92fbe8fbc17427a3af2e8',1,'MainSignalsInstance']]],
   ['blockconnected',['BlockConnected',['../struct_main_signals_instance.html#ab79f91d53475584413f0e6e2b3130e6a',1,'MainSignalsInstance']]],
