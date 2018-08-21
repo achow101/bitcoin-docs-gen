@@ -4,7 +4,7 @@ var searchData=
   ['backupwalletaction',['backupWalletAction',['../class_bitcoin_g_u_i.html#abe60d8726b77fe1926381e205a8c3406',1,'BitcoinGUI']]],
   ['balance',['balance',['../structinterfaces_1_1_wallet_balances.html#ac43f73feb9951315873f106bd139bef7',1,'interfaces::WalletBalances']]],
   ['banentry',['banEntry',['../struct_c_combined_ban.html#a086559a7c052a1b0f9f820eb2c6a3d2e',1,'CCombinedBan']]],
-  ['bannedlistchanged',['BannedListChanged',['../class_c_client_u_i_interface.html#abd111d0c8de20c0d5554ce9d411adad1',1,'CClientUIInterface']]],
+  ['bannedlistchanged',['BannedListChanged',['../struct_u_i_signals.html#a140f23f0eeb214abd7b044c7576709c8',1,'UISignals']]],
   ['banreason',['banReason',['../class_c_ban_entry.html#a70899703ea4dcfe6056f4db8b7f77126',1,'CBanEntry']]],
   ['bantablecontextmenu',['banTableContextMenu',['../class_r_p_c_console.html#af8c169c8bc2b47e78d0c451863e518b6',1,'RPCConsole']]],
   ['bantablemodel',['banTableModel',['../class_client_model.html#ac96fad2b97c585206391e2132be2a788',1,'ClientModel']]],

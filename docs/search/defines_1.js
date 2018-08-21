@@ -3,6 +3,8 @@ var searchData=
   ['acquired_5fafter',['ACQUIRED_AFTER',['../threadsafety_8h.html#a34e7a4489fb62749ebbfd249ac6c5544',1,'threadsafety.h']]],
   ['acquired_5fbefore',['ACQUIRED_BEFORE',['../threadsafety_8h.html#aabfe9909811c29995cc731bd19a2d544',1,'threadsafety.h']]],
   ['add_5fserialize_5fmethods',['ADD_SERIALIZE_METHODS',['../serialize_8h.html#ae3f1f459edee39316fb42da787e2d266',1,'serialize.h']]],
+  ['add_5fsignals_5fdecl_5fwrapper',['ADD_SIGNALS_DECL_WRAPPER',['../ui__interface_8h.html#a492d13a1f4af199e273d6ddfe662da66',1,'ui_interface.h']]],
+  ['add_5fsignals_5fimpl_5fwrapper',['ADD_SIGNALS_IMPL_WRAPPER',['../ui__interface_8cpp.html#aaed41efae9aeec1aaf77aa670f50e8f2',1,'ui_interface.cpp']]],
   ['addrman_5fbucket_5fsize',['ADDRMAN_BUCKET_SIZE',['../addrman_8h.html#a3499731a6c89e164cf74b68be2be0a84',1,'addrman.h']]],
   ['addrman_5fbucket_5fsize_5flog2',['ADDRMAN_BUCKET_SIZE_LOG2',['../addrman_8h.html#a8679fb1a6ef5bbed7d3f15d110565aa1',1,'addrman.h']]],
   ['addrman_5fgetaddr_5fmax',['ADDRMAN_GETADDR_MAX',['../addrman_8h.html#ad10877f29a66224fce5c20d33e26448a',1,'addrman.h']]],

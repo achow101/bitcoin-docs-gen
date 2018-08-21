@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="bitcoin_logo_doxygen.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitcoin Core
-   &#160;<span id="projectnumber">0.16.99</span>
+   &#160;<span id="projectnumber">0.17.99</span>
    </div>
    <div id="projectbrief">P2P Digital Currency</div>
   </td>
@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-slots">Private Slots</a> &#124;
@@ -113,6 +114,13 @@ Collaboration diagram for OptionsDialog:</div>
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_options_dialog__coll__graph.svg" width="310" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a5764f8df35613b971f648cd11f49e47d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_options_dialog.html#a5764f8df35613b971f648cd11f49e47d">Tab</a> { <a class="el" href="class_options_dialog.html#a5764f8df35613b971f648cd11f49e47da8969d2dc60ec2eeae61d284bfd41fdf1">TAB_MAIN</a>, 
+<a class="el" href="class_options_dialog.html#a5764f8df35613b971f648cd11f49e47dab5c3dd8e8abfcf430956c982bc5761ca">TAB_NETWORK</a>
+ }</td></tr>
+<tr class="separator:a5764f8df35613b971f648cd11f49e47d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 Signals</h2></td></tr>
 <tr class="memitem:a5dcd50233fb5279ca373060fffca6ec7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_options_dialog.html#a5dcd50233fb5279ca373060fffca6ec7">proxyIpChecks</a> (<a class="el" href="class_q_validated_line_edit.html">QValidatedLineEdit</a> *pUiProxyIp, int nProxyPort)</td></tr>
@@ -128,6 +136,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a11e902a52cb7472497d14e70cd9399d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2088ec5bbb90ec27675f441e750e55b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_options_dialog.html#a2088ec5bbb90ec27675f441e750e55b8">setMapper</a> ()</td></tr>
 <tr class="separator:a2088ec5bbb90ec27675f441e750e55b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29e0d6044e8d6ec6de789eb77b06e1bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_options_dialog.html#a29e0d6044e8d6ec6de789eb77b06e1bc">setCurrentTab</a> (<a class="el" href="class_options_dialog.html#a5764f8df35613b971f648cd11f49e47d">OptionsDialog::Tab</a> tab)</td></tr>
+<tr class="separator:a29e0d6044e8d6ec6de789eb77b06e1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
 Private Slots</h2></td></tr>
@@ -167,7 +177,28 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><p>Preferences dialog. </p>
 
 <p>Definition at line <a class="el" href="optionsdialog_8h_source.html#l00035">35</a> of file <a class="el" href="optionsdialog_8h_source.html">optionsdialog.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="a5764f8df35613b971f648cd11f49e47d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_options_dialog.html#a5764f8df35613b971f648cd11f49e47d">OptionsDialog::Tab</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a5764f8df35613b971f648cd11f49e47da8969d2dc60ec2eeae61d284bfd41fdf1"></a>TAB_MAIN&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a5764f8df35613b971f648cd11f49e47dab5c3dd8e8abfcf430956c982bc5761ca"></a>TAB_NETWORK&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="optionsdialog_8h_source.html#l00043">43</a> of file <a class="el" href="optionsdialog_8h_source.html">optionsdialog.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac74fd1c2837d30f6687cb1898d99f8d1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -253,7 +284,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="optionsdialog_8cpp_source.html#l00297">297</a> of file <a class="el" href="optionsdialog_8cpp_source.html">optionsdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optionsdialog_8cpp_source.html#l00307">307</a> of file <a class="el" href="optionsdialog_8cpp_source.html">optionsdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -265,7 +296,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_options_dialog_acd07b7058fd097bea5beb5cdd6fc1ad9_icgraph.svg" width="1384" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_options_dialog_acd07b7058fd097bea5beb5cdd6fc1ad9_icgraph.svg" width="1650" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -292,7 +324,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="optionsdialog_8cpp_source.html#l00257">257</a> of file <a class="el" href="optionsdialog_8cpp_source.html">optionsdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optionsdialog_8cpp_source.html#l00267">267</a> of file <a class="el" href="optionsdialog_8cpp_source.html">optionsdialog.cpp</a>.</p>
 
 </div>
 </div>
@@ -318,7 +350,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="optionsdialog_8cpp_source.html#l00262">262</a> of file <a class="el" href="optionsdialog_8cpp_source.html">optionsdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optionsdialog_8cpp_source.html#l00272">272</a> of file <a class="el" href="optionsdialog_8cpp_source.html">optionsdialog.cpp</a>.</p>
 
 </div>
 </div>
@@ -343,7 +375,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="optionsdialog_8cpp_source.html#l00250">250</a> of file <a class="el" href="optionsdialog_8cpp_source.html">optionsdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optionsdialog_8cpp_source.html#l00260">260</a> of file <a class="el" href="optionsdialog_8cpp_source.html">optionsdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -375,7 +407,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="optionsdialog_8cpp_source.html#l00238">238</a> of file <a class="el" href="optionsdialog_8cpp_source.html">optionsdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optionsdialog_8cpp_source.html#l00248">248</a> of file <a class="el" href="optionsdialog_8cpp_source.html">optionsdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -407,7 +439,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="optionsdialog_8cpp_source.html#l00220">220</a> of file <a class="el" href="optionsdialog_8cpp_source.html">optionsdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optionsdialog_8cpp_source.html#l00230">230</a> of file <a class="el" href="optionsdialog_8cpp_source.html">optionsdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -452,6 +484,32 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a29e0d6044e8d6ec6de789eb77b06e1bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OptionsDialog::setCurrentTab </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_options_dialog.html#a5764f8df35613b971f648cd11f49e47d">OptionsDialog::Tab</a>&#160;</td>
+          <td class="paramname"><em>tab</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="optionsdialog_8cpp_source.html#l00177">177</a> of file <a class="el" href="optionsdialog_8cpp_source.html">optionsdialog.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_options_dialog_a29e0d6044e8d6ec6de789eb77b06e1bc_icgraph.svg" width="1163" height="71"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a2088ec5bbb90ec27675f441e750e55b8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -465,12 +523,13 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="optionsdialog_8cpp_source.html#l00177">177</a> of file <a class="el" href="optionsdialog_8cpp_source.html">optionsdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optionsdialog_8cpp_source.html#l00187">187</a> of file <a class="el" href="optionsdialog_8cpp_source.html">optionsdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_options_dialog_a2088ec5bbb90ec27675f441e750e55b8_icgraph.svg" width="1102" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_options_dialog_a2088ec5bbb90ec27675f441e750e55b8_icgraph.svg" width="1367" height="71"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -502,7 +561,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_options_dialog_a11e902a52cb7472497d14e70cd9399d9_icgraph.svg" width="867" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_options_dialog_a11e902a52cb7472497d14e70cd9399d9_icgraph.svg" width="1132" height="71"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -530,7 +590,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="optionsdialog_8cpp_source.html#l00215">215</a> of file <a class="el" href="optionsdialog_8cpp_source.html">optionsdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optionsdialog_8cpp_source.html#l00225">225</a> of file <a class="el" href="optionsdialog_8cpp_source.html">optionsdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -563,7 +623,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="optionsdialog_8cpp_source.html#l00280">280</a> of file <a class="el" href="optionsdialog_8cpp_source.html">optionsdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optionsdialog_8cpp_source.html#l00290">290</a> of file <a class="el" href="optionsdialog_8cpp_source.html">optionsdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -575,7 +635,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_options_dialog_a866e74896ea7dacdc99b5e0af4fd5b38_icgraph.svg" width="1160" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_options_dialog_a866e74896ea7dacdc99b5e0af4fd5b38_icgraph.svg" width="1411" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -603,12 +664,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="optionsdialog_8cpp_source.html#l00275">275</a> of file <a class="el" href="optionsdialog_8cpp_source.html">optionsdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optionsdialog_8cpp_source.html#l00285">285</a> of file <a class="el" href="optionsdialog_8cpp_source.html">optionsdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_options_dialog_a5c34115da016060677582839740b7ba6_icgraph.svg" width="1111" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_options_dialog_a5c34115da016060677582839740b7ba6_icgraph.svg" width="1376" height="71"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -635,7 +697,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="optionsdialog_8cpp_source.html#l00322">322</a> of file <a class="el" href="optionsdialog_8cpp_source.html">optionsdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optionsdialog_8cpp_source.html#l00332">332</a> of file <a class="el" href="optionsdialog_8cpp_source.html">optionsdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -647,7 +709,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_options_dialog_a44ffc21aae73b251333b75907aa8ff8c_icgraph.svg" width="1148" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_options_dialog_a44ffc21aae73b251333b75907aa8ff8c_icgraph.svg" width="1414" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -674,7 +737,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="optionsdialog_8cpp_source.html#l00305">305</a> of file <a class="el" href="optionsdialog_8cpp_source.html">optionsdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optionsdialog_8cpp_source.html#l00315">315</a> of file <a class="el" href="optionsdialog_8cpp_source.html">optionsdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -711,7 +774,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="optionsdialog_8h_source.html#l00069">69</a> of file <a class="el" href="optionsdialog_8h_source.html">optionsdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optionsdialog_8h_source.html#l00075">75</a> of file <a class="el" href="optionsdialog_8h_source.html">optionsdialog.h</a>.</p>
 
 </div>
 </div>
@@ -733,7 +796,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="optionsdialog_8h_source.html#l00068">68</a> of file <a class="el" href="optionsdialog_8h_source.html">optionsdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optionsdialog_8h_source.html#l00074">74</a> of file <a class="el" href="optionsdialog_8h_source.html">optionsdialog.h</a>.</p>
 
 </div>
 </div>
@@ -755,7 +818,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="optionsdialog_8h_source.html#l00067">67</a> of file <a class="el" href="optionsdialog_8h_source.html">optionsdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optionsdialog_8h_source.html#l00073">73</a> of file <a class="el" href="optionsdialog_8h_source.html">optionsdialog.h</a>.</p>
 
 </div>
 </div>
@@ -766,7 +829,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 9 2018 12:14:37 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 21 2018 21:52:20 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

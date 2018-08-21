@@ -24,7 +24,7 @@ var searchData=
   ['init_5fflag',['init_flag',['../class_locked_pool_manager.html#a77b292bb9372cb03a5e993dd61a408b4',1,'LockedPoolManager']]],
   ['initial',['initial',['../structsecp256k1__ecmult__gen__context.html#a1ebfe4de83e25248ea9d989d06c9b069',1,'secp256k1_ecmult_gen_context']]],
   ['initial_5ftraffic_5fgraph_5fmins',['INITIAL_TRAFFIC_GRAPH_MINS',['../rpcconsole_8cpp.html#a961badc4978c4eb0ac616b70e952940b',1,'rpcconsole.cpp']]],
-  ['initmessage',['InitMessage',['../class_c_client_u_i_interface.html#abc63cc3f3e5e15632f713d859dbc6bc2',1,'CClientUIInterface']]],
+  ['initmessage',['InitMessage',['../struct_u_i_signals.html#aac8ece0054158a013bf8d55d05df1c78',1,'UISignals']]],
   ['inmempool',['inMempool',['../struct_estimator_bucket.html#a9e4eadafd283dc3c30e77b7ef7c0e456',1,'EstimatorBucket']]],
   ['inner',['inner',['../class_c_h_m_a_c___s_h_a256.html#a87157e337f8777ee60e9e5c76aa8375e',1,'CHMAC_SHA256::inner()'],['../class_c_h_m_a_c___s_h_a512.html#ad4c28f8a7cfe4343e3aa379f6a510d32',1,'CHMAC_SHA512::inner()'],['../structsecp256k1__hmac__sha256__t.html#afba1e789776f5c3cd2c1e6d9e718065f',1,'secp256k1_hmac_sha256_t::inner()']]],
   ['input',['input',['../class_cha_cha20.html#a95cd2d6adfd477a46c4bd95c1658ea1b',1,'ChaCha20']]],

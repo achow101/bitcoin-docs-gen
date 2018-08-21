@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="bitcoin_logo_doxygen.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitcoin Core
-   &#160;<span id="projectnumber">0.16.99</span>
+   &#160;<span id="projectnumber">0.17.99</span>
    </div>
    <div id="projectbrief">P2P Digital Currency</div>
   </td>
@@ -135,9 +135,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae4b61da6ec62f676fe6362ac5fc26aca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_pub_key.html">CPubKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_key.html#ae4b61da6ec62f676fe6362ac5fc26aca">GetPubKey</a> () const </td></tr>
 <tr class="memdesc:ae4b61da6ec62f676fe6362ac5fc26aca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the public key from a private key.  <a href="#ae4b61da6ec62f676fe6362ac5fc26aca">More...</a><br /></td></tr>
 <tr class="separator:ae4b61da6ec62f676fe6362ac5fc26aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b161899b4fa79f5a7036d2ccf12ce3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_key.html#a3b161899b4fa79f5a7036d2ccf12ce3a">Sign</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;hash, std::vector&lt; unsigned char &gt; &amp;vchSig, uint32_t test_case=0) const </td></tr>
-<tr class="memdesc:a3b161899b4fa79f5a7036d2ccf12ce3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a DER-serialized signature.  <a href="#a3b161899b4fa79f5a7036d2ccf12ce3a">More...</a><br /></td></tr>
-<tr class="separator:a3b161899b4fa79f5a7036d2ccf12ce3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb8d6c2037396a4d4f0bc90a447613d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_key.html#adb8d6c2037396a4d4f0bc90a447613d3">Sign</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;hash, std::vector&lt; unsigned char &gt; &amp;vchSig, bool grind=true, uint32_t test_case=0) const </td></tr>
+<tr class="memdesc:adb8d6c2037396a4d4f0bc90a447613d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a DER-serialized signature.  <a href="#adb8d6c2037396a4d4f0bc90a447613d3">More...</a><br /></td></tr>
+<tr class="separator:adb8d6c2037396a4d4f0bc90a447613d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59afeabf3f63d99dfdbd3722087853a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_key.html#a59afeabf3f63d99dfdbd3722087853a1">SignCompact</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;hash, std::vector&lt; unsigned char &gt; &amp;vchSig) const </td></tr>
 <tr class="memdesc:a59afeabf3f63d99dfdbd3722087853a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a compact signature (65 bytes), which allows reconstructing the used public key.  <a href="#a59afeabf3f63d99dfdbd3722087853a1">More...</a><br /></td></tr>
 <tr class="separator:a59afeabf3f63d99dfdbd3722087853a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -241,7 +241,8 @@ Friends</h2></td></tr>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_key_aabd29e0d5faf30032cc8519a1ce62a5a_icgraph.svg" width="2398" height="1524"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_key_aabd29e0d5faf30032cc8519a1ce62a5a_icgraph.svg" width="2398" height="1524"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -327,12 +328,13 @@ Here is the caller graph for this function:</div>
 
 <p>Derive BIP32 child key. </p>
 
-<p>Definition at line <a class="el" href="key_8cpp_source.html#l00248">248</a> of file <a class="el" href="key_8cpp_source.html">key.cpp</a>.</p>
+<p>Definition at line <a class="el" href="key_8cpp_source.html#l00268">268</a> of file <a class="el" href="key_8cpp_source.html">key.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_key_a1bae09b7447a951d8fc3328b7dcc3a3f_cgraph.svg" width="1631" height="1426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_key_a1bae09b7447a951d8fc3328b7dcc3a3f_cgraph.svg" width="1652" height="1415"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -480,7 +482,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_key_abdc7d807f7a1b27ff3ad9dd5164a2273_cgraph.svg" width="2054" height="1392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_key_abdc7d807f7a1b27ff3ad9dd5164a2273_cgraph.svg" width="2074" height="1323"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -559,12 +562,13 @@ Here is the caller graph for this function:</div>
 
 <p>Load private key and check that public key matches. </p>
 
-<p>Definition at line <a class="el" href="key_8cpp_source.html#l00236">236</a> of file <a class="el" href="key_8cpp_source.html">key.cpp</a>.</p>
+<p>Definition at line <a class="el" href="key_8cpp_source.html#l00256">256</a> of file <a class="el" href="key_8cpp_source.html">key.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_key_acdb99e6886c2828bdd32c64a3c9e4e18_cgraph.svg" width="1134" height="582"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_key_acdb99e6886c2828bdd32c64a3c9e4e18_cgraph.svg" width="1155" height="628"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -671,7 +675,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a3b161899b4fa79f5a7036d2ccf12ce3a"></a>
+<a class="anchor" id="adb8d6c2037396a4d4f0bc90a447613d3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -690,6 +694,12 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>grind</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>test_case</em> = <code>0</code>&#160;</td>
         </tr>
@@ -704,19 +714,21 @@ Here is the caller graph for this function:</div>
 <p>Create a DER-serialized signature. </p>
 <p>The test_case parameter tweaks the deterministic nonce. </p>
 
-<p>Definition at line <a class="el" href="key_8cpp_source.html#l00192">192</a> of file <a class="el" href="key_8cpp_source.html">key.cpp</a>.</p>
+<p>Definition at line <a class="el" href="key_8cpp_source.html#l00205">205</a> of file <a class="el" href="key_8cpp_source.html">key.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_key_a3b161899b4fa79f5a7036d2ccf12ce3a_cgraph.svg" width="350" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_key_adb8d6c2037396a4d4f0bc90a447613d3_cgraph.svg" width="600" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_key_a3b161899b4fa79f5a7036d2ccf12ce3a_icgraph.svg" width="2247" height="636"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_key_adb8d6c2037396a4d4f0bc90a447613d3_icgraph.svg" width="2247" height="636"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -749,7 +761,7 @@ Here is the caller graph for this function:</div>
 <p>Create a compact signature (65 bytes), which allows reconstructing the used public key. </p>
 <p>The format is one header byte, followed by two times 32 bytes for the serialized r and s values. The header byte: 0x1B = first key with even y, 0x1C = first key with odd y, 0x1D = second key with even y, 0x1E = second key with odd y, add 0x04 for compressed keys. </p>
 
-<p>Definition at line <a class="el" href="key_8cpp_source.html#l00221">221</a> of file <a class="el" href="key_8cpp_source.html">key.cpp</a>.</p>
+<p>Definition at line <a class="el" href="key_8cpp_source.html#l00241">241</a> of file <a class="el" href="key_8cpp_source.html">key.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -818,12 +830,13 @@ Here is the caller graph for this function:</div>
 <p>Verify thoroughly whether a private key and a public key match. </p>
 <p>This is done using a different mechanism than just regenerating it. </p>
 
-<p>Definition at line <a class="el" href="key_8cpp_source.html#l00207">207</a> of file <a class="el" href="key_8cpp_source.html">key.cpp</a>.</p>
+<p>Definition at line <a class="el" href="key_8cpp_source.html#l00227">227</a> of file <a class="el" href="key_8cpp_source.html">key.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_key_a3890764f7a2e5d9cdeffb3e102e4545d_cgraph.svg" width="995" height="579"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_key_a3890764f7a2e5d9cdeffb3e102e4545d_cgraph.svg" width="1016" height="651"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1000,7 +1013,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 9 2018 12:14:36 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 21 2018 21:52:18 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

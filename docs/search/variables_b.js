@@ -1,8 +1,8 @@
 var searchData=
 [
   ['label',['label',['../struct_address_table_entry.html#a4a427495652b7716f84aa88b2cb4f296',1,'AddressTableEntry::label()'],['../class_send_coins_recipient.html#a0152933f2c0cb9164d2fcb36bca83666',1,'SendCoinsRecipient::label()']]],
-  ['labelblocksicon',['labelBlocksIcon',['../class_bitcoin_g_u_i.html#a785b5775f7c3eed2d4aa9785875ed1cb',1,'BitcoinGUI']]],
-  ['labelproxyicon',['labelProxyIcon',['../class_bitcoin_g_u_i.html#a40d619b101616fd061ceaa2f3cca92fd',1,'BitcoinGUI']]],
+  ['labelblocksicon',['labelBlocksIcon',['../class_bitcoin_g_u_i.html#aacb34d5498f011abe772f16a81bfc099',1,'BitcoinGUI']]],
+  ['labelproxyicon',['labelProxyIcon',['../class_bitcoin_g_u_i.html#a2d62db3de6ab6246bf80670f3e0886fc',1,'BitcoinGUI']]],
   ['labelwalletencryptionicon',['labelWalletEncryptionIcon',['../class_bitcoin_g_u_i.html#aaa28ccc5dd4decce652b45848e79d599',1,'BitcoinGUI']]],
   ['labelwallethdstatusicon',['labelWalletHDStatusIcon',['../class_bitcoin_g_u_i.html#ae5285343e1b7c339162931109ce775b2',1,'BitcoinGUI']]],
   ['laccentries',['laccentries',['../class_c_wallet.html#ad8472b51ddb5c3fbfa0c5fcea45f7ef6',1,'CWallet']]],
@@ -20,7 +20,7 @@ var searchData=
   ['limitrows',['limitRows',['../class_transaction_filter_proxy.html#ae38738ddbb7f1f0cfd3dd5369ecaef5e',1,'TransactionFilterProxy']]],
   ['lines',['lines',['../class_tor_control_reply.html#ae9c09a2c2d674c1554c91ace852e5269',1,'TorControlReply']]],
   ['list',['list',['../class_recent_requests_table_model.html#a84c7de31f5b343da9464359007995ed5',1,'RecentRequestsTableModel']]],
-  ['loadwallet',['LoadWallet',['../class_c_client_u_i_interface.html#abaa672be5815bfc9058f321bd93dcff3',1,'CClientUIInterface']]],
+  ['loadwallet',['LoadWallet',['../struct_u_i_signals.html#ab415702be0be5161084e88a76da9940b',1,'UISignals']]],
   ['lock',['lock',['../classreverse__lock.html#a915524c7621bb83ccca8e7368d4f0b88',1,'reverse_lock::lock()'],['../class_c_critical_block.html#a387dc2c7186c058c87aca96cf2620aac',1,'CCriticalBlock::lock()']]],
   ['lock_5ftime',['lock_time',['../structinterfaces_1_1_wallet_tx_status.html#abfafe5a8992f8d5f15d9ccb448ae9168',1,'interfaces::WalletTxStatus']]],
   ['lockaction',['lockAction',['../class_coin_control_dialog.html#a686c95a3ecb816943cfc9a0e50c9ef6f',1,'CoinControlDialog']]],

@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="bitcoin_logo_doxygen.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitcoin Core
-   &#160;<span id="projectnumber">0.16.99</span>
+   &#160;<span id="projectnumber">0.17.99</span>
    </div>
    <div id="projectbrief">P2P Digital Currency</div>
   </td>
@@ -134,9 +134,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr><td class="entry"><a class="el" href="group___actions.html#gac9de208bf815338a393270f26c77027c">DeleteLabel</a>(const std::string &amp;label)</td><td class="entry"><a class="el" href="class_c_wallet.html">CWallet</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="group__map_wallet.html#gafb01fcc10d890174b2db560a7f27b58a">DeriveNewChildKey</a>(WalletBatch &amp;batch, CKeyMetadata &amp;metadata, CKey &amp;secret, bool internal=false) EXCLUSIVE_LOCKS_REQUIRED(cs_wallet)</td><td class="entry"><a class="el" href="class_c_wallet.html">CWallet</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="group__map_wallet.html#gaf72003c77abf215cc1576ab6c50125f7">DeriveNewSeed</a>(const CKey &amp;key)</td><td class="entry"><a class="el" href="class_c_wallet.html">CWallet</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="group__map_wallet.html#ga32f0906bf97d9f40eb479b9ee9d88d58">DummySignInput</a>(CTxIn &amp;tx_in, const CTxOut &amp;txout) const </td><td class="entry"><a class="el" href="class_c_wallet.html">CWallet</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_c_wallet.html#a2ae7a56bcacde1453cf893f07d5f1bad">DummySignTx</a>(CMutableTransaction &amp;txNew, const std::set&lt; CTxOut &gt; &amp;txouts) const </td><td class="entry"><a class="el" href="class_c_wallet.html">CWallet</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="group__map_wallet.html#ga835264004d75865119cd553f2543e38d">DummySignTx</a>(CMutableTransaction &amp;txNew, const std::vector&lt; CTxOut &gt; &amp;txouts) const </td><td class="entry"><a class="el" href="class_c_wallet.html">CWallet</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="group__map_wallet.html#ga5a92b1905786145af8a3a3bd86ed794b">DummySignInput</a>(CTxIn &amp;tx_in, const CTxOut &amp;txout, bool use_max_sig=false) const </td><td class="entry"><a class="el" href="class_c_wallet.html">CWallet</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_c_wallet.html#a8b14d59983f5c1af617d8ac019bc350e">DummySignTx</a>(CMutableTransaction &amp;txNew, const std::set&lt; CTxOut &gt; &amp;txouts, bool use_max_sig=false) const </td><td class="entry"><a class="el" href="class_c_wallet.html">CWallet</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="group__map_wallet.html#ga4913a5de60b4c303059940e9e6ca7000">DummySignTx</a>(CMutableTransaction &amp;txNew, const std::vector&lt; CTxOut &gt; &amp;txouts, bool use_max_sig=false) const </td><td class="entry"><a class="el" href="class_c_wallet.html">CWallet</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_c_wallet.html#a008a2e5252e46eaa68f2002bf10d501a">encrypted_batch</a></td><td class="entry"><a class="el" href="class_c_wallet.html">CWallet</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_c_crypto_key_store.html#a8c0f6b63fb04193df16243c4459b7c61">EncryptKeys</a>(CKeyingMaterial &amp;vMasterKeyIn)</td><td class="entry"><a class="el" href="class_c_crypto_key_store.html">CCryptoKeyStore</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="group__map_wallet.html#gab34fe5bf771619dcbe22a65f013e5469">EncryptWallet</a>(const SecureString &amp;strWalletPassphrase)</td><td class="entry"><a class="el" href="class_c_wallet.html">CWallet</a></td><td class="entry"></td></tr>
@@ -340,7 +340,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 9 2018 12:14:37 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 21 2018 21:52:20 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

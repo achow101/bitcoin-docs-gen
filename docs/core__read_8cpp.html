@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="bitcoin_logo_doxygen.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitcoin Core
-   &#160;<span id="projectnumber">0.16.99</span>
+   &#160;<span id="projectnumber">0.17.99</span>
    </div>
    <div id="projectbrief">P2P Digital Currency</div>
   </td>
@@ -124,6 +124,8 @@ Functions</h2></td></tr>
 <tr class="separator:a29989c95b21abde8baf8b48a73f9b9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45f62104849154dbfc8f78cd6a6f8ba7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core__read_8cpp.html#a45f62104849154dbfc8f78cd6a6f8ba7">DecodeHexTx</a> (<a class="el" href="struct_c_mutable_transaction.html">CMutableTransaction</a> &amp;tx, const std::string &amp;hex_tx, bool try_no_witness, bool try_witness)</td></tr>
 <tr class="separator:a45f62104849154dbfc8f78cd6a6f8ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5731c2c2e90f8387b51eb9dddb8759dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core__read_8cpp.html#a5731c2c2e90f8387b51eb9dddb8759dd">DecodeHexBlockHeader</a> (<a class="el" href="class_c_block_header.html">CBlockHeader</a> &amp;header, const std::string &amp;hex_header)</td></tr>
+<tr class="separator:a5731c2c2e90f8387b51eb9dddb8759dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeff1a378f11fad2ea391c2163806d4a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core__read_8cpp.html#aeff1a378f11fad2ea391c2163806d4a4">DecodeHexBlk</a> (<a class="el" href="class_c_block.html">CBlock</a> &amp;block, const std::string &amp;strHexBlk)</td></tr>
 <tr class="separator:aeff1a378f11fad2ea391c2163806d4a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5961d702bf5ed07bfce97f697136d732"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core__read_8cpp.html#a5961d702bf5ed07bfce97f697136d732">DecodePSBT</a> (<a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;psbt, const std::string &amp;base64_tx, std::string &amp;<a class="el" href="util_8h.html#a0605c886f88f190fa6a51ae07ca7558a">error</a>)</td></tr>
@@ -160,7 +162,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="core__read_8cpp_source.html#l00148">148</a> of file <a class="el" href="core__read_8cpp_source.html">core_read.cpp</a>.</p>
+<p>Definition at line <a class="el" href="core__read_8cpp_source.html#l00162">162</a> of file <a class="el" href="core__read_8cpp_source.html">core_read.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -173,6 +175,50 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="core__read_8cpp_aeff1a378f11fad2ea391c2163806d4a4_icgraph.svg" width="711" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5731c2c2e90f8387b51eb9dddb8759dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DecodeHexBlockHeader </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_block_header.html">CBlockHeader</a> &amp;&#160;</td>
+          <td class="paramname"><em>header</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>hex_header</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="core__read_8cpp_source.html#l00148">148</a> of file <a class="el" href="core__read_8cpp_source.html">core_read.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__read_8cpp_a5731c2c2e90f8387b51eb9dddb8759dd_cgraph.svg" width="443" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__read_8cpp_a5731c2c2e90f8387b51eb9dddb8759dd_icgraph.svg" width="427" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -219,7 +265,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__read_8cpp_a45f62104849154dbfc8f78cd6a6f8ba7_cgraph.svg" width="452" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__read_8cpp_a45f62104849154dbfc8f78cd6a6f8ba7_cgraph.svg" width="534" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -262,7 +309,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="core__read_8cpp_source.html#l00165">165</a> of file <a class="el" href="core__read_8cpp_source.html">core_read.cpp</a>.</p>
+<p>Definition at line <a class="el" href="core__read_8cpp_source.html#l00179">179</a> of file <a class="el" href="core__read_8cpp_source.html">core_read.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -304,7 +351,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="core__read_8cpp_source.html#l00182">182</a> of file <a class="el" href="core__read_8cpp_source.html">core_read.cpp</a>.</p>
+<p>Definition at line <a class="el" href="core__read_8cpp_source.html#l00196">196</a> of file <a class="el" href="core__read_8cpp_source.html">core_read.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -346,7 +393,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="core__read_8cpp_source.html#l00192">192</a> of file <a class="el" href="core__read_8cpp_source.html">core_read.cpp</a>.</p>
+<p>Definition at line <a class="el" href="core__read_8cpp_source.html#l00206">206</a> of file <a class="el" href="core__read_8cpp_source.html">core_read.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -403,7 +450,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="core__read_8cpp_source.html#l00202">202</a> of file <a class="el" href="core__read_8cpp_source.html">core_read.cpp</a>.</p>
+<p>Definition at line <a class="el" href="core__read_8cpp_source.html#l00216">216</a> of file <a class="el" href="core__read_8cpp_source.html">core_read.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -424,7 +471,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 9 2018 12:14:34 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 21 2018 21:52:11 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

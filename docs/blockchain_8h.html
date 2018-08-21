@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="bitcoin_logo_doxygen.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitcoin Core
-   &#160;<span id="projectnumber">0.16.99</span>
+   &#160;<span id="projectnumber">0.17.99</span>
    </div>
    <div id="projectbrief">P2P Digital Currency</div>
   </td>
@@ -95,7 +95,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">blockchain.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div class="dynheader">
+<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="amount_8h_source.html">amount.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for blockchain.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8h__incl.svg" width="234" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8h__dep__incl.svg" width="726" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
@@ -123,6 +132,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa1e97ce578bfdae0125555bda5a2d48d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_uni_value.html">UniValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blockchain_8h.html#aa1e97ce578bfdae0125555bda5a2d48d">blockheaderToJSON</a> (const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *blockindex)</td></tr>
 <tr class="memdesc:aa1e97ce578bfdae0125555bda5a2d48d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block header to JSON.  <a href="#aa1e97ce578bfdae0125555bda5a2d48d">More...</a><br /></td></tr>
 <tr class="separator:aa1e97ce578bfdae0125555bda5a2d48d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7916bb05b909d901a0375641330510d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blockchain_8h.html#a7916bb05b909d901a0375641330510d1">CalculatePercentilesByWeight</a> (<a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> result[NUM_GETBLOCKSTATS_PERCENTILES], std::vector&lt; std::pair&lt; <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>, int64_t &gt;&gt; &amp;scores, int64_t total_weight)</td></tr>
+<tr class="memdesc:a7916bb05b909d901a0375641330510d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used by getblockstats to get feerates at different percentiles by weight.  <a href="#a7916bb05b909d901a0375641330510d1">More...</a><br /></td></tr>
+<tr class="separator:a7916bb05b909d901a0375641330510d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="aa1e97ce578bfdae0125555bda5a2d48d"></a>
@@ -209,6 +221,58 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a7916bb05b909d901a0375641330510d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CalculatePercentilesByWeight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td>
+          <td class="paramname"><em>result</em>[NUM_GETBLOCKSTATS_PERCENTILES], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::pair&lt; <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>, int64_t &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>scores</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>total_weight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Used by getblockstats to get feerates at different percentiles by weight. </p>
+
+<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l01643">1643</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8h_a7916bb05b909d901a0375641330510d1_cgraph.svg" width="1214" height="1894"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8h_a7916bb05b909d901a0375641330510d1_icgraph.svg" width="220" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a65a78b16d228932a6142656509a8bce4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -257,7 +321,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8h_a7305038a43cc5f399ca00e00c6f07186_cgraph.svg" width="1340" height="2800"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8h_a7305038a43cc5f399ca00e00c6f07186_cgraph.svg" width="1392" height="2450"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -351,7 +416,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 9 2018 12:14:34 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 21 2018 21:52:13 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

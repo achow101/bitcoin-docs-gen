@@ -193,7 +193,7 @@ var searchData=
   ['producesignature',['ProduceSignature',['../sign_8cpp.html#a0c453416d09212d876bee81dc9353c16',1,'ProduceSignature(const SigningProvider &amp;provider, const BaseSignatureCreator &amp;creator, const CScript &amp;fromPubKey, SignatureData &amp;sigdata):&#160;sign.cpp'],['../sign_8h.html#ae60f8fa32dcf02079b8536a8f3e7942b',1,'ProduceSignature(const SigningProvider &amp;provider, const BaseSignatureCreator &amp;creator, const CScript &amp;scriptPubKey, SignatureData &amp;sigdata):&#160;sign.cpp']]],
   ['program',['program',['../struct_witness_unknown.html#a682ae4fe0cff01f206a409433c49ca3f',1,'WitnessUnknown']]],
   ['programname',['programName',['../class_notificator.html#a248cc3a5e6cae919632852cdf2b246b6',1,'Notificator']]],
-  ['progressbar',['progressBar',['../class_bitcoin_g_u_i.html#a3f12bf1eae1b63b793c1a36891e0854a',1,'BitcoinGUI::progressBar()'],['../namespace_g_u_i_util.html#a98c48ff6d7eea8c7749f2d87e709e3a1',1,'GUIUtil::ProgressBar()']]],
+  ['progressbar',['progressBar',['../class_bitcoin_g_u_i.html#a01cf011fba19caf61e049ad9df94ce8b',1,'BitcoinGUI::progressBar()'],['../namespace_g_u_i_util.html#a98c48ff6d7eea8c7749f2d87e709e3a1',1,'GUIUtil::ProgressBar()']]],
   ['progressbarlabel',['progressBarLabel',['../class_bitcoin_g_u_i.html#a03f752c2f677dada5276b1b1965093dc',1,'BitcoinGUI']]],
   ['progressdialog',['progressDialog',['../class_bitcoin_g_u_i.html#a4043c9f32066cd6382cb985a7ce2481f',1,'BitcoinGUI::progressDialog()'],['../class_wallet_view.html#a3bbce26f4dd453ceaa46d1688f9ef879',1,'WalletView::progressDialog()']]],
   ['protocol_2ecpp',['protocol.cpp',['../protocol_8cpp.html',1,'']]],

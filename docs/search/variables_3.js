@@ -75,7 +75,7 @@ var searchData=
   ['conflictedtxs',['conflictedTxs',['../struct_per_block_connect_trace.html#ae251fec7b17193b76ef51a16285f9481',1,'PerBlockConnectTrace']]],
   ['conn',['conn',['../class_tor_controller.html#a0cd0abc08230a17743b1bfa22196a7ed',1,'TorController']]],
   ['connected',['connected',['../class_tor_control_connection.html#a773b95f858d1dbb38c8e85f8936090f1',1,'TorControlConnection']]],
-  ['connectionscontrol',['connectionsControl',['../class_bitcoin_g_u_i.html#a8fe7e9e8161e70cfa3f7f7e5e65f0ae7',1,'BitcoinGUI']]],
+  ['connectionscontrol',['connectionsControl',['../class_bitcoin_g_u_i.html#a1598d2b09a997085551c5ec0fdad7b50',1,'BitcoinGUI']]],
   ['connman',['connman',['../class_peer_logic_validation.html#aa9781fcb90dd8cec39b429fdc489e198',1,'PeerLogicValidation']]],
   ['consensus',['consensus',['../class_c_chain_params.html#a9eddbbd84a87109643d670766683aae2',1,'CChainParams']]],
   ['console_5fhistory',['CONSOLE_HISTORY',['../rpcconsole_8cpp.html#aadcd48ab7261b9dc336efb8919a2ecda',1,'rpcconsole.cpp']]],

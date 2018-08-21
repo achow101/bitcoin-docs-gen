@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="bitcoin_logo_doxygen.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitcoin Core
-   &#160;<span id="projectnumber">0.16.99</span>
+   &#160;<span id="projectnumber">0.17.99</span>
    </div>
    <div id="projectbrief">P2P Digital Currency</div>
   </td>
@@ -133,7 +133,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for blockchain.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp__incl.svg" width="4120" height="635"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp__incl.svg" width="4058" height="635"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="blockchain_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -174,6 +175,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7305038a43cc5f399ca00e00c6f07186"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_uni_value.html">UniValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blockchain_8cpp.html#a7305038a43cc5f399ca00e00c6f07186">mempoolInfoToJSON</a> ()</td></tr>
 <tr class="memdesc:a7305038a43cc5f399ca00e00c6f07186"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mempool information to JSON.  <a href="#a7305038a43cc5f399ca00e00c6f07186">More...</a><br /></td></tr>
 <tr class="separator:a7305038a43cc5f399ca00e00c6f07186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7916bb05b909d901a0375641330510d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blockchain_8cpp.html#a7916bb05b909d901a0375641330510d1">CalculatePercentilesByWeight</a> (<a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> result[NUM_GETBLOCKSTATS_PERCENTILES], std::vector&lt; std::pair&lt; <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>, int64_t &gt;&gt; &amp;scores, int64_t total_weight)</td></tr>
+<tr class="memdesc:a7916bb05b909d901a0375641330510d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used by getblockstats to get feerates at different percentiles by weight.  <a href="#a7916bb05b909d901a0375641330510d1">More...</a><br /></td></tr>
+<tr class="separator:a7916bb05b909d901a0375641330510d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47f8d3a14b20c71b6500954a2194637f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blockchain_8cpp.html#a47f8d3a14b20c71b6500954a2194637f">FindScriptPubKey</a> (std::atomic&lt; int &gt; &amp;scan_progress, const std::atomic&lt; bool &gt; &amp;should_abort, int64_t &amp;count, <a class="el" href="class_c_coins_view_cursor.html">CCoinsViewCursor</a> *cursor, const std::set&lt; <a class="el" href="class_c_script.html">CScript</a> &gt; &amp;needles, std::map&lt; <a class="el" href="class_c_out_point.html">COutPoint</a>, <a class="el" href="class_coin.html">Coin</a> &gt; &amp;out_results)</td></tr>
 <tr class="memdesc:a47f8d3a14b20c71b6500954a2194637f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for a given set of pubkey scripts.  <a href="#a47f8d3a14b20c71b6500954a2194637f">More...</a><br /></td></tr>
 <tr class="separator:a47f8d3a14b20c71b6500954a2194637f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -268,6 +272,58 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a7916bb05b909d901a0375641330510d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CalculatePercentilesByWeight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td>
+          <td class="paramname"><em>result</em>[NUM_GETBLOCKSTATS_PERCENTILES], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::pair&lt; <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>, int64_t &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>scores</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>total_weight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Used by getblockstats to get feerates at different percentiles by weight. </p>
+
+<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l01643">1643</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp_a7916bb05b909d901a0375641330510d1_cgraph.svg" width="956" height="1836"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp_a7916bb05b909d901a0375641330510d1_icgraph.svg" width="478" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a47f8d3a14b20c71b6500954a2194637f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -318,7 +374,7 @@ Here is the caller graph for this function:</div>
 
 <p>Search for a given set of pubkey scripts. </p>
 
-<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l01929">1929</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
+<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l01972">1972</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -448,7 +504,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp_a7305038a43cc5f399ca00e00c6f07186_cgraph.svg" width="1142" height="2054"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp_a7305038a43cc5f399ca00e00c6f07186_cgraph.svg" width="1194" height="2099"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -511,7 +568,7 @@ Here is the caller graph for this function:</div>
 
 <p>Register block chain RPC commands. </p>
 
-<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l02175">2175</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
+<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l02218">2218</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -580,7 +637,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l01988">1988</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
+<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l02031">2031</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -594,7 +651,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 9 2018 12:14:34 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 21 2018 21:52:13 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

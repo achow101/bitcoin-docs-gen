@@ -59,6 +59,7 @@ var searchData=
   ['opendebuglog',['OpenDebugLog',['../class_b_c_log_1_1_logger.html#a12ad70c2b4904e1326f2af1097ed9216',1,'BCLog::Logger']]],
   ['opendebuglogfile',['openDebugLogfile',['../namespace_g_u_i_util.html#aad169e3227e7a851db52a08bfb30391c',1,'GUIUtil']]],
   ['opennetworkconnection',['OpenNetworkConnection',['../class_c_connman.html#a5e42e06d446f31b4f2012796ff8d3e42',1,'CConnman']]],
+  ['openoptionsdialogwithtab',['openOptionsDialogWithTab',['../class_bitcoin_g_u_i.html#a203d9003ab4de369e35599aaaae6f17a',1,'BitcoinGUI']]],
   ['openthirdpartytxurl',['openThirdPartyTxUrl',['../class_transaction_view.html#ad1d088fbd25c0841dbc7c5de25583d79',1,'TransactionView']]],
   ['openuridialog',['OpenURIDialog',['../class_open_u_r_i_dialog.html#aa8b99129a4e66c994474c4a5056cd172',1,'OpenURIDialog']]],
   ['operator_20bool',['operator bool',['../class_c_critical_block.html#ad732a39800f134cef4daa1557c28b31d',1,'CCriticalBlock::operator bool()'],['../class_c_semaphore_grant.html#a604aff14b98731a735b26be2f9587580',1,'CSemaphoreGrant::operator bool()'],['../class_c_thread_interrupt.html#ae1e93088cf60228cb488ee398e2e5c46',1,'CThreadInterrupt::operator bool()']]],

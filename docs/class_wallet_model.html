@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="bitcoin_logo_doxygen.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitcoin Core
-   &#160;<span id="projectnumber">0.16.99</span>
+   &#160;<span id="projectnumber">0.17.99</span>
    </div>
    <div id="projectbrief">P2P Digital Currency</div>
   </td>
@@ -214,8 +214,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0ec10fbe74317b1949ac4ae63451d115"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88d44bc0994c1701386f63b1f266637f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_wallet_model.html#a88d44bc0994c1701386f63b1f266637f">saveReceiveRequest</a> (const std::string &amp;sAddress, const int64_t nId, const std::string &amp;sRequest)</td></tr>
 <tr class="separator:a88d44bc0994c1701386f63b1f266637f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa806b8843d15527a6b143d24f496fa85"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_wallet_model.html#aa806b8843d15527a6b143d24f496fa85">bumpFee</a> (<a class="el" href="classuint256.html">uint256</a> hash)</td></tr>
-<tr class="separator:aa806b8843d15527a6b143d24f496fa85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf07879b93f66ffc129184bf7a37f069"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_wallet_model.html#abf07879b93f66ffc129184bf7a37f069">bumpFee</a> (<a class="el" href="classuint256.html">uint256</a> hash, <a class="el" href="classuint256.html">uint256</a> &amp;new_hash)</td></tr>
+<tr class="separator:abf07879b93f66ffc129184bf7a37f069"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a1ea8d7eb26e344b3ba6ba5183f2cac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_wallet_model.html#a6a1ea8d7eb26e344b3ba6ba5183f2cac">privateKeysDisabled</a> () const </td></tr>
 <tr class="separator:a6a1ea8d7eb26e344b3ba6ba5183f2cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53fe1139673e28546a8dca38ac0308e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classinterfaces_1_1_node.html">interfaces::Node</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_wallet_model.html#a53fe1139673e28546a8dca38ac0308e0">node</a> () const </td></tr>
@@ -457,13 +457,14 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_model_af02e9dbee24d5019e364b9e01bad0c48_icgraph.svg" width="919" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_model_af02e9dbee24d5019e364b9e01bad0c48_icgraph.svg" width="1859" height="296"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aa806b8843d15527a6b143d24f496fa85"></a>
+<a class="anchor" id="abf07879b93f66ffc129184bf7a37f069"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -471,8 +472,18 @@ Here is the caller graph for this function:</div>
           <td class="memname">bool WalletModel::bumpFee </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classuint256.html">uint256</a>&#160;</td>
-          <td class="paramname"><em>hash</em></td><td>)</td>
+          <td class="paramname"><em>hash</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classuint256.html">uint256</a> &amp;&#160;</td>
+          <td class="paramname"><em>new_hash</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -482,14 +493,16 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_model_aa806b8843d15527a6b143d24f496fa85_cgraph.svg" width="1134" height="382"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_model_abf07879b93f66ffc129184bf7a37f069_cgraph.svg" width="1134" height="382"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_model_aa806b8843d15527a6b143d24f496fa85_icgraph.svg" width="691" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_model_abf07879b93f66ffc129184bf7a37f069_icgraph.svg" width="691" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -618,7 +631,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_model_ab61e020be4eb3812b36d0995e843321a_icgraph.svg" width="600" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_model_ab61e020be4eb3812b36d0995e843321a_icgraph.svg" width="1076" height="151"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -648,7 +662,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_model_ae16e0916a11d4a094998bbcfac378e04_icgraph.svg" width="466" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_model_ae16e0916a11d4a094998bbcfac378e04_icgraph.svg" width="1602" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -721,7 +736,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_model_acfb62be638267bbf1bf498fb6501c31d_icgraph.svg" width="1866" height="438"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_model_acfb62be638267bbf1bf498fb6501c31d_icgraph.svg" width="1866" height="438"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -745,7 +761,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_model_a96d53e56b3f8f07537ea2523f7a7d300_icgraph.svg" width="1587" height="2048"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_model_a96d53e56b3f8f07537ea2523f7a7d300_icgraph.svg" width="1587" height="2048"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -812,7 +829,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="walletmodel_8cpp_source.html#l00566">566</a> of file <a class="el" href="walletmodel_8cpp_source.html">walletmodel.cpp</a>.</p>
+<p>Definition at line <a class="el" href="walletmodel_8cpp_source.html#l00565">565</a> of file <a class="el" href="walletmodel_8cpp_source.html">walletmodel.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -836,7 +853,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="walletmodel_8cpp_source.html#l00571">571</a> of file <a class="el" href="walletmodel_8cpp_source.html">walletmodel.cpp</a>.</p>
+<p>Definition at line <a class="el" href="walletmodel_8cpp_source.html#l00570">570</a> of file <a class="el" href="walletmodel_8cpp_source.html">walletmodel.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -875,7 +892,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="walletmodel_8cpp_source.html#l00556">556</a> of file <a class="el" href="walletmodel_8cpp_source.html">walletmodel.cpp</a>.</p>
+<p>Definition at line <a class="el" href="walletmodel_8cpp_source.html#l00555">555</a> of file <a class="el" href="walletmodel_8cpp_source.html">walletmodel.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -959,7 +976,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_model_a6fc133a1c8712722db6607d067b58c6d_icgraph.svg" width="652" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_model_a6fc133a1c8712722db6607d067b58c6d_icgraph.svg" width="1586" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1022,7 +1040,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_model_a6568a470db58549d57c0ccf5d6b0d997_icgraph.svg" width="451" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_model_a6568a470db58549d57c0ccf5d6b0d997_icgraph.svg" width="1851" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1122,7 +1141,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="walletmodel_8cpp_source.html#l00561">561</a> of file <a class="el" href="walletmodel_8cpp_source.html">walletmodel.cpp</a>.</p>
+<p>Definition at line <a class="el" href="walletmodel_8cpp_source.html#l00560">560</a> of file <a class="el" href="walletmodel_8cpp_source.html">walletmodel.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1158,7 +1177,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_model_ae98eaede9493625ce778a0a873b3d124_icgraph.svg" width="958" height="280"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_model_ae98eaede9493625ce778a0a873b3d124_icgraph.svg" width="958" height="280"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1188,7 +1208,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_model_acc639a99e4aa34f32110f6b2bdef2393_icgraph.svg" width="1199" height="280"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_model_acc639a99e4aa34f32110f6b2bdef2393_icgraph.svg" width="1683" height="432"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1376,6 +1397,14 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_model_a6c445e6ea25889e14542762e54ced44f_icgraph.svg" width="1579" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="afc875c7d3b1ca788f2b4ed842607bac0"></a>
@@ -1430,6 +1459,14 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_model_afb73c83ec48ea74df0e3da27bd695a26_icgraph.svg" width="1000" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -1667,7 +1704,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_model_a1c5870f02d5221d26a9a50f188c42d1f_icgraph.svg" width="1438" height="2108"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_model_a1c5870f02d5221d26a9a50f188c42d1f_icgraph.svg" width="1438" height="2083"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2077,7 +2115,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 9 2018 12:14:38 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 21 2018 21:52:22 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

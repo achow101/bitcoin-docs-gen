@@ -6,6 +6,5 @@ var searchData=
   ['cconnman',['CConnman',['../class_c_node.html#ab056adbed53a8de7255493492a78f0f0',1,'CNode']]],
   ['cconnmantest',['CConnmanTest',['../class_c_connman.html#abdba51ca43be4742ee0b0a05640c2e86',1,'CConnman']]],
   ['cdbwrapper',['CDBWrapper',['../class_c_d_b_batch.html#a2d327eccbb43e94ccd92f0ae70db14dd',1,'CDBBatch']]],
-  ['crollingbloomfilter',['CRollingBloomFilter',['../class_c_bloom_filter.html#a07025fbd4f30c098b492afea8e004cd8',1,'CBloomFilter']]],
   ['csubnet',['CSubNet',['../class_c_net_addr.html#a1c694dd7d8a349bd3a1816a2634d7d2a',1,'CNetAddr']]]
 ];

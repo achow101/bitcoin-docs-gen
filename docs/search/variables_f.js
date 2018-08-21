@@ -71,7 +71,7 @@ var searchData=
   ['private_5fkey_5fsize',['PRIVATE_KEY_SIZE',['../class_c_key.html#ae933097e3433e9f26c41aeff057997c6',1,'CKey']]],
   ['program',['program',['../struct_witness_unknown.html#a682ae4fe0cff01f206a409433c49ca3f',1,'WitnessUnknown']]],
   ['programname',['programName',['../class_notificator.html#a248cc3a5e6cae919632852cdf2b246b6',1,'Notificator']]],
-  ['progressbar',['progressBar',['../class_bitcoin_g_u_i.html#a3f12bf1eae1b63b793c1a36891e0854a',1,'BitcoinGUI']]],
+  ['progressbar',['progressBar',['../class_bitcoin_g_u_i.html#a01cf011fba19caf61e049ad9df94ce8b',1,'BitcoinGUI']]],
   ['progressbarlabel',['progressBarLabel',['../class_bitcoin_g_u_i.html#a03f752c2f677dada5276b1b1965093dc',1,'BitcoinGUI']]],
   ['progressdialog',['progressDialog',['../class_bitcoin_g_u_i.html#a4043c9f32066cd6382cb985a7ce2481f',1,'BitcoinGUI::progressDialog()'],['../class_wallet_view.html#a3bbce26f4dd453ceaa46d1688f9ef879',1,'WalletView::progressDialog()']]],
   ['proxy',['proxy',['../classproxy_type.html#a5bd2641d60e071671cbfe4f45e831743',1,'proxyType']]],

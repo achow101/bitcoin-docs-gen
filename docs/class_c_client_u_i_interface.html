@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="bitcoin_logo_doxygen.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitcoin Core
-   &#160;<span id="projectnumber">0.16.99</span>
+   &#160;<span id="projectnumber">0.17.99</span>
    </div>
    <div id="projectbrief">P2P Digital Currency</div>
   </td>
@@ -89,7 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_c_client_u_i_interface-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">CClientUIInterface Class Reference</div>  </div>
@@ -132,50 +132,50 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="class_c_client_u_i_interface.html#a568cf07ecac3fac224d63b42a32e8bc1a72b206c5d6304b4e2257281a5ca551eb">MSG_WARNING</a> = (ICON_WARNING | BTN_OK | MODAL), 
 <a class="el" href="class_c_client_u_i_interface.html#a568cf07ecac3fac224d63b42a32e8bc1a0551e67c07eb6a81edf6e43fed89759f">MSG_ERROR</a> = (ICON_ERROR | BTN_OK | MODAL)
 <br />
- }<tr class="memdesc:a568cf07ecac3fac224d63b42a32e8bc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags for <a class="el" href="class_c_client_u_i_interface.html#a9d328cc06777490e90e8c6a9cb31335f" title="Show message box. ">CClientUIInterface::ThreadSafeMessageBox</a>.  <a href="class_c_client_u_i_interface.html#a568cf07ecac3fac224d63b42a32e8bc1">More...</a><br /></td></tr>
+ }<tr class="memdesc:a568cf07ecac3fac224d63b42a32e8bc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags for CClientUIInterface::ThreadSafeMessageBox.  <a href="class_c_client_u_i_interface.html#a568cf07ecac3fac224d63b42a32e8bc1">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:a568cf07ecac3fac224d63b42a32e8bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a9d328cc06777490e90e8c6a9cb31335f"><td class="memItemLeft" align="right" valign="top">boost::signals2::signal&lt; bool(const std::string &amp;message, const std::string &amp;caption, unsigned int style), boost::signals2::last_value&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_client_u_i_interface.html#a9d328cc06777490e90e8c6a9cb31335f">ThreadSafeMessageBox</a></td></tr>
-<tr class="memdesc:a9d328cc06777490e90e8c6a9cb31335f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show message box.  <a href="#a9d328cc06777490e90e8c6a9cb31335f">More...</a><br /></td></tr>
-<tr class="separator:a9d328cc06777490e90e8c6a9cb31335f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4db099ecd0f43e4524b9be0ec922b61"><td class="memItemLeft" align="right" valign="top">boost::signals2::signal&lt; bool(const std::string &amp;message, const std::string &amp;noninteractive_message, const std::string &amp;caption, unsigned int style), boost::signals2::last_value&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_client_u_i_interface.html#aa4db099ecd0f43e4524b9be0ec922b61">ThreadSafeQuestion</a></td></tr>
-<tr class="memdesc:aa4db099ecd0f43e4524b9be0ec922b61"><td class="mdescLeft">&#160;</td><td class="mdescRight">If possible, ask the user a question.  <a href="#aa4db099ecd0f43e4524b9be0ec922b61">More...</a><br /></td></tr>
-<tr class="separator:aa4db099ecd0f43e4524b9be0ec922b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc63cc3f3e5e15632f713d859dbc6bc2"><td class="memItemLeft" align="right" valign="top">boost::signals2::signal&lt; void(const std::string &amp;message)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_client_u_i_interface.html#abc63cc3f3e5e15632f713d859dbc6bc2">InitMessage</a></td></tr>
-<tr class="memdesc:abc63cc3f3e5e15632f713d859dbc6bc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Progress message during initialization.  <a href="#abc63cc3f3e5e15632f713d859dbc6bc2">More...</a><br /></td></tr>
-<tr class="separator:abc63cc3f3e5e15632f713d859dbc6bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a496995d44db8dc3e3ef84d345e25967d"><td class="memItemLeft" align="right" valign="top">boost::signals2::signal&lt; void(int newNumConnections)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_client_u_i_interface.html#a496995d44db8dc3e3ef84d345e25967d">NotifyNumConnectionsChanged</a></td></tr>
-<tr class="memdesc:a496995d44db8dc3e3ef84d345e25967d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of network connections changed.  <a href="#a496995d44db8dc3e3ef84d345e25967d">More...</a><br /></td></tr>
-<tr class="separator:a496995d44db8dc3e3ef84d345e25967d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addd7f774fd2ffc49b3c1b903f12aa4a0"><td class="memItemLeft" align="right" valign="top">boost::signals2::signal&lt; void(bool networkActive)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_client_u_i_interface.html#addd7f774fd2ffc49b3c1b903f12aa4a0">NotifyNetworkActiveChanged</a></td></tr>
-<tr class="memdesc:addd7f774fd2ffc49b3c1b903f12aa4a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Network activity state changed.  <a href="#addd7f774fd2ffc49b3c1b903f12aa4a0">More...</a><br /></td></tr>
-<tr class="separator:addd7f774fd2ffc49b3c1b903f12aa4a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4efcc01868e1ccfde8cc0e5d861ddfd"><td class="memItemLeft" align="right" valign="top">boost::signals2::signal&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_client_u_i_interface.html#af4efcc01868e1ccfde8cc0e5d861ddfd">NotifyAlertChanged</a></td></tr>
-<tr class="memdesc:af4efcc01868e1ccfde8cc0e5d861ddfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status bar alerts changed.  <a href="#af4efcc01868e1ccfde8cc0e5d861ddfd">More...</a><br /></td></tr>
-<tr class="separator:af4efcc01868e1ccfde8cc0e5d861ddfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abaa672be5815bfc9058f321bd93dcff3"><td class="memItemLeft" align="right" valign="top">boost::signals2::signal&lt; void(std::shared_ptr&lt; <a class="el" href="class_c_wallet.html">CWallet</a> &gt; wallet)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_client_u_i_interface.html#abaa672be5815bfc9058f321bd93dcff3">LoadWallet</a></td></tr>
-<tr class="memdesc:abaa672be5815bfc9058f321bd93dcff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A wallet has been loaded.  <a href="#abaa672be5815bfc9058f321bd93dcff3">More...</a><br /></td></tr>
-<tr class="separator:abaa672be5815bfc9058f321bd93dcff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fcd389d2fee8ab92b40dd78b2c39833"><td class="memItemLeft" align="right" valign="top">boost::signals2::signal&lt; void(const std::string &amp;title, int nProgress, bool resume_possible)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_client_u_i_interface.html#a7fcd389d2fee8ab92b40dd78b2c39833">ShowProgress</a></td></tr>
-<tr class="memdesc:a7fcd389d2fee8ab92b40dd78b2c39833"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show progress e.g.  <a href="#a7fcd389d2fee8ab92b40dd78b2c39833">More...</a><br /></td></tr>
-<tr class="separator:a7fcd389d2fee8ab92b40dd78b2c39833"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39cfb82f40ec9753ca5f16a1d3337326"><td class="memItemLeft" align="right" valign="top">boost::signals2::signal&lt; void(bool, const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_client_u_i_interface.html#a39cfb82f40ec9753ca5f16a1d3337326">NotifyBlockTip</a></td></tr>
-<tr class="memdesc:a39cfb82f40ec9753ca5f16a1d3337326"><td class="mdescLeft">&#160;</td><td class="mdescRight">New block has been accepted.  <a href="#a39cfb82f40ec9753ca5f16a1d3337326">More...</a><br /></td></tr>
-<tr class="separator:a39cfb82f40ec9753ca5f16a1d3337326"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c4b401e2a1ec2c3b1d91150c45b9fdd"><td class="memItemLeft" align="right" valign="top">boost::signals2::signal&lt; void(bool, const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_client_u_i_interface.html#a7c4b401e2a1ec2c3b1d91150c45b9fdd">NotifyHeaderTip</a></td></tr>
-<tr class="memdesc:a7c4b401e2a1ec2c3b1d91150c45b9fdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Best header has changed.  <a href="#a7c4b401e2a1ec2c3b1d91150c45b9fdd">More...</a><br /></td></tr>
-<tr class="separator:a7c4b401e2a1ec2c3b1d91150c45b9fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd111d0c8de20c0d5554ce9d411adad1"><td class="memItemLeft" align="right" valign="top">boost::signals2::signal&lt; void(void)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_client_u_i_interface.html#abd111d0c8de20c0d5554ce9d411adad1">BannedListChanged</a></td></tr>
-<tr class="memdesc:abd111d0c8de20c0d5554ce9d411adad1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Banlist did change.  <a href="#abd111d0c8de20c0d5554ce9d411adad1">More...</a><br /></td></tr>
-<tr class="separator:abd111d0c8de20c0d5554ce9d411adad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ab423f8a48aaf60921305afc318f54c76"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_client_u_i_interface.html#ab423f8a48aaf60921305afc318f54c76">ADD_SIGNALS_DECL_WRAPPER</a> (ThreadSafeMessageBox, bool, const std::string &amp;message, const std::string &amp;caption, unsigned int style)</td></tr>
+<tr class="memdesc:ab423f8a48aaf60921305afc318f54c76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show message box.  <a href="#ab423f8a48aaf60921305afc318f54c76">More...</a><br /></td></tr>
+<tr class="separator:ab423f8a48aaf60921305afc318f54c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa90923b5215abee1af1252271692b527"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_client_u_i_interface.html#aa90923b5215abee1af1252271692b527">ADD_SIGNALS_DECL_WRAPPER</a> (ThreadSafeQuestion, bool, const std::string &amp;message, const std::string &amp;noninteractive_message, const std::string &amp;caption, unsigned int style)</td></tr>
+<tr class="memdesc:aa90923b5215abee1af1252271692b527"><td class="mdescLeft">&#160;</td><td class="mdescRight">If possible, ask the user a question.  <a href="#aa90923b5215abee1af1252271692b527">More...</a><br /></td></tr>
+<tr class="separator:aa90923b5215abee1af1252271692b527"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad415b9888065a7516713f6df387e0bc2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_client_u_i_interface.html#ad415b9888065a7516713f6df387e0bc2">ADD_SIGNALS_DECL_WRAPPER</a> (InitMessage, void, const std::string &amp;message)</td></tr>
+<tr class="memdesc:ad415b9888065a7516713f6df387e0bc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Progress message during initialization.  <a href="#ad415b9888065a7516713f6df387e0bc2">More...</a><br /></td></tr>
+<tr class="separator:ad415b9888065a7516713f6df387e0bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae15b5bca229e096795364d209f66f1ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_client_u_i_interface.html#ae15b5bca229e096795364d209f66f1ba">ADD_SIGNALS_DECL_WRAPPER</a> (NotifyNumConnectionsChanged, void, int newNumConnections)</td></tr>
+<tr class="memdesc:ae15b5bca229e096795364d209f66f1ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of network connections changed.  <a href="#ae15b5bca229e096795364d209f66f1ba">More...</a><br /></td></tr>
+<tr class="separator:ae15b5bca229e096795364d209f66f1ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67d3cd0a3c100ee995099f98d59cdf6e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_client_u_i_interface.html#a67d3cd0a3c100ee995099f98d59cdf6e">ADD_SIGNALS_DECL_WRAPPER</a> (NotifyNetworkActiveChanged, void, bool networkActive)</td></tr>
+<tr class="memdesc:a67d3cd0a3c100ee995099f98d59cdf6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Network activity state changed.  <a href="#a67d3cd0a3c100ee995099f98d59cdf6e">More...</a><br /></td></tr>
+<tr class="separator:a67d3cd0a3c100ee995099f98d59cdf6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a1c58bd1602921726917a855f6b808b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_client_u_i_interface.html#a3a1c58bd1602921726917a855f6b808b">ADD_SIGNALS_DECL_WRAPPER</a> (NotifyAlertChanged, void,)</td></tr>
+<tr class="memdesc:a3a1c58bd1602921726917a855f6b808b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status bar alerts changed.  <a href="#a3a1c58bd1602921726917a855f6b808b">More...</a><br /></td></tr>
+<tr class="separator:a3a1c58bd1602921726917a855f6b808b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd5c65bca09702ba31415548eb82c1b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_client_u_i_interface.html#acd5c65bca09702ba31415548eb82c1b5">ADD_SIGNALS_DECL_WRAPPER</a> (LoadWallet, void, std::shared_ptr&lt; <a class="el" href="class_c_wallet.html">CWallet</a> &gt; wallet)</td></tr>
+<tr class="memdesc:acd5c65bca09702ba31415548eb82c1b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A wallet has been loaded.  <a href="#acd5c65bca09702ba31415548eb82c1b5">More...</a><br /></td></tr>
+<tr class="separator:acd5c65bca09702ba31415548eb82c1b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fb15c162c02e21a9dac1a2249e4c120"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_client_u_i_interface.html#a9fb15c162c02e21a9dac1a2249e4c120">ADD_SIGNALS_DECL_WRAPPER</a> (ShowProgress, void, const std::string &amp;title, int nProgress, bool resume_possible)</td></tr>
+<tr class="memdesc:a9fb15c162c02e21a9dac1a2249e4c120"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show progress e.g.  <a href="#a9fb15c162c02e21a9dac1a2249e4c120">More...</a><br /></td></tr>
+<tr class="separator:a9fb15c162c02e21a9dac1a2249e4c120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48f669fa762809caa07ecf37baee6b18"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_client_u_i_interface.html#a48f669fa762809caa07ecf37baee6b18">ADD_SIGNALS_DECL_WRAPPER</a> (NotifyBlockTip, void, bool, const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *)</td></tr>
+<tr class="memdesc:a48f669fa762809caa07ecf37baee6b18"><td class="mdescLeft">&#160;</td><td class="mdescRight">New block has been accepted.  <a href="#a48f669fa762809caa07ecf37baee6b18">More...</a><br /></td></tr>
+<tr class="separator:a48f669fa762809caa07ecf37baee6b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fbe8541d235c8f45d27c6b1a967db56"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_client_u_i_interface.html#a1fbe8541d235c8f45d27c6b1a967db56">ADD_SIGNALS_DECL_WRAPPER</a> (NotifyHeaderTip, void, bool, const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *)</td></tr>
+<tr class="memdesc:a1fbe8541d235c8f45d27c6b1a967db56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Best header has changed.  <a href="#a1fbe8541d235c8f45d27c6b1a967db56">More...</a><br /></td></tr>
+<tr class="separator:a1fbe8541d235c8f45d27c6b1a967db56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bd1a7c78c158913f3d76e05685ceda6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_client_u_i_interface.html#a1bd1a7c78c158913f3d76e05685ceda6">ADD_SIGNALS_DECL_WRAPPER</a> (BannedListChanged, void, void)</td></tr>
+<tr class="memdesc:a1bd1a7c78c158913f3d76e05685ceda6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Banlist did change.  <a href="#a1bd1a7c78c158913f3d76e05685ceda6">More...</a><br /></td></tr>
+<tr class="separator:a1bd1a7c78c158913f3d76e05685ceda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Signals for UI communication. </p>
 
-<p>Definition at line <a class="el" href="ui__interface_8h_source.html#l00028">28</a> of file <a class="el" href="ui__interface_8h_source.html">ui_interface.h</a>.</p>
+<p>Definition at line <a class="el" href="ui__interface_8h_source.html#l00031">31</a> of file <a class="el" href="ui__interface_8h_source.html">ui_interface.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a568cf07ecac3fac224d63b42a32e8bc1"></a>
 <div class="memitem">
@@ -187,7 +187,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Flags for <a class="el" href="class_c_client_u_i_interface.html#a9d328cc06777490e90e8c6a9cb31335f" title="Show message box. ">CClientUIInterface::ThreadSafeMessageBox</a>. </p>
+<p>Flags for CClientUIInterface::ThreadSafeMessageBox. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a568cf07ecac3fac224d63b42a32e8bc1a9c1da08e2b3366c89ecf434061c2bf92"></a>ICON_INFORMATION&#160;</td><td class="fielddoc">
 </td></tr>
@@ -241,178 +241,101 @@ Public Attributes</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="ui__interface_8h_source.html#l00032">32</a> of file <a class="el" href="ui__interface_8h_source.html">ui_interface.h</a>.</p>
+<p>Definition at line <a class="el" href="ui__interface_8h_source.html#l00035">35</a> of file <a class="el" href="ui__interface_8h_source.html">ui_interface.h</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="abd111d0c8de20c0d5554ce9d411adad1"></a>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ab423f8a48aaf60921305afc318f54c76"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">boost::signals2::signal&lt;void (void)&gt; CClientUIInterface::BannedListChanged</td>
+          <td class="memname">CClientUIInterface::ADD_SIGNALS_DECL_WRAPPER </td>
+          <td>(</td>
+          <td class="paramtype">ThreadSafeMessageBox&#160;</td>
+          <td class="paramname">, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Banlist did change. </p>
-
-<p>Definition at line <a class="el" href="ui__interface_8h_source.html#l00111">111</a> of file <a class="el" href="ui__interface_8h_source.html">ui_interface.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="abc63cc3f3e5e15632f713d859dbc6bc2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">boost::signals2::signal&lt;void (const std::string &amp;message)&gt; CClientUIInterface::InitMessage</td>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Progress message during initialization. </p>
-
-<p>Definition at line <a class="el" href="ui__interface_8h_source.html#l00082">82</a> of file <a class="el" href="ui__interface_8h_source.html">ui_interface.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="abaa672be5815bfc9058f321bd93dcff3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">boost::signals2::signal&lt;void (std::shared_ptr&lt;<a class="el" href="class_c_wallet.html">CWallet</a>&gt; wallet)&gt; CClientUIInterface::LoadWallet</td>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A wallet has been loaded. </p>
-
-<p>Definition at line <a class="el" href="ui__interface_8h_source.html#l00096">96</a> of file <a class="el" href="ui__interface_8h_source.html">ui_interface.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af4efcc01868e1ccfde8cc0e5d861ddfd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">boost::signals2::signal&lt;void ()&gt; CClientUIInterface::NotifyAlertChanged</td>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>caption</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Status bar alerts changed. </p>
-
-<p>Definition at line <a class="el" href="ui__interface_8h_source.html#l00093">93</a> of file <a class="el" href="ui__interface_8h_source.html">ui_interface.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a39cfb82f40ec9753ca5f16a1d3337326"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">boost::signals2::signal&lt;void (bool, const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *)&gt; CClientUIInterface::NotifyBlockTip</td>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>style</em>&#160;</td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>New block has been accepted. </p>
-
-<p>Definition at line <a class="el" href="ui__interface_8h_source.html#l00105">105</a> of file <a class="el" href="ui__interface_8h_source.html">ui_interface.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7c4b401e2a1ec2c3b1d91150c45b9fdd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">boost::signals2::signal&lt;void (bool, const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *)&gt; CClientUIInterface::NotifyHeaderTip</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Best header has changed. </p>
-
-<p>Definition at line <a class="el" href="ui__interface_8h_source.html#l00108">108</a> of file <a class="el" href="ui__interface_8h_source.html">ui_interface.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="addd7f774fd2ffc49b3c1b903f12aa4a0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::signals2::signal&lt;void (bool networkActive)&gt; CClientUIInterface::NotifyNetworkActiveChanged</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Network activity state changed. </p>
-
-<p>Definition at line <a class="el" href="ui__interface_8h_source.html#l00088">88</a> of file <a class="el" href="ui__interface_8h_source.html">ui_interface.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a496995d44db8dc3e3ef84d345e25967d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::signals2::signal&lt;void (int newNumConnections)&gt; CClientUIInterface::NotifyNumConnectionsChanged</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Number of network connections changed. </p>
-
-<p>Definition at line <a class="el" href="ui__interface_8h_source.html#l00085">85</a> of file <a class="el" href="ui__interface_8h_source.html">ui_interface.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7fcd389d2fee8ab92b40dd78b2c39833"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::signals2::signal&lt;void (const std::string &amp;title, int nProgress, bool resume_possible)&gt; CClientUIInterface::ShowProgress</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Show progress e.g. </p>
-<p>for verifychain. resume_possible indicates shutting down now will result in the current progress action resuming upon restart. </p>
-
-<p>Definition at line <a class="el" href="ui__interface_8h_source.html#l00102">102</a> of file <a class="el" href="ui__interface_8h_source.html">ui_interface.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9d328cc06777490e90e8c6a9cb31335f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::signals2::signal&lt;bool (const std::string&amp; message, const std::string&amp; caption, unsigned int style), boost::signals2::last_value&lt;bool&gt; &gt; CClientUIInterface::ThreadSafeMessageBox</td>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Show message box. </p>
 
-<p>Definition at line <a class="el" href="ui__interface_8h_source.html#l00076">76</a> of file <a class="el" href="ui__interface_8h_source.html">ui_interface.h</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="aa4db099ecd0f43e4524b9be0ec922b61"></a>
+<a class="anchor" id="aa90923b5215abee1af1252271692b527"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">boost::signals2::signal&lt;bool (const std::string&amp; message, const std::string&amp; noninteractive_message, const std::string&amp; caption, unsigned int style), boost::signals2::last_value&lt;bool&gt; &gt; CClientUIInterface::ThreadSafeQuestion</td>
+          <td class="memname">CClientUIInterface::ADD_SIGNALS_DECL_WRAPPER </td>
+          <td>(</td>
+          <td class="paramtype">ThreadSafeQuestion&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>noninteractive_message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>caption</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>style</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -420,7 +343,330 @@ Public Attributes</h2></td></tr>
 <p>If possible, ask the user a question. </p>
 <p>If not, falls back to ThreadSafeMessageBox(noninteractive_message, caption, style) and returns false. </p>
 
-<p>Definition at line <a class="el" href="ui__interface_8h_source.html#l00079">79</a> of file <a class="el" href="ui__interface_8h_source.html">ui_interface.h</a>.</p>
+</div>
+</div>
+<a class="anchor" id="ad415b9888065a7516713f6df387e0bc2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CClientUIInterface::ADD_SIGNALS_DECL_WRAPPER </td>
+          <td>(</td>
+          <td class="paramtype">InitMessage&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Progress message during initialization. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae15b5bca229e096795364d209f66f1ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CClientUIInterface::ADD_SIGNALS_DECL_WRAPPER </td>
+          <td>(</td>
+          <td class="paramtype">NotifyNumConnectionsChanged&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>newNumConnections</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of network connections changed. </p>
+
+</div>
+</div>
+<a class="anchor" id="a67d3cd0a3c100ee995099f98d59cdf6e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CClientUIInterface::ADD_SIGNALS_DECL_WRAPPER </td>
+          <td>(</td>
+          <td class="paramtype">NotifyNetworkActiveChanged&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>networkActive</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Network activity state changed. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3a1c58bd1602921726917a855f6b808b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CClientUIInterface::ADD_SIGNALS_DECL_WRAPPER </td>
+          <td>(</td>
+          <td class="paramtype">NotifyAlertChanged&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Status bar alerts changed. </p>
+
+</div>
+</div>
+<a class="anchor" id="acd5c65bca09702ba31415548eb82c1b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CClientUIInterface::ADD_SIGNALS_DECL_WRAPPER </td>
+          <td>(</td>
+          <td class="paramtype">LoadWallet&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_c_wallet.html">CWallet</a> &gt;&#160;</td>
+          <td class="paramname"><em>wallet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A wallet has been loaded. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9fb15c162c02e21a9dac1a2249e4c120"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CClientUIInterface::ADD_SIGNALS_DECL_WRAPPER </td>
+          <td>(</td>
+          <td class="paramtype">ShowProgress&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nProgress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>resume_possible</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Show progress e.g. </p>
+<p>for verifychain. resume_possible indicates shutting down now will result in the current progress action resuming upon restart. </p>
+
+</div>
+</div>
+<a class="anchor" id="a48f669fa762809caa07ecf37baee6b18"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CClientUIInterface::ADD_SIGNALS_DECL_WRAPPER </td>
+          <td>(</td>
+          <td class="paramtype">NotifyBlockTip&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>New block has been accepted. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1fbe8541d235c8f45d27c6b1a967db56"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CClientUIInterface::ADD_SIGNALS_DECL_WRAPPER </td>
+          <td>(</td>
+          <td class="paramtype">NotifyHeaderTip&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Best header has changed. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1bd1a7c78c158913f3d76e05685ceda6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CClientUIInterface::ADD_SIGNALS_DECL_WRAPPER </td>
+          <td>(</td>
+          <td class="paramtype">BannedListChanged&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Banlist did change. </p>
 
 </div>
 </div>
@@ -430,7 +676,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 9 2018 12:14:36 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 21 2018 21:52:17 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -3,6 +3,8 @@ var searchData=
   ['tab_5fconsole',['TAB_CONSOLE',['../class_r_p_c_console.html#a0ef5130bf15aacb7f47352de810c1c20a2f009e4803b1bfe1cae82b52826363ae',1,'RPCConsole']]],
   ['tab_5fgraph',['TAB_GRAPH',['../class_r_p_c_console.html#a0ef5130bf15aacb7f47352de810c1c20a85c453eeeb6d4cb0d78d2ea738f02209',1,'RPCConsole']]],
   ['tab_5finfo',['TAB_INFO',['../class_r_p_c_console.html#a0ef5130bf15aacb7f47352de810c1c20a62097e7c3791ce202e2bd55e4d794760',1,'RPCConsole']]],
+  ['tab_5fmain',['TAB_MAIN',['../class_options_dialog.html#a5764f8df35613b971f648cd11f49e47da8969d2dc60ec2eeae61d284bfd41fdf1',1,'OptionsDialog']]],
+  ['tab_5fnetwork',['TAB_NETWORK',['../class_options_dialog.html#a5764f8df35613b971f648cd11f49e47dab5c3dd8e8abfcf430956c982bc5761ca',1,'OptionsDialog']]],
   ['tab_5fpeers',['TAB_PEERS',['../class_r_p_c_console.html#a0ef5130bf15aacb7f47352de810c1c20ac6603d8379ce457d0738ec92cc3994c7',1,'RPCConsole']]],
   ['thirdpartytxurls',['ThirdPartyTxUrls',['../class_options_model.html#a5c6c9ca8a01aca9f53e91f118e4878d2a91cfe21dbeeec49b82df81756e2c658c',1,'OptionsModel']]],
   ['thismonth',['ThisMonth',['../class_transaction_view.html#a73d1bbedc72fa131591aadb3aba150f8a34f3d05ba9262c629e7d6a4e809ab927',1,'TransactionView']]],

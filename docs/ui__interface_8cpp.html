@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="bitcoin_logo_doxygen.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitcoin Core
-   &#160;<span id="projectnumber">0.16.99</span>
+   &#160;<span id="projectnumber">0.17.99</span>
    </div>
    <div id="projectbrief">P2P Digital Currency</div>
   </td>
@@ -90,6 +90,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -98,16 +100,51 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="ui__interface_8h_source.html">ui_interface.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="util_8h_source.html">util.h</a>&gt;</code><br />
+<code>#include &lt;boost/signals2/last_value.hpp&gt;</code><br />
+<code>#include &lt;boost/signals2/signal.hpp&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for ui_interface.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ui__interface_8cpp__incl.svg" width="3584" height="380"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ui__interface_8cpp__incl.svg" width="3115" height="380"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="ui__interface_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_u_i_signals.html">UISignals</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:aaed41efae9aeec1aaf77aa670f50e8f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ui__interface_8cpp.html#aaed41efae9aeec1aaf77aa670f50e8f2">ADD_SIGNALS_IMPL_WRAPPER</a>(signal_name)</td></tr>
+<tr class="separator:aaed41efae9aeec1aaf77aa670f50e8f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a6c54ad3e7c3d4ac4da05445a19f7336d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ui__interface_8cpp.html#a6c54ad3e7c3d4ac4da05445a19f7336d">ADD_SIGNALS_IMPL_WRAPPER</a> (ThreadSafeMessageBox)</td></tr>
+<tr class="separator:a6c54ad3e7c3d4ac4da05445a19f7336d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cd2fa1f3199469031818f05bd4af648"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ui__interface_8cpp.html#a8cd2fa1f3199469031818f05bd4af648">ADD_SIGNALS_IMPL_WRAPPER</a> (ThreadSafeQuestion)</td></tr>
+<tr class="separator:a8cd2fa1f3199469031818f05bd4af648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b13a9f16b71ecf0d917b23614dbd6f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ui__interface_8cpp.html#a8b13a9f16b71ecf0d917b23614dbd6f3">ADD_SIGNALS_IMPL_WRAPPER</a> (InitMessage)</td></tr>
+<tr class="separator:a8b13a9f16b71ecf0d917b23614dbd6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa26789b056edcc00cc66a31b275476a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ui__interface_8cpp.html#aa26789b056edcc00cc66a31b275476a5">ADD_SIGNALS_IMPL_WRAPPER</a> (NotifyNumConnectionsChanged)</td></tr>
+<tr class="separator:aa26789b056edcc00cc66a31b275476a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad403303b2aed68e752b50b49187907f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ui__interface_8cpp.html#ad403303b2aed68e752b50b49187907f7">ADD_SIGNALS_IMPL_WRAPPER</a> (NotifyNetworkActiveChanged)</td></tr>
+<tr class="separator:ad403303b2aed68e752b50b49187907f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ece56bdd54f2c78bb78bff46f88d36b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ui__interface_8cpp.html#a0ece56bdd54f2c78bb78bff46f88d36b">ADD_SIGNALS_IMPL_WRAPPER</a> (NotifyAlertChanged)</td></tr>
+<tr class="separator:a0ece56bdd54f2c78bb78bff46f88d36b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4edefe8bbf150879e51bab3555a33a04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ui__interface_8cpp.html#a4edefe8bbf150879e51bab3555a33a04">ADD_SIGNALS_IMPL_WRAPPER</a> (LoadWallet)</td></tr>
+<tr class="separator:a4edefe8bbf150879e51bab3555a33a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4555c8d7fe371beca3ac897f74fafd3a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ui__interface_8cpp.html#a4555c8d7fe371beca3ac897f74fafd3a">ADD_SIGNALS_IMPL_WRAPPER</a> (ShowProgress)</td></tr>
+<tr class="separator:a4555c8d7fe371beca3ac897f74fafd3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf2b402937eec71825a65d087422d6b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ui__interface_8cpp.html#abf2b402937eec71825a65d087422d6b3">ADD_SIGNALS_IMPL_WRAPPER</a> (NotifyBlockTip)</td></tr>
+<tr class="separator:abf2b402937eec71825a65d087422d6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d15e1b1362c18d0a2ae13d1d70e89b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ui__interface_8cpp.html#a9d15e1b1362c18d0a2ae13d1d70e89b8">ADD_SIGNALS_IMPL_WRAPPER</a> (NotifyHeaderTip)</td></tr>
+<tr class="separator:a9d15e1b1362c18d0a2ae13d1d70e89b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb338c43bcdf165128000bea93e76e1b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ui__interface_8cpp.html#abb338c43bcdf165128000bea93e76e1b">ADD_SIGNALS_IMPL_WRAPPER</a> (BannedListChanged)</td></tr>
+<tr class="separator:abb338c43bcdf165128000bea93e76e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36f8e669221ac80facf023671576ee82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ui__interface_8cpp.html#a36f8e669221ac80facf023671576ee82">InitError</a> (const std::string &amp;str)</td></tr>
 <tr class="memdesc:a36f8e669221ac80facf023671576ee82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show error message.  <a href="#a36f8e669221ac80facf023671576ee82">More...</a><br /></td></tr>
 <tr class="separator:a36f8e669221ac80facf023671576ee82"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,8 +160,206 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a4fe31b510fc1c2b95321cedb9f89e8de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_client_u_i_interface.html">CClientUIInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ui__interface_8cpp.html#a4fe31b510fc1c2b95321cedb9f89e8de">uiInterface</a></td></tr>
 <tr class="separator:a4fe31b510fc1c2b95321cedb9f89e8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a420ac83099ca65b8b6a10e20720b1500"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_u_i_signals.html">UISignals</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ui__interface_8cpp.html#a420ac83099ca65b8b6a10e20720b1500">g_ui_signals</a></td></tr>
+<tr class="separator:a420ac83099ca65b8b6a10e20720b1500"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="aaed41efae9aeec1aaf77aa670f50e8f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADD_SIGNALS_IMPL_WRAPPER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">signal_name</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">boost::signals2::connection CClientUIInterface::signal_name##_connect(std::function&lt;signal_name##Sig&gt; fn) \</div><div class="line">    {                                                                                                         \</div><div class="line">        return <a class="code" href="ui__interface_8cpp.html#a420ac83099ca65b8b6a10e20720b1500">g_ui_signals</a>.signal_name.connect(fn);                                                          \</div><div class="line">    }                                                                                                         \</div><div class="line">    void CClientUIInterface::signal_name##_disconnect(std::function&lt;signal_name##Sig&gt; fn)                     \</div><div class="line">    {                                                                                                         \</div><div class="line">        return <a class="code" href="ui__interface_8cpp.html#a420ac83099ca65b8b6a10e20720b1500">g_ui_signals</a>.signal_name.disconnect(&amp;fn);                                                      \</div><div class="line">    }</div><div class="ttc" id="ui__interface_8cpp_html_a420ac83099ca65b8b6a10e20720b1500"><div class="ttname"><a href="ui__interface_8cpp.html#a420ac83099ca65b8b6a10e20720b1500">g_ui_signals</a></div><div class="ttdeci">struct UISignals g_ui_signals</div></div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="ui__interface_8cpp_source.html#l00027">27</a> of file <a class="el" href="ui__interface_8cpp_source.html">ui_interface.cpp</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a6c54ad3e7c3d4ac4da05445a19f7336d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ADD_SIGNALS_IMPL_WRAPPER </td>
+          <td>(</td>
+          <td class="paramtype">ThreadSafeMessageBox&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8cd2fa1f3199469031818f05bd4af648"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ADD_SIGNALS_IMPL_WRAPPER </td>
+          <td>(</td>
+          <td class="paramtype">ThreadSafeQuestion&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8b13a9f16b71ecf0d917b23614dbd6f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ADD_SIGNALS_IMPL_WRAPPER </td>
+          <td>(</td>
+          <td class="paramtype">InitMessage&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa26789b056edcc00cc66a31b275476a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ADD_SIGNALS_IMPL_WRAPPER </td>
+          <td>(</td>
+          <td class="paramtype">NotifyNumConnectionsChanged&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad403303b2aed68e752b50b49187907f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ADD_SIGNALS_IMPL_WRAPPER </td>
+          <td>(</td>
+          <td class="paramtype">NotifyNetworkActiveChanged&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0ece56bdd54f2c78bb78bff46f88d36b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ADD_SIGNALS_IMPL_WRAPPER </td>
+          <td>(</td>
+          <td class="paramtype">NotifyAlertChanged&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4edefe8bbf150879e51bab3555a33a04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ADD_SIGNALS_IMPL_WRAPPER </td>
+          <td>(</td>
+          <td class="paramtype">LoadWallet&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4555c8d7fe371beca3ac897f74fafd3a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ADD_SIGNALS_IMPL_WRAPPER </td>
+          <td>(</td>
+          <td class="paramtype">ShowProgress&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abf2b402937eec71825a65d087422d6b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ADD_SIGNALS_IMPL_WRAPPER </td>
+          <td>(</td>
+          <td class="paramtype">NotifyBlockTip&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9d15e1b1362c18d0a2ae13d1d70e89b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ADD_SIGNALS_IMPL_WRAPPER </td>
+          <td>(</td>
+          <td class="paramtype">NotifyHeaderTip&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abb338c43bcdf165128000bea93e76e1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ADD_SIGNALS_IMPL_WRAPPER </td>
+          <td>(</td>
+          <td class="paramtype">BannedListChanged&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a1a6a75fac961c253508d8ddf6aee426e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -149,7 +384,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ui__interface_8cpp_source.html#l00026">26</a> of file <a class="el" href="ui__interface_8cpp_source.html">ui_interface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ui__interface_8cpp_source.html#l00078">78</a> of file <a class="el" href="ui__interface_8cpp_source.html">ui_interface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -181,7 +416,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ui__interface_8cpp_source.html#l00021">21</a> of file <a class="el" href="ui__interface_8cpp_source.html">ui_interface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ui__interface_8cpp_source.html#l00073">73</a> of file <a class="el" href="ui__interface_8cpp_source.html">ui_interface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -215,7 +450,7 @@ Here is the caller graph for this function:</div>
 
 <p>Show error message. </p>
 
-<p>Definition at line <a class="el" href="ui__interface_8cpp_source.html#l00010">10</a> of file <a class="el" href="ui__interface_8cpp_source.html">ui_interface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ui__interface_8cpp_source.html#l00062">62</a> of file <a class="el" href="ui__interface_8cpp_source.html">ui_interface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -242,7 +477,7 @@ Here is the caller graph for this function:</div>
 
 <p>Show warning message. </p>
 
-<p>Definition at line <a class="el" href="ui__interface_8cpp_source.html#l00016">16</a> of file <a class="el" href="ui__interface_8cpp_source.html">ui_interface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ui__interface_8cpp_source.html#l00068">68</a> of file <a class="el" href="ui__interface_8cpp_source.html">ui_interface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -254,6 +489,18 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a420ac83099ca65b8b6a10e20720b1500"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_u_i_signals.html">UISignals</a>  g_ui_signals</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a4fe31b510fc1c2b95321cedb9f89e8de"></a>
 <div class="memitem">
 <div class="memproto">
@@ -264,14 +511,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ui__interface_8cpp_source.html#l00008">8</a> of file <a class="el" href="ui__interface_8cpp_source.html">ui_interface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ui__interface_8cpp_source.html#l00011">11</a> of file <a class="el" href="ui__interface_8cpp_source.html">ui_interface.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 9 2018 12:14:35 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 21 2018 21:52:14 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

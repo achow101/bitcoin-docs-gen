@@ -56,7 +56,7 @@ var searchData=
   ['shorttxids_5flength',['SHORTTXIDS_LENGTH',['../class_c_block_header_and_short_tx_i_ds.html#aec262326a2af78ac46fa3931351260fe',1,'CBlockHeaderAndShortTxIDs']]],
   ['showhelpmessageaction',['showHelpMessageAction',['../class_bitcoin_g_u_i.html#ac17a9cec196476d7f51cd9d3281cfb5d',1,'BitcoinGUI']]],
   ['showinactive',['showInactive',['../class_transaction_filter_proxy.html#acb2b782f0ae654a303f592236ab54227',1,'TransactionFilterProxy']]],
-  ['showprogress',['ShowProgress',['../class_c_client_u_i_interface.html#a7fcd389d2fee8ab92b40dd78b2c39833',1,'CClientUIInterface::ShowProgress()'],['../class_c_wallet.html#a845a2f2911b9b022f0e58ab577e795ea',1,'CWallet::ShowProgress()']]],
+  ['showprogress',['ShowProgress',['../struct_u_i_signals.html#af66a45ae59d2a3ff4e9f4bf16a9b10aa',1,'UISignals::ShowProgress()'],['../class_c_wallet.html#a845a2f2911b9b022f0e58ab577e795ea',1,'CWallet::ShowProgress()']]],
   ['showtransaction',['showTransaction',['../struct_transaction_notification.html#a7452f6109e20a3e3b40963df0b9aac7c',1,'TransactionNotification']]],
   ['shutdownwindow',['shutdownWindow',['../class_bitcoin_application.html#acf3d8791eb112851a585d37cd666e8ab',1,'BitcoinApplication']]],
   ['sig',['sig',['../structbench__recover__t.html#a76d1266b30c8d6a55fd52e9bb7c67a85',1,'bench_recover_t::sig()'],['../structbenchmark__verify__t.html#a3109a53e5491482e77df9039d3e01720',1,'benchmark_verify_t::sig()']]],

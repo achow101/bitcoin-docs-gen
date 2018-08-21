@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="bitcoin_logo_doxygen.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitcoin Core
-   &#160;<span id="projectnumber">0.16.99</span>
+   &#160;<span id="projectnumber">0.17.99</span>
    </div>
    <div id="projectbrief">P2P Digital Currency</div>
   </td>
@@ -168,6 +168,8 @@ Signals</h2></td></tr>
 <tr class="memitem:a56d909951088cfc74b8b18fc2693e3b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transaction_view.html#a56d909951088cfc74b8b18fc2693e3b1">message</a> (const QString &amp;title, const QString &amp;message, unsigned int style)</td></tr>
 <tr class="memdesc:a56d909951088cfc74b8b18fc2693e3b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fired when a message should be reported to the user.  <a href="#a56d909951088cfc74b8b18fc2693e3b1">More...</a><br /></td></tr>
 <tr class="separator:a56d909951088cfc74b8b18fc2693e3b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1c9aa6ff6d1590b52c23e1c4842965e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transaction_view.html#ad1c9aa6ff6d1590b52c23e1c4842965e">bumpedFee</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;txid)</td></tr>
+<tr class="separator:ad1c9aa6ff6d1590b52c23e1c4842965e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -348,12 +350,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00039">39</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00040">40</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_transaction_view_a6bad80e62c684ad1e77250510c9323aa_cgraph.svg" width="1304" height="1763"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_transaction_view_a6bad80e62c684ad1e77250510c9323aa_cgraph.svg" width="1304" height="1739"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -381,7 +384,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00401">401</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00408">408</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -394,6 +397,38 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_transaction_view_a8dc3e9fc910cec4f6764d84c21941180_icgraph.svg" width="490" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad1c9aa6ff6d1590b52c23e1c4842965e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TransactionView::bumpedFee </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classuint256.html">uint256</a> &amp;&#160;</td>
+          <td class="paramname"><em>txid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_transaction_view_ad1c9aa6ff6d1590b52c23e1c4842965e_icgraph.svg" width="732" height="63"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -420,12 +455,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00419">419</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00426">426</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_transaction_view_a6cf5d062668e5e29c6203b6e0dc3836b_cgraph.svg" width="1406" height="496"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_transaction_view_a6cf5d062668e5e29c6203b6e0dc3836b_cgraph.svg" width="1406" height="496"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -459,7 +495,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00330">330</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00337">337</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -498,7 +534,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00323">323</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00330">330</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -538,7 +574,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00260">260</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00267">267</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -578,7 +614,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00307">307</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00314">314</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -618,7 +654,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00315">315</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00322">322</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -658,7 +694,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00382">382</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00389">389</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -697,7 +733,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00437">437</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00449">449</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -736,7 +772,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00447">447</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00459">459</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -775,7 +811,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00442">442</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00454">454</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -814,7 +850,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00457">457</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00469">469</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -853,7 +889,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00452">452</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00464">464</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -892,7 +928,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00462">462</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00474">474</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -931,7 +967,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00535">535</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00547">547</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -970,7 +1006,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00571">571</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00583">583</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1040,7 +1076,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00467">467</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00479">479</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1090,7 +1126,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00625">625</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00637">637</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1122,12 +1158,20 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00344">344</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00351">351</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_transaction_view_a5983022ff1e5395f87de3c5728eff8da_cgraph.svg" width="948" height="474"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_transaction_view_a5983022ff1e5395f87de3c5728eff8da_icgraph.svg" width="436" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1155,7 +1199,15 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00580">580</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00592">592</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_transaction_view_ab6d126806467ae9dc273cbe19a7477cc_icgraph.svg" width="526" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -1181,7 +1233,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00590">590</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00602">602</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1235,7 +1287,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_transaction_view_a56d909951088cfc74b8b18fc2693e3b1_icgraph.svg" width="464" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_transaction_view_a56d909951088cfc74b8b18fc2693e3b1_icgraph.svg" width="674" height="63"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1263,7 +1316,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00526">526</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00538">538</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1296,7 +1349,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00618">618</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00630">630</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1321,7 +1374,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00203">203</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00210">210</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1360,7 +1413,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00513">513</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00525">525</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1393,7 +1446,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00640">640</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="transactionview_8cpp_source.html#l00652">652</a> of file <a class="el" href="transactionview_8cpp_source.html">transactionview.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1764,7 +1817,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 9 2018 12:14:38 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 21 2018 21:52:22 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

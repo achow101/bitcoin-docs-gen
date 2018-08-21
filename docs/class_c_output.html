@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="bitcoin_logo_doxygen.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitcoin Core
-   &#160;<span id="projectnumber">0.16.99</span>
+   &#160;<span id="projectnumber">0.17.99</span>
    </div>
    <div id="projectbrief">P2P Digital Currency</div>
   </td>
@@ -105,8 +105,8 @@ Collaboration diagram for COutput:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a56551bc8b2b0bc6246051035c7385af1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_output.html#a56551bc8b2b0bc6246051035c7385af1">COutput</a> (const <a class="el" href="class_c_wallet_tx.html">CWalletTx</a> *txIn, int iIn, int nDepthIn, bool fSpendableIn, bool fSolvableIn, bool fSafeIn)</td></tr>
-<tr class="separator:a56551bc8b2b0bc6246051035c7385af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7204126c6a2b00e47cb6b9b01ee7337d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_output.html#a7204126c6a2b00e47cb6b9b01ee7337d">COutput</a> (const <a class="el" href="class_c_wallet_tx.html">CWalletTx</a> *txIn, int iIn, int nDepthIn, bool fSpendableIn, bool fSolvableIn, bool fSafeIn, bool use_max_sig_in=false)</td></tr>
+<tr class="separator:a7204126c6a2b00e47cb6b9b01ee7337d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga30a78d31f6667803c613efdef28cbe52"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga30a78d31f6667803c613efdef28cbe52">ToString</a> () const </td></tr>
 <tr class="separator:ga30a78d31f6667803c613efdef28cbe52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9517a01fe9d11f55727d1374ac724a8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_input_coin.html">CInputCoin</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_output.html#a9517a01fe9d11f55727d1374ac724a8f">GetInputCoin</a> () const </td></tr>
@@ -129,6 +129,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a68a25589048df8e46cbc0a420aab3596"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_output.html#a68a25589048df8e46cbc0a420aab3596">fSolvable</a></td></tr>
 <tr class="memdesc:a68a25589048df8e46cbc0a420aab3596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether we know how to spend this output, ignoring the lack of keys.  <a href="#a68a25589048df8e46cbc0a420aab3596">More...</a><br /></td></tr>
 <tr class="separator:a68a25589048df8e46cbc0a420aab3596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc8c7e1b6c39a23f898cea45b6e4b24a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_output.html#afc8c7e1b6c39a23f898cea45b6e4b24a">use_max_sig</a></td></tr>
+<tr class="memdesc:afc8c7e1b6c39a23f898cea45b6e4b24a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to use the maximum sized, 72 byte signature when calculating the size of the input spend.  <a href="#afc8c7e1b6c39a23f898cea45b6e4b24a">More...</a><br /></td></tr>
+<tr class="separator:afc8c7e1b6c39a23f898cea45b6e4b24a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4826b664b708ba75b32eba65dcd4a5a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_output.html#a4826b664b708ba75b32eba65dcd4a5a7">fSafe</a></td></tr>
 <tr class="memdesc:a4826b664b708ba75b32eba65dcd4a5a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this output is considered safe to spend.  <a href="#a4826b664b708ba75b32eba65dcd4a5a7">More...</a><br /></td></tr>
 <tr class="separator:a4826b664b708ba75b32eba65dcd4a5a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,7 +140,7 @@ Public Attributes</h2></td></tr>
 <div class="textblock">
 <p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00494">494</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a56551bc8b2b0bc6246051035c7385af1"></a>
+<a class="anchor" id="a7204126c6a2b00e47cb6b9b01ee7337d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -178,7 +181,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>fSafeIn</em>&#160;</td>
+          <td class="paramname"><em>fSafeIn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>use_max_sig_in</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -193,19 +202,21 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00517">517</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00520">520</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_output_a56551bc8b2b0bc6246051035c7385af1_cgraph.svg" width="2711" height="1518"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_output_a7204126c6a2b00e47cb6b9b01ee7337d_cgraph.svg" width="2711" height="1518"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_output_a56551bc8b2b0bc6246051035c7385af1_icgraph.svg" width="834" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_output_a7204126c6a2b00e47cb6b9b01ee7337d_icgraph.svg" width="834" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -233,7 +244,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00529">529</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00532">532</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -251,7 +262,7 @@ Here is the caller graph for this function:</div>
 <p>Whether this output is considered safe to spend. </p>
 <p>Unconfirmed transactions from outside keys and unconfirmed replacement transactions are considered unsafe and will not be used to fund new spending transactions. </p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00515">515</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00518">518</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -346,6 +357,23 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="afc8c7e1b6c39a23f898cea45b6e4b24a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool COutput::use_max_sig</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether to use the maximum sized, 72 byte signature when calculating the size of the input spend. </p>
+<p>This should only be set when watch-only outputs are allowed </p>
+
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00511">511</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/wallet/<a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a></li>
 <li>src/wallet/<a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a></li>
@@ -353,7 +381,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 9 2018 12:14:36 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 21 2018 21:52:19 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

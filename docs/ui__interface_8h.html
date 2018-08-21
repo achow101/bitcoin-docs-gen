@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="bitcoin_logo_doxygen.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitcoin Core
-   &#160;<span id="projectnumber">0.16.99</span>
+   &#160;<span id="projectnumber">0.17.99</span>
    </div>
    <div id="projectbrief">P2P Digital Currency</div>
   </td>
@@ -91,6 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -98,15 +99,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">ui_interface.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;memory&gt;</code><br />
+<div class="textblock"><code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
-<code>#include &lt;boost/signals2/last_value.hpp&gt;</code><br />
-<code>#include &lt;boost/signals2/signal.hpp&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for ui_interface.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ui__interface_8h__incl.svg" width="638" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ui__interface_8h__incl.svg" width="374" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -121,6 +122,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_client_u_i_interface.html">CClientUIInterface</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals for UI communication.  <a href="class_c_client_u_i_interface.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a492d13a1f4af199e273d6ddfe662da66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ui__interface_8h.html#a492d13a1f4af199e273d6ddfe662da66">ADD_SIGNALS_DECL_WRAPPER</a>(signal_name,  rtype, ...)</td></tr>
+<tr class="separator:a492d13a1f4af199e273d6ddfe662da66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -149,6 +155,41 @@ Variables</h2></td></tr>
 <tr class="memitem:a4fe31b510fc1c2b95321cedb9f89e8de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_client_u_i_interface.html">CClientUIInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ui__interface_8h.html#a4fe31b510fc1c2b95321cedb9f89e8de">uiInterface</a></td></tr>
 <tr class="separator:a4fe31b510fc1c2b95321cedb9f89e8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a492d13a1f4af199e273d6ddfe662da66"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADD_SIGNALS_DECL_WRAPPER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">signal_name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">rtype, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">rtype signal_name(__VA_ARGS__);                                                        \</div><div class="line">    using signal_name##Sig = rtype(__VA_ARGS__);                                           \</div><div class="line">    boost::signals2::connection signal_name##_connect(std::function&lt;signal_name##Sig&gt; fn); \</div><div class="line">    void signal_name##_disconnect(std::function&lt;signal_name##Sig&gt; fn);</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="ui__interface_8h_source.html#l00078">78</a> of file <a class="el" href="ui__interface_8h_source.html">ui_interface.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a class="anchor" id="a293ba931937e469a6327b8d6b4872969"></a>
 <div class="memitem">
@@ -170,7 +211,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="ui__interface_8h_source.html#l00020">20</a> of file <a class="el" href="ui__interface_8h_source.html">ui_interface.h</a>.</p>
+<p>Definition at line <a class="el" href="ui__interface_8h_source.html#l00023">23</a> of file <a class="el" href="ui__interface_8h_source.html">ui_interface.h</a>.</p>
 
 </div>
 </div>
@@ -199,7 +240,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ui__interface_8cpp_source.html#l00026">26</a> of file <a class="el" href="ui__interface_8cpp_source.html">ui_interface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ui__interface_8cpp_source.html#l00078">78</a> of file <a class="el" href="ui__interface_8cpp_source.html">ui_interface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -231,7 +272,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ui__interface_8cpp_source.html#l00021">21</a> of file <a class="el" href="ui__interface_8cpp_source.html">ui_interface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ui__interface_8cpp_source.html#l00073">73</a> of file <a class="el" href="ui__interface_8cpp_source.html">ui_interface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -265,7 +306,7 @@ Here is the caller graph for this function:</div>
 
 <p>Show error message. </p>
 
-<p>Definition at line <a class="el" href="ui__interface_8cpp_source.html#l00010">10</a> of file <a class="el" href="ui__interface_8cpp_source.html">ui_interface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ui__interface_8cpp_source.html#l00062">62</a> of file <a class="el" href="ui__interface_8cpp_source.html">ui_interface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -292,7 +333,7 @@ Here is the caller graph for this function:</div>
 
 <p>Show warning message. </p>
 
-<p>Definition at line <a class="el" href="ui__interface_8cpp_source.html#l00016">16</a> of file <a class="el" href="ui__interface_8cpp_source.html">ui_interface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ui__interface_8cpp_source.html#l00068">68</a> of file <a class="el" href="ui__interface_8cpp_source.html">ui_interface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -314,14 +355,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ui__interface_8cpp_source.html#l00008">8</a> of file <a class="el" href="ui__interface_8cpp_source.html">ui_interface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ui__interface_8cpp_source.html#l00011">11</a> of file <a class="el" href="ui__interface_8cpp_source.html">ui_interface.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 9 2018 12:14:35 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 21 2018 21:52:14 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

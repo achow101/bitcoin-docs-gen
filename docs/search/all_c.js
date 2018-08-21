@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['label',['label',['../struct_address_table_entry.html#a4a427495652b7716f84aa88b2cb4f296',1,'AddressTableEntry::label()'],['../class_send_coins_recipient.html#a0152933f2c0cb9164d2fcb36bca83666',1,'SendCoinsRecipient::label()'],['../class_address_table_model.html#a432276ac4504e926466072561c5ddb33aaf8f25cebb70b8a394d6c0f23c941a32',1,'AddressTableModel::Label()'],['../class_recent_requests_table_model.html#a720ff50ef9f8e016a5d2bbd8fd7fb41da6122ebd2a6dc081e6b25727cd4962fad',1,'RecentRequestsTableModel::Label()']]],
+  ['label',['Label',['../class_address_table_model.html#a432276ac4504e926466072561c5ddb33aaf8f25cebb70b8a394d6c0f23c941a32',1,'AddressTableModel::Label()'],['../class_recent_requests_table_model.html#a720ff50ef9f8e016a5d2bbd8fd7fb41da6122ebd2a6dc081e6b25727cd4962fad',1,'RecentRequestsTableModel::Label()'],['../struct_address_table_entry.html#a4a427495652b7716f84aa88b2cb4f296',1,'AddressTableEntry::label()'],['../class_send_coins_recipient.html#a0152933f2c0cb9164d2fcb36bca83666',1,'SendCoinsRecipient::label()']]],
   ['label_5fcolumn_5fwidth',['LABEL_COLUMN_WIDTH',['../class_receive_coins_dialog.html#a348824c8475841e6e0cb35fdf9090656a51bc59ac21abedb1b2f4119e9723da21',1,'ReceiveCoinsDialog']]],
-  ['labelblocksicon',['labelBlocksIcon',['../class_bitcoin_g_u_i.html#a785b5775f7c3eed2d4aa9785875ed1cb',1,'BitcoinGUI']]],
+  ['labelblocksicon',['labelBlocksIcon',['../class_bitcoin_g_u_i.html#aacb34d5498f011abe772f16a81bfc099',1,'BitcoinGUI']]],
   ['labelforaddress',['labelForAddress',['../class_address_table_model.html#a1c39ce19eecfc9f3ace10435b162607f',1,'AddressTableModel']]],
-  ['labelproxyicon',['labelProxyIcon',['../class_bitcoin_g_u_i.html#a40d619b101616fd061ceaa2f3cca92fd',1,'BitcoinGUI']]],
+  ['labelproxyicon',['labelProxyIcon',['../class_bitcoin_g_u_i.html#a2d62db3de6ab6246bf80670f3e0886fc',1,'BitcoinGUI']]],
   ['labelrole',['LabelRole',['../class_transaction_table_model.html#a4b248508c36df598476affbf9871d1e6a286d79e8b1e0bfc8cb6bb72bbec78de2',1,'TransactionTableModel']]],
   ['labelwalletencryptionicon',['labelWalletEncryptionIcon',['../class_bitcoin_g_u_i.html#aaa28ccc5dd4decce652b45848e79d599',1,'BitcoinGUI']]],
   ['labelwallethdstatusicon',['labelWalletHDStatusIcon',['../class_bitcoin_g_u_i.html#ae5285343e1b7c339162931109ce775b2',1,'BitcoinGUI']]],
@@ -82,7 +82,7 @@ var searchData=
   ['loadrow',['loadRow',['../class_edit_address_dialog.html#a45d90d6f757fb4b20788710c8533036b',1,'EditAddressDialog']]],
   ['loadscriptmetadata',['LoadScriptMetadata',['../group__map_wallet.html#ga9f38e00755e22d7784378d016055ee31',1,'CWallet']]],
   ['loadtowallet',['LoadToWallet',['../group__map_wallet.html#gad024900dfadffa7710ab17cbd66f8786',1,'CWallet']]],
-  ['loadwallet',['LoadWallet',['../class_c_client_u_i_interface.html#abaa672be5815bfc9058f321bd93dcff3',1,'CClientUIInterface::LoadWallet()'],['../group___actions.html#ga5d7b244b8ed0cbe24233ee0b6ca3cae0',1,'CWallet::LoadWallet()'],['../class_wallet_batch.html#af17758ea2f62ca2d80def7ae780e81f8',1,'WalletBatch::LoadWallet()']]],
+  ['loadwallet',['LoadWallet',['../struct_u_i_signals.html#ab415702be0be5161084e88a76da9940b',1,'UISignals::LoadWallet()'],['../group___actions.html#ga5d7b244b8ed0cbe24233ee0b6ca3cae0',1,'CWallet::LoadWallet()'],['../class_wallet_batch.html#af17758ea2f62ca2d80def7ae780e81f8',1,'WalletBatch::LoadWallet()']]],
   ['loadwalletfn',['LoadWalletFn',['../classinterfaces_1_1_node.html#a112ddff9185f4e9230c0a406270e9c56',1,'interfaces::Node']]],
   ['loadwatchonly',['LoadWatchOnly',['../group__map_wallet.html#gad6580f1844fc639389e1c6a1e2787ee6',1,'CWallet']]],
   ['local_5fbind',['LOCAL_BIND',['../net_8h.html#adf764cbdea00d65edcd07bb9953ad2b7aad42caef30be428cb73f7d2753b5162e',1,'net.h']]],
