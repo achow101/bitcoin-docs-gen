@@ -39,8 +39,6 @@ var searchData=
   ['transactionspage',['transactionsPage',['../class_wallet_view.html#a687b6071e59d92ffbfde333aec5c6546',1,'WalletView']]],
   ['transactiontablemodel',['transactionTableModel',['../class_wallet_model.html#a5c5fd9073f578f151ce48ec46b8beacd',1,'WalletModel']]],
   ['transactionview',['transactionView',['../class_transaction_view.html#aa3e626f7153376a86d60e5e4d3562b97',1,'TransactionView::transactionView()'],['../class_wallet_view.html#a73c2b3b4575011357fdff8749f15930e',1,'WalletView::transactionView()']]],
-  ['translate',['Translate',['../class_c_translation_interface.html#ae8cc7b478dae5a9fb17785478d5f0a5f',1,'CTranslationInterface']]],
-  ['translationinterface',['translationInterface',['../util_8cpp.html#a0990b57c51a51237cb25603170194355',1,'translationInterface():&#160;util.cpp'],['../util_8h.html#a0990b57c51a51237cb25603170194355',1,'translationInterface():&#160;util.cpp']]],
   ['trayandwindowicon',['trayAndWindowIcon',['../class_network_style.html#a297a55e4f8698b1ad6ac3176a54a993a',1,'NetworkStyle']]],
   ['trayicon',['trayIcon',['../class_bitcoin_g_u_i.html#ad3176165bc2c5c513332a6e74d066780',1,'BitcoinGUI::trayIcon()'],['../class_notificator.html#ad94b0bdc812c536b2c64b9085e2790a3',1,'Notificator::trayIcon()']]],
   ['trayiconmenu',['trayIconMenu',['../class_bitcoin_g_u_i.html#a257c7002a59198e0f069535119803b18',1,'BitcoinGUI']]],

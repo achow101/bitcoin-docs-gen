@@ -344,7 +344,7 @@ var searchData=
   ['getunconfirmedwatchonlybalance',['GetUnconfirmedWatchOnlyBalance',['../group___actions.html#ga639be9d778aeeb8b71aa653f0089cdff',1,'CWallet']]],
   ['getundopos',['GetUndoPos',['../class_c_block_index.html#a62654ef291abc44d2e32db9a8d85b7d1',1,'CBlockIndex']]],
   ['getunspentoutput',['getUnspentOutput',['../classinterfaces_1_1_node.html#aeaedea9227b15cde8ca0d49821df3ad8',1,'interfaces::Node']]],
-  ['geturi',['GetURI',['../class_h_t_t_p_request.html#a1f25203f87d4bbbe3337103c01d6122e',1,'HTTPRequest::GetURI()'],['../class_open_u_r_i_dialog.html#a38f9f110ae47996eff920171aea9400b',1,'OpenURIDialog::getURI()']]],
+  ['geturi',['getURI',['../class_open_u_r_i_dialog.html#a38f9f110ae47996eff920171aea9400b',1,'OpenURIDialog::getURI()'],['../class_h_t_t_p_request.html#a1f25203f87d4bbbe3337103c01d6122e',1,'HTTPRequest::GetURI()']]],
   ['getuseextraspacing',['getUseExtraSpacing',['../class_platform_style.html#a5fb02349284d8a71f5f2fde5fefef0ad',1,'PlatformStyle']]],
   ['getvalstr',['getValStr',['../class_uni_value.html#ae8e17c2a90b668d0771a0523d70cd70d',1,'UniValue']]],
   ['getvalue',['getValue',['../class_send_coins_entry.html#af36fb0ed9e2e07079c1a982b31e793c8',1,'SendCoinsEntry::getValue()'],['../class_c_coins_view_cursor.html#ad86274fb9d5809e9c578b8c1612cc13e',1,'CCoinsViewCursor::GetValue()'],['../class_c_d_b_iterator.html#a1b99353b18b45216db24940526838e7a',1,'CDBIterator::GetValue()'],['../class_c_coins_view_d_b_cursor.html#a5c6e5ef1cfb94d71a8043682a2a8de1f',1,'CCoinsViewDBCursor::GetValue()']]],

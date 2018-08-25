@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['wait',['Wait',['../class_c_check_queue.html#a4ff3e0e8241491efa1803eeb3a53e7fa',1,'CCheckQueue::Wait()'],['../class_c_check_queue_control.html#ab31d809a76b876d21608c0c5d0e3baf0',1,'CCheckQueueControl::Wait()'],['../class_c_semaphore.html#a1c108bd981fe68527ec8ef5e7b0d116c',1,'CSemaphore::wait()']]],
+  ['wait',['wait',['../class_c_semaphore.html#a1c108bd981fe68527ec8ef5e7b0d116c',1,'CSemaphore::wait()'],['../class_c_check_queue.html#a4ff3e0e8241491efa1803eeb3a53e7fa',1,'CCheckQueue::Wait()'],['../class_c_check_queue_control.html#ab31d809a76b876d21608c0c5d0e3baf0',1,'CCheckQueueControl::Wait()']]],
   ['wakemessagehandler',['WakeMessageHandler',['../class_c_connman.html#a999ec42f1515f77096556c94c29c6538',1,'CConnman']]],
   ['wallet',['wallet',['../class_wallet_model.html#a1c5870f02d5221d26a9a50f188c42d1f',1,'WalletModel']]],
   ['walletaddress',['WalletAddress',['../structinterfaces_1_1_wallet_address.html#a1423218c6c4e3a874f177ec75db2f92c',1,'interfaces::WalletAddress']]],

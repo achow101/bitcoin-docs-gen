@@ -104,8 +104,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="logging_8h_source.html">logging.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="sync_8h_source.html">sync.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="tinyformat_8h_source.html">tinyformat.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="utiltime_8h_source.html">utiltime.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="utilmemory_8h_source.html">utilmemory.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="utiltime_8h_source.html">utiltime.h</a>&gt;</code><br />
 <code>#include &lt;atomic&gt;</code><br />
 <code>#include &lt;exception&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
@@ -114,21 +114,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;unordered_set&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;boost/signals2/signal.hpp&gt;</code><br />
 <code>#include &lt;boost/thread/condition_variable.hpp&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for util.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="util_8h__incl.svg" width="3440" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="util_8h__incl.svg" width="3232" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="util_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_translation_interface.html">CTranslationInterface</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals for translation.  <a href="class_c_translation_interface.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_args_manager.html">ArgsManager</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_args_manager_1_1_arg.html">ArgsManager::Arg</a></td></tr>
@@ -169,7 +166,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a29eee356cb63abcc6e4a48a8485810ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server/client environment: argument handling, config file parsing, thread wrappers, startup time.  <a href="#a29eee356cb63abcc6e4a48a8485810ef">More...</a><br /></td></tr>
 <tr class="separator:a29eee356cb63abcc6e4a48a8485810ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad133bb6103b53cebf03fd01e2f11ba1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#aad133bb6103b53cebf03fd01e2f11ba1">_</a> (const char *psz)</td></tr>
-<tr class="memdesc:aad133bb6103b53cebf03fd01e2f11ba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translation function: Call Translate signal on UI interface, which returns a boost::optional result.  <a href="#aad133bb6103b53cebf03fd01e2f11ba1">More...</a><br /></td></tr>
+<tr class="memdesc:aad133bb6103b53cebf03fd01e2f11ba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translation function.  <a href="#aad133bb6103b53cebf03fd01e2f11ba1">More...</a><br /></td></tr>
 <tr class="separator:aad133bb6103b53cebf03fd01e2f11ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ed616020f4ef9b1a261b222bbec78e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a9ed616020f4ef9b1a261b222bbec78e2">SetupEnvironment</a> ()</td></tr>
 <tr class="separator:a9ed616020f4ef9b1a261b222bbec78e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -254,12 +251,13 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a0990b57c51a51237cb25603170194355"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_translation_interface.html">CTranslationInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a0990b57c51a51237cb25603170194355">translationInterface</a></td></tr>
-<tr class="separator:a0990b57c51a51237cb25603170194355"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf57498ee2b7213f49662a019744a74d"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#abf57498ee2b7213f49662a019744a74d">BITCOIN_CONF_FILENAME</a></td></tr>
 <tr class="separator:abf57498ee2b7213f49662a019744a74d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c6941232aba4a4c523285e8de1e8d92"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a9c6941232aba4a4c523285e8de1e8d92">BITCOIN_PID_FILENAME</a></td></tr>
 <tr class="separator:a9c6941232aba4a4c523285e8de1e8d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a659d6c65d03695a999e4eb59382b3222"><td class="memItemLeft" align="right" valign="top">const std::function&lt; std::string(const char *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a659d6c65d03695a999e4eb59382b3222">G_TRANSLATION_FUN</a></td></tr>
+<tr class="memdesc:a659d6c65d03695a999e4eb59382b3222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate a message to the native language of the user.  <a href="#a659d6c65d03695a999e4eb59382b3222">More...</a><br /></td></tr>
+<tr class="separator:a659d6c65d03695a999e4eb59382b3222"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a934b7735a5308149ab1bf3ca9fc4d694"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_args_manager.html">ArgsManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a934b7735a5308149ab1bf3ca9fc4d694">gArgs</a></td></tr>
 <tr class="separator:a934b7735a5308149ab1bf3ca9fc4d694"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -312,7 +310,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="util_8h_source.html#l00121">121</a> of file <a class="el" href="util_8h_source.html">util.h</a>.</p>
+<p>Definition at line <a class="el" href="util_8h_source.html#l00112">112</a> of file <a class="el" href="util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -339,10 +337,10 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Translation function: Call Translate signal on UI interface, which returns a boost::optional result. </p>
-<p>If no translation slot is registered, nothing is returned, and simply return the input. </p>
+<p>Translation function. </p>
+<p>If no translation function is set, simply return the input. </p>
 
-<p>Definition at line <a class="el" href="util_8h_source.html#l00057">57</a> of file <a class="el" href="util_8h_source.html">util.h</a>.</p>
+<p>Definition at line <a class="el" href="util_8h_source.html#l00049">49</a> of file <a class="el" href="util_8h_source.html">util.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -394,7 +392,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The normalized path. </dd></dl>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l01224">1224</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l01222">1222</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -444,7 +442,7 @@ Here is the caller graph for this function:</div>
 
 <p>this function tries to make a particular range of a file allocated (corresponding to disk space) it is advisory, and the range specified in the arguments will never contain live data </p>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l01078">1078</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l01076">1076</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -468,7 +466,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00798">798</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00796">796</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -493,12 +491,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l01207">1207</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l01205">1205</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="util_8h_a37261527315b7039a9b6d9916d1a6003_cgraph.svg" width="419" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="util_8h_a37261527315b7039a9b6d9916d1a6003_cgraph.svg" width="419" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -535,7 +534,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00969">969</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00967">967</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -567,7 +566,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00183">183</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00181">181</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -611,7 +610,7 @@ template&lt;typename... Args&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8h_source.html#l00067">67</a> of file <a class="el" href="util_8h_source.html">util.h</a>.</p>
+<p>Definition at line <a class="el" href="util_8h_source.html#l00058">58</a> of file <a class="el" href="util_8h_source.html">util.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -636,7 +635,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l01010">1010</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l01008">1008</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -661,7 +660,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00737">737</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00735">735</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -693,7 +692,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00808">808</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00806">806</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -725,7 +724,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00766">766</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00764">764</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -756,7 +755,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00705">705</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00703">703</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -783,7 +782,7 @@ Here is the caller graph for this function:</div>
 <p>Return the number of cores available on the current system. </p>
 <dl class="section note"><dt>Note</dt><dd>This does count virtual cores, such as those provided by HyperThreading. </dd></dl>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l01202">1202</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l01200">1200</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -807,7 +806,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00964">964</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00962">962</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -840,7 +839,7 @@ Here is the caller graph for this function:</div>
 
 <p>Server/client environment: argument handling, config file parsing, thread wrappers, startup time. </p>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l01219">1219</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l01217">1217</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -874,7 +873,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the formatted string </dd></dl>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00671">671</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00669">669</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -919,7 +918,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the formatted string </dd></dl>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00675">675</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00673">673</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -952,7 +951,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true if help has been requested via a command-line arg </dd></dl>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00662">662</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00660">660</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -992,7 +991,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8h_source.html#l00112">112</a> of file <a class="el" href="util_8h_source.html">util.h</a>.</p>
+<p>Definition at line <a class="el" href="util_8h_source.html#l00103">103</a> of file <a class="el" href="util_8h_source.html">util.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1033,7 +1032,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00148">148</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00146">146</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1075,7 +1074,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00698">698</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00696">696</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1103,7 +1102,7 @@ Here is the caller graph for this function:</div>
 <p>this function tries to raise the file descriptor limit to the requested number. </p>
 <p>It returns the actual file descriptor limit (which may be more or less than nMinFD) </p>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l01055">1055</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l01053">1053</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1130,7 +1129,7 @@ Here is the caller graph for this function:</div>
 <p>Release all directory locks. </p>
 <p>This is used for unit testing only, at runtime the global destructor will take care of the locks. </p>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00177">177</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00175">175</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1165,7 +1164,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00980">980</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00978">978</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1190,7 +1189,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l01145">1145</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l01143">1143</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1215,7 +1214,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l01137">1137</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l01135">1135</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1244,7 +1243,7 @@ Here is the caller graph for this function:</div>
 <p>See SCHED_BATCH in sched(7) for details.</p>
 <dl class="section return"><dt>Returns</dt><dd>The return value of sched_setschedule(), or 1 on systems without sched_setschedule(). </dd></dl>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l01229">1229</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l01227">1227</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1268,12 +1267,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l01161">1161</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l01159">1159</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="util_8h_a9ed616020f4ef9b1a261b222bbec78e2_icgraph.svg" width="1256" height="1574"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="util_8h_a9ed616020f4ef9b1a261b222bbec78e2_icgraph.svg" width="1256" height="1574"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1292,12 +1292,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l01190">1190</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l01188">1188</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="util_8h_a66791919e137c59061e988d2d87ee9a1_icgraph.svg" width="1238" height="1574"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="util_8h_a66791919e137c59061e988d2d87ee9a1_icgraph.svg" width="1238" height="1574"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1332,12 +1333,13 @@ template&lt;typename Callable &gt; </div>
 <p></p>
 <p>. and a wrapper that just calls func once </p>
 
-<p>Definition at line <a class="el" href="util_8h_source.html#l00322">322</a> of file <a class="el" href="util_8h_source.html">util.h</a>.</p>
+<p>Definition at line <a class="el" href="util_8h_source.html#l00313">313</a> of file <a class="el" href="util_8h_source.html">util.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="util_8h_ac481a378af0229bf71e3d9fee7b938ad_cgraph.svg" width="604" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="util_8h_ac481a378af0229bf71e3d9fee7b938ad_cgraph.svg" width="604" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1374,7 +1376,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l01043">1043</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l01041">1041</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1402,7 +1404,7 @@ Here is the caller graph for this function:</div>
 <p>Ignores exceptions thrown by Boost's create_directories if the requested directory exists. </p>
 <p>Specifically handles case where path p exists, but it wasn't possible for the user to write to the parent directory. </p>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00996">996</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00994">994</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1442,6 +1444,23 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a659d6c65d03695a999e4eb59382b3222"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::function&lt;std::string(const char*)&gt; G_TRANSLATION_FUN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Translate a message to the native language of the user. </p>
+<p>Translate a message to the native language of the user. </p>
+
+<p>Definition at line <a class="el" href="bench__bitcoin_8cpp_source.html#l00016">16</a> of file <a class="el" href="bench__bitcoin_8cpp_source.html">bench_bitcoin.cpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a934b7735a5308149ab1bf3ca9fc4d694"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1456,24 +1475,10 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a0990b57c51a51237cb25603170194355"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_c_translation_interface.html">CTranslationInterface</a> translationInterface</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00089">89</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 25 2018 16:20:36 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 25 2018 19:16:06 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

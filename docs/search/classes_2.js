@@ -173,7 +173,6 @@ var searchData=
   ['ctestnetparams',['CTestNetParams',['../class_c_test_net_params.html',1,'']]],
   ['cthreadinterrupt',['CThreadInterrupt',['../class_c_thread_interrupt.html',1,'']]],
   ['ctransaction',['CTransaction',['../class_c_transaction.html',1,'']]],
-  ['ctranslationinterface',['CTranslationInterface',['../class_c_translation_interface.html',1,'']]],
   ['ctxin',['CTxIn',['../class_c_tx_in.html',1,'']]],
   ['ctxmempool',['CTxMemPool',['../class_c_tx_mem_pool.html',1,'']]],
   ['ctxmempoolentry',['CTxMemPoolEntry',['../class_c_tx_mem_pool_entry.html',1,'']]],

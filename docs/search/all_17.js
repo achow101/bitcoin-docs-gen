@@ -2,7 +2,7 @@ var searchData=
 [
   ['testcrypter',['TestCrypter',['../class_c_crypter.html#a466e571a8158463000f2abf3cd2def70',1,'CCrypter']]],
   ['w',['w',['../classorg_1_1bitcoin_1_1_native_secp256k1.html#a6a82cf9b53aeb2ac3d7b868716bb28fd',1,'org::bitcoin::NativeSecp256k1']]],
-  ['wait',['Wait',['../class_c_check_queue.html#a4ff3e0e8241491efa1803eeb3a53e7fa',1,'CCheckQueue::Wait()'],['../class_c_check_queue_control.html#ab31d809a76b876d21608c0c5d0e3baf0',1,'CCheckQueueControl::Wait()'],['../class_c_semaphore.html#a1c108bd981fe68527ec8ef5e7b0d116c',1,'CSemaphore::wait()']]],
+  ['wait',['wait',['../class_c_semaphore.html#a1c108bd981fe68527ec8ef5e7b0d116c',1,'CSemaphore::wait()'],['../class_c_check_queue.html#a4ff3e0e8241491efa1803eeb3a53e7fa',1,'CCheckQueue::Wait()'],['../class_c_check_queue_control.html#ab31d809a76b876d21608c0c5d0e3baf0',1,'CCheckQueueControl::Wait()']]],
   ['waitablelock',['WaitableLock',['../sync_8h.html#a20e60a55296f3088c54e31bb5e2ba1db',1,'sync.h']]],
   ['wakemessagehandler',['WakeMessageHandler',['../class_c_connman.html#a999ec42f1515f77096556c94c29c6538',1,'CConnman']]],
   ['wallet',['Wallet',['../classinterfaces_1_1_wallet.html',1,'interfaces']]],
