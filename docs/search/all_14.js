@@ -61,7 +61,7 @@ var searchData=
   ['testdecrypt',['TestDecrypt',['../class_test_crypter.html#a93c08804ea02ced9541291535625590d',1,'TestCrypter']]],
   ['testencrypt',['TestEncrypt',['../class_test_crypter.html#a1eac08cc6fc5902ffa83f2f1d2f72c9d',1,'TestCrypter']]],
   ['testencryptsingle',['TestEncryptSingle',['../class_test_crypter.html#afea5fb6e96495ddd00a23bd4b1aabfa0',1,'TestCrypter']]],
-  ['testlockpointvalidity',['TestLockPointValidity',['../validation_8cpp.html#a2b1fec98f6318f76274f831b0d894ca2',1,'TestLockPointValidity(const LockPoints *lp):&#160;validation.cpp'],['../validation_8h.html#a2b1fec98f6318f76274f831b0d894ca2',1,'TestLockPointValidity(const LockPoints *lp):&#160;validation.cpp']]],
+  ['testlockpointvalidity',['TestLockPointValidity',['../validation_8cpp.html#a2b1fec98f6318f76274f831b0d894ca2',1,'TestLockPointValidity(const LockPoints *lp):&#160;validation.cpp'],['../validation_8h.html#a4c94b603becafcab573873160035e1c5',1,'TestLockPointValidity(const LockPoints *lp) EXCLUSIVE_LOCKS_REQUIRED(cs_main):&#160;validation.cpp']]],
   ['testnet',['TESTNET',['../class_c_base_chain_params.html#a9d2f894965570dc74f1329c9953167c4',1,'CBaseChainParams']]],
   ['testpackage',['TestPackage',['../class_block_assembler.html#af06206e9a6a1f31dba0180b1fc6a3e7f',1,'BlockAssembler']]],
   ['testpackagetransactions',['TestPackageTransactions',['../class_block_assembler.html#a6af6e96d13f9263bd498a23c6ca14015',1,'BlockAssembler']]],

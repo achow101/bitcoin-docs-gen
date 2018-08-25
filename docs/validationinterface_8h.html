@@ -91,18 +91,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">validationinterface.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="transaction_8h_source.html">primitives/transaction.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="sync_8h_source.html">sync.h</a>&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for validationinterface.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8h__incl.svg" width="2003" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8h__incl.svg" width="2872" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -134,11 +137,16 @@ Functions</h2></td></tr>
 <tr class="memitem:a581c542f0900a185a20a25d7df4b9c78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validationinterface_8h.html#a581c542f0900a185a20a25d7df4b9c78">CallFunctionInValidationInterfaceQueue</a> (std::function&lt; void()&gt; func)</td></tr>
 <tr class="memdesc:a581c542f0900a185a20a25d7df4b9c78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pushes a function to callback onto the notification queue, guaranteeing any callbacks generated prior to now are finished when the function is called.  <a href="#a581c542f0900a185a20a25d7df4b9c78">More...</a><br /></td></tr>
 <tr class="separator:a581c542f0900a185a20a25d7df4b9c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef788fda8c339bb297d6f97f431dfa88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validationinterface_8h.html#aef788fda8c339bb297d6f97f431dfa88">SyncWithValidationInterfaceQueue</a> ()</td></tr>
-<tr class="memdesc:aef788fda8c339bb297d6f97f431dfa88"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a synonym for the following, which asserts certain locks are not held: std::promise&lt;void&gt; promise; CallFunctionInValidationInterfaceQueue([&amp;promise] { promise.set_value(); }); promise.get_future().wait();.  <a href="#aef788fda8c339bb297d6f97f431dfa88">More...</a><br /></td></tr>
-<tr class="separator:aef788fda8c339bb297d6f97f431dfa88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89dda69a4038338d0754fed4981e66b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validationinterface_8h.html#a89dda69a4038338d0754fed4981e66b0">SyncWithValidationInterfaceQueue</a> () <a class="el" href="threadsafety_8h.html#a6bb97382864d0bd2cd4dd5191bb03f6c">LOCKS_EXCLUDED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="memdesc:a89dda69a4038338d0754fed4981e66b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a synonym for the following, which asserts certain locks are not held: std::promise&lt;void&gt; promise; CallFunctionInValidationInterfaceQueue([&amp;promise] { promise.set_value(); }); promise.get_future().wait();.  <a href="#a89dda69a4038338d0754fed4981e66b0">More...</a><br /></td></tr>
+<tr class="separator:a89dda69a4038338d0754fed4981e66b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0aaad62c8654cb1868295e0682b05866"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_main_signals.html">CMainSignals</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validationinterface_8h.html#a0aaad62c8654cb1868295e0682b05866">GetMainSignals</a> ()</td></tr>
 <tr class="separator:a0aaad62c8654cb1868295e0682b05866"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a1ed8285f0fe3c6799c53265ce72552c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_critical_section.html">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a></td></tr>
+<tr class="separator:a1ed8285f0fe3c6799c53265ce72552c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a581c542f0900a185a20a25d7df4b9c78"></a>
@@ -158,12 +166,13 @@ Functions</h2></td></tr>
 <p>Pushes a function to callback onto the notification queue, guaranteeing any callbacks generated prior to now are finished when the function is called. </p>
 <p>Be very careful blocking on func to be called if any locks are held - validation interface clients may not be able to make progress as they often wait for things like cs_main, so blocking until func is called with cs_main will result in a deadlock (that DEBUG_LOCKORDER will miss). </p>
 
-<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00114">114</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00113">113</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8h_a581c542f0900a185a20a25d7df4b9c78_icgraph.svg" width="2062" height="2040"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8h_a581c542f0900a185a20a25d7df4b9c78_icgraph.svg" width="2062" height="2040"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -182,12 +191,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00070">70</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00069">69</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8h_a0aaad62c8654cb1868295e0682b05866_icgraph.svg" width="2538" height="1899"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8h_a0aaad62c8654cb1868295e0682b05866_icgraph.svg" width="2538" height="1899"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -209,7 +219,7 @@ Here is the caller graph for this function:</div>
 
 <p>Register a wallet to receive updates from core. </p>
 
-<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00075">75</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00074">74</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -227,7 +237,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="aef788fda8c339bb297d6f97f431dfa88"></a>
+<a class="anchor" id="a89dda69a4038338d0754fed4981e66b0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -242,19 +252,21 @@ Here is the caller graph for this function:</div>
 
 <p>This is a synonym for the following, which asserts certain locks are not held: std::promise&lt;void&gt; promise; CallFunctionInValidationInterfaceQueue([&amp;promise] { promise.set_value(); }); promise.get_future().wait();. </p>
 
-<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00118">118</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00117">117</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8h_aef788fda8c339bb297d6f97f431dfa88_cgraph.svg" width="428" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8h_a89dda69a4038338d0754fed4981e66b0_cgraph.svg" width="428" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8h_aef788fda8c339bb297d6f97f431dfa88_icgraph.svg" width="1843" height="2044"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8h_a89dda69a4038338d0754fed4981e66b0_icgraph.svg" width="1843" height="2044"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -275,7 +287,7 @@ Here is the caller graph for this function:</div>
 
 <p>Unregister all wallets from core. </p>
 
-<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00099">99</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00098">98</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -302,7 +314,7 @@ Here is the caller graph for this function:</div>
 
 <p>Unregister a wallet from core. </p>
 
-<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00087">87</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00086">86</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -320,10 +332,25 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a1ed8285f0fe3c6799c53265ce72552c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_critical_section.html">CCriticalSection</a> cs_main</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l00215">215</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 25 2018 22:06:12 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 25 2018 22:33:52 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

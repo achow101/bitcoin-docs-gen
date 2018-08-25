@@ -361,5 +361,5 @@ var searchData=
   ['sync',['Sync',['../class_c_d_b_wrapper.html#ae63843f0967f5c37ae2918b764b642d4',1,'CDBWrapper']]],
   ['syncmetadata',['SyncMetaData',['../group__map_wallet.html#gac555c90c12f8141f809df7113e8f225f',1,'CWallet']]],
   ['synctransaction',['SyncTransaction',['../group__map_wallet.html#ga09e75fcbc98be305e68e99495570687c',1,'CWallet']]],
-  ['syncwithvalidationinterfacequeue',['SyncWithValidationInterfaceQueue',['../validationinterface_8cpp.html#aef788fda8c339bb297d6f97f431dfa88',1,'SyncWithValidationInterfaceQueue():&#160;validationinterface.cpp'],['../validationinterface_8h.html#aef788fda8c339bb297d6f97f431dfa88',1,'SyncWithValidationInterfaceQueue():&#160;validationinterface.cpp']]]
+  ['syncwithvalidationinterfacequeue',['SyncWithValidationInterfaceQueue',['../validationinterface_8cpp.html#aef788fda8c339bb297d6f97f431dfa88',1,'SyncWithValidationInterfaceQueue():&#160;validationinterface.cpp'],['../validationinterface_8h.html#a89dda69a4038338d0754fed4981e66b0',1,'SyncWithValidationInterfaceQueue() LOCKS_EXCLUDED(cs_main):&#160;validationinterface.cpp']]]
 ];

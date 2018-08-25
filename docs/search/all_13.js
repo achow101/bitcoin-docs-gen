@@ -568,7 +568,7 @@ var searchData=
   ['sighashtostr',['SighashToStr',['../core__io_8h.html#a17c818de6e4c81b67bae4c49491a8df6',1,'SighashToStr(unsigned char sighash_type):&#160;core_write.cpp'],['../core__write_8cpp.html#a17c818de6e4c81b67bae4c49491a8df6',1,'SighashToStr(unsigned char sighash_type):&#160;core_write.cpp']]],
   ['sighaslowr',['SigHasLowR',['../key_8cpp.html#ac9ec599027c6b68a87ebd788be2a611c',1,'key.cpp']]],
   ['siglen',['siglen',['../structbenchmark__verify__t.html#a75e2235d538ab592d540c45118218843',1,'benchmark_verify_t']]],
-  ['sigma0',['sigma0',['../hash__impl_8h.html#a672bd39bdf2f6dc295a23ddd109175ff',1,'sigma0():&#160;hash_impl.h'],['../hash__impl_8h.html#a613f88ad88919b6ed21ff223070f9a21',1,'Sigma0():&#160;hash_impl.h']]],
+  ['sigma0',['Sigma0',['../hash__impl_8h.html#a613f88ad88919b6ed21ff223070f9a21',1,'Sigma0():&#160;hash_impl.h'],['../hash__impl_8h.html#a672bd39bdf2f6dc295a23ddd109175ff',1,'sigma0():&#160;hash_impl.h']]],
   ['sigma1',['sigma1',['../hash__impl_8h.html#a0347251dc63b7abe5d4c500544c24a97',1,'sigma1():&#160;hash_impl.h'],['../hash__impl_8h.html#a6d34508d6d962274083fcd992fb4e340',1,'Sigma1():&#160;hash_impl.h']]],
   ['sign',['Sign',['../class_c_key.html#adb8d6c2037396a4d4f0bc90a447613d3',1,'CKey::Sign()'],['../classorg_1_1bitcoin_1_1_native_secp256k1.html#aa8223a4dd78910bd0d2b150184d4a294',1,'org.bitcoin.NativeSecp256k1.sign()']]],
   ['sign_2ecpp',['sign.cpp',['../sign_8cpp.html',1,'']]],
@@ -768,5 +768,5 @@ var searchData=
   ['syncmetadata',['SyncMetaData',['../group__map_wallet.html#gac555c90c12f8141f809df7113e8f225f',1,'CWallet']]],
   ['syncoptions',['syncoptions',['../class_c_d_b_wrapper.html#aac0086b6867ab79acc706f93a2908de0',1,'CDBWrapper']]],
   ['synctransaction',['SyncTransaction',['../group__map_wallet.html#ga09e75fcbc98be305e68e99495570687c',1,'CWallet']]],
-  ['syncwithvalidationinterfacequeue',['SyncWithValidationInterfaceQueue',['../validationinterface_8cpp.html#aef788fda8c339bb297d6f97f431dfa88',1,'SyncWithValidationInterfaceQueue():&#160;validationinterface.cpp'],['../validationinterface_8h.html#aef788fda8c339bb297d6f97f431dfa88',1,'SyncWithValidationInterfaceQueue():&#160;validationinterface.cpp']]]
+  ['syncwithvalidationinterfacequeue',['SyncWithValidationInterfaceQueue',['../validationinterface_8cpp.html#aef788fda8c339bb297d6f97f431dfa88',1,'SyncWithValidationInterfaceQueue():&#160;validationinterface.cpp'],['../validationinterface_8h.html#a89dda69a4038338d0754fed4981e66b0',1,'SyncWithValidationInterfaceQueue() LOCKS_EXCLUDED(cs_main):&#160;validationinterface.cpp']]]
 ];

@@ -105,28 +105,28 @@ Functions</h2></td></tr>
 <tr class="separator:ga30a78d31f6667803c613efdef28cbe52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabdffee587c00bc1ebea53ea26f3efa61"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_c_wallet_tx.html">CWalletTx</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gabdffee587c00bc1ebea53ea26f3efa61">CWallet::GetWalletTx</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;hash) const </td></tr>
 <tr class="separator:gabdffee587c00bc1ebea53ea26f3efa61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5abb589b31879b8f4bf1890c22f15f64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_pub_key.html">CPubKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga5abb589b31879b8f4bf1890c22f15f64">CWallet::GenerateNewKey</a> (<a class="el" href="class_wallet_batch.html">WalletBatch</a> &amp;batch, bool internal=false) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(cs_wallet)</td></tr>
+<tr class="memitem:ga5abb589b31879b8f4bf1890c22f15f64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_pub_key.html">CPubKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga5abb589b31879b8f4bf1890c22f15f64">CWallet::GenerateNewKey</a> (<a class="el" href="class_wallet_batch.html">WalletBatch</a> &amp;batch, bool internal=false) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="feebumper_8cpp.html#a3e33d4f4b59247cb2a112233fe438d19">cs_wallet</a>)</td></tr>
 <tr class="memdesc:ga5abb589b31879b8f4bf1890c22f15f64"><td class="mdescLeft">&#160;</td><td class="mdescRight">keystore implementation Generate a new key  <a href="#ga5abb589b31879b8f4bf1890c22f15f64">More...</a><br /></td></tr>
 <tr class="separator:ga5abb589b31879b8f4bf1890c22f15f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafb01fcc10d890174b2db560a7f27b58a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gafb01fcc10d890174b2db560a7f27b58a">CWallet::DeriveNewChildKey</a> (<a class="el" href="class_wallet_batch.html">WalletBatch</a> &amp;batch, <a class="el" href="class_c_key_metadata.html">CKeyMetadata</a> &amp;metadata, <a class="el" href="class_c_key.html">CKey</a> &amp;secret, bool internal=false) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(cs_wallet)</td></tr>
+<tr class="memitem:gafb01fcc10d890174b2db560a7f27b58a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gafb01fcc10d890174b2db560a7f27b58a">CWallet::DeriveNewChildKey</a> (<a class="el" href="class_wallet_batch.html">WalletBatch</a> &amp;batch, <a class="el" href="class_c_key_metadata.html">CKeyMetadata</a> &amp;metadata, <a class="el" href="class_c_key.html">CKey</a> &amp;secret, bool internal=false) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="feebumper_8cpp.html#a3e33d4f4b59247cb2a112233fe438d19">cs_wallet</a>)</td></tr>
 <tr class="separator:gafb01fcc10d890174b2db560a7f27b58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf482ede71b2fde291b8c6ec262b22ef4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gaf482ede71b2fde291b8c6ec262b22ef4">CWallet::AddKeyPubKeyWithDB</a> (<a class="el" href="class_wallet_batch.html">WalletBatch</a> &amp;batch, const <a class="el" href="class_c_key.html">CKey</a> &amp;key, const <a class="el" href="class_c_pub_key.html">CPubKey</a> &amp;pubkey) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(cs_wallet)</td></tr>
+<tr class="memitem:gaf482ede71b2fde291b8c6ec262b22ef4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gaf482ede71b2fde291b8c6ec262b22ef4">CWallet::AddKeyPubKeyWithDB</a> (<a class="el" href="class_wallet_batch.html">WalletBatch</a> &amp;batch, const <a class="el" href="class_c_key.html">CKey</a> &amp;key, const <a class="el" href="class_c_pub_key.html">CPubKey</a> &amp;pubkey) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="feebumper_8cpp.html#a3e33d4f4b59247cb2a112233fe438d19">cs_wallet</a>)</td></tr>
 <tr class="separator:gaf482ede71b2fde291b8c6ec262b22ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2b0c518df362a1a765a241c1ca5c69a0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga2b0c518df362a1a765a241c1ca5c69a0">CWallet::AddKeyPubKey</a> (const <a class="el" href="class_c_key.html">CKey</a> &amp;key, const <a class="el" href="class_c_pub_key.html">CPubKey</a> &amp;pubkey) override <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(cs_wallet)</td></tr>
+<tr class="memitem:ga2b0c518df362a1a765a241c1ca5c69a0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga2b0c518df362a1a765a241c1ca5c69a0">CWallet::AddKeyPubKey</a> (const <a class="el" href="class_c_key.html">CKey</a> &amp;key, const <a class="el" href="class_c_pub_key.html">CPubKey</a> &amp;pubkey) override <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="feebumper_8cpp.html#a3e33d4f4b59247cb2a112233fe438d19">cs_wallet</a>)</td></tr>
 <tr class="memdesc:ga2b0c518df362a1a765a241c1ca5c69a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a key to the store, and saves it to disk.  <a href="#ga2b0c518df362a1a765a241c1ca5c69a0">More...</a><br /></td></tr>
 <tr class="separator:ga2b0c518df362a1a765a241c1ca5c69a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9bd8ca47110186b31c258308d3bbd7c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga9bd8ca47110186b31c258308d3bbd7c2">CWallet::AddCryptedKey</a> (const <a class="el" href="class_c_pub_key.html">CPubKey</a> &amp;vchPubKey, const std::vector&lt; unsigned char &gt; &amp;vchCryptedSecret) override</td></tr>
 <tr class="memdesc:ga9bd8ca47110186b31c258308d3bbd7c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an encrypted key to the store, and saves it to disk.  <a href="#ga9bd8ca47110186b31c258308d3bbd7c2">More...</a><br /></td></tr>
 <tr class="separator:ga9bd8ca47110186b31c258308d3bbd7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaab39ed756609758c1297cf8bc30430e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gaab39ed756609758c1297cf8bc30430e7">CWallet::LoadKeyMetadata</a> (const <a class="el" href="class_c_key_i_d.html">CKeyID</a> &amp;keyID, const <a class="el" href="class_c_key_metadata.html">CKeyMetadata</a> &amp;metadata) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(cs_wallet)</td></tr>
+<tr class="memitem:gaab39ed756609758c1297cf8bc30430e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gaab39ed756609758c1297cf8bc30430e7">CWallet::LoadKeyMetadata</a> (const <a class="el" href="class_c_key_i_d.html">CKeyID</a> &amp;keyID, const <a class="el" href="class_c_key_metadata.html">CKeyMetadata</a> &amp;metadata) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="feebumper_8cpp.html#a3e33d4f4b59247cb2a112233fe438d19">cs_wallet</a>)</td></tr>
 <tr class="memdesc:gaab39ed756609758c1297cf8bc30430e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load metadata (used by LoadWallet)  <a href="#gaab39ed756609758c1297cf8bc30430e7">More...</a><br /></td></tr>
 <tr class="separator:gaab39ed756609758c1297cf8bc30430e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9f38e00755e22d7784378d016055ee31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga9f38e00755e22d7784378d016055ee31">CWallet::LoadScriptMetadata</a> (const <a class="el" href="class_c_script_i_d.html">CScriptID</a> &amp;script_id, const <a class="el" href="class_c_key_metadata.html">CKeyMetadata</a> &amp;metadata) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(cs_wallet)</td></tr>
+<tr class="memitem:ga9f38e00755e22d7784378d016055ee31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga9f38e00755e22d7784378d016055ee31">CWallet::LoadScriptMetadata</a> (const <a class="el" href="class_c_script_i_d.html">CScriptID</a> &amp;script_id, const <a class="el" href="class_c_key_metadata.html">CKeyMetadata</a> &amp;metadata) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="feebumper_8cpp.html#a3e33d4f4b59247cb2a112233fe438d19">cs_wallet</a>)</td></tr>
 <tr class="separator:ga9f38e00755e22d7784378d016055ee31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga01fbd78238d4ef833d059f12a7e8ac9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga01fbd78238d4ef833d059f12a7e8ac9f">CWallet::LoadCryptedKey</a> (const <a class="el" href="class_c_pub_key.html">CPubKey</a> &amp;vchPubKey, const std::vector&lt; unsigned char &gt; &amp;vchCryptedSecret)</td></tr>
 <tr class="memdesc:ga01fbd78238d4ef833d059f12a7e8ac9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an encrypted key to the store, without saving it to disk (used by LoadWallet)  <a href="#ga01fbd78238d4ef833d059f12a7e8ac9f">More...</a><br /></td></tr>
 <tr class="separator:ga01fbd78238d4ef833d059f12a7e8ac9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab7b95f29dbf960047aa0511713036871"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gab7b95f29dbf960047aa0511713036871">CWallet::UpdateTimeFirstKey</a> (int64_t nCreateTime) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(cs_wallet)</td></tr>
+<tr class="memitem:gab7b95f29dbf960047aa0511713036871"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gab7b95f29dbf960047aa0511713036871">CWallet::UpdateTimeFirstKey</a> (int64_t nCreateTime) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="feebumper_8cpp.html#a3e33d4f4b59247cb2a112233fe438d19">cs_wallet</a>)</td></tr>
 <tr class="memdesc:gab7b95f29dbf960047aa0511713036871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update wallet first key creation time.  <a href="#gab7b95f29dbf960047aa0511713036871">More...</a><br /></td></tr>
 <tr class="separator:gab7b95f29dbf960047aa0511713036871"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga15df27607f4dde9f262e0f030c9414b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga15df27607f4dde9f262e0f030c9414b5">CWallet::AddCScript</a> (const <a class="el" href="class_c_script.html">CScript</a> &amp;redeemScript) override</td></tr>
@@ -134,13 +134,13 @@ Functions</h2></td></tr>
 <tr class="separator:ga15df27607f4dde9f262e0f030c9414b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadbf0abef9da8102f000d4afd5cec5bbc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gadbf0abef9da8102f000d4afd5cec5bbc">CWallet::LoadCScript</a> (const <a class="el" href="class_c_script.html">CScript</a> &amp;redeemScript)</td></tr>
 <tr class="separator:gadbf0abef9da8102f000d4afd5cec5bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga84e18fec1f19c9963fd810d076b71e82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga84e18fec1f19c9963fd810d076b71e82">CWallet::AddWatchOnly</a> (const <a class="el" href="class_c_script.html">CScript</a> &amp;dest) override <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(cs_wallet)</td></tr>
+<tr class="memitem:ga84e18fec1f19c9963fd810d076b71e82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga84e18fec1f19c9963fd810d076b71e82">CWallet::AddWatchOnly</a> (const <a class="el" href="class_c_script.html">CScript</a> &amp;dest) override <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="feebumper_8cpp.html#a3e33d4f4b59247cb2a112233fe438d19">cs_wallet</a>)</td></tr>
 <tr class="memdesc:ga84e18fec1f19c9963fd810d076b71e82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private version of AddWatchOnly method which does not accept a timestamp, and which will reset the wallet's nTimeFirstKey value to 1 if the watch key did not previously have a timestamp associated with it.  <a href="#ga84e18fec1f19c9963fd810d076b71e82">More...</a><br /></td></tr>
 <tr class="separator:ga84e18fec1f19c9963fd810d076b71e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf96e275eac457df2013e8ceb1810b703"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gaf96e275eac457df2013e8ceb1810b703">CWallet::AddWatchOnly</a> (const <a class="el" href="class_c_script.html">CScript</a> &amp;dest, int64_t nCreateTime) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(cs_wallet)</td></tr>
+<tr class="memitem:gaf96e275eac457df2013e8ceb1810b703"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gaf96e275eac457df2013e8ceb1810b703">CWallet::AddWatchOnly</a> (const <a class="el" href="class_c_script.html">CScript</a> &amp;dest, int64_t nCreateTime) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="feebumper_8cpp.html#a3e33d4f4b59247cb2a112233fe438d19">cs_wallet</a>)</td></tr>
 <tr class="memdesc:gaf96e275eac457df2013e8ceb1810b703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a watch-only address to the store, and saves it to disk.  <a href="#gaf96e275eac457df2013e8ceb1810b703">More...</a><br /></td></tr>
 <tr class="separator:gaf96e275eac457df2013e8ceb1810b703"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaca3c3836aa8bf1e706951886ba77080c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gaca3c3836aa8bf1e706951886ba77080c">CWallet::RemoveWatchOnly</a> (const <a class="el" href="class_c_script.html">CScript</a> &amp;dest) override <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(cs_wallet)</td></tr>
+<tr class="memitem:gaca3c3836aa8bf1e706951886ba77080c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gaca3c3836aa8bf1e706951886ba77080c">CWallet::RemoveWatchOnly</a> (const <a class="el" href="class_c_script.html">CScript</a> &amp;dest) override <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="feebumper_8cpp.html#a3e33d4f4b59247cb2a112233fe438d19">cs_wallet</a>)</td></tr>
 <tr class="separator:gaca3c3836aa8bf1e706951886ba77080c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad6580f1844fc639389e1c6a1e2787ee6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gad6580f1844fc639389e1c6a1e2787ee6">CWallet::LoadWatchOnly</a> (const <a class="el" href="class_c_script.html">CScript</a> &amp;dest)</td></tr>
 <tr class="memdesc:gad6580f1844fc639389e1c6a1e2787ee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a watch-only address to the store, without saving it to disk (used by LoadWallet)  <a href="#gad6580f1844fc639389e1c6a1e2787ee6">More...</a><br /></td></tr>
@@ -161,7 +161,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gae8f7a55f63c6f3c49de8ba9a3d7564ab"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="classuint256.html">uint256</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gae8f7a55f63c6f3c49de8ba9a3d7564ab">CWallet::GetConflicts</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;txid) const </td></tr>
 <tr class="memdesc:gae8f7a55f63c6f3c49de8ba9a3d7564ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get wallet transactions that conflict with given transaction (spend same outputs)  <a href="#gae8f7a55f63c6f3c49de8ba9a3d7564ab">More...</a><br /></td></tr>
 <tr class="separator:gae8f7a55f63c6f3c49de8ba9a3d7564ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga181fbd1315a1ff4c22a34db82a03a37f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga181fbd1315a1ff4c22a34db82a03a37f">CWallet::HasWalletSpend</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;txid) const <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(cs_wallet)</td></tr>
+<tr class="memitem:ga181fbd1315a1ff4c22a34db82a03a37f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga181fbd1315a1ff4c22a34db82a03a37f">CWallet::HasWalletSpend</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;txid) const <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="feebumper_8cpp.html#a3e33d4f4b59247cb2a112233fe438d19">cs_wallet</a>)</td></tr>
 <tr class="memdesc:ga181fbd1315a1ff4c22a34db82a03a37f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a given transaction has any of its outputs spent by another transaction in the wallet.  <a href="#ga181fbd1315a1ff4c22a34db82a03a37f">More...</a><br /></td></tr>
 <tr class="separator:ga181fbd1315a1ff4c22a34db82a03a37f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1933d34612a6a438d6c45bad608ce87c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga1933d34612a6a438d6c45bad608ce87c">CWallet::Flush</a> (bool shutdown=false)</td></tr>
@@ -169,9 +169,9 @@ Functions</h2></td></tr>
 <tr class="separator:ga1933d34612a6a438d6c45bad608ce87c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac555c90c12f8141f809df7113e8f225f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gac555c90c12f8141f809df7113e8f225f">CWallet::SyncMetaData</a> (std::pair&lt; TxSpends::iterator, TxSpends::iterator &gt;)</td></tr>
 <tr class="separator:gac555c90c12f8141f809df7113e8f225f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7d77e683a0f10403fe2b67385895d497"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga7d77e683a0f10403fe2b67385895d497">CWallet::IsSpent</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;hash, unsigned int n) const </td></tr>
-<tr class="memdesc:ga7d77e683a0f10403fe2b67385895d497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outpoint is spent if any non-conflicted transaction spends it:  <a href="#ga7d77e683a0f10403fe2b67385895d497">More...</a><br /></td></tr>
-<tr class="separator:ga7d77e683a0f10403fe2b67385895d497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga68e58db2cf542b7835d9fef65193b005"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga68e58db2cf542b7835d9fef65193b005">CWallet::IsSpent</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;hash, unsigned int n) const <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="memdesc:ga68e58db2cf542b7835d9fef65193b005"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outpoint is spent if any non-conflicted transaction spends it:  <a href="#ga68e58db2cf542b7835d9fef65193b005">More...</a><br /></td></tr>
+<tr class="separator:ga68e58db2cf542b7835d9fef65193b005"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga73b98163dac6f2e45bf3e75e0dc3c94f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga73b98163dac6f2e45bf3e75e0dc3c94f">CWallet::AddToSpends</a> (const <a class="el" href="class_c_out_point.html">COutPoint</a> &amp;outpoint, const <a class="el" href="classuint256.html">uint256</a> &amp;wtxid)</td></tr>
 <tr class="separator:ga73b98163dac6f2e45bf3e75e0dc3c94f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6929a0e946b08a1363a6de0ad379279f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga6929a0e946b08a1363a6de0ad379279f">CWallet::AddToSpends</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;wtxid)</td></tr>
@@ -180,10 +180,10 @@ Functions</h2></td></tr>
 <tr class="separator:gab34fe5bf771619dcbe22a65f013e5469"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gada917e14d6336f1336b9cf0e98c9a6f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="walletdb_8h.html#a7558d92e9ea1d446075da1b514c4a944">DBErrors</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gada917e14d6336f1336b9cf0e98c9a6f2">CWallet::ReorderTransactions</a> ()</td></tr>
 <tr class="separator:gada917e14d6336f1336b9cf0e98c9a6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae9a1e6ac444b30d9464bf0b1fa5f97bb"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gae9a1e6ac444b30d9464bf0b1fa5f97bb">CWallet::IncOrderPosNext</a> (<a class="el" href="class_wallet_batch.html">WalletBatch</a> *batch=nullptr) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(cs_wallet)</td></tr>
+<tr class="memitem:gae9a1e6ac444b30d9464bf0b1fa5f97bb"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gae9a1e6ac444b30d9464bf0b1fa5f97bb">CWallet::IncOrderPosNext</a> (<a class="el" href="class_wallet_batch.html">WalletBatch</a> *batch=nullptr) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="feebumper_8cpp.html#a3e33d4f4b59247cb2a112233fe438d19">cs_wallet</a>)</td></tr>
 <tr class="memdesc:gae9a1e6ac444b30d9464bf0b1fa5f97bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the next transaction order id.  <a href="#gae9a1e6ac444b30d9464bf0b1fa5f97bb">More...</a><br /></td></tr>
 <tr class="separator:gae9a1e6ac444b30d9464bf0b1fa5f97bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga42bf5b16cfa280c6572e0a38ef20afd2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga42bf5b16cfa280c6572e0a38ef20afd2">CWallet::AccountMove</a> (std::string strFrom, std::string strTo, <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> nAmount, std::string strComment=&quot;&quot;) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(cs_wallet)</td></tr>
+<tr class="memitem:ga42bf5b16cfa280c6572e0a38ef20afd2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga42bf5b16cfa280c6572e0a38ef20afd2">CWallet::AccountMove</a> (std::string strFrom, std::string strTo, <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> nAmount, std::string strComment=&quot;&quot;) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="feebumper_8cpp.html#a3e33d4f4b59247cb2a112233fe438d19">cs_wallet</a>)</td></tr>
 <tr class="separator:ga42bf5b16cfa280c6572e0a38ef20afd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab22effc451411872c3559d0512214d5b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gab22effc451411872c3559d0512214d5b">CWallet::GetLabelDestination</a> (<a class="el" href="standard_8h.html#ae9ce1f2e14383eb495b964486ac7273c">CTxDestination</a> &amp;dest, const std::string &amp;label, bool bForceNew=false)</td></tr>
 <tr class="separator:gab22effc451411872c3559d0512214d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,7 +196,7 @@ Functions</h2></td></tr>
 <tr class="separator:ga71c829a50abbcd74c1884b1f86527755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad024900dfadffa7710ab17cbd66f8786"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gad024900dfadffa7710ab17cbd66f8786">CWallet::LoadToWallet</a> (const <a class="el" href="class_c_wallet_tx.html">CWalletTx</a> &amp;wtxIn)</td></tr>
 <tr class="separator:gad024900dfadffa7710ab17cbd66f8786"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaee8f634287d083737471595f658da519"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gaee8f634287d083737471595f658da519">CWallet::AddToWalletIfInvolvingMe</a> (const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx, const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pIndex, int posInBlock, bool fUpdate) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(cs_wallet)</td></tr>
+<tr class="memitem:gaee8f634287d083737471595f658da519"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gaee8f634287d083737471595f658da519">CWallet::AddToWalletIfInvolvingMe</a> (const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx, const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pIndex, int posInBlock, bool fUpdate) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="feebumper_8cpp.html#a3e33d4f4b59247cb2a112233fe438d19">cs_wallet</a>)</td></tr>
 <tr class="memdesc:gaee8f634287d083737471595f658da519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a transaction to the wallet, or update it.  <a href="#gaee8f634287d083737471595f658da519">More...</a><br /></td></tr>
 <tr class="separator:gaee8f634287d083737471595f658da519"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7cf842d8c4df5b39bbd1110d805f4433"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga7cf842d8c4df5b39bbd1110d805f4433">CWallet::TransactionCanBeAbandoned</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;hashTx) const </td></tr>
@@ -208,7 +208,7 @@ Functions</h2></td></tr>
 <tr class="separator:ga9a4633bfb89da7a4afa04356a74b7970"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga009ea6afd94f2c5d560ae063883628b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga009ea6afd94f2c5d560ae063883628b5">CWallet::MarkConflicted</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;hashBlock, const <a class="el" href="classuint256.html">uint256</a> &amp;hashTx)</td></tr>
 <tr class="separator:ga009ea6afd94f2c5d560ae063883628b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga09e75fcbc98be305e68e99495570687c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga09e75fcbc98be305e68e99495570687c">CWallet::SyncTransaction</a> (const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx, const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindex=nullptr, int posInBlock=0, bool update_tx=true) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(cs_wallet)</td></tr>
+<tr class="memitem:ga09e75fcbc98be305e68e99495570687c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga09e75fcbc98be305e68e99495570687c">CWallet::SyncTransaction</a> (const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx, const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindex=nullptr, int posInBlock=0, bool update_tx=true) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="feebumper_8cpp.html#a3e33d4f4b59247cb2a112233fe438d19">cs_wallet</a>)</td></tr>
 <tr class="separator:ga09e75fcbc98be305e68e99495570687c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae44ec090ec7c87725fb22d33887ad1a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gae44ec090ec7c87725fb22d33887ad1a7">CWallet::TransactionAddedToMempool</a> (const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx) override</td></tr>
 <tr class="memdesc:gae44ec090ec7c87725fb22d33887ad1a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies listeners of a transaction having been added to mempool.  <a href="#gae44ec090ec7c87725fb22d33887ad1a7">More...</a><br /></td></tr>
@@ -222,9 +222,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga3aa53a08f7071c42c0ef82ea468d19ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga3aa53a08f7071c42c0ef82ea468d19ae">CWallet::BlockDisconnected</a> (const std::shared_ptr&lt; const <a class="el" href="class_c_block.html">CBlock</a> &gt; &amp;pblock) override</td></tr>
 <tr class="memdesc:ga3aa53a08f7071c42c0ef82ea468d19ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies listeners of a block being disconnected.  <a href="#ga3aa53a08f7071c42c0ef82ea468d19ae">More...</a><br /></td></tr>
 <tr class="separator:ga3aa53a08f7071c42c0ef82ea468d19ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2ca3c4f91de2c583ec2f47266bffe91b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga2ca3c4f91de2c583ec2f47266bffe91b">CWallet::BlockUntilSyncedToCurrentChain</a> () <a class="el" href="threadsafety_8h.html#a6bb97382864d0bd2cd4dd5191bb03f6c">LOCKS_EXCLUDED</a>(cs_wallet)</td></tr>
-<tr class="memdesc:ga2ca3c4f91de2c583ec2f47266bffe91b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until the wallet state is up-to-date to /at least/ the current chain at the time this function is entered Obviously holding cs_main/cs_wallet when going into this call may cause deadlock.  <a href="#ga2ca3c4f91de2c583ec2f47266bffe91b">More...</a><br /></td></tr>
-<tr class="separator:ga2ca3c4f91de2c583ec2f47266bffe91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf766f26b1180b375f02a622dda88a246"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gaf766f26b1180b375f02a622dda88a246">CWallet::BlockUntilSyncedToCurrentChain</a> () <a class="el" href="threadsafety_8h.html#a6bb97382864d0bd2cd4dd5191bb03f6c">LOCKS_EXCLUDED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a></td></tr>
+<tr class="memdesc:gaf766f26b1180b375f02a622dda88a246"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until the wallet state is up-to-date to /at least/ the current chain at the time this function is entered Obviously holding cs_main/cs_wallet when going into this call may cause deadlock.  <a href="#gaf766f26b1180b375f02a622dda88a246">More...</a><br /></td></tr>
+<tr class="separator:gaf766f26b1180b375f02a622dda88a246"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab7cc8fd8859fecc6ed768dacb5642c5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ismine_8h.html#a66f67ca6dd4cabac4eea13042b18e20d">isminetype</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gab7cc8fd8859fecc6ed768dacb5642c5e">CWallet::IsMine</a> (const <a class="el" href="class_c_tx_in.html">CTxIn</a> &amp;txin) const </td></tr>
 <tr class="separator:gab7cc8fd8859fecc6ed768dacb5642c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga41642840b6efb255876460758eaaa2af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga41642840b6efb255876460758eaaa2af">CWallet::GetDebit</a> (const <a class="el" href="class_c_tx_in.html">CTxIn</a> &amp;txin, const <a class="el" href="ismine_8h.html#aaa5e1639d76aef50f70532acc3302c4b">isminefilter</a> &amp;filter) const </td></tr>
@@ -287,34 +287,34 @@ Functions</h2></td></tr>
 <tr class="separator:gaabb1db808d082d6df2b1e37cbf3f8f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga796c23450c8482e10e0c75ae5c1fa8ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga796c23450c8482e10e0c75ae5c1fa8ed">CWallet::ReacceptWalletTransactions</a> ()</td></tr>
 <tr class="separator:ga796c23450c8482e10e0c75ae5c1fa8ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga88bcacf1a2426b9be5364f848dc92b53"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga88bcacf1a2426b9be5364f848dc92b53">CWalletTx::RelayWalletTransaction</a> (<a class="el" href="class_c_connman.html">CConnman</a> *connman)</td></tr>
-<tr class="separator:ga88bcacf1a2426b9be5364f848dc92b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9919bca1768b0c825ecd4080255fb083"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga9919bca1768b0c825ecd4080255fb083">CWalletTx::RelayWalletTransaction</a> (<a class="el" href="class_c_connman.html">CConnman</a> *connman) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="separator:ga9919bca1768b0c825ecd4080255fb083"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga256ed1da45416dcd7f3e58f65c67e3d5"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="classuint256.html">uint256</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga256ed1da45416dcd7f3e58f65c67e3d5">CWalletTx::GetConflicts</a> () const </td></tr>
 <tr class="separator:ga256ed1da45416dcd7f3e58f65c67e3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga49633327f5b57c3f253c45b5458501d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga49633327f5b57c3f253c45b5458501d1">CWalletTx::GetDebit</a> (const <a class="el" href="ismine_8h.html#aaa5e1639d76aef50f70532acc3302c4b">isminefilter</a> &amp;filter) const </td></tr>
 <tr class="memdesc:ga49633327f5b57c3f253c45b5458501d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">filter decides which addresses will count towards the debit  <a href="#ga49633327f5b57c3f253c45b5458501d1">More...</a><br /></td></tr>
 <tr class="separator:ga49633327f5b57c3f253c45b5458501d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6712fa5cd5831f4a8828b807852d32d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga6712fa5cd5831f4a8828b807852d32d0">CWalletTx::GetCredit</a> (const <a class="el" href="ismine_8h.html#aaa5e1639d76aef50f70532acc3302c4b">isminefilter</a> &amp;filter) const </td></tr>
-<tr class="separator:ga6712fa5cd5831f4a8828b807852d32d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7c192ae2f84392150c1157e04913bd76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga7c192ae2f84392150c1157e04913bd76">CWalletTx::GetImmatureCredit</a> (bool fUseCache=true) const </td></tr>
-<tr class="separator:ga7c192ae2f84392150c1157e04913bd76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac3aecae4c66921eb84c647ce89a75ceb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gac3aecae4c66921eb84c647ce89a75ceb">CWalletTx::GetAvailableCredit</a> (bool fUseCache=true, const <a class="el" href="ismine_8h.html#aaa5e1639d76aef50f70532acc3302c4b">isminefilter</a> &amp;filter=<a class="el" href="ismine_8h.html#a66f67ca6dd4cabac4eea13042b18e20daaf93acf4732907100f55dc017b6daf58">ISMINE_SPENDABLE</a>) const </td></tr>
-<tr class="separator:gac3aecae4c66921eb84c647ce89a75ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2ee26dcdcbb281755229ea31dfd04b1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga2ee26dcdcbb281755229ea31dfd04b1d">CWalletTx::GetImmatureWatchOnlyCredit</a> (const bool fUseCache=true) const </td></tr>
-<tr class="separator:ga2ee26dcdcbb281755229ea31dfd04b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e8f86fd4171608c1777ece32dffc57b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga7e8f86fd4171608c1777ece32dffc57b">CWalletTx::GetCredit</a> (const <a class="el" href="ismine_8h.html#aaa5e1639d76aef50f70532acc3302c4b">isminefilter</a> &amp;filter) const <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="separator:ga7e8f86fd4171608c1777ece32dffc57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabb3eec7968dec62cf41937aab0985087"><td class="memItemLeft" align="right" valign="top"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gabb3eec7968dec62cf41937aab0985087">CWalletTx::GetImmatureCredit</a> (bool fUseCache=true) const <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="separator:gabb3eec7968dec62cf41937aab0985087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf900c2ab97251cdef52c100261c880b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gaf900c2ab97251cdef52c100261c880b1">CWalletTx::GetAvailableCredit</a> (bool fUseCache=true, const <a class="el" href="ismine_8h.html#aaa5e1639d76aef50f70532acc3302c4b">isminefilter</a> &amp;filter=<a class="el" href="ismine_8h.html#a66f67ca6dd4cabac4eea13042b18e20daaf93acf4732907100f55dc017b6daf58">ISMINE_SPENDABLE</a>) const <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="separator:gaf900c2ab97251cdef52c100261c880b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga283fbf2ff029a0052aba10aa4224fbdb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga283fbf2ff029a0052aba10aa4224fbdb">CWalletTx::GetImmatureWatchOnlyCredit</a> (const bool fUseCache=true) const <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="separator:ga283fbf2ff029a0052aba10aa4224fbdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafbc869129f88b9a5bd33b67ab90b0061"><td class="memItemLeft" align="right" valign="top"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gafbc869129f88b9a5bd33b67ab90b0061">CWalletTx::GetChange</a> () const </td></tr>
 <tr class="separator:gafbc869129f88b9a5bd33b67ab90b0061"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaae8d7c37490bf8b42be69998563253e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gaae8d7c37490bf8b42be69998563253e6">CWalletTx::InMempool</a> () const </td></tr>
 <tr class="separator:gaae8d7c37490bf8b42be69998563253e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf2eff3b849af124cdf869fc03f587972"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gaf2eff3b849af124cdf869fc03f587972">CWalletTx::IsTrusted</a> () const </td></tr>
-<tr class="separator:gaf2eff3b849af124cdf869fc03f587972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ff72a566f514e703a1a238aec6d8fbf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga5ff72a566f514e703a1a238aec6d8fbf">CWalletTx::IsTrusted</a> () const <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="separator:ga5ff72a566f514e703a1a238aec6d8fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8040c9ebd093890b9d45b3e055386700"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga8040c9ebd093890b9d45b3e055386700">CWalletTx::IsEquivalentTo</a> (const <a class="el" href="class_c_wallet_tx.html">CWalletTx</a> &amp;tx) const </td></tr>
 <tr class="separator:ga8040c9ebd093890b9d45b3e055386700"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5660023a09ecf8107cb2b3df8d3d0e40"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classuint256.html">uint256</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga5660023a09ecf8107cb2b3df8d3d0e40">CWallet::ResendWalletTransactionsBefore</a> (int64_t nTime, <a class="el" href="class_c_connman.html">CConnman</a> *connman)</td></tr>
-<tr class="separator:ga5660023a09ecf8107cb2b3df8d3d0e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabbfe3c26937aaa829c8cc95565ff812e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gabbfe3c26937aaa829c8cc95565ff812e">CWallet::ResendWalletTransactions</a> (int64_t nBestBlockTime, <a class="el" href="class_c_connman.html">CConnman</a> *connman) override</td></tr>
-<tr class="memdesc:gabbfe3c26937aaa829c8cc95565ff812e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells listeners to broadcast their data.  <a href="#gabbfe3c26937aaa829c8cc95565ff812e">More...</a><br /></td></tr>
-<tr class="separator:gabbfe3c26937aaa829c8cc95565ff812e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1b375d6b93df5a21b50b9187ad2bb99"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classuint256.html">uint256</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gab1b375d6b93df5a21b50b9187ad2bb99">CWallet::ResendWalletTransactionsBefore</a> (int64_t nTime, <a class="el" href="class_c_connman.html">CConnman</a> *connman) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="separator:gab1b375d6b93df5a21b50b9187ad2bb99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae244d73570ef856a448683122e817041"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gae244d73570ef856a448683122e817041">CWallet::ResendWalletTransactions</a> (int64_t nBestBlockTime, <a class="el" href="class_c_connman.html">CConnman</a> *connman) override <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="memdesc:gae244d73570ef856a448683122e817041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells listeners to broadcast their data.  <a href="#gae244d73570ef856a448683122e817041">More...</a><br /></td></tr>
+<tr class="separator:gae244d73570ef856a448683122e817041"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
@@ -337,7 +337,8 @@ Functions</h2></td></tr>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga9a4633bfb89da7a4afa04356a74b7970_cgraph.svg" width="1571" height="1574"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga9a4633bfb89da7a4afa04356a74b7970_cgraph.svg" width="1571" height="1574"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -914,7 +915,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ga2ca3c4f91de2c583ec2f47266bffe91b"></a>
+<a class="anchor" id="gaf766f26b1180b375f02a622dda88a246"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -934,14 +935,16 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga2ca3c4f91de2c583ec2f47266bffe91b_cgraph.svg" width="663" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_gaf766f26b1180b375f02a622dda88a246_cgraph.svg" width="663" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga2ca3c4f91de2c583ec2f47266bffe91b_icgraph.svg" width="1470" height="1296"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_gaf766f26b1180b375f02a622dda88a246_icgraph.svg" width="1470" height="1296"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -989,7 +992,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga05b4378caaacc3cff6da90a12f7b41d7_icgraph.svg" width="1690" height="595"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga05b4378caaacc3cff6da90a12f7b41d7_icgraph.svg" width="1690" height="595"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1302,7 +1306,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga5a92b1905786145af8a3a3bd86ed794b_icgraph.svg" width="1924" height="595"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga5a92b1905786145af8a3a3bd86ed794b_icgraph.svg" width="1924" height="595"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1529,7 +1534,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="gac3aecae4c66921eb84c647ce89a75ceb"></a>
+<a class="anchor" id="gaf900c2ab97251cdef52c100261c880b1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1558,14 +1563,16 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_gac3aecae4c66921eb84c647ce89a75ceb_cgraph.svg" width="416" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_gaf900c2ab97251cdef52c100261c880b1_cgraph.svg" width="416" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_gac3aecae4c66921eb84c647ce89a75ceb_icgraph.svg" width="916" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_gaf900c2ab97251cdef52c100261c880b1_icgraph.svg" width="916" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1682,7 +1689,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ga6712fa5cd5831f4a8828b807852d32d0"></a>
+<a class="anchor" id="ga7e8f86fd4171608c1777ece32dffc57b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1701,7 +1708,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga6712fa5cd5831f4a8828b807852d32d0_icgraph.svg" width="1115" height="200"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga7e8f86fd4171608c1777ece32dffc57b_icgraph.svg" width="1115" height="200"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1876,7 +1884,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ga7c192ae2f84392150c1157e04913bd76"></a>
+<a class="anchor" id="gabb3eec7968dec62cf41937aab0985087"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1895,13 +1903,14 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga7c192ae2f84392150c1157e04913bd76_icgraph.svg" width="959" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_gabb3eec7968dec62cf41937aab0985087_icgraph.svg" width="959" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="ga2ee26dcdcbb281755229ea31dfd04b1d"></a>
+<a class="anchor" id="ga283fbf2ff029a0052aba10aa4224fbdb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1920,7 +1929,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga2ee26dcdcbb281755229ea31dfd04b1d_icgraph.svg" width="474" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga283fbf2ff029a0052aba10aa4224fbdb_icgraph.svg" width="474" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2096,7 +2106,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_gaae8d7c37490bf8b42be69998563253e6_icgraph.svg" width="923" height="222"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_gaae8d7c37490bf8b42be69998563253e6_icgraph.svg" width="923" height="222"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2322,7 +2333,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ga7d77e683a0f10403fe2b67385895d497"></a>
+<a class="anchor" id="ga68e58db2cf542b7835d9fef65193b005"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2353,13 +2364,14 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga7d77e683a0f10403fe2b67385895d497_icgraph.svg" width="520" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga68e58db2cf542b7835d9fef65193b005_icgraph.svg" width="520" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="gaf2eff3b849af124cdf869fc03f587972"></a>
+<a class="anchor" id="ga5ff72a566f514e703a1a238aec6d8fbf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2377,14 +2389,16 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_gaf2eff3b849af124cdf869fc03f587972_cgraph.svg" width="834" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga5ff72a566f514e703a1a238aec6d8fbf_cgraph.svg" width="834" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_gaf2eff3b849af124cdf869fc03f587972_icgraph.svg" width="1103" height="594"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga5ff72a566f514e703a1a238aec6d8fbf_icgraph.svg" width="1103" height="594"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2668,7 +2682,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga009ea6afd94f2c5d560ae063883628b5_cgraph.svg" width="1536" height="1628"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga009ea6afd94f2c5d560ae063883628b5_cgraph.svg" width="1536" height="1628"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2786,7 +2801,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga796c23450c8482e10e0c75ae5c1fa8ed_cgraph.svg" width="1563" height="1552"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga796c23450c8482e10e0c75ae5c1fa8ed_cgraph.svg" width="1563" height="1552"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2799,7 +2815,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ga88bcacf1a2426b9be5364f848dc92b53"></a>
+<a class="anchor" id="ga9919bca1768b0c825ecd4080255fb083"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2818,14 +2834,16 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga88bcacf1a2426b9be5364f848dc92b53_cgraph.svg" width="1008" height="307"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga9919bca1768b0c825ecd4080255fb083_cgraph.svg" width="1008" height="307"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga88bcacf1a2426b9be5364f848dc92b53_icgraph.svg" width="915" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga9919bca1768b0c825ecd4080255fb083_icgraph.svg" width="915" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2949,7 +2967,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="gabbfe3c26937aaa829c8cc95565ff812e"></a>
+<a class="anchor" id="gae244d73570ef856a448683122e817041"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -2990,13 +3008,14 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_gabbfe3c26937aaa829c8cc95565ff812e_cgraph.svg" width="536" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_gae244d73570ef856a448683122e817041_cgraph.svg" width="536" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="ga5660023a09ecf8107cb2b3df8d3d0e40"></a>
+<a class="anchor" id="gab1b375d6b93df5a21b50b9187ad2bb99"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3025,14 +3044,16 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga5660023a09ecf8107cb2b3df8d3d0e40_cgraph.svg" width="1295" height="307"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_gab1b375d6b93df5a21b50b9187ad2bb99_cgraph.svg" width="1295" height="307"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga5660023a09ecf8107cb2b3df8d3d0e40_icgraph.svg" width="635" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_gab1b375d6b93df5a21b50b9187ad2bb99_icgraph.svg" width="635" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -3419,7 +3440,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga30a78d31f6667803c613efdef28cbe52_icgraph.svg" width="1098" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga30a78d31f6667803c613efdef28cbe52_icgraph.svg" width="1098" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -3477,7 +3499,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga7cf842d8c4df5b39bbd1110d805f4433_cgraph.svg" width="1542" height="1480"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__map_wallet_ga7cf842d8c4df5b39bbd1110d805f4433_cgraph.svg" width="1542" height="1480"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -3578,7 +3601,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 25 2018 22:06:12 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 25 2018 22:33:52 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

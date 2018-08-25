@@ -127,13 +127,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab82f82aa99ab51225288acbf170e280e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbb1594ba8678ec9f156e4559ba0e0e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_merkle_tx.html#adbb1594ba8678ec9f156e4559ba0e0e0">SetMerkleBranch</a> (const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pIndex, int posInBlock)</td></tr>
 <tr class="separator:adbb1594ba8678ec9f156e4559ba0e0e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33b4b2069da9eb54cb37e0ceb9266bed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_merkle_tx.html#a33b4b2069da9eb54cb37e0ceb9266bed">GetDepthInMainChain</a> () const </td></tr>
-<tr class="memdesc:a33b4b2069da9eb54cb37e0ceb9266bed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return depth of transaction in blockchain: &lt;0 : conflicts with a transaction this deep in the blockchain 0 : in memory pool, waiting to be included in a block &gt;=1 : this many blocks deep in the main chain.  <a href="#a33b4b2069da9eb54cb37e0ceb9266bed">More...</a><br /></td></tr>
-<tr class="separator:a33b4b2069da9eb54cb37e0ceb9266bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf24748ee829f589ac8d6e99ec6121de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_merkle_tx.html#adf24748ee829f589ac8d6e99ec6121de">IsInMainChain</a> () const </td></tr>
-<tr class="separator:adf24748ee829f589ac8d6e99ec6121de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bd25cf06de6a443d0925ec8ba66c949"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_merkle_tx.html#a8bd25cf06de6a443d0925ec8ba66c949">GetBlocksToMaturity</a> () const </td></tr>
-<tr class="separator:a8bd25cf06de6a443d0925ec8ba66c949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a026579f00672e5b907faa77a1baa33c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_merkle_tx.html#a026579f00672e5b907faa77a1baa33c8">GetDepthInMainChain</a> () const <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="memdesc:a026579f00672e5b907faa77a1baa33c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return depth of transaction in blockchain: &lt;0 : conflicts with a transaction this deep in the blockchain 0 : in memory pool, waiting to be included in a block &gt;=1 : this many blocks deep in the main chain.  <a href="#a026579f00672e5b907faa77a1baa33c8">More...</a><br /></td></tr>
+<tr class="separator:a026579f00672e5b907faa77a1baa33c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68b39aa6c6a6a87d4c4db8d852389b76"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_merkle_tx.html#a68b39aa6c6a6a87d4c4db8d852389b76">IsInMainChain</a> () const <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="separator:a68b39aa6c6a6a87d4c4db8d852389b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf7a2cf7e7e0fd77290f3bbdb41f5188"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_merkle_tx.html#adf7a2cf7e7e0fd77290f3bbdb41f5188">GetBlocksToMaturity</a> () const <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="separator:adf7a2cf7e7e0fd77290f3bbdb41f5188"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aada56323da45b9cef191c846725bc382"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_merkle_tx.html#aada56323da45b9cef191c846725bc382">hashUnset</a> () const </td></tr>
 <tr class="separator:aada56323da45b9cef191c846725bc382"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada8e2d9091cb1b14250f32ef1ad46a30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_merkle_tx.html#ada8e2d9091cb1b14250f32ef1ad46a30">isAbandoned</a> () const </td></tr>
@@ -144,8 +144,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0229887ee125fa7c45a90e9cca77bf94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a639c70fc4b2520a87c32a98ecd75d403"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_merkle_tx.html#a639c70fc4b2520a87c32a98ecd75d403">IsCoinBase</a> () const </td></tr>
 <tr class="separator:a639c70fc4b2520a87c32a98ecd75d403"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48c7f97ab2d25f4dbbc4862959b746c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_merkle_tx.html#a48c7f97ab2d25f4dbbc4862959b746c9">IsImmatureCoinBase</a> () const </td></tr>
-<tr class="separator:a48c7f97ab2d25f4dbbc4862959b746c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb62dfe9de72cdf75520b0f367097eda"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_merkle_tx.html#acb62dfe9de72cdf75520b0f367097eda">IsImmatureCoinBase</a> () const <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="separator:acb62dfe9de72cdf75520b0f367097eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -221,7 +221,7 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a8bd25cf06de6a443d0925ec8ba66c949"></a>
+<a class="anchor" id="adf7a2cf7e7e0fd77290f3bbdb41f5188"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -239,7 +239,7 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a33b4b2069da9eb54cb37e0ceb9266bed"></a>
+<a class="anchor" id="a026579f00672e5b907faa77a1baa33c8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -259,14 +259,16 @@ Static Private Attributes</h2></td></tr>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_merkle_tx_a33b4b2069da9eb54cb37e0ceb9266bed_cgraph.svg" width="1303" height="1514"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_merkle_tx_a026579f00672e5b907faa77a1baa33c8_cgraph.svg" width="1303" height="1514"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_merkle_tx_a33b4b2069da9eb54cb37e0ceb9266bed_icgraph.svg" width="1174" height="890"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_merkle_tx_a026579f00672e5b907faa77a1baa33c8_icgraph.svg" width="1174" height="890"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -298,7 +300,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_merkle_tx_a0229887ee125fa7c45a90e9cca77bf94_icgraph.svg" width="1660" height="1067"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_merkle_tx_a0229887ee125fa7c45a90e9cca77bf94_icgraph.svg" width="1660" height="1067"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -439,7 +442,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a48c7f97ab2d25f4dbbc4862959b746c9"></a>
+<a class="anchor" id="acb62dfe9de72cdf75520b0f367097eda"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -457,13 +460,14 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_merkle_tx_a48c7f97ab2d25f4dbbc4862959b746c9_icgraph.svg" width="968" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_merkle_tx_acb62dfe9de72cdf75520b0f367097eda_icgraph.svg" width="968" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="adf24748ee829f589ac8d6e99ec6121de"></a>
+<a class="anchor" id="a68b39aa6c6a6a87d4c4db8d852389b76"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -714,7 +718,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 25 2018 22:06:13 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 25 2018 22:33:53 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

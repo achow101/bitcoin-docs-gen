@@ -260,7 +260,7 @@ var searchData=
   ['blocktransactionsrequest',['BlockTransactionsRequest',['../class_block_transactions_request.html',1,'']]],
   ['blocktxcount',['BlockTxCount',['../class_c_block_header_and_short_tx_i_ds.html#ac9d0ad1cc1d6589d671d1437f343c8f9',1,'CBlockHeaderAndShortTxIDs']]],
   ['blocktxn',['BLOCKTXN',['../namespace_net_msg_type.html#ac23245c939bfe57d37c0a2db68e05e05',1,'NetMsgType']]],
-  ['blockuntilsyncedtocurrentchain',['BlockUntilSyncedToCurrentChain',['../class_base_index.html#a4043488455bdad2e2822fe4ee9449feb',1,'BaseIndex::BlockUntilSyncedToCurrentChain()'],['../group__map_wallet.html#ga2ca3c4f91de2c583ec2f47266bffe91b',1,'CWallet::BlockUntilSyncedToCurrentChain()']]],
+  ['blockuntilsyncedtocurrentchain',['BlockUntilSyncedToCurrentChain',['../class_base_index.html#a4043488455bdad2e2822fe4ee9449feb',1,'BaseIndex::BlockUntilSyncedToCurrentChain()'],['../group__map_wallet.html#gaf766f26b1180b375f02a622dda88a246',1,'CWallet::BlockUntilSyncedToCurrentChain()']]],
   ['blockwitnessmerkleroot',['BlockWitnessMerkleRoot',['../merkle_8cpp.html#affe176b566b848cdb62f69946ee9398b',1,'BlockWitnessMerkleRoot(const CBlock &amp;block, bool *mutated):&#160;merkle.cpp'],['../merkle_8h.html#a72503311b28837a23c66de625a428628',1,'BlockWitnessMerkleRoot(const CBlock &amp;block, bool *mutated=nullptr):&#160;merkle.cpp']]],
   ['bloom_2ecpp',['bloom.cpp',['../bloom_8cpp.html',1,'']]],
   ['bloom_2eh',['bloom.h',['../bloom_8h.html',1,'']]],

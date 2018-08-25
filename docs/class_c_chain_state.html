@@ -108,31 +108,31 @@ Collaboration diagram for CChainState:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a25df87c65c89c79a4061f28c09599856"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a25df87c65c89c79a4061f28c09599856">LoadBlockIndex</a> (const <a class="el" href="struct_consensus_1_1_params.html">Consensus::Params</a> &amp;consensus_params, <a class="el" href="class_c_block_tree_d_b.html">CBlockTreeDB</a> &amp;blocktree) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validation_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="memitem:a25df87c65c89c79a4061f28c09599856"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a25df87c65c89c79a4061f28c09599856">LoadBlockIndex</a> (const <a class="el" href="struct_consensus_1_1_params.html">Consensus::Params</a> &amp;consensus_params, <a class="el" href="class_c_block_tree_d_b.html">CBlockTreeDB</a> &amp;blocktree) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
 <tr class="separator:a25df87c65c89c79a4061f28c09599856"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a24c6da53ff4b725e2d1c8b4af007fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a5a24c6da53ff4b725e2d1c8b4af007fe">ActivateBestChain</a> (<a class="el" href="class_c_validation_state.html">CValidationState</a> &amp;state, const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;chainparams, std::shared_ptr&lt; const <a class="el" href="class_c_block.html">CBlock</a> &gt; pblock)</td></tr>
 <tr class="memdesc:a5a24c6da53ff4b725e2d1c8b4af007fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make the best chain active, in multiple steps.  <a href="#a5a24c6da53ff4b725e2d1c8b4af007fe">More...</a><br /></td></tr>
 <tr class="separator:a5a24c6da53ff4b725e2d1c8b4af007fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab70c11d94a3f6e5cae415521437ef627"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#ab70c11d94a3f6e5cae415521437ef627">AcceptBlockHeader</a> (const <a class="el" href="class_c_block_header.html">CBlockHeader</a> &amp;block, <a class="el" href="class_c_validation_state.html">CValidationState</a> &amp;state, const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;chainparams, <a class="el" href="class_c_block_index.html">CBlockIndex</a> **ppindex) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validation_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="memitem:ab70c11d94a3f6e5cae415521437ef627"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#ab70c11d94a3f6e5cae415521437ef627">AcceptBlockHeader</a> (const <a class="el" href="class_c_block_header.html">CBlockHeader</a> &amp;block, <a class="el" href="class_c_validation_state.html">CValidationState</a> &amp;state, const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;chainparams, <a class="el" href="class_c_block_index.html">CBlockIndex</a> **ppindex) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
 <tr class="memdesc:ab70c11d94a3f6e5cae415521437ef627"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a block header hasn't already been seen, call CheckBlockHeader on it, ensure that it doesn't descend from an invalid block, and then add it to mapBlockIndex.  <a href="#ab70c11d94a3f6e5cae415521437ef627">More...</a><br /></td></tr>
 <tr class="separator:ab70c11d94a3f6e5cae415521437ef627"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae73c43d5a0296d8972b1fe69da7e10ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#ae73c43d5a0296d8972b1fe69da7e10ff">AcceptBlock</a> (const std::shared_ptr&lt; const <a class="el" href="class_c_block.html">CBlock</a> &gt; &amp;pblock, <a class="el" href="class_c_validation_state.html">CValidationState</a> &amp;state, const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;chainparams, <a class="el" href="class_c_block_index.html">CBlockIndex</a> **ppindex, bool fRequested, const <a class="el" href="struct_c_disk_block_pos.html">CDiskBlockPos</a> *dbp, bool *fNewBlock) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validation_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="memitem:ae73c43d5a0296d8972b1fe69da7e10ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#ae73c43d5a0296d8972b1fe69da7e10ff">AcceptBlock</a> (const std::shared_ptr&lt; const <a class="el" href="class_c_block.html">CBlock</a> &gt; &amp;pblock, <a class="el" href="class_c_validation_state.html">CValidationState</a> &amp;state, const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;chainparams, <a class="el" href="class_c_block_index.html">CBlockIndex</a> **ppindex, bool fRequested, const <a class="el" href="struct_c_disk_block_pos.html">CDiskBlockPos</a> *dbp, bool *fNewBlock) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
 <tr class="memdesc:ae73c43d5a0296d8972b1fe69da7e10ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store block on disk.  <a href="#ae73c43d5a0296d8972b1fe69da7e10ff">More...</a><br /></td></tr>
 <tr class="separator:ae73c43d5a0296d8972b1fe69da7e10ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84c2802e12d40109c2189bfa8a5e0e8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="validation_8cpp.html#aeaef80b01ee5387f474a63ed23c9cc50">DisconnectResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a84c2802e12d40109c2189bfa8a5e0e8f">DisconnectBlock</a> (const <a class="el" href="class_c_block.html">CBlock</a> &amp;block, const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindex, <a class="el" href="class_c_coins_view_cache.html">CCoinsViewCache</a> &amp;view)</td></tr>
 <tr class="memdesc:a84c2802e12d40109c2189bfa8a5e0e8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Undo the effects of this block (with given index) on the UTXO set represented by coins.  <a href="#a84c2802e12d40109c2189bfa8a5e0e8f">More...</a><br /></td></tr>
 <tr class="separator:a84c2802e12d40109c2189bfa8a5e0e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c0c017d41977fe6552ecfd1fc7c887d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a6c0c017d41977fe6552ecfd1fc7c887d">ConnectBlock</a> (const <a class="el" href="class_c_block.html">CBlock</a> &amp;block, <a class="el" href="class_c_validation_state.html">CValidationState</a> &amp;state, <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindex, <a class="el" href="class_c_coins_view_cache.html">CCoinsViewCache</a> &amp;view, const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;chainparams, bool fJustCheck=false)</td></tr>
-<tr class="memdesc:a6c0c017d41977fe6552ecfd1fc7c887d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the effects of this block (with given index) on the UTXO set represented by coins.  <a href="#a6c0c017d41977fe6552ecfd1fc7c887d">More...</a><br /></td></tr>
-<tr class="separator:a6c0c017d41977fe6552ecfd1fc7c887d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06a01f2d89b7a40b5341083aa522a1e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a06a01f2d89b7a40b5341083aa522a1e2">ConnectBlock</a> (const <a class="el" href="class_c_block.html">CBlock</a> &amp;block, <a class="el" href="class_c_validation_state.html">CValidationState</a> &amp;state, <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindex, <a class="el" href="class_c_coins_view_cache.html">CCoinsViewCache</a> &amp;view, const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;chainparams, bool fJustCheck=false) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="memdesc:a06a01f2d89b7a40b5341083aa522a1e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the effects of this block (with given index) on the UTXO set represented by coins.  <a href="#a06a01f2d89b7a40b5341083aa522a1e2">More...</a><br /></td></tr>
+<tr class="separator:a06a01f2d89b7a40b5341083aa522a1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57682556dc35715fba5f0c6075efcc6e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a57682556dc35715fba5f0c6075efcc6e">DisconnectTip</a> (<a class="el" href="class_c_validation_state.html">CValidationState</a> &amp;state, const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;chainparams, <a class="el" href="struct_disconnected_block_transactions.html">DisconnectedBlockTransactions</a> *disconnectpool)</td></tr>
 <tr class="memdesc:a57682556dc35715fba5f0c6075efcc6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect chainActive's tip.  <a href="#a57682556dc35715fba5f0c6075efcc6e">More...</a><br /></td></tr>
 <tr class="separator:a57682556dc35715fba5f0c6075efcc6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c2bc46ff4824c106a100d684fd5f4dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a1c2bc46ff4824c106a100d684fd5f4dd">PreciousBlock</a> (<a class="el" href="class_c_validation_state.html">CValidationState</a> &amp;state, const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;params, <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindex) <a class="el" href="threadsafety_8h.html#a6bb97382864d0bd2cd4dd5191bb03f6c">LOCKS_EXCLUDED</a>(<a class="el" href="validation_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="memitem:a1c2bc46ff4824c106a100d684fd5f4dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a1c2bc46ff4824c106a100d684fd5f4dd">PreciousBlock</a> (<a class="el" href="class_c_validation_state.html">CValidationState</a> &amp;state, const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;params, <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindex) <a class="el" href="threadsafety_8h.html#a6bb97382864d0bd2cd4dd5191bb03f6c">LOCKS_EXCLUDED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
 <tr class="separator:a1c2bc46ff4824c106a100d684fd5f4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a657a2d93faf38567ef34aeb75295ef4e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a657a2d93faf38567ef34aeb75295ef4e">InvalidateBlock</a> (<a class="el" href="class_c_validation_state.html">CValidationState</a> &amp;state, const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;chainparams, <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindex) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validation_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="memitem:a657a2d93faf38567ef34aeb75295ef4e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a657a2d93faf38567ef34aeb75295ef4e">InvalidateBlock</a> (<a class="el" href="class_c_validation_state.html">CValidationState</a> &amp;state, const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;chainparams, <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindex) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
 <tr class="separator:a657a2d93faf38567ef34aeb75295ef4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e35ac867678ce71b05ff271c44bde29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a6e35ac867678ce71b05ff271c44bde29">ResetBlockFailureFlags</a> (<a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindex) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validation_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="memitem:a6e35ac867678ce71b05ff271c44bde29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a6e35ac867678ce71b05ff271c44bde29">ResetBlockFailureFlags</a> (<a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindex) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
 <tr class="separator:a6e35ac867678ce71b05ff271c44bde29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a219bb793d4d3b0a095ccc47c45bc5b83"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a219bb793d4d3b0a095ccc47c45bc5b83">ReplayBlocks</a> (const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;params, <a class="el" href="class_c_coins_view.html">CCoinsView</a> *view)</td></tr>
 <tr class="separator:a219bb793d4d3b0a095ccc47c45bc5b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,29 +159,29 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a14d226df8dd7502d039f98b58f1534d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a14d226df8dd7502d039f98b58f1534d4">ActivateBestChainStep</a> (<a class="el" href="class_c_validation_state.html">CValidationState</a> &amp;state, const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;chainparams, <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindexMostWork, const std::shared_ptr&lt; const <a class="el" href="class_c_block.html">CBlock</a> &gt; &amp;pblock, bool &amp;fInvalidFound, <a class="el" href="class_connect_trace.html">ConnectTrace</a> &amp;connectTrace)</td></tr>
-<tr class="memdesc:a14d226df8dd7502d039f98b58f1534d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to make some progress towards making pindexMostWork the active block.  <a href="#a14d226df8dd7502d039f98b58f1534d4">More...</a><br /></td></tr>
-<tr class="separator:a14d226df8dd7502d039f98b58f1534d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b8212270ad8b00cc1daad6f38623654"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a7b8212270ad8b00cc1daad6f38623654">ConnectTip</a> (<a class="el" href="class_c_validation_state.html">CValidationState</a> &amp;state, const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;chainparams, <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindexNew, const std::shared_ptr&lt; const <a class="el" href="class_c_block.html">CBlock</a> &gt; &amp;pblock, <a class="el" href="class_connect_trace.html">ConnectTrace</a> &amp;connectTrace, <a class="el" href="struct_disconnected_block_transactions.html">DisconnectedBlockTransactions</a> &amp;disconnectpool)</td></tr>
-<tr class="memdesc:a7b8212270ad8b00cc1daad6f38623654"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect a new block to chainActive.  <a href="#a7b8212270ad8b00cc1daad6f38623654">More...</a><br /></td></tr>
-<tr class="separator:a7b8212270ad8b00cc1daad6f38623654"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75381aa4f08cbb957a2158dd852602a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_block_index.html">CBlockIndex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a75381aa4f08cbb957a2158dd852602a8">AddToBlockIndex</a> (const <a class="el" href="class_c_block_header.html">CBlockHeader</a> &amp;block) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validation_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="memitem:afb6986710de5db645a000d4bac55cf9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#afb6986710de5db645a000d4bac55cf9f">ActivateBestChainStep</a> (<a class="el" href="class_c_validation_state.html">CValidationState</a> &amp;state, const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;chainparams, <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindexMostWork, const std::shared_ptr&lt; const <a class="el" href="class_c_block.html">CBlock</a> &gt; &amp;pblock, bool &amp;fInvalidFound, <a class="el" href="class_connect_trace.html">ConnectTrace</a> &amp;connectTrace) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="memdesc:afb6986710de5db645a000d4bac55cf9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to make some progress towards making pindexMostWork the active block.  <a href="#afb6986710de5db645a000d4bac55cf9f">More...</a><br /></td></tr>
+<tr class="separator:afb6986710de5db645a000d4bac55cf9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ac66256eca2e5a25c7484f82b3b50ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a1ac66256eca2e5a25c7484f82b3b50ad">ConnectTip</a> (<a class="el" href="class_c_validation_state.html">CValidationState</a> &amp;state, const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;chainparams, <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindexNew, const std::shared_ptr&lt; const <a class="el" href="class_c_block.html">CBlock</a> &gt; &amp;pblock, <a class="el" href="class_connect_trace.html">ConnectTrace</a> &amp;connectTrace, <a class="el" href="struct_disconnected_block_transactions.html">DisconnectedBlockTransactions</a> &amp;disconnectpool) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="memdesc:a1ac66256eca2e5a25c7484f82b3b50ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect a new block to chainActive.  <a href="#a1ac66256eca2e5a25c7484f82b3b50ad">More...</a><br /></td></tr>
+<tr class="separator:a1ac66256eca2e5a25c7484f82b3b50ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75381aa4f08cbb957a2158dd852602a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_block_index.html">CBlockIndex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a75381aa4f08cbb957a2158dd852602a8">AddToBlockIndex</a> (const <a class="el" href="class_c_block_header.html">CBlockHeader</a> &amp;block) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
 <tr class="separator:a75381aa4f08cbb957a2158dd852602a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab23edc8172cd1b029dbec82bafacd33e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_block_index.html">CBlockIndex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#ab23edc8172cd1b029dbec82bafacd33e">InsertBlockIndex</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;hash) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validation_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="memitem:ab23edc8172cd1b029dbec82bafacd33e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_block_index.html">CBlockIndex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#ab23edc8172cd1b029dbec82bafacd33e">InsertBlockIndex</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;hash) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
 <tr class="memdesc:ab23edc8172cd1b029dbec82bafacd33e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new block index entry for a given block hash.  <a href="#ab23edc8172cd1b029dbec82bafacd33e">More...</a><br /></td></tr>
 <tr class="separator:ab23edc8172cd1b029dbec82bafacd33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48cfb3ace8393f98f940b02876377f97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a48cfb3ace8393f98f940b02876377f97">CheckBlockIndex</a> (const <a class="el" href="struct_consensus_1_1_params.html">Consensus::Params</a> &amp;consensusParams)</td></tr>
 <tr class="memdesc:a48cfb3ace8393f98f940b02876377f97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make various assertions about the state of the block index.  <a href="#a48cfb3ace8393f98f940b02876377f97">More...</a><br /></td></tr>
 <tr class="separator:a48cfb3ace8393f98f940b02876377f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0087944413aa4c30c7ef1644a1ad9f3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a0087944413aa4c30c7ef1644a1ad9f3a">InvalidBlockFound</a> (<a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindex, const <a class="el" href="class_c_validation_state.html">CValidationState</a> &amp;state)</td></tr>
-<tr class="separator:a0087944413aa4c30c7ef1644a1ad9f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5b50c7b3a7604d312946431e7c91bb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_block_index.html">CBlockIndex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#af5b50c7b3a7604d312946431e7c91bb5">FindMostWorkChain</a> () <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validation_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="memitem:aece188b05b5cfe3d67f35992a6fa7d77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#aece188b05b5cfe3d67f35992a6fa7d77">InvalidBlockFound</a> (<a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindex, const <a class="el" href="class_c_validation_state.html">CValidationState</a> &amp;state) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="separator:aece188b05b5cfe3d67f35992a6fa7d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5b50c7b3a7604d312946431e7c91bb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_block_index.html">CBlockIndex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#af5b50c7b3a7604d312946431e7c91bb5">FindMostWorkChain</a> () <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
 <tr class="memdesc:af5b50c7b3a7604d312946431e7c91bb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the tip of the chain with the most work in it, that isn't known to be invalid (it's however far from certain to be valid).  <a href="#af5b50c7b3a7604d312946431e7c91bb5">More...</a><br /></td></tr>
 <tr class="separator:af5b50c7b3a7604d312946431e7c91bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58e0c027d75d7a5f2fc604ce01b93ba2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a58e0c027d75d7a5f2fc604ce01b93ba2">ReceivedBlockTransactions</a> (const <a class="el" href="class_c_block.html">CBlock</a> &amp;block, <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindexNew, const <a class="el" href="struct_c_disk_block_pos.html">CDiskBlockPos</a> &amp;pos, const <a class="el" href="struct_consensus_1_1_params.html">Consensus::Params</a> &amp;consensusParams) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validation_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="memitem:a58e0c027d75d7a5f2fc604ce01b93ba2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a58e0c027d75d7a5f2fc604ce01b93ba2">ReceivedBlockTransactions</a> (const <a class="el" href="class_c_block.html">CBlock</a> &amp;block, <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindexNew, const <a class="el" href="struct_c_disk_block_pos.html">CDiskBlockPos</a> &amp;pos, const <a class="el" href="struct_consensus_1_1_params.html">Consensus::Params</a> &amp;consensusParams) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
 <tr class="memdesc:a58e0c027d75d7a5f2fc604ce01b93ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark a block as having its data received and checked (up to BLOCK_VALID_TRANSACTIONS).  <a href="#a58e0c027d75d7a5f2fc604ce01b93ba2">More...</a><br /></td></tr>
 <tr class="separator:a58e0c027d75d7a5f2fc604ce01b93ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac231f6529bc41aea7917d0716d0c9d1a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#ac231f6529bc41aea7917d0716d0c9d1a">RollforwardBlock</a> (const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindex, <a class="el" href="class_c_coins_view_cache.html">CCoinsViewCache</a> &amp;inputs, const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;params) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validation_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="memitem:ac231f6529bc41aea7917d0716d0c9d1a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#ac231f6529bc41aea7917d0716d0c9d1a">RollforwardBlock</a> (const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindex, <a class="el" href="class_c_coins_view_cache.html">CCoinsViewCache</a> &amp;inputs, const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;params) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
 <tr class="memdesc:ac231f6529bc41aea7917d0716d0c9d1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the effects of a block on the utxo cache, ignoring that it may already have been applied.  <a href="#ac231f6529bc41aea7917d0716d0c9d1a">More...</a><br /></td></tr>
 <tr class="separator:ac231f6529bc41aea7917d0716d0c9d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -273,7 +273,7 @@ Private Attributes</h2></td></tr>
 <p>Store block on disk. </p>
 <p>If dbp is non-nullptr, the file is known to already reside on disk </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03456">3456</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03457">3457</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -329,12 +329,13 @@ Here is the caller graph for this function:</div>
 
 <p>If a block header hasn't already been seen, call CheckBlockHeader on it, ensure that it doesn't descend from an invalid block, and then add it to mapBlockIndex. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03354">3354</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03355">3355</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_ab70c11d94a3f6e5cae415521437ef627_cgraph.svg" width="1182" height="1980"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_ab70c11d94a3f6e5cae415521437ef627_cgraph.svg" width="1160" height="1955"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -386,20 +387,22 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_a5a24c6da53ff4b725e2d1c8b4af007fe_cgraph.svg" width="1495" height="2144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_a5a24c6da53ff4b725e2d1c8b4af007fe_cgraph.svg" width="1495" height="2203"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_a5a24c6da53ff4b725e2d1c8b4af007fe_icgraph.svg" width="1972" height="1976"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_a5a24c6da53ff4b725e2d1c8b4af007fe_icgraph.svg" width="1972" height="1976"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a14d226df8dd7502d039f98b58f1534d4"></a>
+<a class="anchor" id="afb6986710de5db645a000d4bac55cf9f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -463,7 +466,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_a14d226df8dd7502d039f98b58f1534d4_cgraph.svg" width="2020" height="1208"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_afb6986710de5db645a000d4bac55cf9f_cgraph.svg" width="2020" height="1208"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -491,7 +495,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02908">2908</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02909">2909</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -527,7 +531,7 @@ Here is the call graph for this function:</div>
 <p>Make various assertions about the state of the block index. </p>
 <p>By default this only executes fully when using the Regtest chain; see: fCheckBlockIndex. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04476">4476</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04477">4477</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -538,7 +542,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a6c0c017d41977fe6552ecfd1fc7c887d"></a>
+<a class="anchor" id="a06a01f2d89b7a40b5341083aa522a1e2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -587,27 +591,29 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Apply the effects of this block (with given index) on the UTXO set represented by coins. </p>
-<p>Validity checks that depend on the UTXO set are also done; <a class="el" href="class_c_chain_state.html#a6c0c017d41977fe6552ecfd1fc7c887d" title="Apply the effects of this block (with given index) on the UTXO set represented by coins...">ConnectBlock()</a> can fail if those validity checks fail (among other reasons). </p>
+<p>Validity checks that depend on the UTXO set are also done; <a class="el" href="class_c_chain_state.html#a06a01f2d89b7a40b5341083aa522a1e2" title="Apply the effects of this block (with given index) on the UTXO set represented by coins...">ConnectBlock()</a> can fail if those validity checks fail (among other reasons). </p>
 
 <p>Definition at line <a class="el" href="validation_8cpp_source.html#l01805">1805</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_a6c0c017d41977fe6552ecfd1fc7c887d_cgraph.svg" width="1230" height="2791"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_a06a01f2d89b7a40b5341083aa522a1e2_cgraph.svg" width="1230" height="2743"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_a6c0c017d41977fe6552ecfd1fc7c887d_icgraph.svg" width="1174" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_a06a01f2d89b7a40b5341083aa522a1e2_icgraph.svg" width="1174" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a7b8212270ad8b00cc1daad6f38623654"></a>
+<a class="anchor" id="a1ac66256eca2e5a25c7484f82b3b50ad"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -672,7 +678,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_a7b8212270ad8b00cc1daad6f38623654_cgraph.svg" width="1172" height="1295"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_a1ac66256eca2e5a25c7484f82b3b50ad_cgraph.svg" width="1172" height="1295"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -832,7 +839,7 @@ Here is the call graph for this function:</div>
 
 <p>Create a new block index entry for a given block hash. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03805">3805</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03806">3806</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -885,13 +892,14 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_a657a2d93faf38567ef34aeb75295ef4e_icgraph.svg" width="1854" height="1794"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_a657a2d93faf38567ef34aeb75295ef4e_icgraph.svg" width="1854" height="1794"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a0087944413aa4c30c7ef1644a1ad9f3a"></a>
+<a class="anchor" id="aece188b05b5cfe3d67f35992a6fa7d77"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -928,7 +936,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_a0087944413aa4c30c7ef1644a1ad9f3a_cgraph.svg" width="446" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_aece188b05b5cfe3d67f35992a6fa7d77_cgraph.svg" width="446" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -958,7 +967,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03825">3825</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03826">3826</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -990,7 +999,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04324">4324</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04325">4325</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1043,14 +1052,16 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_a1c2bc46ff4824c106a100d684fd5f4dd_cgraph.svg" width="1931" height="2092"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_a1c2bc46ff4824c106a100d684fd5f4dd_cgraph.svg" width="1931" height="1843"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_a1c2bc46ff4824c106a100d684fd5f4dd_icgraph.svg" width="1840" height="1794"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_a1c2bc46ff4824c106a100d684fd5f4dd_icgraph.svg" width="1840" height="1794"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1135,7 +1146,7 @@ Here is the caller graph for this function:</div>
 
 <p>Mark a block as having its data received and checked (up to BLOCK_VALID_TRANSACTIONS). </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02945">2945</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02946">2946</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1170,7 +1181,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04088">4088</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04089">4089</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1202,7 +1213,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02870">2870</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02871">2871</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1214,7 +1225,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_a6e35ac867678ce71b05ff271c44bde29_icgraph.svg" width="1916" height="1791"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_a6e35ac867678ce71b05ff271c44bde29_icgraph.svg" width="1916" height="1791"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1234,12 +1246,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04157">4157</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04158">4158</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_afc0586502e4dd4092c4a0707d329f6eb_cgraph.svg" width="1386" height="1640"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_afc0586502e4dd4092c4a0707d329f6eb_cgraph.svg" width="1386" height="1640"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1292,7 +1305,7 @@ Here is the caller graph for this function:</div>
 
 <p>Apply the effects of a block on the utxo cache, ignoring that it may already have been applied. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04068">4068</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04069">4069</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1316,7 +1329,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04267">4267</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04268">4268</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1562,7 +1575,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 25 2018 22:06:13 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 25 2018 22:33:52 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

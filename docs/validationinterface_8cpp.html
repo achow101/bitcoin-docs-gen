@@ -99,7 +99,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#include &lt;<a class="el" href="validationinterface_8h_source.html">validationinterface.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="block_8h_source.html">primitives/block.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="scheduler_8h_source.html">scheduler.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="sync_8h_source.html">sync.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="txmempool_8h_source.html">txmempool.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="util_8h_source.html">util.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="validation_8h_source.html">validation.h</a>&gt;</code><br />
@@ -110,7 +109,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for validationinterface.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8cpp__incl.svg" width="3959" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8cpp__incl.svg" width="4478" height="515"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="validationinterface_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -158,12 +158,13 @@ Functions</h2></td></tr>
 <p>Pushes a function to callback onto the notification queue, guaranteeing any callbacks generated prior to now are finished when the function is called. </p>
 <p>Be very careful blocking on func to be called if any locks are held - validation interface clients may not be able to make progress as they often wait for things like cs_main, so blocking until func is called with cs_main will result in a deadlock (that DEBUG_LOCKORDER will miss). </p>
 
-<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00114">114</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00113">113</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8cpp_a581c542f0900a185a20a25d7df4b9c78_icgraph.svg" width="2062" height="2040"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8cpp_a581c542f0900a185a20a25d7df4b9c78_icgraph.svg" width="2062" height="2040"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -182,12 +183,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00070">70</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00069">69</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8cpp_a0aaad62c8654cb1868295e0682b05866_icgraph.svg" width="2538" height="1899"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8cpp_a0aaad62c8654cb1868295e0682b05866_icgraph.svg" width="2538" height="1899"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -209,7 +211,7 @@ Here is the caller graph for this function:</div>
 
 <p>Register a wallet to receive updates from core. </p>
 
-<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00075">75</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00074">74</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -242,7 +244,7 @@ Here is the caller graph for this function:</div>
 
 <p>This is a synonym for the following, which asserts certain locks are not held: std::promise&lt;void&gt; promise; CallFunctionInValidationInterfaceQueue([&amp;promise] { promise.set_value(); }); promise.get_future().wait();. </p>
 
-<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00118">118</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00117">117</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -254,7 +256,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8cpp_aef788fda8c339bb297d6f97f431dfa88_icgraph.svg" width="1843" height="2044"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8cpp_aef788fda8c339bb297d6f97f431dfa88_icgraph.svg" width="1843" height="2044"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -275,7 +278,7 @@ Here is the caller graph for this function:</div>
 
 <p>Unregister all wallets from core. </p>
 
-<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00099">99</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00098">98</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -302,7 +305,7 @@ Here is the caller graph for this function:</div>
 
 <p>Unregister a wallet from core. </p>
 
-<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00087">87</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00086">86</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -323,7 +326,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 25 2018 22:06:12 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 25 2018 22:33:52 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

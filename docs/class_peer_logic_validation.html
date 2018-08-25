@@ -136,9 +136,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a04dab16e6310bf18d432111cb6b126ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_peer_logic_validation.html#a04dab16e6310bf18d432111cb6b126ad">SendMessages</a> (<a class="el" href="class_c_node.html">CNode</a> *pto) override <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(pto-&gt; cs_sendProcessing)</td></tr>
 <tr class="memdesc:a04dab16e6310bf18d432111cb6b126ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send queued protocol messages to be sent to a give node.  <a href="#a04dab16e6310bf18d432111cb6b126ad">More...</a><br /></td></tr>
 <tr class="separator:a04dab16e6310bf18d432111cb6b126ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a847dcca3d1a4475ba1bfcaae6da76bad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_peer_logic_validation.html#a847dcca3d1a4475ba1bfcaae6da76bad">ConsiderEviction</a> (<a class="el" href="class_c_node.html">CNode</a> *pto, int64_t time_in_seconds)</td></tr>
-<tr class="memdesc:a847dcca3d1a4475ba1bfcaae6da76bad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consider evicting an outbound peer based on the amount of time they've been behind our tip.  <a href="#a847dcca3d1a4475ba1bfcaae6da76bad">More...</a><br /></td></tr>
-<tr class="separator:a847dcca3d1a4475ba1bfcaae6da76bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af87f0e0b6f4103d1c6cb35c575769ae2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_peer_logic_validation.html#af87f0e0b6f4103d1c6cb35c575769ae2">ConsiderEviction</a> (<a class="el" href="class_c_node.html">CNode</a> *pto, int64_t time_in_seconds) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="memdesc:af87f0e0b6f4103d1c6cb35c575769ae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consider evicting an outbound peer based on the amount of time they've been behind our tip.  <a href="#af87f0e0b6f4103d1c6cb35c575769ae2">More...</a><br /></td></tr>
+<tr class="separator:af87f0e0b6f4103d1c6cb35c575769ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9ba8b8657346c1ce86e061d5fdaeb53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_peer_logic_validation.html#ad9ba8b8657346c1ce86e061d5fdaeb53">CheckForStaleTipAndEvictPeers</a> (const <a class="el" href="struct_consensus_1_1_params.html">Consensus::Params</a> &amp;consensusParams)</td></tr>
 <tr class="memdesc:ad9ba8b8657346c1ce86e061d5fdaeb53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evict extra outbound peers.  <a href="#ad9ba8b8657346c1ce86e061d5fdaeb53">More...</a><br /></td></tr>
 <tr class="separator:ad9ba8b8657346c1ce86e061d5fdaeb53"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -373,7 +373,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a847dcca3d1a4475ba1bfcaae6da76bad"></a>
+<a class="anchor" id="af87f0e0b6f4103d1c6cb35c575769ae2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -404,14 +404,16 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_peer_logic_validation_a847dcca3d1a4475ba1bfcaae6da76bad_cgraph.svg" width="1504" height="1240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_peer_logic_validation_af87f0e0b6f4103d1c6cb35c575769ae2_cgraph.svg" width="1504" height="1240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_peer_logic_validation_a847dcca3d1a4475ba1bfcaae6da76bad_icgraph.svg" width="352" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_peer_logic_validation_af87f0e0b6f4103d1c6cb35c575769ae2_icgraph.svg" width="352" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -675,7 +677,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_peer_logic_validation_a04dab16e6310bf18d432111cb6b126ad_cgraph.svg" width="1134" height="2255"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_peer_logic_validation_a04dab16e6310bf18d432111cb6b126ad_cgraph.svg" width="1134" height="2255"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -812,7 +815,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 25 2018 22:06:14 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 25 2018 22:33:54 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
