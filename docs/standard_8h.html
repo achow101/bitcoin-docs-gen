@@ -163,9 +163,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a998a2df1a42dc68c4cffa9933aa713c2"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="standard_8h.html#a998a2df1a42dc68c4cffa9933aa713c2">GetTxnOutputType</a> (<a class="el" href="standard_8h.html#a750f89f617f934820d5371be790e09ad">txnouttype</a> t)</td></tr>
 <tr class="memdesc:a998a2df1a42dc68c4cffa9933aa713c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of a txnouttype as a C string, or nullptr if unknown.  <a href="#a998a2df1a42dc68c4cffa9933aa713c2">More...</a><br /></td></tr>
 <tr class="separator:a998a2df1a42dc68c4cffa9933aa713c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81899059ee66f695aaf96a07d5e2ebdc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="standard_8h.html#a81899059ee66f695aaf96a07d5e2ebdc">Solver</a> (const <a class="el" href="class_c_script.html">CScript</a> &amp;scriptPubKey, <a class="el" href="standard_8h.html#a750f89f617f934820d5371be790e09ad">txnouttype</a> &amp;typeRet, std::vector&lt; std::vector&lt; unsigned char &gt; &gt; &amp;vSolutionsRet)</td></tr>
-<tr class="memdesc:a81899059ee66f695aaf96a07d5e2ebdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a scriptPubKey and identify script type for standard scripts.  <a href="#a81899059ee66f695aaf96a07d5e2ebdc">More...</a><br /></td></tr>
-<tr class="separator:a81899059ee66f695aaf96a07d5e2ebdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a3369fceeb25173e2faa4a7ebc7a4e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="standard_8h.html#a750f89f617f934820d5371be790e09ad">txnouttype</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="standard_8h.html#a5a3369fceeb25173e2faa4a7ebc7a4e4">Solver</a> (const <a class="el" href="class_c_script.html">CScript</a> &amp;scriptPubKey, std::vector&lt; std::vector&lt; unsigned char &gt;&gt; &amp;vSolutionsRet)</td></tr>
+<tr class="memdesc:a5a3369fceeb25173e2faa4a7ebc7a4e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a scriptPubKey and identify script type for standard scripts.  <a href="#a5a3369fceeb25173e2faa4a7ebc7a4e4">More...</a><br /></td></tr>
+<tr class="separator:a5a3369fceeb25173e2faa4a7ebc7a4e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a951f7e601746ae076afdf3169ecca2fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="standard_8h.html#a951f7e601746ae076afdf3169ecca2fc">ExtractDestination</a> (const <a class="el" href="class_c_script.html">CScript</a> &amp;scriptPubKey, <a class="el" href="standard_8h.html#ae9ce1f2e14383eb495b964486ac7273c">CTxDestination</a> &amp;addressRet)</td></tr>
 <tr class="memdesc:a951f7e601746ae076afdf3169ecca2fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a standard scriptPubKey for the destination address.  <a href="#a951f7e601746ae076afdf3169ecca2fc">More...</a><br /></td></tr>
 <tr class="separator:a951f7e601746ae076afdf3169ecca2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -284,12 +284,13 @@ Variables</h2></td></tr>
 <p>Parse a standard scriptPubKey for the destination address. </p>
 <p>Assigns result to the addressRet parameter and returns true if successful. For multisig scripts, instead use ExtractDestinations. Currently only works for P2PK, P2PKH, P2SH, P2WPKH, and P2WSH scripts. </p>
 
-<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00165">165</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
+<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00155">155</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="standard_8h_a951f7e601746ae076afdf3169ecca2fc_cgraph.svg" width="1615" height="559"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="standard_8h_a951f7e601746ae076afdf3169ecca2fc_cgraph.svg" width="1615" height="559"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -342,12 +343,13 @@ Here is the caller graph for this function:</div>
 <p>For multisig scripts, this populates the addressRet vector with the pubkey IDs and nRequiredRet with the n required to spend. For other destinations, addressRet is populated with a single value and nRequiredRet is set to 1. Returns true if successful. Currently does not extract address from pay-to-witness scripts.</p>
 <p>Note: this function confuses destinations (a subset of CScripts that are encodable as an address) with key identifiers (of keys involved in a <a class="el" href="class_c_script.html" title="Serialized script, used inside transaction inputs and outputs. ">CScript</a>), and its use should be phased out. </p>
 
-<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00212">212</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
+<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00199">199</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="standard_8h_a49e36ddce090cc66aba405c0755c8be7_cgraph.svg" width="1867" height="822"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="standard_8h_a49e36ddce090cc66aba405c0755c8be7_cgraph.svg" width="1867" height="822"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -377,7 +379,7 @@ Here is the caller graph for this function:</div>
 <p>Generate a Bitcoin scriptPubKey for the given CTxDestination. </p>
 <p>Returns a P2PKH script for a <a class="el" href="class_c_key_i_d.html" title="A reference to a CKey: the Hash160 of its serialized public key. ">CKeyID</a> destination, a P2SH script for a <a class="el" href="class_c_script_i_d.html" title="A reference to a CScript: the Hash160 of its serialization (see script.h) ">CScriptID</a>, and an empty script for <a class="el" href="class_c_no_destination.html">CNoDestination</a>. </p>
 
-<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00301">301</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
+<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00288">288</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -414,7 +416,7 @@ Here is the caller graph for this function:</div>
 
 <p>Generate a multisig script. </p>
 
-<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00314">314</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
+<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00301">301</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -448,7 +450,7 @@ Here is the caller graph for this function:</div>
 
 <p>Generate a P2PK script for the given pubkey. </p>
 
-<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00309">309</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
+<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00296">296</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -484,12 +486,13 @@ Here is the caller graph for this function:</div>
 <p>If the redeem script is P2PK or P2PKH, this returns a P2WPKH script, otherwise it returns a P2WSH script.</p>
 <p>TODO: replace calls to GetScriptForWitness with GetScriptForDestination using the various witness-specific CTxDestination subtypes. </p>
 
-<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00325">325</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
+<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00312">312</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="standard_8h_a9230738c0c1cfbe24edfd385e502ad83_cgraph.svg" width="1403" height="544"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="standard_8h_a9230738c0c1cfbe24edfd385e502ad83_cgraph.svg" width="1403" height="544"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -552,7 +555,7 @@ Here is the caller graph for this function:</div>
 
 <p>Check whether a CTxDestination is a <a class="el" href="class_c_no_destination.html">CNoDestination</a>. </p>
 
-<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00339">339</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
+<p>Definition at line <a class="el" href="standard_8cpp_source.html#l00324">324</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -563,12 +566,12 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a81899059ee66f695aaf96a07d5e2ebdc"></a>
+<a class="anchor" id="a5a3369fceeb25173e2faa4a7ebc7a4e4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Solver </td>
+          <td class="memname"><a class="el" href="standard_8h.html#a750f89f617f934820d5371be790e09ad">txnouttype</a> Solver </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_c_script.html">CScript</a> &amp;&#160;</td>
           <td class="paramname"><em>scriptPubKey</em>, </td>
@@ -576,13 +579,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="standard_8h.html#a750f89f617f934820d5371be790e09ad">txnouttype</a> &amp;&#160;</td>
-          <td class="paramname"><em>typeRet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; std::vector&lt; unsigned char &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; unsigned char &gt;&gt; &amp;&#160;</td>
           <td class="paramname"><em>vSolutionsRet</em>&#160;</td>
         </tr>
         <tr>
@@ -598,26 +595,27 @@ Here is the caller graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">scriptPubKey</td><td>Script to parse </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">typeRet</td><td>The script type </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">vSolutionsRet</td><td>Vector of parsed pubkeys and hashes </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if script matches standard template </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The script type. TX_NONSTANDARD represents a failed solve. </dd></dl>
 
 <p>Definition at line <a class="el" href="standard_8cpp_source.html#l00090">90</a> of file <a class="el" href="standard_8cpp_source.html">standard.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="standard_8h_a81899059ee66f695aaf96a07d5e2ebdc_cgraph.svg" width="924" height="314"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="standard_8h_a5a3369fceeb25173e2faa4a7ebc7a4e4_cgraph.svg" width="924" height="314"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="standard_8h_a81899059ee66f695aaf96a07d5e2ebdc_icgraph.svg" width="1535" height="1771"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="standard_8h_a5a3369fceeb25173e2faa4a7ebc7a4e4_icgraph.svg" width="1535" height="1771"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -660,7 +658,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 25 2018 14:56:06 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 25 2018 15:42:51 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
