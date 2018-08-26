@@ -569,7 +569,7 @@ var searchData=
   ['sighaslowr',['SigHasLowR',['../key_8cpp.html#ac9ec599027c6b68a87ebd788be2a611c',1,'key.cpp']]],
   ['siglen',['siglen',['../structbenchmark__verify__t.html#a75e2235d538ab592d540c45118218843',1,'benchmark_verify_t']]],
   ['sigma0',['Sigma0',['../hash__impl_8h.html#a613f88ad88919b6ed21ff223070f9a21',1,'Sigma0():&#160;hash_impl.h'],['../hash__impl_8h.html#a672bd39bdf2f6dc295a23ddd109175ff',1,'sigma0():&#160;hash_impl.h']]],
-  ['sigma1',['sigma1',['../hash__impl_8h.html#a0347251dc63b7abe5d4c500544c24a97',1,'sigma1():&#160;hash_impl.h'],['../hash__impl_8h.html#a6d34508d6d962274083fcd992fb4e340',1,'Sigma1():&#160;hash_impl.h']]],
+  ['sigma1',['Sigma1',['../hash__impl_8h.html#a6d34508d6d962274083fcd992fb4e340',1,'Sigma1():&#160;hash_impl.h'],['../hash__impl_8h.html#a0347251dc63b7abe5d4c500544c24a97',1,'sigma1():&#160;hash_impl.h']]],
   ['sign',['Sign',['../class_c_key.html#adb8d6c2037396a4d4f0bc90a447613d3',1,'CKey::Sign()'],['../classorg_1_1bitcoin_1_1_native_secp256k1.html#aa8223a4dd78910bd0d2b150184d4a294',1,'org.bitcoin.NativeSecp256k1.sign()']]],
   ['sign_2ecpp',['sign.cpp',['../sign_8cpp.html',1,'']]],
   ['sign_2eh',['sign.h',['../sign_8h.html',1,'']]],

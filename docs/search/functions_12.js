@@ -106,7 +106,7 @@ var searchData=
   ['removeconflicts',['removeConflicts',['../class_c_tx_mem_pool.html#a01aa5f8ce16839bfbaacf67f40fe461d',1,'CTxMemPool']]],
   ['removeentry',['removeEntry',['../class_send_coins_dialog.html#aabd82a79bd2358493f36425f1d62136b',1,'SendCoinsDialog::removeEntry()'],['../class_send_coins_entry.html#a9105a4f91781f96b91a1da65da9032bf',1,'SendCoinsEntry::removeEntry()'],['../struct_disconnected_block_transactions.html#a390636fac0e48e88530aa83f664857f7',1,'DisconnectedBlockTransactions::removeEntry()']]],
   ['removeforblock',['removeForBlock',['../class_c_tx_mem_pool.html#af0d277f190f134638cb0aa18e2099094',1,'CTxMemPool::removeForBlock()'],['../struct_disconnected_block_transactions.html#a8021d44f25f2a8d1155ade49f076a2fa',1,'DisconnectedBlockTransactions::removeForBlock()']]],
-  ['removeforreorg',['removeForReorg',['../class_c_tx_mem_pool.html#acf12e024f4d6d5c0437227bc419c28fb',1,'CTxMemPool']]],
+  ['removeforreorg',['removeForReorg',['../class_c_tx_mem_pool.html#a14d49e10e7c1a12335bf983891c1ed07',1,'CTxMemPool']]],
   ['removelocal',['RemoveLocal',['../net_8cpp.html#a298d283732067adcbd421b66327413f8',1,'RemoveLocal(const CService &amp;addr):&#160;net.cpp'],['../net_8h.html#a298d283732067adcbd421b66327413f8',1,'RemoveLocal(const CService &amp;addr):&#160;net.cpp']]],
   ['removeprunedfunds',['removeprunedfunds',['../rpcdump_8cpp.html#a85478b0b9837a3e5467dce66fcb5ffb0',1,'removeprunedfunds(const JSONRPCRequest &amp;request):&#160;rpcdump.cpp'],['../rpcwallet_8cpp.html#a85478b0b9837a3e5467dce66fcb5ffb0',1,'removeprunedfunds(const JSONRPCRequest &amp;request):&#160;rpcdump.cpp']]],
   ['removerecursive',['removeRecursive',['../class_c_tx_mem_pool.html#a1bdc49203ca7654d8508c356bcbca47e',1,'CTxMemPool']]],

@@ -154,8 +154,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abf809595791a12fea4b376f5672a30ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bdc49203ca7654d8508c356bcbca47e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool.html#a1bdc49203ca7654d8508c356bcbca47e">removeRecursive</a> (const <a class="el" href="class_c_transaction.html">CTransaction</a> &amp;tx, <a class="el" href="txmempool_8h.html#a2bc6653552b5871101b6cbefdbaf251f">MemPoolRemovalReason</a> reason=<a class="el" href="txmempool_8h.html#a2bc6653552b5871101b6cbefdbaf251fa696b031073e74bf2cb98e5ef201d4aa3">MemPoolRemovalReason::UNKNOWN</a>)</td></tr>
 <tr class="separator:a1bdc49203ca7654d8508c356bcbca47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf12e024f4d6d5c0437227bc419c28fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool.html#acf12e024f4d6d5c0437227bc419c28fb">removeForReorg</a> (const <a class="el" href="class_c_coins_view_cache.html">CCoinsViewCache</a> *pcoins, unsigned int nMemPoolHeight, int <a class="el" href="bitcoin-tx_8cpp.html#ac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>)</td></tr>
-<tr class="separator:acf12e024f4d6d5c0437227bc419c28fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d49e10e7c1a12335bf983891c1ed07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool.html#a14d49e10e7c1a12335bf983891c1ed07">removeForReorg</a> (const <a class="el" href="class_c_coins_view_cache.html">CCoinsViewCache</a> *pcoins, unsigned int nMemPoolHeight, int <a class="el" href="bitcoin-tx_8cpp.html#ac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="separator:a14d49e10e7c1a12335bf983891c1ed07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01aa5f8ce16839bfbaacf67f40fe461d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool.html#a01aa5f8ce16839bfbaacf67f40fe461d">removeConflicts</a> (const <a class="el" href="class_c_transaction.html">CTransaction</a> &amp;tx) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="class_c_tx_mem_pool.html#ac7ee8c06837c7d2688e2d7e3d071bdbb">cs</a>)</td></tr>
 <tr class="separator:a01aa5f8ce16839bfbaacf67f40fe461d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0d277f190f134638cb0aa18e2099094"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool.html#af0d277f190f134638cb0aa18e2099094">removeForBlock</a> (const std::vector&lt; <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &gt; &amp;vtx, unsigned int nBlockHeight)</td></tr>
@@ -336,7 +336,7 @@ Private Attributes</h2></td></tr>
 <p>Computational limits:</p>
 <p>Updating all in-mempool ancestors of a newly added transaction can be slow, if no bound exists on how many in-mempool ancestors there may be. <a class="el" href="class_c_tx_mem_pool.html#a8b15745bfd755afcacad8befd752b270" title="Try to calculate all in-mempool ancestors of entry. ">CalculateMemPoolAncestors()</a> takes configurable limits that are designed to prevent these calculations from being too CPU intensive. </p>
 
-<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00440">440</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00441">441</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="ab8c5d7b49c7e2576e7da2cb604fc96dc"></a>
 <div class="memitem">
@@ -356,7 +356,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00503">503</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00504">504</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
 
 </div>
 </div>
@@ -370,7 +370,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00484">484</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00485">485</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
 
 </div>
 </div>
@@ -384,7 +384,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00497">497</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00498">498</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
 
 </div>
 </div>
@@ -398,7 +398,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00489">489</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00490">490</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
 
 </div>
 </div>
@@ -420,7 +420,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00510">510</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00511">511</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
 
 </div>
 </div>
@@ -552,8 +552,7 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a511cf93b8eeae9a7005f632921b0d623_icgraph.svg" width="2700" height="1694"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a511cf93b8eeae9a7005f632921b0d623_icgraph.svg" width="2700" height="1694"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -635,8 +634,7 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a9e6d4b7821204fcebb0758bc79ec69b6_icgraph.svg" width="2675" height="1694"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a9e6d4b7821204fcebb0758bc79ec69b6_icgraph.svg" width="2675" height="1694"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -781,8 +779,7 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a8b15745bfd755afcacad8befd752b270_icgraph.svg" width="1883" height="1878"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a8b15745bfd755afcacad8befd752b270_icgraph.svg" width="1883" height="1878"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -817,8 +814,7 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_ad74247cc4eb672fb9063d4e9503f4cf0_icgraph.svg" width="399" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_ad74247cc4eb672fb9063d4e9503f4cf0_icgraph.svg" width="399" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -874,8 +870,7 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a11dea05121ab8321e1d1f1a21ec5c9ac_icgraph.svg" width="990" height="63"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a11dea05121ab8321e1d1f1a21ec5c9ac_icgraph.svg" width="990" height="63"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -934,8 +929,7 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_ad1017726b774f953e8dacb0ec69c3cf8_icgraph.svg" width="1458" height="274"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_ad1017726b774f953e8dacb0ec69c3cf8_icgraph.svg" width="1458" height="274"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -963,13 +957,12 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00641">641</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00642">642</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a93b2aa8c01fa291d183a82a9e0beeb35_icgraph.svg" width="1976" height="2160"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a93b2aa8c01fa291d183a82a9e0beeb35_icgraph.svg" width="1976" height="2160"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -1023,8 +1016,7 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a2d0264d532734c03f2211e440f9532cf_icgraph.svg" width="2587" height="1640"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a2d0264d532734c03f2211e440f9532cf_icgraph.svg" width="2587" height="1640"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -1075,8 +1067,7 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a2015d67e9fdf55397051620dda9748d1_icgraph.svg" width="690" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a2015d67e9fdf55397051620dda9748d1_icgraph.svg" width="690" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -1111,8 +1102,7 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a56f7bb294117be90abcde1d915eefdd3_icgraph.svg" width="2070" height="1838"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a56f7bb294117be90abcde1d915eefdd3_icgraph.svg" width="2070" height="1838"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -1144,8 +1134,7 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a8ef17a0d4768188418f718fb5e97d7ac_icgraph.svg" width="1924" height="1702"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a8ef17a0d4768188418f718fb5e97d7ac_icgraph.svg" width="1924" height="1702"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -1172,7 +1161,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00635">635</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00636">636</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1337,8 +1326,7 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a9a2c5f7486264d78c0484d34c557b80e_icgraph.svg" width="2702" height="1694"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a9a2c5f7486264d78c0484d34c557b80e_icgraph.svg" width="2702" height="1694"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -1394,8 +1382,7 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a6b37a6b649aac008a68ce97fa00d18ff_icgraph.svg" width="1802" height="1790"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a6b37a6b649aac008a68ce97fa00d18ff_icgraph.svg" width="1802" height="1790"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -1464,8 +1451,7 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a076041ea11b38722d1419c1640bf6ac4_icgraph.svg" width="1882" height="2018"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a076041ea11b38722d1419c1640bf6ac4_icgraph.svg" width="1882" height="2018"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -1529,8 +1515,7 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a01aa5f8ce16839bfbaacf67f40fe461d_icgraph.svg" width="718" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a01aa5f8ce16839bfbaacf67f40fe461d_icgraph.svg" width="718" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -1575,14 +1560,13 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_af0d277f190f134638cb0aa18e2099094_icgraph.svg" width="455" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_af0d277f190f134638cb0aa18e2099094_icgraph.svg" width="455" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="acf12e024f4d6d5c0437227bc419c28fb"></a>
+<a class="anchor" id="a14d49e10e7c1a12335bf983891c1ed07"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1617,7 +1601,7 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_acf12e024f4d6d5c0437227bc419c28fb_cgraph.svg" width="1356" height="1532"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a14d49e10e7c1a12335bf983891c1ed07_cgraph.svg" width="1351" height="1519"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -1625,7 +1609,7 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_acf12e024f4d6d5c0437227bc419c28fb_icgraph.svg" width="2711" height="1694"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a14d49e10e7c1a12335bf983891c1ed07_icgraph.svg" width="2711" height="1694"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -1668,8 +1652,7 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a1bdc49203ca7654d8508c356bcbca47e_icgraph.svg" width="2786" height="1607"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a1bdc49203ca7654d8508c356bcbca47e_icgraph.svg" width="2786" height="1607"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -1788,7 +1771,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00533">533</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00534">534</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1820,7 +1803,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00629">629</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00630">630</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -2239,8 +2222,7 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a0cdc801826e5b27d3d41ac9084711682_icgraph.svg" width="2732" height="1694"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a0cdc801826e5b27d3d41ac9084711682_icgraph.svg" width="2732" height="1694"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -2265,7 +2247,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00451">451</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00452">452</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
 
 </div>
 </div>
@@ -2289,7 +2271,7 @@ Here is the caller graph for this function:</div>
 
 <p>sum of dynamic memory usage of all the map elements (NOT the maps themselves) </p>
 
-<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00448">448</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00449">449</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
 
 </div>
 </div>
@@ -2311,7 +2293,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00486">486</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00487">487</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
 
 </div>
 </div>
@@ -2333,7 +2315,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00450">450</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00451">451</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
 
 </div>
 </div>
@@ -2347,7 +2329,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00520">520</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00521">521</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
 
 </div>
 </div>
@@ -2369,7 +2351,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00511">511</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00512">512</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
 
 </div>
 </div>
@@ -2391,7 +2373,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00445">445</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00446">446</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
 
 </div>
 </div>
@@ -2405,7 +2387,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00653">653</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00654">654</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
 
 </div>
 </div>
@@ -2419,7 +2401,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00654">654</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00655">655</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
 
 </div>
 </div>
@@ -2443,7 +2425,7 @@ Here is the caller graph for this function:</div>
 
 <p>Used by getblocktemplate to trigger CreateNewBlock() invocation. </p>
 
-<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00444">444</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00445">445</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
 
 </div>
 </div>
@@ -2465,7 +2447,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00458">458</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00459">459</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
 
 </div>
 </div>
@@ -2489,7 +2471,7 @@ Here is the caller graph for this function:</div>
 
 <p>minimum fee to get into the pool, decreases exponentially </p>
 
-<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00452">452</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00453">453</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
 
 </div>
 </div>
@@ -2513,7 +2495,7 @@ Here is the caller graph for this function:</div>
 
 <p>sum of all mempool tx's virtual sizes. Differs from serialized tx size since witness data is discounted. Defined in BIP 141. </p>
 
-<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00447">447</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00448">448</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
 
 </div>
 </div>
@@ -2529,7 +2511,7 @@ Here is the caller graph for this function:</div>
 
 <p>All tx witness hashes/entries in mapTx, in random order. </p>
 
-<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00490">490</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00491">491</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
 
 </div>
 </div>
@@ -2540,7 +2522,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 25 2018 22:33:53 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Aug 26 2018 10:40:59 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

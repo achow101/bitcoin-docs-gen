@@ -141,7 +141,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="class_c_tx_mem_pool.html#a42fa7d41a45562d02e356f2e7708bb02">queryHashes</a>(std::vector&lt; uint256 &gt; &amp;vtxid)</td><td class="entry"><a class="el" href="class_c_tx_mem_pool.html">CTxMemPool</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_c_tx_mem_pool.html#a01aa5f8ce16839bfbaacf67f40fe461d">removeConflicts</a>(const CTransaction &amp;tx) EXCLUSIVE_LOCKS_REQUIRED(cs)</td><td class="entry"><a class="el" href="class_c_tx_mem_pool.html">CTxMemPool</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_c_tx_mem_pool.html#af0d277f190f134638cb0aa18e2099094">removeForBlock</a>(const std::vector&lt; CTransactionRef &gt; &amp;vtx, unsigned int nBlockHeight)</td><td class="entry"><a class="el" href="class_c_tx_mem_pool.html">CTxMemPool</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_c_tx_mem_pool.html#acf12e024f4d6d5c0437227bc419c28fb">removeForReorg</a>(const CCoinsViewCache *pcoins, unsigned int nMemPoolHeight, int flags)</td><td class="entry"><a class="el" href="class_c_tx_mem_pool.html">CTxMemPool</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_c_tx_mem_pool.html#a14d49e10e7c1a12335bf983891c1ed07">removeForReorg</a>(const CCoinsViewCache *pcoins, unsigned int nMemPoolHeight, int flags) EXCLUSIVE_LOCKS_REQUIRED(cs_main)</td><td class="entry"><a class="el" href="class_c_tx_mem_pool.html">CTxMemPool</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_c_tx_mem_pool.html#a1bdc49203ca7654d8508c356bcbca47e">removeRecursive</a>(const CTransaction &amp;tx, MemPoolRemovalReason reason=MemPoolRemovalReason::UNKNOWN)</td><td class="entry"><a class="el" href="class_c_tx_mem_pool.html">CTxMemPool</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_c_tx_mem_pool.html#a89e7372fff3b27b9969f4f94d1f5cff0">RemoveStaged</a>(setEntries &amp;stage, bool updateDescendants, MemPoolRemovalReason reason=MemPoolRemovalReason::UNKNOWN) EXCLUSIVE_LOCKS_REQUIRED(cs)</td><td class="entry"><a class="el" href="class_c_tx_mem_pool.html">CTxMemPool</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_c_tx_mem_pool.html#a86b26c0f2d25211c7608398e8759594b">removeUnchecked</a>(txiter entry, MemPoolRemovalReason reason=MemPoolRemovalReason::UNKNOWN) EXCLUSIVE_LOCKS_REQUIRED(cs)</td><td class="entry"><a class="el" href="class_c_tx_mem_pool.html">CTxMemPool</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
@@ -167,7 +167,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 25 2018 22:33:53 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Aug 26 2018 10:40:59 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
