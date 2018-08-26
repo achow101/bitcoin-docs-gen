@@ -161,6 +161,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>m_best_block_index
 : <a class="el" href="class_base_index.html#ae14a24128e883c33a351b6c960de1f97">BaseIndex</a>
 </li>
+<li>m_block_hash
+: <a class="el" href="class_block_filter.html#ad95fa2e83588ed4bd925e59173254fd1">BlockFilter</a>
+</li>
+<li>m_buffer
+: <a class="el" href="class_bit_stream_reader.html#a1cc9fea88b5bcc8668bd41be0a695d85">BitStreamReader&lt; IStream &gt;</a>
+, <a class="el" href="class_bit_stream_writer.html#a174f4112d719f80c5c165567474101e8">BitStreamWriter&lt; OStream &gt;</a>
+</li>
 <li>m_cached_balances
 : <a class="el" href="class_wallet_model.html#ab20ea66f8fcf98224d1848ae20a8d1d1">WalletModel</a>
 </li>
@@ -195,6 +202,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>m_data
 : <a class="el" href="class_span.html#a8bdb0c066e48977de2af9073decbca84">Span&lt; C &gt;</a>
+, <a class="el" href="class_vector_reader.html#a030e50f1efde083424766fa0db3ace24">VectorReader</a>
 </li>
 <li>m_database
 : <a class="el" href="class_wallet_batch.html#afdd8602b2914a1d8d2c0c88a70990858">WalletBatch</a>
@@ -232,6 +240,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>m_enable_bip61
 : <a class="el" href="class_peer_logic_validation.html#a0a73f65f2c7c2cbb745ec9dd6ac79faf">PeerLogicValidation</a>
 </li>
+<li>m_encoded
+: <a class="el" href="class_g_c_s_filter.html#af22652224fa3c574b4cf85c95be0a268">GCSFilter</a>
+</li>
+<li>m_F
+: <a class="el" href="class_g_c_s_filter.html#a1ea79b49b82825e5baed2f43a21b3765">GCSFilter</a>
+</li>
 <li>m_failed_blocks
 : <a class="el" href="class_c_chain_state.html#a52c29388d6805442893089beaf96c4a7">CChainState</a>
 </li>
@@ -255,6 +269,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>m_fileout
 : <a class="el" href="class_b_c_log_1_1_logger.html#a5e3270264688c26c00b7bf81c821ae4a">BCLog::Logger</a>
+</li>
+<li>m_filter
+: <a class="el" href="class_block_filter.html#a05668a0e3773740d5c3b053d36c3cc24">BlockFilter</a>
+</li>
+<li>m_filter_type
+: <a class="el" href="class_block_filter.html#a9a8a677dd6d3b08e212ee3c5320a9ac3">BlockFilter</a>
 </li>
 <li>m_formatImpl
 : <a class="el" href="classtinyformat_1_1detail_1_1_format_arg.html#a3e1114e7a277020906bfd4588ff9b6fc">tinyformat::detail::FormatArg</a>
@@ -338,6 +358,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>m_interrupt
 : <a class="el" href="class_base_index.html#a54982a5e2e3df3846b268690d267a485">BaseIndex</a>
 </li>
+<li>m_istream
+: <a class="el" href="class_bit_stream_reader.html#a6aa906c0ac8c2523b0d8e2a86f147281">BitStreamReader&lt; IStream &gt;</a>
+</li>
 <li>m_it_wtxOrdered
 : <a class="el" href="class_c_wallet_tx.html#a8f0e3487d88a7cee3c5a78756b5bbc73">CWalletTx</a>
 </li>
@@ -355,6 +378,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>m_log_timestamps
 : <a class="el" href="class_b_c_log_1_1_logger.html#aafc8e8727100024765e99d96bf22f5ad">BCLog::Logger</a>
+</li>
+<li>m_M
+: <a class="el" href="class_g_c_s_filter.html#aa8c1f8c4ba99f8a1b56199fe5b6c7f0a">GCSFilter</a>
 </li>
 <li>m_manual_connection
 : <a class="el" href="class_c_node.html#a6d81efc365079ca499a5f6465967d8d9">CNode</a>
@@ -374,7 +400,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_b_c_log_1_1_logger.html#a29267c79faa50b0d0d2fca6b7267033e">BCLog::Logger</a>
 </li>
 <li>m_N
-: <a class="el" href="classtinyformat_1_1_format_list.html#aee4267e50285b7adeb57b61d6305312b">tinyformat::FormatList</a>
+: <a class="el" href="class_g_c_s_filter.html#a6186b1abd576224f88cb3ca0c0c9e9ab">GCSFilter</a>
+, <a class="el" href="classtinyformat_1_1_format_list.html#aee4267e50285b7adeb57b61d6305312b">tinyformat::FormatList</a>
 </li>
 <li>m_name
 : <a class="el" href="classbenchmark_1_1_state.html#ac6dcac1db00b94122486e603509fe60a">benchmark::State</a>
@@ -412,11 +439,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>m_num_iters_left
 : <a class="el" href="classbenchmark_1_1_state.html#a40ea0c2629b80f1d3f17e2228c44cc53">benchmark::State</a>
 </li>
+<li>m_offset
+: <a class="el" href="class_bit_stream_reader.html#aa6acc2e722817d009e5f2d68e7fd87cb">BitStreamReader&lt; IStream &gt;</a>
+, <a class="el" href="class_bit_stream_writer.html#a3780e88e6ab29c2f4567e8504afd37f9">BitStreamWriter&lt; OStream &gt;</a>
+</li>
+<li>m_ostream
+: <a class="el" href="class_bit_stream_writer.html#a173c46e76518de21e40aef973273b1ed">BitStreamWriter&lt; OStream &gt;</a>
+</li>
 <li>m_outputs
 : <a class="el" href="struct_output_group.html#a0d821fc0c787b897f891ef28fab08201">OutputGroup</a>
 </li>
 <li>m_override_args
 : <a class="el" href="class_args_manager.html#a403b66e1f46307c682544c77fd7cbaaa">ArgsManager</a>
+</li>
+<li>m_P
+: <a class="el" href="class_g_c_s_filter.html#a9831013fa061e9948eba7af949af5d8e">GCSFilter</a>
 </li>
 <li>m_pay_tx_fee
 : <a class="el" href="class_c_wallet.html#a8a72e33a130ea09912efb1712df03300">CWallet</a>
@@ -426,6 +463,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>m_pool_key_to_index
 : <a class="el" href="class_c_wallet.html#a3db2350ed32a8167761ce7cd81a18d76">CWallet</a>
+</li>
+<li>m_pos
+: <a class="el" href="class_vector_reader.html#a32d9ecb9382d90a4993abb4d7767a7e4">VectorReader</a>
 </li>
 <li>m_pre_split
 : <a class="el" href="class_c_key_pool.html#ab82f2a6e0a12feba2f71d5b591014886">CKeyPool</a>
@@ -459,6 +499,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>m_signal_rbf
 : <a class="el" href="class_c_wallet.html#ab5b1ed17e2d85b97d455f7a25647daf1">CWallet</a>
+</li>
+<li>m_siphash_k0
+: <a class="el" href="class_g_c_s_filter.html#acfec88ad980f9d88d138fcbbf6ccb0b5">GCSFilter</a>
+</li>
+<li>m_siphash_k1
+: <a class="el" href="class_g_c_s_filter.html#abd2138ca66ddcd159946a9b19fd0e5c4">GCSFilter</a>
 </li>
 <li>m_size
 : <a class="el" href="class_span.html#a198ed58d9a049e4460036476da552ae2">Span&lt; C &gt;</a>
@@ -498,6 +544,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>m_type
 : <a class="el" href="class_address_book_sort_filter_proxy_model.html#a628600bbc053552b9fcea06a9c996adf">AddressBookSortFilterProxyModel</a>
+, <a class="el" href="class_vector_reader.html#ac2daa76e18e496c3a4b99d3871493f20">VectorReader</a>
 </li>
 <li>m_unknown_records
 : <a class="el" href="class_c_wallet_scan_state.html#a0136842fe831b87fa130eca64e29573e">CWalletScanState</a>
@@ -512,6 +559,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_c_script_num.html#a045e75208fcde34ccb79da65f49cbd7e">CScriptNum</a>
 , <a class="el" href="struct_output_group.html#a7817e9a1645c9118882fed6417ea0be0">OutputGroup</a>
 , <a class="el" href="classtinyformat_1_1detail_1_1_format_arg.html#ad7630a7d1e68ac56e46e03722156056a">tinyformat::detail::FormatArg</a>
+</li>
+<li>m_version
+: <a class="el" href="class_vector_reader.html#a867b1ed93ca03ddb829d51818baafcb7">VectorReader</a>
 </li>
 <li>m_wallet
 : <a class="el" href="class_wallet_model.html#ae724c8e350d0bf001d315f70211b691c">WalletModel</a>
@@ -693,6 +743,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>Match()
 : <a class="el" href="class_c_sub_net.html#a19156e7aad9c3af4e9728b232eeb3993">CSubNet</a>
+, <a class="el" href="class_g_c_s_filter.html#a53fd0d9bdd5157acd02a439de7f031e9">GCSFilter</a>
+</li>
+<li>MatchAny()
+: <a class="el" href="class_g_c_s_filter.html#aa359993393d5965c3309f618b2fca474">GCSFilter</a>
+</li>
+<li>MatchInternal()
+: <a class="el" href="class_g_c_s_filter.html#a343b1b7016c1365fb10290cacc15abb0">GCSFilter</a>
 </li>
 <li>matures_in
 : <a class="el" href="class_transaction_status.html#a6714606658df9486e4a3f8f2be5d28b4">TransactionStatus</a>
@@ -805,7 +862,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_recent_requests_table_model.html#a720ff50ef9f8e016a5d2bbd8fd7fb41da771dbe3a12d351feb56440829ed3dee7">RecentRequestsTableModel</a>
 </li>
 <li>message()
-: <a class="el" href="class_r_p_c_console.html#a359683e12b88843c61a73ddce72e17cc">RPCConsole</a>
+: <a class="el" href="class_r_p_c_console.html#ab8301115a53cd4fc1ba5543374ebc40d">RPCConsole</a>
 , <a class="el" href="class_send_coins_dialog.html#ad3ef071070f1e52e10a2e88c0d0e7422">SendCoinsDialog</a>
 , <a class="el" href="class_send_coins_recipient.html#a83b85ce208f69adc9347f700ac60dfa0">SendCoinsRecipient</a>
 , <a class="el" href="class_tor_control_connection.html#a0c9dff9582b57ce132a1629a85e52061">TorControlConnection</a>
@@ -892,14 +949,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>ModalOverlay()
 : <a class="el" href="class_modal_overlay.html#a82cf62a8aa061864f8ab95318fe52ad2">ModalOverlay</a>
 </li>
-<li>Mode
-: <a class="el" href="class_address_book_page.html#a0a8f8e590dc6f18e829fde039f984464">AddressBookPage</a>
-</li>
 <li>mode
 : <a class="el" href="class_address_book_page.html#ae0cc2ca898609bd2aaa6794758663149">AddressBookPage</a>
 </li>
 <li>Mode
-: <a class="el" href="class_ask_passphrase_dialog.html#a96abf4d3c36c1ef9e268fb546ae76538">AskPassphraseDialog</a>
+: <a class="el" href="class_address_book_page.html#a0a8f8e590dc6f18e829fde039f984464">AddressBookPage</a>
+, <a class="el" href="class_ask_passphrase_dialog.html#a96abf4d3c36c1ef9e268fb546ae76538">AskPassphraseDialog</a>
 </li>
 <li>mode
 : <a class="el" href="class_ask_passphrase_dialog.html#ab70b0831dff864e4d11a609659e1a01b">AskPassphraseDialog</a>
@@ -910,12 +965,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>mode
 : <a class="el" href="class_edit_address_dialog.html#a4f3deb0494f961e4a3a34fb904be0b9a">EditAddressDialog</a>
+, <a class="el" href="class_notificator.html#a8557df337c4dcb3bde2ca2019a834837">Notificator</a>
 </li>
 <li>Mode
 : <a class="el" href="class_notificator.html#aaa6bef35e7e183f0ac23e046dc3ea73e">Notificator</a>
-</li>
-<li>mode
-: <a class="el" href="class_notificator.html#a8557df337c4dcb3bde2ca2019a834837">Notificator</a>
 </li>
 <li>MODE_ERROR
 : <a class="el" href="class_c_validation_state.html#ab736e95a8d13a9425fe0b79c9e3b6be5ab0400d1ba2df7b278e53d7a8b2db6eb4">CValidationState</a>
@@ -1005,7 +1058,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 26 2018 14:31:55 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Aug 26 2018 14:59:35 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

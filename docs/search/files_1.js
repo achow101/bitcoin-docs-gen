@@ -4,8 +4,8 @@ var searchData=
   ['bantablemodel_2eh',['bantablemodel.h',['../bantablemodel_8h.html',1,'']]],
   ['base_2ecpp',['base.cpp',['../base_8cpp.html',1,'']]],
   ['base_2eh',['base.h',['../base_8h.html',1,'']]],
-  ['base58_2ecpp',['base58.cpp',['../base58_8cpp.html',1,'']]],
   ['base58_2ecpp',['base58.cpp',['../bench_2base58_8cpp.html',1,'']]],
+  ['base58_2ecpp',['base58.cpp',['../base58_8cpp.html',1,'']]],
   ['base58_2eh',['base58.h',['../base58_8h.html',1,'']]],
   ['basic_2dconfig_2eh',['basic-config.h',['../basic-config_8h.html',1,'']]],
   ['bech32_2ecpp',['bech32.cpp',['../bech32_8cpp.html',1,'']]],
@@ -44,6 +44,8 @@ var searchData=
   ['blockchain_2eh',['blockchain.h',['../blockchain_8h.html',1,'']]],
   ['blockencodings_2ecpp',['blockencodings.cpp',['../blockencodings_8cpp.html',1,'']]],
   ['blockencodings_2eh',['blockencodings.h',['../blockencodings_8h.html',1,'']]],
+  ['blockfilter_2ecpp',['blockfilter.cpp',['../blockfilter_8cpp.html',1,'']]],
+  ['blockfilter_2eh',['blockfilter.h',['../blockfilter_8h.html',1,'']]],
   ['bloom_2ecpp',['bloom.cpp',['../bloom_8cpp.html',1,'']]],
   ['bloom_2eh',['bloom.h',['../bloom_8h.html',1,'']]],
   ['byteswap_2eh',['byteswap.h',['../byteswap_8h.html',1,'']]]

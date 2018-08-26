@@ -390,6 +390,7 @@ var searchData=
   ['compute_5fhashes',['compute_hashes',['../class_cuckoo_cache_1_1cache.html#a8a5cd01cd96b56d9bb090acea4417477',1,'CuckooCache::cache']]],
   ['computeblockversion',['ComputeBlockVersion',['../validation_8cpp.html#a0657e7220e2c33df7a210032ca61b7fe',1,'ComputeBlockVersion(const CBlockIndex *pindexPrev, const Consensus::Params &amp;params):&#160;validation.cpp'],['../validation_8h.html#a0657e7220e2c33df7a210032ca61b7fe',1,'ComputeBlockVersion(const CBlockIndex *pindexPrev, const Consensus::Params &amp;params):&#160;validation.cpp']]],
   ['computehash',['ComputeHash',['../class_c_transaction.html#a2bed45cfd41166dec912c5259150c240',1,'CTransaction']]],
+  ['computeheader',['ComputeHeader',['../class_block_filter.html#a9d029ed1c41723d8a82565f4d52172e3',1,'BlockFilter']]],
   ['computemerkleroot',['ComputeMerkleRoot',['../merkle_8cpp.html#a51ec3e995dfb6e2625e69443d11a3e8b',1,'ComputeMerkleRoot(std::vector&lt; uint256 &gt; hashes, bool *mutated):&#160;merkle.cpp'],['../merkle_8h.html#a6e7d7599b0a77e4098569d0470e780e4',1,'ComputeMerkleRoot(std::vector&lt; uint256 &gt; hashes, bool *mutated=nullptr):&#160;merkle.cpp']]],
   ['computepubkey',['computePubkey',['../classorg_1_1bitcoin_1_1_native_secp256k1.html#a83bd3f7f54476f397deec85e38e3b7bc',1,'org::bitcoin::NativeSecp256k1']]],
   ['computetimesmart',['ComputeTimeSmart',['../class_c_wallet.html#a4f8c7e9bc50d2e5a17e83235607bbbec',1,'CWallet']]],

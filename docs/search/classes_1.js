@@ -34,7 +34,10 @@ var searchData=
   ['bitcoincore',['BitcoinCore',['../class_bitcoin_core.html',1,'']]],
   ['bitcoingui',['BitcoinGUI',['../class_bitcoin_g_u_i.html',1,'']]],
   ['bitcoinunits',['BitcoinUnits',['../class_bitcoin_units.html',1,'']]],
+  ['bitstreamreader',['BitStreamReader',['../class_bit_stream_reader.html',1,'']]],
+  ['bitstreamwriter',['BitStreamWriter',['../class_bit_stream_writer.html',1,'']]],
   ['blockassembler',['BlockAssembler',['../class_block_assembler.html',1,'']]],
+  ['blockfilter',['BlockFilter',['../class_block_filter.html',1,'']]],
   ['blockhasher',['BlockHasher',['../struct_block_hasher.html',1,'']]],
   ['blocktransactions',['BlockTransactions',['../class_block_transactions.html',1,'']]],
   ['blocktransactionsrequest',['BlockTransactionsRequest',['../class_block_transactions_request.html',1,'']]]

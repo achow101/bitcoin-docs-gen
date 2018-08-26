@@ -10,6 +10,8 @@ var searchData=
   ['bantablemodel',['banTableModel',['../class_client_model.html#ac96fad2b97c585206391e2132be2a788',1,'ClientModel']]],
   ['base',['base',['../class_c_coins_view_backed.html#a901472317114adc4c104efd61dcf6203',1,'CCoinsViewBacked::base()'],['../class_h_t_t_p_r_p_c_timer_interface.html#aceb824988e2613856a47bc1246ece4e9',1,'HTTPRPCTimerInterface::base()'],['../class_arena.html#a0b4ee9879b2debb03d642346754c6d97',1,'Arena::base()'],['../class_locked_pool_1_1_locked_page_arena.html#a0eaaaed2e4b6bb20437052b54d2aeaf2',1,'LockedPool::LockedPageArena::base()'],['../class_tor_control_connection.html#af68563075f85652d32cc0b6d8417699c',1,'TorControlConnection::base()'],['../class_tor_controller.html#a490cb6f1e683bbff4a6da80f054a1f14',1,'TorController::base()']]],
   ['base58prefixes',['base58Prefixes',['../class_c_chain_params.html#a923d956c5d3891d0c682b7ef5410ed8f',1,'CChainParams']]],
+  ['basic_5ffilter_5fm',['BASIC_FILTER_M',['../blockfilter_8h.html#acf43d7aca6779d71261e2753a23e0312',1,'blockfilter.h']]],
+  ['basic_5ffilter_5fp',['BASIC_FILTER_P',['../blockfilter_8h.html#a603871b93eb8a05bedbbebdce89523b9',1,'blockfilter.h']]],
   ['batch',['batch',['../class_c_d_b_batch.html#ace784336d18faed5e938a6e97ad14e9b',1,'CDBBatch']]],
   ['bech32_5fhrp',['bech32_hrp',['../class_c_chain_params.html#a1a8f97de0c71b2f5328c60be4cee318f',1,'CChainParams']]],
   ['bestheaderdate',['bestHeaderDate',['../class_modal_overlay.html#a510bed92682f314475b7c98103644ffd',1,'ModalOverlay']]],

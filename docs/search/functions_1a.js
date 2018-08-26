@@ -21,6 +21,7 @@ var searchData=
   ['_7eberkeleyenvironment',['~BerkeleyEnvironment',['../class_berkeley_environment.html#adab8b3d1eb8f5b399eca23519e9662d1',1,'BerkeleyEnvironment']]],
   ['_7ebitcoinapplication',['~BitcoinApplication',['../class_bitcoin_application.html#a0dddc6994b495d16ab8b8640e5c9686b',1,'BitcoinApplication']]],
   ['_7ebitcoingui',['~BitcoinGUI',['../class_bitcoin_g_u_i.html#a661401493ee764337fea0a3771e79674',1,'BitcoinGUI']]],
+  ['_7ebitstreamwriter',['~BitStreamWriter',['../class_bit_stream_writer.html#af5c68a6db30f4cd272bebd2a95b57f14',1,'BitStreamWriter']]],
   ['_7ecaddrman',['~CAddrMan',['../class_c_addr_man.html#ae1b1838e4de4effbc1fbc888126a9352',1,'CAddrMan']]],
   ['_7ecautofile',['~CAutoFile',['../class_c_auto_file.html#ab1362f4cb52c819c25cff4598e0f28da',1,'CAutoFile']]],
   ['_7ecblockpolicyestimator',['~CBlockPolicyEstimator',['../class_c_block_policy_estimator.html#af263d3c63a9ab5c8edd9b4d57362f0df',1,'CBlockPolicyEstimator']]],
