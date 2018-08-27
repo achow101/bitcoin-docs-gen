@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['accounting_5ftests_2ecpp',['accounting_tests.cpp',['../accounting__tests_8cpp.html',1,'']]],
   ['addrdb_2ecpp',['addrdb.cpp',['../addrdb_8cpp.html',1,'']]],
   ['addrdb_2eh',['addrdb.h',['../addrdb_8h.html',1,'']]],
   ['addressbookpage_2ecpp',['addressbookpage.cpp',['../addressbookpage_8cpp.html',1,'']]],
