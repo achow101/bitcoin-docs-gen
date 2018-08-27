@@ -300,7 +300,7 @@ var searchData=
   ['miner_2ecpp',['miner.cpp',['../miner_8cpp.html',1,'']]],
   ['miner_2eh',['miner.h',['../miner_8h.html',1,'']]],
   ['minerpolicyestimator',['minerPolicyEstimator',['../class_c_tx_mem_pool.html#af4d48ac0d6d62e7044ba21a45709f743',1,'CTxMemPool']]],
-  ['minfeefilter',['minFeeFilter',['../class_c_node.html#a78cb326e261b809abb09ca25a02496ab',1,'CNode']]],
+  ['minfeefilter',['minFeeFilter',['../class_c_node_stats.html#a591a1ab5f47972eb1ca41afa50ab2f39',1,'CNodeStats::minFeeFilter()'],['../class_c_node.html#a78cb326e261b809abb09ca25a02496ab',1,'CNode::minFeeFilter()']]],
   ['minimizefeesection',['minimizeFeeSection',['../class_send_coins_dialog.html#af29840fbc3c1ae982d51981eafab21ec',1,'SendCoinsDialog']]],
   ['minimizeonclose',['MinimizeOnClose',['../class_options_model.html#a5c6c9ca8a01aca9f53e91f118e4878d2a9b43debfff0527f2eb07f50ccc76e338',1,'OptionsModel']]],
   ['minimizetotray',['MinimizeToTray',['../class_options_model.html#a5c6c9ca8a01aca9f53e91f118e4878d2a9aff1b45ea81f0c13914643c3a03e49e',1,'OptionsModel']]],

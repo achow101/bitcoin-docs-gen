@@ -278,7 +278,7 @@ var searchData=
   ['shutdownwindow',['ShutdownWindow',['../class_shutdown_window.html#a9bf9b087649914f963f37a1ea235c969',1,'ShutdownWindow']]],
   ['sighashtostr',['SighashToStr',['../core__io_8h.html#a17c818de6e4c81b67bae4c49491a8df6',1,'SighashToStr(unsigned char sighash_type):&#160;core_write.cpp'],['../core__write_8cpp.html#a17c818de6e4c81b67bae4c49491a8df6',1,'SighashToStr(unsigned char sighash_type):&#160;core_write.cpp']]],
   ['sighaslowr',['SigHasLowR',['../key_8cpp.html#ac9ec599027c6b68a87ebd788be2a611c',1,'key.cpp']]],
-  ['sign',['Sign',['../class_c_key.html#adb8d6c2037396a4d4f0bc90a447613d3',1,'CKey::Sign()'],['../classorg_1_1bitcoin_1_1_native_secp256k1.html#aa8223a4dd78910bd0d2b150184d4a294',1,'org.bitcoin.NativeSecp256k1.sign()']]],
+  ['sign',['sign',['../classorg_1_1bitcoin_1_1_native_secp256k1.html#aa8223a4dd78910bd0d2b150184d4a294',1,'org.bitcoin.NativeSecp256k1.sign()'],['../class_c_key.html#adb8d6c2037396a4d4f0bc90a447613d3',1,'CKey::Sign()']]],
   ['signalsoptinrbf',['SignalsOptInRBF',['../rbf_8cpp.html#a65695ad9c85ce6b262f53aa40e254fd0',1,'SignalsOptInRBF(const CTransaction &amp;tx):&#160;rbf.cpp'],['../rbf_8h.html#a65695ad9c85ce6b262f53aa40e254fd0',1,'SignalsOptInRBF(const CTransaction &amp;tx):&#160;rbf.cpp']]],
   ['signaturedata',['SignatureData',['../struct_signature_data.html#a26a74230d3f551e73f8b9e872744b465',1,'SignatureData::SignatureData()'],['../struct_signature_data.html#aee920d76f133d8d46195452fee5c1fa2',1,'SignatureData::SignatureData(const CScript &amp;script)']]],
   ['signatureextractorchecker',['SignatureExtractorChecker',['../class_signature_extractor_checker.html#abee78f53f3de41a1e97b7bd35210b2ac',1,'SignatureExtractorChecker']]],

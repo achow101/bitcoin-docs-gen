@@ -206,7 +206,7 @@ var searchData=
   ['min_5fdate',['MIN_DATE',['../class_transaction_filter_proxy.html#aac7bf4c1105641b19eb6f7c8741b502e',1,'TransactionFilterProxy']]],
   ['minamount',['minAmount',['../class_transaction_filter_proxy.html#afccd51dd6a7244319cdc4f5753c2e872',1,'TransactionFilterProxy']]],
   ['minerpolicyestimator',['minerPolicyEstimator',['../class_c_tx_mem_pool.html#af4d48ac0d6d62e7044ba21a45709f743',1,'CTxMemPool']]],
-  ['minfeefilter',['minFeeFilter',['../class_c_node.html#a78cb326e261b809abb09ca25a02496ab',1,'CNode']]],
+  ['minfeefilter',['minFeeFilter',['../class_c_node_stats.html#a591a1ab5f47972eb1ca41afa50ab2f39',1,'CNodeStats::minFeeFilter()'],['../class_c_node.html#a78cb326e261b809abb09ca25a02496ab',1,'CNode::minFeeFilter()']]],
   ['minrelaytxfee',['minRelayTxFee',['../validation_8cpp.html#a5925a10baeee7d4bdce1982bdcbd3bd0',1,'minRelayTxFee():&#160;validation.cpp'],['../validation_8h.html#a5925a10baeee7d4bdce1982bdcbd3bd0',1,'minRelayTxFee():&#160;validation.cpp']]],
   ['misc_5fpubkeys',['misc_pubkeys',['../struct_signature_data.html#a66eeca5097032558571e3be329f72393',1,'SignatureData']]],
   ['modaloverlay',['modalOverlay',['../class_bitcoin_g_u_i.html#a1b67568c92ea3a18ee76602c4ec93963',1,'BitcoinGUI']]],
