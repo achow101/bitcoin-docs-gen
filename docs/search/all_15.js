@@ -29,7 +29,7 @@ var searchData=
   ['undo_2eh',['undo.h',['../undo_8h.html',1,'']]],
   ['unencrypted',['Unencrypted',['../class_wallet_model.html#a58f6f0bb5a7b8b4e4d0812185ccc0616aab8ddcb74c78f880c81f610e327bdcd7',1,'WalletModel']]],
   ['unescape_5funicode_5ftest',['unescape_unicode_test',['../unitester_8cpp.html#a2400a235d180e17ce44cc065cfab46e9',1,'unitester.cpp']]],
-  ['unit',['unit',['../class_bitcoin_amount_field.html#a16bddf5c239da4adbf0121cb4be1e022',1,'BitcoinAmountField::unit()'],['../class_tx_view_delegate.html#a4281e394dd7e90ecd8401fdca7b0413a',1,'TxViewDelegate::unit()'],['../class_bitcoin_units.html#ae41018ba530b4c8bdc74fd163709fb9d',1,'BitcoinUnits::Unit()']]],
+  ['unit',['Unit',['../class_bitcoin_units.html#ae41018ba530b4c8bdc74fd163709fb9d',1,'BitcoinUnits::Unit()'],['../class_bitcoin_amount_field.html#a16bddf5c239da4adbf0121cb4be1e022',1,'BitcoinAmountField::unit()'],['../class_tx_view_delegate.html#a4281e394dd7e90ecd8401fdca7b0413a',1,'TxViewDelegate::unit()']]],
   ['unitchanged',['unitChanged',['../class_bitcoin_amount_field.html#a5cee72f97d1a77da3514197aaf2ea6c5',1,'BitcoinAmountField']]],
   ['unitdisplaycontrol',['unitDisplayControl',['../class_bitcoin_g_u_i.html#a98c3911483371f87ebb20ca5ef2e5548',1,'BitcoinGUI']]],
   ['unitdisplaystatusbarcontrol',['UnitDisplayStatusBarControl',['../class_unit_display_status_bar_control.html',1,'UnitDisplayStatusBarControl'],['../class_unit_display_status_bar_control.html#a7db4ef1ea7a6a457d7981ee1719b62c1',1,'UnitDisplayStatusBarControl::UnitDisplayStatusBarControl()']]],

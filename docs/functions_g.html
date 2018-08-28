@@ -446,7 +446,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetCScript()
 : <a class="el" href="class_c_basic_key_store.html#a7dc20df2337bca743b7323b76e626e20">CBasicKeyStore</a>
 , <a class="el" href="struct_flat_signing_provider.html#ae0db7269eae5134442d37a78bf2dbde7">FlatSigningProvider</a>
-, <a class="el" href="class_public_only_signing_provider.html#abb3b1716bd0f40005b6fd3451cb0c063">PublicOnlySigningProvider</a>
+, <a class="el" href="class_hiding_signing_provider.html#ab9214716c578177f521d90aac2df625c">HidingSigningProvider</a>
 , <a class="el" href="class_signing_provider.html#aba901ea128726e7c8df1df46e77692ab">SigningProvider</a>
 </li>
 <li>GetCScripts()
@@ -645,6 +645,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="class_c_d_b_iterator.html#a8833b0184eaf011529fa36a2ec65286f">CDBIterator</a>
 , <a class="el" href="class_c_service.html#a74d6e1526688229cb424584c29046e9e">CService</a>
 , <a class="el" href="struct_flat_signing_provider.html#a4a532e0d9e0651fd023b5bad43bafa38">FlatSigningProvider</a>
+, <a class="el" href="class_hiding_signing_provider.html#a39f2c6985440995db9ac81979b746b46">HidingSigningProvider</a>
 , <a class="el" href="class_signing_provider.html#a92c4057e90b212df6117707ce715381f">SigningProvider</a>
 </li>
 <li>GetKeyBirthTimes()
@@ -655,6 +656,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>getKeyFromPool()
 : <a class="el" href="classinterfaces_1_1_wallet.html#aa7c627f0b33ecfaee4005c83aba97ec0">interfaces::Wallet</a>
+</li>
+<li>GetKeyOrigin()
+: <a class="el" href="class_c_wallet.html#a4fded992ac1b212e1b59ab777646b1e4">CWallet</a>
+, <a class="el" href="class_hiding_signing_provider.html#a3b74b6137c68c6ba55e9b517bc699536">HidingSigningProvider</a>
+, <a class="el" href="class_signing_provider.html#ae05630ec19ee8956497d5264dc612b2f">SigningProvider</a>
 </li>
 <li>GetKeyPoolSize()
 : <a class="el" href="class_c_wallet.html#a157f4e912f74ba0d2bd53fc089332add">CWallet</a>
@@ -904,13 +910,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="class_c_crypto_key_store.html#af57d6ee7c31e1d9673e811a32aaa5ebc">CCryptoKeyStore</a>
 , <a class="el" href="class_c_key.html#ae4b61da6ec62f676fe6362ac5fc26aca">CKey</a>
 , <a class="el" href="struct_flat_signing_provider.html#a053ba26247d6adcb70bfba3b31c5e122">FlatSigningProvider</a>
+, <a class="el" href="class_hiding_signing_provider.html#a52d502d368522ec9b246dbdfb9fff43b">HidingSigningProvider</a>
 </li>
 <li>getPubKey()
 : <a class="el" href="classinterfaces_1_1_wallet.html#a43c6d2050a3e806ed34696c2fd966ddb">interfaces::Wallet</a>
 </li>
 <li>GetPubKey()
-: <a class="el" href="class_public_only_signing_provider.html#af948893ad13ee0e6f40e2f884051b18c">PublicOnlySigningProvider</a>
-, <a class="el" href="class_signing_provider.html#a22bd873e85e12ea2d2cd398ad3647bd1">SigningProvider</a>
+: <a class="el" href="class_signing_provider.html#a22bd873e85e12ea2d2cd398ad3647bd1">SigningProvider</a>
 </li>
 <li>getQueueInfo()
 : <a class="el" href="class_c_scheduler.html#add23bb8cbef2c649ce1a5b3b67443bdc">CScheduler</a>
@@ -1246,11 +1252,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_c_wallet.html#acc9de8d7002d9d699f0eb442f3920479">CWallet</a>
 </li>
 <li>GUARDED_BY()
-: <a class="el" href="class_c_basic_key_store.html#a0bd330aef561fd25691db3ad2565f0dc">CBasicKeyStore</a>
-, <a class="el" href="class_c_connman.html#ae69cda074ce97b7b598f1d565d7a5164">CConnman</a>
-, <a class="el" href="class_c_crypto_key_store.html#a2eab28e7b189f66f1e8c64e9646005f7">CCryptoKeyStore</a>
-, <a class="el" href="class_c_tx_mem_pool.html#a3e8fb9581cf4f5414b19813063c362c4">CTxMemPool</a>
-, <a class="el" href="class_single_threaded_scheduler_client.html#a64d33e33ab105e9957f578234cca972d">SingleThreadedSchedulerClient</a>
+: <a class="el" href="class_c_basic_key_store.html#a69b3bca0e65afc5247a0084a40fa52e9">CBasicKeyStore</a>
+, <a class="el" href="class_c_connman.html#a99633fd9a8fc054402877d2cef3346d6">CConnman</a>
+, <a class="el" href="class_c_crypto_key_store.html#a8fede55b2720cc39f5c744982f79006f">CCryptoKeyStore</a>
+, <a class="el" href="class_c_tx_mem_pool.html#a69b64945e84f147c19af0c0400c26b39">CTxMemPool</a>
+, <a class="el" href="class_single_threaded_scheduler_client.html#a6cc076cde7507488f888c0b173964843">SingleThreadedSchedulerClient</a>
 </li>
 <li>gui
 : <a class="el" href="class_wallet_frame.html#ad44a50e3e2fe727a6a78827d87407ff6">WalletFrame</a>
@@ -1259,7 +1265,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 28 2018 09:58:59 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 28 2018 14:31:22 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

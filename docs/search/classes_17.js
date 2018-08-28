@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['zero_5fafter_5ffree_5fallocator',['zero_after_free_allocator',['../structzero__after__free__allocator.html',1,'']]]
+  ['x509deleter',['X509Deleter',['../struct_x509_deleter.html',1,'']]],
+  ['x509storedeleter',['X509StoreDeleter',['../struct_x509_store_deleter.html',1,'']]]
 ];

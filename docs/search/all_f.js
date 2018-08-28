@@ -228,7 +228,7 @@ var searchData=
   ['operator_7e',['operator~',['../classbase__uint.html#ad64a83e128fcf2d2ac072811a3e36300',1,'base_uint']]],
   ['optionid',['OptionID',['../class_options_model.html#a5c6c9ca8a01aca9f53e91f118e4878d2',1,'OptionsModel']]],
   ['optionidrowcount',['OptionIDRowCount',['../class_options_model.html#a5c6c9ca8a01aca9f53e91f118e4878d2af11204fc4f72490fa8e35ebbeda3d743',1,'OptionsModel']]],
-  ['options',['options',['../class_c_d_b_wrapper.html#a9137387b16dfc67a3af758576c5f8606',1,'CDBWrapper::options()'],['../struct_block_assembler_1_1_options.html#a925bbf758862a6397c2299777fc38762',1,'BlockAssembler::Options::Options()'],['../util_8h.html#a317721a7331c499cfe39b49b39c26cbda164dd62adb30ca051b5289672a572f9b',1,'OPTIONS():&#160;util.h']]],
+  ['options',['Options',['../struct_block_assembler_1_1_options.html#a925bbf758862a6397c2299777fc38762',1,'BlockAssembler::Options::Options()'],['../class_c_d_b_wrapper.html#a9137387b16dfc67a3af758576c5f8606',1,'CDBWrapper::options()'],['../util_8h.html#a317721a7331c499cfe39b49b39c26cbda164dd62adb30ca051b5289672a572f9b',1,'OPTIONS():&#160;util.h']]],
   ['options',['Options',['../struct_block_assembler_1_1_options.html',1,'BlockAssembler']]],
   ['options',['Options',['../struct_c_connman_1_1_options.html',1,'CConnman']]],
   ['optionsaction',['optionsAction',['../class_bitcoin_g_u_i.html#a9cedb919cf5909cb2529b310c1f968fc',1,'BitcoinGUI']]],

@@ -218,6 +218,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a4fee31ef1b96d5adf488c5f77324de73"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="utilstrencodings_8h.html#a4fee31ef1b96d5adf488c5f77324de73">ConvertBits</a> (const O &amp;outfn, I it, I end)</td></tr>
 <tr class="memdesc:a4fee31ef1b96d5adf488c5f77324de73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert from one power-of-2 number base to another.  <a href="#a4fee31ef1b96d5adf488c5f77324de73">More...</a><br /></td></tr>
 <tr class="separator:a4fee31ef1b96d5adf488c5f77324de73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04f5f8ee6f40f3b445bf0e914f8f47b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utilstrencodings_8h.html#a04f5f8ee6f40f3b445bf0e914f8f47b2">ParseHDKeypath</a> (const std::string &amp;keypath_str, std::vector&lt; uint32_t &gt; &amp;keypath)</td></tr>
+<tr class="memdesc:a04f5f8ee6f40f3b445bf0e914f8f47b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an HD keypaths like "m/7/0'/2000".  <a href="#a04f5f8ee6f40f3b445bf0e914f8f47b2">More...</a><br /></td></tr>
+<tr class="separator:a04f5f8ee6f40f3b445bf0e914f8f47b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a35bf72ac971bd331fba0b3e8117bcbf9"></a>
@@ -451,6 +454,14 @@ template&lt;int frombits, int tobits, bool pad, typename O , typename I &gt; </d
 <p>Convert from one power-of-2 number base to another. </p>
 
 <p>Definition at line <a class="el" href="utilstrencodings_8h_source.html#l00164">164</a> of file <a class="el" href="utilstrencodings_8h_source.html">utilstrencodings.h</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="utilstrencodings_8h_a4fee31ef1b96d5adf488c5f77324de73_cgraph.svg" width="430" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -1097,6 +1108,52 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a04f5f8ee6f40f3b445bf0e914f8f47b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ParseHDKeypath </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>keypath_str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; uint32_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>keypath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parse an HD keypaths like "m/7/0'/2000". </p>
+
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00547">547</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="utilstrencodings_8h_a04f5f8ee6f40f3b445bf0e914f8f47b2_cgraph.svg" width="286" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="utilstrencodings_8h_a04f5f8ee6f40f3b445bf0e914f8f47b2_icgraph.svg" width="564" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a5a787187ddd5c52baae692350ec5a2cb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1262,7 +1319,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="utilstrencodings_8h_a756716cfc0795fae1dec5761c43acd31_icgraph.svg" width="1462" height="430"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="utilstrencodings_8h_a756716cfc0795fae1dec5761c43acd31_icgraph.svg" width="1558" height="315"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1442,7 +1500,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 28 2018 09:58:56 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 28 2018 14:31:18 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

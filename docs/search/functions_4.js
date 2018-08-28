@@ -45,7 +45,7 @@ var searchData=
   ['describeaddressvisitor',['DescribeAddressVisitor',['../class_describe_address_visitor.html#a38e9934ecf63c219bd55b8f40ccaff34',1,'DescribeAddressVisitor']]],
   ['describewalletaddressvisitor',['DescribeWalletAddressVisitor',['../class_describe_wallet_address_visitor.html#aa8c8d55f71c6e573109429692618f9f4',1,'DescribeWalletAddressVisitor']]],
   ['description',['description',['../class_bitcoin_units.html#a8918c3f3da1279d923256166aa7066ae',1,'BitcoinUnits']]],
-  ['deserializehdkeypaths',['DeserializeHDKeypaths',['../sign_8h.html#a7dc2f327058bed519a6b321b309ee6c5',1,'sign.h']]],
+  ['deserializehdkeypaths',['DeserializeHDKeypaths',['../sign_8h.html#acd331ecf16a63bfe92939ea7d5465bd0',1,'sign.h']]],
   ['detectshutdown',['detectShutdown',['../class_bitcoin_g_u_i.html#ab538e65665498f59d10baa6b157270f9',1,'BitcoinGUI']]],
   ['difficultyadjustmentinterval',['DifficultyAdjustmentInterval',['../struct_consensus_1_1_params.html#ab823155fd4642e162c3270ea0843ef25',1,'Consensus::Params']]],
   ['direct_5fptr',['direct_ptr',['../classprevector.html#a20150a43dd87c33f0e855a55bd3418e8',1,'prevector::direct_ptr(difference_type pos)'],['../classprevector.html#a584a03a7a97dc2a7e745b7f99fb90430',1,'prevector::direct_ptr(difference_type pos) const ']]],

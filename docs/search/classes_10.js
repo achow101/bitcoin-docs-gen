@@ -1,17 +1,8 @@
 var searchData=
 [
-  ['rebind',['rebind',['../structzero__after__free__allocator_1_1rebind.html',1,'zero_after_free_allocator']]],
-  ['rebind',['rebind',['../structsecure__allocator_1_1rebind.html',1,'secure_allocator']]],
-  ['receivecoinsdialog',['ReceiveCoinsDialog',['../class_receive_coins_dialog.html',1,'']]],
-  ['receiverequestdialog',['ReceiveRequestDialog',['../class_receive_request_dialog.html',1,'']]],
-  ['recentrequestentry',['RecentRequestEntry',['../class_recent_request_entry.html',1,'']]],
-  ['recentrequestentrylessthan',['RecentRequestEntryLessThan',['../class_recent_request_entry_less_than.html',1,'']]],
-  ['recentrequeststablemodel',['RecentRequestsTableModel',['../class_recent_requests_table_model.html',1,'']]],
-  ['reverse_5fiterator',['reverse_iterator',['../classprevector_1_1reverse__iterator.html',1,'prevector']]],
-  ['reverse_5flock',['reverse_lock',['../classreverse__lock.html',1,'']]],
-  ['reverse_5frange',['reverse_range',['../classreverse__range.html',1,'']]],
-  ['rpcconsole',['RPCConsole',['../class_r_p_c_console.html',1,'']]],
-  ['rpcexecutor',['RPCExecutor',['../class_r_p_c_executor.html',1,'']]],
-  ['rpctimerbase',['RPCTimerBase',['../class_r_p_c_timer_base.html',1,'']]],
-  ['rpctimerinterface',['RPCTimerInterface',['../class_r_p_c_timer_interface.html',1,'']]]
+  ['qrimagewidget',['QRImageWidget',['../class_q_r_image_widget.html',1,'']]],
+  ['qtrpctimerbase',['QtRPCTimerBase',['../class_qt_r_p_c_timer_base.html',1,'']]],
+  ['qtrpctimerinterface',['QtRPCTimerInterface',['../class_qt_r_p_c_timer_interface.html',1,'']]],
+  ['qvalidatedlineedit',['QValidatedLineEdit',['../class_q_validated_line_edit.html',1,'']]],
+  ['qvaluecombobox',['QValueComboBox',['../class_q_value_combo_box.html',1,'']]]
 ];

@@ -64,6 +64,7 @@ var searchData=
   ['hextopubkey',['HexToPubKey',['../rpc_2util_8cpp.html#ac18ea86a874bf7841b716eca2b467746',1,'HexToPubKey(const std::string &amp;hex_in):&#160;util.cpp'],['../rpc_2util_8h.html#ac18ea86a874bf7841b716eca2b467746',1,'HexToPubKey(const std::string &amp;hex_in):&#160;util.cpp']]],
   ['hideevent',['hideEvent',['../class_r_p_c_console.html#ab274388ac3828e7341e84dd070f7da9a',1,'RPCConsole']]],
   ['hidetrayiconchanged',['hideTrayIconChanged',['../class_options_model.html#aff97525fd8e8a2aa6491aab86d342bcc',1,'OptionsModel']]],
+  ['hidingsigningprovider',['HidingSigningProvider',['../class_hiding_signing_provider.html#a6b4d6bbf7713b3677ae68ce6c6877564',1,'HidingSigningProvider']]],
   ['highesttargettracked',['HighestTargetTracked',['../class_c_block_policy_estimator.html#a9baaab3fdb1b45cd8c9af5d91fc5ca99',1,'CBlockPolicyEstimator']]],
   ['historicalblockspan',['HistoricalBlockSpan',['../class_c_block_policy_estimator.html#a5c7bab322eeb59733b0e800d05cbb23c',1,'CBlockPolicyEstimator']]],
   ['htmlescape',['HtmlEscape',['../namespace_g_u_i_util.html#a2d4b7f2c11ebc4b97af10bc20d19b1b2',1,'GUIUtil::HtmlEscape(const QString &amp;str, bool fMultiLine)'],['../namespace_g_u_i_util.html#ad6086df566cf2cb7f699a24e099dc59c',1,'GUIUtil::HtmlEscape(const std::string &amp;str, bool fMultiLine)']]],

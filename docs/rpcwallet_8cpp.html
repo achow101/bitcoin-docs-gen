@@ -173,10 +173,8 @@ Functions</h2></td></tr>
 <tr class="separator:a3f008088e017b871e32cfae02b622bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61c7a90d1b36888fe11b751e746e18c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_uni_value.html">UniValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpcwallet_8cpp.html#a61c7a90d1b36888fe11b751e746e18c0">sethdseed</a> (const <a class="el" href="class_j_s_o_n_r_p_c_request.html">JSONRPCRequest</a> &amp;request)</td></tr>
 <tr class="separator:a61c7a90d1b36888fe11b751e746e18c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67f15534d693a9d3c568ffe732f97927"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpcwallet_8cpp.html#a67f15534d693a9d3c568ffe732f97927">ParseHDKeypath</a> (std::string keypath_str, std::vector&lt; uint32_t &gt; &amp;keypath)</td></tr>
-<tr class="separator:a67f15534d693a9d3c568ffe732f97927"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75b90e916c447e384034f81643ea69c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpcwallet_8cpp.html#a75b90e916c447e384034f81643ea69c4">AddKeypathToMap</a> (const <a class="el" href="class_c_wallet.html">CWallet</a> *pwallet, const <a class="el" href="class_c_key_i_d.html">CKeyID</a> &amp;keyID, std::map&lt; <a class="el" href="class_c_pub_key.html">CPubKey</a>, std::vector&lt; uint32_t &gt;&gt; &amp;hd_keypaths)</td></tr>
-<tr class="separator:a75b90e916c447e384034f81643ea69c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a614a0b6d4fe51abf85bdb57475cb9d48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpcwallet_8cpp.html#a614a0b6d4fe51abf85bdb57475cb9d48">AddKeypathToMap</a> (const <a class="el" href="class_c_wallet.html">CWallet</a> *pwallet, const <a class="el" href="class_c_key_i_d.html">CKeyID</a> &amp;keyID, std::map&lt; <a class="el" href="class_c_pub_key.html">CPubKey</a>, <a class="el" href="struct_key_origin_info.html">KeyOriginInfo</a> &gt; &amp;hd_keypaths)</td></tr>
+<tr class="separator:a614a0b6d4fe51abf85bdb57475cb9d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa42cddcbe0807aed19d6aa60b01a9485"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpcwallet_8cpp.html#aa42cddcbe0807aed19d6aa60b01a9485">FillPSBT</a> (const <a class="el" href="class_c_wallet.html">CWallet</a> *pwallet, <a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;psbtx, const <a class="el" href="class_c_transaction.html">CTransaction</a> *txConst, int sighash_type, bool sign, bool bip32derivs)</td></tr>
 <tr class="separator:aa42cddcbe0807aed19d6aa60b01a9485"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c99ceacf389a1ce91977c6f7ffa5022"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_uni_value.html">UniValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpcwallet_8cpp.html#a9c99ceacf389a1ce91977c6f7ffa5022">walletprocesspsbt</a> (const <a class="el" href="class_j_s_o_n_r_p_c_request.html">JSONRPCRequest</a> &amp;request)</td></tr>
@@ -239,7 +237,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a75b90e916c447e384034f81643ea69c4"></a>
+<a class="anchor" id="a614a0b6d4fe51abf85bdb57475cb9d48"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -258,7 +256,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; <a class="el" href="class_c_pub_key.html">CPubKey</a>, std::vector&lt; uint32_t &gt;&gt; &amp;&#160;</td>
+          <td class="paramtype">std::map&lt; <a class="el" href="class_c_pub_key.html">CPubKey</a>, <a class="el" href="struct_key_origin_info.html">KeyOriginInfo</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>hd_keypaths</em>&#160;</td>
         </tr>
         <tr>
@@ -269,19 +267,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l03886">3886</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l03845">3845</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rpcwallet_8cpp_a75b90e916c447e384034f81643ea69c4_cgraph.svg" width="1347" height="1830"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpcwallet_8cpp_a614a0b6d4fe51abf85bdb57475cb9d48_cgraph.svg" width="1340" height="1686"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rpcwallet_8cpp_a75b90e916c447e384034f81643ea69c4_icgraph.svg" width="726" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -466,12 +458,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l03915">3915</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l03858">3858</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rpcwallet_8cpp_aa42cddcbe0807aed19d6aa60b01a9485_cgraph.svg" width="1271" height="1708"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpcwallet_8cpp_aa42cddcbe0807aed19d6aa60b01a9485_cgraph.svg" width="1691" height="1712"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -960,48 +953,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a67f15534d693a9d3c568ffe732f97927"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ParseHDKeypath </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>keypath_str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; uint32_t &gt; &amp;&#160;</td>
-          <td class="paramname"><em>keypath</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l03845">3845</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rpcwallet_8cpp_a67f15534d693a9d3c568ffe732f97927_cgraph.svg" width="286" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rpcwallet_8cpp_a67f15534d693a9d3c568ffe732f97927_icgraph.svg" width="954" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
-
-</div>
-</div>
 <a class="anchor" id="a9588923ef8339a1b820fcd61797639d5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1016,7 +967,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l04242">4242</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l04157">4157</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1176,7 +1127,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l04056">4056</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l03971">3971</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1201,7 +1152,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l03987">3987</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l03902">3902</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1222,7 +1173,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 28 2018 09:58:56 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 28 2018 14:31:18 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

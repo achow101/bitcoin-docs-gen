@@ -104,7 +104,7 @@ var searchData=
   ['descriptor_2eh',['descriptor.h',['../descriptor_8h.html',1,'']]],
   ['deserialize',['deserialize',['../serialize_8h.html#a4541cd607a450c9e4b88a4c1c9d35556',1,'serialize.h']]],
   ['deserialize_5ftype',['deserialize_type',['../structdeserialize__type.html',1,'']]],
-  ['deserializehdkeypaths',['DeserializeHDKeypaths',['../sign_8h.html#a7dc2f327058bed519a6b321b309ee6c5',1,'sign.h']]],
+  ['deserializehdkeypaths',['DeserializeHDKeypaths',['../sign_8h.html#acd331ecf16a63bfe92939ea7d5465bd0',1,'sign.h']]],
   ['desired_5fsamples',['DESIRED_SAMPLES',['../trafficgraphwidget_8cpp.html#ab3bc533037145aad5f84737153dd267f',1,'trafficgraphwidget.cpp']]],
   ['desiredtarget',['desiredTarget',['../struct_fee_calculation.html#a85fa61711f03cdfa45ba9fe671121d7c',1,'FeeCalculation']]],
   ['dest',['dest',['../structinterfaces_1_1_wallet_address.html#a05f005f4ccdc01b05aa414007a03cf35',1,'interfaces::WalletAddress']]],
