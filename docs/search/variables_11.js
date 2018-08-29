@@ -4,7 +4,7 @@ var searchData=
   ['randomize_5fcredentials',['randomize_credentials',['../classproxy_type.html#ad2539071d9857374f3cd3313a93bef55',1,'proxyType']]],
   ['readoptions',['readoptions',['../class_c_d_b_wrapper.html#afb339cf3fd16de13f20217e4c475c79e',1,'CDBWrapper']]],
   ['ready',['ready',['../struct_precomputed_transaction_data.html#a48bbe630b2577f707fb6a3b96292b2ee',1,'PrecomputedTransactionData']]],
-  ['reason',['reason',['../struct_fee_calculation.html#a890ee01083d216d5986e6301ab5b61aa',1,'FeeCalculation']]],
+  ['reason',['reason',['../classfsbridge_1_1_file_lock.html#a49b86de44a2a00aaf1435adffdd42714',1,'fsbridge::FileLock::reason()'],['../struct_fee_calculation.html#a890ee01083d216d5986e6301ab5b61aa',1,'FeeCalculation::reason()']]],
   ['reasoncommitfailed',['reasonCommitFailed',['../struct_wallet_model_1_1_send_coins_return.html#a203f6864730688c282f6a6bbf7198b74',1,'WalletModel::SendCoinsReturn']]],
   ['receive',['Receive',['../class_address_table_model.html#acaed83193545456eab47dd7be1d2ceba',1,'AddressTableModel']]],
   ['receivecoinsaction',['receiveCoinsAction',['../class_bitcoin_g_u_i.html#a5209e3f5ab71dfe8c4c8187ac74e62e8',1,'BitcoinGUI']]],

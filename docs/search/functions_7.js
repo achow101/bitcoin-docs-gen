@@ -270,6 +270,7 @@ var searchData=
   ['getrandhash',['GetRandHash',['../random_8cpp.html#af3aedae75efabb170337a497457f7ecf',1,'GetRandHash():&#160;random.cpp'],['../random_8h.html#af3aedae75efabb170337a497457f7ecf',1,'GetRandHash():&#160;random.cpp']]],
   ['getrandint',['GetRandInt',['../random_8cpp.html#a0e44e088732172da6662db2d5e37d4b2',1,'GetRandInt(int nMax):&#160;random.cpp'],['../random_8h.html#a0e44e088732172da6662db2d5e37d4b2',1,'GetRandInt(int nMax):&#160;random.cpp']]],
   ['getreachabilityfrom',['GetReachabilityFrom',['../class_c_net_addr.html#aff47911f613748dfa00ed1d84947fbd6',1,'CNetAddr']]],
+  ['getreason',['GetReason',['../classfsbridge_1_1_file_lock.html#a4bde6f60d1b9b770832583569213ea90',1,'fsbridge::FileLock']]],
   ['getreceivefloodsize',['GetReceiveFloodSize',['../class_c_connman.html#a417eb0456f32b856db1b65445cf3bbbd',1,'CConnman']]],
   ['getrecentrequeststablemodel',['getRecentRequestsTableModel',['../class_wallet_model.html#ab13ca64220a1652d63e1e042d3be578f',1,'WalletModel']]],
   ['getrecipients',['getRecipients',['../class_wallet_model_transaction.html#ae42337732515205c8cbd4cce17f85863',1,'WalletModelTransaction']]],

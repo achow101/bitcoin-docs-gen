@@ -83,7 +83,7 @@ var searchData=
   ['netnodeid',['NetNodeId',['../class_peer_table_model.html#a10a32ec5f31c9765c80b611760f7e590a8ee229da5c6b0e98788b9baae0362aa2',1,'PeerTableModel']]],
   ['netrequestfinished',['netRequestFinished',['../class_payment_server.html#a5b8e2e6380142fb7ad631400bcfc6f28',1,'PaymentServer']]],
   ['netunreachable',['NETUNREACHABLE',['../netbase_8cpp.html#a97f842edf4ac3c020601432e9418c02ea52f4169fd4ab94294587e44d04879827',1,'netbase.cpp']]],
-  ['network',['network',['../class_c_sub_net.html#a17c8e899bfed76a371c833fb4cd679c9',1,'CSubNet::network()'],['../netaddress_8h.html#acc9a38c714afe79b5035cb36f560dac3',1,'Network():&#160;netaddress.h'],['../clientmodel_8h.html#a9859b634ccf4ce8bd202e3c94bbad90fa25835188a2355e9530d3a10fcbe4c65b',1,'NETWORK():&#160;clientmodel.h']]],
+  ['network',['network',['../class_c_sub_net.html#a17c8e899bfed76a371c833fb4cd679c9',1,'CSubNet::network()'],['../clientmodel_8h.html#a9859b634ccf4ce8bd202e3c94bbad90fa25835188a2355e9530d3a10fcbe4c65b',1,'NETWORK():&#160;clientmodel.h'],['../netaddress_8h.html#acc9a38c714afe79b5035cb36f560dac3',1,'Network():&#160;netaddress.h']]],
   ['networkactivechanged',['networkActiveChanged',['../class_client_model.html#afc762ae1f1718bcc0721ce51f9ea96b5',1,'ClientModel']]],
   ['networkarg',['NetworkArg',['../class_args_manager_helper.html#a863ddbcfbd113cf88cf622a0a4e32c1d',1,'ArgsManagerHelper']]],
   ['networkerror',['NetworkError',['../netbase_8cpp.html#a016a344931d1ff79d2489292ad877b37a47423b8444592efbe331550c5620e821',1,'netbase.cpp']]],

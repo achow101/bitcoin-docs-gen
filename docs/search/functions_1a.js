@@ -60,6 +60,7 @@ var searchData=
   ['_7edisconnectedblocktransactions',['~DisconnectedBlockTransactions',['../struct_disconnected_block_transactions.html#a75d75a6ff348c8ed0c32d9f7d61c0fca',1,'DisconnectedBlockTransactions']]],
   ['_7eeccverifyhandle',['~ECCVerifyHandle',['../class_e_c_c_verify_handle.html#a17dea6c87a0f825f0f24a06a20e2baf9',1,'ECCVerifyHandle']]],
   ['_7eeditaddressdialog',['~EditAddressDialog',['../class_edit_address_dialog.html#ab4e5fcba5f0a10a4de260ca67d37f5bd',1,'EditAddressDialog']]],
+  ['_7efilelock',['~FileLock',['../classfsbridge_1_1_file_lock.html#ac01f8a16d66fbbd4027ee4e723dcecae',1,'fsbridge::FileLock']]],
   ['_7efunctioncallback',['~FunctionCallback',['../class_function_callback.html#a09d3d57af89226f5f460a154ed2cd984',1,'FunctionCallback']]],
   ['_7ehandler',['~Handler',['../classinterfaces_1_1_handler.html#aa91cc64778b949b3421fbc05e4e0ffc7',1,'interfaces::Handler']]],
   ['_7ehelpmessagedialog',['~HelpMessageDialog',['../class_help_message_dialog.html#a5393c6af4412e0fcab05b0824cb0ef18',1,'HelpMessageDialog']]],
