@@ -69,6 +69,7 @@ var searchData=
   ['done',['done',['../class_address_book_page.html#a4f585f3ff33a3c7066b2fcda803f862f',1,'AddressBookPage']]],
   ['dos',['DoS',['../class_c_validation_state.html#a084ab7448f23966f0650d3ca53d0b88a',1,'CValidationState']]],
   ['doubleclicked',['doubleClicked',['../class_transaction_view.html#ad7f18fdb4db9a4a307eeba8bf1fec4e3',1,'TransactionView']]],
+  ['downcase',['Downcase',['../utilstrencodings_8cpp.html#a0112c4a0e8c623b7fc4a52730c57e2d0',1,'Downcase(std::string &amp;str):&#160;utilstrencodings.cpp'],['../utilstrencodings_8h.html#a0112c4a0e8c623b7fc4a52730c57e2d0',1,'Downcase(std::string &amp;str):&#160;utilstrencodings.cpp']]],
   ['dragenterevent',['dragEnterEvent',['../class_bitcoin_g_u_i.html#a8c241174b5b109c2b27019bad289e34d',1,'BitcoinGUI']]],
   ['dropevent',['dropEvent',['../class_bitcoin_g_u_i.html#a1faa00034444ca5930f0751b86646b68',1,'BitcoinGUI']]],
   ['dummysigninput',['DummySignInput',['../group__map_wallet.html#ga5a92b1905786145af8a3a3bd86ed794b',1,'CWallet']]],

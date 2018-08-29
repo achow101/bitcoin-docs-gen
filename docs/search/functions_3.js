@@ -28,6 +28,7 @@ var searchData=
   ['callfunctioninvalidationinterfacequeue',['CallFunctionInValidationInterfaceQueue',['../validationinterface_8cpp.html#a581c542f0900a185a20a25d7df4b9c78',1,'CallFunctionInValidationInterfaceQueue(std::function&lt; void()&gt; func):&#160;validationinterface.cpp'],['../validationinterface_8h.html#a581c542f0900a185a20a25d7df4b9c78',1,'CallFunctionInValidationInterfaceQueue(std::function&lt; void()&gt; func):&#160;validationinterface.cpp']]],
   ['cansupportfeature',['CanSupportFeature',['../class_c_wallet.html#a22312062d026a1c0a992773386101b50',1,'CWallet']]],
   ['capacity',['capacity',['../classprevector.html#a950bdf62aa22ab779af46d5b36a7da1a',1,'prevector']]],
+  ['capitalize',['Capitalize',['../utilstrencodings_8cpp.html#a07fea13e4dba45392e84b1205a3fa598',1,'Capitalize(std::string str):&#160;utilstrencodings.cpp'],['../utilstrencodings_8h.html#a07fea13e4dba45392e84b1205a3fa598',1,'Capitalize(std::string str):&#160;utilstrencodings.cpp']]],
   ['casttobool',['CastToBool',['../interpreter_8cpp.html#a43bc2157638b796f2e3144963e00db34',1,'interpreter.cpp']]],
   ['cautofile',['CAutoFile',['../class_c_auto_file.html#a52613083aaeab4c9238c649ae471783f',1,'CAutoFile::CAutoFile(FILE *filenew, int nTypeIn, int nVersionIn)'],['../class_c_auto_file.html#aae4781ca6283be0ec0da38dae300ebe5',1,'CAutoFile::CAutoFile(const CAutoFile &amp;)=delete']]],
   ['cbandb',['CBanDB',['../class_c_ban_d_b.html#aaa72a14ee1c95a75cd5be52ffac0386b',1,'CBanDB']]],

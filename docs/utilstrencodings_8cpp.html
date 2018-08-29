@@ -98,6 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="utilstrencodings_8h_source.html">utilstrencodings.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="tinyformat_8h_source.html">tinyformat.h</a>&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;errno.h&gt;</code><br />
@@ -105,7 +106,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for utilstrencodings.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="utilstrencodings_8cpp__incl.svg" width="867" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="utilstrencodings_8cpp__incl.svg" width="818" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="utilstrencodings_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -178,6 +180,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a04f5f8ee6f40f3b445bf0e914f8f47b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utilstrencodings_8cpp.html#a04f5f8ee6f40f3b445bf0e914f8f47b2">ParseHDKeypath</a> (const std::string &amp;keypath_str, std::vector&lt; uint32_t &gt; &amp;keypath)</td></tr>
 <tr class="memdesc:a04f5f8ee6f40f3b445bf0e914f8f47b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an HD keypaths like "m/7/0'/2000".  <a href="#a04f5f8ee6f40f3b445bf0e914f8f47b2">More...</a><br /></td></tr>
 <tr class="separator:a04f5f8ee6f40f3b445bf0e914f8f47b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0112c4a0e8c623b7fc4a52730c57e2d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utilstrencodings_8cpp.html#a0112c4a0e8c623b7fc4a52730c57e2d0">Downcase</a> (std::string &amp;str)</td></tr>
+<tr class="memdesc:a0112c4a0e8c623b7fc4a52730c57e2d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the given string to its lowercase equivalent.  <a href="#a0112c4a0e8c623b7fc4a52730c57e2d0">More...</a><br /></td></tr>
+<tr class="separator:a0112c4a0e8c623b7fc4a52730c57e2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07fea13e4dba45392e84b1205a3fa598"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utilstrencodings_8cpp.html#a07fea13e4dba45392e84b1205a3fa598">Capitalize</a> (std::string str)</td></tr>
+<tr class="memdesc:a07fea13e4dba45392e84b1205a3fa598"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capitalizes the first character of the given string.  <a href="#a07fea13e4dba45392e84b1205a3fa598">More...</a><br /></td></tr>
+<tr class="separator:a07fea13e4dba45392e84b1205a3fa598"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -199,7 +207,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00423">423</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00424">424</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -231,7 +239,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00405">405</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00406">406</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -256,7 +264,50 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00414">414</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00415">415</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a07fea13e4dba45392e84b1205a3fa598"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Capitalize </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Capitalizes the first character of the given string. </p>
+<p>This function is locale independent. It only capitalizes the first character of the argument if it has an uppercase equivalent in the standard 7-bit ASCII range. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">str</td><td>the string to capitalize. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string with the first letter capitalized. </dd></dl>
+
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00594">594</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="utilstrencodings_8cpp_a07fea13e4dba45392e84b1205a3fa598_cgraph.svg" width="350" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="utilstrencodings_8cpp_a07fea13e4dba45392e84b1205a3fa598_icgraph.svg" width="1354" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -284,7 +335,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00211">211</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00212">212</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -309,7 +360,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00258">258</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00259">259</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -344,7 +395,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00142">142</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00143">143</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -369,12 +420,54 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00189">189</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00190">190</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="utilstrencodings_8cpp_abe1060fd27543de8bf9806678f4e91eb_cgraph.svg" width="296" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0112c4a0e8c623b7fc4a52730c57e2d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Downcase </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts the given string to its lowercase equivalent. </p>
+<p>This function is locale independent. It only converts uppercase characters in the standard 7-bit ASCII range. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">str</td><td>the string to convert to lowercase. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00589">589</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="utilstrencodings_8cpp_a0112c4a0e8c623b7fc4a52730c57e2d0_cgraph.svg" width="352" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="utilstrencodings_8cpp_a0112c4a0e8c623b7fc4a52730c57e2d0_icgraph.svg" width="654" height="63"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -404,7 +497,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00195">195</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00196">196</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -429,7 +522,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00206">206</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00207">207</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -464,7 +557,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00126">126</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00127">127</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -489,7 +582,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00137">137</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00138">138</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -532,7 +625,7 @@ Here is the call graph for this function:</div>
 
 <p>Format a paragraph of text to a fixed width, adding spaces for indentation to any added line. </p>
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00354">354</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00355">355</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -557,7 +650,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00053">53</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00054">54</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -582,7 +675,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00395">395</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00396">396</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -607,7 +700,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00058">58</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00059">59</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -641,7 +734,7 @@ Here is the caller graph for this function:</div>
 
 <p>Return true if the string is a hex number, optionally prefixed with "0x". </p>
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00068">68</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00069">69</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -673,7 +766,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00400">400</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00401">401</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -711,7 +804,7 @@ Here is the caller graph for this function:</div>
 <p>Convert string to double with strict parse error feedback. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if the entire string could be parsed as valid double, false if not the entire string could be parsed or when overflow or underflow occurred. </dd></dl>
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00340">340</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00341">341</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -756,7 +849,7 @@ Here is the caller graph for this function:</div>
 <p>See <a href="http://json.org/number.gif">http://json.org/number.gif</a> </p><dl class="section return"><dt>Returns</dt><dd>true on success, false on error. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The result must be in the range (-10^18,10^18), otherwise an overflow error will trigger. </dd></dl>
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00455">455</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00456">456</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -800,7 +893,7 @@ Here is the caller graph for this function:</div>
 
 <p>Parse an HD keypaths like "m/7/0'/2000". </p>
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00547">547</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00548">548</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -832,7 +925,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00081">81</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00082">82</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -864,7 +957,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00102">102</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00103">103</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -902,7 +995,7 @@ Here is the call graph for this function:</div>
 <p>Convert string to signed 32-bit integer with strict parse error feedback. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if the entire string could be parsed as valid integer, false if not the entire string could be parsed or when overflow or underflow occurred. </dd></dl>
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00275">275</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00276">276</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -940,7 +1033,7 @@ Here is the caller graph for this function:</div>
 <p>Convert string to signed 64-bit integer with strict parse error feedback. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if the entire string could be parsed as valid integer, false if not the entire string could be parsed or when overflow or underflow occurred. </dd></dl>
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00291">291</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00292">292</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -978,7 +1071,7 @@ Here is the caller graph for this function:</div>
 <p>Convert decimal string to unsigned 32-bit integer with strict parse error feedback. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if the entire string could be parsed as valid integer, false if not the entire string could be parsed or when overflow or underflow occurred. </dd></dl>
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00306">306</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00307">307</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1016,7 +1109,7 @@ Here is the caller graph for this function:</div>
 <p>Convert decimal string to unsigned 64-bit integer with strict parse error feedback. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if the entire string could be parsed as valid integer, false if not the entire string could be parsed or when overflow or underflow occurred. </dd></dl>
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00323">323</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00324">324</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1061,7 +1154,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A new string without unsafe chars </dd></dl>
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00024">24</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00025">25</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1102,7 +1195,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00107">107</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00108">108</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1131,14 +1224,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">{ -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,</div><div class="line">  -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,</div><div class="line">  -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,</div><div class="line">  0,1,2,3,4,5,6,7,8,9,-1,-1,-1,-1,-1,-1,</div><div class="line">  -1,0xa,0xb,0xc,0xd,0xe,0xf,-1,-1,-1,-1,-1,-1,-1,-1,-1,</div><div class="line">  -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,</div><div class="line">  -1,0xa,0xb,0xc,0xd,0xe,0xf,-1,-1,-1,-1,-1,-1,-1,-1,-1,</div><div class="line">  -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,</div><div class="line">  -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,</div><div class="line">  -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,</div><div class="line">  -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,</div><div class="line">  -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,</div><div class="line">  -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,</div><div class="line">  -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,</div><div class="line">  -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,</div><div class="line">  -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1, }</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00035">35</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="utilstrencodings_8cpp_source.html#l00036">36</a> of file <a class="el" href="utilstrencodings_8cpp_source.html">utilstrencodings.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 29 2018 12:18:30 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 29 2018 13:01:23 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

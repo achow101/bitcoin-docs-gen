@@ -48,6 +48,7 @@ var searchData=
   ['camount',['CAmount',['../amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564',1,'amount.h']]],
   ['cansupportfeature',['CanSupportFeature',['../class_c_wallet.html#a22312062d026a1c0a992773386101b50',1,'CWallet']]],
   ['capacity',['capacity',['../unionprevector_1_1direct__or__indirect.html#a8620e32f60f8c5ff1b91665093d6bf91',1,'prevector::direct_or_indirect::capacity()'],['../classprevector.html#a950bdf62aa22ab779af46d5b36a7da1a',1,'prevector::capacity()']]],
+  ['capitalize',['Capitalize',['../utilstrencodings_8cpp.html#a07fea13e4dba45392e84b1205a3fa598',1,'Capitalize(std::string str):&#160;utilstrencodings.cpp'],['../utilstrencodings_8h.html#a07fea13e4dba45392e84b1205a3fa598',1,'Capitalize(std::string str):&#160;utilstrencodings.cpp']]],
   ['casttobool',['CastToBool',['../interpreter_8cpp.html#a43bc2157638b796f2e3144963e00db34',1,'interpreter.cpp']]],
   ['category',['category',['../struct_c_log_category_desc.html#a819bd612370dd7ef1cfd4d51b85c26ed',1,'CLogCategoryDesc::category()'],['../struct_c_log_category_active.html#a9660f0b1080a79b615993f95353ba4b3',1,'CLogCategoryActive::category()'],['../class_c_r_p_c_command.html#a27dd2710a5f94011f891f6a2efcec53a',1,'CRPCCommand::category()']]],
   ['cautofile',['CAutoFile',['../class_c_auto_file.html',1,'CAutoFile'],['../class_c_auto_file.html#a52613083aaeab4c9238c649ae471783f',1,'CAutoFile::CAutoFile(FILE *filenew, int nTypeIn, int nVersionIn)'],['../class_c_auto_file.html#aae4781ca6283be0ec0da38dae300ebe5',1,'CAutoFile::CAutoFile(const CAutoFile &amp;)=delete']]],
