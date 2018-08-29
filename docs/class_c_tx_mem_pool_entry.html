@@ -109,7 +109,7 @@ Collaboration diagram for CTxMemPoolEntry:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0f7612dbb388fabdeebcef62be009dd5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#a0f7612dbb388fabdeebcef62be009dd5">CTxMemPoolEntry</a> (const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;_tx, const <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;_nFee, int64_t _nTime, unsigned int _entryHeight, bool <a class="el" href="class_c_tx_mem_pool_entry.html#a3e4fd6844e39c2f319187873c0db1fbf">spendsCoinbase</a>, int64_t nSigOpsCost, <a class="el" href="struct_lock_points.html">LockPoints</a> lp)</td></tr>
+<tr class="memitem:a0f7612dbb388fabdeebcef62be009dd5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#a0f7612dbb388fabdeebcef62be009dd5">CTxMemPoolEntry</a> (const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;_tx, const <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;_nFee, int64_t _nTime, unsigned int _entryHeight, bool <a class="el" href="class_c_tx_mem_pool_entry.html#a1b62f46c9d110a1149a9fe679bdf4674">spendsCoinbase</a>, int64_t nSigOpsCost, <a class="el" href="struct_lock_points.html">LockPoints</a> lp)</td></tr>
 <tr class="separator:a0f7612dbb388fabdeebcef62be009dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59f51f38161c191dae2614c53ed40fb2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_c_transaction.html">CTransaction</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#a59f51f38161c191dae2614c53ed40fb2">GetTx</a> () const </td></tr>
 <tr class="separator:a59f51f38161c191dae2614c53ed40fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,29 +166,29 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:aef74165d4a8c2262f7e1499c6721fb40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#aef74165d4a8c2262f7e1499c6721fb40">tx</a></td></tr>
-<tr class="separator:aef74165d4a8c2262f7e1499c6721fb40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdeeb2a36948b64dfa391e214e99e12e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#afdeeb2a36948b64dfa391e214e99e12e">nFee</a></td></tr>
-<tr class="memdesc:afdeeb2a36948b64dfa391e214e99e12e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached to avoid expensive parent-transaction lookups.  <a href="#afdeeb2a36948b64dfa391e214e99e12e">More...</a><br /></td></tr>
-<tr class="separator:afdeeb2a36948b64dfa391e214e99e12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b3127d7bf049fc2d2a9e77fba000599"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#a0b3127d7bf049fc2d2a9e77fba000599">nTxWeight</a></td></tr>
-<tr class="memdesc:a0b3127d7bf049fc2d2a9e77fba000599"><td class="mdescLeft">&#160;</td><td class="mdescRight">... and avoid recomputing tx weight (also used for <a class="el" href="class_c_tx_mem_pool_entry.html#a500fcb2039ceb24798d8ddb7d548b7b5">GetTxSize()</a>)  <a href="#a0b3127d7bf049fc2d2a9e77fba000599">More...</a><br /></td></tr>
-<tr class="separator:a0b3127d7bf049fc2d2a9e77fba000599"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46110a49dc627ae6c08e5710f1e038cb"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#a46110a49dc627ae6c08e5710f1e038cb">nUsageSize</a></td></tr>
-<tr class="memdesc:a46110a49dc627ae6c08e5710f1e038cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">... and total memory usage  <a href="#a46110a49dc627ae6c08e5710f1e038cb">More...</a><br /></td></tr>
-<tr class="separator:a46110a49dc627ae6c08e5710f1e038cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50519989258aefe31a7687feefa06022"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#a50519989258aefe31a7687feefa06022">nTime</a></td></tr>
-<tr class="memdesc:a50519989258aefe31a7687feefa06022"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local time when entering the mempool.  <a href="#a50519989258aefe31a7687feefa06022">More...</a><br /></td></tr>
-<tr class="separator:a50519989258aefe31a7687feefa06022"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27a6e67929a85325138b1e281c610e06"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#a27a6e67929a85325138b1e281c610e06">entryHeight</a></td></tr>
-<tr class="memdesc:a27a6e67929a85325138b1e281c610e06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Chain height when entering the mempool.  <a href="#a27a6e67929a85325138b1e281c610e06">More...</a><br /></td></tr>
-<tr class="separator:a27a6e67929a85325138b1e281c610e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e4fd6844e39c2f319187873c0db1fbf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#a3e4fd6844e39c2f319187873c0db1fbf">spendsCoinbase</a></td></tr>
-<tr class="memdesc:a3e4fd6844e39c2f319187873c0db1fbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">keep track of transactions that spend a coinbase  <a href="#a3e4fd6844e39c2f319187873c0db1fbf">More...</a><br /></td></tr>
-<tr class="separator:a3e4fd6844e39c2f319187873c0db1fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6428785c30a148c089b1bb1d7f7a832b"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#a6428785c30a148c089b1bb1d7f7a832b">sigOpCost</a></td></tr>
-<tr class="memdesc:a6428785c30a148c089b1bb1d7f7a832b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total sigop cost.  <a href="#a6428785c30a148c089b1bb1d7f7a832b">More...</a><br /></td></tr>
-<tr class="separator:a6428785c30a148c089b1bb1d7f7a832b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a035fc3853deb910541e3ebdefd32f3b2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#a035fc3853deb910541e3ebdefd32f3b2">tx</a></td></tr>
+<tr class="separator:a035fc3853deb910541e3ebdefd32f3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac60396fb30d7315d7c651232b92762eb"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#ac60396fb30d7315d7c651232b92762eb">nFee</a></td></tr>
+<tr class="memdesc:ac60396fb30d7315d7c651232b92762eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached to avoid expensive parent-transaction lookups.  <a href="#ac60396fb30d7315d7c651232b92762eb">More...</a><br /></td></tr>
+<tr class="separator:ac60396fb30d7315d7c651232b92762eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c5c392c9b2b5e491c59ddb35942f921"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#a1c5c392c9b2b5e491c59ddb35942f921">nTxWeight</a></td></tr>
+<tr class="memdesc:a1c5c392c9b2b5e491c59ddb35942f921"><td class="mdescLeft">&#160;</td><td class="mdescRight">... and avoid recomputing tx weight (also used for <a class="el" href="class_c_tx_mem_pool_entry.html#a500fcb2039ceb24798d8ddb7d548b7b5">GetTxSize()</a>)  <a href="#a1c5c392c9b2b5e491c59ddb35942f921">More...</a><br /></td></tr>
+<tr class="separator:a1c5c392c9b2b5e491c59ddb35942f921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a319e89dded0204ad0cb35f37328a24"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#a5a319e89dded0204ad0cb35f37328a24">nUsageSize</a></td></tr>
+<tr class="memdesc:a5a319e89dded0204ad0cb35f37328a24"><td class="mdescLeft">&#160;</td><td class="mdescRight">... and total memory usage  <a href="#a5a319e89dded0204ad0cb35f37328a24">More...</a><br /></td></tr>
+<tr class="separator:a5a319e89dded0204ad0cb35f37328a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f0c1f361f8bcc948258a4c6b5447ff7"><td class="memItemLeft" align="right" valign="top">const int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#a4f0c1f361f8bcc948258a4c6b5447ff7">nTime</a></td></tr>
+<tr class="memdesc:a4f0c1f361f8bcc948258a4c6b5447ff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local time when entering the mempool.  <a href="#a4f0c1f361f8bcc948258a4c6b5447ff7">More...</a><br /></td></tr>
+<tr class="separator:a4f0c1f361f8bcc948258a4c6b5447ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef8caf698c9f18a0c540e4a1ff253449"><td class="memItemLeft" align="right" valign="top">const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#aef8caf698c9f18a0c540e4a1ff253449">entryHeight</a></td></tr>
+<tr class="memdesc:aef8caf698c9f18a0c540e4a1ff253449"><td class="mdescLeft">&#160;</td><td class="mdescRight">Chain height when entering the mempool.  <a href="#aef8caf698c9f18a0c540e4a1ff253449">More...</a><br /></td></tr>
+<tr class="separator:aef8caf698c9f18a0c540e4a1ff253449"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b62f46c9d110a1149a9fe679bdf4674"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#a1b62f46c9d110a1149a9fe679bdf4674">spendsCoinbase</a></td></tr>
+<tr class="memdesc:a1b62f46c9d110a1149a9fe679bdf4674"><td class="mdescLeft">&#160;</td><td class="mdescRight">keep track of transactions that spend a coinbase  <a href="#a1b62f46c9d110a1149a9fe679bdf4674">More...</a><br /></td></tr>
+<tr class="separator:a1b62f46c9d110a1149a9fe679bdf4674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a035c3885d036aa6c9fabc3aa58d663a9"><td class="memItemLeft" align="right" valign="top">const int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#a035c3885d036aa6c9fabc3aa58d663a9">sigOpCost</a></td></tr>
+<tr class="memdesc:a035c3885d036aa6c9fabc3aa58d663a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total sigop cost.  <a href="#a035c3885d036aa6c9fabc3aa58d663a9">More...</a><br /></td></tr>
+<tr class="separator:a035c3885d036aa6c9fabc3aa58d663a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e63a38667e065be3b07dcd4d28b6911"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#a2e63a38667e065be3b07dcd4d28b6911">feeDelta</a></td></tr>
 <tr class="memdesc:a2e63a38667e065be3b07dcd4d28b6911"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used for determining the priority of the transaction for mining in a block.  <a href="#a2e63a38667e065be3b07dcd4d28b6911">More...</a><br /></td></tr>
 <tr class="separator:a2e63a38667e065be3b07dcd4d28b6911"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -311,7 +311,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_entry_ad7c4813ff6286451db779162718618e8_icgraph.svg" width="466" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_entry_ad7c4813ff6286451db779162718618e8_icgraph.svg" width="466" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -407,7 +408,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_entry_a3a7df08c5d61cae8cb4c93970cc82ff6_icgraph.svg" width="1235" height="235"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_entry_a3a7df08c5d61cae8cb4c93970cc82ff6_icgraph.svg" width="1235" height="235"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -439,7 +441,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_entry_ac519a06da6ba8f9358d4301c5cac4ac9_icgraph.svg" width="1182" height="220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_entry_ac519a06da6ba8f9358d4301c5cac4ac9_icgraph.svg" width="1182" height="220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -592,7 +595,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_entry_a999184462e8e1ade9ba97aaf22b31f0f_icgraph.svg" width="492" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_entry_a999184462e8e1ade9ba97aaf22b31f0f_icgraph.svg" width="492" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -795,7 +799,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_entry_a59f51f38161c191dae2614c53ed40fb2_icgraph.svg" width="2011" height="1688"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_entry_a59f51f38161c191dae2614c53ed40fb2_icgraph.svg" width="2011" height="1695"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -814,7 +819,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00054">54</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00051">51</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -826,7 +831,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_entry_a500fcb2039ceb24798d8ddb7d548b7b5_icgraph.svg" width="2206" height="1707"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_entry_a500fcb2039ceb24798d8ddb7d548b7b5_icgraph.svg" width="2206" height="1707"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -893,7 +899,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00318">318</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00315">315</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -934,7 +940,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00309">309</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00306">306</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -959,7 +965,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00042">42</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00039">39</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -984,7 +990,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00049">49</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00046">46</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -996,7 +1002,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a27a6e67929a85325138b1e281c610e06"></a>
+<a class="anchor" id="aef8caf698c9f18a0c540e4a1ff253449"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1004,7 +1010,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int CTxMemPoolEntry::entryHeight</td>
+          <td class="memname">const unsigned int CTxMemPoolEntry::entryHeight</td>
         </tr>
       </table>
   </td>
@@ -1114,7 +1120,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="afdeeb2a36948b64dfa391e214e99e12e"></a>
+<a class="anchor" id="ac60396fb30d7315d7c651232b92762eb"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1122,7 +1128,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> CTxMemPoolEntry::nFee</td>
+          <td class="memname">const <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> CTxMemPoolEntry::nFee</td>
         </tr>
       </table>
   </td>
@@ -1252,7 +1258,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a50519989258aefe31a7687feefa06022"></a>
+<a class="anchor" id="a4f0c1f361f8bcc948258a4c6b5447ff7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1260,7 +1266,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int64_t CTxMemPoolEntry::nTime</td>
+          <td class="memname">const int64_t CTxMemPoolEntry::nTime</td>
         </tr>
       </table>
   </td>
@@ -1276,7 +1282,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a0b3127d7bf049fc2d2a9e77fba000599"></a>
+<a class="anchor" id="a1c5c392c9b2b5e491c59ddb35942f921"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1284,7 +1290,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t CTxMemPoolEntry::nTxWeight</td>
+          <td class="memname">const size_t CTxMemPoolEntry::nTxWeight</td>
         </tr>
       </table>
   </td>
@@ -1300,7 +1306,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a46110a49dc627ae6c08e5710f1e038cb"></a>
+<a class="anchor" id="a5a319e89dded0204ad0cb35f37328a24"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1308,7 +1314,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t CTxMemPoolEntry::nUsageSize</td>
+          <td class="memname">const size_t CTxMemPoolEntry::nUsageSize</td>
         </tr>
       </table>
   </td>
@@ -1324,7 +1330,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a6428785c30a148c089b1bb1d7f7a832b"></a>
+<a class="anchor" id="a035c3885d036aa6c9fabc3aa58d663a9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1332,7 +1338,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int64_t CTxMemPoolEntry::sigOpCost</td>
+          <td class="memname">const int64_t CTxMemPoolEntry::sigOpCost</td>
         </tr>
       </table>
   </td>
@@ -1348,7 +1354,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a3e4fd6844e39c2f319187873c0db1fbf"></a>
+<a class="anchor" id="a1b62f46c9d110a1149a9fe679bdf4674"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1356,7 +1362,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool CTxMemPoolEntry::spendsCoinbase</td>
+          <td class="memname">const bool CTxMemPoolEntry::spendsCoinbase</td>
         </tr>
       </table>
   </td>
@@ -1372,7 +1378,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="aef74165d4a8c2262f7e1499c6721fb40"></a>
+<a class="anchor" id="a035fc3853deb910541e3ebdefd32f3b2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1380,7 +1386,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> CTxMemPoolEntry::tx</td>
+          <td class="memname">const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> CTxMemPoolEntry::tx</td>
         </tr>
       </table>
   </td>
@@ -1425,7 +1431,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 29 2018 13:36:38 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 29 2018 14:33:34 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

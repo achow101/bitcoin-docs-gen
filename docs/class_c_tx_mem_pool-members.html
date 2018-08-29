@@ -96,8 +96,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_c_tx_mem_pool.html#aff788c715609a335aed8d5927027f32b">_clear</a>() EXCLUSIVE_LOCKS_REQUIRED(cs)</td><td class="entry"><a class="el" href="class_c_tx_mem_pool.html">CTxMemPool</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_c_tx_mem_pool.html#a3039b67e5eebaa3ff830261c192816f2">AddTransactionsUpdated</a>(unsigned int n)</td><td class="entry"><a class="el" href="class_c_tx_mem_pool.html">CTxMemPool</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_c_tx_mem_pool.html#a511cf93b8eeae9a7005f632921b0d623">addUnchecked</a>(const uint256 &amp;hash, const CTxMemPoolEntry &amp;entry, bool validFeeEstimate=true) EXCLUSIVE_LOCKS_REQUIRED(cs)</td><td class="entry"><a class="el" href="class_c_tx_mem_pool.html">CTxMemPool</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_c_tx_mem_pool.html#abf809595791a12fea4b376f5672a30ce">addUnchecked</a>(const uint256 &amp;hash, const CTxMemPoolEntry &amp;entry, setEntries &amp;setAncestors, bool validFeeEstimate=true) EXCLUSIVE_LOCKS_REQUIRED(cs)</td><td class="entry"><a class="el" href="class_c_tx_mem_pool.html">CTxMemPool</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_c_tx_mem_pool.html#abc11d3a8b291a4355547237a498da187">addUnchecked</a>(const CTxMemPoolEntry &amp;entry, bool validFeeEstimate=true) EXCLUSIVE_LOCKS_REQUIRED(cs)</td><td class="entry"><a class="el" href="class_c_tx_mem_pool.html">CTxMemPool</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_c_tx_mem_pool.html#a18ad91b355c68ce224a4889145a088ed">addUnchecked</a>(const CTxMemPoolEntry &amp;entry, setEntries &amp;setAncestors, bool validFeeEstimate=true) EXCLUSIVE_LOCKS_REQUIRED(cs)</td><td class="entry"><a class="el" href="class_c_tx_mem_pool.html">CTxMemPool</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_c_tx_mem_pool.html#a9e6d4b7821204fcebb0758bc79ec69b6">ApplyDelta</a>(const uint256 hash, CAmount &amp;nFeeDelta) const </td><td class="entry"><a class="el" href="class_c_tx_mem_pool.html">CTxMemPool</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_c_tx_mem_pool.html#af1878f46ec4c9609ea0b6c5bd96e2541">blockSinceLastRollingFeeBump</a></td><td class="entry"><a class="el" href="class_c_tx_mem_pool.html">CTxMemPool</a></td><td class="entry"><span class="mlabel">mutable</span><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_c_tx_mem_pool.html#a9cf8ed535f89c0a1332af6c15e4a2aa9">cachedInnerUsage</a></td><td class="entry"><a class="el" href="class_c_tx_mem_pool.html">CTxMemPool</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
@@ -167,7 +167,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 29 2018 13:36:38 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 29 2018 14:33:34 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

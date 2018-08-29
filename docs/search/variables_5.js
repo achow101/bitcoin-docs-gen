@@ -12,7 +12,7 @@ var searchData=
   ['encrypted_5fbatch',['encrypted_batch',['../class_c_wallet.html#a008a2e5252e46eaa68f2002bf10d501a',1,'CWallet']]],
   ['encryptwalletaction',['encryptWalletAction',['../class_bitcoin_g_u_i.html#a6ce1b4dd69ba9b8cef1548e32ef18136',1,'BitcoinGUI']]],
   ['end',['end',['../struct_estimator_bucket.html#a3215916874d6fa408347e109d44e9e8e',1,'EstimatorBucket::end()'],['../class_arena.html#a4f9680a852e9c59e41918878dd3fc9d4',1,'Arena::end()']]],
-  ['entryheight',['entryHeight',['../class_c_tx_mem_pool_entry.html#a27a6e67929a85325138b1e281c610e06',1,'CTxMemPoolEntry']]],
+  ['entryheight',['entryHeight',['../class_c_tx_mem_pool_entry.html#aef8caf698c9f18a0c540e4a1ff253449',1,'CTxMemPoolEntry']]],
   ['env',['env',['../class_berkeley_database.html#a1c97b1d2271608ad818d26d0e6b2ce5f',1,'BerkeleyDatabase::env()'],['../class_berkeley_batch.html#aa82892c83dbb9c553dff637fa2188c7e',1,'BerkeleyBatch::env()']]],
   ['epoch_5fflags',['epoch_flags',['../class_cuckoo_cache_1_1cache.html#a6e81a89c32f6f5c1093ddd30a99734a9',1,'CuckooCache::cache']]],
   ['epoch_5fheuristic_5fcounter',['epoch_heuristic_counter',['../class_cuckoo_cache_1_1cache.html#a2bef78baf7f3c950b7b31394dd562e8a',1,'CuckooCache::cache']]],

@@ -81,7 +81,7 @@ var searchData=
   ['enter_5fcritical_5fsection',['ENTER_CRITICAL_SECTION',['../sync_8h.html#a1262d24e5b9a4fa0a1adc4de02958efb',1,'sync.h']]],
   ['entry',['entry',['../class_recent_requests_table_model.html#abd51da01be471df1d072d5e5c1b8007d',1,'RecentRequestsTableModel']]],
   ['entry_5ftime',['entry_time',['../structentry__time.html',1,'']]],
-  ['entryheight',['entryHeight',['../class_c_tx_mem_pool_entry.html#a27a6e67929a85325138b1e281c610e06',1,'CTxMemPoolEntry']]],
+  ['entryheight',['entryHeight',['../class_c_tx_mem_pool_entry.html#aef8caf698c9f18a0c540e4a1ff253449',1,'CTxMemPoolEntry']]],
   ['env',['env',['../class_berkeley_database.html#a1c97b1d2271608ad818d26d0e6b2ce5f',1,'BerkeleyDatabase::env()'],['../class_berkeley_batch.html#aa82892c83dbb9c553dff637fa2188c7e',1,'BerkeleyBatch::env()']]],
   ['eof',['eof',['../class_c_data_stream.html#abf5a9f3a26a56ef1ea1fb56b674677bf',1,'CDataStream::eof()'],['../class_c_buffered_file.html#abc0a2462d47ae5ba23c258291509dd6d',1,'CBufferedFile::eof()']]],
   ['epoch_5fcheck',['epoch_check',['../class_cuckoo_cache_1_1cache.html#a5ca088a2a92cbd3a75b7514daf054e9d',1,'CuckooCache::cache']]],

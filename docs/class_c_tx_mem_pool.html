@@ -148,10 +148,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad74247cc4eb672fb9063d4e9503f4cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38b06f21a5158f26024e9f311165d459"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool.html#a38b06f21a5158f26024e9f311165d459">setSanityCheck</a> (double dFrequency=1.0)</td></tr>
 <tr class="separator:a38b06f21a5158f26024e9f311165d459"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a511cf93b8eeae9a7005f632921b0d623"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool.html#a511cf93b8eeae9a7005f632921b0d623">addUnchecked</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;hash, const <a class="el" href="class_c_tx_mem_pool_entry.html">CTxMemPoolEntry</a> &amp;entry, bool validFeeEstimate=true) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="class_c_tx_mem_pool.html#ac7ee8c06837c7d2688e2d7e3d071bdbb">cs</a>)</td></tr>
-<tr class="separator:a511cf93b8eeae9a7005f632921b0d623"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf809595791a12fea4b376f5672a30ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool.html#abf809595791a12fea4b376f5672a30ce">addUnchecked</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;hash, const <a class="el" href="class_c_tx_mem_pool_entry.html">CTxMemPoolEntry</a> &amp;entry, <a class="el" href="class_c_tx_mem_pool.html#a8da3f55d23d335261338753b22e0171d">setEntries</a> &amp;setAncestors, bool validFeeEstimate=true) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="class_c_tx_mem_pool.html#ac7ee8c06837c7d2688e2d7e3d071bdbb">cs</a>)</td></tr>
-<tr class="separator:abf809595791a12fea4b376f5672a30ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc11d3a8b291a4355547237a498da187"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool.html#abc11d3a8b291a4355547237a498da187">addUnchecked</a> (const <a class="el" href="class_c_tx_mem_pool_entry.html">CTxMemPoolEntry</a> &amp;entry, bool validFeeEstimate=true) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="class_c_tx_mem_pool.html#ac7ee8c06837c7d2688e2d7e3d071bdbb">cs</a>)</td></tr>
+<tr class="separator:abc11d3a8b291a4355547237a498da187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18ad91b355c68ce224a4889145a088ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool.html#a18ad91b355c68ce224a4889145a088ed">addUnchecked</a> (const <a class="el" href="class_c_tx_mem_pool_entry.html">CTxMemPoolEntry</a> &amp;entry, <a class="el" href="class_c_tx_mem_pool.html#a8da3f55d23d335261338753b22e0171d">setEntries</a> &amp;setAncestors, bool validFeeEstimate=true) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="class_c_tx_mem_pool.html#ac7ee8c06837c7d2688e2d7e3d071bdbb">cs</a>)</td></tr>
+<tr class="separator:a18ad91b355c68ce224a4889145a088ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bdc49203ca7654d8508c356bcbca47e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool.html#a1bdc49203ca7654d8508c356bcbca47e">removeRecursive</a> (const <a class="el" href="class_c_transaction.html">CTransaction</a> &amp;tx, <a class="el" href="txmempool_8h.html#a2bc6653552b5871101b6cbefdbaf251f">MemPoolRemovalReason</a> reason=<a class="el" href="txmempool_8h.html#a2bc6653552b5871101b6cbefdbaf251fa696b031073e74bf2cb98e5ef201d4aa3">MemPoolRemovalReason::UNKNOWN</a>)</td></tr>
 <tr class="separator:a1bdc49203ca7654d8508c356bcbca47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14d49e10e7c1a12335bf983891c1ed07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool.html#a14d49e10e7c1a12335bf983891c1ed07">removeForReorg</a> (const <a class="el" href="class_c_coins_view_cache.html">CCoinsViewCache</a> *pcoins, unsigned int nMemPoolHeight, int <a class="el" href="bitcoin-tx_8cpp.html#ac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
@@ -321,7 +321,7 @@ Private Attributes</h2></td></tr>
 </ul>
 <p>Note: the term "descendant" refers to in-mempool transactions that depend on this one, while "ancestor" refers to in-mempool transactions that a given transaction depends on.</p>
 <p>In order for the feerate sort to remain correct, we must update transactions in the mempool when new descendants arrive. To facilitate this, we track the set of in-mempool direct parents and direct children in mapLinks. Within each <a class="el" href="class_c_tx_mem_pool_entry.html" title="CTxMemPoolEntry stores data about the corresponding transaction, as well as data about all in-mempool...">CTxMemPoolEntry</a>, we track the size and fees of all descendants.</p>
-<p>Usually when a new transaction is added to the mempool, it has no in-mempool children (because any such children would be an orphan). So in <a class="el" href="class_c_tx_mem_pool.html#a511cf93b8eeae9a7005f632921b0d623">addUnchecked()</a>, we:</p><ul>
+<p>Usually when a new transaction is added to the mempool, it has no in-mempool children (because any such children would be an orphan). So in <a class="el" href="class_c_tx_mem_pool.html#abc11d3a8b291a4355547237a498da187">addUnchecked()</a>, we:</p><ul>
 <li>update a new entry's setMemPoolParents to include all in-mempool parents</li>
 <li>update the new entry's direct parents to include the new tx as a child</li>
 <li>update all ancestors of the transaction to include the new tx's size/fee</li>
@@ -332,7 +332,7 @@ Private Attributes</h2></td></tr>
 <li>update all in-mempool children to not include it as a parent</li>
 </ul>
 <p>These happen in <a class="el" href="class_c_tx_mem_pool.html#ae6df7d624e9ef0fb35004e09077e39c6" title="For each transaction being removed, update ancestors and any direct children. ">UpdateForRemoveFromMempool()</a>. (Note that when removing a transaction along with its descendants, we must calculate that set of transactions to be removed before doing the removal, or else the mempool can be in an inconsistent state where it's impossible to walk the ancestors of a transaction.)</p>
-<p>In the event of a reorg, the assumption that a newly added tx has no in-mempool children is false. In particular, the mempool is in an inconsistent state while new transactions are being added, because there may be descendant transactions of a tx coming from a disconnected block that are unreachable from just looking at transactions in the mempool (the linking transactions may also be in the disconnected block, waiting to be added). Because of this, there's not much benefit in trying to search for in-mempool children in <a class="el" href="class_c_tx_mem_pool.html#a511cf93b8eeae9a7005f632921b0d623">addUnchecked()</a>. Instead, in the special case of transactions being added from a disconnected block, we require the caller to clean up the state, to account for in-mempool, out-of-block descendants for all the in-block transactions by calling <a class="el" href="class_c_tx_mem_pool.html#a0cdc801826e5b27d3d41ac9084711682" title="When adding transactions from a disconnected block back to the mempool, new mempool entries may have ...">UpdateTransactionsFromBlock()</a>. Note that until this is called, the mempool state is not consistent, and in particular mapLinks may not be correct (and therefore functions like <a class="el" href="class_c_tx_mem_pool.html#a8b15745bfd755afcacad8befd752b270" title="Try to calculate all in-mempool ancestors of entry. ">CalculateMemPoolAncestors()</a> and <a class="el" href="class_c_tx_mem_pool.html#ad46424b4c9a920255df3b31945b8f88a" title="Populate setDescendants with all in-mempool descendants of hash. ">CalculateDescendants()</a> that rely on them to walk the mempool are not generally safe to use).</p>
+<p>In the event of a reorg, the assumption that a newly added tx has no in-mempool children is false. In particular, the mempool is in an inconsistent state while new transactions are being added, because there may be descendant transactions of a tx coming from a disconnected block that are unreachable from just looking at transactions in the mempool (the linking transactions may also be in the disconnected block, waiting to be added). Because of this, there's not much benefit in trying to search for in-mempool children in <a class="el" href="class_c_tx_mem_pool.html#abc11d3a8b291a4355547237a498da187">addUnchecked()</a>. Instead, in the special case of transactions being added from a disconnected block, we require the caller to clean up the state, to account for in-mempool, out-of-block descendants for all the in-block transactions by calling <a class="el" href="class_c_tx_mem_pool.html#a0cdc801826e5b27d3d41ac9084711682" title="When adding transactions from a disconnected block back to the mempool, new mempool entries may have ...">UpdateTransactionsFromBlock()</a>. Note that until this is called, the mempool state is not consistent, and in particular mapLinks may not be correct (and therefore functions like <a class="el" href="class_c_tx_mem_pool.html#a8b15745bfd755afcacad8befd752b270" title="Try to calculate all in-mempool ancestors of entry. ">CalculateMemPoolAncestors()</a> and <a class="el" href="class_c_tx_mem_pool.html#ad46424b4c9a920255df3b31945b8f88a" title="Populate setDescendants with all in-mempool descendants of hash. ">CalculateDescendants()</a> that rely on them to walk the mempool are not generally safe to use).</p>
 <p>Computational limits:</p>
 <p>Updating all in-mempool ancestors of a newly added transaction can be slow, if no bound exists on how many in-mempool ancestors there may be. <a class="el" href="class_c_tx_mem_pool.html#a8b15745bfd755afcacad8befd752b270" title="Try to calculate all in-mempool ancestors of entry. ">CalculateMemPoolAncestors()</a> takes configurable limits that are designed to prevent these calculations from being too CPU intensive. </p>
 
@@ -449,7 +449,7 @@ Private Attributes</h2></td></tr>
 
 <p>Create a new <a class="el" href="class_c_tx_mem_pool.html" title="CTxMemPool stores valid-according-to-the-current-best-chain transactions that may be included in the ...">CTxMemPool</a>. </p>
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00329">329</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00326">326</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -474,7 +474,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00586">586</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00583">583</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -506,7 +506,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00352">352</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00349">349</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -517,19 +517,13 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a511cf93b8eeae9a7005f632921b0d623"></a>
+<a class="anchor" id="abc11d3a8b291a4355547237a498da187"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void CTxMemPool::addUnchecked </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classuint256.html">uint256</a> &amp;&#160;</td>
-          <td class="paramname"><em>hash</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const <a class="el" href="class_c_tx_mem_pool_entry.html">CTxMemPoolEntry</a> &amp;&#160;</td>
           <td class="paramname"><em>entry</em>, </td>
         </tr>
@@ -547,30 +541,25 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00926">926</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00923">923</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a511cf93b8eeae9a7005f632921b0d623_icgraph.svg" width="2700" height="1694"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_abc11d3a8b291a4355547237a498da187_icgraph.svg" width="2700" height="1694"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="abf809595791a12fea4b376f5672a30ce"></a>
+<a class="anchor" id="a18ad91b355c68ce224a4889145a088ed"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void CTxMemPool::addUnchecked </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classuint256.html">uint256</a> &amp;&#160;</td>
-          <td class="paramname"><em>hash</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const <a class="el" href="class_c_tx_mem_pool_entry.html">CTxMemPoolEntry</a> &amp;&#160;</td>
           <td class="paramname"><em>entry</em>, </td>
         </tr>
@@ -594,12 +583,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00358">358</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00355">355</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_abf809595791a12fea4b376f5672a30ce_cgraph.svg" width="1118" height="534"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a18ad91b355c68ce224a4889145a088ed_cgraph.svg" width="1118" height="542"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -629,7 +619,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00854">854</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00851">851</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -654,7 +644,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l01046">1046</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l01043">1043</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 </div>
 </div>
@@ -685,7 +675,7 @@ Here is the caller graph for this function:</div>
 <p>Populate setDescendants with all in-mempool descendants of hash. </p>
 <p>Assumes that setDescendants includes all in-mempool descendants of anything already in it. </p>
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00445">445</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00442">442</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -766,7 +756,7 @@ Here is the caller graph for this function:</div>
 <p>Try to calculate all in-mempool ancestors of entry. </p>
 <p>(these are all calculated including the tx itself) limitAncestorCount = max number of ancestors limitAncestorSize = max size of ancestors limitDescendantCount = max number of descendants any ancestor can have limitDescendantSize = max size of descendants any ancestor can have errString = populated with error reason if any limits are hit fSearchForParents = whether to search a tx's vin for in-mempool parents, or look up parents from mapLinks. Must be true for entries not in the mempool </p>
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00152">152</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00149">149</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -801,7 +791,7 @@ Here is the caller graph for this function:</div>
 <p>If sanity-checking is turned on, check makes sure the pool is consistent (does not contain two transactions that spend the same inputs, all inputs are in the mapNextTx array). </p>
 <p>If sanity-checking is turned off, check does nothing. </p>
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00614">614</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00611">611</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -832,7 +822,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00599">599</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00596">596</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -864,7 +854,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00864">864</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00861">861</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -899,7 +889,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00730">730</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00727">727</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -923,7 +913,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00896">896</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00893">893</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -984,7 +974,7 @@ Here is the caller graph for this function:</div>
 <p>Expire all transaction (and their dependencies) in the mempool older than time. </p>
 <p>Return the number of removed transactions. </p>
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00910">910</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00907">907</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1009,7 +999,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00806">806</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00803">803</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1034,7 +1024,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00963">963</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00960">960</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1059,7 +1049,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00955">955</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00952">952</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1087,7 +1077,7 @@ Here is the caller graph for this function:</div>
 <p>The minimum fee to get into the mempool, which may itself not be enough for larger-sized transactions. </p>
 <p>The incrementalRelayFee policy variable is used to bound the time it takes the fee rate to go back down all the way to 0. When the feerate would otherwise be half of this, it is set to 0 instead. </p>
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00971">971</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00968">968</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1126,7 +1116,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00761">761</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00758">758</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1202,7 +1192,7 @@ Here is the caller graph for this function:</div>
 <p>Calculate the ancestor and descendant count for the given transaction. </p>
 <p>The counts include the transaction itself. </p>
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l01068">1068</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l01065">1065</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1226,7 +1216,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00346">346</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00343">343</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1311,7 +1301,7 @@ Here is the caller graph for this function:</div>
 
 <p>Check that none of this transactions inputs are in the mempool, and thus the tx is not dependent on other mempool transactions to be included in a block. </p>
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00870">870</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00867">867</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1343,7 +1333,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00815">815</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00812">812</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1367,7 +1357,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00792">792</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00789">789</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1399,7 +1389,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00340">340</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00337">337</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1436,7 +1426,7 @@ Here is the caller graph for this function:</div>
 
 <p>Affect CreateNewBlock prioritisation of transactions. </p>
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00824">824</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00821">821</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1468,7 +1458,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00775">775</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00772">772</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1500,7 +1490,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00537">537</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00534">534</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1545,7 +1535,7 @@ Here is the caller graph for this function:</div>
 <p>Called when a block is connected. </p>
 <p>Removes from mempool and updates the miner fee estimator. </p>
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00557">557</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00554">554</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1593,7 +1583,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00500">500</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00497">497</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1635,7 +1625,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00468">468</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00465">465</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1686,7 +1676,7 @@ Here is the caller graph for this function:</div>
 <p>Remove a set of transactions from the mempool. </p>
 <p>If a transaction is in this set, then all in-mempool descendants must also be in the set, unless this transaction is being removed for being in a block. Set updateDescendants to true when removing a tx that was in a block, so that any in-mempool descendants have their ancestor state updated. </p>
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00902">902</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00899">899</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1732,7 +1722,7 @@ Here is the caller graph for this function:</div>
 <p>Before calling removeUnchecked for a given transaction, UpdateForRemoveFromMempool must be called on the entire (dependent) set of transactions being removed at the same time. </p>
 <p>We use each <a class="el" href="class_c_tx_mem_pool_entry.html" title="CTxMemPoolEntry stores data about the corresponding transaction, as well as data about all in-mempool...">CTxMemPoolEntry</a>'s setMemPoolParents in order to walk ancestors of a given transaction that is removed, so we can't remove intermediate transactions in a chain before we've updated all the state for the removal. </p>
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00414">414</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00411">411</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1830,7 +1820,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00995">995</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00992">992</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1868,7 +1858,7 @@ Here is the call graph for this function:</div>
 <p>Remove transactions from the mempool until its dynamic size is &lt;= sizelimit. </p>
 <p>pvNoSpendsRemaining, if set, will be populated with the list of outpoints which are not in mempool which no longer have any spends in this mempool. </p>
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l01003">1003</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l01000">1000</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1926,12 +1916,13 @@ Here is the caller graph for this function:</div>
 
 <p>Update ancestors of hash to add/remove it as a descendant transaction. </p>
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00214">214</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00211">211</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a7719e4d9c92fead8bdc0012de6d40a25_icgraph.svg" width="503" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a7719e4d9c92fead8bdc0012de6d40a25_icgraph.svg" width="503" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1975,7 +1966,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00935">935</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00932">932</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 </div>
 </div>
@@ -2003,7 +1994,7 @@ Here is the caller graph for this function:</div>
 
 <p>Sever link between specified transaction and direct children. </p>
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00243">243</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00240">240</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 </div>
 </div>
@@ -2041,12 +2032,13 @@ Here is the caller graph for this function:</div>
 
 <p>Set ancestor state for an entry. </p>
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00229">229</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00226">226</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a1ab805b110845c19e1887456197b6328_icgraph.svg" width="478" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_a1ab805b110845c19e1887456197b6328_icgraph.svg" width="478" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2094,7 +2086,7 @@ Here is the caller graph for this function:</div>
 <p>setExclude is the set of descendant transactions in the mempool that must not be accounted for (because any descendants in setExclude were added to the mempool after the transaction being updated and hence their state is already reflected in the parent state).</p>
 <p>cachedDescendants will be updated with the descendants of the transaction being updated, so that future invocations don't need to walk the same transaction again, if encountered in another transaction chain. </p>
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00062">62</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00059">59</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 </div>
 </div>
@@ -2133,7 +2125,7 @@ Here is the caller graph for this function:</div>
 <p>For each transaction being removed, update ancestors and any direct children. </p>
 <p>If updateDescendants is true, then also update in-mempool descendants' ancestor state. </p>
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00251">251</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00248">248</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 </div>
 </div>
@@ -2175,12 +2167,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00945">945</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00942">942</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_ae6cc140209f782be93c522048595b797_icgraph.svg" width="466" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_ae6cc140209f782be93c522048595b797_icgraph.svg" width="466" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2203,7 +2196,7 @@ Here is the caller graph for this function:</div>
 <p>When adding transactions from a disconnected block back to the mempool, new mempool entries may have children in the mempool (which is generally not the case when otherwise adding transactions). </p>
 <p><a class="el" href="class_c_tx_mem_pool.html#a0cdc801826e5b27d3d41ac9084711682" title="When adding transactions from a disconnected block back to the mempool, new mempool entries may have ...">UpdateTransactionsFromBlock()</a> will find child transactions and update the descendant state for each transaction in vHashesToUpdate (excluding any child transactions present in vHashesToUpdate, which are already accounted for). Note: vHashesToUpdate should be the set of transactions from the disconnected block that have been accepted back into the mempool. </p>
 
-<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00109">109</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8cpp_source.html#l00106">106</a> of file <a class="el" href="txmempool_8cpp_source.html">txmempool.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2515,7 +2508,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 29 2018 13:36:38 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 29 2018 14:33:34 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
