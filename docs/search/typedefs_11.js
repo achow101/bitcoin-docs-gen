@@ -6,10 +6,9 @@ var searchData=
   ['transactionchangedfn',['TransactionChangedFn',['../classinterfaces_1_1_wallet.html#a2952d91248fe1ec1bb705c31e8fee06f',1,'interfaces::Wallet']]],
   ['transactionsignaturechecker',['TransactionSignatureChecker',['../interpreter_8h.html#a8d681a40278017c40e6fb3eb7663aeed',1,'interpreter.h']]],
   ['trivial_5ft',['trivial_t',['../prevector_8cpp.html#ab5738c3eb7291f22f2ac5478fcd81477',1,'prevector.cpp']]],
-  ['txitems',['TxItems',['../class_c_wallet.html#ac35fb148c0967ad24db292435b54ad85',1,'CWallet']]],
+  ['txitems',['TxItems',['../class_c_wallet.html#ab8ede771bb3f291d1d6795004c2b0b72',1,'CWallet']]],
   ['txiter',['txiter',['../class_c_tx_mem_pool.html#aa3d06681dfc5e436ae6852de3f56541e',1,'CTxMemPool']]],
   ['txlinksmap',['txlinksMap',['../class_c_tx_mem_pool.html#af9e550dc645abb4ee484e6874a09b818',1,'CTxMemPool']]],
-  ['txpair',['TxPair',['../class_c_wallet.html#ad1557a7d200f70bc97319376a24c98a7',1,'CWallet']]],
   ['txspends',['TxSpends',['../class_c_wallet.html#ad1ff91a68ef01851cda6178dde9f2395',1,'CWallet']]],
   ['type',['type',['../structbenchmark_1_1best__clock.html#adc698f918facd28b41731ebb9be6697b',1,'benchmark::best_clock']]]
 ];

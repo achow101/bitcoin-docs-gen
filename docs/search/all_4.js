@@ -77,7 +77,6 @@ var searchData=
   ['deleteaction',['deleteAction',['../class_address_book_page.html#af9260b4f2515a7ac449b6a3c8d028b20',1,'AddressBookPage']]],
   ['deleteauthcookie',['DeleteAuthCookie',['../rpc_2protocol_8cpp.html#a9807259ee7b7c4f5445cf54fd23589cb',1,'DeleteAuthCookie():&#160;protocol.cpp'],['../rpc_2protocol_8h.html#a9807259ee7b7c4f5445cf54fd23589cb',1,'DeleteAuthCookie():&#160;protocol.cpp']]],
   ['deleteclicked',['deleteClicked',['../class_send_coins_entry.html#aa749b51119d0504f204bbf7c90744e2e',1,'SendCoinsEntry']]],
-  ['deletelabel',['DeleteLabel',['../group___actions.html#gac9de208bf815338a393270f26c77027c',1,'CWallet']]],
   ['deletenode',['DeleteNode',['../class_c_connman.html#a1c476458d499d52f2c87c88d93082a9d',1,'CConnman']]],
   ['deletewhentriggered',['deleteWhenTriggered',['../class_h_t_t_p_event.html#a226496f0af00e98c301e92cd8bf7ca9b',1,'HTTPEvent']]],
   ['deployment_5fcsv',['DEPLOYMENT_CSV',['../namespace_consensus.html#ac6c2c4d710cea840f692c6312ec91f69a47f6c9d4a3f84b9013be6af299f406df',1,'Consensus']]],

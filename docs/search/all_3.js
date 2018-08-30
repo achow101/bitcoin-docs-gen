@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['caccount',['CAccount',['../class_c_account.html',1,'CAccount'],['../class_c_account.html#ab0a7f36214a23839cc8180a15b97f53f',1,'CAccount::CAccount()']]],
-  ['caccountingentry',['CAccountingEntry',['../class_c_accounting_entry.html',1,'CAccountingEntry'],['../class_c_accounting_entry.html#aa3d75074d67f5c0ca0d1343c1bdfe0f4',1,'CAccountingEntry::CAccountingEntry()']]],
   ['cache',['cache',['../class_cuckoo_cache_1_1cache.html',1,'CuckooCache']]],
   ['cache',['cache',['../class_cuckoo_cache_1_1cache.html#adcc64063187792eb7a1e21dd272f878a',1,'CuckooCache::cache']]],
   ['cachecoins',['cacheCoins',['../class_c_coins_view_cache.html#af33cc2c6d38af65ac833d4d13c8e3764',1,'CCoinsViewCache']]],
@@ -360,9 +358,9 @@ var searchData=
   ['command',['Command',['../class_tor_control_connection.html#a5d0292a1389bb0f78d15fe6c06a2baeb',1,'TorControlConnection::Command()'],['../struct_c_serialized_net_msg.html#a93ca6923b5ebfff1b66848b635a20393',1,'CSerializedNetMsg::command()']]],
   ['command_5fsize',['COMMAND_SIZE',['../class_c_message_header.html#ae440f94400fb825098e4c23fe4b129aa',1,'CMessageHeader']]],
   ['commands',['COMMANDS',['../util_8h.html#a317721a7331c499cfe39b49b39c26cbdaa2785c310862cd7dc28a0778a7f6784b',1,'util.h']]],
-  ['commit',['commit',['../classinterfaces_1_1_pending_wallet_tx.html#a65d3ab2742e076686abcc39b09391eba',1,'interfaces::PendingWalletTx']]],
+  ['commit',['commit',['../classinterfaces_1_1_pending_wallet_tx.html#a017d2d7aa486c828d28dcfc10ed67883',1,'interfaces::PendingWalletTx']]],
   ['commitbumptransaction',['commitBumpTransaction',['../classinterfaces_1_1_wallet.html#ad24da75dace80e1d37776d09f154acd7',1,'interfaces::Wallet']]],
-  ['committransaction',['CommitTransaction',['../group___actions.html#gaded9964331f3d9e749fdb547cd7ed9ea',1,'CWallet::CommitTransaction()'],['../namespacefeebumper.html#a77c8ee472d015d24111564e708750b66',1,'feebumper::CommitTransaction()']]],
+  ['committransaction',['CommitTransaction',['../group___actions.html#ga2faeb244cf83bbae1304ae2f4acc7d93',1,'CWallet::CommitTransaction()'],['../namespacefeebumper.html#a77c8ee472d015d24111564e708750b66',1,'feebumper::CommitTransaction()']]],
   ['common_2eh',['common.h',['../common_8h.html',1,'']]],
   ['compact',['Compact',['../class_c_data_stream.html#a84c3fd4cf194f3402dc8adce6ab3ccf9',1,'CDataStream']]],
   ['compact_5fsignature_5fsize',['COMPACT_SIGNATURE_SIZE',['../class_c_pub_key.html#af0068d8875be119c76d2bd8bcbc2b92a',1,'CPubKey']]],
@@ -521,7 +519,7 @@ var searchData=
   ['createsocket',['CreateSocket',['../netbase_8cpp.html#afa8f8cfab29615e04a43a866c368706e',1,'CreateSocket(const CService &amp;addrConnect):&#160;netbase.cpp'],['../netbase_8h.html#afa8f8cfab29615e04a43a866c368706e',1,'CreateSocket(const CService &amp;addrConnect):&#160;netbase.cpp']]],
   ['createsplashscreen',['createSplashScreen',['../class_bitcoin_application.html#a30f9832445d8d59374d185eb1400ab59',1,'BitcoinApplication']]],
   ['createtoolbars',['createToolBars',['../class_bitcoin_g_u_i.html#a8fbec6fcade955033be921ff2c236f72',1,'BitcoinGUI']]],
-  ['createtransaction',['CreateTransaction',['../group___actions.html#gac583d3981eaba225db79414b5159ef31',1,'CWallet::CreateTransaction()'],['../classinterfaces_1_1_wallet.html#a2f3c764d312d9479c1c3d7824b9e9a2d',1,'interfaces::Wallet::createTransaction()'],['../namespacefeebumper.html#a7e40f2905a1758fc62bf6ec2880b2af4',1,'feebumper::CreateTransaction()']]],
+  ['createtransaction',['createTransaction',['../classinterfaces_1_1_wallet.html#a2f3c764d312d9479c1c3d7824b9e9a2d',1,'interfaces::Wallet::createTransaction()'],['../group___actions.html#gac583d3981eaba225db79414b5159ef31',1,'CWallet::CreateTransaction()'],['../namespacefeebumper.html#a7e40f2905a1758fc62bf6ec2880b2af4',1,'feebumper::CreateTransaction()']]],
   ['createtrayicon',['createTrayIcon',['../class_bitcoin_g_u_i.html#a0e3abd85dddb97ddb05b03f5f74dbae3',1,'BitcoinGUI']]],
   ['createtrayiconmenu',['createTrayIconMenu',['../class_bitcoin_g_u_i.html#a6373ff0bd56c1c633f3a3dc2f34af884',1,'BitcoinGUI']]],
   ['createwalletfromfile',['CreateWalletFromFile',['../class_c_wallet.html#a8971bffe12080669fbe6849b2fc884d6',1,'CWallet']]],

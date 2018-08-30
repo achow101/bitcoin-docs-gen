@@ -144,8 +144,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:gafbc869129f88b9a5bd33b67ab90b0061"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acaac5688d85bd0897656dd3676e5af90"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet_tx.html#acaac5688d85bd0897656dd3676e5af90">GetSpendSize</a> (unsigned int out, bool use_max_sig=false) const </td></tr>
 <tr class="separator:acaac5688d85bd0897656dd3676e5af90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga903ea0a0f7ff523f01951213187b0a4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga903ea0a0f7ff523f01951213187b0a4d">GetAmounts</a> (std::list&lt; <a class="el" href="struct_c_output_entry.html">COutputEntry</a> &gt; &amp;listReceived, std::list&lt; <a class="el" href="struct_c_output_entry.html">COutputEntry</a> &gt; &amp;listSent, <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;nFee, std::string &amp;strSentAccount, const <a class="el" href="ismine_8h.html#aaa5e1639d76aef50f70532acc3302c4b">isminefilter</a> &amp;filter) const </td></tr>
-<tr class="separator:ga903ea0a0f7ff523f01951213187b0a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75bb37cc734fc849b64fe4f711260e0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga75bb37cc734fc849b64fe4f711260e0a">GetAmounts</a> (std::list&lt; <a class="el" href="struct_c_output_entry.html">COutputEntry</a> &gt; &amp;listReceived, std::list&lt; <a class="el" href="struct_c_output_entry.html">COutputEntry</a> &gt; &amp;listSent, <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;nFee, const <a class="el" href="ismine_8h.html#aaa5e1639d76aef50f70532acc3302c4b">isminefilter</a> &amp;filter) const </td></tr>
+<tr class="separator:ga75bb37cc734fc849b64fe4f711260e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5eab277896d1b553676316b862e2014b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet_tx.html#a5eab277896d1b553676316b862e2014b">IsFromMe</a> (const <a class="el" href="ismine_8h.html#aaa5e1639d76aef50f70532acc3302c4b">isminefilter</a> &amp;filter) const </td></tr>
 <tr class="separator:a5eab277896d1b553676316b862e2014b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8040c9ebd093890b9d45b3e055386700"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga8040c9ebd093890b9d45b3e055386700">IsEquivalentTo</a> (const <a class="el" href="class_c_wallet_tx.html">CWalletTx</a> &amp;<a class="el" href="class_c_merkle_tx.html#ae1fc2b3732146f975d94b45923a4c006">tx</a>) const </td></tr>
@@ -215,13 +215,11 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a1598bf4a18fd05ce5eaaa0c3eb58ff28"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet_tx.html#a1598bf4a18fd05ce5eaaa0c3eb58ff28">fFromMe</a></td></tr>
 <tr class="memdesc:a1598bf4a18fd05ce5eaaa0c3eb58ff28"><td class="mdescLeft">&#160;</td><td class="mdescRight">From me flag is set to 1 for transactions that were created by the wallet on this bitcoin node, and set to 0 for transactions that were created externally and came in through the network or sendrawtransaction RPC.  <a href="#a1598bf4a18fd05ce5eaaa0c3eb58ff28">More...</a><br /></td></tr>
 <tr class="separator:a1598bf4a18fd05ce5eaaa0c3eb58ff28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a099b5ca562f8a8378124b345b9123f25"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet_tx.html#a099b5ca562f8a8378124b345b9123f25">strFromAccount</a></td></tr>
-<tr class="separator:a099b5ca562f8a8378124b345b9123f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af51e160ff1d9d78986e9f239c7ac7a35"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet_tx.html#af51e160ff1d9d78986e9f239c7ac7a35">nOrderPos</a></td></tr>
 <tr class="memdesc:af51e160ff1d9d78986e9f239c7ac7a35"><td class="mdescLeft">&#160;</td><td class="mdescRight">position in ordered transaction list  <a href="#af51e160ff1d9d78986e9f239c7ac7a35">More...</a><br /></td></tr>
 <tr class="separator:af51e160ff1d9d78986e9f239c7ac7a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f0e3487d88a7cee3c5a78756b5bbc73"><td class="memItemLeft" align="right" valign="top">std::multimap&lt; int64_t, std::pair&lt; <a class="el" href="class_c_wallet_tx.html">CWalletTx</a> *, <a class="el" href="class_c_accounting_entry.html">CAccountingEntry</a> * &gt; &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet_tx.html#a8f0e3487d88a7cee3c5a78756b5bbc73">m_it_wtxOrdered</a></td></tr>
-<tr class="separator:a8f0e3487d88a7cee3c5a78756b5bbc73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7109be069b68f556c91f49a18a3610f9"><td class="memItemLeft" align="right" valign="top">std::multimap&lt; int64_t, <a class="el" href="class_c_wallet_tx.html">CWalletTx</a> * &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet_tx.html#a7109be069b68f556c91f49a18a3610f9">m_it_wtxOrdered</a></td></tr>
+<tr class="separator:a7109be069b68f556c91f49a18a3610f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2dca68c99f2e677e5999c9872a269da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet_tx.html#ad2dca68c99f2e677e5999c9872a269da">fDebitCached</a></td></tr>
 <tr class="separator:ad2dca68c99f2e677e5999c9872a269da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad896ca73e00251f900185a1114c3c506"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet_tx.html#ad896ca73e00251f900185a1114c3c506">fCreditCached</a></td></tr>
@@ -313,7 +311,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00368">368</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00367">367</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -345,7 +343,7 @@ Private Attributes</h2></td></tr>
 <p>Pass this transaction to the mempool. </p>
 <p>Fails if absolute fee exceeds absurd fee. </p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l04413">4413</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l04275">4275</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -385,12 +383,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00456">456</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00453">453</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_wallet_tx_ab0ee7347584bff886dc24b9f63ff023c_icgraph.svg" width="1314" height="308"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_wallet_tx_ab0ee7347584bff886dc24b9f63ff023c_icgraph.svg" width="1348" height="492"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -428,7 +427,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00471">471</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00468">468</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -468,7 +467,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00373">373</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00372">372</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -494,7 +493,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00479">479</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00476">476</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -506,7 +505,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_wallet_tx_a5eab277896d1b553676316b862e2014b_icgraph.svg" width="638" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_wallet_tx_a5eab277896d1b553676316b862e2014b_icgraph.svg" width="1302" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -535,7 +535,7 @@ Here is the caller graph for this function:</div>
 
 <p>make sure balances are recalculated </p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00443">443</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00440">440</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -571,7 +571,7 @@ template&lt;typename Stream &gt; </div>
 </div><div class="memdoc">
 <p>&lt; Used to be vtxPrev </p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00406">406</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00404">404</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -600,7 +600,7 @@ template&lt;typename Stream &gt; </div>
 </div><div class="memdoc">
 <p>&lt; Used to be vtxPrev </p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00423">423</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00421">421</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -630,7 +630,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00351">351</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00350">350</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -652,7 +652,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00355">355</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00354">354</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -674,7 +674,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00356">356</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00355">355</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -696,7 +696,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00349">349</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00348">348</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -718,7 +718,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00348">348</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00347">347</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -756,7 +756,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00350">350</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00349">349</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -778,7 +778,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00354">354</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00353">353</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -800,7 +800,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00357">357</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00356">356</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -836,7 +836,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00353">353</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00352">352</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -858,21 +858,21 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00352">352</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00351">351</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a8f0e3487d88a7cee3c5a78756b5bbc73"></a>
+<a class="anchor" id="a7109be069b68f556c91f49a18a3610f9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::multimap&lt;int64_t, std::pair&lt;<a class="el" href="class_c_wallet_tx.html">CWalletTx</a>*, <a class="el" href="class_c_accounting_entry.html">CAccountingEntry</a>*&gt; &gt;::const_iterator CWalletTx::m_it_wtxOrdered</td>
+          <td class="memname">std::multimap&lt;int64_t, <a class="el" href="class_c_wallet_tx.html">CWalletTx</a>*&gt;::const_iterator CWalletTx::m_it_wtxOrdered</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00345">345</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00344">344</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -922,7 +922,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00361">361</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00360">360</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -944,7 +944,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00365">365</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00364">364</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -966,7 +966,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00366">366</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00365">365</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -988,7 +988,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00359">359</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00358">358</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -1010,7 +1010,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00358">358</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00357">357</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -1032,7 +1032,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00360">360</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00359">359</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -1054,7 +1054,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00364">364</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00363">363</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -1070,7 +1070,7 @@ Here is the call graph for this function:</div>
 
 <p>position in ordered transaction list </p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00344">344</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00343">343</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -1125,7 +1125,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00363">363</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00362">362</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -1147,7 +1147,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00362">362</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00361">361</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -1173,20 +1173,6 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a099b5ca562f8a8378124b345b9123f25"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string CWalletTx::strFromAccount</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00343">343</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a923dbbba343b8f4d1c3d89ae73bdcea0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1208,7 +1194,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 30 2018 11:56:32 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 30 2018 14:21:03 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

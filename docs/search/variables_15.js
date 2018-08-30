@@ -21,7 +21,7 @@ var searchData=
   ['vchkey',['vchKey',['../class_c_crypter.html#ac06d28bf4da736d3287db9d254d3d9ed',1,'CCrypter']]],
   ['vchotherderivationparameters',['vchOtherDerivationParameters',['../class_c_master_key.html#abfd00b311d5e5cf9ae1a6f3877ed35f7',1,'CMasterKey']]],
   ['vchprivkey',['vchPrivKey',['../class_c_wallet_key.html#a28f9bbffcc9d7f2f784d5e4be8ca31f7',1,'CWalletKey']]],
-  ['vchpubkey',['vchPubKey',['../class_c_key_pool.html#a937080a4cec1f2b138ebd200557c82b5',1,'CKeyPool::vchPubKey()'],['../class_c_reserve_key.html#a2b252444577b6aca8b497c2207ff17a4',1,'CReserveKey::vchPubKey()'],['../class_c_account.html#a8bc9b476371009c12a6c25d4c7264de5',1,'CAccount::vchPubKey()']]],
+  ['vchpubkey',['vchPubKey',['../class_c_key_pool.html#a937080a4cec1f2b138ebd200557c82b5',1,'CKeyPool::vchPubKey()'],['../class_c_reserve_key.html#a2b252444577b6aca8b497c2207ff17a4',1,'CReserveKey::vchPubKey()']]],
   ['vchsalt',['vchSalt',['../class_c_master_key.html#a00009f4b4feaa2ebe630a0d7cc854d3a',1,'CMasterKey']]],
   ['vdata',['vData',['../class_c_bloom_filter.html#a494abe120d62978951cc0f0db916f50e',1,'CBloomFilter']]],
   ['vdeployments',['vDeployments',['../struct_consensus_1_1_params.html#a785db232db01cfe64930eac089a61708',1,'Consensus::Params']]],

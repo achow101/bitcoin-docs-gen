@@ -35,7 +35,6 @@ var searchData=
   ['delete',['Delete',['../class_c_addr_man.html#af488eac123030538770dbc4e3b16eb74',1,'CAddrMan']]],
   ['deleteauthcookie',['DeleteAuthCookie',['../rpc_2protocol_8cpp.html#a9807259ee7b7c4f5445cf54fd23589cb',1,'DeleteAuthCookie():&#160;protocol.cpp'],['../rpc_2protocol_8h.html#a9807259ee7b7c4f5445cf54fd23589cb',1,'DeleteAuthCookie():&#160;protocol.cpp']]],
   ['deleteclicked',['deleteClicked',['../class_send_coins_entry.html#aa749b51119d0504f204bbf7c90744e2e',1,'SendCoinsEntry']]],
-  ['deletelabel',['DeleteLabel',['../group___actions.html#gac9de208bf815338a393270f26c77027c',1,'CWallet']]],
   ['deletenode',['DeleteNode',['../class_c_connman.html#a1c476458d499d52f2c87c88d93082a9d',1,'CConnman']]],
   ['derive',['Derive',['../class_c_key.html#a1bae09b7447a951d8fc3328b7dcc3a3f',1,'CKey::Derive()'],['../struct_c_ext_key.html#a2fa3a39434ae09efbbd4058d1d081aa2',1,'CExtKey::Derive()'],['../class_c_pub_key.html#add183528b09791bdd0f982e63308d263',1,'CPubKey::Derive()'],['../struct_c_ext_pub_key.html#a404798f7d800ffb539cf97431025597f',1,'CExtPubKey::Derive()']]],
   ['derivenewchildkey',['DeriveNewChildKey',['../group__map_wallet.html#gafb01fcc10d890174b2db560a7f27b58a',1,'CWallet']]],

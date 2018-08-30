@@ -237,7 +237,7 @@ var searchData=
   ['optionsdialog',['OptionsDialog',['../class_options_dialog.html',1,'OptionsDialog'],['../class_options_dialog.html#ac74fd1c2837d30f6687cb1898d99f8d1',1,'OptionsDialog::OptionsDialog()']]],
   ['optionsdialog_2ecpp',['optionsdialog.cpp',['../optionsdialog_8cpp.html',1,'']]],
   ['optionsdialog_2eh',['optionsdialog.h',['../optionsdialog_8h.html',1,'']]],
-  ['optionsmodel',['OptionsModel',['../class_options_model.html',1,'OptionsModel'],['../class_options_model.html#ae861bde6a4f4d0235860589d5aca2f77',1,'OptionsModel::OptionsModel()'],['../class_bitcoin_application.html#a7f4ccffc32070fd0a154d151363aae85',1,'BitcoinApplication::optionsModel()'],['../class_unit_display_status_bar_control.html#a62e10f0662b19879d0897da57ed69ce8',1,'UnitDisplayStatusBarControl::optionsModel()'],['../class_client_model.html#ac82294221ed5ba1051a1b4bd9e2d2389',1,'ClientModel::optionsModel()'],['../class_payment_server.html#afbd4c9840b6eac3f32e2a2b4ed2e89a0',1,'PaymentServer::optionsModel()'],['../class_wallet_model.html#a01d9aba010d85b79d46fe427919dbdc1',1,'WalletModel::optionsModel()']]],
+  ['optionsmodel',['OptionsModel',['../class_options_model.html',1,'OptionsModel'],['../class_bitcoin_application.html#a7f4ccffc32070fd0a154d151363aae85',1,'BitcoinApplication::optionsModel()'],['../class_unit_display_status_bar_control.html#a62e10f0662b19879d0897da57ed69ce8',1,'UnitDisplayStatusBarControl::optionsModel()'],['../class_client_model.html#ac82294221ed5ba1051a1b4bd9e2d2389',1,'ClientModel::optionsModel()'],['../class_payment_server.html#afbd4c9840b6eac3f32e2a2b4ed2e89a0',1,'PaymentServer::optionsModel()'],['../class_wallet_model.html#a01d9aba010d85b79d46fe427919dbdc1',1,'WalletModel::optionsModel()'],['../class_options_model.html#ae861bde6a4f4d0235860589d5aca2f77',1,'OptionsModel::OptionsModel()']]],
   ['optionsmodel_2ecpp',['optionsmodel.cpp',['../optionsmodel_8cpp.html',1,'']]],
   ['optionsmodel_2eh',['optionsmodel.h',['../optionsmodel_8h.html',1,'']]],
   ['order',['order',['../class_banned_node_less_than.html#a76e0441e6ec7c92d19952071e6cc2589',1,'BannedNodeLessThan::order()'],['../class_node_less_than.html#afb215ca60b4a3825effc6240b0574935',1,'NodeLessThan::order()'],['../class_recent_request_entry_less_than.html#a0fdd6db366ec7984a9ed23134bd3af6c',1,'RecentRequestEntryLessThan::order()']]],
@@ -261,7 +261,7 @@ var searchData=
   ['outputtype_2eh',['outputtype.h',['../outputtype_8h.html',1,'']]],
   ['overridestream',['OverrideStream',['../class_override_stream.html',1,'OverrideStream&lt; Stream &gt;'],['../class_override_stream.html#a2c45dbac1803bc8a69737795458f8bba',1,'OverrideStream::OverrideStream()']]],
   ['overviewaction',['overviewAction',['../class_bitcoin_g_u_i.html#aab6f7153976abf69c28c5bcafd59241e',1,'BitcoinGUI']]],
-  ['overviewpage',['OverviewPage',['../class_overview_page.html',1,'OverviewPage'],['../class_wallet_view.html#a4049958d049676ab39001ed92a570bf2',1,'WalletView::overviewPage()'],['../class_overview_page.html#ab377237585c9eeabc2eec882cec9a1e2',1,'OverviewPage::OverviewPage()']]],
+  ['overviewpage',['OverviewPage',['../class_overview_page.html',1,'OverviewPage'],['../class_overview_page.html#ab377237585c9eeabc2eec882cec9a1e2',1,'OverviewPage::OverviewPage()'],['../class_wallet_view.html#a4049958d049676ab39001ed92a570bf2',1,'WalletView::overviewPage()']]],
   ['overviewpage_2ecpp',['overviewpage.cpp',['../overviewpage_8cpp.html',1,'']]],
   ['overviewpage_2eh',['overviewpage.h',['../overviewpage_8h.html',1,'']]]
 ];
