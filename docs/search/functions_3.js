@@ -285,7 +285,7 @@ var searchData=
   ['createsocket',['CreateSocket',['../netbase_8cpp.html#afa8f8cfab29615e04a43a866c368706e',1,'CreateSocket(const CService &amp;addrConnect):&#160;netbase.cpp'],['../netbase_8h.html#afa8f8cfab29615e04a43a866c368706e',1,'CreateSocket(const CService &amp;addrConnect):&#160;netbase.cpp']]],
   ['createsplashscreen',['createSplashScreen',['../class_bitcoin_application.html#a30f9832445d8d59374d185eb1400ab59',1,'BitcoinApplication']]],
   ['createtoolbars',['createToolBars',['../class_bitcoin_g_u_i.html#a8fbec6fcade955033be921ff2c236f72',1,'BitcoinGUI']]],
-  ['createtransaction',['createTransaction',['../classinterfaces_1_1_wallet.html#a2f3c764d312d9479c1c3d7824b9e9a2d',1,'interfaces::Wallet::createTransaction()'],['../group___actions.html#gac583d3981eaba225db79414b5159ef31',1,'CWallet::CreateTransaction()'],['../namespacefeebumper.html#a7e40f2905a1758fc62bf6ec2880b2af4',1,'feebumper::CreateTransaction()']]],
+  ['createtransaction',['CreateTransaction',['../group___actions.html#gac583d3981eaba225db79414b5159ef31',1,'CWallet::CreateTransaction()'],['../classinterfaces_1_1_wallet.html#a2f3c764d312d9479c1c3d7824b9e9a2d',1,'interfaces::Wallet::createTransaction()'],['../namespacefeebumper.html#a7e40f2905a1758fc62bf6ec2880b2af4',1,'feebumper::CreateTransaction()']]],
   ['createtrayicon',['createTrayIcon',['../class_bitcoin_g_u_i.html#a0e3abd85dddb97ddb05b03f5f74dbae3',1,'BitcoinGUI']]],
   ['createtrayiconmenu',['createTrayIconMenu',['../class_bitcoin_g_u_i.html#a6373ff0bd56c1c633f3a3dc2f34af884',1,'BitcoinGUI']]],
   ['createwalletfromfile',['CreateWalletFromFile',['../class_c_wallet.html#a8971bffe12080669fbe6849b2fc884d6',1,'CWallet']]],

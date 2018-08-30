@@ -106,9 +106,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad507ab38b5de067c5361930f4ea7fe40"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_args_manager_helper.html#ad507ab38b5de067c5361930f4ea7fe40">UseDefaultSection</a> (const <a class="el" href="class_args_manager.html">ArgsManager</a> &amp;am, const std::string &amp;arg)</td></tr>
-<tr class="memdesc:ad507ab38b5de067c5361930f4ea7fe40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether to use config settings in the default section, See also comments around <a class="el" href="class_args_manager.html#a44a22885b55cdb7ad580bc0ae72b123f">ArgsManager::ArgsManager()</a> below.  <a href="#ad507ab38b5de067c5361930f4ea7fe40">More...</a><br /></td></tr>
-<tr class="separator:ad507ab38b5de067c5361930f4ea7fe40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43f3488403e4f0433ade323e48008359"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_args_manager_helper.html#a43f3488403e4f0433ade323e48008359">UseDefaultSection</a> (const <a class="el" href="class_args_manager.html">ArgsManager</a> &amp;am, const std::string &amp;arg) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(am.cs_args)</td></tr>
+<tr class="memdesc:a43f3488403e4f0433ade323e48008359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether to use config settings in the default section, See also comments around <a class="el" href="class_args_manager.html#a44a22885b55cdb7ad580bc0ae72b123f">ArgsManager::ArgsManager()</a> below.  <a href="#a43f3488403e4f0433ade323e48008359">More...</a><br /></td></tr>
+<tr class="separator:a43f3488403e4f0433ade323e48008359"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a863ddbcfbd113cf88cf622a0a4e32c1d"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_args_manager_helper.html#a863ddbcfbd113cf88cf622a0a4e32c1d">NetworkArg</a> (const <a class="el" href="class_args_manager.html">ArgsManager</a> &amp;am, const std::string &amp;arg)</td></tr>
 <tr class="memdesc:a863ddbcfbd113cf88cf622a0a4e32c1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert regular argument into the network-specific setting.  <a href="#a863ddbcfbd113cf88cf622a0a4e32c1d">More...</a><br /></td></tr>
 <tr class="separator:a863ddbcfbd113cf88cf622a0a4e32c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,8 +120,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a1804a95992b4e10d04f0b92c53032b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4f8f77dc468b29cffe50513c78a87cd"><td class="memItemLeft" align="right" valign="top">static std::pair&lt; bool, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_args_manager_helper.html#aa4f8f77dc468b29cffe50513c78a87cd">GetArg</a> (const <a class="el" href="class_args_manager.html">ArgsManager</a> &amp;am, const std::string &amp;arg)</td></tr>
 <tr class="separator:aa4f8f77dc468b29cffe50513c78a87cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae10649ab9ec9f4a73b324df70aff4280"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_args_manager_helper.html#ae10649ab9ec9f4a73b324df70aff4280">GetNetBoolArg</a> (const <a class="el" href="class_args_manager.html">ArgsManager</a> &amp;am, const std::string &amp;net_arg)</td></tr>
-<tr class="separator:ae10649ab9ec9f4a73b324df70aff4280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa23eb99415e90f7e3344bcb46f5e348"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_args_manager_helper.html#afa23eb99415e90f7e3344bcb46f5e348">GetNetBoolArg</a> (const <a class="el" href="class_args_manager.html">ArgsManager</a> &amp;am, const std::string &amp;net_arg) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(am.cs_args)</td></tr>
+<tr class="separator:afa23eb99415e90f7e3344bcb46f5e348"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Internal helper functions for <a class="el" href="class_args_manager.html">ArgsManager</a>. </p>
@@ -288,7 +288,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ae10649ab9ec9f4a73b324df70aff4280"></a>
+<a class="anchor" id="afa23eb99415e90f7e3344bcb46f5e348"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -325,7 +325,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_helper_ae10649ab9ec9f4a73b324df70aff4280_icgraph.svg" width="1136" height="199"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_helper_afa23eb99415e90f7e3344bcb46f5e348_icgraph.svg" width="1136" height="199"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -376,7 +377,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ad507ab38b5de067c5361930f4ea7fe40"></a>
+<a class="anchor" id="a43f3488403e4f0433ade323e48008359"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -415,7 +416,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_helper_ad507ab38b5de067c5361930f4ea7fe40_icgraph.svg" width="1124" height="471"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_helper_a43f3488403e4f0433ade323e48008359_icgraph.svg" width="1124" height="471"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -427,7 +429,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 30 2018 10:02:17 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 30 2018 11:56:30 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
