@@ -98,6 +98,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>Simple work queue for distributing work over multiple threads.  
  <a href="class_work_queue.html#details">More...</a></p>
+<div class="dynheader">
+Collaboration diagram for WorkQueue&lt; WorkItem &gt;:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_work_queue__coll__graph.svg" width="194" height="218"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -118,9 +124,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a7fa35f00854dcc8e0b466079b05838e1"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_work_queue.html#a7fa35f00854dcc8e0b466079b05838e1">cs</a></td></tr>
-<tr class="memdesc:a7fa35f00854dcc8e0b466079b05838e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex protects entire object.  <a href="#a7fa35f00854dcc8e0b466079b05838e1">More...</a><br /></td></tr>
-<tr class="separator:a7fa35f00854dcc8e0b466079b05838e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57782013276daff0989bca48ebb454db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#a4173d742ac8c4454e7d2f0b532fbcad7">CWaitableCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_work_queue.html#a57782013276daff0989bca48ebb454db">cs</a></td></tr>
+<tr class="memdesc:a57782013276daff0989bca48ebb454db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex protects entire object.  <a href="#a57782013276daff0989bca48ebb454db">More...</a><br /></td></tr>
+<tr class="separator:a57782013276daff0989bca48ebb454db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab83926d7fac999e94a482ef4a0ffe600"><td class="memItemLeft" align="right" valign="top">std::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_work_queue.html#ab83926d7fac999e94a482ef4a0ffe600">cond</a></td></tr>
 <tr class="separator:ab83926d7fac999e94a482ef4a0ffe600"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9af5a572c89d167123b4e486c36c29b2"><td class="memItemLeft" align="right" valign="top">std::deque&lt; std::unique_ptr&lt; WorkItem &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_work_queue.html#a9af5a572c89d167123b4e486c36c29b2">queue</a></td></tr>
@@ -317,7 +323,7 @@ template&lt;typename WorkItem&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a7fa35f00854dcc8e0b466079b05838e1"></a>
+<a class="anchor" id="a57782013276daff0989bca48ebb454db"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -327,7 +333,7 @@ template&lt;typename WorkItem&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::mutex <a class="el" href="class_work_queue.html">WorkQueue</a>&lt; WorkItem &gt;::cs</td>
+          <td class="memname"><a class="el" href="sync_8h.html#a4173d742ac8c4454e7d2f0b532fbcad7">CWaitableCriticalSection</a> <a class="el" href="class_work_queue.html">WorkQueue</a>&lt; WorkItem &gt;::cs</td>
         </tr>
       </table>
   </td>
@@ -421,7 +427,7 @@ template&lt;typename WorkItem&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 31 2018 13:06:22 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 31 2018 14:02:16 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

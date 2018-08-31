@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['wait_5flock',['WAIT_LOCK',['../sync_8h.html#a05166a687f0bfba57b8ea332c7dd57e0',1,'sync.h']]],
   ['window_5fa',['WINDOW_A',['../ecmult__impl_8h.html#a6216c81c6adbb8796c55fe0c8d3b6718',1,'ecmult_impl.h']]],
   ['window_5fg',['WINDOW_G',['../ecmult__impl_8h.html#afe951ac62b5b06848cb4e6f4dbc69616',1,'ecmult_impl.h']]],
   ['wnaf_5fbits',['WNAF_BITS',['../ecmult__const__impl_8h.html#a7ca5efdae3396a6261bcc836e4a32739',1,'ecmult_const_impl.h']]],

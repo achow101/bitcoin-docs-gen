@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_annotated_mixin-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -95,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Template mixin that adds -Wthread-safety locking annotations to a subset of the mutex API.  
+<p>Template mixin that adds -Wthread-safety locking annotations and lock order checking to a subset of the mutex API.  
  <a href="class_annotated_mixin.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="sync_8h_source.html">sync.h</a>&gt;</code></p>
@@ -110,8 +111,15 @@ Collaboration diagram for AnnotatedMixin&lt; PARENT &gt;:</div>
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_annotated_mixin__coll__graph.svg" width="211" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ac84b6394b093c0072d4a28db23cf65be"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_annotated_mixin.html#ac84b6394b093c0072d4a28db23cf65be">UniqueLock</a> = std::unique_lock&lt; PARENT &gt;</td></tr>
+<tr class="separator:ac84b6394b093c0072d4a28db23cf65be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a41c7dff2ecd457189e63ee15212763d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_annotated_mixin.html#a41c7dff2ecd457189e63ee15212763d1">~AnnotatedMixin</a> ()</td></tr>
+<tr class="separator:a41c7dff2ecd457189e63ee15212763d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1f35c6d1b8a8e980fff45e7e7cb46d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_annotated_mixin.html#ad1f35c6d1b8a8e980fff45e7e7cb46d3">lock</a> () <a class="el" href="threadsafety_8h.html#a77729163b7f6867da40ad5daa5f926f3">EXCLUSIVE_LOCK_FUNCTION</a>()</td></tr>
 <tr class="separator:ad1f35c6d1b8a8e980fff45e7e7cb46d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc2e3da37c2d9dd483b859572e32bc24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_annotated_mixin.html#acc2e3da37c2d9dd483b859572e32bc24">unlock</a> () <a class="el" href="threadsafety_8h.html#abd56e19f9b4781b1a5212a46951cf5c3">UNLOCK_FUNCTION</a>()</td></tr>
@@ -123,10 +131,55 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename PARENT&gt;<br />
 class AnnotatedMixin&lt; PARENT &gt;</h3>
 
-<p>Template mixin that adds -Wthread-safety locking annotations to a subset of the mutex API. </p>
+<p>Template mixin that adds -Wthread-safety locking annotations and lock order checking to a subset of the mutex API. </p>
 
-<p>Definition at line <a class="el" href="sync_8h_source.html#l00054">54</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<p>Definition at line <a class="el" href="sync_8h_source.html#l00078">78</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="ac84b6394b093c0072d4a28db23cf65be"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename PARENT&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_annotated_mixin.html">AnnotatedMixin</a>&lt; PARENT &gt;::<a class="el" href="class_annotated_mixin.html#ac84b6394b093c0072d4a28db23cf65be">UniqueLock</a> =  std::unique_lock&lt;PARENT&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sync_8h_source.html#l00100">100</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a41c7dff2ecd457189e63ee15212763d1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename PARENT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_annotated_mixin.html">AnnotatedMixin</a>&lt; PARENT &gt;::~<a class="el" href="class_annotated_mixin.html">AnnotatedMixin</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sync_8h_source.html#l00081">81</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ad1f35c6d1b8a8e980fff45e7e7cb46d3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -150,7 +203,7 @@ template&lt;typename PARENT&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sync_8h_source.html#l00057">57</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
+<p>Definition at line <a class="el" href="sync_8h_source.html#l00085">85</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
 
 </div>
 </div>
@@ -177,7 +230,7 @@ template&lt;typename PARENT&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sync_8h_source.html#l00067">67</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
+<p>Definition at line <a class="el" href="sync_8h_source.html#l00095">95</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
 
 </div>
 </div>
@@ -204,7 +257,7 @@ template&lt;typename PARENT&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sync_8h_source.html#l00062">62</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
+<p>Definition at line <a class="el" href="sync_8h_source.html#l00090">90</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
 
 </div>
 </div>
@@ -214,7 +267,7 @@ template&lt;typename PARENT&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 31 2018 13:06:19 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 31 2018 14:02:13 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

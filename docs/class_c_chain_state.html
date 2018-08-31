@@ -103,7 +103,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="dynheader">
 Collaboration diagram for CChainState:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state__coll__graph.svg" width="735" height="339"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state__coll__graph.svg" width="751" height="336"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -190,7 +191,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a528c14be4a2a7c6837a2d099b2ad7ef7"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="class_c_block_index.html">CBlockIndex</a> *, CBlockIndexWorkComparator &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a528c14be4a2a7c6837a2d099b2ad7ef7">setBlockIndexCandidates</a></td></tr>
 <tr class="memdesc:a528c14be4a2a7c6837a2d099b2ad7ef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The set of all <a class="el" href="class_c_block_index.html" title="The block chain is a tree shaped structure starting with the genesis block at the root...">CBlockIndex</a> entries with BLOCK_VALID_TRANSACTIONS (for itself and all ancestors) and as good as our current tip or better.  <a href="#a528c14be4a2a7c6837a2d099b2ad7ef7">More...</a><br /></td></tr>
 <tr class="separator:a528c14be4a2a7c6837a2d099b2ad7ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9e45b0fb23eacbbc2c0675f429d5c3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_critical_section.html">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#ad9e45b0fb23eacbbc2c0675f429d5c3b">cs_nBlockSequenceId</a></td></tr>
+<tr class="memitem:ad9e45b0fb23eacbbc2c0675f429d5c3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#ad9e45b0fb23eacbbc2c0675f429d5c3b">cs_nBlockSequenceId</a></td></tr>
 <tr class="memdesc:ad9e45b0fb23eacbbc2c0675f429d5c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every received block is assigned a unique and increasing identifier, so we know which one to give priority in case of a fork.  <a href="#ad9e45b0fb23eacbbc2c0675f429d5c3b">More...</a><br /></td></tr>
 <tr class="separator:ad9e45b0fb23eacbbc2c0675f429d5c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04c18ee587d1d516d12a193235eeb1cd"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a04c18ee587d1d516d12a193235eeb1cd">nBlockSequenceId</a> = 1</td></tr>
@@ -205,7 +206,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a52c29388d6805442893089beaf96c4a7"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="class_c_block_index.html">CBlockIndex</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a52c29388d6805442893089beaf96c4a7">m_failed_blocks</a></td></tr>
 <tr class="memdesc:a52c29388d6805442893089beaf96c4a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">In order to efficiently track invalidity of headers, we keep the set of blocks which we tried to connect and found to be invalid here (ie which were set to BLOCK_FAILED_VALID since the last restart).  <a href="#a52c29388d6805442893089beaf96c4a7">More...</a><br /></td></tr>
 <tr class="separator:a52c29388d6805442893089beaf96c4a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7de325123fd907fea8398fde92e5a6b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_critical_section.html">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a7de325123fd907fea8398fde92e5a6b1">m_cs_chainstate</a></td></tr>
+<tr class="memitem:a7de325123fd907fea8398fde92e5a6b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a7de325123fd907fea8398fde92e5a6b1">m_cs_chainstate</a></td></tr>
 <tr class="memdesc:a7de325123fd907fea8398fde92e5a6b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">the ChainState CriticalSection A lock that must be held when modifying this ChainState - held in <a class="el" href="class_c_chain_state.html#a5a24c6da53ff4b725e2d1c8b4af007fe" title="Make the best chain active, in multiple steps. ">ActivateBestChain()</a>  <a href="#a7de325123fd907fea8398fde92e5a6b1">More...</a><br /></td></tr>
 <tr class="separator:a7de325123fd907fea8398fde92e5a6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -1350,7 +1351,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_c_critical_section.html">CCriticalSection</a> CChainState::cs_nBlockSequenceId</td>
+          <td class="memname"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a> CChainState::cs_nBlockSequenceId</td>
         </tr>
       </table>
   </td>
@@ -1374,7 +1375,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_c_critical_section.html">CCriticalSection</a> CChainState::m_cs_chainstate</td>
+          <td class="memname"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a> CChainState::m_cs_chainstate</td>
         </tr>
       </table>
   </td>
@@ -1562,7 +1563,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 31 2018 13:06:20 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 31 2018 14:02:14 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

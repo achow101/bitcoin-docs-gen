@@ -23,6 +23,7 @@ var searchData=
   ['amountspinbox',['AmountSpinBox',['../class_amount_spin_box.html',1,'']]],
   ['ancestor_5fscore',['ancestor_score',['../structancestor__score.html',1,'']]],
   ['annotatedmixin',['AnnotatedMixin',['../class_annotated_mixin.html',1,'']]],
+  ['annotatedmixin_3c_20std_3a_3amutex_20_3e',['AnnotatedMixin&lt; std::mutex &gt;',['../class_annotated_mixin.html',1,'']]],
   ['annotatedmixin_3c_20std_3a_3arecursive_5fmutex_20_3e',['AnnotatedMixin&lt; std::recursive_mutex &gt;',['../class_annotated_mixin.html',1,'']]],
   ['arena',['Arena',['../class_arena.html',1,'']]],
   ['arg',['Arg',['../struct_args_manager_1_1_arg.html',1,'ArgsManager']]],

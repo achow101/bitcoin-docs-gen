@@ -20,7 +20,7 @@ var searchData=
   ['lines',['lines',['../class_tor_control_reply.html#ae9c09a2c2d674c1554c91ace852e5269',1,'TorControlReply']]],
   ['list',['list',['../class_recent_requests_table_model.html#a84c7de31f5b343da9464359007995ed5',1,'RecentRequestsTableModel']]],
   ['loadwallet',['LoadWallet',['../struct_u_i_signals.html#ab415702be0be5161084e88a76da9940b',1,'UISignals']]],
-  ['lock',['lock',['../classreverse__lock.html#a915524c7621bb83ccca8e7368d4f0b88',1,'reverse_lock::lock()'],['../class_c_critical_block.html#a387dc2c7186c058c87aca96cf2620aac',1,'CCriticalBlock::lock()']]],
+  ['lock',['lock',['../classreverse__lock.html#a915524c7621bb83ccca8e7368d4f0b88',1,'reverse_lock']]],
   ['lock_5ftime',['lock_time',['../structinterfaces_1_1_wallet_tx_status.html#abfafe5a8992f8d5f15d9ccb448ae9168',1,'interfaces::WalletTxStatus']]],
   ['lockaction',['lockAction',['../class_coin_control_dialog.html#a686c95a3ecb816943cfc9a0e50c9ef6f',1,'CoinControlDialog']]],
   ['locked',['locked',['../struct_locked_pool_1_1_stats.html#a5efe6466c7a5f1488b7190e05d2dd208',1,'LockedPool::Stats']]],

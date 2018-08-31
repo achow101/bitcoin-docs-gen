@@ -77,7 +77,7 @@ var searchData=
   ['enqueue',['Enqueue',['../class_work_queue.html#a1367fb4c1a883108ecd2a44569646920',1,'WorkQueue']]],
   ['ensurewalletisavailable',['EnsureWalletIsAvailable',['../rpcwallet_8cpp.html#ae44c9e4546fdf6e182276fada0126649',1,'EnsureWalletIsAvailable(CWallet *const pwallet, bool avoidException):&#160;rpcwallet.cpp'],['../rpcwallet_8h.html#a2fb6c6dc387554e482ce3284dd9faec8',1,'EnsureWalletIsAvailable(CWallet *, bool avoidException):&#160;rpcwallet.cpp']]],
   ['ensurewalletisunlocked',['EnsureWalletIsUnlocked',['../rpcwallet_8cpp.html#a4eb48c19268ebfbfc0e9b6d7904e877f',1,'EnsureWalletIsUnlocked(CWallet *const pwallet):&#160;rpcwallet.cpp'],['../rpcwallet_8h.html#aae9bc665151c5bab626a7ffcaeed9c0d',1,'EnsureWalletIsUnlocked(CWallet *):&#160;rpcwallet.cpp']]],
-  ['enter',['Enter',['../class_c_critical_block.html#a8ab1cdab8449cb201bfc14b8c546d663',1,'CCriticalBlock']]],
+  ['enter',['Enter',['../class_c_critical_block.html#a0a444156a5ae4eefff54b1bc44fb66f0',1,'CCriticalBlock']]],
   ['enter_5fcritical_5fsection',['ENTER_CRITICAL_SECTION',['../sync_8h.html#a1262d24e5b9a4fa0a1adc4de02958efb',1,'sync.h']]],
   ['entry',['entry',['../class_recent_requests_table_model.html#abd51da01be471df1d072d5e5c1b8007d',1,'RecentRequestsTableModel']]],
   ['entry_5ftime',['entry_time',['../structentry__time.html',1,'']]],

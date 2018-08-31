@@ -4,6 +4,7 @@ var searchData=
   ['camount',['CAmount',['../amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564',1,'amount.h']]],
   ['ccoinsmap',['CCoinsMap',['../coins_8h.html#a6d9207327f736296422186c8192d3d30',1,'coins.h']]],
   ['cconditionvariable',['CConditionVariable',['../sync_8h.html#af990664805809d4da2c08d15032d203a',1,'sync.h']]],
+  ['ccriticalsection',['CCriticalSection',['../sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1',1,'sync.h']]],
   ['chaincode',['ChainCode',['../hash_8h.html#aa201a9867f780a040c7af908e0a85db3',1,'ChainCode():&#160;hash.h'],['../pubkey_8h.html#aa201a9867f780a040c7af908e0a85db3',1,'ChainCode():&#160;pubkey.h']]],
   ['chunktosizemap',['ChunkToSizeMap',['../class_arena.html#a3bc7951ac89625f9741a679f55b28faf',1,'Arena']]],
   ['ckeyingmaterial',['CKeyingMaterial',['../crypter_8h.html#a64709c9a3acc8f5694515789a183ad7b',1,'crypter.h']]],
