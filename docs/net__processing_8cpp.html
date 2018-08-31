@@ -139,7 +139,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af597188c824f0469a3164e28e5119f63"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classuint256.html">uint256</a>, <a class="el" href="struct_c_orphan_tx.html">COrphanTx</a> &gt; mapOrphanTransactions&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#af597188c824f0469a3164e28e5119f63">GUARDED_BY</a> (g_cs_orphans)</td></tr>
+<tr class="memitem:af597188c824f0469a3164e28e5119f63"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classuint256.html">uint256</a>, <a class="el" href="struct_c_orphan_tx.html">COrphanTx</a> &gt; mapOrphanTransactions&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#af597188c824f0469a3164e28e5119f63">GUARDED_BY</a> (<a class="el" href="net__processing_8cpp.html#ac02c85606709a83ec7aa7f23109fa898">g_cs_orphans</a>)</td></tr>
 <tr class="separator:af597188c824f0469a3164e28e5119f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a2fcba1719100c7e9a0caf97f6988f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#a4a2fcba1719100c7e9a0caf97f6988f4">EraseOrphansFor</a> (<a class="el" href="net_8h.html#aa637b11e18b77724b35db2229cd12788">NodeId</a> peer)</td></tr>
 <tr class="separator:a4a2fcba1719100c7e9a0caf97f6988f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,13 +151,15 @@ Functions</h2></td></tr>
 <tr class="memitem:af0793c7c14e94d2d642f4ac89067a429"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#af0793c7c14e94d2d642f4ac89067a429">GetNodeStateStats</a> (<a class="el" href="net_8h.html#aa637b11e18b77724b35db2229cd12788">NodeId</a> nodeid, <a class="el" href="struct_c_node_state_stats.html">CNodeStateStats</a> &amp;stats)</td></tr>
 <tr class="memdesc:af0793c7c14e94d2d642f4ac89067a429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get statistics from node state.  <a href="#af0793c7c14e94d2d642f4ac89067a429">More...</a><br /></td></tr>
 <tr class="separator:af0793c7c14e94d2d642f4ac89067a429"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd6140f46766ceef29bf97f4e83bbec1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#abd6140f46766ceef29bf97f4e83bbec1">AddOrphanTx</a> (const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx, <a class="el" href="net_8h.html#aa637b11e18b77724b35db2229cd12788">NodeId</a> peer) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(g_cs_orphans)</td></tr>
+<tr class="memitem:abd6140f46766ceef29bf97f4e83bbec1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#abd6140f46766ceef29bf97f4e83bbec1">AddOrphanTx</a> (const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx, <a class="el" href="net_8h.html#aa637b11e18b77724b35db2229cd12788">NodeId</a> peer) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="net__processing_8cpp.html#ac02c85606709a83ec7aa7f23109fa898">g_cs_orphans</a>)</td></tr>
 <tr class="separator:abd6140f46766ceef29bf97f4e83bbec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03c1ac9fc43feb8f1d67e92f17cceb38"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#a03c1ac9fc43feb8f1d67e92f17cceb38">LimitOrphanTxSize</a> (unsigned int nMaxOrphans)</td></tr>
 <tr class="separator:a03c1ac9fc43feb8f1d67e92f17cceb38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:ac02c85606709a83ec7aa7f23109fa898"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_critical_section.html">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#ac02c85606709a83ec7aa7f23109fa898">g_cs_orphans</a></td></tr>
+<tr class="separator:ac02c85606709a83ec7aa7f23109fa898"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a450d2be8350b29dcb4f3adc3325f56b2"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="class_c_net_processing_cleanup.html">CNetProcessingCleanup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#a450d2be8350b29dcb4f3adc3325f56b2">instance_of_cnetprocessingcleanup</a></td></tr>
 <tr class="separator:a450d2be8350b29dcb4f3adc3325f56b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -273,7 +275,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">std::map&lt;<a class="el" href="classuint256.html">uint256</a>, <a class="el" href="struct_c_orphan_tx.html">COrphanTx</a>&gt; mapOrphanTransactions GUARDED_BY </td>
           <td>(</td>
-          <td class="paramtype">g_cs_orphans&#160;</td>
+          <td class="paramtype"><a class="el" href="net__processing_8cpp.html#ac02c85606709a83ec7aa7f23109fa898">g_cs_orphans</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -401,6 +403,20 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="ac02c85606709a83ec7aa7f23109fa898"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_critical_section.html">CCriticalSection</a> g_cs_orphans</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00073">73</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a450d2be8350b29dcb4f3adc3325f56b2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -416,7 +432,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 31 2018 11:37:13 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 31 2018 12:36:05 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
