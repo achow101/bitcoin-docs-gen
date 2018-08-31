@@ -46,7 +46,7 @@ var searchData=
   ['lines',['lines',['../class_tor_control_reply.html#ae9c09a2c2d674c1554c91ace852e5269',1,'TorControlReply']]],
   ['list',['list',['../class_recent_requests_table_model.html#a84c7de31f5b343da9464359007995ed5',1,'RecentRequestsTableModel']]],
   ['listactivelogcategories',['ListActiveLogCategories',['../logging_8cpp.html#a0f5558f5de78753cbe2585d90ab1f40f',1,'ListActiveLogCategories():&#160;logging.cpp'],['../logging_8h.html#a0f5558f5de78753cbe2585d90ab1f40f',1,'ListActiveLogCategories():&#160;logging.cpp']]],
-  ['listcoins',['listCoins',['../classinterfaces_1_1_wallet.html#a0d9857753519671b52edde1d9e0a663a',1,'interfaces::Wallet::listCoins()'],['../group___actions.html#ga309e57699628a1822c6688ae5056897d',1,'CWallet::ListCoins()']]],
+  ['listcoins',['listCoins',['../classinterfaces_1_1_wallet.html#a0d9857753519671b52edde1d9e0a663a',1,'interfaces::Wallet::listCoins()'],['../group___actions.html#gae5981ab18713cc5fd785d67b9ac96a84',1,'CWallet::ListCoins()']]],
   ['listcoinstestingsetup',['ListCoinsTestingSetup',['../class_list_coins_testing_setup.html',1,'ListCoinsTestingSetup'],['../class_list_coins_testing_setup.html#adadca010ddbfc563e99928862ade6027',1,'ListCoinsTestingSetup::ListCoinsTestingSetup()']]],
   ['listcommands',['listCommands',['../class_c_r_p_c_table.html#a358e9047a2facc6052efad2e6c5a0d6e',1,'CRPCTable']]],
   ['listen',['Listen',['../class_options_model.html#a5c6c9ca8a01aca9f53e91f118e4878d2a7be688a04a30d15aca32bb4ded521974',1,'OptionsModel']]],
