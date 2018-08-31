@@ -51,7 +51,6 @@ var searchData=
   ['ccompactsize',['CCompactSize',['../class_c_compact_size.html',1,'']]],
   ['cconnectionfailed',['CConnectionFailed',['../class_c_connection_failed.html',1,'']]],
   ['cconnman',['CConnman',['../class_c_connman.html',1,'']]],
-  ['ccriticalblock',['CCriticalBlock',['../class_c_critical_block.html',1,'']]],
   ['ccrypter',['CCrypter',['../class_c_crypter.html',1,'']]],
   ['ccryptokeystore',['CCryptoKeyStore',['../class_c_crypto_key_store.html',1,'']]],
   ['cdatastream',['CDataStream',['../class_c_data_stream.html',1,'']]],

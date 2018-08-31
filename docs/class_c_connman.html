@@ -105,8 +105,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="dynheader">
 Collaboration diagram for CConnman:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_connman__coll__graph.svg" width="919" height="428"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_connman__coll__graph.svg" width="919" height="428"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -408,8 +407,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a7a3ebcaa5b75e2e2e109af35e1c48c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03645ed0eb723430af180ad2ae36adc3"><td class="memItemLeft" align="right" valign="top">std::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_connman.html#a03645ed0eb723430af180ad2ae36adc3">condMsgProc</a></td></tr>
 <tr class="separator:a03645ed0eb723430af180ad2ae36adc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef5c96a2e2d5f2f70bb4d8d871eee3ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#a4173d742ac8c4454e7d2f0b532fbcad7">CWaitableCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_connman.html#aef5c96a2e2d5f2f70bb4d8d871eee3ee">mutexMsgProc</a></td></tr>
-<tr class="separator:aef5c96a2e2d5f2f70bb4d8d871eee3ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafd57827f248719ce29efe9b40ca6664"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#a9c9c99acb9d093cae8cc54aeef3248f9">Mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_connman.html#aafd57827f248719ce29efe9b40ca6664">mutexMsgProc</a></td></tr>
+<tr class="separator:aafd57827f248719ce29efe9b40ca6664"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fdedb3739836bdc19590ad84960a3a6"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_connman.html#a2fdedb3739836bdc19590ad84960a3a6">flagInterruptMsgProc</a></td></tr>
 <tr class="separator:a2fdedb3739836bdc19590ad84960a3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4353881f4ed5f9fb22f13acdf1608a0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_thread_interrupt.html">CThreadInterrupt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_connman.html#a4353881f4ed5f9fb22f13acdf1608a0a">interruptNet</a></td></tr>
@@ -3878,7 +3877,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="aef5c96a2e2d5f2f70bb4d8d871eee3ee"></a>
+<a class="anchor" id="aafd57827f248719ce29efe9b40ca6664"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -3886,7 +3885,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="sync_8h.html#a4173d742ac8c4454e7d2f0b532fbcad7">CWaitableCriticalSection</a> CConnman::mutexMsgProc</td>
+          <td class="memname"><a class="el" href="sync_8h.html#a9c9c99acb9d093cae8cc54aeef3248f9">Mutex</a> CConnman::mutexMsgProc</td>
         </tr>
       </table>
   </td>
@@ -4461,7 +4460,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 31 2018 14:02:14 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 31 2018 15:35:30 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

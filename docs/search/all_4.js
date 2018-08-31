@@ -35,7 +35,7 @@ var searchData=
   ['deallocate',['deallocate',['../structsecure__allocator.html#af86cc49185bd507b8b479e070d744eb0',1,'secure_allocator::deallocate()'],['../structzero__after__free__allocator.html#a63a1610931a9656c9373bf5dce2db796',1,'zero_after_free_allocator::deallocate()']]],
   ['debit',['debit',['../structinterfaces_1_1_wallet_tx.html#a5e3e1ee4c8894407bfcf77b565370a6f',1,'interfaces::WalletTx::debit()'],['../class_transaction_record.html#a536fdaa56c7f7fb789f064cc475d30c1',1,'TransactionRecord::debit()']]],
   ['debug_5ftest',['DEBUG_TEST',['../util_8h.html#a317721a7331c499cfe39b49b39c26cbdac3a3aaee2fcfbe8134fc0103c0e8a922',1,'util.h']]],
-  ['debuglock',['DebugLock',['../sync_8h.html#a8cd4ba75a50eaca5f66610c6043cdfaa',1,'sync.h']]],
+  ['debuglock',['DebugLock',['../sync_8h.html#abfeff2a79c39d85216e6552c32c5e6a2',1,'sync.h']]],
   ['debugmessagehandler',['DebugMessageHandler',['../bitcoin_8cpp.html#ae525e5d5c9e375d56b06fd58ea98267a',1,'bitcoin.cpp']]],
   ['dec',['dec',['../class_a_e_s256_c_b_c_decrypt.html#a358d7ef8621950278b4bbff4b960870c',1,'AES256CBCDecrypt::dec()'],['../class_a_e_s128_c_b_c_decrypt.html#a98c7eacc9258ecd66baeba2fd5a5dc83',1,'AES128CBCDecrypt::dec()']]],
   ['decay',['decay',['../class_tx_confirm_stats.html#a61076f7531b27abbd85ec8bc7bc90ee2',1,'TxConfirmStats::decay()'],['../struct_estimation_result.html#a7d30253599a69e113a44b960e9feb99b',1,'EstimationResult::decay()']]],

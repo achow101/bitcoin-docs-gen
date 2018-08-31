@@ -109,8 +109,7 @@ Include dependency graph for sync.h:</div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sync_8h__dep__incl.svg" width="3886" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sync_8h__dep__incl.svg" width="3886" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="sync_8h_source.html">Go to the source code of this file.</a></p>
@@ -120,8 +119,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_annotated_mixin.html">AnnotatedMixin&lt; PARENT &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template mixin that adds -Wthread-safety locking annotations and lock order checking to a subset of the mutex API.  <a href="class_annotated_mixin.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_critical_block.html">CCriticalBlock&lt; Mutex, Base &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around std::unique_lock style lock for Mutex.  <a href="class_c_critical_block.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unique_lock.html">UniqueLock&lt; Mutex, Base &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around std::unique_lock style lock for Mutex.  <a href="class_unique_lock.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_semaphore.html">CSemaphore</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,13 +138,13 @@ Macros</h2></td></tr>
 <tr class="separator:a9ac9dd35b93432c0b194466d2aa84788"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6f41535a782a4507947186ddcd56062"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync_8h.html#ad6f41535a782a4507947186ddcd56062">PASTE2</a>(x,  y)&#160;&#160;&#160;<a class="el" href="sync_8h.html#a9ac9dd35b93432c0b194466d2aa84788">PASTE</a>(x, y)</td></tr>
 <tr class="separator:ad6f41535a782a4507947186ddcd56062"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a911fe23f057c2fe5aad629162d6c99d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync_8h.html#a911fe23f057c2fe5aad629162d6c99d0">LOCK</a>(cs)&#160;&#160;&#160;<a class="el" href="sync_8h.html#a8cd4ba75a50eaca5f66610c6043cdfaa">DebugLock</a>&lt;decltype(cs)&gt; <a class="el" href="sync_8h.html#ad6f41535a782a4507947186ddcd56062">PASTE2</a>(criticalblock, __COUNTER__)(cs, #cs, __FILE__, __LINE__)</td></tr>
+<tr class="memitem:a911fe23f057c2fe5aad629162d6c99d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync_8h.html#a911fe23f057c2fe5aad629162d6c99d0">LOCK</a>(cs)&#160;&#160;&#160;<a class="el" href="sync_8h.html#abfeff2a79c39d85216e6552c32c5e6a2">DebugLock</a>&lt;decltype(cs)&gt; <a class="el" href="sync_8h.html#ad6f41535a782a4507947186ddcd56062">PASTE2</a>(criticalblock, __COUNTER__)(cs, #cs, __FILE__, __LINE__)</td></tr>
 <tr class="separator:a911fe23f057c2fe5aad629162d6c99d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35644e2b75a93da0cb0f6c768f34efa8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync_8h.html#a35644e2b75a93da0cb0f6c768f34efa8">LOCK2</a>(cs1,  cs2)</td></tr>
 <tr class="separator:a35644e2b75a93da0cb0f6c768f34efa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca08e7299069c2d60b8aa726fc550612"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync_8h.html#aca08e7299069c2d60b8aa726fc550612">TRY_LOCK</a>(cs,  <a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)&#160;&#160;&#160;<a class="el" href="sync_8h.html#a8cd4ba75a50eaca5f66610c6043cdfaa">DebugLock</a>&lt;decltype(cs)&gt; <a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>(cs, #cs, __FILE__, __LINE__, true)</td></tr>
+<tr class="memitem:aca08e7299069c2d60b8aa726fc550612"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync_8h.html#aca08e7299069c2d60b8aa726fc550612">TRY_LOCK</a>(cs,  <a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)&#160;&#160;&#160;<a class="el" href="sync_8h.html#abfeff2a79c39d85216e6552c32c5e6a2">DebugLock</a>&lt;decltype(cs)&gt; <a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>(cs, #cs, __FILE__, __LINE__, true)</td></tr>
 <tr class="separator:aca08e7299069c2d60b8aa726fc550612"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05166a687f0bfba57b8ea332c7dd57e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync_8h.html#a05166a687f0bfba57b8ea332c7dd57e0">WAIT_LOCK</a>(cs,  <a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)&#160;&#160;&#160;<a class="el" href="sync_8h.html#a8cd4ba75a50eaca5f66610c6043cdfaa">DebugLock</a>&lt;decltype(cs)&gt; <a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>(cs, #cs, __FILE__, __LINE__)</td></tr>
+<tr class="memitem:a05166a687f0bfba57b8ea332c7dd57e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync_8h.html#a05166a687f0bfba57b8ea332c7dd57e0">WAIT_LOCK</a>(cs,  <a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)&#160;&#160;&#160;<a class="el" href="sync_8h.html#abfeff2a79c39d85216e6552c32c5e6a2">DebugLock</a>&lt;decltype(cs)&gt; <a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>(cs, #cs, __FILE__, __LINE__)</td></tr>
 <tr class="separator:a05166a687f0bfba57b8ea332c7dd57e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1262d24e5b9a4fa0a1adc4de02958efb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync_8h.html#a1262d24e5b9a4fa0a1adc4de02958efb">ENTER_CRITICAL_SECTION</a>(cs)</td></tr>
 <tr class="separator:a1262d24e5b9a4fa0a1adc4de02958efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,15 +156,12 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a8019a4144dc54f3a305830f7abd2dbc1"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_annotated_mixin.html">AnnotatedMixin</a>&lt; std::recursive_mutex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a></td></tr>
 <tr class="memdesc:a8019a4144dc54f3a305830f7abd2dbc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapped mutex: supports recursive locking, but no waiting TODO: We should move away from using the recursive lock by default.  <a href="#a8019a4144dc54f3a305830f7abd2dbc1">More...</a><br /></td></tr>
 <tr class="separator:a8019a4144dc54f3a305830f7abd2dbc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4173d742ac8c4454e7d2f0b532fbcad7"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_annotated_mixin.html">AnnotatedMixin</a>&lt; std::mutex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync_8h.html#a4173d742ac8c4454e7d2f0b532fbcad7">CWaitableCriticalSection</a></td></tr>
-<tr class="memdesc:a4173d742ac8c4454e7d2f0b532fbcad7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapped mutex: supports waiting but not recursive locking.  <a href="#a4173d742ac8c4454e7d2f0b532fbcad7">More...</a><br /></td></tr>
-<tr class="separator:a4173d742ac8c4454e7d2f0b532fbcad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af990664805809d4da2c08d15032d203a"><td class="memItemLeft" align="right" valign="top">typedef std::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync_8h.html#af990664805809d4da2c08d15032d203a">CConditionVariable</a></td></tr>
-<tr class="memdesc:af990664805809d4da2c08d15032d203a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Just a typedef for std::condition_variable, can be wrapped later if desired.  <a href="#af990664805809d4da2c08d15032d203a">More...</a><br /></td></tr>
-<tr class="separator:af990664805809d4da2c08d15032d203a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cd4ba75a50eaca5f66610c6043cdfaa"><td class="memTemplParams" colspan="2">template&lt;typename MutexArg &gt; </td></tr>
-<tr class="memitem:a8cd4ba75a50eaca5f66610c6043cdfaa"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="sync_8h.html#a8cd4ba75a50eaca5f66610c6043cdfaa">DebugLock</a> = <a class="el" href="class_c_critical_block.html">CCriticalBlock</a>&lt; typename std::remove_reference&lt; typename std::remove_pointer&lt; MutexArg &gt;::type &gt;::type &gt;</td></tr>
-<tr class="separator:a8cd4ba75a50eaca5f66610c6043cdfaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c9c99acb9d093cae8cc54aeef3248f9"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_annotated_mixin.html">AnnotatedMixin</a>&lt; std::mutex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync_8h.html#a9c9c99acb9d093cae8cc54aeef3248f9">Mutex</a></td></tr>
+<tr class="memdesc:a9c9c99acb9d093cae8cc54aeef3248f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapped mutex: supports waiting but not recursive locking.  <a href="#a9c9c99acb9d093cae8cc54aeef3248f9">More...</a><br /></td></tr>
+<tr class="separator:a9c9c99acb9d093cae8cc54aeef3248f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfeff2a79c39d85216e6552c32c5e6a2"><td class="memTemplParams" colspan="2">template&lt;typename MutexArg &gt; </td></tr>
+<tr class="memitem:abfeff2a79c39d85216e6552c32c5e6a2"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="sync_8h.html#abfeff2a79c39d85216e6552c32c5e6a2">DebugLock</a> = <a class="el" href="class_unique_lock.html">UniqueLock</a>&lt; typename std::remove_reference&lt; typename std::remove_pointer&lt; MutexArg &gt;::type &gt;::type &gt;</td></tr>
+<tr class="separator:abfeff2a79c39d85216e6552c32c5e6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="acd61d0cb3b49f367728193720014aed0"></a>
@@ -218,7 +214,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{                                                         \</div><div class="line">        EnterCritical(#cs, __FILE__, __LINE__, (<span class="keywordtype">void</span>*)(&amp;cs)); \</div><div class="line">        (cs).lock();                                          \</div><div class="line">    }</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="sync_8h_source.html#l00191">191</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
+<p>Definition at line <a class="el" href="sync_8h_source.html#l00188">188</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
 
 </div>
 </div>
@@ -236,7 +232,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{                              \</div><div class="line">        (cs).unlock();             \</div><div class="line">        LeaveCritical();           \</div><div class="line">    }</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="sync_8h_source.html#l00197">197</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
+<p>Definition at line <a class="el" href="sync_8h_source.html#l00194">194</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
 
 </div>
 </div>
@@ -249,12 +245,12 @@ Typedefs</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">cs</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="sync_8h.html#a8cd4ba75a50eaca5f66610c6043cdfaa">DebugLock</a>&lt;decltype(cs)&gt; <a class="el" href="sync_8h.html#ad6f41535a782a4507947186ddcd56062">PASTE2</a>(criticalblock, __COUNTER__)(cs, #cs, __FILE__, __LINE__)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="sync_8h.html#abfeff2a79c39d85216e6552c32c5e6a2">DebugLock</a>&lt;decltype(cs)&gt; <a class="el" href="sync_8h.html#ad6f41535a782a4507947186ddcd56062">PASTE2</a>(criticalblock, __COUNTER__)(cs, #cs, __FILE__, __LINE__)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sync_8h_source.html#l00184">184</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
+<p>Definition at line <a class="el" href="sync_8h_source.html#l00181">181</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
 
 </div>
 </div>
@@ -281,9 +277,9 @@ Typedefs</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="class_c_critical_block.html">DebugLock&lt;decltype(cs1)&gt;</a> criticalblock1(cs1, #cs1, __FILE__, __LINE__); \</div><div class="line">    DebugLock&lt;decltype(cs2)&gt; criticalblock2(cs2, #cs2, __FILE__, __LINE__);</div><div class="ttc" id="class_c_critical_block_html"><div class="ttname"><a href="class_c_critical_block.html">CCriticalBlock</a></div><div class="ttdoc">Wrapper around std::unique_lock style lock for Mutex. </div><div class="ttdef"><b>Definition:</b> <a href="sync_8h_source.html#l00121">sync.h:121</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="class_unique_lock.html">DebugLock&lt;decltype(cs1)&gt;</a> criticalblock1(cs1, #cs1, __FILE__, __LINE__); \</div><div class="line">    DebugLock&lt;decltype(cs2)&gt; criticalblock2(cs2, #cs2, __FILE__, __LINE__);</div><div class="ttc" id="class_unique_lock_html"><div class="ttname"><a href="class_unique_lock.html">UniqueLock</a></div><div class="ttdoc">Wrapper around std::unique_lock style lock for Mutex. </div><div class="ttdef"><b>Definition:</b> <a href="sync_8h_source.html#l00118">sync.h:118</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="sync_8h_source.html#l00185">185</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
+<p>Definition at line <a class="el" href="sync_8h_source.html#l00182">182</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
 
 </div>
 </div>
@@ -311,7 +307,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sync_8h_source.html#l00181">181</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
+<p>Definition at line <a class="el" href="sync_8h_source.html#l00178">178</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
 
 </div>
 </div>
@@ -339,7 +335,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sync_8h_source.html#l00182">182</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
+<p>Definition at line <a class="el" href="sync_8h_source.html#l00179">179</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
 
 </div>
 </div>
@@ -362,12 +358,12 @@ Typedefs</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="sync_8h.html#a8cd4ba75a50eaca5f66610c6043cdfaa">DebugLock</a>&lt;decltype(cs)&gt; <a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>(cs, #cs, __FILE__, __LINE__, true)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="sync_8h.html#abfeff2a79c39d85216e6552c32c5e6a2">DebugLock</a>&lt;decltype(cs)&gt; <a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>(cs, #cs, __FILE__, __LINE__, true)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sync_8h_source.html#l00188">188</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
+<p>Definition at line <a class="el" href="sync_8h_source.html#l00185">185</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
 
 </div>
 </div>
@@ -390,32 +386,16 @@ Typedefs</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="sync_8h.html#a8cd4ba75a50eaca5f66610c6043cdfaa">DebugLock</a>&lt;decltype(cs)&gt; <a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>(cs, #cs, __FILE__, __LINE__)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="sync_8h.html#abfeff2a79c39d85216e6552c32c5e6a2">DebugLock</a>&lt;decltype(cs)&gt; <a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>(cs, #cs, __FILE__, __LINE__)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sync_8h_source.html#l00189">189</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
+<p>Definition at line <a class="el" href="sync_8h_source.html#l00186">186</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="af990664805809d4da2c08d15032d203a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::condition_variable <a class="el" href="sync_8h.html#af990664805809d4da2c08d15032d203a">CConditionVariable</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Just a typedef for std::condition_variable, can be wrapped later if desired. </p>
-
-<p>Definition at line <a class="el" href="sync_8h_source.html#l00113">113</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a8019a4144dc54f3a305830f7abd2dbc1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -432,12 +412,28 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4173d742ac8c4454e7d2f0b532fbcad7"></a>
+<a class="anchor" id="abfeff2a79c39d85216e6552c32c5e6a2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MutexArg &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="sync_8h.html#abfeff2a79c39d85216e6552c32c5e6a2">DebugLock</a> =  <a class="el" href="class_unique_lock.html">UniqueLock</a>&lt;typename std::remove_reference&lt;typename std::remove_pointer&lt;MutexArg&gt;::type&gt;::type&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sync_8h_source.html#l00176">176</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9c9c99acb9d093cae8cc54aeef3248f9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="class_annotated_mixin.html">AnnotatedMixin</a>&lt;std::mutex&gt; <a class="el" href="sync_8h.html#a4173d742ac8c4454e7d2f0b532fbcad7">CWaitableCriticalSection</a></td>
+          <td class="memname">typedef <a class="el" href="class_annotated_mixin.html">AnnotatedMixin</a>&lt;std::mutex&gt; <a class="el" href="sync_8h.html#a9c9c99acb9d093cae8cc54aeef3248f9">Mutex</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -448,26 +444,10 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8cd4ba75a50eaca5f66610c6043cdfaa"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename MutexArg &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="sync_8h.html#a8cd4ba75a50eaca5f66610c6043cdfaa">DebugLock</a> =  <a class="el" href="class_c_critical_block.html">CCriticalBlock</a>&lt;typename std::remove_reference&lt;typename std::remove_pointer&lt;MutexArg&gt;::type&gt;::type&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="sync_8h_source.html#l00179">179</a> of file <a class="el" href="sync_8h_source.html">sync.h</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 31 2018 14:02:13 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 31 2018 15:35:29 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

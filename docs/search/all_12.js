@@ -300,7 +300,7 @@ var searchData=
   ['rpc_5fwallet_5fpassphrase_5fincorrect',['RPC_WALLET_PASSPHRASE_INCORRECT',['../rpc_2protocol_8h.html#af867221d51315471f28ed8cdac85deadae7f578c2ec4458c79250e204505dedcc',1,'protocol.h']]],
   ['rpc_5fwallet_5funlock_5fneeded',['RPC_WALLET_UNLOCK_NEEDED',['../rpc_2protocol_8h.html#af867221d51315471f28ed8cdac85deada0c1fbdf17d83da9f5124f2dbf0ba4765',1,'protocol.h']]],
   ['rpc_5fwallet_5fwrong_5fenc_5fstate',['RPC_WALLET_WRONG_ENC_STATE',['../rpc_2protocol_8h.html#af867221d51315471f28ed8cdac85deada6aa5da515d4b7230dfeb65017b9fd38d',1,'protocol.h']]],
-  ['rpcconsole',['RPCConsole',['../class_r_p_c_console.html',1,'RPCConsole'],['../class_bitcoin_g_u_i.html#abd088a131d79b5c9ecf971547bd0578c',1,'BitcoinGUI::rpcConsole()'],['../class_r_p_c_console.html#a0f58ae3018a64fb4fd15be25345df9e9',1,'RPCConsole::RPCConsole()']]],
+  ['rpcconsole',['RPCConsole',['../class_r_p_c_console.html',1,'RPCConsole'],['../class_r_p_c_console.html#a0f58ae3018a64fb4fd15be25345df9e9',1,'RPCConsole::RPCConsole()'],['../class_bitcoin_g_u_i.html#abd088a131d79b5c9ecf971547bd0578c',1,'BitcoinGUI::rpcConsole()']]],
   ['rpcconsole_2ecpp',['rpcconsole.cpp',['../rpcconsole_8cpp.html',1,'']]],
   ['rpcconsole_2eh',['rpcconsole.h',['../rpcconsole_8h.html',1,'']]],
   ['rpcconvertnamedvalues',['RPCConvertNamedValues',['../client_8cpp.html#a38eaa6a1c0fafe2387d1cfdaf11bc360',1,'RPCConvertNamedValues(const std::string &amp;strMethod, const std::vector&lt; std::string &gt; &amp;strParams):&#160;client.cpp'],['../client_8h.html#a38eaa6a1c0fafe2387d1cfdaf11bc360',1,'RPCConvertNamedValues(const std::string &amp;strMethod, const std::vector&lt; std::string &gt; &amp;strParams):&#160;client.cpp']]],

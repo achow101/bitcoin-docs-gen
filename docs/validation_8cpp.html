@@ -368,10 +368,10 @@ Variables</h2></td></tr>
 <tr class="memitem:acfbdea59afc1824d0d1c1ff10f17fd53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_block_index.html">CBlockIndex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8cpp.html#acfbdea59afc1824d0d1c1ff10f17fd53">pindexBestHeader</a> = nullptr</td></tr>
 <tr class="memdesc:acfbdea59afc1824d0d1c1ff10f17fd53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Best header we've seen so far (used for getheaders queries' starting points).  <a href="#acfbdea59afc1824d0d1c1ff10f17fd53">More...</a><br /></td></tr>
 <tr class="separator:acfbdea59afc1824d0d1c1ff10f17fd53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3491e40b5a69cc8c83374c20080d2657"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#a4173d742ac8c4454e7d2f0b532fbcad7">CWaitableCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8cpp.html#a3491e40b5a69cc8c83374c20080d2657">g_best_block_mutex</a></td></tr>
-<tr class="separator:a3491e40b5a69cc8c83374c20080d2657"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c4cdbe1187f6a81a29994adb8791db1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#af990664805809d4da2c08d15032d203a">CConditionVariable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8cpp.html#a6c4cdbe1187f6a81a29994adb8791db1">g_best_block_cv</a></td></tr>
-<tr class="separator:a6c4cdbe1187f6a81a29994adb8791db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eac72ec736df33431343671e4defc14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#a9c9c99acb9d093cae8cc54aeef3248f9">Mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8cpp.html#a8eac72ec736df33431343671e4defc14">g_best_block_mutex</a></td></tr>
+<tr class="separator:a8eac72ec736df33431343671e4defc14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20bc8085877e85cf4e6adc8d5dd888cc"><td class="memItemLeft" align="right" valign="top">std::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8cpp.html#a20bc8085877e85cf4e6adc8d5dd888cc">g_best_block_cv</a></td></tr>
+<tr class="separator:a20bc8085877e85cf4e6adc8d5dd888cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9325f3e96da33dc144d24c88710c79c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classuint256.html">uint256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8cpp.html#ae9325f3e96da33dc144d24c88710c79c">g_best_block</a></td></tr>
 <tr class="separator:ae9325f3e96da33dc144d24c88710c79c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a255e9fc1ce92b27522640085d3a18494"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8cpp.html#a255e9fc1ce92b27522640085d3a18494">nScriptCheckThreads</a> = 0</td></tr>
@@ -3240,12 +3240,12 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a6c4cdbe1187f6a81a29994adb8791db1"></a>
+<a class="anchor" id="a20bc8085877e85cf4e6adc8d5dd888cc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="sync_8h.html#af990664805809d4da2c08d15032d203a">CConditionVariable</a> g_best_block_cv</td>
+          <td class="memname">std::condition_variable g_best_block_cv</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3254,12 +3254,12 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a3491e40b5a69cc8c83374c20080d2657"></a>
+<a class="anchor" id="a8eac72ec736df33431343671e4defc14"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="sync_8h.html#a4173d742ac8c4454e7d2f0b532fbcad7">CWaitableCriticalSection</a> g_best_block_mutex</td>
+          <td class="memname"><a class="el" href="sync_8h.html#a9c9c99acb9d093cae8cc54aeef3248f9">Mutex</a> g_best_block_mutex</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3567,7 +3567,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 31 2018 14:02:13 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 31 2018 15:35:29 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
