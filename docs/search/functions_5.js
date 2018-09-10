@@ -72,7 +72,7 @@ var searchData=
   ['exec',['exec',['../class_send_confirmation_dialog.html#abf3d0b7f41287f492e050e827aaacb12',1,'SendConfirmationDialog']]],
   ['execute',['execute',['../class_c_r_p_c_table.html#a8fa14f688c57f4f9e89e01afbf6a2e2a',1,'CRPCTable']]],
   ['executerpc',['executeRpc',['../classinterfaces_1_1_node.html#a5f1109e67c9678f251953242fb7aac54',1,'interfaces::Node']]],
-  ['exists',['exists',['../class_c_tx_mem_pool.html#a93b2aa8c01fa291d183a82a9e0beeb35',1,'CTxMemPool::exists()'],['../class_uni_value.html#ae24e93ffe4d65a827f235be60445d562',1,'UniValue::exists()'],['../class_c_d_b_wrapper.html#aa87b3ce4d3e14fed988d75d363a329b6',1,'CDBWrapper::Exists()'],['../class_berkeley_batch.html#a739cd356431ea488faad8f82e3cd285d',1,'BerkeleyBatch::Exists()']]],
+  ['exists',['exists',['../class_c_tx_mem_pool.html#ae2446ea2b8803f15fcefd6c91fd83218',1,'CTxMemPool::exists()'],['../class_uni_value.html#ae24e93ffe4d65a827f235be60445d562',1,'UniValue::exists()'],['../class_c_d_b_wrapper.html#aa87b3ce4d3e14fed988d75d363a329b6',1,'CDBWrapper::Exists()'],['../class_berkeley_batch.html#a739cd356431ea488faad8f82e3cd285d',1,'BerkeleyBatch::Exists()']]],
   ['expand',['Expand',['../struct_descriptor.html#a99192b5e967720cb1c624142cad71b96',1,'Descriptor']]],
   ['expire',['Expire',['../class_c_tx_mem_pool.html#a283d0422469c908a881a6484308ee2b6',1,'CTxMemPool']]],
   ['exportclicked',['exportClicked',['../class_transaction_view.html#a5983022ff1e5395f87de3c5728eff8da',1,'TransactionView']]],

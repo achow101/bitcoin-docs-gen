@@ -273,12 +273,13 @@ Private Attributes</h2></td></tr>
 <p>Store block on disk. </p>
 <p>If dbp is non-nullptr, the file is known to already reside on disk </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03457">3457</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03448">3448</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_ae73c43d5a0296d8972b1fe69da7e10ff_cgraph.svg" width="979" height="2062"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_ae73c43d5a0296d8972b1fe69da7e10ff_cgraph.svg" width="979" height="2062"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -329,12 +330,13 @@ Here is the caller graph for this function:</div>
 
 <p>If a block header hasn't already been seen, call CheckBlockHeader on it, ensure that it doesn't descend from an invalid block, and then add it to mapBlockIndex. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03355">3355</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03346">3346</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_ab70c11d94a3f6e5cae415521437ef627_cgraph.svg" width="1182" height="1980"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_ab70c11d94a3f6e5cae415521437ef627_cgraph.svg" width="1182" height="1980"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -381,12 +383,13 @@ Here is the caller graph for this function:</div>
 <p>The result is either failure or an activated best chain. pblock is either nullptr or a pointer to a block that is already loaded (to avoid loading it again from disk).</p>
 <p>ActivateBestChain is split into steps (see ActivateBestChainStep) so that we avoid holding cs_main for an extended period of time; the length of this call may be quite long during reindexing or a substantial reorg. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02667">2667</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02658">2658</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_a5a24c6da53ff4b725e2d1c8b4af007fe_cgraph.svg" width="1495" height="2180"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_a5a24c6da53ff4b725e2d1c8b4af007fe_cgraph.svg" width="1495" height="2180"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -458,7 +461,7 @@ Here is the caller graph for this function:</div>
 <p>Try to make some progress towards making pindexMostWork the active block. </p>
 <p>pblock is either nullptr or a pointer to a <a class="el" href="class_c_block.html">CBlock</a> corresponding to pindexMostWork. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02554">2554</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02545">2545</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -491,7 +494,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02909">2909</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02900">2900</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -527,7 +530,7 @@ Here is the call graph for this function:</div>
 <p>Make various assertions about the state of the block index. </p>
 <p>By default this only executes fully when using the Regtest chain; see: fCheckBlockIndex. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04477">4477</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04468">4468</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -589,7 +592,7 @@ Here is the call graph for this function:</div>
 <p>Apply the effects of this block (with given index) on the UTXO set represented by coins. </p>
 <p>Validity checks that depend on the UTXO set are also done; <a class="el" href="class_c_chain_state.html#a06a01f2d89b7a40b5341083aa522a1e2" title="Apply the effects of this block (with given index) on the UTXO set represented by coins...">ConnectBlock()</a> can fail if those validity checks fail (among other reasons). </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l01805">1805</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l01796">1796</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -667,7 +670,7 @@ Here is the caller graph for this function:</div>
 <p>pblock is either nullptr or a pointer to a <a class="el" href="class_c_block.html">CBlock</a> corresponding to pindexNew, to bypass loading it again from disk.</p>
 <p>The block is added to connectTrace if connection succeeds. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02425">2425</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02416">2416</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -711,7 +714,7 @@ Here is the call graph for this function:</div>
 <p>Undo the effects of this block (with given index) on the UTXO set represented by coins. </p>
 <p>When FAILED is returned, view is left in an indeterminate state. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l01579">1579</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l01570">1570</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -763,7 +766,7 @@ Here is the caller graph for this function:</div>
 <p>After calling, the mempool will be in an inconsistent state, with transactions from disconnected blocks being added to disconnectpool. You should make the mempool consistent again by calling UpdateMempoolForReorg. with cs_main held.</p>
 <p>If disconnectpool is nullptr, then no disconnected transactions are added to disconnectpool (note that the caller is responsible for mempool consistency in any case). </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02302">2302</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02293">2293</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -797,7 +800,7 @@ Here is the call graph for this function:</div>
 
 <p>Return the tip of the chain with the most work in it, that isn't known to be invalid (it's however far from certain to be valid). </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02484">2484</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02475">2475</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -832,7 +835,7 @@ Here is the call graph for this function:</div>
 
 <p>Create a new block index entry for a given block hash. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03806">3806</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03797">3797</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -873,7 +876,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02803">2803</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02794">2794</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -923,7 +926,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l01309">1309</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l01300">1300</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -958,7 +961,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03826">3826</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03817">3817</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -990,7 +993,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04325">4325</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04316">4316</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1038,12 +1041,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02771">2771</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02762">2762</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_a1c2bc46ff4824c106a100d684fd5f4dd_cgraph.svg" width="1931" height="1795"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_a1c2bc46ff4824c106a100d684fd5f4dd_cgraph.svg" width="1931" height="1795"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1071,7 +1075,7 @@ Here is the caller graph for this function:</div>
 
 <p>Delete all entries in setBlockIndexCandidates that are worse than the current tip. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02539">2539</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02530">2530</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1135,7 +1139,7 @@ Here is the caller graph for this function:</div>
 
 <p>Mark a block as having its data received and checked (up to BLOCK_VALID_TRANSACTIONS). </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02946">2946</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02937">2937</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1170,7 +1174,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04089">4089</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04080">4080</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1202,7 +1206,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02871">2871</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02862">2862</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1234,12 +1238,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04158">4158</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04149">4149</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_afc0586502e4dd4092c4a0707d329f6eb_cgraph.svg" width="1386" height="1666"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_chain_state_afc0586502e4dd4092c4a0707d329f6eb_cgraph.svg" width="1386" height="1666"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1292,7 +1297,7 @@ Here is the caller graph for this function:</div>
 
 <p>Apply the effects of a block on the utxo cache, ignoring that it may already have been applied. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04069">4069</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04060">4060</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1316,7 +1321,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04268">4268</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04259">4259</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1562,7 +1567,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 10 2018 16:16:17 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 10 2018 16:33:53 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
