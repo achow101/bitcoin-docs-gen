@@ -471,15 +471,12 @@ Functions</h2></td></tr>
 <tr class="memitem:aeabfb098ee3c5f936bb59978d6b35e60"><td class="memTemplParams" colspan="2">template&lt;typename Stream , typename... Args&gt; </td></tr>
 <tr class="memitem:aeabfb098ee3c5f936bb59978d6b35e60"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="serialize_8h.html#aeabfb098ee3c5f936bb59978d6b35e60">SerReadWriteMany</a> (Stream &amp;s, <a class="el" href="struct_c_ser_action_unserialize.html">CSerActionUnserialize</a> ser_action, Args &amp;&amp;...args)</td></tr>
 <tr class="separator:aeabfb098ee3c5f936bb59978d6b35e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb209536f7b746673a9c3fba8651b0e5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aeb209536f7b746673a9c3fba8651b0e5"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="serialize_8h.html#aeb209536f7b746673a9c3fba8651b0e5">GetSerializeSize</a> (const T &amp;t, int nType, int nVersion=0)</td></tr>
-<tr class="separator:aeb209536f7b746673a9c3fba8651b0e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0df31c32f86f88378f6eb80c384dfee6"><td class="memTemplParams" colspan="2">template&lt;typename S , typename T &gt; </td></tr>
-<tr class="memitem:a0df31c32f86f88378f6eb80c384dfee6"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="serialize_8h.html#a0df31c32f86f88378f6eb80c384dfee6">GetSerializeSize</a> (const S &amp;s, const T &amp;t)</td></tr>
-<tr class="separator:a0df31c32f86f88378f6eb80c384dfee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e769599daa0739af483ecb6f049f532"><td class="memTemplParams" colspan="2">template&lt;typename S , typename... T&gt; </td></tr>
-<tr class="memitem:a2e769599daa0739af483ecb6f049f532"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="serialize_8h.html#a2e769599daa0739af483ecb6f049f532">GetSerializeSizeMany</a> (const S &amp;s, const T &amp;...t)</td></tr>
-<tr class="separator:a2e769599daa0739af483ecb6f049f532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb5a4516b4946127a59c79d21efd61ca"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:adb5a4516b4946127a59c79d21efd61ca"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="serialize_8h.html#adb5a4516b4946127a59c79d21efd61ca">GetSerializeSize</a> (const T &amp;t, int nVersion=0)</td></tr>
+<tr class="separator:adb5a4516b4946127a59c79d21efd61ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a373eb1d2d3024bd1b8a3acd99b0ddcef"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
+<tr class="memitem:a373eb1d2d3024bd1b8a3acd99b0ddcef"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="serialize_8h.html#a373eb1d2d3024bd1b8a3acd99b0ddcef">GetSerializeSizeMany</a> (int nVersion, const T &amp;...t)</td></tr>
+<tr class="separator:a373eb1d2d3024bd1b8a3acd99b0ddcef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -806,7 +803,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="aeb209536f7b746673a9c3fba8651b0e5"></a>
+<a class="anchor" id="adb5a4516b4946127a59c79d21efd61ca"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -822,12 +819,6 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>nType</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>nVersion</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -838,58 +829,29 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="serialize_8h_source.html#l00983">983</a> of file <a class="el" href="serialize_8h_source.html">serialize.h</a>.</p>
+<p>Definition at line <a class="el" href="serialize_8h_source.html#l00981">981</a> of file <a class="el" href="serialize_8h_source.html">serialize.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="serialize_8h_aeb209536f7b746673a9c3fba8651b0e5_icgraph.svg" width="2115" height="1832"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="serialize_8h_adb5a4516b4946127a59c79d21efd61ca_icgraph.svg" width="2115" height="1832"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a0df31c32f86f88378f6eb80c384dfee6"></a>
+<a class="anchor" id="a373eb1d2d3024bd1b8a3acd99b0ddcef"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename S , typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t GetSerializeSize </td>
-          <td>(</td>
-          <td class="paramtype">const S &amp;&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>t</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="serialize_8h_source.html#l00989">989</a> of file <a class="el" href="serialize_8h_source.html">serialize.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2e769599daa0739af483ecb6f049f532"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename S , typename... T&gt; </div>
+template&lt;typename... T&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">size_t GetSerializeSizeMany </td>
           <td>(</td>
-          <td class="paramtype">const S &amp;&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nVersion</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -905,19 +867,21 @@ template&lt;typename S , typename... T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="serialize_8h_source.html#l00995">995</a> of file <a class="el" href="serialize_8h_source.html">serialize.h</a>.</p>
+<p>Definition at line <a class="el" href="serialize_8h_source.html#l00987">987</a> of file <a class="el" href="serialize_8h_source.html">serialize.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="serialize_8h_a2e769599daa0739af483ecb6f049f532_cgraph.svg" width="330" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="serialize_8h_a373eb1d2d3024bd1b8a3acd99b0ddcef_cgraph.svg" width="374" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="serialize_8h_a2e769599daa0739af483ecb6f049f532_icgraph.svg" width="794" height="180"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="serialize_8h_a373eb1d2d3024bd1b8a3acd99b0ddcef_icgraph.svg" width="794" height="180"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -3044,12 +3008,13 @@ template&lt;typename Stream &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="serialize_8h_source.html#l00936">936</a> of file <a class="el" href="serialize_8h_source.html">serialize.h</a>.</p>
+<p>Definition at line <a class="el" href="serialize_8h_source.html#l00934">934</a> of file <a class="el" href="serialize_8h_source.html">serialize.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="serialize_8h_a12afe7e3aa4802c5a5fc9b39a218489c_icgraph.svg" width="999" height="278"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="serialize_8h_a12afe7e3aa4802c5a5fc9b39a218489c_icgraph.svg" width="999" height="278"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -3087,7 +3052,7 @@ template&lt;typename Stream , typename Arg , typename... Args&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="serialize_8h_source.html#l00941">941</a> of file <a class="el" href="serialize_8h_source.html">serialize.h</a>.</p>
+<p>Definition at line <a class="el" href="serialize_8h_source.html#l00939">939</a> of file <a class="el" href="serialize_8h_source.html">serialize.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -3138,7 +3103,7 @@ template&lt;typename Stream , typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="serialize_8h_source.html#l00960">960</a> of file <a class="el" href="serialize_8h_source.html">serialize.h</a>.</p>
+<p>Definition at line <a class="el" href="serialize_8h_source.html#l00958">958</a> of file <a class="el" href="serialize_8h_source.html">serialize.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -3189,7 +3154,7 @@ template&lt;typename Stream , typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="serialize_8h_source.html#l00966">966</a> of file <a class="el" href="serialize_8h_source.html">serialize.h</a>.</p>
+<p>Definition at line <a class="el" href="serialize_8h_source.html#l00964">964</a> of file <a class="el" href="serialize_8h_source.html">serialize.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -4414,7 +4379,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="serialize_8h_source.html#l00948">948</a> of file <a class="el" href="serialize_8h_source.html">serialize.h</a>.</p>
+<p>Definition at line <a class="el" href="serialize_8h_source.html#l00946">946</a> of file <a class="el" href="serialize_8h_source.html">serialize.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -4465,7 +4430,7 @@ template&lt;typename Stream , typename Arg , typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="serialize_8h_source.html#l00953">953</a> of file <a class="el" href="serialize_8h_source.html">serialize.h</a>.</p>
+<p>Definition at line <a class="el" href="serialize_8h_source.html#l00951">951</a> of file <a class="el" href="serialize_8h_source.html">serialize.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -4562,7 +4527,7 @@ template&lt;VarIntMode Mode = VarIntMode::DEFAULT, typename I &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="serialize_8h_source.html#l00977">977</a> of file <a class="el" href="serialize_8h_source.html">serialize.h</a>.</p>
+<p>Definition at line <a class="el" href="serialize_8h_source.html#l00975">975</a> of file <a class="el" href="serialize_8h_source.html">serialize.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -4651,7 +4616,7 @@ template&lt;typename I &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="serialize_8h_source.html#l00972">972</a> of file <a class="el" href="serialize_8h_source.html">serialize.h</a>.</p>
+<p>Definition at line <a class="el" href="serialize_8h_source.html#l00970">970</a> of file <a class="el" href="serialize_8h_source.html">serialize.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -4724,7 +4689,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 11 2018 07:04:13 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 11 2018 07:31:52 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
