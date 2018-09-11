@@ -107,6 +107,9 @@ Collaboration diagram for DummyWalletInit:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:abfa30b2845904be357b8c0b2b5de192e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dummy_wallet_init.html#abfa30b2845904be357b8c0b2b5de192e">HasWalletSupport</a> () const override</td></tr>
+<tr class="memdesc:abfa30b2845904be357b8c0b2b5de192e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the wallet component enabled.  <a href="#abfa30b2845904be357b8c0b2b5de192e">More...</a><br /></td></tr>
+<tr class="separator:abfa30b2845904be357b8c0b2b5de192e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b25e9f8676e593471942d72a41bc2bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dummy_wallet_init.html#a5b25e9f8676e593471942d72a41bc2bc">AddWalletOptions</a> () const override</td></tr>
 <tr class="memdesc:a5b25e9f8676e593471942d72a41bc2bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get wallet help string.  <a href="#a5b25e9f8676e593471942d72a41bc2bc">More...</a><br /></td></tr>
 <tr class="separator:a5b25e9f8676e593471942d72a41bc2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,7 +143,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00078">78</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="dummywallet_8cpp_source.html#l00009">9</a> of file <a class="el" href="dummywallet_8cpp_source.html">dummywallet.cpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a5b25e9f8676e593471942d72a41bc2bc"></a>
 <div class="memitem">
@@ -167,12 +170,20 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="class_wallet_init_interface.html#aaa944344d3b8ef6bf3503323ff376d39">WalletInitInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00092">92</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="dummywallet_8cpp_source.html#l00024">24</a> of file <a class="el" href="dummywallet_8cpp_source.html">dummywallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_dummy_wallet_init_a5b25e9f8676e593471942d72a41bc2bc_cgraph.svg" width="683" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_dummy_wallet_init_a5b25e9f8676e593471942d72a41bc2bc_icgraph.svg" width="456" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -203,7 +214,7 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="class_wallet_init_interface.html#a664abf890860ac0887da719d3a1c0d1b">WalletInitInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00089">89</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="dummywallet_8cpp_source.html#l00021">21</a> of file <a class="el" href="dummywallet_8cpp_source.html">dummywallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -232,7 +243,44 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="class_wallet_init_interface.html#a674c4922dd6431c55738d590d3cac5d2">WalletInitInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00087">87</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="dummywallet_8cpp_source.html#l00019">19</a> of file <a class="el" href="dummywallet_8cpp_source.html">dummywallet.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abfa30b2845904be357b8c0b2b5de192e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DummyWalletInit::HasWalletSupport </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is the wallet component enabled. </p>
+
+<p>Implements <a class="el" href="class_wallet_init_interface.html#a103d3e3b3b14bf4ef8a6c47cf995393a">WalletInitInterface</a>.</p>
+
+<p>Definition at line <a class="el" href="dummywallet_8cpp_source.html#l00012">12</a> of file <a class="el" href="dummywallet_8cpp_source.html">dummywallet.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_dummy_wallet_init_abfa30b2845904be357b8c0b2b5de192e_cgraph.svg" width="930" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -261,7 +309,7 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="class_wallet_init_interface.html#a0c56b735b97b2a131ff1f60923ee1a8e">WalletInitInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00085">85</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="dummywallet_8cpp_source.html#l00017">17</a> of file <a class="el" href="dummywallet_8cpp_source.html">dummywallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -290,7 +338,7 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="class_wallet_init_interface.html#ae13b33e326c34acc90e909789fa6b047">WalletInitInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00082">82</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="dummywallet_8cpp_source.html#l00014">14</a> of file <a class="el" href="dummywallet_8cpp_source.html">dummywallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -320,7 +368,7 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="class_wallet_init_interface.html#aef5233090ba150c7b86b8370f0f1a087">WalletInitInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00083">83</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="dummywallet_8cpp_source.html#l00015">15</a> of file <a class="el" href="dummywallet_8cpp_source.html">dummywallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -350,7 +398,7 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="class_wallet_init_interface.html#a204b19bce6976025364eace6b2138203">WalletInitInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00086">86</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="dummywallet_8cpp_source.html#l00018">18</a> of file <a class="el" href="dummywallet_8cpp_source.html">dummywallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -379,7 +427,7 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="class_wallet_init_interface.html#ab2adc3da72c2dc69782b86a3db02cb34">WalletInitInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00088">88</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="dummywallet_8cpp_source.html#l00020">20</a> of file <a class="el" href="dummywallet_8cpp_source.html">dummywallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -408,17 +456,17 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="class_wallet_init_interface.html#a784b6e6e88903a84308c6ed3c3c83fc6">WalletInitInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00084">84</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="dummywallet_8cpp_source.html#l00016">16</a> of file <a class="el" href="dummywallet_8cpp_source.html">dummywallet.cpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/<a class="el" href="init_8cpp_source.html">init.cpp</a></li>
+<li>src/<a class="el" href="dummywallet_8cpp_source.html">dummywallet.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 11 2018 08:59:58 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 11 2018 13:49:23 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

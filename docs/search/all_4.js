@@ -164,6 +164,7 @@ var searchData=
   ['dummy_5fsigning_5fprovider',['DUMMY_SIGNING_PROVIDER',['../sign_8cpp.html#a129cc81972e09e3ba1c29777eb9d0ed0',1,'DUMMY_SIGNING_PROVIDER():&#160;sign.cpp'],['../sign_8h.html#a129cc81972e09e3ba1c29777eb9d0ed0',1,'DUMMY_SIGNING_PROVIDER():&#160;sign.cpp']]],
   ['dummysigninput',['DummySignInput',['../group__map_wallet.html#ga5a92b1905786145af8a3a3bd86ed794b',1,'CWallet']]],
   ['dummysigntx',['DummySignTx',['../class_c_wallet.html#a8b14d59983f5c1af617d8ac019bc350e',1,'CWallet::DummySignTx(CMutableTransaction &amp;txNew, const std::set&lt; CTxOut &gt; &amp;txouts, bool use_max_sig=false) const '],['../group__map_wallet.html#ga4913a5de60b4c303059940e9e6ca7000',1,'CWallet::DummySignTx(CMutableTransaction &amp;txNew, const std::vector&lt; CTxOut &gt; &amp;txouts, bool use_max_sig=false) const ']]],
+  ['dummywallet_2ecpp',['dummywallet.cpp',['../dummywallet_8cpp.html',1,'']]],
   ['dummywalletinit',['DummyWalletInit',['../class_dummy_wallet_init.html',1,'']]],
   ['dump_5faddresses_5finterval',['DUMP_ADDRESSES_INTERVAL',['../net_8cpp.html#a272e900bb201601d6842e465bec135af',1,'net.cpp']]],
   ['dumpaddresses',['DumpAddresses',['../class_c_connman.html#aefdc911e6c978574ec42051faeaea041',1,'CConnman']]],

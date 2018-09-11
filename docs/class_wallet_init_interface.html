@@ -104,6 +104,9 @@ Inheritance diagram for WalletInitInterface:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a103d3e3b3b14bf4ef8a6c47cf995393a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_wallet_init_interface.html#a103d3e3b3b14bf4ef8a6c47cf995393a">HasWalletSupport</a> () const =0</td></tr>
+<tr class="memdesc:a103d3e3b3b14bf4ef8a6c47cf995393a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the wallet component enabled.  <a href="#a103d3e3b3b14bf4ef8a6c47cf995393a">More...</a><br /></td></tr>
+<tr class="separator:a103d3e3b3b14bf4ef8a6c47cf995393a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa944344d3b8ef6bf3503323ff376d39"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_wallet_init_interface.html#aaa944344d3b8ef6bf3503323ff376d39">AddWalletOptions</a> () const =0</td></tr>
 <tr class="memdesc:aaa944344d3b8ef6bf3503323ff376d39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get wallet help string.  <a href="#aaa944344d3b8ef6bf3503323ff376d39">More...</a><br /></td></tr>
 <tr class="separator:aaa944344d3b8ef6bf3503323ff376d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,7 +162,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="walletinitinterface_8h_source.html#l00034">34</a> of file <a class="el" href="walletinitinterface_8h_source.html">walletinitinterface.h</a>.</p>
+<p>Definition at line <a class="el" href="walletinitinterface_8h_source.html#l00036">36</a> of file <a class="el" href="walletinitinterface_8h_source.html">walletinitinterface.h</a>.</p>
 
 </div>
 </div>
@@ -187,7 +190,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Get wallet help string. </p>
 
-<p>Implemented in <a class="el" href="class_dummy_wallet_init.html#a5b25e9f8676e593471942d72a41bc2bc">DummyWalletInit</a>, and <a class="el" href="class_wallet_init.html#a1b28f41e8a76979da1a14e443665113f">WalletInit</a>.</p>
+<p>Implemented in <a class="el" href="class_wallet_init.html#a1b28f41e8a76979da1a14e443665113f">WalletInit</a>, and <a class="el" href="class_dummy_wallet_init.html#a5b25e9f8676e593471942d72a41bc2bc">DummyWalletInit</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -221,7 +224,7 @@ Here is the caller graph for this function:</div>
 
 <p>Close wallets. </p>
 
-<p>Implemented in <a class="el" href="class_dummy_wallet_init.html#a7701946b9fbf7ce7f035daa3e4768520">DummyWalletInit</a>, and <a class="el" href="class_wallet_init.html#a3b10df50635e18b3cad8b16fb19095cf">WalletInit</a>.</p>
+<p>Implemented in <a class="el" href="class_wallet_init.html#a3b10df50635e18b3cad8b16fb19095cf">WalletInit</a>, and <a class="el" href="class_dummy_wallet_init.html#a7701946b9fbf7ce7f035daa3e4768520">DummyWalletInit</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -255,12 +258,47 @@ Here is the caller graph for this function:</div>
 
 <p>Flush Wallets. </p>
 
-<p>Implemented in <a class="el" href="class_dummy_wallet_init.html#aefbf9c3bb6f5f30b63cd255a529b0e74">DummyWalletInit</a>, and <a class="el" href="class_wallet_init.html#a1f9f4a0a1e2b0b6d6acbb7b0598ca1ba">WalletInit</a>.</p>
+<p>Implemented in <a class="el" href="class_wallet_init.html#a1f9f4a0a1e2b0b6d6acbb7b0598ca1ba">WalletInit</a>, and <a class="el" href="class_dummy_wallet_init.html#aefbf9c3bb6f5f30b63cd255a529b0e74">DummyWalletInit</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_init_interface_a674c4922dd6431c55738d590d3cac5d2_icgraph.svg" width="279" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a103d3e3b3b14bf4ef8a6c47cf995393a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool WalletInitInterface::HasWalletSupport </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is the wallet component enabled. </p>
+
+<p>Implemented in <a class="el" href="class_wallet_init.html#ae7a01f085f3d6c05fc97d910a7159fd8">WalletInit</a>, and <a class="el" href="class_dummy_wallet_init.html#abfa30b2845904be357b8c0b2b5de192e">DummyWalletInit</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_wallet_init_interface_a103d3e3b3b14bf4ef8a6c47cf995393a_icgraph.svg" width="595" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -289,7 +327,7 @@ Here is the caller graph for this function:</div>
 
 <p>Open wallets. </p>
 
-<p>Implemented in <a class="el" href="class_dummy_wallet_init.html#a2bbe534b7b996d6456f7aaacbd4d0405">DummyWalletInit</a>, and <a class="el" href="class_wallet_init.html#aebeab31fbacb7c241dc2d7fe7587fe8e">WalletInit</a>.</p>
+<p>Implemented in <a class="el" href="class_wallet_init.html#aebeab31fbacb7c241dc2d7fe7587fe8e">WalletInit</a>, and <a class="el" href="class_dummy_wallet_init.html#a2bbe534b7b996d6456f7aaacbd4d0405">DummyWalletInit</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -323,7 +361,7 @@ Here is the caller graph for this function:</div>
 
 <p>Check wallet parameter interaction. </p>
 
-<p>Implemented in <a class="el" href="class_dummy_wallet_init.html#a27d0eabc70e24f00423860d866843c02">DummyWalletInit</a>, and <a class="el" href="class_wallet_init.html#a2598a13734915bbf831cbd28d09a65fc">WalletInit</a>.</p>
+<p>Implemented in <a class="el" href="class_wallet_init.html#a2598a13734915bbf831cbd28d09a65fc">WalletInit</a>, and <a class="el" href="class_dummy_wallet_init.html#a27d0eabc70e24f00423860d866843c02">DummyWalletInit</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -358,7 +396,7 @@ Here is the caller graph for this function:</div>
 
 <p>Register wallet RPC. </p>
 
-<p>Implemented in <a class="el" href="class_dummy_wallet_init.html#ab13f03ac15fff60c10180ca5bb3ad716">DummyWalletInit</a>, and <a class="el" href="class_wallet_init.html#a9d7dfad5157e6db35a07b45bf73c8b2c">WalletInit</a>.</p>
+<p>Implemented in <a class="el" href="class_wallet_init.html#a9d7dfad5157e6db35a07b45bf73c8b2c">WalletInit</a>, and <a class="el" href="class_dummy_wallet_init.html#ab13f03ac15fff60c10180ca5bb3ad716">DummyWalletInit</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -393,7 +431,7 @@ Here is the caller graph for this function:</div>
 
 <p>Start wallets. </p>
 
-<p>Implemented in <a class="el" href="class_dummy_wallet_init.html#ac81a40370af2f5ce49b281e87df457ac">DummyWalletInit</a>, and <a class="el" href="class_wallet_init.html#ae8a471c9356a44461d2593c52209c6e9">WalletInit</a>.</p>
+<p>Implemented in <a class="el" href="class_wallet_init.html#ae8a471c9356a44461d2593c52209c6e9">WalletInit</a>, and <a class="el" href="class_dummy_wallet_init.html#ac81a40370af2f5ce49b281e87df457ac">DummyWalletInit</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -427,7 +465,7 @@ Here is the caller graph for this function:</div>
 
 <p>Stop Wallets. </p>
 
-<p>Implemented in <a class="el" href="class_dummy_wallet_init.html#a361bf27a4cbd8c96d6e26fc4d4e54e16">DummyWalletInit</a>, and <a class="el" href="class_wallet_init.html#aa7584b9607bbca3ce3520b8cb65dbddb">WalletInit</a>.</p>
+<p>Implemented in <a class="el" href="class_wallet_init.html#aa7584b9607bbca3ce3520b8cb65dbddb">WalletInit</a>, and <a class="el" href="class_dummy_wallet_init.html#a361bf27a4cbd8c96d6e26fc4d4e54e16">DummyWalletInit</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -461,7 +499,7 @@ Here is the caller graph for this function:</div>
 
 <p>Verify wallets. </p>
 
-<p>Implemented in <a class="el" href="class_dummy_wallet_init.html#a640c41098103693b48b050ea88f2944b">DummyWalletInit</a>, and <a class="el" href="class_wallet_init.html#a72a87e66ee657cbdfe30bce5b28996cf">WalletInit</a>.</p>
+<p>Implemented in <a class="el" href="class_wallet_init.html#a72a87e66ee657cbdfe30bce5b28996cf">WalletInit</a>, and <a class="el" href="class_dummy_wallet_init.html#a640c41098103693b48b050ea88f2944b">DummyWalletInit</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -478,7 +516,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 11 2018 08:59:59 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 11 2018 13:49:24 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
