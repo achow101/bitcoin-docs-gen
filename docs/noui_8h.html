@@ -95,17 +95,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">noui.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div class="dynheader">
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for noui.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="noui_8h__incl.svg" width="95" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="noui_8h__dep__incl.svg" width="256" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="noui_8h__dep__incl.svg" width="587" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="noui_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:aabdfddd694af6a82a3bb3a3371edcaa4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="noui_8h.html#aabdfddd694af6a82a3bb3a3371edcaa4">noui_ThreadSafeMessageBox</a> (const std::string &amp;message, const std::string &amp;caption, unsigned int style)</td></tr>
+<tr class="memdesc:aabdfddd694af6a82a3bb3a3371edcaa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-GUI handler, which logs and prints messages.  <a href="#aabdfddd694af6a82a3bb3a3371edcaa4">More...</a><br /></td></tr>
+<tr class="separator:aabdfddd694af6a82a3bb3a3371edcaa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a392762a24f6a062492065960ced65a30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="noui_8h.html#a392762a24f6a062492065960ced65a30">noui_ThreadSafeQuestion</a> (const std::string &amp;, const std::string &amp;message, const std::string &amp;caption, unsigned int style)</td></tr>
+<tr class="memdesc:a392762a24f6a062492065960ced65a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-GUI handler, which logs and prints questions.  <a href="#a392762a24f6a062492065960ced65a30">More...</a><br /></td></tr>
+<tr class="separator:a392762a24f6a062492065960ced65a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a796eae0de41d0d373e3e066fab04554a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="noui_8h.html#a796eae0de41d0d373e3e066fab04554a">noui_InitMessage</a> (const std::string &amp;message)</td></tr>
+<tr class="memdesc:a796eae0de41d0d373e3e066fab04554a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-GUI handler, which only logs a message.  <a href="#a796eae0de41d0d373e3e066fab04554a">More...</a><br /></td></tr>
+<tr class="separator:a796eae0de41d0d373e3e066fab04554a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4eab1820a36fab7debaa999ca082f9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="noui_8h.html#ad4eab1820a36fab7debaa999ca082f9d">noui_connect</a> ()</td></tr>
+<tr class="memdesc:ad4eab1820a36fab7debaa999ca082f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect all bitcoind signal handlers.  <a href="#ad4eab1820a36fab7debaa999ca082f9d">More...</a><br /></td></tr>
 <tr class="separator:ad4eab1820a36fab7debaa999ca082f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -122,7 +140,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Connect all bitcoind signal handlers. </p>
+
 <p>Definition at line <a class="el" href="noui_8cpp_source.html#l00054">54</a> of file <a class="el" href="noui_8cpp_source.html">noui.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="noui_8h_ad4eab1820a36fab7debaa999ca082f9d_cgraph.svg" width="887" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -133,10 +161,148 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a796eae0de41d0d373e3e066fab04554a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void noui_InitMessage </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Non-GUI handler, which only logs a message. </p>
+
+<p>Definition at line <a class="el" href="noui_8cpp_source.html#l00049">49</a> of file <a class="el" href="noui_8cpp_source.html">noui.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="noui_8h_a796eae0de41d0d373e3e066fab04554a_icgraph.svg" width="400" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aabdfddd694af6a82a3bb3a3371edcaa4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool noui_ThreadSafeMessageBox </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>caption</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>style</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Non-GUI handler, which logs and prints messages. </p>
+
+<p>Definition at line <a class="el" href="noui_8cpp_source.html#l00017">17</a> of file <a class="el" href="noui_8cpp_source.html">noui.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="noui_8h_aabdfddd694af6a82a3bb3a3371edcaa4_cgraph.svg" width="498" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="noui_8h_aabdfddd694af6a82a3bb3a3371edcaa4_icgraph.svg" width="798" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a392762a24f6a062492065960ced65a30"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool noui_ThreadSafeQuestion </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>caption</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>style</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Non-GUI handler, which logs and prints questions. </p>
+
+<p>Definition at line <a class="el" href="noui_8cpp_source.html#l00044">44</a> of file <a class="el" href="noui_8cpp_source.html">noui.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="noui_8h_a392762a24f6a062492065960ced65a30_cgraph.svg" width="732" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="noui_8h_a392762a24f6a062492065960ced65a30_icgraph.svg" width="455" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 10 2018 18:06:27 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 11 2018 06:43:33 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
