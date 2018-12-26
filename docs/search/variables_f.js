@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['p_5futil_5fhexdigit',['p_util_hexdigit',['../utilstrencodings_8cpp.html#a48299e74a5c04c846cbdfc372ee464ec',1,'utilstrencodings.cpp']]],
+  ['p_5futil_5fhexdigit',['p_util_hexdigit',['../strencodings_8cpp.html#a48299e74a5c04c846cbdfc372ee464ec',1,'strencodings.cpp']]],
   ['pad',['pad',['../class_a_e_s256_c_b_c_encrypt.html#a59fec689d5fcc7a916aafd4ac01686dc',1,'AES256CBCEncrypt::pad()'],['../class_a_e_s256_c_b_c_decrypt.html#a0a28a2d130450dc2fc403eb29b9cfa9e',1,'AES256CBCDecrypt::pad()'],['../class_a_e_s128_c_b_c_encrypt.html#afd322dd0eb7554dd52c47c76b2b06828',1,'AES128CBCEncrypt::pad()'],['../class_a_e_s128_c_b_c_decrypt.html#a65805b0adec60d82732d77166b744c82',1,'AES128CBCDecrypt::pad()']]],
   ['page_5fsize',['page_size',['../class_posix_locked_page_allocator.html#a67a7e48e710226b2b1efd7b2d146779c',1,'PosixLockedPageAllocator']]],
   ['paramidx',['paramIdx',['../class_c_r_p_c_convert_param.html#a3bd464f8d5db060616e7be8fbacb58f8',1,'CRPCConvertParam']]],
@@ -17,7 +17,7 @@ var searchData=
   ['pathhandlers',['pathHandlers',['../httpserver_8cpp.html#ae0d357530f123f4ecfc6635abc5de5c8',1,'httpserver.cpp']]],
   ['pathtocheck',['pathToCheck',['../class_intro.html#a49c2f63f50920dd445b029ad8da64f55',1,'Intro']]],
   ['payamounts',['payAmounts',['../class_coin_control_dialog.html#af4dd184087c7b34ac68392bec2968d15',1,'CoinControlDialog']]],
-  ['paymentrequest',['paymentRequest',['../class_payment_request_plus.html#abbe169468be1500c16fb5fe12d0c8b96',1,'PaymentRequestPlus::paymentRequest()'],['../class_send_coins_recipient.html#a2442955006b2c2e42c040028addee9cc',1,'SendCoinsRecipient::paymentRequest()']]],
+  ['paymentrequest',['paymentRequest',['../class_payment_request_plus.html#abbe169468be1500c16fb5fe12d0c8b96',1,'PaymentRequestPlus']]],
   ['pblock',['pblock',['../class_block_assembler.html#ab7307903fa7875ee8153b67370b89b10',1,'BlockAssembler::pblock()'],['../struct_per_block_connect_trace.html#a54a24a237c08bb1e57dbc52a8189cb53',1,'PerBlockConnectTrace::pblock()']]],
   ['pblocktemplate',['pblocktemplate',['../class_block_assembler.html#ac074cbe993c4fc3319adfb19c3459763',1,'BlockAssembler']]],
   ['pblocktree',['pblocktree',['../validation_8cpp.html#a1a5a2a93201a25764e8f16b1385b26b2',1,'pblocktree():&#160;validation.cpp'],['../validation_8h.html#a1a5a2a93201a25764e8f16b1385b26b2',1,'pblocktree():&#160;validation.cpp']]],
@@ -35,7 +35,6 @@ var searchData=
   ['peertablemodel',['peerTableModel',['../class_client_model.html#aeb1c6a931b133c75a8be12f2a35cf5c3',1,'ClientModel']]],
   ['penv',['penv',['../class_c_d_b_wrapper.html#a35d77fd25139ca46b82be7cd9f9f43c6',1,'CDBWrapper']]],
   ['period',['period',['../struct_b_i_p9_stats.html#aec773340b01c7a75a8ba9258da858207',1,'BIP9Stats']]],
-  ['pfilter',['pfilter',['../class_c_node.html#a7c5b4eeac39ec436f8e0280f966e47ec',1,'CNode']]],
   ['phashblock',['phashBlock',['../class_c_block_index.html#afac8099e03ffda463c7153ca82d37b66',1,'CBlockIndex']]],
   ['pindex',['pindex',['../struct_per_block_connect_trace.html#a8fb24a6cd3232d9c81b7ab0fff504787',1,'PerBlockConnectTrace']]],
   ['pindexbestforkbase',['pindexBestForkBase',['../validation_8cpp.html#a99414a45c8f86dae2a456fd5510886bf',1,'validation.cpp']]],
@@ -63,7 +62,7 @@ var searchData=
   ['prec',['prec',['../structsecp256k1__ecmult__gen__context.html#ad1ebc8daeace10a8d646f89bbdf32882',1,'secp256k1_ecmult_gen_context']]],
   ['prefilled_5fcount',['prefilled_count',['../class_partially_downloaded_block.html#a600f5dcfdd0988ce9f6004aa7a681c54',1,'PartiallyDownloadedBlock']]],
   ['prefilledtxn',['prefilledtxn',['../class_c_block_header_and_short_tx_i_ds.html#a7dc39d4865cbe53f9b1785018b54c458',1,'CBlockHeaderAndShortTxIDs']]],
-  ['prefix',['prefix',['../struct_h_t_t_p_path_handler.html#a3653c57a029382a867dc68e102a353cf',1,'HTTPPathHandler::prefix()'],['../rest_8cpp.html#a5b41c5ae4505891e6c53e26df197e02b',1,'prefix():&#160;rest.cpp']]],
+  ['prefix',['prefix',['../struct_h_t_t_p_path_handler.html#a3653c57a029382a867dc68e102a353cf',1,'HTTPPathHandler']]],
   ['prevblocks',['prevBlocks',['../class_bitcoin_g_u_i.html#a24f9c35d00d477c5e73bf9c9adb347d8',1,'BitcoinGUI']]],
   ['prevout',['prevout',['../class_c_tx_in.html#aed9312051a25380cbd7f123408ab7c20',1,'CTxIn']]],
   ['priv',['priv',['../class_address_table_model.html#a1a47a7b8b4e276c0cd468bf29e727b7b',1,'AddressTableModel::priv()'],['../class_ban_table_model.html#a181dfd4e5b8cd96ae176965f46d843a9',1,'BanTableModel::priv()'],['../class_peer_table_model.html#ae06b4392aa8162508fe514d19204ffae',1,'PeerTableModel::priv()'],['../class_transaction_table_model.html#a278ed25f5f79120934ab94ee54611618',1,'TransactionTableModel::priv()']]],
@@ -85,5 +84,5 @@ var searchData=
   ['pubkeys',['pubkeys',['../struct_flat_signing_provider.html#a7a40935ffd498d33557a4963a6d9e4e4',1,'FlatSigningProvider']]],
   ['public_5fkey_5fsize',['PUBLIC_KEY_SIZE',['../class_c_pub_key.html#ab84ce21c19c827eb33e187a5b4704fe3',1,'CPubKey']]],
   ['purpose',['purpose',['../structinterfaces_1_1_wallet_address.html#acbd1531c4c88c370ef5e34e3f2a6e8a2',1,'interfaces::WalletAddress::purpose()'],['../class_c_address_book_data.html#ae5fece7c73830859076950851eba04e8',1,'CAddressBookData::purpose()']]],
-  ['pwallet',['pwallet',['../class_witnessifier.html#a872f9ec975ecc95d720de0e60e99344b',1,'Witnessifier::pwallet()'],['../class_describe_wallet_address_visitor.html#ae202b44e2db01bebdb92dd730c910836',1,'DescribeWalletAddressVisitor::pwallet()'],['../class_c_wallet_tx.html#a1b899e0b16df208207d774190b052a7c',1,'CWalletTx::pwallet()'],['../class_c_reserve_key.html#aab8a4052c0b9a4337248ae53e77c6115',1,'CReserveKey::pwallet()']]]
+  ['pwallet',['pwallet',['../class_describe_wallet_address_visitor.html#ae202b44e2db01bebdb92dd730c910836',1,'DescribeWalletAddressVisitor::pwallet()'],['../class_c_wallet_tx.html#a1b899e0b16df208207d774190b052a7c',1,'CWalletTx::pwallet()'],['../class_c_reserve_key.html#aab8a4052c0b9a4337248ae53e77c6115',1,'CReserveKey::pwallet()']]]
 ];

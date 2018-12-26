@@ -1,11 +1,12 @@
 var searchData=
 [
-  ['callback_2eh',['callback.h',['../callback_8h.html',1,'']]],
   ['ccoins_5fcaching_2ecpp',['ccoins_caching.cpp',['../ccoins__caching_8cpp.html',1,'']]],
   ['chacha20_2ecpp',['chacha20.cpp',['../chacha20_8cpp.html',1,'']]],
   ['chacha20_2eh',['chacha20.h',['../chacha20_8h.html',1,'']]],
   ['chain_2ecpp',['chain.cpp',['../chain_8cpp.html',1,'']]],
+  ['chain_2ecpp',['chain.cpp',['../interfaces_2chain_8cpp.html',1,'']]],
   ['chain_2eh',['chain.h',['../chain_8h.html',1,'']]],
+  ['chain_2eh',['chain.h',['../interfaces_2chain_8h.html',1,'']]],
   ['chainparams_2ecpp',['chainparams.cpp',['../chainparams_8cpp.html',1,'']]],
   ['chainparams_2eh',['chainparams.h',['../chainparams_8h.html',1,'']]],
   ['chainparamsbase_2ecpp',['chainparamsbase.cpp',['../chainparamsbase_8cpp.html',1,'']]],

@@ -99,13 +99,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#include &lt;<a class="el" href="blockchain_8h_source.html">rpc/blockchain.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="amount_8h_source.html">amount.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="base58_8h_source.html">base58.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="chain_8h_source.html">chain.h</a>&gt;</code><br />
+<code>#include &lt;chain.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="chainparams_8h_source.html">chainparams.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="checkpoints_8h_source.html">checkpoints.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="coins_8h_source.html">coins.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="consensus_2validation_8h_source.html">consensus/validation.h</a>&gt;</code><br />
-<code>#include &lt;validation.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="core__io_8h_source.html">core_io.h</a>&gt;</code><br />
+<code>#include &lt;hash.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="txindex_8h_source.html">index/txindex.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="key__io_8h_source.html">key_io.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="feerate_8h_source.html">policy/feerate.h</a>&gt;</code><br />
@@ -113,20 +113,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="rbf_8h_source.html">policy/rbf.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="transaction_8h_source.html">primitives/transaction.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="server_8h_source.html">rpc/server.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="rpc_2util_8h_source.html">rpc/util.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="descriptor_8h_source.html">script/descriptor.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="streams_8h_source.html">streams.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="sync_8h_source.html">sync.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="txdb_8h_source.html">txdb.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="txmempool_8h_source.html">txmempool.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="rpc_2util_8h_source.html">util.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="utilstrencodings_8h_source.html">utilstrencodings.h</a>&gt;</code><br />
-<code>#include &lt;hash.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="strencodings_8h_source.html">util/strencodings.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="system_8h_source.html">util/system.h</a>&gt;</code><br />
+<code>#include &lt;validation.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="validationinterface_8h_source.html">validationinterface.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="versionbitsinfo_8h_source.html">versionbitsinfo.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="warnings_8h_source.html">warnings.h</a>&gt;</code><br />
 <code>#include &lt;assert.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="univalue_8h_source.html">univalue.h</a>&gt;</code><br />
-<code>#include &lt;boost/algorithm/string.hpp&gt;</code><br />
 <code>#include &lt;boost/thread/thread.hpp&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;mutex&gt;</code><br />
@@ -134,7 +135,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for blockchain.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp__incl.svg" width="3935" height="635"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp__incl.svg" width="3731" height="635"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="blockchain_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -163,7 +165,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a5947dc0c8cdb51529b18d60783b5e0a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block description to JSON.  <a href="#a5947dc0c8cdb51529b18d60783b5e0a5">More...</a><br /></td></tr>
 <tr class="separator:a5947dc0c8cdb51529b18d60783b5e0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f3d9c36d5032b8227eb8ec0102405ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blockchain_8cpp.html#a7f3d9c36d5032b8227eb8ec0102405ab">RPCNotifyBlockChange</a> (bool ibd, const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindex)</td></tr>
-<tr class="memdesc:a7f3d9c36d5032b8227eb8ec0102405ab"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_callback.html">Callback</a> for when block tip changed.  <a href="#a7f3d9c36d5032b8227eb8ec0102405ab">More...</a><br /></td></tr>
+<tr class="memdesc:a7f3d9c36d5032b8227eb8ec0102405ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for when block tip changed.  <a href="#a7f3d9c36d5032b8227eb8ec0102405ab">More...</a><br /></td></tr>
 <tr class="separator:a7f3d9c36d5032b8227eb8ec0102405ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed6dc151b5237fee16901e8feb00fa7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_uni_value.html">UniValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blockchain_8cpp.html#aed6dc151b5237fee16901e8feb00fa7f">mempoolToJSON</a> (bool fVerbose)</td></tr>
 <tr class="memdesc:aed6dc151b5237fee16901e8feb00fa7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mempool to JSON.  <a href="#aed6dc151b5237fee16901e8feb00fa7f">More...</a><br /></td></tr>
@@ -204,12 +206,13 @@ Functions</h2></td></tr>
 
 <p>Block header to JSON. </p>
 
-<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l00084">84</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
+<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l00085">85</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp_aa1e97ce578bfdae0125555bda5a2d48d_cgraph.svg" width="860" height="468"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp_aa1e97ce578bfdae0125555bda5a2d48d_cgraph.svg" width="860" height="468"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -254,12 +257,13 @@ Here is the caller graph for this function:</div>
 
 <p>Block description to JSON. </p>
 
-<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l00114">114</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
+<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l00115">115</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp_a5947dc0c8cdb51529b18d60783b5e0a5_cgraph.svg" width="1331" height="1608"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp_a5947dc0c8cdb51529b18d60783b5e0a5_cgraph.svg" width="1283" height="1492"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -304,12 +308,13 @@ Here is the caller graph for this function:</div>
 
 <p>Used by getblockstats to get feerates at different percentiles by weight. </p>
 
-<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l01656">1656</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
+<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l01694">1694</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp_a7916bb05b909d901a0375641330510d1_cgraph.svg" width="956" height="1836"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp_a7916bb05b909d901a0375641330510d1_cgraph.svg" width="956" height="1684"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -372,7 +377,7 @@ Here is the caller graph for this function:</div>
 
 <p>Search for a given set of pubkey scripts. </p>
 
-<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l01985">1985</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
+<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l02025">2025</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -404,12 +409,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l01194">1194</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
+<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l01223">1223</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp_a474625d5c1ef0c47e33c078fb53f6ba4_cgraph.svg" width="883" height="975"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp_a474625d5c1ef0c47e33c078fb53f6ba4_cgraph.svg" width="926" height="1051"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -439,12 +445,13 @@ Here is the caller graph for this function:</div>
 <p>Get the difficulty of the net wrt to the given block index. </p>
 <dl class="section return"><dt>Returns</dt><dd>A floating point number that is a multiple of the main net minimum difficulty (4295032833 hashes). </dd></dl>
 
-<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l00059">59</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
+<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l00060">60</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp_a65a78b16d228932a6142656509a8bce4_icgraph.svg" width="719" height="387"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp_a65a78b16d228932a6142656509a8bce4_icgraph.svg" width="719" height="387"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -464,12 +471,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l01016">1016</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
+<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l01043">1043</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp_a0d3ec9ae23b08828dd7ca646766ca637_cgraph.svg" width="1020" height="1479"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp_a0d3ec9ae23b08828dd7ca646766ca637_cgraph.svg" width="966" height="1600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -497,12 +505,13 @@ Here is the caller graph for this function:</div>
 
 <p>Mempool information to JSON. </p>
 
-<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l01414">1414</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
+<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l01446">1446</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp_a7305038a43cc5f399ca00e00c6f07186_cgraph.svg" width="1194" height="1979"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp_a7305038a43cc5f399ca00e00c6f07186_cgraph.svg" width="1194" height="1903"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -531,12 +540,13 @@ Here is the caller graph for this function:</div>
 
 <p>Mempool to JSON. </p>
 
-<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l00447">447</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
+<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l00458">458</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp_aed6dc151b5237fee16901e8feb00fa7f_cgraph.svg" width="1140" height="1699"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp_aed6dc151b5237fee16901e8feb00fa7f_cgraph.svg" width="1140" height="1719"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -565,7 +575,7 @@ Here is the caller graph for this function:</div>
 
 <p>Register block chain RPC commands. </p>
 
-<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l02233">2233</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
+<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l02285">2285</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -600,21 +610,23 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_callback.html">Callback</a> for when block tip changed. </p>
+<p>Callback for when block tip changed. </p>
 
-<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l00194">194</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
+<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l00197">197</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp_a7f3d9c36d5032b8227eb8ec0102405ab_cgraph.svg" width="1212" height="1816"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp_a7f3d9c36d5032b8227eb8ec0102405ab_cgraph.svg" width="1095" height="1816"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp_a7f3d9c36d5032b8227eb8ec0102405ab_icgraph.svg" width="322" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp_a7f3d9c36d5032b8227eb8ec0102405ab_icgraph.svg" width="322" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -634,12 +646,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l02044">2044</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
+<p>Definition at line <a class="el" href="blockchain_8cpp_source.html#l02084">2084</a> of file <a class="el" href="blockchain_8cpp_source.html">blockchain.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp_af8ae2be64c52204527fac00aefc1151c_cgraph.svg" width="1218" height="1952"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockchain_8cpp_af8ae2be64c52204527fac00aefc1151c_cgraph.svg" width="1186" height="1804"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -648,7 +661,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:21 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:49 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -90,7 +90,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_c_node-members.html">List of all members</a>  </div>
@@ -106,11 +108,44 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="dynheader">
 Collaboration diagram for CNode:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node__coll__graph.svg" width="784" height="455"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node__coll__graph.svg" width="772" height="399"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a7496a3426294d463d650f00882f043b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="compat_8h.html#ab8a4083c1e5d7c4172936f59e67ce798">SOCKET</a> hSocket&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a7496a3426294d463d650f00882f043b0">GUARDED_BY</a> (<a class="el" href="class_c_node.html#a41361639d861e3f8c8e440d7fd9c3378">cs_hSocket</a>)</td></tr>
+<tr class="separator:a7496a3426294d463d650f00882f043b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad47555e6a000a30bf1a3368906e9fb37"><td class="memItemLeft" align="right" valign="top">uint64_t nSendBytes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#ad47555e6a000a30bf1a3368906e9fb37">GUARDED_BY</a> (<a class="el" href="class_c_node.html#a79edcac83fc5067567c7b41c26fcc56f">cs_vSend</a>)</td></tr>
+<tr class="separator:ad47555e6a000a30bf1a3368906e9fb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f365302f086e96f7be4da7b7dfcd77d"><td class="memItemLeft" align="right" valign="top">std::deque&lt; std::vector&lt; unsigned char &gt; &gt; vSendMsg&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a0f365302f086e96f7be4da7b7dfcd77d">GUARDED_BY</a> (<a class="el" href="class_c_node.html#a79edcac83fc5067567c7b41c26fcc56f">cs_vSend</a>)</td></tr>
+<tr class="separator:a0f365302f086e96f7be4da7b7dfcd77d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cd81d496a780ca8c75fefc7939b46c5"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_c_net_message.html">CNetMessage</a> &gt; vProcessMsg&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a7cd81d496a780ca8c75fefc7939b46c5">GUARDED_BY</a> (<a class="el" href="class_c_node.html#a81d6deb661c7386a453e0966d2dbc36f">cs_vProcessMsg</a>)</td></tr>
+<tr class="separator:a7cd81d496a780ca8c75fefc7939b46c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e4d9bcaa9443eabfb19cc94c0eb13f1"><td class="memItemLeft" align="right" valign="top">uint64_t nRecvBytes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a0e4d9bcaa9443eabfb19cc94c0eb13f1">GUARDED_BY</a> (<a class="el" href="class_c_node.html#a0fd361cd13fd9815c5eae1ae38333e53">cs_vRecv</a>)</td></tr>
+<tr class="separator:a0e4d9bcaa9443eabfb19cc94c0eb13f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee4cb324e3b681020d61675cef385a4d"><td class="memItemLeft" align="right" valign="top">std::string strSubVer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#aee4cb324e3b681020d61675cef385a4d">GUARDED_BY</a> (<a class="el" href="class_c_node.html#acf48a43182292a6636c9de3ea7453d72">cs_SubVer</a>)</td></tr>
+<tr class="separator:aee4cb324e3b681020d61675cef385a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7c4364e67e51c7a5d6a5f2c998c2bb2"><td class="memItemLeft" align="right" valign="top">std::string strSubVer cleanSubVer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#ac7c4364e67e51c7a5d6a5f2c998c2bb2">GUARDED_BY</a> (<a class="el" href="class_c_node.html#acf48a43182292a6636c9de3ea7453d72">cs_SubVer</a>)</td></tr>
+<tr class="separator:ac7c4364e67e51c7a5d6a5f2c998c2bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa6be0807567a0584a07474f886c895e"><td class="memItemLeft" align="right" valign="top">bool <a class="el" href="net_8h.html#a7935254c613d6f3cdadd3ce45f7efbff">fRelayTxes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#aaa6be0807567a0584a07474f886c895e">GUARDED_BY</a> (<a class="el" href="class_c_node.html#a66aeed3b6534635d031dff3eee9538de">cs_filter</a>)</td></tr>
+<tr class="separator:aaa6be0807567a0584a07474f886c895e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac66e33bdda237bb7bd8b652e4ea0da67"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_c_bloom_filter.html">CBloomFilter</a> &gt; pfilter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#ac66e33bdda237bb7bd8b652e4ea0da67">PT_GUARDED_BY</a> (<a class="el" href="class_c_node.html#a66aeed3b6534635d031dff3eee9538de">cs_filter</a>)</td></tr>
+<tr class="separator:ac66e33bdda237bb7bd8b652e4ea0da67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d1473ccf70a32dc8c86cd0877b54cf3"><td class="memItemLeft" align="right" valign="top">int64_t nNextAddrSend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a5d1473ccf70a32dc8c86cd0877b54cf3">GUARDED_BY</a> (<a class="el" href="class_c_node.html#a02ff160a77ce5439ab4869c08f305190">cs_sendProcessing</a>)</td></tr>
+<tr class="separator:a5d1473ccf70a32dc8c86cd0877b54cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd660c9610e9db5a68b9b5f4bc3cfc65"><td class="memItemLeft" align="right" valign="top">int64_t nNextLocalAddrSend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#acd660c9610e9db5a68b9b5f4bc3cfc65">GUARDED_BY</a> (<a class="el" href="class_c_node.html#a02ff160a77ce5439ab4869c08f305190">cs_sendProcessing</a>)</td></tr>
+<tr class="separator:acd660c9610e9db5a68b9b5f4bc3cfc65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f585cdc2fdc66587b6099b86172918d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_rolling_bloom_filter.html">CRollingBloomFilter</a> filterInventoryKnown&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a9f585cdc2fdc66587b6099b86172918d">GUARDED_BY</a> (<a class="el" href="class_c_node.html#a1e8b0784cc82f33edc2dc4e2834d1ff0">cs_inventory</a>)</td></tr>
+<tr class="separator:a9f585cdc2fdc66587b6099b86172918d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3940a07e066b734855f8d2fe682fb724"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classuint256.html">uint256</a> &gt; vInventoryBlockToSend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a3940a07e066b734855f8d2fe682fb724">GUARDED_BY</a> (<a class="el" href="class_c_node.html#a1e8b0784cc82f33edc2dc4e2834d1ff0">cs_inventory</a>)</td></tr>
+<tr class="separator:a3940a07e066b734855f8d2fe682fb724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5740b14b3f84cabd8eb6767e0ebaf04"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classuint256.html">uint256</a> &gt; vBlockHashesToAnnounce&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#ae5740b14b3f84cabd8eb6767e0ebaf04">GUARDED_BY</a> (<a class="el" href="class_c_node.html#a1e8b0784cc82f33edc2dc4e2834d1ff0">cs_inventory</a>)</td></tr>
+<tr class="separator:ae5740b14b3f84cabd8eb6767e0ebaf04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab44ad491197c5ddd66db535c38969368"><td class="memItemLeft" align="right" valign="top">bool fSendMempool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#ab44ad491197c5ddd66db535c38969368">GUARDED_BY</a> (<a class="el" href="class_c_node.html#a1e8b0784cc82f33edc2dc4e2834d1ff0">cs_inventory</a>)</td></tr>
+<tr class="separator:ab44ad491197c5ddd66db535c38969368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87dad5f1ef7bd7c4f64941f8beb91801"><td class="memItemLeft" align="right" valign="top"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> minFeeFilter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a87dad5f1ef7bd7c4f64941f8beb91801">GUARDED_BY</a> (<a class="el" href="class_c_node.html#a2e56f8ad16f21af3797b2c88c0aaccd8">cs_feeFilter</a>)</td></tr>
+<tr class="separator:a87dad5f1ef7bd7c4f64941f8beb91801"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af07af443423c30483ab064f00ad6ecba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#af07af443423c30483ab064f00ad6ecba">CNode</a> (<a class="el" href="net_8h.html#aa637b11e18b77724b35db2229cd12788">NodeId</a> <a class="el" href="class_c_node.html#abbaade0659a56ac50a68ba947eff40bc">id</a>, <a class="el" href="protocol_8h.html#ad131f3177584caea787cdbf6f85a9537">ServiceFlags</a> nLocalServicesIn, int nMyStartingHeightIn, <a class="el" href="compat_8h.html#ab8a4083c1e5d7c4172936f59e67ce798">SOCKET</a> hSocketIn, const <a class="el" href="class_c_address.html">CAddress</a> &amp;addrIn, uint64_t nKeyedNetGroupIn, uint64_t nLocalHostNonceIn, const <a class="el" href="class_c_address.html">CAddress</a> &amp;addrBindIn, const std::string &amp;addrNameIn=&quot;&quot;, bool fInboundIn=false)</td></tr>
 <tr class="separator:af07af443423c30483ab064f00ad6ecba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9b30cb93e91a48dacc58821abfc44f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#ac9b30cb93e91a48dacc58821abfc44f0">~CNode</a> ()</td></tr>
@@ -174,16 +209,10 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a3d311ea99f2524e5c2cdb9a311725b9f"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; <a class="el" href="protocol_8h.html#ad131f3177584caea787cdbf6f85a9537">ServiceFlags</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a3d311ea99f2524e5c2cdb9a311725b9f">nServices</a></td></tr>
 <tr class="separator:a3d311ea99f2524e5c2cdb9a311725b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cda6efa6a9ef9db3eebe70fc3bdd45a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="compat_8h.html#ab8a4083c1e5d7c4172936f59e67ce798">SOCKET</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a7cda6efa6a9ef9db3eebe70fc3bdd45a">hSocket</a></td></tr>
-<tr class="separator:a7cda6efa6a9ef9db3eebe70fc3bdd45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c99b7e2b0e53feb58f6859453456f74"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a3c99b7e2b0e53feb58f6859453456f74">nSendSize</a></td></tr>
 <tr class="separator:a3c99b7e2b0e53feb58f6859453456f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a090bda86de6b84c3db83e1f029d4f453"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a090bda86de6b84c3db83e1f029d4f453">nSendOffset</a></td></tr>
 <tr class="separator:a090bda86de6b84c3db83e1f029d4f453"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33e24a9544df3c60f9e1ec05b5e91051"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a33e24a9544df3c60f9e1ec05b5e91051">nSendBytes</a></td></tr>
-<tr class="separator:a33e24a9544df3c60f9e1ec05b5e91051"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d08ae01e8f730a5566751393407e0d2"><td class="memItemLeft" align="right" valign="top">std::deque&lt; std::vector&lt; unsigned char &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a0d08ae01e8f730a5566751393407e0d2">vSendMsg</a></td></tr>
-<tr class="separator:a0d08ae01e8f730a5566751393407e0d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79edcac83fc5067567c7b41c26fcc56f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a79edcac83fc5067567c7b41c26fcc56f">cs_vSend</a></td></tr>
 <tr class="separator:a79edcac83fc5067567c7b41c26fcc56f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41361639d861e3f8c8e440d7fd9c3378"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a41361639d861e3f8c8e440d7fd9c3378">cs_hSocket</a></td></tr>
@@ -192,16 +221,12 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a0fd361cd13fd9815c5eae1ae38333e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81d6deb661c7386a453e0966d2dbc36f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a81d6deb661c7386a453e0966d2dbc36f">cs_vProcessMsg</a></td></tr>
 <tr class="separator:a81d6deb661c7386a453e0966d2dbc36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca90abe62ee91e752d59981dd7c4f9ed"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_c_net_message.html">CNetMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#aca90abe62ee91e752d59981dd7c4f9ed">vProcessMsg</a></td></tr>
-<tr class="separator:aca90abe62ee91e752d59981dd7c4f9ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30f76a69e956d342bdbb400541c98ccb"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a30f76a69e956d342bdbb400541c98ccb">nProcessQueueSize</a></td></tr>
 <tr class="separator:a30f76a69e956d342bdbb400541c98ccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02ff160a77ce5439ab4869c08f305190"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a02ff160a77ce5439ab4869c08f305190">cs_sendProcessing</a></td></tr>
 <tr class="separator:a02ff160a77ce5439ab4869c08f305190"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9649c1f27ff0d8f0ba89eb1ea5bee139"><td class="memItemLeft" align="right" valign="top">std::deque&lt; <a class="el" href="class_c_inv.html">CInv</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a9649c1f27ff0d8f0ba89eb1ea5bee139">vRecvGetData</a></td></tr>
 <tr class="separator:a9649c1f27ff0d8f0ba89eb1ea5bee139"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bbe2a7052476d62acf7f0a5a9c5981b"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a8bbe2a7052476d62acf7f0a5a9c5981b">nRecvBytes</a></td></tr>
-<tr class="separator:a8bbe2a7052476d62acf7f0a5a9c5981b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4629eba953ff1d5a3c05437c1b6630a"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#af4629eba953ff1d5a3c05437c1b6630a">nRecvVersion</a></td></tr>
 <tr class="separator:af4629eba953ff1d5a3c05437c1b6630a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02e3cdb54d9dbcb33385422d0779c528"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a02e3cdb54d9dbcb33385422d0779c528">nLastSend</a></td></tr>
@@ -218,10 +243,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a03b99f0d8bf0f44cdfd2cc6e639fb979"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a2cdd01cb730536adf1780c3df66430"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a0a2cdd01cb730536adf1780c3df66430">nVersion</a></td></tr>
 <tr class="separator:a0a2cdd01cb730536adf1780c3df66430"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb24fb33019af5c4085412fe3898cf01"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#afb24fb33019af5c4085412fe3898cf01">strSubVer</a></td></tr>
-<tr class="separator:afb24fb33019af5c4085412fe3898cf01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05f0401427c5ffebd1ca404848e83ff7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a05f0401427c5ffebd1ca404848e83ff7">cleanSubVer</a></td></tr>
-<tr class="separator:a05f0401427c5ffebd1ca404848e83ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf48a43182292a6636c9de3ea7453d72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#acf48a43182292a6636c9de3ea7453d72">cs_SubVer</a></td></tr>
 <tr class="separator:acf48a43182292a6636c9de3ea7453d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3096c14b54aa39a02edb63a4a734c3e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#ad3096c14b54aa39a02edb63a4a734c3e">fWhitelisted</a></td></tr>
@@ -242,16 +263,12 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a359647a8e7ad1fc72243b126b35729b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adebd9bb3224ed2c5ab63fdfd9c6e9074"><td class="memItemLeft" align="right" valign="top">std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#adebd9bb3224ed2c5ab63fdfd9c6e9074">fDisconnect</a></td></tr>
 <tr class="separator:adebd9bb3224ed2c5ab63fdfd9c6e9074"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab387bb0c4ffd42e3f0aea233dca0e301"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#ab387bb0c4ffd42e3f0aea233dca0e301">fRelayTxes</a></td></tr>
-<tr class="separator:ab387bb0c4ffd42e3f0aea233dca0e301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8d520199b103410958ba9ce4412cf61"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#aa8d520199b103410958ba9ce4412cf61">fSentAddr</a></td></tr>
 <tr class="separator:aa8d520199b103410958ba9ce4412cf61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bb25f8bdeeaff5e8cb08abc97bbc44d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_semaphore_grant.html">CSemaphoreGrant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a4bb25f8bdeeaff5e8cb08abc97bbc44d">grantOutbound</a></td></tr>
 <tr class="separator:a4bb25f8bdeeaff5e8cb08abc97bbc44d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66aeed3b6534635d031dff3eee9538de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a66aeed3b6534635d031dff3eee9538de">cs_filter</a></td></tr>
 <tr class="separator:a66aeed3b6534635d031dff3eee9538de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c5b4eeac39ec436f8e0280f966e47ec"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_c_bloom_filter.html">CBloomFilter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a7c5b4eeac39ec436f8e0280f966e47ec">pfilter</a></td></tr>
-<tr class="separator:a7c5b4eeac39ec436f8e0280f966e47ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a607eebc74c4c0e1a30d1086bc24384a7"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a607eebc74c4c0e1a30d1086bc24384a7">nRefCount</a></td></tr>
 <tr class="separator:a607eebc74c4c0e1a30d1086bc24384a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f553fc13c61ce0d366e2d03eb0c008a"><td class="memItemLeft" align="right" valign="top">const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a5f553fc13c61ce0d366e2d03eb0c008a">nKeyedNetGroup</a></td></tr>
@@ -272,16 +289,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a3da9c559959e182aff8439cd004ff624"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1b30fa8e48005752f6b0bcf43eca478"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="classuint256.html">uint256</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#ab1b30fa8e48005752f6b0bcf43eca478">setKnown</a></td></tr>
 <tr class="separator:ab1b30fa8e48005752f6b0bcf43eca478"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff4b68eeeee9bf1e27e14f2436a07556"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#aff4b68eeeee9bf1e27e14f2436a07556">nNextAddrSend</a></td></tr>
-<tr class="separator:aff4b68eeeee9bf1e27e14f2436a07556"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af627cc9fe0654487aed7b4224d78ad24"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#af627cc9fe0654487aed7b4224d78ad24">nNextLocalAddrSend</a></td></tr>
-<tr class="separator:af627cc9fe0654487aed7b4224d78ad24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09fbd8c77f6be2b8d4b309c703ce2e13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_rolling_bloom_filter.html">CRollingBloomFilter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a09fbd8c77f6be2b8d4b309c703ce2e13">filterInventoryKnown</a></td></tr>
-<tr class="separator:a09fbd8c77f6be2b8d4b309c703ce2e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af17190ecdeab1d68c55090ef17dcd65c"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="classuint256.html">uint256</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#af17190ecdeab1d68c55090ef17dcd65c">setInventoryTxToSend</a></td></tr>
 <tr class="separator:af17190ecdeab1d68c55090ef17dcd65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c940addacc47f19170b460b03068fac"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classuint256.html">uint256</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a0c940addacc47f19170b460b03068fac">vInventoryBlockToSend</a></td></tr>
-<tr class="separator:a0c940addacc47f19170b460b03068fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e8b0784cc82f33edc2dc4e2834d1ff0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a1e8b0784cc82f33edc2dc4e2834d1ff0">cs_inventory</a></td></tr>
 <tr class="separator:a1e8b0784cc82f33edc2dc4e2834d1ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c8fd0d0ef6e26896c53380e6d6bf331"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="classuint256.html">uint256</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a9c8fd0d0ef6e26896c53380e6d6bf331">setAskFor</a></td></tr>
@@ -290,10 +299,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a7593dfbd76c34a81169e3fb2aa0e0cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89226be680d821f4eef8fa391f4b4b6a"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a89226be680d821f4eef8fa391f4b4b6a">nNextInvSend</a></td></tr>
 <tr class="separator:a89226be680d821f4eef8fa391f4b4b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad47e8171d8a114592e90d7d83ee62875"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classuint256.html">uint256</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#ad47e8171d8a114592e90d7d83ee62875">vBlockHashesToAnnounce</a></td></tr>
-<tr class="separator:ad47e8171d8a114592e90d7d83ee62875"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6dfcb66887b3d26d58e25e7d3397016"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#ac6dfcb66887b3d26d58e25e7d3397016">fSendMempool</a></td></tr>
-<tr class="separator:ac6dfcb66887b3d26d58e25e7d3397016"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91ddde2164145c8d4ab033e7b75bbc40"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a91ddde2164145c8d4ab033e7b75bbc40">timeLastMempoolReq</a></td></tr>
 <tr class="separator:a91ddde2164145c8d4ab033e7b75bbc40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad253434141efcbca34150864069aee7e"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#ad253434141efcbca34150864069aee7e">nLastBlockTime</a></td></tr>
@@ -310,8 +315,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a99add23b72cd7eae9ea5c7d16b0fe259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2349010606131fe65879e5a44d9ab37e"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a2349010606131fe65879e5a44d9ab37e">fPingQueued</a></td></tr>
 <tr class="separator:a2349010606131fe65879e5a44d9ab37e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78cb326e261b809abb09ca25a02496ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a78cb326e261b809abb09ca25a02496ab">minFeeFilter</a></td></tr>
-<tr class="separator:a78cb326e261b809abb09ca25a02496ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e56f8ad16f21af3797b2c88c0aaccd8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a2e56f8ad16f21af3797b2c88c0aaccd8">cs_feeFilter</a></td></tr>
 <tr class="separator:a2e56f8ad16f21af3797b2c88c0aaccd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cc211f7e1830a19c4b89641ac706894"><td class="memItemLeft" align="right" valign="top"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a9cc211f7e1830a19c4b89641ac706894">lastSentFeeFilter</a></td></tr>
@@ -319,12 +322,22 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a860fddcda79b956e395274c7fda050bb"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a860fddcda79b956e395274c7fda050bb">nextSendTimeFeeFilter</a></td></tr>
 <tr class="separator:a860fddcda79b956e395274c7fda050bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a22767873c2ad9f56bac7fa13a6921419"><td class="memItemLeft" align="right" valign="top"><a class="el" href="net_8h.html#ab02ff63dba2c3ee45ab07e28575d06c9">mapMsgCmdSize</a> mapRecvBytesPerMsgCmd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a22767873c2ad9f56bac7fa13a6921419">GUARDED_BY</a> (<a class="el" href="class_c_node.html#a0fd361cd13fd9815c5eae1ae38333e53">cs_vRecv</a>)</td></tr>
+<tr class="separator:a22767873c2ad9f56bac7fa13a6921419"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a51e1156224dc77de9c0812f599f1bff4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="net_8h.html#ab02ff63dba2c3ee45ab07e28575d06c9">mapMsgCmdSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a51e1156224dc77de9c0812f599f1bff4">mapSendBytesPerMsgCmd</a></td></tr>
 <tr class="separator:a51e1156224dc77de9c0812f599f1bff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fb06d8be1f078b8796dc5098f114d38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="net_8h.html#ab02ff63dba2c3ee45ab07e28575d06c9">mapMsgCmdSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a2fb06d8be1f078b8796dc5098f114d38">mapRecvBytesPerMsgCmd</a></td></tr>
-<tr class="separator:a2fb06d8be1f078b8796dc5098f114d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:affd063cddc599619a2cea20856bb0a92"><td class="memItemLeft" align="right" valign="top">std::string addrName&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#affd063cddc599619a2cea20856bb0a92">GUARDED_BY</a> (<a class="el" href="class_c_node.html#a6aebc332869f7532f565b82fd7faeea5">cs_addrName</a>)</td></tr>
+<tr class="separator:affd063cddc599619a2cea20856bb0a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d4b4de11cfff7316e2c0caf931dc321"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_service.html">CService</a> addrLocal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a9d4b4de11cfff7316e2c0caf931dc321">GUARDED_BY</a> (<a class="el" href="class_c_node.html#a82504189bc192966ca828907326e676f">cs_addrLocal</a>)</td></tr>
+<tr class="separator:a9d4b4de11cfff7316e2c0caf931dc321"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -342,10 +355,6 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a2f7a99d038591b007d709a17cbdae3dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aebc332869f7532f565b82fd7faeea5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a6aebc332869f7532f565b82fd7faeea5">cs_addrName</a></td></tr>
 <tr class="separator:a6aebc332869f7532f565b82fd7faeea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3155cd313d85ec3ff691f8259a5f5345"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a3155cd313d85ec3ff691f8259a5f5345">addrName</a></td></tr>
-<tr class="separator:a3155cd313d85ec3ff691f8259a5f5345"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b6517682efa0709f44780a95384c4ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_service.html">CService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a1b6517682efa0709f44780a95384c4ec">addrLocal</a></td></tr>
-<tr class="separator:a1b6517682efa0709f44780a95384c4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82504189bc192966ca828907326e676f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a82504189bc192966ca828907326e676f">cs_addrLocal</a></td></tr>
 <tr class="separator:a82504189bc192966ca828907326e676f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -357,7 +366,7 @@ Friends</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Information about a peer. </p>
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00618">618</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00634">634</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="af07af443423c30483ab064f00ad6ecba"></a>
 <div class="memitem">
@@ -431,12 +440,13 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02703">2703</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02712">2712</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_af07af443423c30483ab064f00ad6ecba_cgraph.svg" width="1366" height="531"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_af07af443423c30483ab064f00ad6ecba_cgraph.svg" width="1366" height="531"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -455,7 +465,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02776">2776</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02785">2785</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -513,7 +523,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00811">811</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00826">826</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -553,14 +563,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00831">831</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_ac3054eb6ade84e8968f032ce3e700f6a_cgraph.svg" width="400" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00846">846</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -592,12 +595,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00798">798</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00813">813</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_afb65ed679f7bda59aab89e0f5afae292_icgraph.svg" width="1446" height="194"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_afb65ed679f7bda59aab89e0f5afae292_icgraph.svg" width="1475" height="194"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -617,12 +621,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02781">2781</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02790">2790</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_ae0def1498409407d1612833a7d38c875_cgraph.svg" width="855" height="164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_ae0def1498409407d1612833a7d38c875_cgraph.svg" width="1006" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -648,19 +653,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l00486">486</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l00487">487</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a63a6091a0b0fc0987d9436e1ec708423_cgraph.svg" width="574" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a63a6091a0b0fc0987d9436e1ec708423_icgraph.svg" width="959" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -680,12 +678,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l00684">684</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l00685">685</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_aaa77188d9df85b80e3f8a30292acf6a9_cgraph.svg" width="1572" height="571"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_aaa77188d9df85b80e3f8a30292acf6a9_cgraph.svg" width="1572" height="571"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -704,7 +703,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l00668">668</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l00669">669</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -728,7 +727,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l00656">656</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l00657">657</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -760,12 +759,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00763">763</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00778">778</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_ac0f1a22fa938e84138536308e2001340_icgraph.svg" width="1087" height="618"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_ac0f1a22fa938e84138536308e2001340_icgraph.svg" width="1112" height="632"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -792,7 +792,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00767">767</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00782">782</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -817,7 +817,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00863">863</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00878">878</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -856,7 +856,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00771">771</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00786">786</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -881,7 +881,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00787">787</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00802">802</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -913,7 +913,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00775">775</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00790">790</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -930,12 +930,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l00808">808</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l00812">812</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a1845fe236cb4bd5f024cd70c2fe14690_cgraph.svg" width="1644" height="1048"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a1845fe236cb4bd5f024cd70c2fe14690_cgraph.svg" width="1644" height="1048"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -945,6 +946,318 @@ Here is the caller graph for this function:</div>
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a1845fe236cb4bd5f024cd70c2fe14690_icgraph.svg" width="576" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7496a3426294d463d650f00882f043b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="compat_8h.html#ab8a4083c1e5d7c4172936f59e67ce798">SOCKET</a> hSocket CNode::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_node.html#a41361639d861e3f8c8e440d7fd9c3378">cs_hSocket</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad47555e6a000a30bf1a3368906e9fb37"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t nSendBytes CNode::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_node.html#a79edcac83fc5067567c7b41c26fcc56f">cs_vSend</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0f365302f086e96f7be4da7b7dfcd77d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::deque&lt;std::vector&lt;unsigned char&gt; &gt; vSendMsg CNode::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_node.html#a79edcac83fc5067567c7b41c26fcc56f">cs_vSend</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7cd81d496a780ca8c75fefc7939b46c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt;<a class="el" href="class_c_net_message.html">CNetMessage</a>&gt; vProcessMsg CNode::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_node.html#a81d6deb661c7386a453e0966d2dbc36f">cs_vProcessMsg</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0e4d9bcaa9443eabfb19cc94c0eb13f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t nRecvBytes CNode::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_node.html#a0fd361cd13fd9815c5eae1ae38333e53">cs_vRecv</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aee4cb324e3b681020d61675cef385a4d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string strSubVer CNode::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_node.html#acf48a43182292a6636c9de3ea7453d72">cs_SubVer</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac7c4364e67e51c7a5d6a5f2c998c2bb2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string strSubVer cleanSubVer CNode::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_node.html#acf48a43182292a6636c9de3ea7453d72">cs_SubVer</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaa6be0807567a0584a07474f886c895e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="net_8h.html#a7935254c613d6f3cdadd3ce45f7efbff">fRelayTxes</a> CNode::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_node.html#a66aeed3b6534635d031dff3eee9538de">cs_filter</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a22767873c2ad9f56bac7fa13a6921419"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="net_8h.html#ab02ff63dba2c3ee45ab07e28575d06c9">mapMsgCmdSize</a> mapRecvBytesPerMsgCmd CNode::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_node.html#a0fd361cd13fd9815c5eae1ae38333e53">cs_vRecv</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5d1473ccf70a32dc8c86cd0877b54cf3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t nNextAddrSend CNode::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_node.html#a02ff160a77ce5439ab4869c08f305190">cs_sendProcessing</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acd660c9610e9db5a68b9b5f4bc3cfc65"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t nNextLocalAddrSend CNode::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_node.html#a02ff160a77ce5439ab4869c08f305190">cs_sendProcessing</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9f585cdc2fdc66587b6099b86172918d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_rolling_bloom_filter.html">CRollingBloomFilter</a> filterInventoryKnown CNode::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_node.html#a1e8b0784cc82f33edc2dc4e2834d1ff0">cs_inventory</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3940a07e066b734855f8d2fe682fb724"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classuint256.html">uint256</a>&gt; vInventoryBlockToSend CNode::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_node.html#a1e8b0784cc82f33edc2dc4e2834d1ff0">cs_inventory</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae5740b14b3f84cabd8eb6767e0ebaf04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classuint256.html">uint256</a>&gt; vBlockHashesToAnnounce CNode::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_node.html#a1e8b0784cc82f33edc2dc4e2834d1ff0">cs_inventory</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab44ad491197c5ddd66db535c38969368"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool fSendMempool CNode::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_node.html#a1e8b0784cc82f33edc2dc4e2834d1ff0">cs_inventory</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a87dad5f1ef7bd7c4f64941f8beb91801"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> minFeeFilter CNode::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_node.html#a2e56f8ad16f21af3797b2c88c0aaccd8">cs_feeFilter</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="affd063cddc599619a2cea20856bb0a92"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string addrName CNode::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_node.html#a6aebc332869f7532f565b82fd7faeea5">cs_addrName</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9d4b4de11cfff7316e2c0caf931dc321"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_service.html">CService</a> addrLocal CNode::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_node.html#a82504189bc192966ca828907326e676f">cs_addrLocal</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -964,7 +1277,7 @@ Here is the caller graph for this function:</div>
 
 <p>Sets the addrName only if it was not previously set. </p>
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l00661">661</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l00662">662</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -995,6 +1308,22 @@ Here is the caller graph for this function:</div>
 <span class="mlabels"><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac66e33bdda237bb7bd8b652e4ea0da67"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="class_c_bloom_filter.html">CBloomFilter</a>&gt; pfilter CNode::PT_GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_node.html#a66aeed3b6534635d031dff3eee9538de">cs_filter</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -1031,12 +1360,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00816">816</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00831">831</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a1f39037c55bed93b832bcbef00597ca5_cgraph.svg" width="1756" height="384"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a1f39037c55bed93b832bcbef00597ca5_cgraph.svg" width="1756" height="415"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1071,7 +1401,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00851">851</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00866">866</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1097,19 +1427,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00839">839</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a7cef2333aa8776127a7e7fcab659eb6a_cgraph.svg" width="364" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00854">854</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a7cef2333aa8776127a7e7fcab659eb6a_icgraph.svg" width="1126" height="228"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a7cef2333aa8776127a7e7fcab659eb6a_icgraph.svg" width="1126" height="228"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1145,12 +1469,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l00742">742</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l00746">746</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a7f39c9fe6b7975531cb9963846aed3e7_cgraph.svg" width="703" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a7f39c9fe6b7975531cb9963846aed3e7_cgraph.svg" width="703" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1177,7 +1502,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00804">804</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00819">819</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1197,12 +1522,13 @@ Here is the call graph for this function:</div>
 
 <p>May not be called more than once. </p>
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l00673">673</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l00674">674</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a331888bc15bb49775451d951735e4b6a_cgraph.svg" width="1752" height="1368"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a331888bc15bb49775451d951735e4b6a_cgraph.svg" width="1752" height="1368"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1237,7 +1563,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00783">783</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00798">798</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1262,12 +1588,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l00794">794</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l00798">798</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a0a55cea2748b1837610b2caed8069a90_cgraph.svg" width="1643" height="1048"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a0a55cea2748b1837610b2caed8069a90_cgraph.svg" width="1643" height="1048"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1299,7 +1626,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00620">620</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00636">636</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1314,7 +1641,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00648">648</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00664">664</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1328,7 +1655,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00650">650</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00666">666</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1342,65 +1669,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00692">692</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1b6517682efa0709f44780a95384c4ec"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_c_service.html">CService</a> CNode::addrLocal</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="net_8h_source.html#l00759">759</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3155cd313d85ec3ff691f8259a5f5345"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string CNode::addrName</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="net_8h_source.html#l00756">756</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a05f0401427c5ffebd1ca404848e83ff7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string CNode::cleanSubVer</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="net_8h_source.html#l00656">656</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00708">708</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1422,7 +1691,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00760">760</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00775">775</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1444,7 +1713,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00755">755</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00770">770</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1458,21 +1727,29 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00737">737</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00752">752</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="a66aeed3b6534635d031dff3eee9538de"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a> CNode::cs_filter</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00674">674</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00690">690</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1486,7 +1763,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00630">630</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00646">646</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1500,7 +1777,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00707">707</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00723">723</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1514,7 +1791,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00637">637</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00653">653</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1528,7 +1805,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00657">657</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00673">673</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1542,7 +1819,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00633">633</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00649">649</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1556,7 +1833,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00631">631</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00647">647</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1570,7 +1847,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00629">629</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00645">645</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1584,7 +1861,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00662">662</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00678">678</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1598,7 +1875,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00666">666</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00682">682</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1612,7 +1889,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00659">659</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00675">675</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1626,21 +1903,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00693">693</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a09fbd8c77f6be2b8d4b309c703ce2e13"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_c_rolling_bloom_filter.html">CRollingBloomFilter</a> CNode::filterInventoryKnown</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="net_8h_source.html#l00699">699</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00709">709</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1654,7 +1917,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00664">664</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00680">680</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1668,7 +1931,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00660">660</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00676">676</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1682,7 +1945,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00679">679</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00695">695</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1696,7 +1959,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00680">680</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00696">696</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1710,35 +1973,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00734">734</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab387bb0c4ffd42e3f0aea233dca0e301"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CNode::fRelayTxes</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="net_8h_source.html#l00671">671</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac6dfcb66887b3d26d58e25e7d3397016"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CNode::fSendMempool</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="net_8h_source.html#l00715">715</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00749">749</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1752,7 +1987,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00672">672</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00688">688</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1766,7 +2001,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00665">665</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00681">681</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1780,7 +2015,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00658">658</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00674">674</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1794,7 +2029,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00673">673</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00689">689</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1808,21 +2043,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00687">687</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7cda6efa6a9ef9db3eebe70fc3bdd45a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="compat_8h.html#ab8a4083c1e5d7c4172936f59e67ce798">SOCKET</a> CNode::hSocket</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="net_8h_source.html#l00624">624</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00703">703</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1844,7 +2065,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00747">747</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00762">762</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1858,7 +2079,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00738">738</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00753">753</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1872,7 +2093,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00663">663</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00679">679</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1886,7 +2107,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00661">661</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00677">677</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1900,29 +2121,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00709">709</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2fb06d8be1f078b8796dc5098f114d38"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="net_8h.html#ab02ff63dba2c3ee45ab07e28575d06c9">mapMsgCmdSize</a> CNode::mapRecvBytesPerMsgCmd</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="net_8h_source.html#l00684">684</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00725">725</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1944,21 +2143,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00683">683</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a78cb326e261b809abb09ca25a02496ab"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> CNode::minFeeFilter</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="net_8h_source.html#l00736">736</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00699">699</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1972,7 +2157,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00739">739</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00754">754</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1986,7 +2171,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00678">678</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00694">694</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2000,7 +2185,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00721">721</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00736">736</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2014,7 +2199,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00644">644</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00660">660</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2028,7 +2213,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00643">643</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00659">659</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2042,7 +2227,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00722">722</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00737">737</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2064,7 +2249,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00748">748</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00763">763</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2086,7 +2271,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00750">750</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00765">765</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2100,7 +2285,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00732">732</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00747">747</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2122,21 +2307,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00751">751</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aff4b68eeeee9bf1e27e14f2436a07556"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int64_t CNode::nNextAddrSend</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="net_8h_source.html#l00695">695</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00766">766</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2150,21 +2321,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00710">710</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af627cc9fe0654487aed7b4224d78ad24"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int64_t CNode::nNextLocalAddrSend</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="net_8h_source.html#l00696">696</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00726">726</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2178,7 +2335,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00726">726</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00741">741</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2192,7 +2349,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00728">728</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00743">743</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2206,7 +2363,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00730">730</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00745">745</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2220,21 +2377,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00635">635</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8bbe2a7052476d62acf7f0a5a9c5981b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t CNode::nRecvBytes</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="net_8h_source.html#l00640">640</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00651">651</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2248,7 +2391,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00641">641</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00657">657</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2262,21 +2405,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00676">676</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a33e24a9544df3c60f9e1ec05b5e91051"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t CNode::nSendBytes</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="net_8h_source.html#l00627">627</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00692">692</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2290,7 +2419,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00626">626</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00642">642</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2304,7 +2433,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00625">625</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00641">641</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2326,7 +2455,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00752">752</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00767">767</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2340,7 +2469,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00623">623</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00639">639</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2354,7 +2483,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00688">688</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00704">704</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2368,7 +2497,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00645">645</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00661">661</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2382,7 +2511,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00646">646</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00662">662</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2396,21 +2525,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00651">651</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7c5b4eeac39ec436f8e0280f966e47ec"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="class_c_bloom_filter.html">CBloomFilter</a>&gt; CNode::pfilter</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="net_8h_source.html#l00675">675</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00667">667</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2424,7 +2539,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00708">708</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00724">724</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2438,7 +2553,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00702">702</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00718">718</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2452,21 +2567,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00694">694</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="afb24fb33019af5c4085412fe3898cf01"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string CNode::strSubVer</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="net_8h_source.html#l00656">656</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00710">710</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2480,7 +2581,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00718">718</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00733">733</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2494,49 +2595,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00691">691</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad47e8171d8a114592e90d7d83ee62875"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="classuint256.html">uint256</a>&gt; CNode::vBlockHashesToAnnounce</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="net_8h_source.html#l00713">713</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0c940addacc47f19170b460b03068fac"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="classuint256.html">uint256</a>&gt; CNode::vInventoryBlockToSend</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="net_8h_source.html#l00706">706</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aca90abe62ee91e752d59981dd7c4f9ed"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::list&lt;<a class="el" href="class_c_net_message.html">CNetMessage</a>&gt; CNode::vProcessMsg</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="net_8h_source.html#l00634">634</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00707">707</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2550,7 +2609,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00639">639</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00655">655</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2572,21 +2631,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00753">753</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0d08ae01e8f730a5566751393407e0d2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::deque&lt;std::vector&lt;unsigned char&gt; &gt; CNode::vSendMsg</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="net_8h_source.html#l00628">628</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00768">768</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2597,7 +2642,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:23 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:53 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

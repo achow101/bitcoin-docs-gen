@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['wallet',['WALLET',['../util_8h.html#a317721a7331c499cfe39b49b39c26cbda5dfbfc491808ab7c150714aa58105474',1,'util.h']]],
-  ['wallet_5fdebug_5ftest',['WALLET_DEBUG_TEST',['../util_8h.html#a317721a7331c499cfe39b49b39c26cbda57556a42b788de34cbc73608ac0eb5ce',1,'util.h']]],
+  ['wallet',['WALLET',['../system_8h.html#a317721a7331c499cfe39b49b39c26cbda5dfbfc491808ab7c150714aa58105474',1,'system.h']]],
+  ['wallet_5fdebug_5ftest',['WALLET_DEBUG_TEST',['../system_8h.html#a317721a7331c499cfe39b49b39c26cbda57556a42b788de34cbc73608ac0eb5ce',1,'system.h']]],
   ['wallet_5ferror',['WALLET_ERROR',['../namespacefeebumper.html#a08fe575802ef410f95f786253c489bc6a08882b2afdb1b387f4af528ee0005ab3',1,'feebumper']]],
   ['wallet_5fflag_5fdisable_5fprivate_5fkeys',['WALLET_FLAG_DISABLE_PRIVATE_KEYS',['../wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a47b6a219e3ca6733b2a251be3e5def86',1,'wallet.h']]],
   ['wallet_5funlock_5ffailure',['WALLET_UNLOCK_FAILURE',['../class_address_table_model.html#a3d502b85fc09461e779dae4589c29956a164544f37fe7cfbf17283015eca6fdb3',1,'AddressTableModel']]],
@@ -13,5 +13,5 @@ var searchData=
   ['watchonlyfilter_5fno',['WatchOnlyFilter_No',['../class_transaction_filter_proxy.html#ab41d9f1ee436dd8f037eeca709c2b472ab43ab69858738616da7eb71336d3fc2f',1,'TransactionFilterProxy']]],
   ['watchonlyfilter_5fyes',['WatchOnlyFilter_Yes',['../class_transaction_filter_proxy.html#ab41d9f1ee436dd8f037eeca709c2b472a4fdceea2b530121daaf6bc5db8aefb45',1,'TransactionFilterProxy']]],
   ['watchonlyrole',['WatchonlyRole',['../class_transaction_table_model.html#a4b248508c36df598476affbf9871d1e6ac9d6c430f98f849e491b36dc316fe1f4',1,'TransactionTableModel']]],
-  ['witness_5fv0',['WITNESS_V0',['../interpreter_8h.html#a3db3199560fd5419a3be2fcd88a28f8fafd7f573f76ca2911662d17ada249f8b0',1,'interpreter.h']]]
+  ['witness_5fv0',['WITNESS_V0',['../interpreter_8h.html#a3db3199560fd5419a3be2fcd88a28f8fafd7f573f76ca2911662d17ada249f8b0',1,'WITNESS_V0():&#160;interpreter.h'],['../rpcdump_8cpp.html#a994c8748aaa60fbb78009ff8a0638deaafd7f573f76ca2911662d17ada249f8b0',1,'WITNESS_V0():&#160;rpcdump.cpp']]]
 ];

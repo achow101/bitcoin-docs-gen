@@ -103,17 +103,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;<a class="el" href="consensus_2validation_8h_source.html">consensus/validation.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="interfaces_2chain_8h_source.html">interfaces/chain.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="server_8h_source.html">rpc/server.h</a>&gt;</code><br />
 <code>#include &lt;test/test_bitcoin.h&gt;</code><br />
 <code>#include &lt;validation.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="coincontrol_8h_source.html">wallet/coincontrol.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="wallet__test__fixture_8h_source.html">wallet/test/wallet_test_fixture.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="policy_8h_source.html">policy/policy.h</a>&gt;</code><br />
 <code>#include &lt;boost/test/unit_test.hpp&gt;</code><br />
 <code>#include &lt;<a class="el" href="univalue_8h_source.html">univalue.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for wallet_tests.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet__tests_8cpp__incl.svg" width="4038" height="664"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet__tests_8cpp__incl.svg" width="4470" height="664"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="wallet__tests_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -131,8 +134,10 @@ Functions</h2></td></tr>
 <tr class="separator:a73ce3a42e0b56b2e4516e55871d8590e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c64ef6e0ced69002923098229448758"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_uni_value.html">UniValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet__tests_8cpp.html#a8c64ef6e0ced69002923098229448758">importwallet</a> (const <a class="el" href="class_j_s_o_n_r_p_c_request.html">JSONRPCRequest</a> &amp;request)</td></tr>
 <tr class="separator:a8c64ef6e0ced69002923098229448758"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc117bb030f4fc677e16addf014e9908"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet__tests_8cpp.html#acc117bb030f4fc677e16addf014e9908">BOOST_FIXTURE_TEST_CASE</a> (rescan, TestChain100Setup)</td></tr>
-<tr class="separator:acc117bb030f4fc677e16addf014e9908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa523842972d408c5762c7a71b1ecc0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet__tests_8cpp.html#aaa523842972d408c5762c7a71b1ecc0c">BOOST_FIXTURE_TEST_CASE</a> (scan_for_wallet_transactions, TestChain100Setup)</td></tr>
+<tr class="separator:aaa523842972d408c5762c7a71b1ecc0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a102aa881fd1aa3b1be48920b5b27dcc3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet__tests_8cpp.html#a102aa881fd1aa3b1be48920b5b27dcc3">BOOST_FIXTURE_TEST_CASE</a> (importmulti_rescan, TestChain100Setup)</td></tr>
+<tr class="separator:a102aa881fd1aa3b1be48920b5b27dcc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a726fa52b0a343883cb50a3f68d0989"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet__tests_8cpp.html#a2a726fa52b0a343883cb50a3f68d0989">BOOST_FIXTURE_TEST_CASE</a> (importwallet_rescan, TestChain100Setup)</td></tr>
 <tr class="separator:a2a726fa52b0a343883cb50a3f68d0989"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dfd138cbfb5e97ec54f8d807f9a4231"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet__tests_8cpp.html#a5dfd138cbfb5e97ec54f8d807f9a4231">BOOST_FIXTURE_TEST_CASE</a> (coin_mark_dirty_immature_credit, TestChain100Setup)</td></tr>
@@ -145,6 +150,8 @@ Functions</h2></td></tr>
 <tr class="separator:a5124bfced35ed545732a62fc7c82f9b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ac645d11ca6e840af0fd6a2dc80b421"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet__tests_8cpp.html#a4ac645d11ca6e840af0fd6a2dc80b421">BOOST_FIXTURE_TEST_CASE</a> (wallet_disableprivkeys, TestChain100Setup)</td></tr>
 <tr class="separator:a4ac645d11ca6e840af0fd6a2dc80b421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad481f15cfcf63abbe31f64b5b2d6f8a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet__tests_8cpp.html#ad481f15cfcf63abbe31f64b5b2d6f8a3">BOOST_FIXTURE_TEST_CASE</a> (dummy_input_size_test, TestChain100Setup)</td></tr>
+<tr class="separator:ad481f15cfcf63abbe31f64b5b2d6f8a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a79e55ed305e1a3ce2d0c52f9ef5f89e4"></a>
@@ -161,12 +168,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet__tests_8cpp_source.html#l00230">230</a> of file <a class="el" href="wallet__tests_8cpp_source.html">wallet_tests.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet__tests_8cpp_source.html#l00291">291</a> of file <a class="el" href="wallet__tests_8cpp_source.html">wallet_tests.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet__tests_8cpp_a79e55ed305e1a3ce2d0c52f9ef5f89e4_cgraph.svg" width="358" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet__tests_8cpp_a79e55ed305e1a3ce2d0c52f9ef5f89e4_cgraph.svg" width="358" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -186,7 +194,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet__tests_8cpp_source.html#l00256">256</a> of file <a class="el" href="wallet__tests_8cpp_source.html">wallet_tests.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet__tests_8cpp_source.html#l00317">317</a> of file <a class="el" href="wallet__tests_8cpp_source.html">wallet_tests.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -197,14 +205,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="acc117bb030f4fc677e16addf014e9908"></a>
+<a class="anchor" id="aaa523842972d408c5762c7a71b1ecc0c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">rescan&#160;</td>
+          <td class="paramtype">scan_for_wallet_transactions&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -221,12 +229,49 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet__tests_8cpp_source.html#l00035">35</a> of file <a class="el" href="wallet__tests_8cpp_source.html">wallet_tests.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet__tests_8cpp_source.html#l00037">37</a> of file <a class="el" href="wallet__tests_8cpp_source.html">wallet_tests.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet__tests_8cpp_acc117bb030f4fc677e16addf014e9908_cgraph.svg" width="967" height="1787"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet__tests_8cpp_aaa523842972d408c5762c7a71b1ecc0c_cgraph.svg" width="1235" height="1300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a102aa881fd1aa3b1be48920b5b27dcc3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">importmulti_rescan&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TestChain100Setup&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="wallet__tests_8cpp_source.html#l00113">113</a> of file <a class="el" href="wallet__tests_8cpp_source.html">wallet_tests.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet__tests_8cpp_a102aa881fd1aa3b1be48920b5b27dcc3_cgraph.svg" width="1576" height="1984"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -256,12 +301,13 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet__tests_8cpp_source.html#l00116">116</a> of file <a class="el" href="wallet__tests_8cpp_source.html">wallet_tests.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet__tests_8cpp_source.html#l00173">173</a> of file <a class="el" href="wallet__tests_8cpp_source.html">wallet_tests.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet__tests_8cpp_a2a726fa52b0a343883cb50a3f68d0989_cgraph.svg" width="1340" height="2468"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet__tests_8cpp_a2a726fa52b0a343883cb50a3f68d0989_cgraph.svg" width="1340" height="2606"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -291,12 +337,13 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet__tests_8cpp_source.html#l00181">181</a> of file <a class="el" href="wallet__tests_8cpp_source.html">wallet_tests.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet__tests_8cpp_source.html#l00240">240</a> of file <a class="el" href="wallet__tests_8cpp_source.html">wallet_tests.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet__tests_8cpp_a5dfd138cbfb5e97ec54f8d807f9a4231_cgraph.svg" width="1671" height="1158"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet__tests_8cpp_a5dfd138cbfb5e97ec54f8d807f9a4231_cgraph.svg" width="1691" height="1179"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -326,12 +373,13 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet__tests_8cpp_source.html#l00317">317</a> of file <a class="el" href="wallet__tests_8cpp_source.html">wallet_tests.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet__tests_8cpp_source.html#l00384">384</a> of file <a class="el" href="wallet__tests_8cpp_source.html">wallet_tests.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet__tests_8cpp_a5124bfced35ed545732a62fc7c82f9b1_cgraph.svg" width="1120" height="1738"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet__tests_8cpp_a5124bfced35ed545732a62fc7c82f9b1_cgraph.svg" width="1120" height="1738"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -361,14 +409,43 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet__tests_8cpp_source.html#l00378">378</a> of file <a class="el" href="wallet__tests_8cpp_source.html">wallet_tests.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet__tests_8cpp_source.html#l00445">445</a> of file <a class="el" href="wallet__tests_8cpp_source.html">wallet_tests.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet__tests_8cpp_a4ac645d11ca6e840af0fd6a2dc80b421_cgraph.svg" width="870" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet__tests_8cpp_a4ac645d11ca6e840af0fd6a2dc80b421_cgraph.svg" width="1279" height="1411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad481f15cfcf63abbe31f64b5b2d6f8a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">dummy_input_size_test&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TestChain100Setup&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="wallet__tests_8cpp_source.html#l00492">492</a> of file <a class="el" href="wallet__tests_8cpp_source.html">wallet_tests.cpp</a>.</p>
 
 </div>
 </div>
@@ -386,7 +463,15 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcdump_8cpp_source.html#l00679">679</a> of file <a class="el" href="rpcdump_8cpp_source.html">rpcdump.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcdump_8cpp_source.html#l00706">706</a> of file <a class="el" href="rpcdump_8cpp_source.html">rpcdump.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet__tests_8cpp_a73ce3a42e0b56b2e4516e55871d8590e_cgraph.svg" width="1111" height="2478"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -411,19 +496,21 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcdump_8cpp_source.html#l01098">1098</a> of file <a class="el" href="rpcdump_8cpp_source.html">rpcdump.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcdump_8cpp_source.html#l01140">1140</a> of file <a class="el" href="rpcdump_8cpp_source.html">rpcdump.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet__tests_8cpp_af0e3c9469f1d8f368d3d5f38e5580367_cgraph.svg" width="1360" height="1620"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet__tests_8cpp_af0e3c9469f1d8f368d3d5f38e5580367_cgraph.svg" width="1360" height="1694"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet__tests_8cpp_af0e3c9469f1d8f368d3d5f38e5580367_icgraph.svg" width="360" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet__tests_8cpp_af0e3c9469f1d8f368d3d5f38e5580367_icgraph.svg" width="360" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -443,12 +530,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcdump_8cpp_source.html#l00506">506</a> of file <a class="el" href="rpcdump_8cpp_source.html">rpcdump.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcdump_8cpp_source.html#l00527">527</a> of file <a class="el" href="rpcdump_8cpp_source.html">rpcdump.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet__tests_8cpp_a8c64ef6e0ced69002923098229448758_cgraph.svg" width="1154" height="2100"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet__tests_8cpp_a8c64ef6e0ced69002923098229448758_cgraph.svg" width="1154" height="2286"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -464,7 +552,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:22 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:51 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

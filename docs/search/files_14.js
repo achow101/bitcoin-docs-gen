@@ -8,5 +8,7 @@ var searchData=
   ['verify_5fscript_2ecpp',['verify_script.cpp',['../verify__script_8cpp.html',1,'']]],
   ['version_2eh',['version.h',['../version_8h.html',1,'']]],
   ['versionbits_2ecpp',['versionbits.cpp',['../versionbits_8cpp.html',1,'']]],
-  ['versionbits_2eh',['versionbits.h',['../versionbits_8h.html',1,'']]]
+  ['versionbits_2eh',['versionbits.h',['../versionbits_8h.html',1,'']]],
+  ['versionbitsinfo_2ecpp',['versionbitsinfo.cpp',['../versionbitsinfo_8cpp.html',1,'']]],
+  ['versionbitsinfo_2eh',['versionbitsinfo.h',['../versionbitsinfo_8h.html',1,'']]]
 ];

@@ -92,7 +92,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -111,12 +110,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for logging.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="logging_8h__incl.svg" width="1406" height="202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="logging_8h__incl.svg" width="1207" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="logging_8h__dep__incl.svg" width="7232" height="262"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="logging_8h__dep__incl.svg" width="7162" height="262"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="logging_8h_source.html">Go to the source code of this file.</a></p>
@@ -132,13 +133,6 @@ Classes</h2></td></tr>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_b_c_log"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_b_c_log.html">BCLog</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:afc02c0a4258fedfb316be612bb659ba8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#afc02c0a4258fedfb316be612bb659ba8">LogPrintf</a>(...)</td></tr>
-<tr class="separator:afc02c0a4258fedfb316be612bb659ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44920f41b96476395cffed459d0c8835"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a44920f41b96476395cffed459d0c8835">LogPrint</a>(category, ...)</td></tr>
-<tr class="separator:a44920f41b96476395cffed459d0c8835"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -186,10 +180,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a84d90a032a1e6f85635d8afe47d324f3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a84d90a032a1e6f85635d8afe47d324f3">GetLogCategory</a> (<a class="el" href="namespace_b_c_log.html#ad1037484206121adbcda9f9c824ab6b2">BCLog::LogFlags</a> &amp;flag, const std::string &amp;str)</td></tr>
 <tr class="memdesc:a84d90a032a1e6f85635d8afe47d324f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if str parses as a log category and set the flag.  <a href="#a84d90a032a1e6f85635d8afe47d324f3">More...</a><br /></td></tr>
 <tr class="separator:a84d90a032a1e6f85635d8afe47d324f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ced7b684a2c69a80e2fb0741dfe4fbd"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a2ced7b684a2c69a80e2fb0741dfe4fbd"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="logging_8h.html#a2ced7b684a2c69a80e2fb0741dfe4fbd">FormatStringFromLogArgs</a> (const char *fmt, const Args &amp;...args)</td></tr>
-<tr class="memdesc:a2ced7b684a2c69a80e2fb0741dfe4fbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get format string from VA_ARGS for error reporting.  <a href="#a2ced7b684a2c69a80e2fb0741dfe4fbd">More...</a><br /></td></tr>
-<tr class="separator:a2ced7b684a2c69a80e2fb0741dfe4fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -201,93 +191,7 @@ Variables</h2></td></tr>
 <tr class="memdesc:a1cd4848010c61770cf10fbb8f02855ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">NOTE: the logger instances is leaked on exit.  <a href="#a1cd4848010c61770cf10fbb8f02855ca">More...</a><br /></td></tr>
 <tr class="separator:a1cd4848010c61770cf10fbb8f02855ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a44920f41b96476395cffed459d0c8835"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LogPrint</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">category, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div><div class="line">    if (LogAcceptCategory((category))) { <a class="code" href="logging_8h.html#afc02c0a4258fedfb316be612bb659ba8">\</a></div><div class="line"><a class="code" href="logging_8h.html#afc02c0a4258fedfb316be612bb659ba8">        LogPrintf</a>(__VA_ARGS__); \</div><div class="line">    } \</div><div class="line">} <span class="keywordflow">while</span>(0)</div><div class="ttc" id="logging_8h_html_afc02c0a4258fedfb316be612bb659ba8"><div class="ttname"><a href="logging_8h.html#afc02c0a4258fedfb316be612bb659ba8">LogPrintf</a></div><div class="ttdeci">#define LogPrintf(...)</div><div class="ttdef"><b>Definition:</b> <a href="logging_8h_source.html#l00146">logging.h:146</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="logging_8h_source.html#l00159">159</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="afc02c0a4258fedfb316be612bb659ba8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LogPrintf</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div><div class="line">    if (<a class="code" href="logging_8h.html#a1cd4848010c61770cf10fbb8f02855ca">g_logger</a>-&gt;<a class="code" href="class_b_c_log_1_1_logger.html#a3158651852f3a1b0033799d6e92b7cd8">Enabled</a>()) { \</div><div class="line">        std::string _log_msg_; <span class="comment">/* Unlikely name to avoid shadowing variables */</span> \</div><div class="line">        try { \</div><div class="line">            _log_msg_ = <a class="code" href="namespacetinyformat.html#ad784060b98bfd4f1b3089fbb7686a676">tfm::format</a>(__VA_ARGS__); \</div><div class="line">        } <span class="keywordflow">catch</span> (<a class="code" href="classtinyformat_1_1format__error.html">tinyformat::format_error</a> &amp;fmterr) { \</div><div class="line">            <span class="comment">/* Original format string will have newline so don&#39;t add one here */</span> \</div><div class="line">            _log_msg_ = <span class="stringliteral">&quot;Error \&quot;&quot;</span> + std::string(fmterr.what()) + <span class="stringliteral">&quot;\&quot; while formatting log message: &quot;</span> + <a class="code" href="logging_8h.html#a2ced7b684a2c69a80e2fb0741dfe4fbd">FormatStringFromLogArgs</a>(__VA_ARGS__); \</div><div class="line">        } <a class="code" href="logging_8h.html#a1cd4848010c61770cf10fbb8f02855ca">\</a></div><div class="line"><a class="code" href="logging_8h.html#a1cd4848010c61770cf10fbb8f02855ca">        g_logger</a>-&gt;<a class="code" href="class_b_c_log_1_1_logger.html#a7326a0d81dfe27f8c475c1e0038fbd18">LogPrintStr</a>(_log_msg_); \</div><div class="line">    } \</div><div class="line">} <span class="keywordflow">while</span>(0)</div><div class="ttc" id="namespacetinyformat_html_ad784060b98bfd4f1b3089fbb7686a676"><div class="ttname"><a href="namespacetinyformat.html#ad784060b98bfd4f1b3089fbb7686a676">tinyformat::format</a></div><div class="ttdeci">void format(std::ostream &amp;out, const char *fmt, const Args &amp;...args)</div><div class="ttdoc">Format list of arguments to the stream according to given format string. </div><div class="ttdef"><b>Definition:</b> <a href="tinyformat_8h_source.html#l00967">tinyformat.h:967</a></div></div>
-<div class="ttc" id="class_b_c_log_1_1_logger_html_a7326a0d81dfe27f8c475c1e0038fbd18"><div class="ttname"><a href="class_b_c_log_1_1_logger.html#a7326a0d81dfe27f8c475c1e0038fbd18">BCLog::Logger::LogPrintStr</a></div><div class="ttdeci">void LogPrintStr(const std::string &amp;str)</div><div class="ttdoc">Send a string to the log output. </div><div class="ttdef"><b>Definition:</b> <a href="logging_8cpp_source.html#l00201">logging.cpp:201</a></div></div>
-<div class="ttc" id="classtinyformat_1_1format__error_html"><div class="ttname"><a href="classtinyformat_1_1format__error.html">tinyformat::format_error</a></div><div class="ttdef"><b>Definition:</b> <a href="tinyformat_8h_source.html#l00167">tinyformat.h:167</a></div></div>
-<div class="ttc" id="logging_8h_html_a1cd4848010c61770cf10fbb8f02855ca"><div class="ttname"><a href="logging_8h.html#a1cd4848010c61770cf10fbb8f02855ca">g_logger</a></div><div class="ttdeci">BCLog::Logger *const g_logger</div><div class="ttdoc">NOTE: the logger instances is leaked on exit. </div><div class="ttdef"><b>Definition:</b> <a href="logging_8cpp_source.html#l00024">logging.cpp:24</a></div></div>
-<div class="ttc" id="logging_8h_html_a2ced7b684a2c69a80e2fb0741dfe4fbd"><div class="ttname"><a href="logging_8h.html#a2ced7b684a2c69a80e2fb0741dfe4fbd">FormatStringFromLogArgs</a></div><div class="ttdeci">std::string FormatStringFromLogArgs(const char *fmt, const Args &amp;...args)</div><div class="ttdoc">Get format string from VA_ARGS for error reporting. </div><div class="ttdef"><b>Definition:</b> <a href="logging_8h_source.html#l00129">logging.h:129</a></div></div>
-<div class="ttc" id="class_b_c_log_1_1_logger_html_a3158651852f3a1b0033799d6e92b7cd8"><div class="ttname"><a href="class_b_c_log_1_1_logger.html#a3158651852f3a1b0033799d6e92b7cd8">BCLog::Logger::Enabled</a></div><div class="ttdeci">bool Enabled() const </div><div class="ttdoc">Returns whether logs will be written to any output. </div><div class="ttdef"><b>Definition:</b> <a href="logging_8h_source.html#l00092">logging.h:92</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="logging_8h_source.html#l00146">146</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a2ced7b684a2c69a80e2fb0741dfe4fbd"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename... Args&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string FormatStringFromLogArgs </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>fmt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Args &amp;...&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get format string from VA_ARGS for error reporting. </p>
-
-<p>Definition at line <a class="el" href="logging_8h_source.html#l00129">129</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a84d90a032a1e6f85635d8afe47d324f3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -427,7 +331,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:21 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:48 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

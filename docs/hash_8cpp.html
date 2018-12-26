@@ -90,7 +90,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">hash.cpp File Reference</div>  </div>
@@ -102,18 +101,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for hash.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="hash_8cpp__incl.svg" width="3578" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="hash_8cpp__incl.svg" width="2070" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="hash_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:addd42b95ef425979d1d0dca095dec800"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash_8cpp.html#addd42b95ef425979d1d0dca095dec800">ROTL</a>(x,  b)&#160;&#160;&#160;(uint64_t)(((x) &lt;&lt; (b)) | ((x) &gt;&gt; (64 - (b))))</td></tr>
-<tr class="separator:addd42b95ef425979d1d0dca095dec800"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd545ba6d36990ee5903ff4d0e6edecf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash_8cpp.html#abd545ba6d36990ee5903ff4d0e6edecf">SIPROUND</a></td></tr>
-<tr class="separator:abd545ba6d36990ee5903ff4d0e6edecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aa8045f521ac28bee04e4980f93272dc0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash_8cpp.html#aa8045f521ac28bee04e4980f93272dc0">ROTL32</a> (uint32_t x, int8_t r)</td></tr>
@@ -122,56 +115,7 @@ Functions</h2></td></tr>
 <tr class="separator:a3cf0406d24590eaad9a3163c552e9730"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a391c1a6a1f947abbc53cc51fc709110e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash_8cpp.html#a391c1a6a1f947abbc53cc51fc709110e">BIP32Hash</a> (const <a class="el" href="hash_8h.html#aa201a9867f780a040c7af908e0a85db3">ChainCode</a> &amp;chainCode, unsigned int nChild, unsigned char header, const unsigned char data[32], unsigned char output[64])</td></tr>
 <tr class="separator:a391c1a6a1f947abbc53cc51fc709110e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae60994a4cd54fb47d2bf6b432ab48bc"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash_8cpp.html#aae60994a4cd54fb47d2bf6b432ab48bc">SipHashUint256</a> (uint64_t k0, uint64_t k1, const <a class="el" href="classuint256.html">uint256</a> &amp;val)</td></tr>
-<tr class="memdesc:aae60994a4cd54fb47d2bf6b432ab48bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optimized SipHash-2-4 implementation for <a class="el" href="classuint256.html" title="256-bit opaque blob. ">uint256</a>.  <a href="#aae60994a4cd54fb47d2bf6b432ab48bc">More...</a><br /></td></tr>
-<tr class="separator:aae60994a4cd54fb47d2bf6b432ab48bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a465236e346fda6f20670887d2c2d4916"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash_8cpp.html#a465236e346fda6f20670887d2c2d4916">SipHashUint256Extra</a> (uint64_t k0, uint64_t k1, const <a class="el" href="classuint256.html">uint256</a> &amp;val, uint32_t extra)</td></tr>
-<tr class="separator:a465236e346fda6f20670887d2c2d4916"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="addd42b95ef425979d1d0dca095dec800"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ROTL</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(uint64_t)(((x) &lt;&lt; (b)) | ((x) &gt;&gt; (64 - (b))))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="hash_8cpp_source.html#l00081">81</a> of file <a class="el" href="hash_8cpp_source.html">hash.cpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="abd545ba6d36990ee5903ff4d0e6edecf"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SIPROUND</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div><div class="line">    v0 += v1; v1 = <a class="code" href="hash_8cpp.html#addd42b95ef425979d1d0dca095dec800">ROTL</a>(v1, 13); v1 ^= v0; \</div><div class="line">    v0 = <a class="code" href="hash_8cpp.html#addd42b95ef425979d1d0dca095dec800">ROTL</a>(v0, 32); \</div><div class="line">    v2 += v3; v3 = <a class="code" href="hash_8cpp.html#addd42b95ef425979d1d0dca095dec800">ROTL</a>(v3, 16); v3 ^= v2; \</div><div class="line">    v0 += v3; v3 = <a class="code" href="hash_8cpp.html#addd42b95ef425979d1d0dca095dec800">ROTL</a>(v3, 21); v3 ^= v0; \</div><div class="line">    v2 += v1; v1 = <a class="code" href="hash_8cpp.html#addd42b95ef425979d1d0dca095dec800">ROTL</a>(v1, 17); v1 ^= v2; \</div><div class="line">    v2 = <a class="code" href="hash_8cpp.html#addd42b95ef425979d1d0dca095dec800">ROTL</a>(v2, 32); \</div><div class="line">} <span class="keywordflow">while</span> (0)</div><div class="ttc" id="hash_8cpp_html_addd42b95ef425979d1d0dca095dec800"><div class="ttname"><a href="hash_8cpp.html#addd42b95ef425979d1d0dca095dec800">ROTL</a></div><div class="ttdeci">#define ROTL(x, b)</div><div class="ttdef"><b>Definition:</b> <a href="hash_8cpp_source.html#l00081">hash.cpp:81</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="hash_8cpp_source.html#l00083">83</a> of file <a class="el" href="hash_8cpp_source.html">hash.cpp</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a391c1a6a1f947abbc53cc51fc709110e"></a>
 <div class="memitem">
@@ -227,7 +171,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="hash_8cpp_a391c1a6a1f947abbc53cc51fc709110e_icgraph.svg" width="1524" height="1706"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="hash_8cpp_a391c1a6a1f947abbc53cc51fc709110e_icgraph.svg" width="1524" height="1706"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -269,7 +214,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="hash_8cpp_a3cf0406d24590eaad9a3163c552e9730_icgraph.svg" width="1692" height="1546"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="hash_8cpp_a3cf0406d24590eaad9a3163c552e9730_icgraph.svg" width="1692" height="1546"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -312,112 +258,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="hash_8cpp_aa8045f521ac28bee04e4980f93272dc0_icgraph.svg" width="1811" height="1546"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="hash_8cpp_aa8045f521ac28bee04e4980f93272dc0_icgraph.svg" width="1811" height="1546"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="aae60994a4cd54fb47d2bf6b432ab48bc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t SipHashUint256 </td>
-          <td>(</td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>k0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>k1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classuint256.html">uint256</a> &amp;&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Optimized SipHash-2-4 implementation for <a class="el" href="classuint256.html" title="256-bit opaque blob. ">uint256</a>. </p>
-<p>It is identical to: SipHasher(k0, k1) .Write(val.GetUint64(0)) .Write(val.GetUint64(1)) .Write(val.GetUint64(2)) .Write(val.GetUint64(3)) .Finalize() </p>
-
-<p>Definition at line <a class="el" href="hash_8cpp_source.html#l00168">168</a> of file <a class="el" href="hash_8cpp_source.html">hash.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="hash_8cpp_aae60994a4cd54fb47d2bf6b432ab48bc_cgraph.svg" width="344" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="hash_8cpp_aae60994a4cd54fb47d2bf6b432ab48bc_icgraph.svg" width="848" height="138"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a465236e346fda6f20670887d2c2d4916"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t SipHashUint256Extra </td>
-          <td>(</td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>k0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>k1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classuint256.html">uint256</a> &amp;&#160;</td>
-          <td class="paramname"><em>val</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>extra</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="hash_8cpp_source.html#l00208">208</a> of file <a class="el" href="hash_8cpp_source.html">hash.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="hash_8cpp_a465236e346fda6f20670887d2c2d4916_cgraph.svg" width="378" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="hash_8cpp_a465236e346fda6f20670887d2c2d4916_icgraph.svg" width="382" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -426,7 +268,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:20 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:48 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

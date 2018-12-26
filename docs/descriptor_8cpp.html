@@ -102,15 +102,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="script_8h_source.html">script/script.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="standard_8h_source.html">script/standard.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="span_8h_source.html">span.h</a>&gt;</code><br />
-<code>#include &lt;util.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="utilstrencodings_8h_source.html">utilstrencodings.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="system_8h_source.html">util/system.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="strencodings_8h_source.html">util/strencodings.h</a>&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for descriptor.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="descriptor_8cpp__incl.svg" width="3378" height="650"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="descriptor_8cpp__incl.svg" width="3680" height="575"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="descriptor_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -127,6 +128,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a967390c7d7e5f248617364ad2941b7d1"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="struct_descriptor.html">Descriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="descriptor_8cpp.html#a967390c7d7e5f248617364ad2941b7d1">Parse</a> (const std::string &amp;descriptor, <a class="el" href="struct_flat_signing_provider.html">FlatSigningProvider</a> &amp;out)</td></tr>
 <tr class="memdesc:a967390c7d7e5f248617364ad2941b7d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a descriptor string.  <a href="#a967390c7d7e5f248617364ad2941b7d1">More...</a><br /></td></tr>
 <tr class="separator:a967390c7d7e5f248617364ad2941b7d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae75dd07a3fc7e942c4ed979623c05c48"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="struct_descriptor.html">Descriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="descriptor_8cpp.html#ae75dd07a3fc7e942c4ed979623c05c48">InferDescriptor</a> (const <a class="el" href="class_c_script.html">CScript</a> &amp;script, const <a class="el" href="class_signing_provider.html">SigningProvider</a> &amp;provider)</td></tr>
+<tr class="memdesc:ae75dd07a3fc7e942c4ed979623c05c48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a descriptor for the specified script, using information from provider where possible.  <a href="#ae75dd07a3fc7e942c4ed979623c05c48">More...</a><br /></td></tr>
+<tr class="separator:ae75dd07a3fc7e942c4ed979623c05c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a class="anchor" id="aefc2d839ec2eecd42a20f1ecfe24865b"></a>
@@ -147,7 +151,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="descriptor_8cpp_source.html#l00083">83</a> of file <a class="el" href="descriptor_8cpp_source.html">descriptor.cpp</a>.</p>
+<p>Definition at line <a class="el" href="descriptor_8cpp_source.html#l00117">117</a> of file <a class="el" href="descriptor_8cpp_source.html">descriptor.cpp</a>.</p>
 
 </div>
 </div>
@@ -169,11 +173,56 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="descriptor_8cpp_source.html#l00370">370</a> of file <a class="el" href="descriptor_8cpp_source.html">descriptor.cpp</a>.</p>
+<p>Definition at line <a class="el" href="descriptor_8cpp_source.html#l00468">468</a> of file <a class="el" href="descriptor_8cpp_source.html">descriptor.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ae75dd07a3fc7e942c4ed979623c05c48"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="struct_descriptor.html">Descriptor</a>&gt; InferDescriptor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_script.html">CScript</a> &amp;&#160;</td>
+          <td class="paramname"><em>script</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_signing_provider.html">SigningProvider</a> &amp;&#160;</td>
+          <td class="paramname"><em>provider</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Find a descriptor for the specified script, using information from provider where possible. </p>
+<p>A non-ranged descriptor which only generates the specified script will be returned in all circumstances.</p>
+<p>For public keys with key origin information, this information will be preserved in the returned descriptor.</p>
+<ul>
+<li>If all information for solving <code>script</code> is present in <code>provider</code>, a descriptor will be returned which is <code><a class="el" href="sign_8cpp.html#a88a309e2fcf97929f223e03eaba88bd6">IsSolvable()</a></code> and encapsulates said information.</li>
+<li>Failing that, if <code>script</code> corresponds to a known address type, an "addr()" descriptor will be returned (which is not <code><a class="el" href="sign_8cpp.html#a88a309e2fcf97929f223e03eaba88bd6">IsSolvable()</a></code>).</li>
+<li>Failing that, a "raw()" descriptor is returned. </li>
+</ul>
+
+<p>Definition at line <a class="el" href="descriptor_8cpp_source.html#l00763">763</a> of file <a class="el" href="descriptor_8cpp_source.html">descriptor.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="descriptor_8cpp_ae75dd07a3fc7e942c4ed979623c05c48_icgraph.svg" width="978" height="202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a967390c7d7e5f248617364ad2941b7d1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -201,12 +250,13 @@ Functions</h2></td></tr>
 <p>Parse a descriptor string. </p>
 <p>Included private keys are put in out. Returns nullptr if parsing fails. </p>
 
-<p>Definition at line <a class="el" href="descriptor_8cpp_source.html#l00560">560</a> of file <a class="el" href="descriptor_8cpp_source.html">descriptor.cpp</a>.</p>
+<p>Definition at line <a class="el" href="descriptor_8cpp_source.html#l00755">755</a> of file <a class="el" href="descriptor_8cpp_source.html">descriptor.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="descriptor_8cpp_a967390c7d7e5f248617364ad2941b7d1_cgraph.svg" width="1036" height="798"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="descriptor_8cpp_a967390c7d7e5f248617364ad2941b7d1_cgraph.svg" width="1036" height="763"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -222,7 +272,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:21 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:49 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

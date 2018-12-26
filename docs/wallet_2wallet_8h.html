@@ -100,20 +100,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="amount_8h_source.html">amount.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="interfaces_2chain_8h_source.html">interfaces/chain.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="outputtype_8h_source.html">outputtype.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="feerate_8h_source.html">policy/feerate.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="streams_8h_source.html">streams.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="tinyformat_8h_source.html">tinyformat.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ui__interface_8h_source.html">ui_interface.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="utilstrencodings_8h_source.html">utilstrencodings.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="strencodings_8h_source.html">util/strencodings.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="validationinterface_8h_source.html">validationinterface.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ismine_8h_source.html">script/ismine.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="sign_8h_source.html">script/sign.h</a>&gt;</code><br />
-<code>#include &lt;util.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="system_8h_source.html">util/system.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="crypter_8h_source.html">wallet/crypter.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="coinselection_8h_source.html">wallet/coinselection.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="walletdb_8h_source.html">wallet/walletdb.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="rpcwallet_8h_source.html">wallet/rpcwallet.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="walletutil_8h_source.html">wallet/walletutil.h</a>&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;atomic&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
@@ -127,12 +128,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for wallet.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h__incl.svg" width="3470" height="590"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h__incl.svg" width="3542" height="575"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h__dep__incl.svg" width="3263" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h__dep__incl.svg" width="3422" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="wallet_2wallet_8h_source.html">Go to the source code of this file.</a></p>
@@ -199,6 +202,24 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a7058e0a66c69a84d56417e0489fdce86"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet_2wallet_8h.html#a7058e0a66c69a84d56417e0489fdce86">VerifyWallets</a> (<a class="el" href="classinterfaces_1_1_chain.html">interfaces::Chain</a> &amp;chain, const std::vector&lt; std::string &gt; &amp;wallet_files)</td></tr>
+<tr class="memdesc:a7058e0a66c69a84d56417e0489fdce86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Responsible for reading and validating the -wallet arguments and verifying the wallet database.  <a href="#a7058e0a66c69a84d56417e0489fdce86">More...</a><br /></td></tr>
+<tr class="separator:a7058e0a66c69a84d56417e0489fdce86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae72a893f3fdc7a8287e9108a1a69915"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet_2wallet_8h.html#aae72a893f3fdc7a8287e9108a1a69915">LoadWallets</a> (<a class="el" href="classinterfaces_1_1_chain.html">interfaces::Chain</a> &amp;chain, const std::vector&lt; std::string &gt; &amp;wallet_files)</td></tr>
+<tr class="memdesc:aae72a893f3fdc7a8287e9108a1a69915"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load wallet databases.  <a href="#aae72a893f3fdc7a8287e9108a1a69915">More...</a><br /></td></tr>
+<tr class="separator:aae72a893f3fdc7a8287e9108a1a69915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a300bbcc1bda3145938746044df06a11e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet_2wallet_8h.html#a300bbcc1bda3145938746044df06a11e">StartWallets</a> (<a class="el" href="class_c_scheduler.html">CScheduler</a> &amp;scheduler)</td></tr>
+<tr class="memdesc:a300bbcc1bda3145938746044df06a11e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete startup of wallets.  <a href="#a300bbcc1bda3145938746044df06a11e">More...</a><br /></td></tr>
+<tr class="separator:a300bbcc1bda3145938746044df06a11e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab651022e0148647d3690f30652801c00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet_2wallet_8h.html#ab651022e0148647d3690f30652801c00">FlushWallets</a> ()</td></tr>
+<tr class="memdesc:ab651022e0148647d3690f30652801c00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flush all wallets in preparation for shutdown.  <a href="#ab651022e0148647d3690f30652801c00">More...</a><br /></td></tr>
+<tr class="separator:ab651022e0148647d3690f30652801c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9773d88f37a891c7f243716e04f1934"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet_2wallet_8h.html#af9773d88f37a891c7f243716e04f1934">StopWallets</a> ()</td></tr>
+<tr class="memdesc:af9773d88f37a891c7f243716e04f1934"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop all wallets. Wallets will be flushed first.  <a href="#af9773d88f37a891c7f243716e04f1934">More...</a><br /></td></tr>
+<tr class="separator:af9773d88f37a891c7f243716e04f1934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c16fc8585f762f0c27fea2fa29dc405"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet_2wallet_8h.html#a9c16fc8585f762f0c27fea2fa29dc405">UnloadWallets</a> ()</td></tr>
+<tr class="memdesc:a9c16fc8585f762f0c27fea2fa29dc405"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close all wallets.  <a href="#a9c16fc8585f762f0c27fea2fa29dc405">More...</a><br /></td></tr>
+<tr class="separator:a9c16fc8585f762f0c27fea2fa29dc405"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad523200398c9a7518de131353d4a6ac5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet_2wallet_8h.html#ad523200398c9a7518de131353d4a6ac5">AddWallet</a> (const std::shared_ptr&lt; <a class="el" href="class_c_wallet.html">CWallet</a> &gt; &amp;wallet)</td></tr>
 <tr class="separator:ad523200398c9a7518de131353d4a6ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44f59518880060eb908ce080cbb39377"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet_2wallet_8h.html#a44f59518880060eb908ce080cbb39377">RemoveWallet</a> (const std::shared_ptr&lt; <a class="el" href="class_c_wallet.html">CWallet</a> &gt; &amp;wallet)</td></tr>
@@ -211,7 +232,7 @@ Functions</h2></td></tr>
 <tr class="separator:a59fb74ca7a0b34f8f86ec58464a72f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga05b4378caaacc3cff6da90a12f7b41d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga05b4378caaacc3cff6da90a12f7b41d7">CalculateMaximumSignedInputSize</a> (const <a class="el" href="class_c_tx_out.html">CTxOut</a> &amp;txout, const <a class="el" href="class_c_wallet.html">CWallet</a> *pwallet, bool use_max_sig=false)</td></tr>
 <tr class="separator:ga05b4378caaacc3cff6da90a12f7b41d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0fd4c6f23ea3ccac9050ef55ad5f90b0"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga0fd4c6f23ea3ccac9050ef55ad5f90b0">CalculateMaximumSignedTxSize</a> (const <a class="el" href="class_c_transaction.html">CTransaction</a> &amp;tx, const <a class="el" href="class_c_wallet.html">CWallet</a> *wallet, bool use_max_sig=false)</td></tr>
+<tr class="memitem:ga0fd4c6f23ea3ccac9050ef55ad5f90b0"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga0fd4c6f23ea3ccac9050ef55ad5f90b0">CalculateMaximumSignedTxSize</a> (const <a class="el" href="class_c_transaction.html">CTransaction</a> &amp;tx, const <a class="el" href="class_c_wallet.html">CWallet</a> *wallet, bool use_max_sig=false) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(wallet-&gt; cs_wallet)</td></tr>
 <tr class="separator:ga0fd4c6f23ea3ccac9050ef55ad5f90b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga55c494ecfeaf5cdf44483c1eaa45b2fb"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga55c494ecfeaf5cdf44483c1eaa45b2fb">CalculateMaximumSignedTxSize</a> (const <a class="el" href="class_c_transaction.html">CTransaction</a> &amp;tx, const <a class="el" href="class_c_wallet.html">CWallet</a> *wallet, const std::vector&lt; <a class="el" href="class_c_tx_out.html">CTxOut</a> &gt; &amp;txouts, bool use_max_sig=false)</td></tr>
 <tr class="separator:ga55c494ecfeaf5cdf44483c1eaa45b2fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -239,7 +260,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00179">179</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00203">203</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -274,7 +295,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00079">79</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00103">103</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -292,7 +313,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00103">103</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00127">127</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -311,12 +332,40 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00043">43</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00044">44</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h_ad523200398c9a7518de131353d4a6ac5_icgraph.svg" width="595" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h_ad523200398c9a7518de131353d4a6ac5_icgraph.svg" width="567" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab651022e0148647d3690f30652801c00"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlushWallets </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flush all wallets in preparation for shutdown. </p>
+
+<p>Definition at line <a class="el" href="wallet_2init_8cpp_source.html#l00229">229</a> of file <a class="el" href="wallet_2init_8cpp_source.html">init.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h_ab651022e0148647d3690f30652801c00_cgraph.svg" width="247" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -336,7 +385,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00075">75</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00076">76</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -348,7 +397,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h_a59fb74ca7a0b34f8f86ec58464a72f8a_icgraph.svg" width="1076" height="1160"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h_a59fb74ca7a0b34f8f86ec58464a72f8a_icgraph.svg" width="1076" height="1112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -367,12 +417,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00069">69</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="dummywallet_8cpp_source.html#l00041">41</a> of file <a class="el" href="dummywallet_8cpp_source.html">dummywallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h_ab8562a8762a7793fdf5b8ae9465e1b85_icgraph.svg" width="1083" height="1488"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h_ab8562a8762a7793fdf5b8ae9465e1b85_icgraph.svg" width="1083" height="1104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -391,12 +442,51 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00063">63</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00064">64</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h_a9bc62b5b6dea0a67f248bc07019a851f_icgraph.svg" width="1043" height="1126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h_a9bc62b5b6dea0a67f248bc07019a851f_icgraph.svg" width="1043" height="1075"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aae72a893f3fdc7a8287e9108a1a69915"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LoadWallets </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classinterfaces_1_1_chain.html">interfaces::Chain</a> &amp;&#160;</td>
+          <td class="paramname"><em>chain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>wallet_files</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load wallet databases. </p>
+
+<p>Definition at line <a class="el" href="wallet_2init_8cpp_source.html#l00206">206</a> of file <a class="el" href="wallet_2init_8cpp_source.html">init.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h_aae72a893f3fdc7a8287e9108a1a69915_cgraph.svg" width="1100" height="1855"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -416,12 +506,133 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00053">53</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00054">54</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h_a44f59518880060eb908ce080cbb39377_icgraph.svg" width="622" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h_a44f59518880060eb908ce080cbb39377_icgraph.svg" width="594" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a300bbcc1bda3145938746044df06a11e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StartWallets </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_scheduler.html">CScheduler</a> &amp;&#160;</td>
+          <td class="paramname"><em>scheduler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Complete startup of wallets. </p>
+
+<p>Definition at line <a class="el" href="wallet_2init_8cpp_source.html#l00219">219</a> of file <a class="el" href="wallet_2init_8cpp_source.html">init.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h_a300bbcc1bda3145938746044df06a11e_cgraph.svg" width="1080" height="414"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af9773d88f37a891c7f243716e04f1934"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StopWallets </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stop all wallets. Wallets will be flushed first. </p>
+
+<p>Definition at line <a class="el" href="wallet_2init_8cpp_source.html#l00236">236</a> of file <a class="el" href="wallet_2init_8cpp_source.html">init.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h_af9773d88f37a891c7f243716e04f1934_cgraph.svg" width="244" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9c16fc8585f762f0c27fea2fa29dc405"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnloadWallets </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Close all wallets. </p>
+
+<p>Definition at line <a class="el" href="wallet_2init_8cpp_source.html#l00243">243</a> of file <a class="el" href="wallet_2init_8cpp_source.html">init.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h_a9c16fc8585f762f0c27fea2fa29dc405_cgraph.svg" width="280" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7058e0a66c69a84d56417e0489fdce86"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VerifyWallets </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classinterfaces_1_1_chain.html">interfaces::Chain</a> &amp;&#160;</td>
+          <td class="paramname"><em>chain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>wallet_files</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Responsible for reading and validating the -wallet arguments and verifying the wallet database. </p>
+
+<p>Definition at line <a class="el" href="wallet_2init_8cpp_source.html#l00148">148</a> of file <a class="el" href="wallet_2init_8cpp_source.html">init.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h_a7058e0a66c69a84d56417e0489fdce86_cgraph.svg" width="1328" height="1796"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -440,7 +651,7 @@ Here is the caller graph for this function:</div>
 
 <p>Default for -addresstype. </p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00098">98</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00122">122</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -456,7 +667,7 @@ Here is the caller graph for this function:</div>
 
 <p>Default for -changetype. </p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00101">101</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00125">125</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -472,14 +683,14 @@ Here is the caller graph for this function:</div>
 
 <p>-paytxfee default </p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00045">45</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00066">66</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:21 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:48 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

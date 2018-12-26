@@ -107,15 +107,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab05e8eab2ab44a1897030dff11ec2ef5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_descriptor.html#ab05e8eab2ab44a1897030dff11ec2ef5">IsRange</a> () const =0</td></tr>
 <tr class="memdesc:ab05e8eab2ab44a1897030dff11ec2ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the expansion of this descriptor depends on the position.  <a href="#ab05e8eab2ab44a1897030dff11ec2ef5">More...</a><br /></td></tr>
 <tr class="separator:ab05e8eab2ab44a1897030dff11ec2ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab43faf5fd815842cb1f4b2a4c59dcaed"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_descriptor.html#ab43faf5fd815842cb1f4b2a4c59dcaed">IsSolvable</a> () const =0</td></tr>
+<tr class="memdesc:ab43faf5fd815842cb1f4b2a4c59dcaed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this descriptor has all information about signing ignoring lack of private keys.  <a href="#ab43faf5fd815842cb1f4b2a4c59dcaed">More...</a><br /></td></tr>
+<tr class="separator:ab43faf5fd815842cb1f4b2a4c59dcaed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a332e008e4bc8d80f5ced59f564b22e79"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_descriptor.html#a332e008e4bc8d80f5ced59f564b22e79">ToString</a> () const =0</td></tr>
 <tr class="memdesc:a332e008e4bc8d80f5ced59f564b22e79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the descriptor back to a string, undoing parsing.  <a href="#a332e008e4bc8d80f5ced59f564b22e79">More...</a><br /></td></tr>
 <tr class="separator:a332e008e4bc8d80f5ced59f564b22e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adacfef9598ba742cdb2fdef545b336d9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_descriptor.html#adacfef9598ba742cdb2fdef545b336d9">ToPrivateString</a> (const <a class="el" href="class_signing_provider.html">SigningProvider</a> &amp;provider, std::string &amp;out) const =0</td></tr>
 <tr class="memdesc:adacfef9598ba742cdb2fdef545b336d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the descriptor to a private string.  <a href="#adacfef9598ba742cdb2fdef545b336d9">More...</a><br /></td></tr>
 <tr class="separator:adacfef9598ba742cdb2fdef545b336d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99192b5e967720cb1c624142cad71b96"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_descriptor.html#a99192b5e967720cb1c624142cad71b96">Expand</a> (int pos, const <a class="el" href="class_signing_provider.html">SigningProvider</a> &amp;provider, std::vector&lt; <a class="el" href="class_c_script.html">CScript</a> &gt; &amp;output_scripts, <a class="el" href="struct_flat_signing_provider.html">FlatSigningProvider</a> &amp;out) const =0</td></tr>
-<tr class="memdesc:a99192b5e967720cb1c624142cad71b96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expand a descriptor at a specified position.  <a href="#a99192b5e967720cb1c624142cad71b96">More...</a><br /></td></tr>
-<tr class="separator:a99192b5e967720cb1c624142cad71b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25c23845f9f3178c5de4aa404222ff51"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_descriptor.html#a25c23845f9f3178c5de4aa404222ff51">Expand</a> (int pos, const <a class="el" href="class_signing_provider.html">SigningProvider</a> &amp;provider, std::vector&lt; <a class="el" href="class_c_script.html">CScript</a> &gt; &amp;output_scripts, <a class="el" href="struct_flat_signing_provider.html">FlatSigningProvider</a> &amp;out, std::vector&lt; unsigned char &gt; *cache=nullptr) const =0</td></tr>
+<tr class="memdesc:a25c23845f9f3178c5de4aa404222ff51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expand a descriptor at a specified position.  <a href="#a25c23845f9f3178c5de4aa404222ff51">More...</a><br /></td></tr>
+<tr class="separator:a25c23845f9f3178c5de4aa404222ff51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaba7b6d30c0aed417a342568dd302af"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_descriptor.html#acaba7b6d30c0aed417a342568dd302af">ExpandFromCache</a> (int pos, const std::vector&lt; unsigned char &gt; &amp;cache, std::vector&lt; <a class="el" href="class_c_script.html">CScript</a> &gt; &amp;output_scripts, <a class="el" href="struct_flat_signing_provider.html">FlatSigningProvider</a> &amp;out) const =0</td></tr>
+<tr class="memdesc:acaba7b6d30c0aed417a342568dd302af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expand a descriptor at a specified position using cached expansion data.  <a href="#acaba7b6d30c0aed417a342568dd302af">More...</a><br /></td></tr>
+<tr class="separator:acaba7b6d30c0aed417a342568dd302af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface for parsed descriptor objects. </p>
@@ -146,7 +152,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a99192b5e967720cb1c624142cad71b96"></a>
+<a class="anchor" id="a25c23845f9f3178c5de4aa404222ff51"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -175,7 +181,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="struct_flat_signing_provider.html">FlatSigningProvider</a> &amp;&#160;</td>
-          <td class="paramname"><em>out</em>&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; unsigned char &gt; *&#160;</td>
+          <td class="paramname"><em>cache</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -191,7 +203,56 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Expand a descriptor at a specified position. </p>
-<p>pos: the position at which to expand the descriptor. If <a class="el" href="struct_descriptor.html#ab05e8eab2ab44a1897030dff11ec2ef5" title="Whether the expansion of this descriptor depends on the position. ">IsRange()</a> is false, this is ignored. provider: the provider to query for private keys in case of hardened derivation. output_script: the expanded scriptPubKeys will be put here. out: scripts and public keys necessary for solving the expanded scriptPubKeys will be put here (may be equal to provider). </p>
+<p>pos: the position at which to expand the descriptor. If <a class="el" href="struct_descriptor.html#ab05e8eab2ab44a1897030dff11ec2ef5" title="Whether the expansion of this descriptor depends on the position. ">IsRange()</a> is false, this is ignored. provider: the provider to query for private keys in case of hardened derivation. output_script: the expanded scriptPubKeys will be put here. out: scripts and public keys necessary for solving the expanded scriptPubKeys will be put here (may be equal to provider). cache: vector which will be overwritten with cache data necessary to-evaluate the descriptor at this point without access to private keys. </p>
+
+</div>
+</div>
+<a class="anchor" id="acaba7b6d30c0aed417a342568dd302af"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Descriptor::ExpandFromCache </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; unsigned char &gt; &amp;&#160;</td>
+          <td class="paramname"><em>cache</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_c_script.html">CScript</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>output_scripts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_flat_signing_provider.html">FlatSigningProvider</a> &amp;&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Expand a descriptor at a specified position using cached expansion data. </p>
+<p>pos: the position at which to expand the descriptor. If <a class="el" href="struct_descriptor.html#ab05e8eab2ab44a1897030dff11ec2ef5" title="Whether the expansion of this descriptor depends on the position. ">IsRange()</a> is false, this is ignored. cache: vector from which cached expansion data will be read. output_script: the expanded scriptPubKeys will be put here. out: scripts and public keys necessary for solving the expanded scriptPubKeys will be put here (may be equal to provider). </p>
 
 </div>
 </div>
@@ -217,6 +278,32 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Whether the expansion of this descriptor depends on the position. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab43faf5fd815842cb1f4b2a4c59dcaed"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Descriptor::IsSolvable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether this descriptor has all information about signing ignoring lack of private keys. </p>
+<p>This is true for all descriptors except ones that use <code>raw</code> or <code>addr</code> constructions. </p>
 
 </div>
 </div>
@@ -288,7 +375,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:24 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:54 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -2,7 +2,6 @@ var searchData=
 [
   ['ch',['Ch',['../hash__impl_8h.html#ab0a0d1ad13c7e4d3cb38c89f7127c85a',1,'hash_impl.h']]],
   ['check',['CHECK',['../secp256k1_2src_2util_8h.html#aba1590ff86288c886c47dc8a27b30467',1,'util.h']]],
-  ['check_5fwallet',['CHECK_WALLET',['../node_8cpp.html#adeb978d20d7a18bfc5dd493cc83f7a99',1,'node.cpp']]],
   ['clearexpect',['clearExpect',['../univalue__read_8cpp.html#a15320e584ffabea52cb6c7336ad41a7b',1,'univalue_read.cpp']]],
   ['client_5fversion_5fbuild',['CLIENT_VERSION_BUILD',['../bitcoin-config_8h.html#a8a7e28feadfc7a119b9f297be002fd64',1,'bitcoin-config.h']]],
   ['client_5fversion_5fis_5frelease',['CLIENT_VERSION_IS_RELEASE',['../bitcoin-config_8h.html#a025f9205720e2c4c155eefb01fd150ba',1,'bitcoin-config.h']]],

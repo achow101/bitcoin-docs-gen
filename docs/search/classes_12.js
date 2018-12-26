@@ -22,6 +22,8 @@ var searchData=
   ['secp256k1_5fsha256_5ft',['secp256k1_sha256_t',['../structsecp256k1__sha256__t.html',1,'']]],
   ['secp256k1context',['Secp256k1Context',['../classorg_1_1bitcoin_1_1_secp256k1_context.html',1,'org::bitcoin']]],
   ['secp256k1init',['Secp256k1Init',['../class_secp256k1_init.html',1,'']]],
+  ['section',['Section',['../struct_section.html',1,'']]],
+  ['sections',['Sections',['../struct_sections.html',1,'']]],
   ['secure_5fallocator',['secure_allocator',['../structsecure__allocator.html',1,'']]],
   ['seedspec6',['SeedSpec6',['../struct_seed_spec6.html',1,'']]],
   ['sendcoinsdialog',['SendCoinsDialog',['../class_send_coins_dialog.html',1,'']]],

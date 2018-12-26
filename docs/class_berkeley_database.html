@@ -118,6 +118,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2b0e32e1f4c1530057a3bccac9fd017c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_berkeley_database.html#a2b0e32e1f4c1530057a3bccac9fd017c">BerkeleyDatabase</a> (const fs::path &amp;wallet_path, bool mock=false)</td></tr>
 <tr class="memdesc:a2b0e32e1f4c1530057a3bccac9fd017c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create DB handle to real database.  <a href="#a2b0e32e1f4c1530057a3bccac9fd017c">More...</a><br /></td></tr>
 <tr class="separator:a2b0e32e1f4c1530057a3bccac9fd017c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac33f520bd3b62966b744b9f9138aabd8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_berkeley_database.html#ac33f520bd3b62966b744b9f9138aabd8">~BerkeleyDatabase</a> ()</td></tr>
+<tr class="separator:ac33f520bd3b62966b744b9f9138aabd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02181a0f0943c68156d94ce658989849"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_berkeley_database.html#a02181a0f0943c68156d94ce658989849">Rewrite</a> (const char *pszSkip=nullptr)</td></tr>
 <tr class="memdesc:a02181a0f0943c68156d94ce658989849"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rewrite the entire database on disk, with the exception of key pszSkip if non-zero.  <a href="#a02181a0f0943c68156d94ce658989849">More...</a><br /></td></tr>
 <tr class="separator:a02181a0f0943c68156d94ce658989849"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,6 +131,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a103225e3af28d95103942d46cd819d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a313cd767c211da5738bdb5578cd59af7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_berkeley_database.html#a313cd767c211da5738bdb5578cd59af7">IncrementUpdateCounter</a> ()</td></tr>
 <tr class="separator:a313cd767c211da5738bdb5578cd59af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abda71c652ce8bbb4ac0edf7d0b28f96d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_berkeley_database.html#abda71c652ce8bbb4ac0edf7d0b28f96d">ReloadDbEnv</a> ()</td></tr>
+<tr class="separator:abda71c652ce8bbb4ac0edf7d0b28f96d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -152,6 +156,9 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aa510ff6aab35547fa2f16b86c89c8b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77fe2c728e4f7ab60f974c4e71b76bca"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_berkeley_database.html#a77fe2c728e4f7ab60f974c4e71b76bca">nLastWalletUpdate</a></td></tr>
 <tr class="separator:a77fe2c728e4f7ab60f974c4e71b76bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adacfe75b91569d8a1ca093fa162e4e59"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; Db &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_berkeley_database.html#adacfe75b91569d8a1ca093fa162e4e59">m_db</a></td></tr>
+<tr class="memdesc:adacfe75b91569d8a1ca093fa162e4e59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Database pointer.  <a href="#adacfe75b91569d8a1ca093fa162e4e59">More...</a><br /></td></tr>
+<tr class="separator:adacfe75b91569d8a1ca093fa162e4e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -176,7 +183,7 @@ Friends</h2></td></tr>
 <div class="textblock"><p>An instance of this class represents one database. </p>
 <p>For BerkeleyDB this is just a (env, strFile) tuple. </p>
 
-<p>Definition at line <a class="el" href="db_8h_source.html#l00095">95</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
+<p>Definition at line <a class="el" href="db_8h_source.html#l00110">110</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="abe1d8986a264d895e3776321f1ebd0f9"></a>
 <div class="memitem">
@@ -201,7 +208,7 @@ Friends</h2></td></tr>
 
 <p>Create dummy DB handle. </p>
 
-<p>Definition at line <a class="el" href="db_8h_source.html#l00100">100</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
+<p>Definition at line <a class="el" href="db_8h_source.html#l00115">115</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
 
 </div>
 </div>
@@ -239,7 +246,7 @@ Friends</h2></td></tr>
 
 <p>Create DB handle to real database. </p>
 
-<p>Definition at line <a class="el" href="db_8h_source.html#l00105">105</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
+<p>Definition at line <a class="el" href="db_8h_source.html#l00120">120</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -247,6 +254,31 @@ Here is the call graph for this function:</div>
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_database_a2b0e32e1f4c1530057a3bccac9fd017c_cgraph.svg" width="420" height="235"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="ac33f520bd3b62966b744b9f9138aabd8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BerkeleyDatabase::~BerkeleyDatabase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="db_8h_source.html#l00133">133</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
 
 </div>
 </div>
@@ -267,12 +299,13 @@ Here is the call graph for this function:</div>
 
 <p>Back up the entire database to a file. </p>
 
-<p>Definition at line <a class="el" href="db_8cpp_source.html#l00754">754</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
+<p>Definition at line <a class="el" href="db_8cpp_source.html#l00797">797</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_database_a1ed1a615fe31ee72e30087a0707b4461_cgraph.svg" width="412" height="235"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_database_a1ed1a615fe31ee72e30087a0707b4461_cgraph.svg" width="594" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -302,12 +335,13 @@ Here is the call graph for this function:</div>
 
 <p>Return object for accessing database at specified path. </p>
 
-<p>Definition at line <a class="el" href="db_8h_source.html#l00117">117</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
+<p>Definition at line <a class="el" href="db_8h_source.html#l00141">141</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_database_aa8261d4a4224a6e6d8ad358549379788_icgraph.svg" width="872" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_database_aa8261d4a4224a6e6d8ad358549379788_icgraph.svg" width="843" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -336,12 +370,13 @@ Here is the caller graph for this function:</div>
 
 <p>Return object for accessing dummy database with no read/write capabilities. </p>
 
-<p>Definition at line <a class="el" href="db_8h_source.html#l00123">123</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
+<p>Definition at line <a class="el" href="db_8h_source.html#l00147">147</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_database_a66c0f9ed9325cb69e9902fb15ceb509a_icgraph.svg" width="871" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_database_a66c0f9ed9325cb69e9902fb15ceb509a_icgraph.svg" width="840" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -370,12 +405,13 @@ Here is the caller graph for this function:</div>
 
 <p>Return object for accessing temporary in-memory database. </p>
 
-<p>Definition at line <a class="el" href="db_8h_source.html#l00129">129</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
+<p>Definition at line <a class="el" href="db_8h_source.html#l00153">153</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_database_acd50f7e44ad659b6c3a3dc94c8155859_cgraph.svg" width="1586" height="626"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_database_acd50f7e44ad659b6c3a3dc94c8155859_cgraph.svg" width="1586" height="667"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -404,12 +440,13 @@ Here is the caller graph for this function:</div>
 
 <p>Make sure all changes are flushed to disk. </p>
 
-<p>Definition at line <a class="el" href="db_8cpp_source.html#l00795">795</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
+<p>Definition at line <a class="el" href="db_8cpp_source.html#l00838">838</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_database_a103225e3af28d95103942d46cd819d4d_cgraph.svg" width="1470" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_database_a103225e3af28d95103942d46cd819d4d_cgraph.svg" width="1470" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -428,7 +465,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="db_8cpp_source.html#l00538">538</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
+<p>Definition at line <a class="el" href="db_8cpp_source.html#l00554">554</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
 
 </div>
 </div>
@@ -456,12 +493,38 @@ Here is the call graph for this function:</div>
 <p>Return whether this database handle is a dummy for testing. </p>
 <p>Only to be used at a low level, application should ideally not care about this. </p>
 
-<p>Definition at line <a class="el" href="db_8h_source.html#l00162">162</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
+<p>Definition at line <a class="el" href="db_8h_source.html#l00191">191</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_database_a613ff711faa19bc0a970fb598ab4f886_icgraph.svg" width="1216" height="146"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_database_a613ff711faa19bc0a970fb598ab4f886_icgraph.svg" width="970" height="146"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abda71c652ce8bbb4ac0edf7d0b28f96d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BerkeleyDatabase::ReloadDbEnv </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="db_8cpp_source.html#l00857">857</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_database_abda71c652ce8bbb4ac0edf7d0b28f96d_cgraph.svg" width="1274" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -483,12 +546,13 @@ Here is the caller graph for this function:</div>
 
 <p>Rewrite the entire database on disk, with the exception of key pszSkip if non-zero. </p>
 
-<p>Definition at line <a class="el" href="db_8cpp_source.html#l00749">749</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
+<p>Definition at line <a class="el" href="db_8cpp_source.html#l00792">792</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_database_a02181a0f0943c68156d94ce658989849_cgraph.svg" width="1555" height="587"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_database_a02181a0f0943c68156d94ce658989849_cgraph.svg" width="1555" height="587"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -513,7 +577,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="db_8h_source.html#l00097">97</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
+<p>Definition at line <a class="el" href="db_8h_source.html#l00112">112</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
 
 </div>
 </div>
@@ -538,7 +602,24 @@ Here is the call graph for this function:</div>
 
 <p>BerkeleyDB specific. </p>
 
-<p>Definition at line <a class="el" href="db_8h_source.html#l00155">155</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
+<p>Definition at line <a class="el" href="db_8h_source.html#l00184">184</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adacfe75b91569d8a1ca093fa162e4e59"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;Db&gt; BerkeleyDatabase::m_db</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Database pointer. </p>
+<p>This is initialized lazily and reset during flushes, so it can be null. </p>
+
+<p>Definition at line <a class="el" href="db_8h_source.html#l00180">180</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
 
 </div>
 </div>
@@ -552,7 +633,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="db_8h_source.html#l00150">150</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
+<p>Definition at line <a class="el" href="db_8h_source.html#l00176">176</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
 
 </div>
 </div>
@@ -566,7 +647,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="db_8h_source.html#l00149">149</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
+<p>Definition at line <a class="el" href="db_8h_source.html#l00175">175</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
 
 </div>
 </div>
@@ -580,7 +661,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="db_8h_source.html#l00151">151</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
+<p>Definition at line <a class="el" href="db_8h_source.html#l00177">177</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
 
 </div>
 </div>
@@ -594,7 +675,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="db_8h_source.html#l00148">148</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
+<p>Definition at line <a class="el" href="db_8h_source.html#l00174">174</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
 
 </div>
 </div>
@@ -616,7 +697,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="db_8h_source.html#l00156">156</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
+<p>Definition at line <a class="el" href="db_8h_source.html#l00185">185</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
 
 </div>
 </div>
@@ -627,7 +708,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:22 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:52 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

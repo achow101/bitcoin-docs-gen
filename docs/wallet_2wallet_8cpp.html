@@ -90,7 +90,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -99,11 +98,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="wallet_2wallet_8h_source.html">wallet/wallet.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="checkpoints_8h_source.html">checkpoints.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="chain_8h_source.html">chain.h</a>&gt;</code><br />
+<code>#include &lt;chain.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="coincontrol_8h_source.html">wallet/coincontrol.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="consensus_8h_source.html">consensus/consensus.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="consensus_2validation_8h_source.html">consensus/validation.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="fs_8h_source.html">fs.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="interfaces_2chain_8h_source.html">interfaces/chain.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="key_8h_source.html">key.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="key__io_8h_source.html">key_io.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="keystore_8h_source.html">keystore.h</a>&gt;</code><br />
@@ -114,13 +114,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="rbf_8h_source.html">policy/rbf.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="block_8h_source.html">primitives/block.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="transaction_8h_source.html">primitives/transaction.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="descriptor_8h_source.html">script/descriptor.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="script_8h_source.html">script/script.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="shutdown_8h_source.html">shutdown.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="timedata_8h_source.html">timedata.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="txmempool_8h_source.html">txmempool.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="utilmoneystr_8h_source.html">utilmoneystr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="moneystr_8h_source.html">util/moneystr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="wallet_2fees_8h_source.html">wallet/fees.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="walletutil_8h_source.html">wallet/walletutil.h</a>&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;assert.h&gt;</code><br />
 <code>#include &lt;future&gt;</code><br />
@@ -128,17 +128,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for wallet.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8cpp__incl.svg" width="3479" height="575"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8cpp__incl.svg" width="4215" height="575"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="wallet_2wallet_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_affected_keys_visitor.html">CAffectedKeysVisitor</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class to identify which pubkeys a script and a keystore have in common.  <a href="class_c_affected_keys_visitor.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ad523200398c9a7518de131353d4a6ac5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet_2wallet_8cpp.html#ad523200398c9a7518de131353d4a6ac5">AddWallet</a> (const std::shared_ptr&lt; <a class="el" href="class_c_wallet.html">CWallet</a> &gt; &amp;wallet)</td></tr>
@@ -151,6 +146,8 @@ Functions</h2></td></tr>
 <tr class="separator:ab8562a8762a7793fdf5b8ae9465e1b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59fb74ca7a0b34f8f86ec58464a72f8a"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_c_wallet.html">CWallet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet_2wallet_8cpp.html#a59fb74ca7a0b34f8f86ec58464a72f8a">GetWallet</a> (const std::string &amp;<a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)</td></tr>
 <tr class="separator:a59fb74ca7a0b34f8f86ec58464a72f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb65e7716d90a3e44022b0f9fce577d2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_c_key_i_d.html">CKeyID</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gacb65e7716d90a3e44022b0f9fce577d2">GetAffectedKeys</a> (const <a class="el" href="class_c_script.html">CScript</a> &amp;spk, const <a class="el" href="class_signing_provider.html">SigningProvider</a> &amp;provider)</td></tr>
+<tr class="separator:gacb65e7716d90a3e44022b0f9fce577d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0fd4c6f23ea3ccac9050ef55ad5f90b0"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga0fd4c6f23ea3ccac9050ef55ad5f90b0">CalculateMaximumSignedTxSize</a> (const <a class="el" href="class_c_transaction.html">CTransaction</a> &amp;tx, const <a class="el" href="class_c_wallet.html">CWallet</a> *wallet, bool use_max_sig)</td></tr>
 <tr class="separator:ga0fd4c6f23ea3ccac9050ef55ad5f90b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga55c494ecfeaf5cdf44483c1eaa45b2fb"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga55c494ecfeaf5cdf44483c1eaa45b2fb">CalculateMaximumSignedTxSize</a> (const <a class="el" href="class_c_transaction.html">CTransaction</a> &amp;tx, const <a class="el" href="class_c_wallet.html">CWallet</a> *wallet, const std::vector&lt; <a class="el" href="class_c_tx_out.html">CTxOut</a> &gt; &amp;txouts, bool use_max_sig)</td></tr>
@@ -178,12 +175,13 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00043">43</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00044">44</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8cpp_ad523200398c9a7518de131353d4a6ac5_icgraph.svg" width="595" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8cpp_ad523200398c9a7518de131353d4a6ac5_icgraph.svg" width="567" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -203,7 +201,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00075">75</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00076">76</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -215,7 +213,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8cpp_a59fb74ca7a0b34f8f86ec58464a72f8a_icgraph.svg" width="1076" height="1160"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8cpp_a59fb74ca7a0b34f8f86ec58464a72f8a_icgraph.svg" width="1076" height="1112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -234,14 +233,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00069">69</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8cpp_ab8562a8762a7793fdf5b8ae9465e1b85_icgraph.svg" width="1083" height="1488"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00070">70</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -258,12 +250,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00063">63</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00064">64</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8cpp_a9bc62b5b6dea0a67f248bc07019a851f_icgraph.svg" width="1043" height="1126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8cpp_a9bc62b5b6dea0a67f248bc07019a851f_icgraph.svg" width="1043" height="1075"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -283,12 +276,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00053">53</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00054">54</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8cpp_a44f59518880060eb908ce080cbb39377_icgraph.svg" width="622" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8cpp_a44f59518880060eb908ce080cbb39377_icgraph.svg" width="594" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -305,14 +299,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00093">93</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00094">94</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:21 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:48 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -156,6 +156,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abdd315e9a3685f16031eb951acb7c8b5 inherit pub_methods_class_c_net_addr"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3e44dfd064d9d8da1cb48cdcb7dd231 inherit pub_methods_class_c_net_addr"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_net_addr.html#aa3e44dfd064d9d8da1cb48cdcb7dd231">SetSpecial</a> (const std::string &amp;strName)</td></tr>
 <tr class="separator:aa3e44dfd064d9d8da1cb48cdcb7dd231 inherit pub_methods_class_c_net_addr"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeca11849adfe4478e86197511be0d4e7 inherit pub_methods_class_c_net_addr"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_net_addr.html#aeca11849adfe4478e86197511be0d4e7">IsBindAny</a> () const </td></tr>
+<tr class="separator:aeca11849adfe4478e86197511be0d4e7 inherit pub_methods_class_c_net_addr"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16ff4478f02f06f5a9a038a24d5da2f9 inherit pub_methods_class_c_net_addr"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_net_addr.html#a16ff4478f02f06f5a9a038a24d5da2f9">IsIPv4</a> () const </td></tr>
 <tr class="separator:a16ff4478f02f06f5a9a038a24d5da2f9 inherit pub_methods_class_c_net_addr"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0edb022cd6a186de8099799415409d57 inherit pub_methods_class_c_net_addr"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_net_addr.html#a0edb022cd6a186de8099799415409d57">IsIPv6</a> () const </td></tr>
@@ -236,7 +238,7 @@ Protected Attributes</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_c_net_addr"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_c_net_addr')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_c_net_addr.html">CNetAddr</a></td></tr>
 <tr class="memitem:acff7ce68f33f8dfbfe6d79d80928d417 inherit pro_attribs_class_c_net_addr"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_net_addr.html#acff7ce68f33f8dfbfe6d79d80928d417">ip</a> [16]</td></tr>
 <tr class="separator:acff7ce68f33f8dfbfe6d79d80928d417 inherit pro_attribs_class_c_net_addr"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01767e0085ad15e8a547c3041a1b9632 inherit pro_attribs_class_c_net_addr"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_net_addr.html#a01767e0085ad15e8a547c3041a1b9632">scopeId</a></td></tr>
+<tr class="memitem:a01767e0085ad15e8a547c3041a1b9632 inherit pro_attribs_class_c_net_addr"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_net_addr.html#a01767e0085ad15e8a547c3041a1b9632">scopeId</a> {0}</td></tr>
 <tr class="separator:a01767e0085ad15e8a547c3041a1b9632 inherit pro_attribs_class_c_net_addr"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -251,7 +253,7 @@ Friends</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A combination of a network address (<a class="el" href="class_c_net_addr.html" title="IP address (IPv6, or IPv4 using mapped IPv6 range (::FFFF:0:0/96)) ">CNetAddr</a>) and a (TCP) port. </p>
 
-<p>Definition at line <a class="el" href="netaddress_8h_source.html#l00142">142</a> of file <a class="el" href="netaddress_8h_source.html">netaddress.h</a>.</p>
+<p>Definition at line <a class="el" href="netaddress_8h_source.html#l00143">143</a> of file <a class="el" href="netaddress_8h_source.html">netaddress.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a3003da1c50f2135123ebb3109340b9b2"></a>
 <div class="memitem">
@@ -266,12 +268,13 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00465">465</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
+<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00474">474</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_service_a3003da1c50f2135123ebb3109340b9b2_icgraph.svg" width="1126" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_service_a3003da1c50f2135123ebb3109340b9b2_icgraph.svg" width="1368" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -301,7 +304,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00469">469</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
+<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00478">478</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
 
 </div>
 </div>
@@ -329,7 +332,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00473">473</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
+<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00482">482</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
 
 </div>
 </div>
@@ -355,7 +358,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00481">481</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
+<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00490">490</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
 
 </div>
 </div>
@@ -383,7 +386,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00477">477</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
+<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00486">486</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
 
 </div>
 </div>
@@ -409,7 +412,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00486">486</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
+<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00495">495</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
 
 </div>
 </div>
@@ -427,7 +430,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00550">550</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
+<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00559">559</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -439,7 +442,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_service_a74d6e1526688229cb424584c29046e9e_icgraph.svg" width="930" height="696"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_service_a74d6e1526688229cb424584c29046e9e_icgraph.svg" width="930" height="696"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -458,12 +462,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00505">505</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
+<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00514">514</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_service_a49df6ecaf59be814632c4d7755f26637_icgraph.svg" width="2496" height="618"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_service_a49df6ecaf59be814632c4d7755f26637_icgraph.svg" width="2496" height="582"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -493,7 +498,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00520">520</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
+<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00529">529</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -505,7 +510,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_service_ab0f791c174511056236119cc1580faeb_icgraph.svg" width="2824" height="1206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_service_ab0f791c174511056236119cc1580faeb_icgraph.svg" width="2811" height="1276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -545,12 +551,13 @@ template&lt;typename Stream , typename Operation &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="netaddress_8h_source.html#l00169">169</a> of file <a class="el" href="netaddress_8h_source.html">netaddress.h</a>.</p>
+<p>Definition at line <a class="el" href="netaddress_8h_source.html#l00170">170</a> of file <a class="el" href="netaddress_8h_source.html">netaddress.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_service_a83cc6fb0b19d0669fbdd7370937632bb_cgraph.svg" width="1572" height="747"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_service_a83cc6fb0b19d0669fbdd7370937632bb_cgraph.svg" width="1572" height="747"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -570,7 +577,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00491">491</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
+<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00500">500</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -582,7 +589,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_service_a77782219f5d85f326b4c089cb2636e6f_icgraph.svg" width="935" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_service_a77782219f5d85f326b4c089cb2636e6f_icgraph.svg" width="1178" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -601,19 +609,21 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00574">574</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
+<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00583">583</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_service_a336f9848fe9364e260c76499be0351a5_cgraph.svg" width="1387" height="531"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_service_a336f9848fe9364e260c76499be0351a5_cgraph.svg" width="1387" height="531"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_service_a336f9848fe9364e260c76499be0351a5_icgraph.svg" width="2571" height="870"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_service_a336f9848fe9364e260c76499be0351a5_icgraph.svg" width="2527" height="870"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -632,19 +642,21 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00565">565</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
+<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00574">574</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_service_a39b82301356b0dfc2a92befc727b77be_cgraph.svg" width="1202" height="531"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_service_a39b82301356b0dfc2a92befc727b77be_cgraph.svg" width="1202" height="531"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_service_a39b82301356b0dfc2a92befc727b77be_icgraph.svg" width="2848" height="1240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_service_a39b82301356b0dfc2a92befc727b77be_icgraph.svg" width="2823" height="1198"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -663,12 +675,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00560">560</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
+<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00569">569</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_service_a1e0f0b98239a9097044695a9e439bb46_icgraph.svg" width="2587" height="1311"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_service_a1e0f0b98239a9097044695a9e439bb46_icgraph.svg" width="2543" height="1194"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -707,7 +720,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="netaddress_8h_source.html#l00156">156</a> of file <a class="el" href="netaddress_8h_source.html">netaddress.h</a>.</p>
+<p>Definition at line <a class="el" href="netaddress_8h_source.html#l00157">157</a> of file <a class="el" href="netaddress_8h_source.html">netaddress.h</a>.</p>
 
 </div>
 </div>
@@ -743,7 +756,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00515">515</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
+<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00524">524</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
 
 </div>
 </div>
@@ -779,7 +792,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00510">510</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
+<p>Definition at line <a class="el" href="netaddress_8cpp_source.html#l00519">519</a> of file <a class="el" href="netaddress_8cpp_source.html">netaddress.cpp</a>.</p>
 
 </div>
 </div>
@@ -794,7 +807,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="netaddress_8h_source.html#l00166">166</a> of file <a class="el" href="netaddress_8h_source.html">netaddress.h</a>.</p>
+<p>Definition at line <a class="el" href="netaddress_8h_source.html#l00167">167</a> of file <a class="el" href="netaddress_8h_source.html">netaddress.h</a>.</p>
 
 </div>
 </div>
@@ -816,7 +829,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="netaddress_8h_source.html#l00145">145</a> of file <a class="el" href="netaddress_8h_source.html">netaddress.h</a>.</p>
+<p>Definition at line <a class="el" href="netaddress_8h_source.html#l00146">146</a> of file <a class="el" href="netaddress_8h_source.html">netaddress.h</a>.</p>
 
 </div>
 </div>
@@ -827,7 +840,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:23 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:54 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

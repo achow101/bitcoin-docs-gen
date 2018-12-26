@@ -90,7 +90,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">util.h File Reference</div>  </div>
 </div><!--header-->
@@ -98,22 +100,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#include &lt;<a class="el" href="pubkey_8h_source.html">pubkey.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="standard_8h_source.html">script/standard.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="univalue_8h_source.html">univalue.h</a>&gt;</code><br />
-<code>#include &lt;boost/variant/static_visitor.hpp&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for util.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h__incl.svg" width="2504" height="650"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h__incl.svg" width="2551" height="635"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h__dep__incl.svg" width="1446" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h__dep__incl.svg" width="1820" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="rpc_2util_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_p_c_arg.html">RPCArg</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_c_help_man.html">RPCHelpMan</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ac18ea86a874bf7841b716eca2b467746"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_pub_key.html">CPubKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpc_2util_8h.html#ac18ea86a874bf7841b716eca2b467746">HexToPubKey</a> (const std::string &amp;hex_in)</td></tr>
@@ -124,6 +134,12 @@ Functions</h2></td></tr>
 <tr class="separator:a804d6824bed98b30dc92d53b40d776c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af91efe7877ce4e77064e04d13888ae4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_uni_value.html">UniValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpc_2util_8h.html#af91efe7877ce4e77064e04d13888ae4f">DescribeAddress</a> (const <a class="el" href="standard_8h.html#ae9ce1f2e14383eb495b964486ac7273c">CTxDestination</a> &amp;dest)</td></tr>
 <tr class="separator:af91efe7877ce4e77064e04d13888ae4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:acf4b7d928dcde6f56e7d3e4783132d6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_init_interfaces.html">InitInterfaces</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpc_2util_8h.html#acf4b7d928dcde6f56e7d3e4783132d6e">g_rpc_interfaces</a></td></tr>
+<tr class="memdesc:acf4b7d928dcde6f56e7d3e4783132d6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointers to interfaces that need to be accessible from RPC methods.  <a href="#acf4b7d928dcde6f56e7d3e4783132d6e">More...</a><br /></td></tr>
+<tr class="separator:acf4b7d928dcde6f56e7d3e4783132d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ad97eb14e556166df34392ec8eb8d3167"></a>
@@ -150,19 +166,21 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpc_2util_8cpp_source.html#l00026">26</a> of file <a class="el" href="rpc_2util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00028">28</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_ad97eb14e556166df34392ec8eb8d3167_cgraph.svg" width="1671" height="1558"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_ad97eb14e556166df34392ec8eb8d3167_cgraph.svg" width="1671" height="1558"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_ad97eb14e556166df34392ec8eb8d3167_icgraph.svg" width="846" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_ad97eb14e556166df34392ec8eb8d3167_icgraph.svg" width="846" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -192,19 +210,21 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpc_2util_8cpp_source.html#l00047">47</a> of file <a class="el" href="rpc_2util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00049">49</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_a804d6824bed98b30dc92d53b40d776c9_cgraph.svg" width="1972" height="1487"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_a804d6824bed98b30dc92d53b40d776c9_cgraph.svg" width="1972" height="1487"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_a804d6824bed98b30dc92d53b40d776c9_icgraph.svg" width="935" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_a804d6824bed98b30dc92d53b40d776c9_icgraph.svg" width="935" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -224,7 +244,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpc_2util_8cpp_source.html#l00125">125</a> of file <a class="el" href="rpc_2util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00127">127</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -256,28 +276,48 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpc_2util_8cpp_source.html#l00013">13</a> of file <a class="el" href="rpc_2util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00015">15</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_ac18ea86a874bf7841b716eca2b467746_cgraph.svg" width="1888" height="1379"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_ac18ea86a874bf7841b716eca2b467746_cgraph.svg" width="1612" height="1624"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_ac18ea86a874bf7841b716eca2b467746_icgraph.svg" width="842" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_ac18ea86a874bf7841b716eca2b467746_icgraph.svg" width="842" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="acf4b7d928dcde6f56e7d3e4783132d6e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_init_interfaces.html">InitInterfaces</a>* g_rpc_interfaces</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pointers to interfaces that need to be accessible from RPC methods. </p>
+<p>Due to limitations of the RPC framework, there's currently no direct way to pass in state to RPC method implementations. </p>
+
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00012">12</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:21 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:49 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

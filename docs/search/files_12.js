@@ -11,6 +11,8 @@ var searchData=
   ['threadinterrupt_2ecpp',['threadinterrupt.cpp',['../threadinterrupt_8cpp.html',1,'']]],
   ['threadinterrupt_2eh',['threadinterrupt.h',['../threadinterrupt_8h.html',1,'']]],
   ['threadsafety_2eh',['threadsafety.h',['../threadsafety_8h.html',1,'']]],
+  ['time_2ecpp',['time.cpp',['../time_8cpp.html',1,'']]],
+  ['time_2eh',['time.h',['../time_8h.html',1,'']]],
   ['timedata_2ecpp',['timedata.cpp',['../timedata_8cpp.html',1,'']]],
   ['timedata_2eh',['timedata.h',['../timedata_8h.html',1,'']]],
   ['tinyformat_2eh',['tinyformat.h',['../tinyformat_8h.html',1,'']]],

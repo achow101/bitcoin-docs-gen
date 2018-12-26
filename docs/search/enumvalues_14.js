@@ -11,6 +11,7 @@ var searchData=
   ['unlock',['Unlock',['../class_ask_passphrase_dialog.html#a96abf4d3c36c1ef9e268fb546ae76538a2af79cac6134924405d6c620fb0f4c7e',1,'AskPassphraseDialog']]],
   ['unlocked',['Unlocked',['../class_wallet_model.html#a58f6f0bb5a7b8b4e4d0812185ccc0616a60d7f605079e8e1738ba66d543467a3c',1,'WalletModel']]],
   ['unset',['UNSET',['../policy_2fees_8h.html#aff36f74244c52c764c1af21d5f812173a666a87025ab0d8965e221050c8948001',1,'fees.h']]],
+  ['user_5fabort',['USER_ABORT',['../class_c_wallet.html#a570fe909452f0229717b5da9d580d482a1a848d581c73fde29f9c6c6f73df9449',1,'CWallet']]],
   ['user_5fpass',['USER_PASS',['../netbase_8cpp.html#a738c4db0b722cd3846ec7775ad2db20aaa02db508fd839fe6357cfd093858f7d8',1,'netbase.cpp']]],
   ['usernotificationcenter',['UserNotificationCenter',['../class_notificator.html#aaa6bef35e7e183f0ac23e046dc3ea73ea1691fdf2248407f7b714712f0c986d5e',1,'Notificator']]]
 ];

@@ -99,7 +99,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="util_8h_source.html">util.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="system_8h_source.html">system.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for ArgsManager:</div>
 <div class="dyncontent">
@@ -118,13 +118,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6f5b4728c090cc3c384f7c77f13d7181"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_args_manager.html#a6f5b4728c090cc3c384f7c77f13d7181">SelectConfigNetwork</a> (const std::string &amp;network)</td></tr>
 <tr class="memdesc:a6f5b4728c090cc3c384f7c77f13d7181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select the network in use.  <a href="#a6f5b4728c090cc3c384f7c77f13d7181">More...</a><br /></td></tr>
 <tr class="separator:a6f5b4728c090cc3c384f7c77f13d7181"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bebc036f039d360e97933cbd33813ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_args_manager.html#a3bebc036f039d360e97933cbd33813ec">ParseParameters</a> (int argc, const char *const argv[], std::string &amp;<a class="el" href="util_8h.html#a0605c886f88f190fa6a51ae07ca7558a">error</a>)</td></tr>
+<tr class="memitem:a3bebc036f039d360e97933cbd33813ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="attributes_8h.html#abf13e44576a768044e199191d4f26f7e">NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_args_manager.html#a3bebc036f039d360e97933cbd33813ec">ParseParameters</a> (int argc, const char *const argv[], std::string &amp;<a class="el" href="system_8h.html#a0605c886f88f190fa6a51ae07ca7558a">error</a>)</td></tr>
 <tr class="separator:a3bebc036f039d360e97933cbd33813ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec848fd54ace0df3df48dac446feb7d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_args_manager.html#aec848fd54ace0df3df48dac446feb7d2">ReadConfigFiles</a> (std::string &amp;<a class="el" href="util_8h.html#a0605c886f88f190fa6a51ae07ca7558a">error</a>, bool ignore_invalid_keys=false)</td></tr>
+<tr class="memitem:aec848fd54ace0df3df48dac446feb7d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="attributes_8h.html#abf13e44576a768044e199191d4f26f7e">NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_args_manager.html#aec848fd54ace0df3df48dac446feb7d2">ReadConfigFiles</a> (std::string &amp;<a class="el" href="system_8h.html#a0605c886f88f190fa6a51ae07ca7558a">error</a>, bool ignore_invalid_keys=false)</td></tr>
 <tr class="separator:aec848fd54ace0df3df48dac446feb7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d22a2751ef8b330e690f212e45b114e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_args_manager.html#a7d22a2751ef8b330e690f212e45b114e">WarnForSectionOnlyArgs</a> ()</td></tr>
-<tr class="memdesc:a7d22a2751ef8b330e690f212e45b114e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log warnings for options in m_section_only_args when they are specified in the default section but not overridden on the command line or in a network-specific section in the config file.  <a href="#a7d22a2751ef8b330e690f212e45b114e">More...</a><br /></td></tr>
-<tr class="separator:a7d22a2751ef8b330e690f212e45b114e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5579e381e7a0de33e029e56ab405ae01"><td class="memItemLeft" align="right" valign="top">const std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_args_manager.html#a5579e381e7a0de33e029e56ab405ae01">GetUnsuitableSectionOnlyArgs</a> () const </td></tr>
+<tr class="memdesc:a5579e381e7a0de33e029e56ab405ae01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log warnings for options in m_section_only_args when they are specified in the default section but not overridden on the command line or in a network-specific section in the config file.  <a href="#a5579e381e7a0de33e029e56ab405ae01">More...</a><br /></td></tr>
+<tr class="separator:a5579e381e7a0de33e029e56ab405ae01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7fa9daae4fb28b9d85804b30fca4faf"><td class="memItemLeft" align="right" valign="top">const std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_args_manager.html#aa7fa9daae4fb28b9d85804b30fca4faf">GetUnrecognizedSections</a> () const </td></tr>
+<tr class="memdesc:aa7fa9daae4fb28b9d85804b30fca4faf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log warnings for unrecognized section names in the config file.  <a href="#aa7fa9daae4fb28b9d85804b30fca4faf">More...</a><br /></td></tr>
+<tr class="separator:aa7fa9daae4fb28b9d85804b30fca4faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c4b89fa1b78e03deb12f0164e13385f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_args_manager.html#a2c4b89fa1b78e03deb12f0164e13385f">GetArgs</a> (const std::string &amp;strArg) const </td></tr>
 <tr class="memdesc:a2c4b89fa1b78e03deb12f0164e13385f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a vector of strings of the given argument.  <a href="#a2c4b89fa1b78e03deb12f0164e13385f">More...</a><br /></td></tr>
 <tr class="separator:a2c4b89fa1b78e03deb12f0164e13385f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,7 +157,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac4fac84b8d194a172b8b14eb996b8404"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_args_manager.html#ac4fac84b8d194a172b8b14eb996b8404">GetChainName</a> () const </td></tr>
 <tr class="memdesc:ac4fac84b8d194a172b8b14eb996b8404"><td class="mdescLeft">&#160;</td><td class="mdescRight">Looks for -regtest, -testnet and returns the appropriate BIP70 chain name.  <a href="#ac4fac84b8d194a172b8b14eb996b8404">More...</a><br /></td></tr>
 <tr class="separator:ac4fac84b8d194a172b8b14eb996b8404"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a453e50e62e5cde685d804185819fc93c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_args_manager.html#a453e50e62e5cde685d804185819fc93c">AddArg</a> (const std::string &amp;<a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, const std::string &amp;<a class="el" href="server_8cpp.html#ac2592c3f87216377b10947aa07a0c9c5">help</a>, const bool debug_only, const <a class="el" href="util_8h.html#a317721a7331c499cfe39b49b39c26cbd">OptionsCategory</a> &amp;cat)</td></tr>
+<tr class="memitem:a453e50e62e5cde685d804185819fc93c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_args_manager.html#a453e50e62e5cde685d804185819fc93c">AddArg</a> (const std::string &amp;<a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, const std::string &amp;<a class="el" href="server_8cpp.html#ac2592c3f87216377b10947aa07a0c9c5">help</a>, const bool debug_only, const <a class="el" href="system_8h.html#a317721a7331c499cfe39b49b39c26cbd">OptionsCategory</a> &amp;cat)</td></tr>
 <tr class="memdesc:a453e50e62e5cde685d804185819fc93c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add argument.  <a href="#a453e50e62e5cde685d804185819fc93c">More...</a><br /></td></tr>
 <tr class="separator:a453e50e62e5cde685d804185819fc93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa6e08d5af7e87c1eb9e3f4986f7c5fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_args_manager.html#afa6e08d5af7e87c1eb9e3f4986f7c5fc">AddHiddenArgs</a> (const std::vector&lt; std::string &gt; &amp;args)</td></tr>
@@ -180,9 +183,11 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a5ad483d76cd302c7722f288b8ce094ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade9146e30627bb8ea1664896e0885e09"><td class="memItemLeft" align="right" valign="top">std::set&lt; std::string &gt; m_network_only_args&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_args_manager.html#ade9146e30627bb8ea1664896e0885e09">GUARDED_BY</a> (<a class="el" href="class_args_manager.html#a6e6197bcf191708cd525872ddc4e76e1">cs_args</a>)</td></tr>
 <tr class="separator:ade9146e30627bb8ea1664896e0885e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92016fb72a2571692711eb1030907bc5"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="util_8h.html#a317721a7331c499cfe39b49b39c26cbd">OptionsCategory</a>, std::map&lt; std::string, <a class="el" href="struct_args_manager_1_1_arg.html">Arg</a> &gt; &gt; m_available_args&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_args_manager.html#a92016fb72a2571692711eb1030907bc5">GUARDED_BY</a> (<a class="el" href="class_args_manager.html#a6e6197bcf191708cd525872ddc4e76e1">cs_args</a>)</td></tr>
+<tr class="memitem:a92016fb72a2571692711eb1030907bc5"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="system_8h.html#a317721a7331c499cfe39b49b39c26cbd">OptionsCategory</a>, std::map&lt; std::string, <a class="el" href="struct_args_manager_1_1_arg.html">Arg</a> &gt; &gt; m_available_args&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_args_manager.html#a92016fb72a2571692711eb1030907bc5">GUARDED_BY</a> (<a class="el" href="class_args_manager.html#a6e6197bcf191708cd525872ddc4e76e1">cs_args</a>)</td></tr>
 <tr class="separator:a92016fb72a2571692711eb1030907bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8838e451c5afe6704a3311b3dd06f45"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_args_manager.html#af8838e451c5afe6704a3311b3dd06f45">ReadConfigStream</a> (std::istream &amp;stream, std::string &amp;<a class="el" href="util_8h.html#a0605c886f88f190fa6a51ae07ca7558a">error</a>, bool ignore_invalid_keys=false)</td></tr>
+<tr class="memitem:a359f3d4d474118ab729b710e0bb36d92"><td class="memItemLeft" align="right" valign="top">std::set&lt; std::string &gt; m_config_sections&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_args_manager.html#a359f3d4d474118ab729b710e0bb36d92">GUARDED_BY</a> (<a class="el" href="class_args_manager.html#a6e6197bcf191708cd525872ddc4e76e1">cs_args</a>)</td></tr>
+<tr class="separator:a359f3d4d474118ab729b710e0bb36d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8838e451c5afe6704a3311b3dd06f45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="attributes_8h.html#abf13e44576a768044e199191d4f26f7e">NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_args_manager.html#af8838e451c5afe6704a3311b3dd06f45">ReadConfigStream</a> (std::istream &amp;stream, std::string &amp;<a class="el" href="system_8h.html#a0605c886f88f190fa6a51ae07ca7558a">error</a>, bool ignore_invalid_keys=false)</td></tr>
 <tr class="separator:af8838e451c5afe6704a3311b3dd06f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -197,7 +202,7 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="util_8h_source.html#l00130">130</a> of file <a class="el" href="util_8h_source.html">util.h</a>.</p>
+<p>Definition at line <a class="el" href="system_8h_source.html#l00132">132</a> of file <a class="el" href="system_8h_source.html">system.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a44a22885b55cdb7ad580bc0ae72b123f"></a>
 <div class="memitem">
@@ -212,7 +217,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00358">358</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00358">358</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 </div>
 </div>
@@ -242,7 +247,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="util_8h.html#a317721a7331c499cfe39b49b39c26cbd">OptionsCategory</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="system_8h.html#a317721a7331c499cfe39b49b39c26cbd">OptionsCategory</a> &amp;&#160;</td>
           <td class="paramname"><em>cat</em>&#160;</td>
         </tr>
         <tr>
@@ -255,7 +260,7 @@ Friends</h2></td></tr>
 
 <p>Add argument. </p>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00571">571</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00593">593</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -282,7 +287,7 @@ Here is the caller graph for this function:</div>
 
 <p>Add many hidden arguments. </p>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00585">585</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00607">607</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -323,12 +328,13 @@ Here is the caller graph for this function:</div>
 
 <p>Clear available arguments. </p>
 
-<p>Definition at line <a class="el" href="util_8h_source.html#l00265">265</a> of file <a class="el" href="util_8h_source.html">util.h</a>.</p>
+<p>Definition at line <a class="el" href="system_8h_source.html#l00273">273</a> of file <a class="el" href="system_8h_source.html">system.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_a99a72f8915908d403fc5a5c4740b16ad_cgraph.svg" width="1056" height="278"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_a99a72f8915908d403fc5a5c4740b16ad_cgraph.svg" width="1056" height="278"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -358,12 +364,13 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00565">565</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00587">587</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_a1f96070401c6d46bbe3a9cae7414ec22_icgraph.svg" width="1434" height="286"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_a1f96070401c6d46bbe3a9cae7414ec22_icgraph.svg" width="1434" height="350"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -403,7 +410,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>command-line argument or default value </dd></dl>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00525">525</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00547">547</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -448,12 +455,13 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>command-line argument (0 if invalid number) or default value </dd></dl>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00533">533</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00555">555</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_a0b07af7d3c5e57d6907c3980bc9fc4f3_cgraph.svg" width="627" height="163"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_a0b07af7d3c5e57d6907c3980bc9fc4f3_cgraph.svg" width="627" height="163"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -482,7 +490,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>command-line arguments </dd></dl>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00482">482</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00504">504</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -494,7 +502,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_a2c4b89fa1b78e03deb12f0164e13385f_icgraph.svg" width="919" height="400"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_a2c4b89fa1b78e03deb12f0164e13385f_icgraph.svg" width="928" height="475"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -534,7 +543,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>command-line argument or default value </dd></dl>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00541">541</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00563">563</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -546,7 +555,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_a690fd2e1bae8f2de37bbcf0583d0b3ad_icgraph.svg" width="1035" height="1896"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_a690fd2e1bae8f2de37bbcf0583d0b3ad_icgraph.svg" width="1010" height="1752"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -568,7 +578,7 @@ Here is the caller graph for this function:</div>
 <p>Looks for -regtest, -testnet and returns the appropriate BIP70 chain name. </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_c_base_chain_params.html#ae2c5dfdbbff4d5f92948258a7b4db47b" title="BIP70 chain name strings (main, test or regtest) ">CBaseChainParams::MAIN</a> by default; raises runtime error if an invalid combination is given. </dd></dl>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00966">966</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01000">1000</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -580,7 +590,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_ac4fac84b8d194a172b8b14eb996b8404_icgraph.svg" width="931" height="199"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_ac4fac84b8d194a172b8b14eb996b8404_icgraph.svg" width="931" height="254"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -601,12 +612,13 @@ Here is the caller graph for this function:</div>
 
 <p>Get the help string. </p>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00592">592</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00614">614</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_a674b4204f6920659ea54ecb9e7bb2d54_cgraph.svg" width="927" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_a674b4204f6920659ea54ecb9e7bb2d54_cgraph.svg" width="927" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -614,6 +626,68 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_a674b4204f6920659ea54ecb9e7bb2d54_icgraph.svg" width="656" height="170"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa7fa9daae4fb28b9d85804b30fca4faf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::set&lt; std::string &gt; ArgsManager::GetUnrecognizedSections </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Log warnings for unrecognized section names in the config file. </p>
+
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00408">408</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_aa7fa9daae4fb28b9d85804b30fca4faf_icgraph.svg" width="462" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5579e381e7a0de33e029e56ab405ae01"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::set&lt; std::string &gt; ArgsManager::GetUnsuitableSectionOnlyArgs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Log warnings for options in m_section_only_args when they are specified in the default section but not overridden on the command line or in a network-specific section in the config file. </p>
+
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00374">374</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_a5579e381e7a0de33e029e56ab405ae01_cgraph.svg" width="423" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_a5579e381e7a0de33e029e56ab405ae01_icgraph.svg" width="442" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -723,7 +797,31 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;<a class="el" href="util_8h.html#a317721a7331c499cfe39b49b39c26cbd">OptionsCategory</a>, std::map&lt;std::string, <a class="el" href="struct_args_manager_1_1_arg.html">Arg</a>&gt; &gt; m_available_args ArgsManager::GUARDED_BY </td>
+          <td class="memname">std::map&lt;<a class="el" href="system_8h.html#a317721a7331c499cfe39b49b39c26cbd">OptionsCategory</a>, std::map&lt;std::string, <a class="el" href="struct_args_manager_1_1_arg.html">Arg</a>&gt; &gt; m_available_args ArgsManager::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_args_manager.html#a6e6197bcf191708cd525872ddc4e76e1">cs_args</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a359f3d4d474118ab729b710e0bb36d92"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;std::string&gt; m_config_sections ArgsManager::GUARDED_BY </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_args_manager.html#a6e6197bcf191708cd525872ddc4e76e1">cs_args</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -755,7 +853,7 @@ Here is the caller graph for this function:</div>
 
 <p>Check whether we know of this arg. </p>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00465">465</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00487">487</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -790,7 +888,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the argument was passed negated </dd></dl>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00507">507</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00529">529</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -802,7 +900,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_a279ccbf7bbe9de5dceb8c6bfd1736583_icgraph.svg" width="1502" height="3372"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_a279ccbf7bbe9de5dceb8c6bfd1736583_icgraph.svg" width="1510" height="3076"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -831,7 +930,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the argument has been set </dd></dl>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00501">501</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00523">523</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -843,7 +942,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_ad515c5fe6f15638602fd06e800381526_icgraph.svg" width="1523" height="1912"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_ad515c5fe6f15638602fd06e800381526_icgraph.svg" width="1495" height="1794"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -879,12 +979,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00410">410</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00432">432</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_a3bebc036f039d360e97933cbd33813ec_cgraph.svg" width="471" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_a3bebc036f039d360e97933cbd33813ec_cgraph.svg" width="471" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -921,12 +1022,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00886">886</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00920">920</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_aec848fd54ace0df3df48dac446feb7d2_cgraph.svg" width="2099" height="1342"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_aec848fd54ace0df3df48dac446feb7d2_cgraph.svg" width="2099" height="1342"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -977,7 +1079,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00856">856</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00889">889</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1011,7 +1113,7 @@ Here is the caller graph for this function:</div>
 
 <p>Select the network in use. </p>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00404">404</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00426">426</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1056,7 +1158,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if argument gets set, false if it already had a value </dd></dl>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00549">549</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00571">571</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1068,7 +1170,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_a6e981332a3b40b91f2299f5f72152c51_icgraph.svg" width="1191" height="246"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_a6e981332a3b40b91f2299f5f72152c51_icgraph.svg" width="1191" height="271"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1108,7 +1211,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if argument gets set, false if it already had a value </dd></dl>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00557">557</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00579">579</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1121,39 +1224,6 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_ae77153300424d36e02e54f2c718a457f_icgraph.svg" width="958" height="246"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a7d22a2751ef8b330e690f212e45b114e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ArgsManager::WarnForSectionOnlyArgs </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Log warnings for options in m_section_only_args when they are specified in the default section but not overridden on the command line or in a network-specific section in the config file. </p>
-
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00374">374</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_a7d22a2751ef8b330e690f212e45b114e_cgraph.svg" width="431" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_args_manager_a7d22a2751ef8b330e690f212e45b114e_icgraph.svg" width="450" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -1178,7 +1248,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8h_source.html#l00133">133</a> of file <a class="el" href="util_8h_source.html">util.h</a>.</p>
+<p>Definition at line <a class="el" href="system_8h_source.html#l00135">135</a> of file <a class="el" href="system_8h_source.html">system.h</a>.</p>
 
 </div>
 </div>
@@ -1201,18 +1271,18 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8h_source.html#l00144">144</a> of file <a class="el" href="util_8h_source.html">util.h</a>.</p>
+<p>Definition at line <a class="el" href="system_8h_source.html#l00146">146</a> of file <a class="el" href="system_8h_source.html">system.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/<a class="el" href="util_8h_source.html">util.h</a></li>
-<li>src/<a class="el" href="util_8cpp_source.html">util.cpp</a></li>
+<li>src/util/<a class="el" href="system_8h_source.html">system.h</a></li>
+<li>src/util/<a class="el" href="system_8cpp_source.html">system.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:22 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:51 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

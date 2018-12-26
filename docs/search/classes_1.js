@@ -40,5 +40,6 @@ var searchData=
   ['blockfilter',['BlockFilter',['../class_block_filter.html',1,'']]],
   ['blockhasher',['BlockHasher',['../struct_block_hasher.html',1,'']]],
   ['blocktransactions',['BlockTransactions',['../class_block_transactions.html',1,'']]],
-  ['blocktransactionsrequest',['BlockTransactionsRequest',['../class_block_transactions_request.html',1,'']]]
+  ['blocktransactionsrequest',['BlockTransactionsRequest',['../class_block_transactions_request.html',1,'']]],
+  ['bytevectorhash',['ByteVectorHash',['../class_byte_vector_hash.html',1,'']]]
 ];

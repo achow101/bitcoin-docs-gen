@@ -1,7 +1,7 @@
 var searchData=
 [
   ['i',['i',['../class_c_output.html#ae1b3534a41afb09bb04a499017f2821e',1,'COutput']]],
-  ['icon_5fmapping',['ICON_MAPPING',['../rpcconsole_8cpp.html#a27afdbc141cfa7b0a900306e15caa022',1,'rpcconsole.cpp']]],
+  ['icon_5fmapping',['ICON_MAPPING',['../rpcconsole_8cpp.html#a2520a4b7ade6afb4460c6d8271246c63',1,'rpcconsole.cpp']]],
   ['iconcolorhueshift',['iconColorHueShift',['../networkstyle_8cpp.html#a15d878b41d1288f9816c6e217579bf6b',1,'networkstyle.cpp']]],
   ['iconcolorsaturationreduction',['iconColorSaturationReduction',['../networkstyle_8cpp.html#ae613ad20a59d90c2058a04e90e55b5ed',1,'networkstyle.cpp']]],
   ['id',['id',['../struct_node_eviction_candidate.html#a5d777b28d7029495f5857d9334470340',1,'NodeEvictionCandidate::id()'],['../class_c_node.html#abbaade0659a56ac50a68ba947eff40bc',1,'CNode::id()'],['../class_recent_request_entry.html#a1d45d3b6deb1440ef004d58972138e43',1,'RecentRequestEntry::id()'],['../class_j_s_o_n_r_p_c_request.html#a6fd9b5625db040350b41419a054b70ec',1,'JSONRPCRequest::id()']]],
@@ -13,6 +13,8 @@ var searchData=
   ['imagesonbuttons',['imagesOnButtons',['../class_platform_style.html#a116cf73bc8a4fcd2c835a2cc8998b4a8',1,'PlatformStyle::imagesOnButtons()'],['../platformstyle_8cpp.html#aacdabf33f9acbba715da7f14ebaf322c',1,'imagesOnButtons():&#160;platformstyle.cpp']]],
   ['immature_5fbalance',['immature_balance',['../structinterfaces_1_1_wallet_balances.html#a5838cc4c55793db5cd57fec33f10be1e',1,'interfaces::WalletBalances']]],
   ['immature_5fwatch_5fonly_5fbalance',['immature_watch_only_balance',['../structinterfaces_1_1_wallet_balances.html#ad6fb357d46125b47f5865eb5a68347e6',1,'interfaces::WalletBalances']]],
+  ['impl',['impl',['../class_c_app_nap_inhibitor.html#ac9520a4a8ca7caf923b691eae37ee1a2',1,'CAppNapInhibitor']]],
+  ['import_5fscripts',['import_scripts',['../struct_import_data.html#a3d45fac19a91cf1a1421ee936df2fe5d',1,'ImportData']]],
   ['in_5fdata',['in_data',['../class_c_net_message.html#a8f399ad7225f980bdab3ede17b1b23af',1,'CNetMessage']]],
   ['inblock',['inBlock',['../class_block_assembler.html#a3f4cfefe0466de418e9990b53cdc4274',1,'BlockAssembler']]],
   ['incrementalrelayfee',['incrementalRelayFee',['../policy_8cpp.html#ac2a2fa7df2ea93ff63551e498def5bde',1,'incrementalRelayFee():&#160;policy.cpp'],['../policy_8h.html#ac2a2fa7df2ea93ff63551e498def5bde',1,'incrementalRelayFee():&#160;policy.cpp']]],
@@ -30,7 +32,7 @@ var searchData=
   ['input',['input',['../class_cha_cha20.html#a95cd2d6adfd477a46c4bd95c1658ea1b',1,'ChaCha20']]],
   ['inputs',['inputs',['../struct_partially_signed_transaction.html#a819c009786b34cfe379a46d2cea7db72',1,'PartiallySignedTransaction']]],
   ['insecure_5frand',['insecure_rand',['../class_c_addr_man.html#a1b3363a376e6a01f22e3a89fd53a3cd3',1,'CAddrMan::insecure_rand()'],['../class_fee_filter_rounder.html#a2ead1ef520cdb046d4775eb478426533',1,'FeeFilterRounder::insecure_rand()']]],
-  ['instance_5fof_5fcinit',['instance_of_cinit',['../util_8cpp.html#a510877804e96f753028e87b2359258c2',1,'util.cpp']]],
+  ['instance_5fof_5fcinit',['instance_of_cinit',['../system_8cpp.html#a510877804e96f753028e87b2359258c2',1,'system.cpp']]],
   ['instance_5fof_5fcmaincleanup',['instance_of_cmaincleanup',['../validation_8cpp.html#ab6d68cfd5d324de04347be2061768643',1,'validation.cpp']]],
   ['instance_5fof_5fcnetcleanup',['instance_of_cnetcleanup',['../net_8cpp.html#ae560d3fdf794873af9a1212644985fdd',1,'net.cpp']]],
   ['instance_5fof_5fcnetprocessingcleanup',['instance_of_cnetprocessingcleanup',['../net__processing_8cpp.html#a450d2be8350b29dcb4f3adc3325f56b2',1,'net_processing.cpp']]],

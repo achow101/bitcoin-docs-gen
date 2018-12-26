@@ -106,7 +106,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="dynheader">
 Collaboration diagram for CBlockPolicyEstimator:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator__coll__graph.svg" width="200" height="218"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator__coll__graph.svg" width="227" height="218"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -154,54 +155,54 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:adac45c8dba3d152590fc65b0ac831bda"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#adac45c8dba3d152590fc65b0ac831bda">processBlockTx</a> (unsigned int nBlockHeight, const <a class="el" href="class_c_tx_mem_pool_entry.html">CTxMemPoolEntry</a> *entry)</td></tr>
-<tr class="memdesc:adac45c8dba3d152590fc65b0ac831bda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process a transaction confirmed in a block.  <a href="#adac45c8dba3d152590fc65b0ac831bda">More...</a><br /></td></tr>
-<tr class="separator:adac45c8dba3d152590fc65b0ac831bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a65287d43a1bb1e2c2508c8bf4106e5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#a3a65287d43a1bb1e2c2508c8bf4106e5">estimateCombinedFee</a> (unsigned int confTarget, double successThreshold, bool checkShorterHorizon, <a class="el" href="struct_estimation_result.html">EstimationResult</a> *result) const </td></tr>
-<tr class="memdesc:a3a65287d43a1bb1e2c2508c8bf4106e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for estimateSmartFee.  <a href="#a3a65287d43a1bb1e2c2508c8bf4106e5">More...</a><br /></td></tr>
-<tr class="separator:a3a65287d43a1bb1e2c2508c8bf4106e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67b67c88cbdccf5cbdf5bd4154a43575"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#a67b67c88cbdccf5cbdf5bd4154a43575">estimateConservativeFee</a> (unsigned int doubleTarget, <a class="el" href="struct_estimation_result.html">EstimationResult</a> *result) const </td></tr>
-<tr class="memdesc:a67b67c88cbdccf5cbdf5bd4154a43575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for estimateSmartFee.  <a href="#a67b67c88cbdccf5cbdf5bd4154a43575">More...</a><br /></td></tr>
-<tr class="separator:a67b67c88cbdccf5cbdf5bd4154a43575"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93ba46a9ba7eb17d36506de4aad12c52"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#a93ba46a9ba7eb17d36506de4aad12c52">BlockSpan</a> () const </td></tr>
-<tr class="memdesc:a93ba46a9ba7eb17d36506de4aad12c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of blocks of data recorded while fee estimates have been running.  <a href="#a93ba46a9ba7eb17d36506de4aad12c52">More...</a><br /></td></tr>
-<tr class="separator:a93ba46a9ba7eb17d36506de4aad12c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c7bab322eeb59733b0e800d05cbb23c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#a5c7bab322eeb59733b0e800d05cbb23c">HistoricalBlockSpan</a> () const </td></tr>
-<tr class="memdesc:a5c7bab322eeb59733b0e800d05cbb23c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of blocks of recorded fee estimate data represented in saved data file.  <a href="#a5c7bab322eeb59733b0e800d05cbb23c">More...</a><br /></td></tr>
-<tr class="separator:a5c7bab322eeb59733b0e800d05cbb23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dc2d8275d408e52533ebbc14939be5e"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#a4dc2d8275d408e52533ebbc14939be5e">MaxUsableEstimate</a> () const </td></tr>
-<tr class="memdesc:a4dc2d8275d408e52533ebbc14939be5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculation of highest target that reasonable estimate can be provided for.  <a href="#a4dc2d8275d408e52533ebbc14939be5e">More...</a><br /></td></tr>
-<tr class="separator:a4dc2d8275d408e52533ebbc14939be5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a392a6c4705daa5347b94648a2ce22b38"><td class="memItemLeft" align="right" valign="top">unsigned int nBestSeenHeight&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#a392a6c4705daa5347b94648a2ce22b38">GUARDED_BY</a> (<a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>)</td></tr>
+<tr class="separator:a392a6c4705daa5347b94648a2ce22b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64042b53d23bd130cd9f6753927499fd"><td class="memItemLeft" align="right" valign="top">unsigned int firstRecordedHeight&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#a64042b53d23bd130cd9f6753927499fd">GUARDED_BY</a> (<a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>)</td></tr>
+<tr class="separator:a64042b53d23bd130cd9f6753927499fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dd8d191c423f8f611e544c2c3bcadd0"><td class="memItemLeft" align="right" valign="top">unsigned int historicalFirst&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#a8dd8d191c423f8f611e544c2c3bcadd0">GUARDED_BY</a> (<a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>)</td></tr>
+<tr class="separator:a8dd8d191c423f8f611e544c2c3bcadd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b0ac62f40cbd62ecddf644cff83ae9d"><td class="memItemLeft" align="right" valign="top">unsigned int historicalBest&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#a4b0ac62f40cbd62ecddf644cff83ae9d">GUARDED_BY</a> (<a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>)</td></tr>
+<tr class="separator:a4b0ac62f40cbd62ecddf644cff83ae9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8d1e3ebc6d6ddb8c82a87ab79d08288"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classuint256.html">uint256</a>, <a class="el" href="struct_c_block_policy_estimator_1_1_tx_stats_info.html">TxStatsInfo</a> &gt; mapMemPoolTxs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#af8d1e3ebc6d6ddb8c82a87ab79d08288">GUARDED_BY</a> (<a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>)</td></tr>
+<tr class="separator:af8d1e3ebc6d6ddb8c82a87ab79d08288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea8a6ff1e71352691f65f65bee8b317e"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_tx_confirm_stats.html">TxConfirmStats</a> &gt; feeStats&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#aea8a6ff1e71352691f65f65bee8b317e">PT_GUARDED_BY</a> (<a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>)</td></tr>
+<tr class="memdesc:aea8a6ff1e71352691f65f65bee8b317e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classes to track historical data on transaction confirmations.  <a href="#aea8a6ff1e71352691f65f65bee8b317e">More...</a><br /></td></tr>
+<tr class="separator:aea8a6ff1e71352691f65f65bee8b317e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad13067fc0ae5aed2c3525b7c0259b3d0"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_tx_confirm_stats.html">TxConfirmStats</a> &gt; shortStats&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#ad13067fc0ae5aed2c3525b7c0259b3d0">PT_GUARDED_BY</a> (<a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>)</td></tr>
+<tr class="separator:ad13067fc0ae5aed2c3525b7c0259b3d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36c34b33d0f7ae49e4cfa0cceb485f3b"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_tx_confirm_stats.html">TxConfirmStats</a> &gt; longStats&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#a36c34b33d0f7ae49e4cfa0cceb485f3b">PT_GUARDED_BY</a> (<a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>)</td></tr>
+<tr class="separator:a36c34b33d0f7ae49e4cfa0cceb485f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a144c37eaabc6fde604ce6265734788b4"><td class="memItemLeft" align="right" valign="top">unsigned int trackedTxs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#a144c37eaabc6fde604ce6265734788b4">GUARDED_BY</a> (<a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>)</td></tr>
+<tr class="separator:a144c37eaabc6fde604ce6265734788b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf906a43d65b9d2ffecd925462cc2ab6"><td class="memItemLeft" align="right" valign="top">unsigned int untrackedTxs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#acf906a43d65b9d2ffecd925462cc2ab6">GUARDED_BY</a> (<a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>)</td></tr>
+<tr class="separator:acf906a43d65b9d2ffecd925462cc2ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbe94926110d0c1b3f4796386705de66"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt; buckets&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#afbe94926110d0c1b3f4796386705de66">GUARDED_BY</a> (<a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>)</td></tr>
+<tr class="separator:afbe94926110d0c1b3f4796386705de66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a702d562cb2db3c7f54d9fb246fa3b14a"><td class="memItemLeft" align="right" valign="top">std::map&lt; double, unsigned int &gt; bucketMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#a702d562cb2db3c7f54d9fb246fa3b14a">GUARDED_BY</a> (<a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>)</td></tr>
+<tr class="separator:a702d562cb2db3c7f54d9fb246fa3b14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfe66c0e0e83a37bb6469be80a90fff0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#acfe66c0e0e83a37bb6469be80a90fff0">processBlockTx</a> (unsigned int nBlockHeight, const <a class="el" href="class_c_tx_mem_pool_entry.html">CTxMemPoolEntry</a> *entry) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>)</td></tr>
+<tr class="memdesc:acfe66c0e0e83a37bb6469be80a90fff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process a transaction confirmed in a block.  <a href="#acfe66c0e0e83a37bb6469be80a90fff0">More...</a><br /></td></tr>
+<tr class="separator:acfe66c0e0e83a37bb6469be80a90fff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31f06439558e93eb79f014ffea3af75b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#a31f06439558e93eb79f014ffea3af75b">estimateCombinedFee</a> (unsigned int confTarget, double successThreshold, bool checkShorterHorizon, <a class="el" href="struct_estimation_result.html">EstimationResult</a> *result) const <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>)</td></tr>
+<tr class="memdesc:a31f06439558e93eb79f014ffea3af75b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for estimateSmartFee.  <a href="#a31f06439558e93eb79f014ffea3af75b">More...</a><br /></td></tr>
+<tr class="separator:a31f06439558e93eb79f014ffea3af75b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76c9d6730cd237e9f721961c83fb5e91"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#a76c9d6730cd237e9f721961c83fb5e91">estimateConservativeFee</a> (unsigned int doubleTarget, <a class="el" href="struct_estimation_result.html">EstimationResult</a> *result) const <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>)</td></tr>
+<tr class="memdesc:a76c9d6730cd237e9f721961c83fb5e91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for estimateSmartFee.  <a href="#a76c9d6730cd237e9f721961c83fb5e91">More...</a><br /></td></tr>
+<tr class="separator:a76c9d6730cd237e9f721961c83fb5e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaab088a1f71ab4492b89ae69dab103a5"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#aaab088a1f71ab4492b89ae69dab103a5">BlockSpan</a> () const <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>)</td></tr>
+<tr class="memdesc:aaab088a1f71ab4492b89ae69dab103a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of blocks of data recorded while fee estimates have been running.  <a href="#aaab088a1f71ab4492b89ae69dab103a5">More...</a><br /></td></tr>
+<tr class="separator:aaab088a1f71ab4492b89ae69dab103a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6267b35a79628fee4d0ebb9e577705"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#abc6267b35a79628fee4d0ebb9e577705">HistoricalBlockSpan</a> () const <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>)</td></tr>
+<tr class="memdesc:abc6267b35a79628fee4d0ebb9e577705"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of blocks of recorded fee estimate data represented in saved data file.  <a href="#abc6267b35a79628fee4d0ebb9e577705">More...</a><br /></td></tr>
+<tr class="separator:abc6267b35a79628fee4d0ebb9e577705"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1190c8276ed40774ee972d084bfd501"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#aa1190c8276ed40774ee972d084bfd501">MaxUsableEstimate</a> () const <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>)</td></tr>
+<tr class="memdesc:aa1190c8276ed40774ee972d084bfd501"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculation of highest target that reasonable estimate can be provided for.  <a href="#aa1190c8276ed40774ee972d084bfd501">More...</a><br /></td></tr>
+<tr class="separator:aa1190c8276ed40774ee972d084bfd501"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a208f2b05a4ca303a1814f88f0cfb3b5b"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#a208f2b05a4ca303a1814f88f0cfb3b5b">nBestSeenHeight</a></td></tr>
-<tr class="separator:a208f2b05a4ca303a1814f88f0cfb3b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafd90259e03ceff13815cdc59f511581"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#aafd90259e03ceff13815cdc59f511581">firstRecordedHeight</a></td></tr>
-<tr class="separator:aafd90259e03ceff13815cdc59f511581"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4096a74566e0d71107e1e2262227009a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#a4096a74566e0d71107e1e2262227009a">historicalFirst</a></td></tr>
-<tr class="separator:a4096a74566e0d71107e1e2262227009a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a490e25325eb8d0483f3820a09592feed"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#a490e25325eb8d0483f3820a09592feed">historicalBest</a></td></tr>
-<tr class="separator:a490e25325eb8d0483f3820a09592feed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3af28a53439328591107672c9ad84b1"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classuint256.html">uint256</a>, <a class="el" href="struct_c_block_policy_estimator_1_1_tx_stats_info.html">TxStatsInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#ae3af28a53439328591107672c9ad84b1">mapMemPoolTxs</a></td></tr>
-<tr class="separator:ae3af28a53439328591107672c9ad84b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a433d188f92fcd461324070d59dc9c913"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_tx_confirm_stats.html">TxConfirmStats</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#a433d188f92fcd461324070d59dc9c913">feeStats</a></td></tr>
-<tr class="memdesc:a433d188f92fcd461324070d59dc9c913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classes to track historical data on transaction confirmations.  <a href="#a433d188f92fcd461324070d59dc9c913">More...</a><br /></td></tr>
-<tr class="separator:a433d188f92fcd461324070d59dc9c913"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a812f6b23fda86820abe04ca7e5de1907"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_tx_confirm_stats.html">TxConfirmStats</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#a812f6b23fda86820abe04ca7e5de1907">shortStats</a></td></tr>
-<tr class="separator:a812f6b23fda86820abe04ca7e5de1907"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7badfaa866c048f440e10a65f1082acd"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_tx_confirm_stats.html">TxConfirmStats</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#a7badfaa866c048f440e10a65f1082acd">longStats</a></td></tr>
-<tr class="separator:a7badfaa866c048f440e10a65f1082acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bc5f98212cfaa17c406ad8c35717086"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#a6bc5f98212cfaa17c406ad8c35717086">trackedTxs</a></td></tr>
-<tr class="separator:a6bc5f98212cfaa17c406ad8c35717086"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fab85289584c4b2a0a48ce97eb3cb0f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#a1fab85289584c4b2a0a48ce97eb3cb0f">untrackedTxs</a></td></tr>
-<tr class="separator:a1fab85289584c4b2a0a48ce97eb3cb0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd42b790dac215ff58e4f846ded36c7a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#abd42b790dac215ff58e4f846ded36c7a">buckets</a></td></tr>
-<tr class="separator:abd42b790dac215ff58e4f846ded36c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30950eac2a0e565f553386579ab51993"><td class="memItemLeft" align="right" valign="top">std::map&lt; double, unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#a30950eac2a0e565f553386579ab51993">bucketMap</a></td></tr>
-<tr class="separator:a30950eac2a0e565f553386579ab51993"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85dbce5299026787c208c6bfb710d22a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#a85dbce5299026787c208c6bfb710d22a">cs_feeEstimator</a></td></tr>
-<tr class="separator:a85dbce5299026787c208c6bfb710d22a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae96671c665664c01bb05b044a5f5a054"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a></td></tr>
+<tr class="separator:ae96671c665664c01bb05b044a5f5a054"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -301,7 +302,7 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a93ba46a9ba7eb17d36506de4aad12c52"></a>
+<a class="anchor" id="aaab088a1f71ab4492b89ae69dab103a5"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -324,18 +325,19 @@ Static Private Attributes</h2></td></tr>
 
 <p>Number of blocks of data recorded while fee estimates have been running. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00729">729</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00730">730</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_a93ba46a9ba7eb17d36506de4aad12c52_icgraph.svg" width="2104" height="494"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_aaab088a1f71ab4492b89ae69dab103a5_icgraph.svg" width="2104" height="510"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a3a65287d43a1bb1e2c2508c8bf4106e5"></a>
+<a class="anchor" id="a31f06439558e93eb79f014ffea3af75b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -383,18 +385,19 @@ Here is the caller graph for this function:</div>
 <p>Return a fee estimate at the required successThreshold from the shortest time horizon which tracks confirmations up to the desired target.</p>
 <p>If checkShorterHorizon is requested, also allow short time horizon estimates for a lower target to reduce the given answer </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00757">757</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00758">758</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_a3a65287d43a1bb1e2c2508c8bf4106e5_icgraph.svg" width="1882" height="494"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_a31f06439558e93eb79f014ffea3af75b_icgraph.svg" width="1882" height="494"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a67b67c88cbdccf5cbdf5bd4154a43575"></a>
+<a class="anchor" id="a76c9d6730cd237e9f721961c83fb5e91"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -429,12 +432,13 @@ Here is the caller graph for this function:</div>
 <p>Helper for estimateSmartFee. </p>
 <p>Ensure that for a conservative estimate, the DOUBLE_SUCCESS_PCT is also met at 2 * target for any longer time horizons. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00796">796</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00797">797</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_a67b67c88cbdccf5cbdf5bd4154a43575_icgraph.svg" width="1899" height="494"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_a76c9d6730cd237e9f721961c83fb5e91_icgraph.svg" width="1899" height="494"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -560,19 +564,21 @@ Here is the caller graph for this function:</div>
 <p>Each calculation is performed at the shortest time horizon which tracks the required target. Conservative estimates, however, required the 95% threshold at 2 * target be met for any longer time horizons also. </p>
 <p>true is passed to estimateCombined fee for target/2 and target so that we check the max confirms for shorter time horizons as well. This is necessary to preserve monotonically increasing estimates. For non-conservative estimates we do the same thing for 2*target, but for conservative estimates we want to skip these shorter horizons checks for 2*target because we are taking the max over all time horizons so we already have monotonically increasing estimates and the purpose of conservative estimates is not to let short term fluctuations lower our estimates by too much.</p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00820">820</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00821">821</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_ad44d2b70827f08c73d35bdcb634ec4e8_cgraph.svg" width="624" height="215"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_ad44d2b70827f08c73d35bdcb634ec4e8_cgraph.svg" width="624" height="215"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_ad44d2b70827f08c73d35bdcb634ec4e8_icgraph.svg" width="1659" height="494"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_ad44d2b70827f08c73d35bdcb634ec4e8_icgraph.svg" width="1659" height="494"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -593,21 +599,239 @@ Here is the caller graph for this function:</div>
 
 <p>Empty mempool transactions on shutdown to record failure to confirm for txs still in mempool. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00984">984</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00985">985</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_a83020351ee4b78252db708f3309ed952_cgraph.svg" width="384" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_a83020351ee4b78252db708f3309ed952_cgraph.svg" width="384" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_a83020351ee4b78252db708f3309ed952_icgraph.svg" width="307" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_a83020351ee4b78252db708f3309ed952_icgraph.svg" width="307" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="a392a6c4705daa5347b94648a2ce22b38"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int nBestSeenHeight CBlockPolicyEstimator::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a64042b53d23bd130cd9f6753927499fd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int firstRecordedHeight CBlockPolicyEstimator::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8dd8d191c423f8f611e544c2c3bcadd0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int historicalFirst CBlockPolicyEstimator::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4b0ac62f40cbd62ecddf644cff83ae9d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int historicalBest CBlockPolicyEstimator::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af8d1e3ebc6d6ddb8c82a87ab79d08288"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="classuint256.html">uint256</a>, <a class="el" href="struct_c_block_policy_estimator_1_1_tx_stats_info.html">TxStatsInfo</a>&gt; mapMemPoolTxs CBlockPolicyEstimator::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a144c37eaabc6fde604ce6265734788b4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int trackedTxs CBlockPolicyEstimator::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acf906a43d65b9d2ffecd925462cc2ab6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int untrackedTxs CBlockPolicyEstimator::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afbe94926110d0c1b3f4796386705de66"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;double&gt; buckets CBlockPolicyEstimator::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a702d562cb2db3c7f54d9fb246fa3b14a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;double, unsigned int&gt; bucketMap CBlockPolicyEstimator::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -632,13 +856,14 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_a9baaab3fdb1b45cd8c9af5d91fc5ca99_icgraph.svg" width="1356" height="560"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_a9baaab3fdb1b45cd8c9af5d91fc5ca99_icgraph.svg" width="1356" height="560"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a5c7bab322eeb59733b0e800d05cbb23c"></a>
+<a class="anchor" id="abc6267b35a79628fee4d0ebb9e577705"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -661,18 +886,19 @@ Here is the caller graph for this function:</div>
 
 <p>Number of blocks of recorded fee estimate data represented in saved data file. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00737">737</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00738">738</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_a5c7bab322eeb59733b0e800d05cbb23c_icgraph.svg" width="2104" height="494"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_abc6267b35a79628fee4d0ebb9e577705_icgraph.svg" width="2104" height="510"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a4dc2d8275d408e52533ebbc14939be5e"></a>
+<a class="anchor" id="aa1190c8276ed40774ee972d084bfd501"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -695,19 +921,21 @@ Here is the caller graph for this function:</div>
 
 <p>Calculation of highest target that reasonable estimate can be provided for. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00747">747</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00748">748</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_a4dc2d8275d408e52533ebbc14939be5e_cgraph.svg" width="384" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_aa1190c8276ed40774ee972d084bfd501_cgraph.svg" width="384" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_a4dc2d8275d408e52533ebbc14939be5e_icgraph.svg" width="1894" height="494"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_aa1190c8276ed40774ee972d084bfd501_icgraph.svg" width="1894" height="510"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -744,7 +972,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_af4bf4d8e0b4e30410ff6c70b509f400b_cgraph.svg" width="875" height="438"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_af4bf4d8e0b4e30410ff6c70b509f400b_cgraph.svg" width="875" height="438"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -757,7 +986,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="adac45c8dba3d152590fc65b0ac831bda"></a>
+<a class="anchor" id="acfe66c0e0e83a37bb6469be80a90fff0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -796,14 +1025,16 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_adac45c8dba3d152590fc65b0ac831bda_cgraph.svg" width="664" height="307"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_acfe66c0e0e83a37bb6469be80a90fff0_cgraph.svg" width="664" height="307"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_adac45c8dba3d152590fc65b0ac831bda_icgraph.svg" width="876" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_acfe66c0e0e83a37bb6469be80a90fff0_icgraph.svg" width="876" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -840,7 +1071,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_af34606ec5f6af217e23b47b8c3b2e361_cgraph.svg" width="788" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_af34606ec5f6af217e23b47b8c3b2e361_cgraph.svg" width="939" height="342"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -850,6 +1082,80 @@ Here is the caller graph for this function:</div>
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_af34606ec5f6af217e23b47b8c3b2e361_icgraph.svg" width="428" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="aea8a6ff1e71352691f65f65bee8b317e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="class_tx_confirm_stats.html">TxConfirmStats</a>&gt; feeStats CBlockPolicyEstimator::PT_GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Classes to track historical data on transaction confirmations. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad13067fc0ae5aed2c3525b7c0259b3d0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="class_tx_confirm_stats.html">TxConfirmStats</a>&gt; shortStats CBlockPolicyEstimator::PT_GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a36c34b33d0f7ae49e4cfa0cceb485f3b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="class_tx_confirm_stats.html">TxConfirmStats</a>&gt; longStats CBlockPolicyEstimator::PT_GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_block_policy_estimator.html#ae96671c665664c01bb05b044a5f5a054">m_cs_fee_estimator</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -869,19 +1175,21 @@ Here is the caller graph for this function:</div>
 
 <p>Read estimation data from a file. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00924">924</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00925">925</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_a1078195c71f2f4c30eec5be6e74fb02d_cgraph.svg" width="1631" height="1048"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_a1078195c71f2f4c30eec5be6e74fb02d_cgraph.svg" width="1631" height="1048"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_a1078195c71f2f4c30eec5be6e74fb02d_icgraph.svg" width="318" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_a1078195c71f2f4c30eec5be6e74fb02d_icgraph.svg" width="318" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -918,7 +1226,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_a7ee67e2a7b6a0a642526a14f7799c075_icgraph.svg" width="1156" height="170"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_a7ee67e2a7b6a0a642526a14f7799c075_icgraph.svg" width="1156" height="170"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -940,91 +1249,27 @@ Here is the caller graph for this function:</div>
 
 <p>Write estimation data to a file. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00899">899</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00900">900</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_a4832e16310768950ec78006dfe17bd85_cgraph.svg" width="384" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_a4832e16310768950ec78006dfe17bd85_cgraph.svg" width="384" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_a4832e16310768950ec78006dfe17bd85_icgraph.svg" width="307" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_a4832e16310768950ec78006dfe17bd85_icgraph.svg" width="307" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a30950eac2a0e565f553386579ab51993"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::map&lt;double, unsigned int&gt; CBlockPolicyEstimator::bucketMap</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00255">255</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="abd42b790dac215ff58e4f846ded36c7a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;double&gt; CBlockPolicyEstimator::buckets</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00254">254</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a85dbce5299026787c208c6bfb710d22a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a> CBlockPolicyEstimator::cs_feeEstimator</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00257">257</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="abc08a7dbdb542b1f3bf9ab7e489165a4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1073,52 +1318,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a433d188f92fcd461324070d59dc9c913"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="class_tx_confirm_stats.html">TxConfirmStats</a>&gt; CBlockPolicyEstimator::feeStats</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Classes to track historical data on transaction confirmations. </p>
-
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00247">247</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aafd90259e03ceff13815cdc59f511581"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int CBlockPolicyEstimator::firstRecordedHeight</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00232">232</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a79e0172e021428dbefea749ce2901eb1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1140,50 +1339,6 @@ Here is the caller graph for this function:</div>
 <p>Require greater than 60% of X feerate transactions to be confirmed within Y/2 blocks. </p>
 
 <p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00159">159</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a490e25325eb8d0483f3820a09592feed"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int CBlockPolicyEstimator::historicalBest</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00234">234</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4096a74566e0d71107e1e2262227009a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int CBlockPolicyEstimator::historicalFirst</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00233">233</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
 
 </div>
 </div>
@@ -1257,7 +1412,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a7badfaa866c048f440e10a65f1082acd"></a>
+<a class="anchor" id="ae96671c665664c01bb05b044a5f5a054"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1265,39 +1420,17 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="class_tx_confirm_stats.html">TxConfirmStats</a>&gt; CBlockPolicyEstimator::longStats</td>
+          <td class="memname"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a> CBlockPolicyEstimator::m_cs_fee_estimator</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00249">249</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae3af28a53439328591107672c9ad84b1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::map&lt;<a class="el" href="classuint256.html">uint256</a>, <a class="el" href="struct_c_block_policy_estimator_1_1_tx_stats_info.html">TxStatsInfo</a>&gt; CBlockPolicyEstimator::mapMemPoolTxs</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00244">244</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00231">231</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
 
 </div>
 </div>
@@ -1418,28 +1551,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a208f2b05a4ca303a1814f88f0cfb3b5b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int CBlockPolicyEstimator::nBestSeenHeight</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00231">231</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a393f42b6c21ce4edbc9941c32713fd22"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1534,28 +1645,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a812f6b23fda86820abe04ca7e5de1907"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="class_tx_confirm_stats.html">TxConfirmStats</a>&gt; CBlockPolicyEstimator::shortStats</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00248">248</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a1a80e9f59d3a837e9f95166cd72c5148"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1628,50 +1717,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a6bc5f98212cfaa17c406ad8c35717086"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int CBlockPolicyEstimator::trackedTxs</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00251">251</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1fab85289584c4b2a0a48ce97eb3cb0f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int CBlockPolicyEstimator::untrackedTxs</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00252">252</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/policy/<a class="el" href="policy_2fees_8h_source.html">fees.h</a></li>
 <li>src/policy/<a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a></li>
@@ -1679,7 +1724,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:23 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:52 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

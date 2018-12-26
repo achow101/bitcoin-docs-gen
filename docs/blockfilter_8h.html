@@ -97,17 +97,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">blockfilter.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;set&gt;</code><br />
-<code>#include &lt;stdint.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;unordered_set&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;<a class="el" href="block_8h_source.html">primitives/block.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="serialize_8h_source.html">serialize.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="uint256_8h_source.html">uint256.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="undo_8h_source.html">undo.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="bytevectorhash_8h_source.html">util/bytevectorhash.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for blockfilter.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="blockfilter_8h__incl.svg" width="2322" height="784"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockfilter_8h__incl.svg" width="2614" height="784"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -121,6 +123,8 @@ This graph shows which files directly or indirectly include this file:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_c_s_filter.html">GCSFilter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This implements a Golomb-coded set as defined in BIP 158.  <a href="class_g_c_s_filter.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_c_s_filter_1_1_params.html">GCSFilter::Params</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_block_filter.html">BlockFilter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete block filter struct as defined in BIP 157.  <a href="class_block_filter.html#details">More...</a><br /></td></tr>
@@ -154,7 +158,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="blockfilter_8h_source.html#l00079">79</a> of file <a class="el" href="blockfilter_8h_source.html">blockfilter.h</a>.</p>
+<p>Definition at line <a class="el" href="blockfilter_8h_source.html#l00086">86</a> of file <a class="el" href="blockfilter_8h_source.html">blockfilter.h</a>.</p>
 
 </div>
 </div>
@@ -169,7 +173,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="blockfilter_8h_source.html#l00077">77</a> of file <a class="el" href="blockfilter_8h_source.html">blockfilter.h</a>.</p>
+<p>Definition at line <a class="el" href="blockfilter_8h_source.html#l00084">84</a> of file <a class="el" href="blockfilter_8h_source.html">blockfilter.h</a>.</p>
 
 </div>
 </div>
@@ -183,14 +187,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="blockfilter_8h_source.html#l00076">76</a> of file <a class="el" href="blockfilter_8h_source.html">blockfilter.h</a>.</p>
+<p>Definition at line <a class="el" href="blockfilter_8h_source.html#l00083">83</a> of file <a class="el" href="blockfilter_8h_source.html">blockfilter.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:20 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:47 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

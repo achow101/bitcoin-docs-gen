@@ -1,6 +1,7 @@
 var searchData=
 [
   ['failed',['FAILED',['../versionbits_8h.html#ae7f620361ae33b80687a42adb26fd7a4ab9e14d9b2886bcff408b85aefa780419',1,'versionbits.h']]],
+  ['failure',['FAILURE',['../class_c_wallet.html#a570fe909452f0229717b5da9d580d482a36fc6065a3e970bc3e6b2e59da52bf2a',1,'CWallet']]],
   ['fallback',['FALLBACK',['../policy_2fees_8h.html#ad4442247e3a53b4e0e9142797e833186af35b388d8d4adeab05bce916c73d7a72',1,'fees.h']]],
   ['feature_5fbase',['FEATURE_BASE',['../wallet_2wallet_8h.html#a39a6b71da3eb95cddc0836d3b27ac7c9a5fea711c20fa9e9721ac59d94b6e5d72',1,'wallet.h']]],
   ['feature_5fcomprpubkey',['FEATURE_COMPRPUBKEY',['../wallet_2wallet_8h.html#a39a6b71da3eb95cddc0836d3b27ac7c9a9b917e6922fd5de60c0b9fc95a3bf0e4',1,'wallet.h']]],

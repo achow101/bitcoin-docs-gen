@@ -1,6 +1,9 @@
 var searchData=
 [
+  ['importdata',['ImportData',['../struct_import_data.html',1,'']]],
   ['indirectmap',['indirectmap',['../classindirectmap.html',1,'']]],
+  ['initinterfaces',['InitInterfaces',['../struct_init_interfaces.html',1,'']]],
+  ['initwalletdirtestingsetup',['InitWalletDirTestingSetup',['../struct_init_wallet_dir_testing_setup.html',1,'']]],
   ['insertion_5forder',['insertion_order',['../structinsertion__order.html',1,'']]],
   ['intro',['Intro',['../class_intro.html',1,'']]],
   ['is_5fconvertible',['is_convertible',['../structtinyformat_1_1detail_1_1is__convertible.html',1,'tinyformat::detail']]],

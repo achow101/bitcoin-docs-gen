@@ -9,7 +9,5 @@ var searchData=
   ['lock_5freturned',['LOCK_RETURNED',['../threadsafety_8h.html#ab355c21df501f97a4a5e63a868373c4f',1,'threadsafety.h']]],
   ['lockable',['LOCKABLE',['../threadsafety_8h.html#a9ce9440fc9b6862f43af10b70769f914',1,'threadsafety.h']]],
   ['locks_5fexcluded',['LOCKS_EXCLUDED',['../threadsafety_8h.html#a6bb97382864d0bd2cd4dd5191bb03f6c',1,'threadsafety.h']]],
-  ['logprint',['LogPrint',['../logging_8h.html#a44920f41b96476395cffed459d0c8835',1,'logging.h']]],
-  ['logprintf',['LogPrintf',['../logging_8h.html#afc02c0a4258fedfb316be612bb659ba8',1,'logging.h']]],
   ['lt_5fobjdir',['LT_OBJDIR',['../bitcoin-config_8h.html#ac2d5925d76379847dd9fc4747b061659',1,'LT_OBJDIR():&#160;bitcoin-config.h'],['../libsecp256k1-config_8h.html#ac2d5925d76379847dd9fc4747b061659',1,'LT_OBJDIR():&#160;libsecp256k1-config.h']]]
 ];

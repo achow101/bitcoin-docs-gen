@@ -96,12 +96,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="amount_8h_source.html">amount.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="attributes_8h_source.html">attributes.h</a>&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for core_io.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h__incl.svg" width="266" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h__incl.svg" width="386" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -118,18 +120,19 @@ Functions</h2></td></tr>
 <tr class="memitem:a9236ffa581211a68db7f7447faa6c27c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core__io_8h.html#a9236ffa581211a68db7f7447faa6c27c">ScriptToAsmStr</a> (const <a class="el" href="class_c_script.html">CScript</a> &amp;script, const bool fAttemptSighashDecode=false)</td></tr>
 <tr class="memdesc:a9236ffa581211a68db7f7447faa6c27c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the assembly string representation of a <a class="el" href="class_c_script.html" title="Serialized script, used inside transaction inputs and outputs. ">CScript</a> object.  <a href="#a9236ffa581211a68db7f7447faa6c27c">More...</a><br /></td></tr>
 <tr class="separator:a9236ffa581211a68db7f7447faa6c27c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af85d4419a3e04333cf965bd6c5b466af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core__io_8h.html#af85d4419a3e04333cf965bd6c5b466af">DecodeHexTx</a> (<a class="el" href="struct_c_mutable_transaction.html">CMutableTransaction</a> &amp;tx, const std::string &amp;hex_tx, bool try_no_witness=false, bool try_witness=true)</td></tr>
-<tr class="separator:af85d4419a3e04333cf965bd6c5b466af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7db52cf960ddbcf9cee6427f0a002c70"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core__io_8h.html#a7db52cf960ddbcf9cee6427f0a002c70">DecodeHexBlk</a> (<a class="el" href="class_c_block.html">CBlock</a> &amp;, const std::string &amp;strHexBlk)</td></tr>
-<tr class="separator:a7db52cf960ddbcf9cee6427f0a002c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f153b5f7a47edc0156d4c65e1f24720"><td class="memItemLeft" align="right" valign="top"><a class="el" href="attributes_8h.html#abf13e44576a768044e199191d4f26f7e">NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core__io_8h.html#a3f153b5f7a47edc0156d4c65e1f24720">DecodeHexTx</a> (<a class="el" href="struct_c_mutable_transaction.html">CMutableTransaction</a> &amp;tx, const std::string &amp;hex_tx, bool try_no_witness=false, bool try_witness=true)</td></tr>
+<tr class="separator:a3f153b5f7a47edc0156d4c65e1f24720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c6bd64aa4d296d1ccfde5a2ed64ea36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="attributes_8h.html#abf13e44576a768044e199191d4f26f7e">NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core__io_8h.html#a6c6bd64aa4d296d1ccfde5a2ed64ea36">DecodeHexBlk</a> (<a class="el" href="class_c_block.html">CBlock</a> &amp;, const std::string &amp;strHexBlk)</td></tr>
+<tr class="separator:a6c6bd64aa4d296d1ccfde5a2ed64ea36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d9697f646f6540ab41c698e5d100b7e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core__io_8h.html#a8d9697f646f6540ab41c698e5d100b7e">DecodeHexBlockHeader</a> (<a class="el" href="class_c_block_header.html">CBlockHeader</a> &amp;, const std::string &amp;hex_header)</td></tr>
 <tr class="separator:a8d9697f646f6540ab41c698e5d100b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab23488fe652558cb495964627979fe7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classuint256.html">uint256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core__io_8h.html#ab23488fe652558cb495964627979fe7f">ParseHashStr</a> (const std::string &amp;, const std::string &amp;strName)</td></tr>
-<tr class="separator:ab23488fe652558cb495964627979fe7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bd7bbb483c3c2b5738c703496a3829c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core__io_8h.html#a8bd7bbb483c3c2b5738c703496a3829c">ParseHashStr</a> (const std::string &amp;strHex, <a class="el" href="classuint256.html">uint256</a> &amp;result)</td></tr>
+<tr class="memdesc:a8bd7bbb483c3c2b5738c703496a3829c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a hex string into 256 bits.  <a href="#a8bd7bbb483c3c2b5738c703496a3829c">More...</a><br /></td></tr>
+<tr class="separator:a8bd7bbb483c3c2b5738c703496a3829c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78a4823e9ac3cb4e78cb6dddc868efff"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core__io_8h.html#a78a4823e9ac3cb4e78cb6dddc868efff">ParseHexUV</a> (const <a class="el" href="class_uni_value.html">UniValue</a> &amp;v, const std::string &amp;strName)</td></tr>
 <tr class="separator:a78a4823e9ac3cb4e78cb6dddc868efff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5961d702bf5ed07bfce97f697136d732"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core__io_8h.html#a5961d702bf5ed07bfce97f697136d732">DecodePSBT</a> (<a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;psbt, const std::string &amp;base64_tx, std::string &amp;<a class="el" href="util_8h.html#a0605c886f88f190fa6a51ae07ca7558a">error</a>)</td></tr>
-<tr class="separator:a5961d702bf5ed07bfce97f697136d732"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41fc7be439ca2cf682f0119a9f414f06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="attributes_8h.html#abf13e44576a768044e199191d4f26f7e">NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core__io_8h.html#a41fc7be439ca2cf682f0119a9f414f06">DecodePSBT</a> (<a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;psbt, const std::string &amp;base64_tx, std::string &amp;<a class="el" href="system_8h.html#a0605c886f88f190fa6a51ae07ca7558a">error</a>)</td></tr>
+<tr class="separator:a41fc7be439ca2cf682f0119a9f414f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54a58438a2f3f96d0697910ca68aa9da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core__io_8h.html#a54a58438a2f3f96d0697910ca68aa9da">ParseSighashString</a> (const <a class="el" href="class_uni_value.html">UniValue</a> &amp;sighash)</td></tr>
 <tr class="separator:a54a58438a2f3f96d0697910ca68aa9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a513e384f1d458abddd1bf9be05125947"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_uni_value.html">UniValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core__io_8h.html#a513e384f1d458abddd1bf9be05125947">ValueFromAmount</a> (const <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;amount)</td></tr>
@@ -148,12 +151,12 @@ Functions</h2></td></tr>
 <tr class="separator:a96af8e1e5f4236f7e0a1a757c3fc8c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a7db52cf960ddbcf9cee6427f0a002c70"></a>
+<a class="anchor" id="a6c6bd64aa4d296d1ccfde5a2ed64ea36"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool DecodeHexBlk </td>
+          <td class="memname"><a class="el" href="attributes_8h.html#abf13e44576a768044e199191d4f26f7e">NODISCARD</a> bool DecodeHexBlk </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_c_block.html">CBlock</a> &amp;&#160;</td>
           <td class="paramname">, </td>
@@ -177,14 +180,16 @@ Functions</h2></td></tr>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a7db52cf960ddbcf9cee6427f0a002c70_cgraph.svg" width="380" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a6c6bd64aa4d296d1ccfde5a2ed64ea36_cgraph.svg" width="531" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a7db52cf960ddbcf9cee6427f0a002c70_icgraph.svg" width="711" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a6c6bd64aa4d296d1ccfde5a2ed64ea36_icgraph.svg" width="711" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -219,7 +224,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a8d9697f646f6540ab41c698e5d100b7e_cgraph.svg" width="443" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a8d9697f646f6540ab41c698e5d100b7e_cgraph.svg" width="594" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -232,12 +238,12 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="af85d4419a3e04333cf965bd6c5b466af"></a>
+<a class="anchor" id="a3f153b5f7a47edc0156d4c65e1f24720"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool DecodeHexTx </td>
+          <td class="memname"><a class="el" href="attributes_8h.html#abf13e44576a768044e199191d4f26f7e">NODISCARD</a> bool DecodeHexTx </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_c_mutable_transaction.html">CMutableTransaction</a> &amp;&#160;</td>
           <td class="paramname"><em>tx</em>, </td>
@@ -273,25 +279,27 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_af85d4419a3e04333cf965bd6c5b466af_cgraph.svg" width="534" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a3f153b5f7a47edc0156d4c65e1f24720_cgraph.svg" width="684" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_af85d4419a3e04333cf965bd6c5b466af_icgraph.svg" width="860" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a3f153b5f7a47edc0156d4c65e1f24720_icgraph.svg" width="860" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a5961d702bf5ed07bfce97f697136d732"></a>
+<a class="anchor" id="a41fc7be439ca2cf682f0119a9f414f06"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool DecodePSBT </td>
+          <td class="memname"><a class="el" href="attributes_8h.html#abf13e44576a768044e199191d4f26f7e">NODISCARD</a> bool DecodePSBT </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;&#160;</td>
           <td class="paramname"><em>psbt</em>, </td>
@@ -321,14 +329,16 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a5961d702bf5ed07bfce97f697136d732_cgraph.svg" width="282" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a41fc7be439ca2cf682f0119a9f414f06_cgraph.svg" width="282" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a5961d702bf5ed07bfce97f697136d732_icgraph.svg" width="518" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a41fc7be439ca2cf682f0119a9f414f06_icgraph.svg" width="518" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -363,14 +373,16 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_aadd59c0793b3ccee08ad1c3f4557c1c3_cgraph.svg" width="320" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_aadd59c0793b3ccee08ad1c3f4557c1c3_cgraph.svg" width="320" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_aadd59c0793b3ccee08ad1c3f4557c1c3_icgraph.svg" width="2471" height="587"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_aadd59c0793b3ccee08ad1c3f4557c1c3_icgraph.svg" width="2471" height="587"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -395,27 +407,28 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a3baef73fdbf49896ad4c68bc27fbd2b0_cgraph.svg" width="695" height="282"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a3baef73fdbf49896ad4c68bc27fbd2b0_cgraph.svg" width="695" height="282"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="ab23488fe652558cb495964627979fe7f"></a>
+<a class="anchor" id="a8bd7bbb483c3c2b5738c703496a3829c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classuint256.html">uint256</a> ParseHashStr </td>
+          <td class="memname">bool ParseHashStr </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>strHex</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>strName</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="classuint256.html">uint256</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -425,19 +438,32 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Parse a hex string into 256 bits. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">strHex</td><td>a hex-formatted, 64-character string </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>the result of the parasing </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful, false if not</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="server_8h.html#adb231eaeb57d26011655ee8aaa5315e2" title="Utilities: convert hex-encoded Values (throws error if not hex). ">ParseHashV</a> for an RPC-oriented version of this </dd></dl>
+
 <p>Definition at line <a class="el" href="core__read_8cpp_source.html#l00196">196</a> of file <a class="el" href="core__read_8cpp_source.html">core_read.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_ab23488fe652558cb495964627979fe7f_cgraph.svg" width="435" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a8bd7bbb483c3c2b5738c703496a3829c_cgraph.svg" width="586" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_ab23488fe652558cb495964627979fe7f_icgraph.svg" width="678" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a8bd7bbb483c3c2b5738c703496a3829c_icgraph.svg" width="331" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -467,12 +493,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="core__read_8cpp_source.html#l00206">206</a> of file <a class="el" href="core__read_8cpp_source.html">core_read.cpp</a>.</p>
+<p>Definition at line <a class="el" href="core__read_8cpp_source.html#l00205">205</a> of file <a class="el" href="core__read_8cpp_source.html">core_read.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a78a4823e9ac3cb4e78cb6dddc868efff_cgraph.svg" width="430" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a78a4823e9ac3cb4e78cb6dddc868efff_cgraph.svg" width="580" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -497,7 +524,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a29989c95b21abde8baf8b48a73f9b9a8_cgraph.svg" width="931" height="798"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a29989c95b21abde8baf8b48a73f9b9a8_cgraph.svg" width="931" height="763"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -524,7 +552,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="core__read_8cpp_source.html#l00216">216</a> of file <a class="el" href="core__read_8cpp_source.html">core_read.cpp</a>.</p>
+<p>Definition at line <a class="el" href="core__read_8cpp_source.html#l00215">215</a> of file <a class="el" href="core__read_8cpp_source.html">core_read.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -536,7 +564,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a54a58438a2f3f96d0697910ca68aa9da_icgraph.svg" width="798" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a54a58438a2f3f96d0697910ca68aa9da_icgraph.svg" width="798" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -577,7 +606,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a4a51bf7268adbdcd58e7af445ea4db61_cgraph.svg" width="1671" height="996"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a4a51bf7268adbdcd58e7af445ea4db61_cgraph.svg" width="1671" height="996"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -628,14 +658,16 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a9236ffa581211a68db7f7447faa6c27c_cgraph.svg" width="764" height="383"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a9236ffa581211a68db7f7447faa6c27c_cgraph.svg" width="764" height="383"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a9236ffa581211a68db7f7447faa6c27c_icgraph.svg" width="1275" height="420"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a9236ffa581211a68db7f7447faa6c27c_icgraph.svg" width="1275" height="420"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -676,7 +708,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a0008f40d9c179d229ead567d0d356023_cgraph.svg" width="1787" height="911"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a0008f40d9c179d229ead567d0d356023_cgraph.svg" width="1787" height="911"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -761,7 +794,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a96af8e1e5f4236f7e0a1a757c3fc8c4c_cgraph.svg" width="1807" height="1304"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a96af8e1e5f4236f7e0a1a757c3fc8c4c_cgraph.svg" width="1807" height="1304"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -800,7 +834,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a513e384f1d458abddd1bf9be05125947_icgraph.svg" width="1123" height="1216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="core__io_8h_a513e384f1d458abddd1bf9be05125947_icgraph.svg" width="1123" height="1216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -809,7 +844,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:20 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:48 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

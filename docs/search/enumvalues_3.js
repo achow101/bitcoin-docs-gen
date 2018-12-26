@@ -5,7 +5,7 @@ var searchData=
   ['date_5fcolumn_5fwidth',['DATE_COLUMN_WIDTH',['../class_receive_coins_dialog.html#a348824c8475841e6e0cb35fdf9090656a27a7eb8ce98cce46e3f40a752fb92068',1,'ReceiveCoinsDialog::DATE_COLUMN_WIDTH()'],['../class_transaction_view.html#a330f6333f7d24ceef963729fa35fe985a0f69ae6a6e98a15184edf87b4ec3b72b',1,'TransactionView::DATE_COLUMN_WIDTH()']]],
   ['daterole',['DateRole',['../class_transaction_table_model.html#a4b248508c36df598476affbf9871d1e6a46e879bd509162d980df3692c65eb66e',1,'TransactionTableModel']]],
   ['db',['DB',['../namespace_b_c_log.html#ad1037484206121adbcda9f9c824ab6b2a51d664347be128053130d723138d82ed',1,'BCLog']]],
-  ['debug_5ftest',['DEBUG_TEST',['../util_8h.html#a317721a7331c499cfe39b49b39c26cbdac3a3aaee2fcfbe8134fc0103c0e8a922',1,'util.h']]],
+  ['debug_5ftest',['DEBUG_TEST',['../system_8h.html#a317721a7331c499cfe39b49b39c26cbdac3a3aaee2fcfbe8134fc0103c0e8a922',1,'system.h']]],
   ['decrypt',['Decrypt',['../class_ask_passphrase_dialog.html#a96abf4d3c36c1ef9e268fb546ae76538aac5e2489527af224fc5e1316a77ba478',1,'AskPassphraseDialog']]],
   ['default',['DEFAULT',['../serialize_8h.html#a33400c046934b2056d171e99fc88e745a5b39c8b553c821e7cddc6da64b5bd2ee',1,'serialize.h']]],
   ['defined',['DEFINED',['../versionbits_8h.html#ae7f620361ae33b80687a42adb26fd7a4ad95be57411fe22c8d2c9e829b2a0cf85',1,'versionbits.h']]],

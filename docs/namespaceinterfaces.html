@@ -96,6 +96,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html">Chain</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for giving wallet processes access to blockchain state.  <a href="classinterfaces_1_1_chain.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_client.html">ChainClient</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface to let node manage chain clients (wallets, or maybe tools for monitoring and analysis in the future).  <a href="classinterfaces_1_1_chain_client.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_handler.html">Handler</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic interface for managing an event handler or callback function registered with another interface.  <a href="classinterfaces_1_1_handler.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,15 +138,21 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a745628bd197c8179029bfb2aa61deb55"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classinterfaces_1_1_wallet.html">Wallet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinterfaces.html#a745628bd197c8179029bfb2aa61deb55">MakeWallet</a> (const std::shared_ptr&lt; <a class="el" href="class_c_wallet.html">CWallet</a> &gt; &amp;wallet)</td></tr>
+<tr class="memdesc:a745628bd197c8179029bfb2aa61deb55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return implementation of <a class="el" href="classinterfaces_1_1_wallet.html" title="Interface for accessing a wallet. ">Wallet</a> interface.  <a href="#a745628bd197c8179029bfb2aa61deb55">More...</a><br /></td></tr>
+<tr class="separator:a745628bd197c8179029bfb2aa61deb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a402cd23e3f69061eb649f4ba764aa997"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classinterfaces_1_1_chain.html">Chain</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinterfaces.html#a402cd23e3f69061eb649f4ba764aa997">MakeChain</a> ()</td></tr>
+<tr class="memdesc:a402cd23e3f69061eb649f4ba764aa997"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return implementation of <a class="el" href="classinterfaces_1_1_chain.html" title="Interface for giving wallet processes access to blockchain state. ">Chain</a> interface.  <a href="#a402cd23e3f69061eb649f4ba764aa997">More...</a><br /></td></tr>
+<tr class="separator:a402cd23e3f69061eb649f4ba764aa997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14e7017f789ef0e6fdc172e39ed335a4"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classinterfaces_1_1_chain_client.html">ChainClient</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinterfaces.html#a14e7017f789ef0e6fdc172e39ed335a4">MakeWalletClient</a> (<a class="el" href="classinterfaces_1_1_chain.html">Chain</a> &amp;chain, std::vector&lt; std::string &gt; wallet_filenames)</td></tr>
+<tr class="memdesc:a14e7017f789ef0e6fdc172e39ed335a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return implementation of <a class="el" href="classinterfaces_1_1_chain_client.html" title="Interface to let node manage chain clients (wallets, or maybe tools for monitoring and analysis in th...">ChainClient</a> interface for a wallet client.  <a href="#a14e7017f789ef0e6fdc172e39ed335a4">More...</a><br /></td></tr>
+<tr class="separator:a14e7017f789ef0e6fdc172e39ed335a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77a2d7aaf970dd9074c6025759f44c60"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classinterfaces_1_1_handler.html">Handler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinterfaces.html#a77a2d7aaf970dd9074c6025759f44c60">MakeHandler</a> (boost::signals2::connection connection)</td></tr>
 <tr class="memdesc:a77a2d7aaf970dd9074c6025759f44c60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return handler wrapping a boost signal connection.  <a href="#a77a2d7aaf970dd9074c6025759f44c60">More...</a><br /></td></tr>
 <tr class="separator:a77a2d7aaf970dd9074c6025759f44c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a23c590486567821eaf2e19a7952389"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classinterfaces_1_1_node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinterfaces.html#a5a23c590486567821eaf2e19a7952389">MakeNode</a> ()</td></tr>
 <tr class="memdesc:a5a23c590486567821eaf2e19a7952389"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return implementation of <a class="el" href="classinterfaces_1_1_node.html" title="Top-level interface for a bitcoin node (bitcoind process). ">Node</a> interface.  <a href="#a5a23c590486567821eaf2e19a7952389">More...</a><br /></td></tr>
 <tr class="separator:a5a23c590486567821eaf2e19a7952389"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a745628bd197c8179029bfb2aa61deb55"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classinterfaces_1_1_wallet.html">Wallet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinterfaces.html#a745628bd197c8179029bfb2aa61deb55">MakeWallet</a> (const std::shared_ptr&lt; <a class="el" href="class_c_wallet.html">CWallet</a> &gt; &amp;wallet)</td></tr>
-<tr class="memdesc:a745628bd197c8179029bfb2aa61deb55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return implementation of <a class="el" href="classinterfaces_1_1_wallet.html" title="Interface for accessing a wallet. ">Wallet</a> interface.  <a href="#a745628bd197c8179029bfb2aa61deb55">More...</a><br /></td></tr>
-<tr class="separator:a745628bd197c8179029bfb2aa61deb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="a1a44707e25b06f8e6f7b5671f4091ed9"></a>
@@ -172,6 +184,33 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a402cd23e3f69061eb649f4ba764aa997"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classinterfaces_1_1_chain.html">Chain</a> &gt; interfaces::MakeChain </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return implementation of <a class="el" href="classinterfaces_1_1_chain.html" title="Interface for giving wallet processes access to blockchain state. ">Chain</a> interface. </p>
+
+<p>Definition at line <a class="el" href="interfaces_2chain_8cpp_source.html#l00042">42</a> of file <a class="el" href="interfaces_2chain_8cpp_source.html">chain.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceinterfaces_a402cd23e3f69061eb649f4ba764aa997_icgraph.svg" width="427" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a77a2d7aaf970dd9074c6025759f44c60"></a>
 <div class="memitem">
 <div class="memproto">
@@ -214,7 +253,7 @@ Here is the caller graph for this function:</div>
 
 <p>Return implementation of <a class="el" href="classinterfaces_1_1_node.html" title="Top-level interface for a bitcoin node (bitcoind process). ">Node</a> interface. </p>
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l00290">290</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l00301">301</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -240,16 +279,56 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Return implementation of <a class="el" href="classinterfaces_1_1_wallet.html" title="Interface for accessing a wallet. ">Wallet</a> interface. </p>
-<p>This function will be undefined in builds where ENABLE_WALLET is false. </p>
+<p>This function is defined in <a class="el" href="dummywallet_8cpp.html">dummywallet.cpp</a> and throws if the wallet component is not compiled. </p>
 
-<p>Definition at line <a class="el" href="interfaces_2wallet_8cpp_source.html#l00465">465</a> of file <a class="el" href="interfaces_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="dummywallet_8cpp_source.html#l00050">50</a> of file <a class="el" href="dummywallet_8cpp_source.html">dummywallet.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a14e7017f789ef0e6fdc172e39ed335a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classinterfaces_1_1_chain_client.html">ChainClient</a> &gt; interfaces::MakeWalletClient </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classinterfaces_1_1_chain.html">Chain</a> &amp;&#160;</td>
+          <td class="paramname"><em>chain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
+          <td class="paramname"><em>wallet_filenames</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return implementation of <a class="el" href="classinterfaces_1_1_chain_client.html" title="Interface to let node manage chain clients (wallets, or maybe tools for monitoring and analysis in th...">ChainClient</a> interface for a wallet client. </p>
+<p>This function will be undefined in builds where ENABLE_WALLET is false.</p>
+<p>Currently, wallets are the only chain clients. But in the future, other types of chain clients could be added, such as tools for monitoring, analysis, or fee estimation. These clients need to expose their own MakeXXXClient functions returning their implementations of the <a class="el" href="classinterfaces_1_1_chain_client.html" title="Interface to let node manage chain clients (wallets, or maybe tools for monitoring and analysis in th...">ChainClient</a> interface. </p>
+
+<p>Definition at line <a class="el" href="interfaces_2wallet_8cpp_source.html#l00517">517</a> of file <a class="el" href="interfaces_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceinterfaces_a14e7017f789ef0e6fdc172e39ed335a4_icgraph.svg" width="692" height="170"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:25 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:57 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

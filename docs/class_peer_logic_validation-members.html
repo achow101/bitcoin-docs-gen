@@ -101,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="class_peer_logic_validation.html#ad9ba8b8657346c1ce86e061d5fdaeb53">CheckForStaleTipAndEvictPeers</a>(const Consensus::Params &amp;consensusParams)</td><td class="entry"><a class="el" href="class_peer_logic_validation.html">PeerLogicValidation</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_peer_logic_validation.html#aa9781fcb90dd8cec39b429fdc489e198">connman</a></td><td class="entry"><a class="el" href="class_peer_logic_validation.html">PeerLogicValidation</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_peer_logic_validation.html#af87f0e0b6f4103d1c6cb35c575769ae2">ConsiderEviction</a>(CNode *pto, int64_t time_in_seconds) EXCLUSIVE_LOCKS_REQUIRED(cs_main)</td><td class="entry"><a class="el" href="class_peer_logic_validation.html">PeerLogicValidation</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_peer_logic_validation.html#ac89bf1ee08fd8960559d19ab87564b0d">EvictExtraOutboundPeers</a>(int64_t time_in_seconds)</td><td class="entry"><a class="el" href="class_peer_logic_validation.html">PeerLogicValidation</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_peer_logic_validation.html#ac2097b9ed927e9b535bc7873ce22335e">EvictExtraOutboundPeers</a>(int64_t time_in_seconds) EXCLUSIVE_LOCKS_REQUIRED(cs_main)</td><td class="entry"><a class="el" href="class_peer_logic_validation.html">PeerLogicValidation</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_peer_logic_validation.html#a0b5c0354f95776ad5af36adb95604339">FinalizeNode</a>(NodeId nodeid, bool &amp;fUpdateConnectionTime) override</td><td class="entry"><a class="el" href="class_peer_logic_validation.html">PeerLogicValidation</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_peer_logic_validation.html#a90c3cb8c05c52b0c8639d51c87ce7017">InitializeNode</a>(CNode *pnode) override</td><td class="entry"><a class="el" href="class_peer_logic_validation.html">PeerLogicValidation</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_peer_logic_validation.html#a0a73f65f2c7c2cbb745ec9dd6ac79faf">m_enable_bip61</a></td><td class="entry"><a class="el" href="class_peer_logic_validation.html">PeerLogicValidation</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
@@ -122,7 +122,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:24 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:55 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

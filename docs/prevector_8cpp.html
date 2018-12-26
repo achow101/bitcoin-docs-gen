@@ -97,15 +97,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">prevector.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="compat_8h_source.html">compat.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="prevector_8h_source.html">prevector.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="prevector_8h_source.html">prevector.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="serialize_8h_source.html">serialize.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="streams_8h_source.html">streams.h</a>&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
 <code>#include &lt;<a class="el" href="bench_2bench_8h_source.html">bench/bench.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for prevector.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="prevector_8cpp__incl.svg" width="2900" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="prevector_8cpp__incl.svg" width="2278" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="prevector_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -117,6 +118,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a046c30684aefd9b4fbf811fa10abc311"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="prevector_8cpp.html#a046c30684aefd9b4fbf811fa10abc311">IS_TRIVIALLY_CONSTRUCTIBLE</a>&#160;&#160;&#160;std::is_trivially_default_constructible</td></tr>
+<tr class="separator:a046c30684aefd9b4fbf811fa10abc311"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11952fcfa183aa278298f69f830ff50e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="prevector_8cpp.html#a11952fcfa183aa278298f69f830ff50e">PREVECTOR_TEST</a>(<a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>,  nontrivops,  trivops)</td></tr>
 <tr class="separator:a11952fcfa183aa278298f69f830ff50e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -126,6 +129,20 @@ Typedefs</h2></td></tr>
 <tr class="separator:ab5738c3eb7291f22f2ac5478fcd81477"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a046c30684aefd9b4fbf811fa10abc311"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IS_TRIVIALLY_CONSTRUCTIBLE&#160;&#160;&#160;std::is_trivially_default_constructible</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="prevector_8cpp_source.html#l00017">17</a> of file <a class="el" href="prevector_8cpp_source.html">prevector.cpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a11952fcfa183aa278298f69f830ff50e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -155,11 +172,11 @@ Typedefs</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> Prevector ## <a class="code" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a> ## Nontrivial(<a class="code" href="classbenchmark_1_1_state.html">benchmark::State</a>&amp; state) { \</div><div class="line">        Prevector ## name&lt;nontrivial_t&gt;(state);                         \</div><div class="line">    }                                                                   <a class="code" href="bench_2bench_8h.html#a517d1d925e006cdc2a70dd7488f0d31f">\</a></div><div class="line"><a class="code" href="bench_2bench_8h.html#a517d1d925e006cdc2a70dd7488f0d31f">    BENCHMARK</a>(Prevector ## <a class="code" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a> ## Nontrivial, nontrivops);             \</div><div class="line">    static <span class="keywordtype">void</span> Prevector ## <a class="code" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a> ## Trivial(<a class="code" href="classbenchmark_1_1_state.html">benchmark::State</a>&amp; state) { \</div><div class="line">        Prevector ## name&lt;trivial_t&gt;(state);                            \</div><div class="line">    }                                                                   <a class="code" href="bench_2bench_8h.html#a517d1d925e006cdc2a70dd7488f0d31f">\</a></div><div class="line"><a class="code" href="bench_2bench_8h.html#a517d1d925e006cdc2a70dd7488f0d31f">    BENCHMARK</a>(Prevector ## <a class="code" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a> ## Trivial, trivops);</div><div class="ttc" id="rest_8cpp_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> <a href="rest_8cpp_source.html#l00037">rest.cpp:37</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> Prevector ## <a class="code" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a> ## Nontrivial(<a class="code" href="classbenchmark_1_1_state.html">benchmark::State</a>&amp; state) { \</div><div class="line">        Prevector ## name&lt;nontrivial_t&gt;(state);                         \</div><div class="line">    }                                                                   <a class="code" href="bench_2bench_8h.html#a517d1d925e006cdc2a70dd7488f0d31f">\</a></div><div class="line"><a class="code" href="bench_2bench_8h.html#a517d1d925e006cdc2a70dd7488f0d31f">    BENCHMARK</a>(Prevector ## <a class="code" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a> ## Nontrivial, nontrivops);             \</div><div class="line">    static <span class="keywordtype">void</span> Prevector ## <a class="code" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a> ## Trivial(<a class="code" href="classbenchmark_1_1_state.html">benchmark::State</a>&amp; state) { \</div><div class="line">        Prevector ## name&lt;trivial_t&gt;(state);                            \</div><div class="line">    }                                                                   <a class="code" href="bench_2bench_8h.html#a517d1d925e006cdc2a70dd7488f0d31f">\</a></div><div class="line"><a class="code" href="bench_2bench_8h.html#a517d1d925e006cdc2a70dd7488f0d31f">    BENCHMARK</a>(Prevector ## <a class="code" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a> ## Trivial, trivops);</div><div class="ttc" id="rest_8cpp_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> <a href="rest_8cpp_source.html#l00038">rest.cpp:38</a></div></div>
 <div class="ttc" id="bench_2bench_8h_html_a517d1d925e006cdc2a70dd7488f0d31f"><div class="ttname"><a href="bench_2bench_8h.html#a517d1d925e006cdc2a70dd7488f0d31f">BENCHMARK</a></div><div class="ttdeci">#define BENCHMARK(n, num_iters_for_one_second)</div><div class="ttdef"><b>Definition:</b> <a href="bench_2bench_8h_source.html#l00139">bench.h:139</a></div></div>
 <div class="ttc" id="classbenchmark_1_1_state_html"><div class="ttname"><a href="classbenchmark_1_1_state.html">benchmark::State</a></div><div class="ttdef"><b>Definition:</b> <a href="bench_2bench_8h_source.html#l00054">bench.h:54</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="prevector_8cpp_source.html#l00092">92</a> of file <a class="el" href="prevector_8cpp_source.html">prevector.cpp</a>.</p>
+<p>Definition at line <a class="el" href="prevector_8cpp_source.html#l00100">100</a> of file <a class="el" href="prevector_8cpp_source.html">prevector.cpp</a>.</p>
 
 </div>
 </div>
@@ -174,14 +191,14 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="prevector_8cpp_source.html#l00020">20</a> of file <a class="el" href="prevector_8cpp_source.html">prevector.cpp</a>.</p>
+<p>Definition at line <a class="el" href="prevector_8cpp_source.html#l00028">28</a> of file <a class="el" href="prevector_8cpp_source.html">prevector.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:20 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:47 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

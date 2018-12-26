@@ -115,13 +115,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a22bd873e85e12ea2d2cd398ad3647bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92c4057e90b212df6117707ce715381f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_signing_provider.html#a92c4057e90b212df6117707ce715381f">GetKey</a> (const <a class="el" href="class_c_key_i_d.html">CKeyID</a> &amp;address, <a class="el" href="class_c_key.html">CKey</a> &amp;key) const </td></tr>
 <tr class="separator:a92c4057e90b212df6117707ce715381f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae05630ec19ee8956497d5264dc612b2f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_signing_provider.html#ae05630ec19ee8956497d5264dc612b2f">GetKeyOrigin</a> (const <a class="el" href="class_c_key_i_d.html">CKeyID</a> &amp;id, <a class="el" href="struct_key_origin_info.html">KeyOriginInfo</a> &amp;info) const </td></tr>
-<tr class="separator:ae05630ec19ee8956497d5264dc612b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed022fc3fb7cceab5925d0ca68da3a61"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_signing_provider.html#aed022fc3fb7cceab5925d0ca68da3a61">GetKeyOrigin</a> (const <a class="el" href="class_c_key_i_d.html">CKeyID</a> &amp;keyid, <a class="el" href="struct_key_origin_info.html">KeyOriginInfo</a> &amp;info) const </td></tr>
+<tr class="separator:aed022fc3fb7cceab5925d0ca68da3a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An interface to be implemented by keystores that support signing. </p>
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00030">30</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="sign_8h_source.html#l00035">35</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a40e6a8b9b0573bdef31f02f455064435"></a>
 <div class="memitem">
@@ -144,7 +144,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00033">33</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="sign_8h_source.html#l00038">38</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
 
 </div>
 </div>
@@ -183,12 +183,13 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_c_basic_key_store.html#a7dc20df2337bca743b7323b76e626e20">CBasicKeyStore</a>, <a class="el" href="struct_flat_signing_provider.html#ae0db7269eae5134442d37a78bf2dbde7">FlatSigningProvider</a>, and <a class="el" href="class_hiding_signing_provider.html#ab9214716c578177f521d90aac2df625c">HidingSigningProvider</a>.</p>
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00034">34</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="sign_8h_source.html#l00039">39</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_signing_provider_aba901ea128726e7c8df1df46e77692ab_icgraph.svg" width="1414" height="443"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_signing_provider_aba901ea128726e7c8df1df46e77692ab_icgraph.svg" width="1414" height="443"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -226,20 +227,21 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="class_c_crypto_key_store.html#a01b3cbe18b296f2c51e6fe4137f24c4b">CCryptoKeyStore</a>, <a class="el" href="class_c_basic_key_store.html#a6374547f3c9f1afcaac52812e58375ef">CBasicKeyStore</a>, <a class="el" href="struct_flat_signing_provider.html#a4a532e0d9e0651fd023b5bad43bafa38">FlatSigningProvider</a>, and <a class="el" href="class_hiding_signing_provider.html#a39f2c6985440995db9ac81979b746b46">HidingSigningProvider</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_crypto_key_store.html#a01b3cbe18b296f2c51e6fe4137f24c4b">CCryptoKeyStore</a>, <a class="el" href="struct_flat_signing_provider.html#a4a532e0d9e0651fd023b5bad43bafa38">FlatSigningProvider</a>, <a class="el" href="class_c_basic_key_store.html#a6374547f3c9f1afcaac52812e58375ef">CBasicKeyStore</a>, and <a class="el" href="class_hiding_signing_provider.html#a39f2c6985440995db9ac81979b746b46">HidingSigningProvider</a>.</p>
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00036">36</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="sign_8h_source.html#l00041">41</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_signing_provider_a92c4057e90b212df6117707ce715381f_icgraph.svg" width="1080" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_signing_provider_a92c4057e90b212df6117707ce715381f_icgraph.svg" width="1080" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="ae05630ec19ee8956497d5264dc612b2f"></a>
+<a class="anchor" id="aed022fc3fb7cceab5925d0ca68da3a61"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -250,7 +252,7 @@ Here is the caller graph for this function:</div>
           <td class="memname">virtual bool SigningProvider::GetKeyOrigin </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_c_key_i_d.html">CKeyID</a> &amp;&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
+          <td class="paramname"><em>keyid</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -271,14 +273,15 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="class_c_wallet.html#a4fded992ac1b212e1b59ab777646b1e4">CWallet</a>, and <a class="el" href="class_hiding_signing_provider.html#a3b74b6137c68c6ba55e9b517bc699536">HidingSigningProvider</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_wallet.html#a4fded992ac1b212e1b59ab777646b1e4">CWallet</a>, <a class="el" href="struct_flat_signing_provider.html#abe58d4bb27566ec34b2938fc13788902">FlatSigningProvider</a>, and <a class="el" href="class_hiding_signing_provider.html#a3b74b6137c68c6ba55e9b517bc699536">HidingSigningProvider</a>.</p>
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00037">37</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="sign_8h_source.html#l00042">42</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_signing_provider_ae05630ec19ee8956497d5264dc612b2f_icgraph.svg" width="636" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_signing_provider_aed022fc3fb7cceab5925d0ca68da3a61_icgraph.svg" width="636" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -318,12 +321,13 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="class_c_crypto_key_store.html#af57d6ee7c31e1d9673e811a32aaa5ebc">CCryptoKeyStore</a>, <a class="el" href="struct_flat_signing_provider.html#a053ba26247d6adcb70bfba3b31c5e122">FlatSigningProvider</a>, <a class="el" href="class_c_basic_key_store.html#a9c437c32a05f9977bc5fabe6a976a4bc">CBasicKeyStore</a>, and <a class="el" href="class_hiding_signing_provider.html#a52d502d368522ec9b246dbdfb9fff43b">HidingSigningProvider</a>.</p>
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00035">35</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="sign_8h_source.html#l00040">40</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_signing_provider_a22bd873e85e12ea2d2cd398ad3647bd1_icgraph.svg" width="1188" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_signing_provider_a22bd873e85e12ea2d2cd398ad3647bd1_icgraph.svg" width="1188" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -335,7 +339,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:24 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:56 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

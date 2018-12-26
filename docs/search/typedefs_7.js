@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['ifstream',['ifstream',['../namespacefsbridge.html#af085b538f271bcbe7d41472c30d8e737',1,'fsbridge']]],
   ['indexed_5fdisconnected_5ftransactions',['indexed_disconnected_transactions',['../struct_disconnected_block_transactions.html#a2244745ee0e072d51c73ae44a9ffbd21',1,'DisconnectedBlockTransactions']]],
   ['indexed_5fmodified_5ftransaction_5fset',['indexed_modified_transaction_set',['../miner_8h.html#a76a2895480abe8fba7ac143dbf6c1047',1,'miner.h']]],
   ['indexed_5ftransaction_5fset',['indexed_transaction_set',['../class_c_tx_mem_pool.html#a5aa37b831075aeac7d7948755104dce2',1,'CTxMemPool']]],

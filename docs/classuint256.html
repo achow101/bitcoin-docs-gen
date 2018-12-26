@@ -116,9 +116,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aca0c2c2c61e453717e72a4eaec71168f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cad0fc486ebc2ed02462d5a7d4e4f2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classuint256.html#a7cad0fc486ebc2ed02462d5a7d4e4f2d">uint256</a> (const std::vector&lt; unsigned char &gt; &amp;vch)</td></tr>
 <tr class="separator:a7cad0fc486ebc2ed02462d5a7d4e4f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38210c00440a6c5f438f0c16cb8647fc"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classuint256.html#a38210c00440a6c5f438f0c16cb8647fc">GetCheapHash</a> () const </td></tr>
-<tr class="memdesc:a38210c00440a6c5f438f0c16cb8647fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">A cheap hash function that just returns 64 bits from the result, it can be used when the contents are considered uniformly random.  <a href="#a38210c00440a6c5f438f0c16cb8647fc">More...</a><br /></td></tr>
-<tr class="separator:a38210c00440a6c5f438f0c16cb8647fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classbase__blob"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classbase__blob')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classbase__blob.html">base_blob&lt; 256 &gt;</a></td></tr>
 <tr class="memitem:ada7be83089951dc9438f384c0587cf29 inherit pub_methods_classbase__blob"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbase__blob.html#ada7be83089951dc9438f384c0587cf29">base_blob</a> ()</td></tr>
 <tr class="separator:ada7be83089951dc9438f384c0587cf29 inherit pub_methods_classbase__blob"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,7 +165,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>256-bit opaque blob. </p>
 <dl class="section note"><dt>Note</dt><dd>This type is called <a class="el" href="classuint256.html" title="256-bit opaque blob. ">uint256</a> for historical reasons only. It is an opaque blob of 256 bits and has no integer operations. Use <a class="el" href="classarith__uint256.html" title="256-bit unsigned big integer. ">arith_uint256</a> if those are required. </dd></dl>
 
-<p>Definition at line <a class="el" href="uint256_8h_source.html#l00122">122</a> of file <a class="el" href="uint256_8h_source.html">uint256.h</a>.</p>
+<p>Definition at line <a class="el" href="uint256_8h_source.html#l00121">121</a> of file <a class="el" href="uint256_8h_source.html">uint256.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aca0c2c2c61e453717e72a4eaec71168f"></a>
 <div class="memitem">
@@ -191,7 +188,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uint256_8h_source.html#l00124">124</a> of file <a class="el" href="uint256_8h_source.html">uint256.h</a>.</p>
+<p>Definition at line <a class="el" href="uint256_8h_source.html#l00123">123</a> of file <a class="el" href="uint256_8h_source.html">uint256.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -224,43 +221,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uint256_8h_source.html#l00125">125</a> of file <a class="el" href="uint256_8h_source.html">uint256.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a38210c00440a6c5f438f0c16cb8647fc"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t uint256::GetCheapHash </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>A cheap hash function that just returns 64 bits from the result, it can be used when the contents are considered uniformly random. </p>
-<p>It is not appropriate when the value can easily be influenced from outside as e.g. a network adversary could provide values to trigger worst-case behavior. </p>
-
-<p>Definition at line <a class="el" href="uint256_8h_source.html#l00132">132</a> of file <a class="el" href="uint256_8h_source.html">uint256.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classuint256_a38210c00440a6c5f438f0c16cb8647fc_icgraph.svg" width="656" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
+<p>Definition at line <a class="el" href="uint256_8h_source.html#l00124">124</a> of file <a class="el" href="uint256_8h_source.html">uint256.h</a>.</p>
 
 </div>
 </div>
@@ -270,7 +231,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:24 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:56 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -91,13 +91,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">feebumper.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="consensus_2validation_8h_source.html">consensus/validation.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="interfaces_2chain_8h_source.html">interfaces/chain.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="coincontrol_8h_source.html">wallet/coincontrol.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="feebumper_8h_source.html">wallet/feebumper.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="wallet_2fees_8h_source.html">wallet/fees.h</a>&gt;</code><br />
@@ -107,13 +107,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="rbf_8h_source.html">policy/rbf.h</a>&gt;</code><br />
 <code>#include &lt;validation.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="txmempool_8h_source.html">txmempool.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="utilmoneystr_8h_source.html">utilmoneystr.h</a>&gt;</code><br />
-<code>#include &lt;util.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="moneystr_8h_source.html">util/moneystr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="system_8h_source.html">util/system.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="net_8h_source.html">net.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for feebumper.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="feebumper_8cpp__incl.svg" width="3851" height="635"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="feebumper_8cpp__incl.svg" width="4526" height="635"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="feebumper_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -137,31 +138,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a77c8ee472d015d24111564e708750b66"><td class="memItemLeft" align="right" valign="top">Result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefeebumper.html#a77c8ee472d015d24111564e708750b66">feebumper::CommitTransaction</a> (<a class="el" href="class_c_wallet.html">CWallet</a> *wallet, const <a class="el" href="classuint256.html">uint256</a> &amp;txid, <a class="el" href="struct_c_mutable_transaction.html">CMutableTransaction</a> &amp;&amp;mtx, std::vector&lt; std::string &gt; &amp;errors, <a class="el" href="classuint256.html">uint256</a> &amp;bumped_txid)</td></tr>
 <tr class="memdesc:a77c8ee472d015d24111564e708750b66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Commit the bumpfee transaction.  <a href="namespacefeebumper.html#a77c8ee472d015d24111564e708750b66">More...</a><br /></td></tr>
 <tr class="separator:a77c8ee472d015d24111564e708750b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a3e33d4f4b59247cb2a112233fe438d19"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacefeebumper.html#a08fe575802ef410f95f786253c489bc6">feebumper::Result</a> wallet&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="feebumper_8cpp.html#a3e33d4f4b59247cb2a112233fe438d19">cs_wallet</a></td></tr>
-<tr class="separator:a3e33d4f4b59247cb2a112233fe438d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a3e33d4f4b59247cb2a112233fe438d19"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacefeebumper.html#a08fe575802ef410f95f786253c489bc6">feebumper::Result</a> wallet cs_wallet</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="feebumper_8cpp_source.html#l00022">22</a> of file <a class="el" href="feebumper_8cpp_source.html">feebumper.cpp</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:22 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:51 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

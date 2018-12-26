@@ -128,6 +128,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9a4b7d7ef7bee82a401cd572dfa9821c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad34b8770f7acfc23be8a8780ad8742fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bitcoin_amount_field.html#ad34b8770f7acfc23be8a8780ad8742fe">setValue</a> (const <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;<a class="el" href="class_bitcoin_amount_field.html#ad9934f4b11cc805cb489801b28121e44">value</a>)</td></tr>
 <tr class="separator:ad34b8770f7acfc23be8a8780ad8742fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9b60ea4d1419a4419bbde7a4dc2773f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bitcoin_amount_field.html#ad9b60ea4d1419a4419bbde7a4dc2773f">SetAllowEmpty</a> (bool allow)</td></tr>
+<tr class="memdesc:ad9b60ea4d1419a4419bbde7a4dc2773f"><td class="mdescLeft">&#160;</td><td class="mdescRight">If allow empty is set to false the field will be set to the minimum allowed value if left empty.  <a href="#ad9b60ea4d1419a4419bbde7a4dc2773f">More...</a><br /></td></tr>
+<tr class="separator:ad9b60ea4d1419a4419bbde7a4dc2773f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c702b338dacabaa7814f7f6e3cb4d20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bitcoin_amount_field.html#a2c702b338dacabaa7814f7f6e3cb4d20">SetMinValue</a> (const <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;<a class="el" href="class_bitcoin_amount_field.html#ad9934f4b11cc805cb489801b28121e44">value</a>)</td></tr>
+<tr class="memdesc:a2c702b338dacabaa7814f7f6e3cb4d20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the minimum value in satoshis.  <a href="#a2c702b338dacabaa7814f7f6e3cb4d20">More...</a><br /></td></tr>
+<tr class="separator:a2c702b338dacabaa7814f7f6e3cb4d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a230c882343bf6ef710be6a091a568a1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bitcoin_amount_field.html#a230c882343bf6ef710be6a091a568a1d">SetMaxValue</a> (const <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;<a class="el" href="class_bitcoin_amount_field.html#ad9934f4b11cc805cb489801b28121e44">value</a>)</td></tr>
+<tr class="memdesc:a230c882343bf6ef710be6a091a568a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the maximum value in satoshis.  <a href="#a230c882343bf6ef710be6a091a568a1d">More...</a><br /></td></tr>
+<tr class="separator:a230c882343bf6ef710be6a091a568a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26ff92c23985e9ed79870311aed298c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bitcoin_amount_field.html#a26ff92c23985e9ed79870311aed298c3">setSingleStep</a> (const <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;step)</td></tr>
 <tr class="memdesc:a26ff92c23985e9ed79870311aed298c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set single step in satoshis.  <a href="#a26ff92c23985e9ed79870311aed298c3">More...</a><br /></td></tr>
 <tr class="separator:a26ff92c23985e9ed79870311aed298c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,7 +212,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00193">193</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00217">217</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -230,7 +239,7 @@ Here is the call graph for this function:</div>
 
 <p>Make field empty and ready for new input. </p>
 
-<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00223">223</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00247">247</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
 
 </div>
 </div>
@@ -268,12 +277,40 @@ Here is the call graph for this function:</div>
 
 <p>Intercept focus-in event and ',' key presses. </p>
 
-<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00251">251</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00275">275</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_amount_field_acc04caa1dfdc0c007ec978fb05ac9061_cgraph.svg" width="347" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad9b60ea4d1419a4419bbde7a4dc2773f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BitcoinAmountField::SetAllowEmpty </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allow</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If allow empty is set to false the field will be set to the minimum allowed value if left empty. </p>
+
+<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00302">302</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_amount_field_ad9b60ea4d1419a4419bbde7a4dc2773f_cgraph.svg" width="431" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -295,7 +332,7 @@ Here is the call graph for this function:</div>
 
 <p>Change unit used to display amount. </p>
 
-<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00294">294</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00333">333</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -322,7 +359,63 @@ Here is the call graph for this function:</div>
 
 <p>Enable/Disable. </p>
 
-<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00229">229</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00253">253</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a230c882343bf6ef710be6a091a568a1d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BitcoinAmountField::SetMaxValue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the maximum value in satoshis. </p>
+
+<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00312">312</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_amount_field_a230c882343bf6ef710be6a091a568a1d_cgraph.svg" width="1516" height="164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2c702b338dacabaa7814f7f6e3cb4d20"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BitcoinAmountField::SetMinValue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the minimum value in satoshis. </p>
+
+<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00307">307</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_amount_field_a2c702b338dacabaa7814f7f6e3cb4d20_cgraph.svg" width="1512" height="164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -342,7 +435,7 @@ Here is the call graph for this function:</div>
 
 <p>Make read-only. </p>
 
-<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00278">278</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00317">317</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
 
 </div>
 </div>
@@ -362,7 +455,7 @@ Here is the call graph for this function:</div>
 
 <p>Set single step in satoshis. </p>
 
-<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00299">299</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00338">338</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -389,7 +482,7 @@ Here is the call graph for this function:</div>
 
 <p>Qt messes up the tab chain by default in some cases (issue <a href="https://bugreports.qt-project.org/browse/QTBUG-10907">https://bugreports.qt-project.org/browse/QTBUG-10907</a>), in these cases we have to set it up manually. </p>
 
-<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00261">261</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00285">285</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
 
 </div>
 </div>
@@ -409,7 +502,7 @@ Here is the call graph for this function:</div>
 
 <p>Mark current value as invalid in UI. </p>
 
-<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00243">243</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00267">267</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -434,7 +527,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00273">273</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00297">297</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -467,7 +560,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00283">283</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00322">322</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -500,7 +593,7 @@ Here is the caller graph for this function:</div>
 
 <p>Perform input validation, mark field as invalid if entered value is not valid. </p>
 
-<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00235">235</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00259">259</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -525,7 +618,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00268">268</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoinamountfield_8cpp_source.html#l00292">292</a> of file <a class="el" href="bitcoinamountfield_8cpp_source.html">bitcoinamountfield.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -585,7 +678,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoinamountfield_8h_source.html#l00067">67</a> of file <a class="el" href="bitcoinamountfield_8h_source.html">bitcoinamountfield.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoinamountfield_8h_source.html#l00076">76</a> of file <a class="el" href="bitcoinamountfield_8h_source.html">bitcoinamountfield.h</a>.</p>
 
 </div>
 </div>
@@ -607,7 +700,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoinamountfield_8h_source.html#l00068">68</a> of file <a class="el" href="bitcoinamountfield_8h_source.html">bitcoinamountfield.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoinamountfield_8h_source.html#l00077">77</a> of file <a class="el" href="bitcoinamountfield_8h_source.html">bitcoinamountfield.h</a>.</p>
 
 </div>
 </div>
@@ -641,7 +734,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:22 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:52 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

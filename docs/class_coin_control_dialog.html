@@ -146,12 +146,14 @@ Private Types</h2></td></tr>
 <a class="el" href="class_coin_control_dialog.html#a88333fe8d7c8e9c84bf2bb8197845263a2660f2edad5ab284297c0342a0ba00c4">COLUMN_ADDRESS</a>, 
 <br />
 &#160;&#160;<a class="el" href="class_coin_control_dialog.html#a88333fe8d7c8e9c84bf2bb8197845263a8f949c53321bfd5c73fa0cfb3ee0bbf3">COLUMN_DATE</a>, 
-<a class="el" href="class_coin_control_dialog.html#a88333fe8d7c8e9c84bf2bb8197845263ad30fbfafbf9353a18f84317a2d6a092c">COLUMN_CONFIRMATIONS</a>, 
-<a class="el" href="class_coin_control_dialog.html#a88333fe8d7c8e9c84bf2bb8197845263a8905562cc39e679916d5c37329872fe6">COLUMN_TXHASH</a>, 
-<a class="el" href="class_coin_control_dialog.html#a88333fe8d7c8e9c84bf2bb8197845263ac6177eedd4464bd127d773aac321ff01">COLUMN_VOUT_INDEX</a>
+<a class="el" href="class_coin_control_dialog.html#a88333fe8d7c8e9c84bf2bb8197845263ad30fbfafbf9353a18f84317a2d6a092c">COLUMN_CONFIRMATIONS</a>
 <br />
  }</td></tr>
 <tr class="separator:a88333fe8d7c8e9c84bf2bb8197845263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e152748118de88d3403e10f6d2f6210"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="class_coin_control_dialog.html#a9e152748118de88d3403e10f6d2f6210a292f54dd45eacd87345f1f70a6b66180">TxHashRole</a> = Qt::UserRole, 
+<a class="el" href="class_coin_control_dialog.html#a9e152748118de88d3403e10f6d2f6210a255dffb508fb02ebe80e74222ff86ece">VOutRole</a>
+ }</td></tr>
+<tr class="separator:a9e152748118de88d3403e10f6d2f6210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
 Private Slots</h2></td></tr>
@@ -267,13 +269,37 @@ Friends</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a88333fe8d7c8e9c84bf2bb8197845263ad30fbfafbf9353a18f84317a2d6a092c"></a>COLUMN_CONFIRMATIONS&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a88333fe8d7c8e9c84bf2bb8197845263a8905562cc39e679916d5c37329872fe6"></a>COLUMN_TXHASH&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a88333fe8d7c8e9c84bf2bb8197845263ac6177eedd4464bd127d773aac321ff01"></a>COLUMN_VOUT_INDEX&#160;</td><td class="fielddoc">
-</td></tr>
 </table>
 
 <p>Definition at line <a class="el" href="coincontroldialog_8h_source.html#l00075">75</a> of file <a class="el" href="coincontroldialog_8h_source.html">coincontroldialog.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e152748118de88d3403e10f6d2f6210"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a9e152748118de88d3403e10f6d2f6210a292f54dd45eacd87345f1f70a6b66180"></a>TxHashRole&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9e152748118de88d3403e10f6d2f6210a255dffb508fb02ebe80e74222ff86ece"></a>VOutRole&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="coincontroldialog_8h_source.html#l00085">85</a> of file <a class="el" href="coincontroldialog_8h_source.html">coincontroldialog.h</a>.</p>
 
 </div>
 </div>
@@ -310,7 +336,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00044">44</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00049">49</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -334,7 +360,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00141">141</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00144">144</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 </div>
 </div>
@@ -361,7 +387,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00164">164</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00167">167</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -393,7 +419,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00171">171</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00174">174</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -432,7 +458,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00299">299</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00302">302</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -471,7 +497,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00287">287</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00290">290</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -510,7 +536,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00305">305</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00308">308</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -549,7 +575,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00317">317</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00320">320</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -588,7 +614,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00293">293</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00296">296</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -627,7 +653,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00311">311</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00314">314</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -666,7 +692,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00281">281</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00284">284</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -705,7 +731,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00593">593</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00596">596</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -737,7 +763,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00243">243</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00246">246</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -776,7 +802,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00228">228</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00231">231</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -815,7 +841,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00234">234</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00237">237</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -854,7 +880,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00252">252</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00255">255</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -894,7 +920,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00332">332</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00335">335</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -933,12 +959,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00258">258</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00261">261</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_coin_control_dialog_a92d82e9a08d81b99fda6546d83f63a19_cgraph.svg" width="1127" height="330"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_coin_control_dialog_a92d82e9a08d81b99fda6546d83f63a19_cgraph.svg" width="1127" height="423"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -973,12 +1000,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00360">360</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00363">363</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_coin_control_dialog_a775c6d290cb63667a434b09072094533_cgraph.svg" width="1528" height="1011"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_coin_control_dialog_a775c6d290cb63667a434b09072094533_cgraph.svg" width="1528" height="1011"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1013,12 +1041,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00353">353</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00356">356</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_coin_control_dialog_a1990d478f3ffba666c358a4f1bd395ec_cgraph.svg" width="1528" height="1011"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_coin_control_dialog_a1990d478f3ffba666c358a4f1bd395ec_cgraph.svg" width="1528" height="1011"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1045,12 +1074,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00151">151</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00154">154</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_coin_control_dialog_a4c34a48574814089c54f763a22f5317a_cgraph.svg" width="1190" height="1606"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_coin_control_dialog_a4c34a48574814089c54f763a22f5317a_cgraph.svg" width="1190" height="1606"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1085,12 +1115,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00193">193</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00196">196</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_coin_control_dialog_aaab37948490af620c7c2a1ab809c15ff_cgraph.svg" width="659" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_coin_control_dialog_aaab37948490af620c7c2a1ab809c15ff_cgraph.svg" width="810" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1135,7 +1166,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00323">323</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00326">326</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1167,12 +1198,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00271">271</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00274">274</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_coin_control_dialog_a3097ebdc8972660aae30f49f2ccd1d8c_cgraph.svg" width="664" height="220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_coin_control_dialog_a3097ebdc8972660aae30f49f2ccd1d8c_cgraph.svg" width="815" height="347"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1206,7 +1238,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00395">395</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00398">398</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1256,7 +1288,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00407">407</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00410">410</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1295,12 +1327,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00599">599</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00602">602</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_coin_control_dialog_aadea33050e5c1efd5eae8d2fcfa721f9_cgraph.svg" width="1528" height="1011"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_coin_control_dialog_aadea33050e5c1efd5eae8d2fcfa721f9_cgraph.svg" width="1528" height="1011"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1345,12 +1378,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00367">367</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8cpp_source.html#l00370">370</a> of file <a class="el" href="coincontroldialog_8cpp_source.html">coincontroldialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_coin_control_dialog_ac3c37dabd83f71d9c96bf5567fe85234_cgraph.svg" width="1520" height="896"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_coin_control_dialog_ac3c37dabd83f71d9c96bf5567fe85234_cgraph.svg" width="1263" height="1112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1382,7 +1416,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="coincontroldialog_8h_source.html#l00086">86</a> of file <a class="el" href="coincontroldialog_8h_source.html">coincontroldialog.h</a>.</p>
+<p>Definition at line <a class="el" href="coincontroldialog_8h_source.html#l00091">91</a> of file <a class="el" href="coincontroldialog_8h_source.html">coincontroldialog.h</a>.</p>
 
 </div>
 </div>
@@ -1658,7 +1692,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:23 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:54 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -14,5 +14,6 @@ var searchData=
   ['arith_5fuint256_2ecpp',['arith_uint256.cpp',['../arith__uint256_8cpp.html',1,'']]],
   ['arith_5fuint256_2eh',['arith_uint256.h',['../arith__uint256_8h.html',1,'']]],
   ['askpassphrasedialog_2ecpp',['askpassphrasedialog.cpp',['../askpassphrasedialog_8cpp.html',1,'']]],
-  ['askpassphrasedialog_2eh',['askpassphrasedialog.h',['../askpassphrasedialog_8h.html',1,'']]]
+  ['askpassphrasedialog_2eh',['askpassphrasedialog.h',['../askpassphrasedialog_8h.html',1,'']]],
+  ['attributes_2eh',['attributes.h',['../attributes_8h.html',1,'']]]
 ];

@@ -148,10 +148,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a8ccf6d68e26c160e6e97b8c66782e7f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpserver_8h.html#a8ccf6d68e26c160e6e97b8c66782e7f7">UpdateHTTPServerLogging</a> (bool enable)</td></tr>
 <tr class="memdesc:a8ccf6d68e26c160e6e97b8c66782e7f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change logging level for libevent.  <a href="#a8ccf6d68e26c160e6e97b8c66782e7f7">More...</a><br /></td></tr>
 <tr class="separator:a8ccf6d68e26c160e6e97b8c66782e7f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43a4c24762a6af819e364b55820323ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpserver_8h.html#a43a4c24762a6af819e364b55820323ed">RegisterHTTPHandler</a> (const std::string &amp;<a class="el" href="rest_8cpp.html#a5b41c5ae4505891e6c53e26df197e02b">prefix</a>, bool exactMatch, const <a class="el" href="httpserver_8h.html#ac21c51cfc9edce52ebe847dee0571a0a">HTTPRequestHandler</a> &amp;<a class="el" href="rest_8cpp.html#adb9b9c46c5f6a9f59301a2b7313a96d8">handler</a>)</td></tr>
+<tr class="memitem:a43a4c24762a6af819e364b55820323ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpserver_8h.html#a43a4c24762a6af819e364b55820323ed">RegisterHTTPHandler</a> (const std::string &amp;prefix, bool exactMatch, const <a class="el" href="httpserver_8h.html#ac21c51cfc9edce52ebe847dee0571a0a">HTTPRequestHandler</a> &amp;handler)</td></tr>
 <tr class="memdesc:a43a4c24762a6af819e364b55820323ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register handler for prefix.  <a href="#a43a4c24762a6af819e364b55820323ed">More...</a><br /></td></tr>
 <tr class="separator:a43a4c24762a6af819e364b55820323ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42d2567faa003c410a310a9c4e36ebdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpserver_8h.html#a42d2567faa003c410a310a9c4e36ebdc">UnregisterHTTPHandler</a> (const std::string &amp;<a class="el" href="rest_8cpp.html#a5b41c5ae4505891e6c53e26df197e02b">prefix</a>, bool exactMatch)</td></tr>
+<tr class="memitem:a42d2567faa003c410a310a9c4e36ebdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpserver_8h.html#a42d2567faa003c410a310a9c4e36ebdc">UnregisterHTTPHandler</a> (const std::string &amp;prefix, bool exactMatch)</td></tr>
 <tr class="memdesc:a42d2567faa003c410a310a9c4e36ebdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister handler for prefix.  <a href="#a42d2567faa003c410a310a9c4e36ebdc">More...</a><br /></td></tr>
 <tr class="separator:a42d2567faa003c410a310a9c4e36ebdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4843a79312705c8a4188de88cebb5a2d"><td class="memItemLeft" align="right" valign="top">struct event_base *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpserver_8h.html#a4843a79312705c8a4188de88cebb5a2d">EventBase</a> ()</td></tr>
@@ -194,7 +194,7 @@ Functions</h2></td></tr>
 <p>Return evhttp event base. </p>
 <p>This can be used by submodules to queue timers or custom events. </p>
 
-<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00494">494</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
+<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00482">482</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -221,12 +221,13 @@ Here is the caller graph for this function:</div>
 <p>Initialize HTTP server. </p>
 <p>Call this before RegisterHTTPHandler or <a class="el" href="httpserver_8h.html#a4843a79312705c8a4188de88cebb5a2d" title="Return evhttp event base. ">EventBase()</a>. </p>
 
-<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00350">350</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
+<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00358">358</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="httpserver_8h_a6808b08438e29d81ba310ebded4ba648_cgraph.svg" width="858" height="354"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="httpserver_8h_a6808b08438e29d81ba310ebded4ba648_cgraph.svg" width="858" height="328"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -254,7 +255,7 @@ Here is the caller graph for this function:</div>
 
 <p>Interrupt HTTP server threads. </p>
 
-<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00440">440</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
+<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00438">438</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -305,7 +306,7 @@ Here is the caller graph for this function:</div>
 <p>Register handler for prefix. </p>
 <p>If multiple handlers match a prefix, the first-registered one will be invoked. </p>
 
-<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00649">649</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
+<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00640">640</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -365,12 +366,13 @@ Here is the caller graph for this function:</div>
 
 <p>Stop HTTP server. </p>
 
-<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00455">455</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
+<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00449">449</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="httpserver_8h_ad95d08d62c15b43d52fdba7b7ecaa0aa_icgraph.svg" width="271" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="httpserver_8h_ad95d08d62c15b43d52fdba7b7ecaa0aa_icgraph.svg" width="271" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -402,12 +404,13 @@ Here is the caller graph for this function:</div>
 
 <p>Unregister handler for prefix. </p>
 
-<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00655">655</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
+<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00646">646</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="httpserver_8h_a42d2567faa003c410a310a9c4e36ebdc_icgraph.svg" width="472" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="httpserver_8h_a42d2567faa003c410a310a9c4e36ebdc_icgraph.svg" width="472" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -430,7 +433,7 @@ Here is the caller graph for this function:</div>
 <p>Change logging level for libevent. </p>
 <p>Removes <a class="el" href="namespace_b_c_log.html#ad1037484206121adbcda9f9c824ab6b2abaed4f3ec3875ec3b40a2e0610c9202f">BCLog::LIBEVENT</a> from log categories if libevent doesn't support debug logging. </p>
 
-<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00408">408</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
+<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00409">409</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -455,12 +458,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00669">669</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
+<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00660">660</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="httpserver_8h_a5c344a7490a1962254ceda09e73c8891_icgraph.svg" width="1390" height="1160"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="httpserver_8h_a5c344a7490a1962254ceda09e73c8891_icgraph.svg" width="1390" height="1112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -469,7 +473,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:21 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:48 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

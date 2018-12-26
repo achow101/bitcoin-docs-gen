@@ -111,9 +111,9 @@ Collaboration diagram for SingleThreadedSchedulerClient:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac59e1b78539e43d8cf92030311078fed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_single_threaded_scheduler_client.html#ac59e1b78539e43d8cf92030311078fed">SingleThreadedSchedulerClient</a> (<a class="el" href="class_c_scheduler.html">CScheduler</a> *pschedulerIn)</td></tr>
 <tr class="separator:ac59e1b78539e43d8cf92030311078fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afddb321316cade54c37c3fd020952655"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_single_threaded_scheduler_client.html#afddb321316cade54c37c3fd020952655">AddToProcessQueue</a> (std::function&lt; void(void)&gt; func)</td></tr>
-<tr class="memdesc:afddb321316cade54c37c3fd020952655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a callback to be executed.  <a href="#afddb321316cade54c37c3fd020952655">More...</a><br /></td></tr>
-<tr class="separator:afddb321316cade54c37c3fd020952655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a627fd930cb0b0a84660a9698ee4d3fdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_single_threaded_scheduler_client.html#a627fd930cb0b0a84660a9698ee4d3fdc">AddToProcessQueue</a> (std::function&lt; void()&gt; func)</td></tr>
+<tr class="memdesc:a627fd930cb0b0a84660a9698ee4d3fdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a callback to be executed.  <a href="#a627fd930cb0b0a84660a9698ee4d3fdc">More...</a><br /></td></tr>
+<tr class="separator:a627fd930cb0b0a84660a9698ee4d3fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00007a60e2f73bc9932aeb3f7a446b77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_single_threaded_scheduler_client.html#a00007a60e2f73bc9932aeb3f7a446b77">EmptyQueue</a> ()</td></tr>
 <tr class="separator:a00007a60e2f73bc9932aeb3f7a446b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a821f5d8bddb191af50d01978835ff03f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_single_threaded_scheduler_client.html#a821f5d8bddb191af50d01978835ff03f">CallbacksPending</a> ()</td></tr>
@@ -121,8 +121,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a64d33e33ab105e9957f578234cca972d"><td class="memItemLeft" align="right" valign="top">std::list&lt; std::function&lt; void(void)&gt; &gt; m_callbacks_pending&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_single_threaded_scheduler_client.html#a64d33e33ab105e9957f578234cca972d">GUARDED_BY</a> (<a class="el" href="class_single_threaded_scheduler_client.html#a7146ce93667d61911f784affd7904ca6">m_cs_callbacks_pending</a>)</td></tr>
-<tr class="separator:a64d33e33ab105e9957f578234cca972d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad295bd23bc085d1e435d8cd2caa53ce"><td class="memItemLeft" align="right" valign="top">std::list&lt; std::function&lt; void()&gt; &gt; m_callbacks_pending&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_single_threaded_scheduler_client.html#aad295bd23bc085d1e435d8cd2caa53ce">GUARDED_BY</a> (<a class="el" href="class_single_threaded_scheduler_client.html#a7146ce93667d61911f784affd7904ca6">m_cs_callbacks_pending</a>)</td></tr>
+<tr class="separator:aad295bd23bc085d1e435d8cd2caa53ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cc076cde7507488f888c0b173964843"><td class="memItemLeft" align="right" valign="top">bool m_are_callbacks_running&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_single_threaded_scheduler_client.html#a6cc076cde7507488f888c0b173964843">GUARDED_BY</a> (<a class="el" href="class_single_threaded_scheduler_client.html#a7146ce93667d61911f784affd7904ca6">m_cs_callbacks_pending</a>)</td></tr>
 <tr class="separator:a6cc076cde7507488f888c0b173964843"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ba96c33ff19150bb0f055b1f3435f70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_single_threaded_scheduler_client.html#a4ba96c33ff19150bb0f055b1f3435f70">MaybeScheduleProcessQueue</a> ()</td></tr>
@@ -170,14 +170,14 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="afddb321316cade54c37c3fd020952655"></a>
+<a class="anchor" id="a627fd930cb0b0a84660a9698ee4d3fdc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void SingleThreadedSchedulerClient::AddToProcessQueue </td>
           <td>(</td>
-          <td class="paramtype">std::function&lt; void(void)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
           <td class="paramname"><em>func</em></td><td>)</td>
           <td></td>
         </tr>
@@ -225,7 +225,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a64d33e33ab105e9957f578234cca972d"></a>
+<a class="anchor" id="aad295bd23bc085d1e435d8cd2caa53ce"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -233,7 +233,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::list&lt;std::function&lt;void (void)&gt; &gt; m_callbacks_pending SingleThreadedSchedulerClient::GUARDED_BY </td>
+          <td class="memname">std::list&lt;std::function&lt;void ()&gt; &gt; m_callbacks_pending SingleThreadedSchedulerClient::GUARDED_BY </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_single_threaded_scheduler_client.html#a7146ce93667d61911f784affd7904ca6">m_cs_callbacks_pending</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -403,7 +403,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:24 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:56 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

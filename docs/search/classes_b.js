@@ -5,6 +5,8 @@ var searchData=
   ['listcoinstestingsetup',['ListCoinsTestingSetup',['../class_list_coins_testing_setup.html',1,'']]],
   ['listensocket',['ListenSocket',['../struct_c_connman_1_1_listen_socket.html',1,'CConnman']]],
   ['localserviceinfo',['LocalServiceInfo',['../struct_local_service_info.html',1,'']]],
+  ['lock',['Lock',['../classinterfaces_1_1_chain_1_1_lock.html',1,'interfaces::Chain']]],
+  ['lockannotation',['LockAnnotation',['../struct_lock_annotation.html',1,'']]],
   ['lockedpageallocator',['LockedPageAllocator',['../class_locked_page_allocator.html',1,'']]],
   ['lockedpagearena',['LockedPageArena',['../class_locked_pool_1_1_locked_page_arena.html',1,'LockedPool']]],
   ['lockedpool',['LockedPool',['../class_locked_pool.html',1,'']]],

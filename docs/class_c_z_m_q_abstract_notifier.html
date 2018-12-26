@@ -90,6 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_c_z_m_q_abstract_notifier-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -118,6 +119,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad0aa1165dfd720d17b860ed539455aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ada06e94b36fb8c872ad880ae2eb3d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_z_m_q_abstract_notifier.html#a6ada06e94b36fb8c872ad880ae2eb3d6">SetAddress</a> (const std::string &amp;a)</td></tr>
 <tr class="separator:a6ada06e94b36fb8c872ad880ae2eb3d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74f221f13a718006b97f1e4e9e5d521"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_z_m_q_abstract_notifier.html#ab74f221f13a718006b97f1e4e9e5d521">GetOutboundMessageHighWaterMark</a> () const </td></tr>
+<tr class="separator:ab74f221f13a718006b97f1e4e9e5d521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f277c313918cdcda8a5bac7064f8c70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_z_m_q_abstract_notifier.html#a4f277c313918cdcda8a5bac7064f8c70">SetOutboundMessageHighWaterMark</a> (const int sndhwm)</td></tr>
+<tr class="separator:a4f277c313918cdcda8a5bac7064f8c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a877029827c0b1224bf0826a2e433e370"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_z_m_q_abstract_notifier.html#a877029827c0b1224bf0826a2e433e370">Initialize</a> (void *pcontext)=0</td></tr>
 <tr class="separator:a877029827c0b1224bf0826a2e433e370"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08713a9b91625eb86b400523fef3b2c6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_z_m_q_abstract_notifier.html#a08713a9b91625eb86b400523fef3b2c6">Shutdown</a> ()=0</td></tr>
@@ -133,6 +138,11 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:adf9df04ae4c55a55bcf7a9e85f30b481"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="class_c_z_m_q_abstract_notifier.html">CZMQAbstractNotifier</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_c_z_m_q_abstract_notifier.html#adf9df04ae4c55a55bcf7a9e85f30b481">Create</a> ()</td></tr>
 <tr class="separator:adf9df04ae4c55a55bcf7a9e85f30b481"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a326ef144693bb518752f376847d66909"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_z_m_q_abstract_notifier.html#a326ef144693bb518752f376847d66909">DEFAULT_ZMQ_SNDHWM</a> {1000}</td></tr>
+<tr class="separator:a326ef144693bb518752f376847d66909"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a4cad2310e9e6d791ce27268881eb82cf"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_z_m_q_abstract_notifier.html#a4cad2310e9e6d791ce27268881eb82cf">psocket</a></td></tr>
@@ -141,6 +151,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a7e8bab88a7f858433cb3ba7f5ce3f793"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b316c5ca39f6a5e2297de163eb23d53"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_z_m_q_abstract_notifier.html#a7b316c5ca39f6a5e2297de163eb23d53">address</a></td></tr>
 <tr class="separator:a7b316c5ca39f6a5e2297de163eb23d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee38846653508fcdbe995b58c6245c13"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_z_m_q_abstract_notifier.html#aee38846653508fcdbe995b58c6245c13">outbound_message_high_water_mark</a></td></tr>
+<tr class="separator:aee38846653508fcdbe995b58c6245c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -167,7 +179,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="zmqabstractnotifier_8h_source.html#l00018">18</a> of file <a class="el" href="zmqabstractnotifier_8h_source.html">zmqabstractnotifier.h</a>.</p>
+<p>Definition at line <a class="el" href="zmqabstractnotifier_8h_source.html#l00020">20</a> of file <a class="el" href="zmqabstractnotifier_8h_source.html">zmqabstractnotifier.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -199,7 +211,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="zmqabstractnotifier_8cpp_source.html#l00009">9</a> of file <a class="el" href="zmqabstractnotifier_8cpp_source.html">zmqabstractnotifier.cpp</a>.</p>
+<p>Definition at line <a class="el" href="zmqabstractnotifier_8cpp_source.html#l00010">10</a> of file <a class="el" href="zmqabstractnotifier_8cpp_source.html">zmqabstractnotifier.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -234,7 +246,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="zmqabstractnotifier_8h_source.html#l00022">22</a> of file <a class="el" href="zmqabstractnotifier_8h_source.html">zmqabstractnotifier.h</a>.</p>
+<p>Definition at line <a class="el" href="zmqabstractnotifier_8h_source.html#l00024">24</a> of file <a class="el" href="zmqabstractnotifier_8h_source.html">zmqabstractnotifier.h</a>.</p>
 
 </div>
 </div>
@@ -259,14 +271,40 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="zmqabstractnotifier_8h_source.html#l00029">29</a> of file <a class="el" href="zmqabstractnotifier_8h_source.html">zmqabstractnotifier.h</a>.</p>
+<p>Definition at line <a class="el" href="zmqabstractnotifier_8h_source.html#l00031">31</a> of file <a class="el" href="zmqabstractnotifier_8h_source.html">zmqabstractnotifier.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_z_m_q_abstract_notifier_ad0aa1165dfd720d17b860ed539455aca_icgraph.svg" width="814" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_z_m_q_abstract_notifier_ad0aa1165dfd720d17b860ed539455aca_icgraph.svg" width="814" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab74f221f13a718006b97f1e4e9e5d521"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CZMQAbstractNotifier::GetOutboundMessageHighWaterMark </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="zmqabstractnotifier_8h_source.html#l00033">33</a> of file <a class="el" href="zmqabstractnotifier_8h_source.html">zmqabstractnotifier.h</a>.</p>
 
 </div>
 </div>
@@ -291,12 +329,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="zmqabstractnotifier_8h_source.html#l00027">27</a> of file <a class="el" href="zmqabstractnotifier_8h_source.html">zmqabstractnotifier.h</a>.</p>
+<p>Definition at line <a class="el" href="zmqabstractnotifier_8h_source.html#l00029">29</a> of file <a class="el" href="zmqabstractnotifier_8h_source.html">zmqabstractnotifier.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_z_m_q_abstract_notifier_af61e42343e1ff78688ccdf86948c6a75_icgraph.svg" width="814" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_z_m_q_abstract_notifier_af61e42343e1ff78688ccdf86948c6a75_icgraph.svg" width="814" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -329,7 +368,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_z_m_q_abstract_notifier_a877029827c0b1224bf0826a2e433e370_icgraph.svg" width="795" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_z_m_q_abstract_notifier_a877029827c0b1224bf0826a2e433e370_icgraph.svg" width="872" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -359,12 +399,13 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="class_c_z_m_q_publish_raw_block_notifier.html#ab97fec1e14be818d03022f9271b9443c">CZMQPublishRawBlockNotifier</a>, and <a class="el" href="class_c_z_m_q_publish_hash_block_notifier.html#ae55bb8b55b8f61339acbf6225b757d27">CZMQPublishHashBlockNotifier</a>.</p>
 
-<p>Definition at line <a class="el" href="zmqabstractnotifier_8cpp_source.html#l00014">14</a> of file <a class="el" href="zmqabstractnotifier_8cpp_source.html">zmqabstractnotifier.cpp</a>.</p>
+<p>Definition at line <a class="el" href="zmqabstractnotifier_8cpp_source.html#l00015">15</a> of file <a class="el" href="zmqabstractnotifier_8cpp_source.html">zmqabstractnotifier.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_z_m_q_abstract_notifier_a85c604b1fb2559c98b04a4c885b96192_icgraph.svg" width="795" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_z_m_q_abstract_notifier_a85c604b1fb2559c98b04a4c885b96192_icgraph.svg" width="872" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -394,12 +435,13 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="class_c_z_m_q_publish_raw_transaction_notifier.html#ab863302cdb7c1539ae5cf90d5069ecd7">CZMQPublishRawTransactionNotifier</a>, and <a class="el" href="class_c_z_m_q_publish_hash_transaction_notifier.html#a5e3efb11ded1cac9aead9748e5fd949b">CZMQPublishHashTransactionNotifier</a>.</p>
 
-<p>Definition at line <a class="el" href="zmqabstractnotifier_8cpp_source.html#l00019">19</a> of file <a class="el" href="zmqabstractnotifier_8cpp_source.html">zmqabstractnotifier.cpp</a>.</p>
+<p>Definition at line <a class="el" href="zmqabstractnotifier_8cpp_source.html#l00020">20</a> of file <a class="el" href="zmqabstractnotifier_8cpp_source.html">zmqabstractnotifier.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_z_m_q_abstract_notifier_a91809065c7bf730a5f2144e2424b7d8f_icgraph.svg" width="819" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_z_m_q_abstract_notifier_a91809065c7bf730a5f2144e2424b7d8f_icgraph.svg" width="872" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -427,19 +469,55 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="zmqabstractnotifier_8h_source.html#l00030">30</a> of file <a class="el" href="zmqabstractnotifier_8h_source.html">zmqabstractnotifier.h</a>.</p>
+<p>Definition at line <a class="el" href="zmqabstractnotifier_8h_source.html#l00032">32</a> of file <a class="el" href="zmqabstractnotifier_8h_source.html">zmqabstractnotifier.h</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_z_m_q_abstract_notifier_a6ada06e94b36fb8c872ad880ae2eb3d6_icgraph.svg" width="556" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4f277c313918cdcda8a5bac7064f8c70"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CZMQAbstractNotifier::SetOutboundMessageHighWaterMark </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>sndhwm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="zmqabstractnotifier_8h_source.html#l00034">34</a> of file <a class="el" href="zmqabstractnotifier_8h_source.html">zmqabstractnotifier.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_z_m_q_abstract_notifier_a6ada06e94b36fb8c872ad880ae2eb3d6_cgraph.svg" width="384" height="248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_z_m_q_abstract_notifier_a4f277c313918cdcda8a5bac7064f8c70_cgraph.svg" width="490" height="248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_z_m_q_abstract_notifier_a6ada06e94b36fb8c872ad880ae2eb3d6_icgraph.svg" width="556" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_z_m_q_abstract_notifier_a4f277c313918cdcda8a5bac7064f8c70_icgraph.svg" width="662" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -467,12 +545,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="zmqabstractnotifier_8h_source.html#l00028">28</a> of file <a class="el" href="zmqabstractnotifier_8h_source.html">zmqabstractnotifier.h</a>.</p>
+<p>Definition at line <a class="el" href="zmqabstractnotifier_8h_source.html#l00030">30</a> of file <a class="el" href="zmqabstractnotifier_8h_source.html">zmqabstractnotifier.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_z_m_q_abstract_notifier_ab4179b7aeac89ce1a9214a46b21a4899_icgraph.svg" width="556" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_z_m_q_abstract_notifier_ab4179b7aeac89ce1a9214a46b21a4899_icgraph.svg" width="556" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -504,7 +583,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_z_m_q_abstract_notifier_a08713a9b91625eb86b400523fef3b2c6_icgraph.svg" width="838" height="280"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_z_m_q_abstract_notifier_a08713a9b91625eb86b400523fef3b2c6_icgraph.svg" width="891" height="280"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -529,7 +609,51 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="zmqabstractnotifier_8h_source.html#l00041">41</a> of file <a class="el" href="zmqabstractnotifier_8h_source.html">zmqabstractnotifier.h</a>.</p>
+<p>Definition at line <a class="el" href="zmqabstractnotifier_8h_source.html#l00049">49</a> of file <a class="el" href="zmqabstractnotifier_8h_source.html">zmqabstractnotifier.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a326ef144693bb518752f376847d66909"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int CZMQAbstractNotifier::DEFAULT_ZMQ_SNDHWM {1000}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="zmqabstractnotifier_8h_source.html#l00018">18</a> of file <a class="el" href="zmqabstractnotifier_8h_source.html">zmqabstractnotifier.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aee38846653508fcdbe995b58c6245c13"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CZMQAbstractNotifier::outbound_message_high_water_mark</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="zmqabstractnotifier_8h_source.html#l00050">50</a> of file <a class="el" href="zmqabstractnotifier_8h_source.html">zmqabstractnotifier.h</a>.</p>
 
 </div>
 </div>
@@ -551,7 +675,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="zmqabstractnotifier_8h_source.html#l00039">39</a> of file <a class="el" href="zmqabstractnotifier_8h_source.html">zmqabstractnotifier.h</a>.</p>
+<p>Definition at line <a class="el" href="zmqabstractnotifier_8h_source.html#l00047">47</a> of file <a class="el" href="zmqabstractnotifier_8h_source.html">zmqabstractnotifier.h</a>.</p>
 
 </div>
 </div>
@@ -573,7 +697,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="zmqabstractnotifier_8h_source.html#l00040">40</a> of file <a class="el" href="zmqabstractnotifier_8h_source.html">zmqabstractnotifier.h</a>.</p>
+<p>Definition at line <a class="el" href="zmqabstractnotifier_8h_source.html#l00048">48</a> of file <a class="el" href="zmqabstractnotifier_8h_source.html">zmqabstractnotifier.h</a>.</p>
 
 </div>
 </div>
@@ -584,7 +708,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:24 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:54 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

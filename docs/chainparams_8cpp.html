@@ -100,13 +100,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="chainparamsseeds_8h_source.html">chainparamsseeds.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="merkle_8h_source.html">consensus/merkle.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="tinyformat_8h_source.html">tinyformat.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="util_8h_source.html">util.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="utilstrencodings_8h_source.html">utilstrencodings.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="system_8h_source.html">util/system.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="strencodings_8h_source.html">util/strencodings.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="versionbitsinfo_8h_source.html">versionbitsinfo.h</a>&gt;</code><br />
 <code>#include &lt;assert.h&gt;</code><br />
+<code>#include &lt;boost/algorithm/string/classification.hpp&gt;</code><br />
+<code>#include &lt;boost/algorithm/string/split.hpp&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for chainparams.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="chainparams_8cpp__incl.svg" width="3704" height="500"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="chainparams_8cpp__incl.svg" width="3774" height="515"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="chainparams_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -128,23 +132,20 @@ Functions</h2></td></tr>
 <tr class="memitem:ace5c5b706d71a324a417dd2db394fd4a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chainparams_8cpp.html#ace5c5b706d71a324a417dd2db394fd4a">Params</a> ()</td></tr>
 <tr class="memdesc:ace5c5b706d71a324a417dd2db394fd4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the currently selected parameters.  <a href="#ace5c5b706d71a324a417dd2db394fd4a">More...</a><br /></td></tr>
 <tr class="separator:ace5c5b706d71a324a417dd2db394fd4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad829da8984d3486108858bf24e145464"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_c_chain_params.html">CChainParams</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chainparams_8cpp.html#ad829da8984d3486108858bf24e145464">CreateChainParams</a> (const std::string &amp;chain)</td></tr>
-<tr class="memdesc:ad829da8984d3486108858bf24e145464"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and returns a std::unique_ptr&lt;CChainParams&gt; of the chosen chain.  <a href="#ad829da8984d3486108858bf24e145464">More...</a><br /></td></tr>
-<tr class="separator:ad829da8984d3486108858bf24e145464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ea79f6881b2b728e4e732889fb0aa1b"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; const <a class="el" href="class_c_chain_params.html">CChainParams</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chainparams_8cpp.html#a5ea79f6881b2b728e4e732889fb0aa1b">CreateChainParams</a> (const std::string &amp;chain)</td></tr>
+<tr class="memdesc:a5ea79f6881b2b728e4e732889fb0aa1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and returns a std::unique_ptr&lt;CChainParams&gt; of the chosen chain.  <a href="#a5ea79f6881b2b728e4e732889fb0aa1b">More...</a><br /></td></tr>
+<tr class="separator:a5ea79f6881b2b728e4e732889fb0aa1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40a5ef19814f92d0be2a3ef7456aa28e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chainparams_8cpp.html#a40a5ef19814f92d0be2a3ef7456aa28e">SelectParams</a> (const std::string &amp;network)</td></tr>
 <tr class="memdesc:a40a5ef19814f92d0be2a3ef7456aa28e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the params returned by <a class="el" href="chainparams_8h.html#ace5c5b706d71a324a417dd2db394fd4a" title="Return the currently selected parameters. ">Params()</a> to those for the given BIP70 chain name.  <a href="#a40a5ef19814f92d0be2a3ef7456aa28e">More...</a><br /></td></tr>
 <tr class="separator:a40a5ef19814f92d0be2a3ef7456aa28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ff7310f4add117aa99baf7baee48e4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chainparams_8cpp.html#a0ff7310f4add117aa99baf7baee48e4b">UpdateVersionBitsParameters</a> (<a class="el" href="namespace_consensus.html#ac6c2c4d710cea840f692c6312ec91f69">Consensus::DeploymentPos</a> d, int64_t nStartTime, int64_t nTimeout)</td></tr>
-<tr class="memdesc:a0ff7310f4add117aa99baf7baee48e4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows modifying the Version Bits regtest parameters.  <a href="#a0ff7310f4add117aa99baf7baee48e4b">More...</a><br /></td></tr>
-<tr class="separator:a0ff7310f4add117aa99baf7baee48e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ad829da8984d3486108858bf24e145464"></a>
+<a class="anchor" id="a5ea79f6881b2b728e4e732889fb0aa1b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="class_c_chain_params.html">CChainParams</a>&gt; CreateChainParams </td>
+          <td class="memname">std::unique_ptr&lt;const <a class="el" href="class_c_chain_params.html">CChainParams</a>&gt; CreateChainParams </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>chain</em></td><td>)</td>
@@ -162,12 +163,21 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="chainparams_8cpp_source.html#l00355">355</a> of file <a class="el" href="chainparams_8cpp_source.html">chainparams.cpp</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8cpp_source.html#l00397">397</a> of file <a class="el" href="chainparams_8cpp_source.html">chainparams.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="chainparams_8cpp_a5ea79f6881b2b728e4e732889fb0aa1b_cgraph.svg" width="2211" height="544"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="chainparams_8cpp_ad829da8984d3486108858bf24e145464_icgraph.svg" width="586" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="chainparams_8cpp_a5ea79f6881b2b728e4e732889fb0aa1b_icgraph.svg" width="586" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -189,7 +199,7 @@ Here is the caller graph for this function:</div>
 <p>Return the currently selected parameters. </p>
 <p>This won't change after app startup, except for unit tests. </p>
 
-<p>Definition at line <a class="el" href="chainparams_8cpp_source.html#l00350">350</a> of file <a class="el" href="chainparams_8cpp_source.html">chainparams.cpp</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8cpp_source.html#l00392">392</a> of file <a class="el" href="chainparams_8cpp_source.html">chainparams.cpp</a>.</p>
 
 </div>
 </div>
@@ -215,55 +225,13 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="chainparams_8cpp_source.html#l00366">366</a> of file <a class="el" href="chainparams_8cpp_source.html">chainparams.cpp</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8cpp_source.html#l00408">408</a> of file <a class="el" href="chainparams_8cpp_source.html">chainparams.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="chainparams_8cpp_a40a5ef19814f92d0be2a3ef7456aa28e_cgraph.svg" width="562" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="chainparams_8cpp_a40a5ef19814f92d0be2a3ef7456aa28e_cgraph.svg" width="2370" height="544"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a0ff7310f4add117aa99baf7baee48e4b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void UpdateVersionBitsParameters </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespace_consensus.html#ac6c2c4d710cea840f692c6312ec91f69">Consensus::DeploymentPos</a>&#160;</td>
-          <td class="paramname"><em>d</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>nStartTime</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>nTimeout</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Allows modifying the Version Bits regtest parameters. </p>
-
-<p>Definition at line <a class="el" href="chainparams_8cpp_source.html#l00372">372</a> of file <a class="el" href="chainparams_8cpp_source.html">chainparams.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="chainparams_8cpp_a0ff7310f4add117aa99baf7baee48e4b_icgraph.svg" width="1239" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -272,7 +240,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:20 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:47 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -131,6 +131,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a635deeaf3ca4e8b3e1a97054607211b9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_in.html#a635deeaf3ca4e8b3e1a97054607211b9">nSequence</a></td></tr>
 <tr class="separator:a635deeaf3ca4e8b3e1a97054607211b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0ba555e0324b9245d4e54ff8caffeca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_script_witness.html">CScriptWitness</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_in.html#ae0ba555e0324b9245d4e54ff8caffeca">scriptWitness</a></td></tr>
+<tr class="memdesc:ae0ba555e0324b9245d4e54ff8caffeca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only serialized through <a class="el" href="class_c_transaction.html" title="The basic transaction that is broadcasted on the network and contained in blocks. ...">CTransaction</a>.  <a href="#ae0ba555e0324b9245d4e54ff8caffeca">More...</a><br /></td></tr>
 <tr class="separator:ae0ba555e0324b9245d4e54ff8caffeca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad2fd3fef5ad4ebe7e54c0db0cc34be4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_in.html#aad2fd3fef5ad4ebe7e54c0db0cc34be4">ADD_SERIALIZE_METHODS</a></td></tr>
 <tr class="separator:aad2fd3fef5ad4ebe7e54c0db0cc34be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,9 +139,8 @@ Public Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a70adafa744d8baaf36957291c850b29d"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_in.html#a70adafa744d8baaf36957291c850b29d">SEQUENCE_FINAL</a> = 0xffffffff</td></tr>
-<tr class="memdesc:a70adafa744d8baaf36957291c850b29d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only serialized through <a class="el" href="class_c_transaction.html" title="The basic transaction that is broadcasted on the network and contained in blocks. ...">CTransaction</a>.  <a href="#a70adafa744d8baaf36957291c850b29d">More...</a><br /></td></tr>
 <tr class="separator:a70adafa744d8baaf36957291c850b29d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21b493d79f5655b11277c032ac8c4d92"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_in.html#a21b493d79f5655b11277c032ac8c4d92">SEQUENCE_LOCKTIME_DISABLE_FLAG</a> = (1 &lt;&lt; 31)</td></tr>
+<tr class="memitem:a21b493d79f5655b11277c032ac8c4d92"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_in.html#a21b493d79f5655b11277c032ac8c4d92">SEQUENCE_LOCKTIME_DISABLE_FLAG</a> = (1U &lt;&lt; 31)</td></tr>
 <tr class="separator:a21b493d79f5655b11277c032ac8c4d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac32ea3f377d48214ad410b8be872bc27"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_in.html#ac32ea3f377d48214ad410b8be872bc27">SEQUENCE_LOCKTIME_TYPE_FLAG</a> = (1 &lt;&lt; 22)</td></tr>
 <tr class="separator:ac32ea3f377d48214ad410b8be872bc27"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,7 +160,7 @@ Friends</h2></td></tr>
 <div class="textblock"><p>An input of a transaction. </p>
 <p>It contains the location of the previous transaction's output that it claims and a signature that matches the output's public key. </p>
 
-<p>Definition at line <a class="el" href="transaction_8h_source.html#l00061">61</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
+<p>Definition at line <a class="el" href="transaction_8h_source.html#l00063">63</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="abcf9f5a65b0a016b31912f4cd1f32c73"></a>
 <div class="memitem">
@@ -183,7 +183,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transaction_8h_source.html#l00096">96</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
+<p>Definition at line <a class="el" href="transaction_8h_source.html#l00098">98</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
 
 </div>
 </div>
@@ -311,7 +311,7 @@ template&lt;typename Stream , typename Operation &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transaction_8h_source.html#l00107">107</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
+<p>Definition at line <a class="el" href="transaction_8h_source.html#l00109">109</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
 
 </div>
 </div>
@@ -333,7 +333,8 @@ template&lt;typename Stream , typename Operation &gt; </div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_in_aeac9b3abd4b2d81e9ec4401d1383778d_cgraph.svg" width="240" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_in_aeac9b3abd4b2d81e9ec4401d1383778d_cgraph.svg" width="240" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -372,7 +373,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transaction_8h_source.html#l00120">120</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
+<p>Definition at line <a class="el" href="transaction_8h_source.html#l00122">122</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
 
 </div>
 </div>
@@ -408,7 +409,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transaction_8h_source.html#l00113">113</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
+<p>Definition at line <a class="el" href="transaction_8h_source.html#l00115">115</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
 
 </div>
 </div>
@@ -423,7 +424,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transaction_8h_source.html#l00104">104</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
+<p>Definition at line <a class="el" href="transaction_8h_source.html#l00106">106</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
 
 </div>
 </div>
@@ -437,7 +438,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transaction_8h_source.html#l00066">66</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
+<p>Definition at line <a class="el" href="transaction_8h_source.html#l00068">68</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
 
 </div>
 </div>
@@ -451,7 +452,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transaction_8h_source.html#l00064">64</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
+<p>Definition at line <a class="el" href="transaction_8h_source.html#l00066">66</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
 
 </div>
 </div>
@@ -465,7 +466,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transaction_8h_source.html#l00065">65</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
+<p>Definition at line <a class="el" href="transaction_8h_source.html#l00067">67</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
 
 </div>
 </div>
@@ -479,7 +480,9 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transaction_8h_source.html#l00067">67</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
+<p>Only serialized through <a class="el" href="class_c_transaction.html" title="The basic transaction that is broadcasted on the network and contained in blocks. ...">CTransaction</a>. </p>
+
+<p>Definition at line <a class="el" href="transaction_8h_source.html#l00069">69</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
 
 </div>
 </div>
@@ -501,9 +504,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Only serialized through <a class="el" href="class_c_transaction.html" title="The basic transaction that is broadcasted on the network and contained in blocks. ...">CTransaction</a>. </p>
-
-<p>Definition at line <a class="el" href="transaction_8h_source.html#l00071">71</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
+<p>Definition at line <a class="el" href="transaction_8h_source.html#l00073">73</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
 
 </div>
 </div>
@@ -515,7 +516,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint32_t CTxIn::SEQUENCE_LOCKTIME_DISABLE_FLAG = (1 &lt;&lt; 31)</td>
+          <td class="memname">const uint32_t CTxIn::SEQUENCE_LOCKTIME_DISABLE_FLAG = (1U &lt;&lt; 31)</td>
         </tr>
       </table>
   </td>
@@ -525,7 +526,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transaction_8h_source.html#l00076">76</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
+<p>Definition at line <a class="el" href="transaction_8h_source.html#l00078">78</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
 
 </div>
 </div>
@@ -547,7 +548,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transaction_8h_source.html#l00094">94</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
+<p>Definition at line <a class="el" href="transaction_8h_source.html#l00096">96</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
 
 </div>
 </div>
@@ -569,7 +570,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transaction_8h_source.html#l00085">85</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
+<p>Definition at line <a class="el" href="transaction_8h_source.html#l00087">87</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
 
 </div>
 </div>
@@ -591,7 +592,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transaction_8h_source.html#l00081">81</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
+<p>Definition at line <a class="el" href="transaction_8h_source.html#l00083">83</a> of file <a class="el" href="transaction_8h_source.html">transaction.h</a>.</p>
 
 </div>
 </div>
@@ -602,7 +603,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:23 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:54 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -148,7 +148,7 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa7cc2494c0b0b47c0fbe5373c3bbd0b3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_node.html#aa7cc2494c0b0b47c0fbe5373c3bbd0b3">~Node</a> ()</td></tr>
 <tr class="separator:aa7cc2494c0b0b47c0fbe5373c3bbd0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a089f4ccfda8343a85d02ab1d199af227"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_node.html#a089f4ccfda8343a85d02ab1d199af227">parseParameters</a> (int argc, const char *const argv[], std::string &amp;<a class="el" href="util_8h.html#a0605c886f88f190fa6a51ae07ca7558a">error</a>)=0</td></tr>
+<tr class="memitem:a089f4ccfda8343a85d02ab1d199af227"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_node.html#a089f4ccfda8343a85d02ab1d199af227">parseParameters</a> (int argc, const char *const argv[], std::string &amp;<a class="el" href="system_8h.html#a0605c886f88f190fa6a51ae07ca7558a">error</a>)=0</td></tr>
 <tr class="memdesc:a089f4ccfda8343a85d02ab1d199af227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set command line arguments.  <a href="#a089f4ccfda8343a85d02ab1d199af227">More...</a><br /></td></tr>
 <tr class="separator:a089f4ccfda8343a85d02ab1d199af227"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb4de13fc9b8e4ba8b6e1295ede1849d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_node.html#adb4de13fc9b8e4ba8b6e1295ede1849d">softSetArg</a> (const std::string &amp;arg, const std::string &amp;value)=0</td></tr>
@@ -157,7 +157,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8db6dbb31ab046bfc577ad772bc683c4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_node.html#a8db6dbb31ab046bfc577ad772bc683c4">softSetBoolArg</a> (const std::string &amp;arg, bool value)=0</td></tr>
 <tr class="memdesc:a8db6dbb31ab046bfc577ad772bc683c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a command line boolean argument if it doesn't already have a value.  <a href="#a8db6dbb31ab046bfc577ad772bc683c4">More...</a><br /></td></tr>
 <tr class="separator:a8db6dbb31ab046bfc577ad772bc683c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a382a7a3f6b3cee8ac776e942be4e648b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_node.html#a382a7a3f6b3cee8ac776e942be4e648b">readConfigFiles</a> (std::string &amp;<a class="el" href="util_8h.html#a0605c886f88f190fa6a51ae07ca7558a">error</a>)=0</td></tr>
+<tr class="memitem:a382a7a3f6b3cee8ac776e942be4e648b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_node.html#a382a7a3f6b3cee8ac776e942be4e648b">readConfigFiles</a> (std::string &amp;<a class="el" href="system_8h.html#a0605c886f88f190fa6a51ae07ca7558a">error</a>)=0</td></tr>
 <tr class="memdesc:a382a7a3f6b3cee8ac776e942be4e648b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load settings from configuration file.  <a href="#a382a7a3f6b3cee8ac776e942be4e648b">More...</a><br /></td></tr>
 <tr class="separator:a382a7a3f6b3cee8ac776e942be4e648b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9113520724be1e56bc7f0eea13ab9fd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_node.html#aa9113520724be1e56bc7f0eea13ab9fd">selectParams</a> (const std::string &amp;network)=0</td></tr>
@@ -281,6 +281,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeaedea9227b15cde8ca0d49821df3ad8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_node.html#aeaedea9227b15cde8ca0d49821df3ad8">getUnspentOutput</a> (const <a class="el" href="class_c_out_point.html">COutPoint</a> &amp;output, <a class="el" href="class_coin.html">Coin</a> &amp;coin)=0</td></tr>
 <tr class="memdesc:aeaedea9227b15cde8ca0d49821df3ad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get unspent outputs associated with a transaction.  <a href="#aeaedea9227b15cde8ca0d49821df3ad8">More...</a><br /></td></tr>
 <tr class="separator:aeaedea9227b15cde8ca0d49821df3ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad32ac66c23e4cb02e063ae571c017c20"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_node.html#ad32ac66c23e4cb02e063ae571c017c20">getWalletDir</a> ()=0</td></tr>
+<tr class="memdesc:ad32ac66c23e4cb02e063ae571c017c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return default wallet directory.  <a href="#ad32ac66c23e4cb02e063ae571c017c20">More...</a><br /></td></tr>
+<tr class="separator:ad32ac66c23e4cb02e063ae571c017c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a150d00cb0e3fb871d3853a9a80bbfc66"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_node.html#a150d00cb0e3fb871d3853a9a80bbfc66">listWalletDir</a> ()=0</td></tr>
+<tr class="memdesc:a150d00cb0e3fb871d3853a9a80bbfc66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return available wallets in wallet directory.  <a href="#a150d00cb0e3fb871d3853a9a80bbfc66">More...</a><br /></td></tr>
+<tr class="separator:a150d00cb0e3fb871d3853a9a80bbfc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3428e79c308e1a669872b4789e004bfa"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::unique_ptr&lt; <a class="el" href="classinterfaces_1_1_wallet.html">Wallet</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_node.html#a3428e79c308e1a669872b4789e004bfa">getWallets</a> ()=0</td></tr>
 <tr class="memdesc:a3428e79c308e1a669872b4789e004bfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return interfaces for accessing wallets (if any).  <a href="#a3428e79c308e1a669872b4789e004bfa">More...</a><br /></td></tr>
 <tr class="separator:a3428e79c308e1a669872b4789e004bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -324,7 +330,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for ban list messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00216">216</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00222">222</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -340,7 +346,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for init messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00180">180</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00186">186</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -356,7 +362,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for load wallet messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00200">200</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00206">206</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -372,7 +378,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for message box messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00185">185</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00191">191</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -404,7 +410,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for notify alert messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00212">212</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00218">218</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -420,7 +426,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for block tip messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00221">221</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00227">227</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -436,7 +442,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for header tip messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00226">226</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00232">232</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -452,7 +458,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for network active messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00208">208</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00214">214</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -468,7 +474,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for number of connections changed messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00204">204</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00210">210</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -484,7 +490,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for question messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00192">192</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00198">198</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -500,7 +506,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for progress messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00196">196</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00202">202</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -531,7 +537,8 @@ Public Member Functions</h2></td></tr>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_aa7cc2494c0b0b47c0fbe5373c3bbd0b3_cgraph.svg" width="1206" height="1566"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_aa7cc2494c0b0b47c0fbe5373c3bbd0b3_cgraph.svg" width="1206" height="1566"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -866,7 +873,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_af4f0bfc100d1bff9862b55adef983f9d_icgraph.svg" width="2854" height="795"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_af4f0bfc100d1bff9862b55adef983f9d_icgraph.svg" width="3152" height="582"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -941,7 +949,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_a1996ff8c079369678347e6201789fcb6_icgraph.svg" width="1614" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_a1996ff8c079369678347e6201789fcb6_icgraph.svg" width="1614" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1131,7 +1140,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_a6b05152fe56cb8d90c3c58039e6d5599_icgraph.svg" width="2350" height="198"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_a6b05152fe56cb8d90c3c58039e6d5599_icgraph.svg" width="464" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1302,7 +1312,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_a62123e0abdccfc6dbc7ef77b52bb02f8_icgraph.svg" width="1798" height="228"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_a62123e0abdccfc6dbc7ef77b52bb02f8_icgraph.svg" width="1774" height="292"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1334,7 +1345,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_a632b312863433ed8028c4b91c433fbc5_icgraph.svg" width="1602" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_a632b312863433ed8028c4b91c433fbc5_icgraph.svg" width="1602" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1476,6 +1488,31 @@ Here is the caller graph for this function:</div>
 <div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_aa3cb283d1b1f617dc750e32c27384176_icgraph.svg" width="1383" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad32ac66c23e4cb02e063ae571c017c20"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string interfaces::Node::getWalletDir </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return default wallet directory. </p>
 
 </div>
 </div>
@@ -1975,7 +2012,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_adebb83abdd847f793360a3af9f87f0fc_icgraph.svg" width="1856" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_adebb83abdd847f793360a3af9f87f0fc_icgraph.svg" width="1856" height="202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2010,6 +2048,31 @@ Here is the caller graph for this function:</div>
 <div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_a10cbf8c3c098e189dcd981c7c0115efe_icgraph.svg" width="1332" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="a150d00cb0e3fb871d3853a9a80bbfc66"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt;std::string&gt; interfaces::Node::listWalletDir </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return available wallets in wallet directory. </p>
 
 </div>
 </div>
@@ -2481,7 +2544,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:25 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:57 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

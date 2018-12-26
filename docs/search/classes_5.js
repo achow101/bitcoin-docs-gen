@@ -13,6 +13,5 @@ var searchData=
   ['formatlistn_3c_200_20_3e',['FormatListN&lt; 0 &gt;',['../classtinyformat_1_1detail_1_1_format_list_n_3_010_01_4.html',1,'tinyformat::detail']]],
   ['formatvalueastype',['formatValueAsType',['../structtinyformat_1_1detail_1_1format_value_as_type.html',1,'tinyformat::detail']]],
   ['formatvalueastype_3c_20t_2c_20fmtt_2c_20true_20_3e',['formatValueAsType&lt; T, fmtT, true &gt;',['../structtinyformat_1_1detail_1_1format_value_as_type_3_01_t_00_01fmt_t_00_01true_01_4.html',1,'tinyformat::detail']]],
-  ['freespacechecker',['FreespaceChecker',['../class_freespace_checker.html',1,'']]],
-  ['functioncallback',['FunctionCallback',['../class_function_callback.html',1,'']]]
+  ['freespacechecker',['FreespaceChecker',['../class_freespace_checker.html',1,'']]]
 ];

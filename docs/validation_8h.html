@@ -100,6 +100,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="amount_8h_source.html">amount.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="coins_8h_source.html">coins.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="common_8h_source.html">crypto/common.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="fs_8h_source.html">fs.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="protocol_8h_source.html">protocol.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="feerate_8h_source.html">policy/feerate.h</a>&gt;</code><br />
@@ -119,12 +120,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for validation.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h__incl.svg" width="3626" height="650"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h__incl.svg" width="3639" height="635"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h__dep__incl.svg" width="8094" height="202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h__dep__incl.svg" width="8342" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="validation_8h_source.html">Go to the source code of this file.</a></p>
@@ -159,7 +162,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a531eb79ff695289ac9a4f8daf292273c"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#a531eb79ff695289ac9a4f8daf292273c">OpenBlockFile</a> (const <a class="el" href="struct_c_disk_block_pos.html">CDiskBlockPos</a> &amp;pos, bool fReadOnly=false)</td></tr>
 <tr class="memdesc:a531eb79ff695289ac9a4f8daf292273c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a block file (blk?????.dat)  <a href="#a531eb79ff695289ac9a4f8daf292273c">More...</a><br /></td></tr>
 <tr class="separator:a531eb79ff695289ac9a4f8daf292273c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14ff9fb82bd3b6a8d7887f68873cdc4d"><td class="memItemLeft" align="right" valign="top">fs::path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#a14ff9fb82bd3b6a8d7887f68873cdc4d">GetBlockPosFilename</a> (const <a class="el" href="struct_c_disk_block_pos.html">CDiskBlockPos</a> &amp;pos, const char *<a class="el" href="rest_8cpp.html#a5b41c5ae4505891e6c53e26df197e02b">prefix</a>)</td></tr>
+<tr class="memitem:a14ff9fb82bd3b6a8d7887f68873cdc4d"><td class="memItemLeft" align="right" valign="top">fs::path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#a14ff9fb82bd3b6a8d7887f68873cdc4d">GetBlockPosFilename</a> (const <a class="el" href="struct_c_disk_block_pos.html">CDiskBlockPos</a> &amp;pos, const char *prefix)</td></tr>
 <tr class="memdesc:a14ff9fb82bd3b6a8d7887f68873cdc4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translation to a filesystem path.  <a href="#a14ff9fb82bd3b6a8d7887f68873cdc4d">More...</a><br /></td></tr>
 <tr class="separator:a14ff9fb82bd3b6a8d7887f68873cdc4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb7b04c54228efef3b7bbafd0830839e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#adb7b04c54228efef3b7bbafd0830839e">LoadExternalBlockFile</a> (const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;chainparams, FILE *fileIn, <a class="el" href="struct_c_disk_block_pos.html">CDiskBlockPos</a> *dbp=nullptr)</td></tr>
@@ -171,9 +174,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a8e26adec84c680afe495f0e31642c6da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#a8e26adec84c680afe495f0e31642c6da">LoadBlockIndex</a> (const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;chainparams) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
 <tr class="memdesc:a8e26adec84c680afe495f0e31642c6da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the block tree and coins database from disk, initializing state if we're running with -reindex.  <a href="#a8e26adec84c680afe495f0e31642c6da">More...</a><br /></td></tr>
 <tr class="separator:a8e26adec84c680afe495f0e31642c6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa597978e5628b461b272c75aa28eb531"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#aa597978e5628b461b272c75aa28eb531">LoadChainTip</a> (const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;chainparams)</td></tr>
-<tr class="memdesc:aa597978e5628b461b272c75aa28eb531"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the chain tip based on database information.  <a href="#aa597978e5628b461b272c75aa28eb531">More...</a><br /></td></tr>
-<tr class="separator:aa597978e5628b461b272c75aa28eb531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d5c8a89aff9de194bfa0ebc60be7d89"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#a3d5c8a89aff9de194bfa0ebc60be7d89">LoadChainTip</a> (const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;chainparams) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="memdesc:a3d5c8a89aff9de194bfa0ebc60be7d89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the chain tip based on database information.  <a href="#a3d5c8a89aff9de194bfa0ebc60be7d89">More...</a><br /></td></tr>
+<tr class="separator:a3d5c8a89aff9de194bfa0ebc60be7d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac98b87e479f71b7be2b990a10c4ebc2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#ac98b87e479f71b7be2b990a10c4ebc2d">UnloadBlockIndex</a> ()</td></tr>
 <tr class="memdesc:ac98b87e479f71b7be2b990a10c4ebc2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload database information.  <a href="#ac98b87e479f71b7be2b990a10c4ebc2d">More...</a><br /></td></tr>
 <tr class="separator:ac98b87e479f71b7be2b990a10c4ebc2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -236,9 +239,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a4c94b603becafcab573873160035e1c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#a4c94b603becafcab573873160035e1c5">TestLockPointValidity</a> (const <a class="el" href="struct_lock_points.html">LockPoints</a> *lp) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
 <tr class="memdesc:a4c94b603becafcab573873160035e1c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test whether the <a class="el" href="struct_lock_points.html">LockPoints</a> height and time are still valid on the current chain.  <a href="#a4c94b603becafcab573873160035e1c5">More...</a><br /></td></tr>
 <tr class="separator:a4c94b603becafcab573873160035e1c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af26777779059ec97887f44c821cbb189"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#af26777779059ec97887f44c821cbb189">CheckSequenceLocks</a> (const <a class="el" href="class_c_transaction.html">CTransaction</a> &amp;tx, int <a class="el" href="bitcoin-tx_8cpp.html#ac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>, <a class="el" href="struct_lock_points.html">LockPoints</a> *lp=nullptr, bool useExistingLockPoints=false) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
-<tr class="memdesc:af26777779059ec97887f44c821cbb189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if transaction will be BIP 68 final in the next block to be created.  <a href="#af26777779059ec97887f44c821cbb189">More...</a><br /></td></tr>
-<tr class="separator:af26777779059ec97887f44c821cbb189"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a666c20fae7b9d75f2d9f4fedd059995a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#a666c20fae7b9d75f2d9f4fedd059995a">CheckSequenceLocks</a> (const <a class="el" href="class_c_tx_mem_pool.html">CTxMemPool</a> &amp;pool, const <a class="el" href="class_c_transaction.html">CTransaction</a> &amp;tx, int <a class="el" href="bitcoin-tx_8cpp.html#ac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>, <a class="el" href="struct_lock_points.html">LockPoints</a> *lp=nullptr, bool useExistingLockPoints=false) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="memdesc:a666c20fae7b9d75f2d9f4fedd059995a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if transaction will be BIP 68 final in the next block to be created.  <a href="#a666c20fae7b9d75f2d9f4fedd059995a">More...</a><br /></td></tr>
+<tr class="separator:a666c20fae7b9d75f2d9f4fedd059995a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8404f26b97eec49682f6c6b64a3c8930"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#a8404f26b97eec49682f6c6b64a3c8930">InitScriptExecutionCache</a> ()</td></tr>
 <tr class="memdesc:a8404f26b97eec49682f6c6b64a3c8930"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the script-execution cache.  <a href="#a8404f26b97eec49682f6c6b64a3c8930">More...</a><br /></td></tr>
 <tr class="separator:a8404f26b97eec49682f6c6b64a3c8930"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -277,9 +280,9 @@ Functions</h2></td></tr>
 <tr class="separator:ad16a624dfed17bddcd0901c6d32212ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d9b2d3b31edbd48ce62f4e2a73cc04c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_block_index.html">CBlockIndex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#a9d9b2d3b31edbd48ce62f4e2a73cc04c">LookupBlockIndex</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;hash)</td></tr>
 <tr class="separator:a9d9b2d3b31edbd48ce62f4e2a73cc04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af43d57aa8b46a53839777e8b670c9d66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_block_index.html">CBlockIndex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#af43d57aa8b46a53839777e8b670c9d66">FindForkInGlobalIndex</a> (const <a class="el" href="class_c_chain.html">CChain</a> &amp;chain, const <a class="el" href="struct_c_block_locator.html">CBlockLocator</a> &amp;locator)</td></tr>
-<tr class="memdesc:af43d57aa8b46a53839777e8b670c9d66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the last common block between the parameter chain and a locator.  <a href="#af43d57aa8b46a53839777e8b670c9d66">More...</a><br /></td></tr>
-<tr class="separator:af43d57aa8b46a53839777e8b670c9d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bc0d7a6f1e3a0d1f11f0ccad16efcf7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_block_index.html">CBlockIndex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#a8bc0d7a6f1e3a0d1f11f0ccad16efcf7">FindForkInGlobalIndex</a> (const <a class="el" href="class_c_chain.html">CChain</a> &amp;chain, const <a class="el" href="struct_c_block_locator.html">CBlockLocator</a> &amp;locator) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="memdesc:a8bc0d7a6f1e3a0d1f11f0ccad16efcf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the last common block between the parameter chain and a locator.  <a href="#a8bc0d7a6f1e3a0d1f11f0ccad16efcf7">More...</a><br /></td></tr>
+<tr class="separator:a8bc0d7a6f1e3a0d1f11f0ccad16efcf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f8adbd1749f9d3a146cfc3658dd649b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#a3f8adbd1749f9d3a146cfc3658dd649b">PreciousBlock</a> (<a class="el" href="class_c_validation_state.html">CValidationState</a> &amp;state, const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;params, <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindex) <a class="el" href="threadsafety_8h.html#a6bb97382864d0bd2cd4dd5191bb03f6c">LOCKS_EXCLUDED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
 <tr class="memdesc:a3f8adbd1749f9d3a146cfc3658dd649b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark a block as precious and reorganize.  <a href="#a3f8adbd1749f9d3a146cfc3658dd649b">More...</a><br /></td></tr>
 <tr class="separator:a3f8adbd1749f9d3a146cfc3658dd649b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -406,7 +409,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validation_8h_source.html#l00149">149</a> of file <a class="el" href="validation_8h_source.html">validation.h</a>.</p>
+<p>Definition at line <a class="el" href="validation_8h_source.html#l00153">153</a> of file <a class="el" href="validation_8h_source.html">validation.h</a>.</p>
 
 </div>
 </div>
@@ -478,14 +481,16 @@ Variables</h2></td></tr>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a22b5faf52a333a3c1863b388a3b60c7f_cgraph.svg" width="294" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a22b5faf52a333a3c1863b388a3b60c7f_cgraph.svg" width="294" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a22b5faf52a333a3c1863b388a3b60c7f_icgraph.svg" width="2099" height="1735"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a22b5faf52a333a3c1863b388a3b60c7f_icgraph.svg" width="2099" height="1735"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -524,19 +529,21 @@ Here is the caller graph for this function:</div>
 <p>Find the best known block, and make it the tip of the block chain. </p>
 <p>May not be called with cs_main held. May not be called in a validationinterface callback. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02758">2758</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02756">2756</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a81d9ced51eb72d4df66abddb00318b64_cgraph.svg" width="1682" height="2152"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a81d9ced51eb72d4df66abddb00318b64_cgraph.svg" width="1682" height="2006"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a81d9ced51eb72d4df66abddb00318b64_icgraph.svg" width="2027" height="2155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a81d9ced51eb72d4df66abddb00318b64_icgraph.svg" width="2027" height="2155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -558,7 +565,7 @@ Here is the caller graph for this function:</div>
 <p>Calculate the amount of disk space the block &amp; undo files currently use. </p>
 <p>Calculate the amount of disk space the block &amp; undo files currently use. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03590">3590</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03611">3611</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -614,7 +621,7 @@ Here is the caller graph for this function:</div>
 <p>Functions for validating blocks and updating the block tree. </p>
 <p>Context-independent validity checks </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03080">3080</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03078">3078</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -626,7 +633,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_adf3a2eef0a7ce0071f4d00a4ddf26943_icgraph.svg" width="1356" height="439"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_adf3a2eef0a7ce0071f4d00a4ddf26943_icgraph.svg" width="1356" height="439"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -658,19 +666,21 @@ Here is the caller graph for this function:</div>
 
 <p>Check whether enough disk space is available for an incoming block. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03749">3749</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03770">3770</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_ac4f813aaf05fbb26bacd9fb685aa6e48_cgraph.svg" width="1386" height="342"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_ac4f813aaf05fbb26bacd9fb685aa6e48_cgraph.svg" width="1386" height="342"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_ac4f813aaf05fbb26bacd9fb685aa6e48_icgraph.svg" width="1352" height="218"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_ac4f813aaf05fbb26bacd9fb685aa6e48_icgraph.svg" width="1352" height="218"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -710,26 +720,34 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_abcdc523b36a20cb4ac877ae806bd9e0e_cgraph.svg" width="639" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_abcdc523b36a20cb4ac877ae806bd9e0e_cgraph.svg" width="639" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_abcdc523b36a20cb4ac877ae806bd9e0e_icgraph.svg" width="2219" height="1731"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_abcdc523b36a20cb4ac877ae806bd9e0e_icgraph.svg" width="2219" height="1731"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="af26777779059ec97887f44c821cbb189"></a>
+<a class="anchor" id="a666c20fae7b9d75f2d9f4fedd059995a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">bool CheckSequenceLocks </td>
           <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_tx_mem_pool.html">CTxMemPool</a> &amp;&#160;</td>
+          <td class="paramname"><em>pool</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const <a class="el" href="class_c_transaction.html">CTransaction</a> &amp;&#160;</td>
           <td class="paramname"><em>tx</em>, </td>
         </tr>
@@ -768,14 +786,16 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_af26777779059ec97887f44c821cbb189_cgraph.svg" width="1819" height="1254"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a666c20fae7b9d75f2d9f4fedd059995a_cgraph.svg" width="1819" height="1254"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_af26777779059ec97887f44c821cbb189_icgraph.svg" width="2388" height="1680"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a666c20fae7b9d75f2d9f4fedd059995a_icgraph.svg" width="2388" height="1680"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -807,7 +827,7 @@ Here is the caller graph for this function:</div>
 
 <p>Determine what nVersion a new block should use. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l01686">1686</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l01685">1685</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -819,7 +839,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a0657e7220e2c33df7a210032ca61b7fe_icgraph.svg" width="1910" height="1826"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a0657e7220e2c33df7a210032ca61b7fe_icgraph.svg" width="1910" height="1826"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -840,25 +861,27 @@ Here is the caller graph for this function:</div>
 
 <p>Dump the mempool to disk. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04761">4761</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04781">4781</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a4b0f164432912c7b1b0e3535c13ad01c_cgraph.svg" width="1051" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a4b0f164432912c7b1b0e3535c13ad01c_cgraph.svg" width="1051" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a4b0f164432912c7b1b0e3535c13ad01c_icgraph.svg" width="1603" height="1850"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a4b0f164432912c7b1b0e3535c13ad01c_icgraph.svg" width="1603" height="1850"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="af43d57aa8b46a53839777e8b670c9d66"></a>
+<a class="anchor" id="a8bc0d7a6f1e3a0d1f11f0ccad16efcf7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -889,14 +912,16 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_af43d57aa8b46a53839777e8b670c9d66_cgraph.svg" width="1423" height="1307"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a8bc0d7a6f1e3a0d1f11f0ccad16efcf7_cgraph.svg" width="1332" height="1316"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_af43d57aa8b46a53839777e8b670c9d66_icgraph.svg" width="1714" height="1816"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a8bc0d7a6f1e3a0d1f11f0ccad16efcf7_icgraph.svg" width="1714" height="1816"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -917,19 +942,21 @@ Here is the caller graph for this function:</div>
 
 <p>Flush all state, indexes and buffers to disk. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02193">2193</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02191">2191</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a0d01c135cc5a05475e3dc3910c9888da_cgraph.svg" width="1290" height="2510"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a0d01c135cc5a05475e3dc3910c9888da_cgraph.svg" width="1290" height="2472"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a0d01c135cc5a05475e3dc3910c9888da_icgraph.svg" width="1906" height="1488"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a0d01c135cc5a05475e3dc3910c9888da_icgraph.svg" width="1906" height="1488"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -956,7 +983,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a86ed1d2d0837b905d74c2e4192b6c06a_icgraph.svg" width="1932" height="1655"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a86ed1d2d0837b905d74c2e4192b6c06a_icgraph.svg" width="1932" height="1655"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -994,19 +1022,21 @@ Here is the caller graph for this function:</div>
 
 <p>Produce the necessary coinbase commitment for a block (modifies the hash, don't call for mined blocks). </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03182">3182</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03180">3180</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a743ca389dc886ef8ec875ce8d08ec97e_cgraph.svg" width="1222" height="1827"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a743ca389dc886ef8ec875ce8d08ec97e_cgraph.svg" width="1222" height="1827"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a743ca389dc886ef8ec875ce8d08ec97e_icgraph.svg" width="1008" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a743ca389dc886ef8ec875ce8d08ec97e_icgraph.svg" width="1008" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1028,12 +1058,13 @@ Here is the caller graph for this function:</div>
 
 <p>Get block file info entry for one block file. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04657">4657</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04677">4677</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a7725a9cdef7f65f84b084d43b4a312ef_icgraph.svg" width="1675" height="1815"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a7725a9cdef7f65f84b084d43b4a312ef_icgraph.svg" width="1675" height="1815"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1065,19 +1096,21 @@ Here is the caller graph for this function:</div>
 
 <p>Translation to a filesystem path. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03792">3792</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03813">3813</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a14ff9fb82bd3b6a8d7887f68873cdc4d_cgraph.svg" width="1172" height="252"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a14ff9fb82bd3b6a8d7887f68873cdc4d_cgraph.svg" width="1172" height="252"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a14ff9fb82bd3b6a8d7887f68873cdc4d_icgraph.svg" width="1671" height="268"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a14ff9fb82bd3b6a8d7887f68873cdc4d_icgraph.svg" width="1671" height="268"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1112,7 +1145,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a3e7cb06e156ad8400b9214479e946187_icgraph.svg" width="1363" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a3e7cb06e156ad8400b9214479e946187_icgraph.svg" width="1363" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1140,14 +1174,16 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_ada1eab9ccd84d9a98f598eba9bd35330_cgraph.svg" width="1423" height="1380"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_ada1eab9ccd84d9a98f598eba9bd35330_cgraph.svg" width="1332" height="1380"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_ada1eab9ccd84d9a98f598eba9bd35330_icgraph.svg" width="1622" height="2390"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_ada1eab9ccd84d9a98f598eba9bd35330_icgraph.svg" width="1622" height="2390"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1210,7 +1246,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_ae62f71fbc880d892968f6276e0b806aa_cgraph.svg" width="1356" height="1355"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_ae62f71fbc880d892968f6276e0b806aa_cgraph.svg" width="1356" height="1355"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1250,7 +1287,7 @@ Here is the caller graph for this function:</div>
 <p>Guess verification progress (as a fraction between 0.0=genesis and 1.0=current tip). </p>
 <p>Guess verification progress (as a fraction between 0.0=genesis and 1.0=current tip). </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04813">4813</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04836">4836</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1262,7 +1299,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a38412dd688f31cbca0f6d28a9adc0310_icgraph.svg" width="963" height="307"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a38412dd688f31cbca0f6d28a9adc0310_icgraph.svg" width="963" height="307"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1295,7 +1333,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a8404f26b97eec49682f6c6b64a3c8930_icgraph.svg" width="446" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a8404f26b97eec49682f6c6b64a3c8930_icgraph.svg" width="446" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1333,19 +1372,21 @@ Here is the caller graph for this function:</div>
 
 <p>Mark a block as invalid. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02858">2858</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02856">2856</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_ac1125805255945a06f6f6fe1d9c6c154_cgraph.svg" width="834" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_ac1125805255945a06f6f6fe1d9c6c154_cgraph.svg" width="834" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_ac1125805255945a06f6f6fe1d9c6c154_icgraph.svg" width="1598" height="1911"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_ac1125805255945a06f6f6fe1d9c6c154_icgraph.svg" width="1598" height="1911"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1375,7 +1416,7 @@ Here is the caller graph for this function:</div>
 
 <p>Check whether the block associated with this index entry is pruned or not. </p>
 
-<p>Definition at line <a class="el" href="validation_8h_source.html#l00498">498</a> of file <a class="el" href="validation_8h_source.html">validation.h</a>.</p>
+<p>Definition at line <a class="el" href="validation_8h_source.html#l00502">502</a> of file <a class="el" href="validation_8h_source.html">validation.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1406,14 +1447,16 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a5edcd96316574fd4a7f3ae0922a5cfd6_cgraph.svg" width="415" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a5edcd96316574fd4a7f3ae0922a5cfd6_cgraph.svg" width="415" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a5edcd96316574fd4a7f3ae0922a5cfd6_icgraph.svg" width="2107" height="1886"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a5edcd96316574fd4a7f3ae0922a5cfd6_icgraph.svg" width="2107" height="1886"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1445,7 +1488,7 @@ Here is the caller graph for this function:</div>
 
 <p>Check whether NULLDUMMY (BIP 147) has activated. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03149">3149</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03147">3147</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1489,7 +1532,7 @@ Here is the caller graph for this function:</div>
 
 <p>Check whether witness commitments are required for block. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03143">3143</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03141">3141</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1501,7 +1544,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_acb0226867d001d0edd267f2e4842bace_icgraph.svg" width="1495" height="519"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_acb0226867d001d0edd267f2e4842bace_icgraph.svg" width="1495" height="519"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1523,7 +1567,7 @@ Here is the caller graph for this function:</div>
 
 <p>Load the block tree and coins database from disk, initializing state if we're running with -reindex. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04294">4294</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04314">4314</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1535,13 +1579,14 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a8e26adec84c680afe495f0e31642c6da_icgraph.svg" width="276" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a8e26adec84c680afe495f0e31642c6da_icgraph.svg" width="276" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aa597978e5628b461b272c75aa28eb531"></a>
+<a class="anchor" id="a3d5c8a89aff9de194bfa0ebc60be7d89"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1557,19 +1602,21 @@ Here is the caller graph for this function:</div>
 
 <p>Update the chain tip based on database information. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03922">3922</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03941">3941</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_aa597978e5628b461b272c75aa28eb531_cgraph.svg" width="1174" height="2587"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a3d5c8a89aff9de194bfa0ebc60be7d89_cgraph.svg" width="1174" height="2587"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_aa597978e5628b461b272c75aa28eb531_icgraph.svg" width="262" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a3d5c8a89aff9de194bfa0ebc60be7d89_icgraph.svg" width="262" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1607,12 +1654,13 @@ Here is the caller graph for this function:</div>
 
 <p>Import blocks from an external file. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04346">4346</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04366">4366</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_adb7b04c54228efef3b7bbafd0830839e_cgraph.svg" width="1152" height="1856"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_adb7b04c54228efef3b7bbafd0830839e_cgraph.svg" width="1152" height="1856"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1641,19 +1689,21 @@ Here is the caller graph for this function:</div>
 
 <p>Ensures we have a genesis block in the block tree, possibly writing one to disk. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04341">4341</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04361">4361</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a0c24c7dfe29eb0ea62f868e79f818493_cgraph.svg" width="1842" height="1258"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a0c24c7dfe29eb0ea62f868e79f818493_cgraph.svg" width="1842" height="1258"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a0c24c7dfe29eb0ea62f868e79f818493_icgraph.svg" width="432" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a0c24c7dfe29eb0ea62f868e79f818493_icgraph.svg" width="432" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1674,19 +1724,21 @@ Here is the caller graph for this function:</div>
 
 <p>Load the mempool from disk. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04684">4684</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04704">4704</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_adea951730b49ef41e5390df5be8d3f1b_cgraph.svg" width="1240" height="511"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_adea951730b49ef41e5390df5be8d3f1b_cgraph.svg" width="1391" height="511"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_adea951730b49ef41e5390df5be8d3f1b_icgraph.svg" width="1592" height="2000"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_adea951730b49ef41e5390df5be8d3f1b_icgraph.svg" width="1592" height="2000"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1714,19 +1766,21 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validation_8h_source.html#l00431">431</a> of file <a class="el" href="validation_8h_source.html">validation.h</a>.</p>
+<p>Definition at line <a class="el" href="validation_8h_source.html#l00435">435</a> of file <a class="el" href="validation_8h_source.html">validation.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a9d9b2d3b31edbd48ce62f4e2a73cc04c_cgraph.svg" width="1166" height="1438"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a9d9b2d3b31edbd48ce62f4e2a73cc04c_cgraph.svg" width="1075" height="1430"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a9d9b2d3b31edbd48ce62f4e2a73cc04c_icgraph.svg" width="1472" height="1878"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a9d9b2d3b31edbd48ce62f4e2a73cc04c_icgraph.svg" width="1472" height="1878"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1758,12 +1812,13 @@ Here is the caller graph for this function:</div>
 
 <p>Open a block file (blk?????.dat) </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03783">3783</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03804">3804</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a531eb79ff695289ac9a4f8daf292273c_icgraph.svg" width="1424" height="1164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a531eb79ff695289ac9a4f8daf292273c_icgraph.svg" width="1424" height="1164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1802,19 +1857,21 @@ Here is the caller graph for this function:</div>
 <p>Mark a block as precious and reorganize. </p>
 <p>May not be called in a validationinterface callback. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02790">2790</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02788">2788</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a3f8adbd1749f9d3a146cfc3658dd649b_cgraph.svg" width="2090" height="1862"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a3f8adbd1749f9d3a146cfc3658dd649b_cgraph.svg" width="2182" height="1679"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a3f8adbd1749f9d3a146cfc3658dd649b_icgraph.svg" width="1591" height="1911"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a3f8adbd1749f9d3a146cfc3658dd649b_icgraph.svg" width="1591" height="1911"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1871,12 +1928,13 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if state.IsValid() </dd></dl>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03527">3527</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03546">3546</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a32c6dfc4ade001f117ac3fac3da9d123_cgraph.svg" width="1168" height="1804"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a32c6dfc4ade001f117ac3fac3da9d123_cgraph.svg" width="1168" height="1804"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1944,12 +2002,13 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03408">3408</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03427">3427</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_ad959cc64d22660f1f561798040bb1f6a_cgraph.svg" width="1203" height="1843"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_ad959cc64d22660f1f561798040bb1f6a_cgraph.svg" width="1203" height="1843"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1977,19 +2036,21 @@ Here is the caller graph for this function:</div>
 
 <p>Prune block files and flush state to disk. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02201">2201</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02199">2199</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_afccc404d3f648d7834ee7522ca348b41_cgraph.svg" width="1390" height="2630"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_afccc404d3f648d7834ee7522ca348b41_cgraph.svg" width="1390" height="2564"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_afccc404d3f648d7834ee7522ca348b41_icgraph.svg" width="272" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_afccc404d3f648d7834ee7522ca348b41_icgraph.svg" width="272" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2011,12 +2072,13 @@ Here is the caller graph for this function:</div>
 
 <p>Prune block files up to a given height. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03669">3669</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03690">3690</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a173f79e71650a53a095bc1d88d77d6f9_cgraph.svg" width="1366" height="2510"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a173f79e71650a53a095bc1d88d77d6f9_cgraph.svg" width="1366" height="2404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2045,12 +2107,13 @@ Here is the caller graph for this function:</div>
 
 <p>Mark one block file as pruned. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03602">3602</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03623">3623</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_abea7dd6e39fc3fe079801b73182264b8_icgraph.svg" width="1583" height="252"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_abea7dd6e39fc3fe079801b73182264b8_icgraph.svg" width="1583" height="252"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2093,14 +2156,16 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a578c1df234b05798180f0235d469a5ba_cgraph.svg" width="1554" height="1279"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a578c1df234b05798180f0235d469a5ba_cgraph.svg" width="1554" height="1279"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a578c1df234b05798180f0235d469a5ba_icgraph.svg" width="1198" height="935"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a578c1df234b05798180f0235d469a5ba_icgraph.svg" width="1198" height="935"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2141,7 +2206,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_aee79e45a0b167f9b312f83a23880cfbc_cgraph.svg" width="1370" height="1304"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_aee79e45a0b167f9b312f83a23880cfbc_cgraph.svg" width="1370" height="1304"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2182,7 +2248,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a8c3772c3c3f77e938f138ec3ee7e44fd_cgraph.svg" width="1760" height="1048"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a8c3772c3c3f77e938f138ec3ee7e44fd_cgraph.svg" width="1760" height="1048"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2230,7 +2297,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_aa4e2a74e2657df25ab4709c57eb00fe5_cgraph.svg" width="1995" height="1048"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_aa4e2a74e2657df25ab4709c57eb00fe5_cgraph.svg" width="1995" height="1048"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2262,19 +2330,21 @@ Here is the call graph for this function:</div>
 
 <p>Replay blocks that aren't fully applied to the database. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04145">4145</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04165">4165</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_ad16a624dfed17bddcd0901c6d32212ab_cgraph.svg" width="1323" height="1051"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_ad16a624dfed17bddcd0901c6d32212ab_cgraph.svg" width="1323" height="1051"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_ad16a624dfed17bddcd0901c6d32212ab_icgraph.svg" width="259" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_ad16a624dfed17bddcd0901c6d32212ab_icgraph.svg" width="259" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2296,7 +2366,7 @@ Here is the caller graph for this function:</div>
 
 <p>Remove invalidity status from a block and its descendants. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02896">2896</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02894">2894</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2308,7 +2378,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a8b3ab8d9e8e4e6c3b98c4a77623c924c_icgraph.svg" width="1646" height="1908"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a8b3ab8d9e8e4e6c3b98c4a77623c924c_icgraph.svg" width="1646" height="1908"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2330,19 +2401,21 @@ Here is the caller graph for this function:</div>
 
 <p>When there are blocks in the active chain with missing data, rewind the chainstate and remove them from the block index. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04240">4240</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04260">4260</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a2e51de180124822c526ac8f82777fa32_cgraph.svg" width="1348" height="2683"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a2e51de180124822c526ac8f82777fa32_cgraph.svg" width="1427" height="2478"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a2e51de180124822c526ac8f82777fa32_icgraph.svg" width="399" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a2e51de180124822c526ac8f82777fa32_icgraph.svg" width="399" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2398,19 +2471,21 @@ Here is the caller graph for this function:</div>
 
 <p>Check a block is completely valid from start to finish (only works on top of our current best block) </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03560">3560</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03581">3581</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a0ec350d618710819b35262406646a0ab_cgraph.svg" width="1587" height="2124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a0ec350d618710819b35262406646a0ab_cgraph.svg" width="1587" height="2124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a0ec350d618710819b35262406646a0ab_icgraph.svg" width="908" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a0ec350d618710819b35262406646a0ab_icgraph.svg" width="908" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2444,7 +2519,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a4c94b603becafcab573873160035e1c5_icgraph.svg" width="2380" height="1680"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a4c94b603becafcab573873160035e1c5_icgraph.svg" width="2380" height="1680"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2470,14 +2546,16 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a8b6fddfd4e56e9c3e73c5dc0cf4de80c_cgraph.svg" width="564" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a8b6fddfd4e56e9c3e73c5dc0cf4de80c_cgraph.svg" width="564" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a8b6fddfd4e56e9c3e73c5dc0cf4de80c_icgraph.svg" width="298" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a8b6fddfd4e56e9c3e73c5dc0cf4de80c_icgraph.svg" width="298" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2499,19 +2577,21 @@ Here is the caller graph for this function:</div>
 
 <p>Actually unlink the specified files. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03636">3636</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03657">3657</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_aeec5391c3d81044fb887645b81803b4b_cgraph.svg" width="1354" height="252"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_aeec5391c3d81044fb887645b81803b4b_cgraph.svg" width="1354" height="252"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_aeec5391c3d81044fb887645b81803b4b_icgraph.svg" width="1363" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_aeec5391c3d81044fb887645b81803b4b_icgraph.svg" width="1363" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2532,19 +2612,21 @@ Here is the caller graph for this function:</div>
 
 <p>Unload database information. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04268">4268</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04288">4288</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_ac98b87e479f71b7be2b990a10c4ebc2d_cgraph.svg" width="1604" height="696"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_ac98b87e479f71b7be2b990a10c4ebc2d_cgraph.svg" width="1604" height="696"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_ac98b87e479f71b7be2b990a10c4ebc2d_icgraph.svg" width="290" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_ac98b87e479f71b7be2b990a10c4ebc2d_icgraph.svg" width="290" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2626,7 +2708,7 @@ Here is the call graph for this function:</div>
 <p>Update uncommitted block structures (currently: only the witness reserved value). </p>
 <p>This is safe for submitted blocks. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03170">3170</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l03168">3168</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2638,7 +2720,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a916ce43a2b2658298882c4eb461d1110_icgraph.svg" width="1315" height="134"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a916ce43a2b2658298882c4eb461d1110_icgraph.svg" width="1315" height="134"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2670,7 +2753,7 @@ Here is the caller graph for this function:</div>
 
 <p>Get the BIP9 state for a given deployment at the current tip. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04664">4664</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04684">4684</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2714,7 +2797,7 @@ Here is the caller graph for this function:</div>
 
 <p>Get the block height at which the BIP9 deployment switched into the state for the block building on the current tip. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04676">4676</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04696">4696</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2758,7 +2841,7 @@ Here is the caller graph for this function:</div>
 
 <p>Get the numerical statistics for the BIP9 state for a given deployment at the current tip. </p>
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04670">4670</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l04690">4690</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -3286,14 +3369,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l01684">1684</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:20 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:48 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -9,7 +9,6 @@ var searchData=
   ['enabled',['enabled',['../classorg_1_1bitcoin_1_1_secp256k1_context.html#a4b55929ee5660128656cf3e0b6dffca8',1,'org::bitcoin::Secp256k1Context']]],
   ['enablewallet',['enableWallet',['../class_bitcoin_g_u_i.html#abc2a8a6cce2f0fb9cd56eeaea0ef48cf',1,'BitcoinGUI']]],
   ['enc',['enc',['../class_a_e_s256_c_b_c_encrypt.html#a875292629bb1769ccd4c88d544426e4f',1,'AES256CBCEncrypt::enc()'],['../class_a_e_s128_c_b_c_encrypt.html#a8e7e06f9ff9722ddefbefc017fbba54a',1,'AES128CBCEncrypt::enc()']]],
-  ['encrypted_5fbatch',['encrypted_batch',['../class_c_wallet.html#a008a2e5252e46eaa68f2002bf10d501a',1,'CWallet']]],
   ['encryptwalletaction',['encryptWalletAction',['../class_bitcoin_g_u_i.html#a6ce1b4dd69ba9b8cef1548e32ef18136',1,'BitcoinGUI']]],
   ['end',['end',['../struct_estimator_bucket.html#a3215916874d6fa408347e109d44e9e8e',1,'EstimatorBucket::end()'],['../class_arena.html#a4f9680a852e9c59e41918878dd3fc9d4',1,'Arena::end()']]],
   ['entryheight',['entryHeight',['../class_c_tx_mem_pool_entry.html#aef8caf698c9f18a0c540e4a1ff253449',1,'CTxMemPoolEntry']]],

@@ -96,10 +96,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="walletutil_8h_source.html">wallet/walletutil.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="system_8h_source.html">util/system.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for walletutil.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="walletutil_8cpp__incl.svg" width="294" height="262"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="walletutil_8cpp__incl.svg" width="3154" height="351"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="walletutil_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -109,6 +111,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa4cddcdbe214eef41ac6e1f6666a8048"><td class="memItemLeft" align="right" valign="top">fs::path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="walletutil_8cpp.html#aa4cddcdbe214eef41ac6e1f6666a8048">GetWalletDir</a> ()</td></tr>
 <tr class="memdesc:aa4cddcdbe214eef41ac6e1f6666a8048"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the path of the wallet directory.  <a href="#aa4cddcdbe214eef41ac6e1f6666a8048">More...</a><br /></td></tr>
 <tr class="separator:aa4cddcdbe214eef41ac6e1f6666a8048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0db2d80f498cd2ac9d03bb28935c61ea"><td class="memItemLeft" align="right" valign="top">std::vector&lt; fs::path &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="walletutil_8cpp.html#a0db2d80f498cd2ac9d03bb28935c61ea">ListWalletDir</a> ()</td></tr>
+<tr class="memdesc:a0db2d80f498cd2ac9d03bb28935c61ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get wallets in wallet directory.  <a href="#a0db2d80f498cd2ac9d03bb28935c61ea">More...</a><br /></td></tr>
+<tr class="separator:a0db2d80f498cd2ac9d03bb28935c61ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="aa4cddcdbe214eef41ac6e1f6666a8048"></a>
@@ -126,19 +131,48 @@ Functions</h2></td></tr>
 
 <p>Get the path of the wallet directory. </p>
 
-<p>Definition at line <a class="el" href="walletutil_8cpp_source.html#l00007">7</a> of file <a class="el" href="walletutil_8cpp_source.html">walletutil.cpp</a>.</p>
+<p>Definition at line <a class="el" href="walletutil_8cpp_source.html#l00009">9</a> of file <a class="el" href="walletutil_8cpp_source.html">walletutil.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="walletutil_8cpp_aa4cddcdbe214eef41ac6e1f6666a8048_cgraph.svg" width="962" height="252"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="walletutil_8cpp_aa4cddcdbe214eef41ac6e1f6666a8048_cgraph.svg" width="962" height="252"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="walletutil_8cpp_aa4cddcdbe214eef41ac6e1f6666a8048_icgraph.svg" width="695" height="164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="walletutil_8cpp_aa4cddcdbe214eef41ac6e1f6666a8048_icgraph.svg" width="258" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0db2d80f498cd2ac9d03bb28935c61ea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;fs::path&gt; ListWalletDir </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get wallets in wallet directory. </p>
+
+<p>Definition at line <a class="el" href="walletutil_8cpp_source.html#l00052">52</a> of file <a class="el" href="walletutil_8cpp_source.html">walletutil.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="walletutil_8cpp_a0db2d80f498cd2ac9d03bb28935c61ea_cgraph.svg" width="1108" height="252"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -147,7 +181,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:22 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:51 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

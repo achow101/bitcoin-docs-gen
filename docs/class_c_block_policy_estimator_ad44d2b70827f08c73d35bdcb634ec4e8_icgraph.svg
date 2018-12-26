@@ -11,383 +11,370 @@
 <polygon fill="white" stroke="none" points="-4,4 -4,-366 1240,-366 1240,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="0,-205 0,-235 122,-235 122,-205 0,-205"/>
-<text text-anchor="start" x="8" y="-223" font-family="Helvetica,sans-Serif" font-size="10.00">CBlockPolicyEstimator</text>
-<text text-anchor="middle" x="61" y="-212" font-family="Helvetica,sans-Serif" font-size="10.00">::estimateSmartFee</text>
+<polygon fill="#bfbfbf" stroke="black" points="0,-195 0,-225 122,-225 122,-195 0,-195"/>
+<text text-anchor="start" x="8" y="-213" font-family="Helvetica,sans-Serif" font-size="10.00">CBlockPolicyEstimator</text>
+<text text-anchor="middle" x="61" y="-202" font-family="Helvetica,sans-Serif" font-size="10.00">::estimateSmartFee</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
 <g id="a_node2"><a xlink:href="wallet_2fees_8h.html#a9d542d5ea12dcb9956820227d7fdd50b" target="_top" xlink:title="Estimate the minimum fee rate considering user set parameters and the required fee. ">
-<polygon fill="white" stroke="black" points="171.5,-210.5 171.5,-229.5 287.5,-229.5 287.5,-210.5 171.5,-210.5"/>
-<text text-anchor="middle" x="229.5" y="-217.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetMinimumFeeRate</text>
+<polygon fill="white" stroke="black" points="171.5,-200.5 171.5,-219.5 287.5,-219.5 287.5,-200.5 171.5,-200.5"/>
+<text text-anchor="middle" x="229.5" y="-207.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetMinimumFeeRate</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge"><title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M132.39,-220C145.353,-220 158.741,-220 171.258,-220"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="132.11,-216.5 122.11,-220 132.11,-223.5 132.11,-216.5"/>
+<path fill="none" stroke="midnightblue" d="M132.39,-210C145.353,-210 158.741,-210 171.258,-210"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="132.11,-206.5 122.11,-210 132.11,-213.5 132.11,-206.5"/>
+</g>
+<!-- Node23 -->
+<g id="node23" class="node"><title>Node23</title>
+<g id="a_node23"><a xlink:href="wallet_2fees_8h.html#a8bbd3b782624edbdd4f98975bb1cc39e" target="_top" xlink:title="Return the maximum feerate for discarding change. ">
+<polygon fill="white" stroke="black" points="183.5,-257.5 183.5,-276.5 275.5,-276.5 275.5,-257.5 183.5,-257.5"/>
+<text text-anchor="middle" x="229.5" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetDiscardRate</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node23 -->
+<g id="edge31" class="edge"><title>Node1&#45;&gt;Node23</title>
+<path fill="none" stroke="midnightblue" d="M115.928,-228.462C144.162,-238.127 177.554,-249.559 200.6,-257.449"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="116.776,-225.053 106.182,-225.125 114.509,-231.676 116.776,-225.053"/>
 </g>
 <!-- Node24 -->
 <g id="node24" class="node"><title>Node24</title>
-<g id="a_node24"><a xlink:href="wallet_2fees_8h.html#a8bbd3b782624edbdd4f98975bb1cc39e" target="_top" xlink:title="Return the maximum feerate for discarding change. ">
-<polygon fill="white" stroke="black" points="183.5,-267.5 183.5,-286.5 275.5,-286.5 275.5,-267.5 183.5,-267.5"/>
-<text text-anchor="middle" x="229.5" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetDiscardRate</text>
+<g id="a_node24"><a xlink:href="classsubmitblock___state_catcher.html#a89abec4d0d8ea6b2cd651439e3a4f45f" target="_top" xlink:title="Notifies listeners of a block validation result. ">
+<polygon fill="white" stroke="black" points="158,-151 158,-181 301,-181 301,-151 158,-151"/>
+<text text-anchor="start" x="166" y="-169" font-family="Helvetica,sans-Serif" font-size="10.00">submitblock_StateCatcher</text>
+<text text-anchor="middle" x="229.5" y="-158" font-family="Helvetica,sans-Serif" font-size="10.00">::BlockChecked</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node24 -->
-<g id="edge32" class="edge"><title>Node1&#45;&gt;Node24</title>
-<path fill="none" stroke="midnightblue" d="M115.928,-238.462C144.162,-248.127 177.554,-259.559 200.6,-267.449"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="116.776,-235.053 106.182,-235.125 114.509,-241.676 116.776,-235.053"/>
-</g>
-<!-- Node25 -->
-<g id="node25" class="node"><title>Node25</title>
-<g id="a_node25"><a xlink:href="classsubmitblock___state_catcher.html#a89abec4d0d8ea6b2cd651439e3a4f45f" target="_top" xlink:title="Notifies listeners of a block validation result. ">
-<polygon fill="white" stroke="black" points="158,-161 158,-191 301,-191 301,-161 158,-161"/>
-<text text-anchor="start" x="166" y="-179" font-family="Helvetica,sans-Serif" font-size="10.00">submitblock_StateCatcher</text>
-<text text-anchor="middle" x="229.5" y="-168" font-family="Helvetica,sans-Serif" font-size="10.00">::BlockChecked</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node25 -->
-<g id="edge36" class="edge"><title>Node1&#45;&gt;Node25</title>
-<path fill="none" stroke="midnightblue" d="M128.578,-202.406C142.84,-198.637 157.784,-194.688 171.639,-191.026"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="127.608,-199.042 118.834,-204.981 129.397,-205.81 127.608,-199.042"/>
+<g id="edge35" class="edge"><title>Node1&#45;&gt;Node24</title>
+<path fill="none" stroke="midnightblue" d="M128.578,-192.406C142.84,-188.637 157.784,-184.688 171.639,-181.026"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="127.608,-189.042 118.834,-194.981 129.397,-195.81 127.608,-189.042"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
 <g id="a_node3"><a xlink:href="group___actions.html#ga68cfe5d9f1b41d7811fd8542308e7193" target="_top" xlink:title="Shuffle and select coins until nTargetValue is reached while avoiding small change; This method is st...">
-<polygon fill="white" stroke="black" points="337,-238.5 337,-257.5 489,-257.5 489,-238.5 337,-238.5"/>
-<text text-anchor="middle" x="413" y="-245.5" font-family="Helvetica,sans-Serif" font-size="10.00">CWallet::SelectCoinsMinConf</text>
+<polygon fill="white" stroke="black" points="337,-228.5 337,-247.5 489,-247.5 489,-228.5 337,-228.5"/>
+<text text-anchor="middle" x="413" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">CWallet::SelectCoinsMinConf</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge"><title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M297.87,-230.393C315.025,-233.04 333.376,-235.871 350.236,-238.472"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="298.344,-226.925 287.928,-228.859 297.277,-233.843 298.344,-226.925"/>
-</g>
-<!-- Node5 -->
-<g id="node5" class="node"><title>Node5</title>
-<g id="a_node5"><a xlink:href="group___actions.html#gac583d3981eaba225db79414b5159ef31" target="_top" xlink:title="Create a new transaction paying the recipients with a set of coins selected by SelectCoins(); Also cr...">
-<polygon fill="white" stroke="black" points="534,-181.5 534,-200.5 677,-200.5 677,-181.5 534,-181.5"/>
-<text text-anchor="middle" x="605.5" y="-188.5" font-family="Helvetica,sans-Serif" font-size="10.00">CWallet::CreateTransaction</text>
-</a>
-</g>
-</g>
-<!-- Node2&#45;&gt;Node5 -->
-<g id="edge4" class="edge"><title>Node2&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M273.67,-207.663C300.257,-200.167 330.474,-191.873 337,-191 403.285,-182.137 479.638,-183.245 533.76,-185.91"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="272.384,-204.389 263.714,-210.479 274.29,-211.125 272.384,-204.389"/>
-</g>
-<!-- Node20 -->
-<g id="node20" class="node"><title>Node20</title>
-<g id="a_node20"><a xlink:href="wallet_2fees_8h.html#aa38f3270682c7f696a702ab43ec76001" target="_top" xlink:title="Estimate the minimum fee considering user set parameters and the required fee. ">
-<polygon fill="white" stroke="black" points="365.5,-200.5 365.5,-219.5 460.5,-219.5 460.5,-200.5 365.5,-200.5"/>
-<text text-anchor="middle" x="413" y="-207.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetMinimumFee</text>
-</a>
-</g>
-</g>
-<!-- Node2&#45;&gt;Node20 -->
-<g id="edge25" class="edge"><title>Node2&#45;&gt;Node20</title>
-<path fill="none" stroke="midnightblue" d="M298.044,-216.279C320.416,-215.046 344.805,-213.702 365.259,-212.575"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="297.72,-212.791 287.928,-216.836 298.105,-219.78 297.72,-212.791"/>
+<path fill="none" stroke="midnightblue" d="M297.87,-220.393C315.025,-223.04 333.376,-225.871 350.236,-228.472"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="298.344,-216.925 287.928,-218.859 297.277,-223.843 298.344,-216.925"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
-<g id="a_node4"><a xlink:href="coinselector__tests_8cpp.html#a6ff234f5d157019167e308c177fe7ad0" target="_top" xlink:title="BOOST_AUTO_TEST_CASE">
-<polygon fill="white" stroke="black" points="534,-342.5 534,-361.5 677,-361.5 677,-342.5 534,-342.5"/>
-<text text-anchor="middle" x="605.5" y="-349.5" font-family="Helvetica,sans-Serif" font-size="10.00">BOOST_AUTO_TEST_CASE</text>
+<g id="a_node4"><a xlink:href="group___actions.html#ga42068df76177627faf57b6902f83b8c2" target="_top" xlink:title="Create a new transaction paying the recipients with a set of coins selected by SelectCoins(); Also cr...">
+<polygon fill="white" stroke="black" points="534,-171.5 534,-190.5 677,-190.5 677,-171.5 534,-171.5"/>
+<text text-anchor="middle" x="605.5" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">CWallet::CreateTransaction</text>
 </a>
 </g>
 </g>
-<!-- Node3&#45;&gt;Node4 -->
-<g id="edge3" class="edge"><title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M430.73,-264.502C451.233,-283.793 487.849,-315.326 525,-333 533.073,-336.841 541.987,-339.942 550.84,-342.435"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="433.095,-261.92 423.453,-257.527 428.251,-266.974 433.095,-261.92"/>
+<!-- Node2&#45;&gt;Node4 -->
+<g id="edge3" class="edge"><title>Node2&#45;&gt;Node4</title>
+<path fill="none" stroke="midnightblue" d="M273.67,-197.663C300.257,-190.167 330.474,-181.873 337,-181 403.285,-172.137 479.638,-173.245 533.76,-175.91"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="272.384,-194.389 263.714,-200.479 274.29,-201.125 272.384,-194.389"/>
+</g>
+<!-- Node19 -->
+<g id="node19" class="node"><title>Node19</title>
+<g id="a_node19"><a xlink:href="wallet_2fees_8h.html#aa38f3270682c7f696a702ab43ec76001" target="_top" xlink:title="Estimate the minimum fee considering user set parameters and the required fee. ">
+<polygon fill="white" stroke="black" points="365.5,-190.5 365.5,-209.5 460.5,-209.5 460.5,-190.5 365.5,-190.5"/>
+<text text-anchor="middle" x="413" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetMinimumFee</text>
+</a>
+</g>
+</g>
+<!-- Node2&#45;&gt;Node19 -->
+<g id="edge24" class="edge"><title>Node2&#45;&gt;Node19</title>
+<path fill="none" stroke="midnightblue" d="M298.044,-206.279C320.416,-205.046 344.805,-203.702 365.259,-202.575"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="297.72,-202.791 287.928,-206.836 298.105,-209.78 297.72,-202.791"/>
+</g>
+<!-- Node5 -->
+<g id="node5" class="node"><title>Node5</title>
+<g id="a_node5"><a xlink:href="rpcwallet_8h.html#aae9bc665151c5bab626a7ffcaeed9c0d" target="_top" xlink:title="EnsureWalletIsUnlocked">
+<polygon fill="white" stroke="black" points="724.5,-171.5 724.5,-190.5 853.5,-190.5 853.5,-171.5 724.5,-171.5"/>
+<text text-anchor="middle" x="789" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">EnsureWalletIsUnlocked</text>
+</a>
+</g>
+</g>
+<!-- Node4&#45;&gt;Node5 -->
+<g id="edge4" class="edge"><title>Node4&#45;&gt;Node5</title>
+<path fill="none" stroke="midnightblue" d="M687.48,-181C699.82,-181 712.404,-181 724.305,-181"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="687.192,-177.5 677.192,-181 687.192,-184.5 687.192,-177.5"/>
+</g>
+<!-- Node17 -->
+<g id="node17" class="node"><title>Node17</title>
+<g id="a_node17"><a xlink:href="class_list_coins_testing_setup.html#a8ce37c5d8d073c901b91153f83c47ee8" target="_top" xlink:title="ListCoinsTestingSetup\l::AddTx">
+<polygon fill="white" stroke="black" points="728.5,-68 728.5,-98 849.5,-98 849.5,-68 728.5,-68"/>
+<text text-anchor="start" x="736.5" y="-86" font-family="Helvetica,sans-Serif" font-size="10.00">ListCoinsTestingSetup</text>
+<text text-anchor="middle" x="789" y="-75" font-family="Helvetica,sans-Serif" font-size="10.00">::AddTx</text>
+</a>
+</g>
+</g>
+<!-- Node4&#45;&gt;Node17 -->
+<g id="edge22" class="edge"><title>Node4&#45;&gt;Node17</title>
+<path fill="none" stroke="midnightblue" d="M633.128,-166.622C667.114,-148.272 725.632,-116.675 760.18,-98.0212"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="631.37,-163.594 624.233,-171.425 634.696,-169.753 631.37,-163.594"/>
+</g>
+<!-- Node5&#45;&gt;Node5 -->
+<g id="edge15" class="edge"><title>Node5&#45;&gt;Node5</title>
+<path fill="none" stroke="midnightblue" d="M755.267,-198.891C755.761,-204.541 767.005,-209 789,-209 820.992,-209 830.24,-199.565 816.743,-190.757"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="758.146,-200.885 761.257,-190.757 752.509,-196.734 758.146,-200.885"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node"><title>Node6</title>
-<g id="a_node6"><a xlink:href="rpcwallet_8h.html#aae9bc665151c5bab626a7ffcaeed9c0d" target="_top" xlink:title="EnsureWalletIsUnlocked">
-<polygon fill="white" stroke="black" points="724.5,-181.5 724.5,-200.5 853.5,-200.5 853.5,-181.5 724.5,-181.5"/>
-<text text-anchor="middle" x="789" y="-188.5" font-family="Helvetica,sans-Serif" font-size="10.00">EnsureWalletIsUnlocked</text>
-</a>
-</g>
-</g>
-<!-- Node5&#45;&gt;Node6 -->
-<g id="edge5" class="edge"><title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M687.48,-191C699.82,-191 712.404,-191 724.305,-191"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="687.192,-187.5 677.192,-191 687.192,-194.5 687.192,-187.5"/>
-</g>
-<!-- Node18 -->
-<g id="node18" class="node"><title>Node18</title>
-<g id="a_node18"><a xlink:href="class_list_coins_testing_setup.html#a8ce37c5d8d073c901b91153f83c47ee8" target="_top" xlink:title="ListCoinsTestingSetup\l::AddTx">
-<polygon fill="white" stroke="black" points="728.5,-59 728.5,-89 849.5,-89 849.5,-59 728.5,-59"/>
-<text text-anchor="start" x="736.5" y="-77" font-family="Helvetica,sans-Serif" font-size="10.00">ListCoinsTestingSetup</text>
-<text text-anchor="middle" x="789" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">::AddTx</text>
-</a>
-</g>
-</g>
-<!-- Node5&#45;&gt;Node18 -->
-<g id="edge23" class="edge"><title>Node5&#45;&gt;Node18</title>
-<path fill="none" stroke="midnightblue" d="M629.913,-175.908C664.699,-153.484 729.662,-111.607 764.499,-89.1496"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="627.862,-173.065 621.353,-181.425 631.654,-178.949 627.862,-173.065"/>
-</g>
-<!-- Node6&#45;&gt;Node6 -->
-<g id="edge16" class="edge"><title>Node6&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M755.267,-208.891C755.761,-214.541 767.005,-219 789,-219 820.992,-219 830.24,-209.565 816.743,-200.757"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="758.146,-210.885 761.257,-200.757 752.509,-206.734 758.146,-210.885"/>
-</g>
-<!-- Node7 -->
-<g id="node7" class="node"><title>Node7</title>
-<g id="a_node7"><a xlink:href="rpcwallet_8cpp.html#a2f46e2bb304dda9a197b5a68db6106f7" target="_top" xlink:title="importprivkey">
+<g id="a_node6"><a xlink:href="rpcwallet_8cpp.html#a2f46e2bb304dda9a197b5a68db6106f7" target="_top" xlink:title="importprivkey">
 <polygon fill="white" stroke="black" points="928,-190.5 928,-209.5 1010,-209.5 1010,-190.5 928,-190.5"/>
 <text text-anchor="middle" x="969" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">importprivkey</text>
 </a>
 </g>
 </g>
-<!-- Node6&#45;&gt;Node7 -->
-<g id="edge6" class="edge"><title>Node6&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M863.506,-194.717C885.509,-195.829 908.815,-197.008 927.821,-197.968"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="863.672,-191.221 853.508,-194.211 863.319,-198.212 863.672,-191.221"/>
+<!-- Node5&#45;&gt;Node6 -->
+<g id="edge5" class="edge"><title>Node5&#45;&gt;Node6</title>
+<path fill="none" stroke="midnightblue" d="M863.506,-188.846C885.509,-191.195 908.815,-193.683 927.821,-195.711"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="863.823,-185.36 853.508,-187.779 863.08,-192.321 863.823,-185.36"/>
 </g>
-<!-- Node9 -->
-<g id="node9" class="node"><title>Node9</title>
-<g id="a_node9"><a xlink:href="wallet__tests_8cpp.html#a8c64ef6e0ced69002923098229448758" target="_top" xlink:title="importwallet">
+<!-- Node8 -->
+<g id="node8" class="node"><title>Node8</title>
+<g id="a_node8"><a xlink:href="wallet__tests_8cpp.html#a8c64ef6e0ced69002923098229448758" target="_top" xlink:title="importwallet">
 <polygon fill="white" stroke="black" points="931.5,-114.5 931.5,-133.5 1006.5,-133.5 1006.5,-114.5 931.5,-114.5"/>
 <text text-anchor="middle" x="969" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">importwallet</text>
 </a>
 </g>
 </g>
-<!-- Node6&#45;&gt;Node9 -->
-<g id="edge8" class="edge"><title>Node6&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M816.538,-176.759C836.778,-166.332 865.582,-152.417 892,-143 904.555,-138.525 918.635,-134.692 931.232,-131.665"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="814.855,-173.689 807.609,-181.418 818.094,-179.894 814.855,-173.689"/>
+<!-- Node5&#45;&gt;Node8 -->
+<g id="edge7" class="edge"><title>Node5&#45;&gt;Node8</title>
+<path fill="none" stroke="midnightblue" d="M822.739,-167.741C842.588,-159.969 868.531,-150.28 892,-143 904.73,-139.051 918.851,-135.341 931.433,-132.266"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="821.254,-164.564 813.241,-171.495 823.828,-171.074 821.254,-164.564"/>
 </g>
-<!-- Node11 -->
-<g id="node11" class="node"><title>Node11</title>
-<g id="a_node11"><a xlink:href="rpcwallet_8cpp.html#ab3f51d8e8fe414dbf91c37485e481ae3" target="_top" xlink:title="dumpprivkey">
+<!-- Node10 -->
+<g id="node10" class="node"><title>Node10</title>
+<g id="a_node10"><a xlink:href="rpcwallet_8cpp.html#ab3f51d8e8fe414dbf91c37485e481ae3" target="_top" xlink:title="dumpprivkey">
 <polygon fill="white" stroke="black" points="930,-152.5 930,-171.5 1008,-171.5 1008,-152.5 930,-152.5"/>
 <text text-anchor="middle" x="969" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">dumpprivkey</text>
 </a>
 </g>
 </g>
-<!-- Node6&#45;&gt;Node11 -->
-<g id="edge10" class="edge"><title>Node6&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M858.651,-179.815C882.879,-175.868 909.234,-171.574 929.999,-168.191"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="858.084,-176.361 848.777,-181.424 859.21,-183.27 858.084,-176.361"/>
+<!-- Node5&#45;&gt;Node10 -->
+<g id="edge9" class="edge"><title>Node5&#45;&gt;Node10</title>
+<path fill="none" stroke="midnightblue" d="M863.525,-173.152C886.341,-170.716 910.557,-168.132 929.924,-166.064"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="863.08,-169.679 853.508,-174.221 863.823,-176.64 863.08,-169.679"/>
 </g>
-<!-- Node12 -->
-<g id="node12" class="node"><title>Node12</title>
-<g id="a_node12"><a xlink:href="wallet__tests_8cpp.html#a73ce3a42e0b56b2e4516e55871d8590e" target="_top" xlink:title="dumpwallet">
+<!-- Node11 -->
+<g id="node11" class="node"><title>Node11</title>
+<g id="a_node11"><a xlink:href="wallet__tests_8cpp.html#a73ce3a42e0b56b2e4516e55871d8590e" target="_top" xlink:title="dumpwallet">
 <polygon fill="white" stroke="black" points="933.5,-76.5 933.5,-95.5 1004.5,-95.5 1004.5,-76.5 933.5,-76.5"/>
 <text text-anchor="middle" x="969" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">dumpwallet</text>
 </a>
 </g>
 </g>
-<!-- Node6&#45;&gt;Node12 -->
-<g id="edge12" class="edge"><title>Node6&#45;&gt;Node12</title>
-<path fill="none" stroke="midnightblue" d="M805.341,-174.042C823.958,-154.5 857.2,-122.797 892,-105 904.714,-98.4977 919.784,-94.133 933.139,-91.2462"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="802.777,-171.66 798.513,-181.359 807.895,-176.436 802.777,-171.66"/>
+<!-- Node5&#45;&gt;Node11 -->
+<g id="edge11" class="edge"><title>Node5&#45;&gt;Node11</title>
+<path fill="none" stroke="midnightblue" d="M807.504,-164.501C826.767,-147.218 859.349,-120.478 892,-105 904.904,-98.8829 920.008,-94.5874 933.337,-91.6483"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="805.121,-161.937 800.103,-171.268 809.845,-167.103 805.121,-161.937"/>
 </g>
-<!-- Node13 -->
-<g id="node13" class="node"><title>Node13</title>
-<g id="a_node13"><a xlink:href="wallet__tests_8cpp.html#af0e3c9469f1d8f368d3d5f38e5580367" target="_top" xlink:title="importmulti">
+<!-- Node12 -->
+<g id="node12" class="node"><title>Node12</title>
+<g id="a_node12"><a xlink:href="wallet__tests_8cpp.html#af0e3c9469f1d8f368d3d5f38e5580367" target="_top" xlink:title="importmulti">
 <polygon fill="white" stroke="black" points="933,-38.5 933,-57.5 1005,-57.5 1005,-38.5 933,-38.5"/>
 <text text-anchor="middle" x="969" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">importmulti</text>
 </a>
 </g>
 </g>
-<!-- Node6&#45;&gt;Node13 -->
-<g id="edge14" class="edge"><title>Node6&#45;&gt;Node13</title>
-<path fill="none" stroke="midnightblue" d="M802.618,-173.01C824.6,-142.156 869.697,-81.0985 892,-67 904.186,-59.2969 919.311,-54.7154 932.851,-51.9911"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="799.749,-171.006 796.829,-181.19 805.463,-175.05 799.749,-171.006"/>
+<!-- Node5&#45;&gt;Node12 -->
+<g id="edge13" class="edge"><title>Node5&#45;&gt;Node12</title>
+<path fill="none" stroke="midnightblue" d="M805.467,-163.649C833.824,-131.847 891.315,-67.4133 892,-67 904.227,-59.6219 919.209,-55.0998 932.63,-52.3321"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="802.666,-161.531 798.624,-171.324 807.891,-166.189 802.666,-161.531"/>
 </g>
-<!-- Node15 -->
-<g id="node15" class="node"><title>Node15</title>
-<g id="a_node15"><a xlink:href="rpcwallet_8cpp.html#a74b85c92ee6a84277c73b74f2e212bff" target="_top" xlink:title="listtransactions">
+<!-- Node14 -->
+<g id="node14" class="node"><title>Node14</title>
+<g id="a_node14"><a xlink:href="rpcwallet_8cpp.html#a74b85c92ee6a84277c73b74f2e212bff" target="_top" xlink:title="listtransactions">
 <polygon fill="white" stroke="black" points="924.5,-266.5 924.5,-285.5 1013.5,-285.5 1013.5,-266.5 924.5,-266.5"/>
 <text text-anchor="middle" x="969" y="-273.5" font-family="Helvetica,sans-Serif" font-size="10.00">listtransactions</text>
 </a>
 </g>
 </g>
-<!-- Node6&#45;&gt;Node15 -->
-<g id="edge17" class="edge"><title>Node6&#45;&gt;Node15</title>
-<path fill="none" stroke="midnightblue" d="M809.758,-206.623C829.526,-221.547 861.327,-243.682 892,-257 902.105,-261.388 913.424,-264.901 924.177,-267.654"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="811.878,-203.838 801.815,-200.524 807.614,-209.39 811.878,-203.838"/>
+<!-- Node5&#45;&gt;Node14 -->
+<g id="edge16" class="edge"><title>Node5&#45;&gt;Node14</title>
+<path fill="none" stroke="midnightblue" d="M807.504,-197.499C826.767,-214.782 859.349,-241.522 892,-257 902.077,-261.777 913.497,-265.443 924.364,-268.22"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="809.845,-194.897 800.103,-190.732 805.121,-200.063 809.845,-194.897"/>
 </g>
-<!-- Node16 -->
-<g id="node16" class="node"><title>Node16</title>
-<g id="a_node16"><a xlink:href="rpcwallet_8h.html#a7c13054932c9e3b351bd6277fa9361d7" target="_top" xlink:title="signrawtransactionwithwallet">
+<!-- Node15 -->
+<g id="node15" class="node"><title>Node15</title>
+<g id="a_node15"><a xlink:href="rpcwallet_8h.html#a7c13054932c9e3b351bd6277fa9361d7" target="_top" xlink:title="signrawtransactionwithwallet">
 <polygon fill="white" stroke="black" points="893,-304.5 893,-323.5 1045,-323.5 1045,-304.5 893,-304.5"/>
 <text text-anchor="middle" x="969" y="-311.5" font-family="Helvetica,sans-Serif" font-size="10.00">signrawtransactionwithwallet</text>
 </a>
 </g>
 </g>
-<!-- Node6&#45;&gt;Node16 -->
-<g id="edge19" class="edge"><title>Node6&#45;&gt;Node16</title>
-<path fill="none" stroke="midnightblue" d="M802.698,-209.123C820.109,-232.578 853.638,-273.033 892,-295 898.727,-298.852 906.227,-301.931 913.821,-304.39"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="805.344,-206.81 796.643,-200.764 799.675,-210.916 805.344,-206.81"/>
+<!-- Node5&#45;&gt;Node15 -->
+<g id="edge18" class="edge"><title>Node5&#45;&gt;Node15</title>
+<path fill="none" stroke="midnightblue" d="M801.3,-199.399C817.936,-224.885 851.473,-270.545 892,-295 898.405,-298.865 905.565,-301.946 912.861,-304.402"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="804.092,-197.266 795.772,-190.706 798.185,-201.023 804.092,-197.266"/>
 </g>
-<!-- Node17 -->
-<g id="node17" class="node"><title>Node17</title>
-<g id="a_node17"><a xlink:href="rpcwallet_8cpp.html#a61c7a90d1b36888fe11b751e746e18c0" target="_top" xlink:title="sethdseed">
+<!-- Node16 -->
+<g id="node16" class="node"><title>Node16</title>
+<g id="a_node16"><a xlink:href="rpcwallet_8cpp.html#a61c7a90d1b36888fe11b751e746e18c0" target="_top" xlink:title="sethdseed">
 <polygon fill="white" stroke="black" points="935.5,-228.5 935.5,-247.5 1002.5,-247.5 1002.5,-228.5 935.5,-228.5"/>
 <text text-anchor="middle" x="969" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">sethdseed</text>
 </a>
 </g>
 </g>
-<!-- Node6&#45;&gt;Node17 -->
-<g id="edge21" class="edge"><title>Node6&#45;&gt;Node17</title>
-<path fill="none" stroke="midnightblue" d="M833.62,-203.211C851.665,-208.2 872.816,-213.97 892,-219 906.208,-222.726 921.955,-226.689 935.413,-230.027"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="834.519,-199.828 823.948,-200.529 832.649,-206.573 834.519,-199.828"/>
+<!-- Node5&#45;&gt;Node16 -->
+<g id="edge20" class="edge"><title>Node5&#45;&gt;Node16</title>
+<path fill="none" stroke="midnightblue" d="M822.739,-194.259C842.588,-202.031 868.531,-211.72 892,-219 906.029,-223.352 921.747,-227.414 935.233,-230.655"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="823.828,-190.926 813.241,-190.505 821.254,-197.436 823.828,-190.926"/>
 </g>
-<!-- Node8 -->
-<g id="node8" class="node"><title>Node8</title>
-<g id="a_node8"><a xlink:href="rpcwallet_8cpp.html#afca55ac7a3c6c274b8b7b3e6eab9cd86" target="_top" xlink:title="walletcreatefundedpsbt">
+<!-- Node7 -->
+<g id="node7" class="node"><title>Node7</title>
+<g id="a_node7"><a xlink:href="rpcwallet_8cpp.html#afca55ac7a3c6c274b8b7b3e6eab9cd86" target="_top" xlink:title="walletcreatefundedpsbt">
 <polygon fill="white" stroke="black" points="1095,-247.5 1095,-266.5 1223,-266.5 1223,-247.5 1095,-247.5"/>
 <text text-anchor="middle" x="1159" y="-254.5" font-family="Helvetica,sans-Serif" font-size="10.00">walletcreatefundedpsbt</text>
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node8 -->
-<g id="edge7" class="edge"><title>Node7&#45;&gt;Node8</title>
+<!-- Node6&#45;&gt;Node7 -->
+<g id="edge6" class="edge"><title>Node6&#45;&gt;Node7</title>
 <path fill="none" stroke="midnightblue" d="M1019.76,-211.817C1028.54,-214.078 1037.56,-216.519 1046,-219 1075.75,-227.748 1109.37,-239.397 1131.94,-247.481"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1020.56,-208.408 1010,-209.347 1018.84,-215.194 1020.56,-208.408"/>
 </g>
-<!-- Node10 -->
-<g id="node10" class="node"><title>Node10</title>
-<g id="a_node10"><a xlink:href="wallet__tests_8cpp.html#a2a726fa52b0a343883cb50a3f68d0989" target="_top" xlink:title="BOOST_FIXTURE_TEST_CASE">
+<!-- Node9 -->
+<g id="node9" class="node"><title>Node9</title>
+<g id="a_node9"><a xlink:href="wallet__tests_8cpp.html#a2a726fa52b0a343883cb50a3f68d0989" target="_top" xlink:title="BOOST_FIXTURE_TEST_CASE">
 <polygon fill="white" stroke="black" points="1082,-95.5 1082,-114.5 1236,-114.5 1236,-95.5 1082,-95.5"/>
 <text text-anchor="middle" x="1159" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">BOOST_FIXTURE_TEST_CASE</text>
 </a>
 </g>
 </g>
-<!-- Node9&#45;&gt;Node10 -->
-<g id="edge9" class="edge"><title>Node9&#45;&gt;Node10</title>
+<!-- Node8&#45;&gt;Node9 -->
+<g id="edge8" class="edge"><title>Node8&#45;&gt;Node9</title>
 <path fill="none" stroke="midnightblue" d="M1016.88,-119.262C1036.48,-117.281 1059.77,-114.927 1081.73,-112.708"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1016.29,-115.804 1006.69,-120.292 1017,-122.768 1016.29,-115.804"/>
 </g>
-<!-- Node11&#45;&gt;Node8 -->
-<g id="edge11" class="edge"><title>Node11&#45;&gt;Node8</title>
+<!-- Node10&#45;&gt;Node7 -->
+<g id="edge10" class="edge"><title>Node10&#45;&gt;Node7</title>
 <path fill="none" stroke="midnightblue" d="M1018.09,-171.303C1027.55,-173.885 1037.25,-177.085 1046,-181 1086.11,-198.942 1127.38,-231.224 1146.72,-247.323"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1018.93,-167.905 1008.37,-168.833 1017.2,-174.689 1018.93,-167.905"/>
 </g>
-<!-- Node12&#45;&gt;Node10 -->
-<g id="edge13" class="edge"><title>Node12&#45;&gt;Node10</title>
+<!-- Node11&#45;&gt;Node9 -->
+<g id="edge12" class="edge"><title>Node11&#45;&gt;Node9</title>
 <path fill="none" stroke="midnightblue" d="M1015,-90.5482C1035.06,-92.5752 1059.25,-95.0197 1081.98,-97.3169"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1015.22,-87.0526 1004.92,-89.5292 1014.52,-94.0171 1015.22,-87.0526"/>
 </g>
-<!-- Node14 -->
-<g id="node14" class="node"><title>Node14</title>
-<g id="a_node14"><a xlink:href="wallet__tests_8cpp.html#acc117bb030f4fc677e16addf014e9908" target="_top" xlink:title="BOOST_FIXTURE_TEST_CASE">
+<!-- Node13 -->
+<g id="node13" class="node"><title>Node13</title>
+<g id="a_node13"><a xlink:href="wallet__tests_8cpp.html#a102aa881fd1aa3b1be48920b5b27dcc3" target="_top" xlink:title="BOOST_FIXTURE_TEST_CASE">
 <polygon fill="white" stroke="black" points="1082,-38.5 1082,-57.5 1236,-57.5 1236,-38.5 1082,-38.5"/>
 <text text-anchor="middle" x="1159" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">BOOST_FIXTURE_TEST_CASE</text>
 </a>
 </g>
 </g>
-<!-- Node13&#45;&gt;Node14 -->
-<g id="edge15" class="edge"><title>Node13&#45;&gt;Node14</title>
+<!-- Node12&#45;&gt;Node13 -->
+<g id="edge14" class="edge"><title>Node12&#45;&gt;Node13</title>
 <path fill="none" stroke="midnightblue" d="M1015.4,-48C1035.36,-48 1059.35,-48 1081.91,-48"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1015.36,-44.5001 1005.36,-48 1015.36,-51.5001 1015.36,-44.5001"/>
 </g>
-<!-- Node15&#45;&gt;Node8 -->
-<g id="edge18" class="edge"><title>Node15&#45;&gt;Node8</title>
+<!-- Node14&#45;&gt;Node7 -->
+<g id="edge17" class="edge"><title>Node14&#45;&gt;Node7</title>
 <path fill="none" stroke="midnightblue" d="M1023.81,-270.562C1045.91,-268.328 1071.67,-265.725 1094.68,-263.399"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1023.2,-267.105 1013.6,-271.593 1023.9,-274.07 1023.2,-267.105"/>
 </g>
-<!-- Node16&#45;&gt;Node8 -->
-<g id="edge20" class="edge"><title>Node16&#45;&gt;Node8</title>
+<!-- Node15&#45;&gt;Node7 -->
+<g id="edge19" class="edge"><title>Node15&#45;&gt;Node7</title>
 <path fill="none" stroke="midnightblue" d="M1020.63,-301.959C1029.13,-299.761 1037.84,-297.4 1046,-295 1075.75,-286.252 1109.37,-274.603 1131.94,-266.519"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1019.62,-298.604 1010.79,-304.457 1021.35,-305.388 1019.62,-298.604"/>
 </g>
-<!-- Node17&#45;&gt;Node8 -->
-<g id="edge22" class="edge"><title>Node17&#45;&gt;Node8</title>
+<!-- Node16&#45;&gt;Node7 -->
+<g id="edge21" class="edge"><title>Node16&#45;&gt;Node7</title>
 <path fill="none" stroke="midnightblue" d="M1012.72,-242.317C1036.99,-244.771 1067.84,-247.889 1094.87,-250.62"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1013.05,-238.833 1002.75,-241.31 1012.34,-245.797 1013.05,-238.833"/>
 </g>
-<!-- Node19 -->
-<g id="node19" class="node"><title>Node19</title>
-<g id="a_node19"><a xlink:href="wallet__tests_8cpp.html#a5124bfced35ed545732a62fc7c82f9b1" target="_top" xlink:title="BOOST_FIXTURE_TEST_CASE">
+<!-- Node18 -->
+<g id="node18" class="node"><title>Node18</title>
+<g id="a_node18"><a xlink:href="wallet__tests_8cpp.html#a5124bfced35ed545732a62fc7c82f9b1" target="_top" xlink:title="BOOST_FIXTURE_TEST_CASE">
 <polygon fill="white" stroke="black" points="892,-0.5 892,-19.5 1046,-19.5 1046,-0.5 892,-0.5"/>
 <text text-anchor="middle" x="969" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">BOOST_FIXTURE_TEST_CASE</text>
 </a>
 </g>
 </g>
-<!-- Node18&#45;&gt;Node19 -->
-<g id="edge24" class="edge"><title>Node18&#45;&gt;Node19</title>
-<path fill="none" stroke="midnightblue" d="M829.759,-54.5701C848.368,-45.9689 871.012,-36.1946 892,-29 902.293,-25.4719 913.574,-22.2933 924.221,-19.5905"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="828.273,-51.4011 820.701,-58.811 831.241,-57.7408 828.273,-51.4011"/>
+<!-- Node17&#45;&gt;Node18 -->
+<g id="edge23" class="edge"><title>Node17&#45;&gt;Node18</title>
+<path fill="none" stroke="midnightblue" d="M823.145,-62.8213C842.644,-51.6278 868.095,-38.1604 892,-29 901.525,-25.35 911.992,-22.2079 922.032,-19.5894"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="821.236,-59.883 814.359,-67.9423 824.761,-65.9308 821.236,-59.883"/>
 </g>
-<!-- Node20&#45;&gt;Node5 -->
-<g id="edge26" class="edge"><title>Node20&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M470.702,-204.345C490.53,-202.367 513.038,-200.122 533.861,-198.045"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="470.205,-200.877 460.602,-205.352 470.9,-207.842 470.205,-200.877"/>
+<!-- Node19&#45;&gt;Node4 -->
+<g id="edge25" class="edge"><title>Node19&#45;&gt;Node4</title>
+<path fill="none" stroke="midnightblue" d="M470.702,-194.345C490.53,-192.367 513.038,-190.122 533.861,-188.045"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="470.205,-190.877 460.602,-195.352 470.9,-197.842 470.205,-190.877"/>
 </g>
-<!-- Node21 -->
-<g id="node21" class="node"><title>Node21</title>
-<g id="a_node21"><a xlink:href="namespacefeebumper.html#a7e40f2905a1758fc62bf6ec2880b2af4" target="_top" xlink:title="Create bumpfee transaction. ">
+<!-- Node20 -->
+<g id="node20" class="node"><title>Node20</title>
+<g id="a_node20"><a xlink:href="namespacefeebumper.html#a7e40f2905a1758fc62bf6ec2880b2af4" target="_top" xlink:title="Create bumpfee transaction. ">
 <polygon fill="white" stroke="black" points="525,-304.5 525,-323.5 686,-323.5 686,-304.5 525,-304.5"/>
 <text text-anchor="middle" x="605.5" y="-311.5" font-family="Helvetica,sans-Serif" font-size="10.00">feebumper::CreateTransaction</text>
 </a>
 </g>
 </g>
-<!-- Node20&#45;&gt;Node21 -->
-<g id="edge27" class="edge"><title>Node20&#45;&gt;Node21</title>
-<path fill="none" stroke="midnightblue" d="M470.57,-221.805C476.914,-223.867 483.182,-226.252 489,-229 531.998,-249.31 575.129,-286.629 594.259,-304.271"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="471.174,-218.333 460.591,-218.826 469.172,-225.04 471.174,-218.333"/>
+<!-- Node19&#45;&gt;Node20 -->
+<g id="edge26" class="edge"><title>Node19&#45;&gt;Node20</title>
+<path fill="none" stroke="midnightblue" d="M470.721,-211.496C477.038,-213.613 483.258,-216.096 489,-219 534.18,-241.849 577.546,-285.009 595.647,-304.281"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="471.354,-208.031 460.768,-208.462 469.313,-214.726 471.354,-208.031"/>
 </g>
-<!-- Node21&#45;&gt;Node16 -->
-<g id="edge31" class="edge"><title>Node21&#45;&gt;Node16</title>
+<!-- Node20&#45;&gt;Node15 -->
+<g id="edge30" class="edge"><title>Node20&#45;&gt;Node15</title>
 <path fill="none" stroke="midnightblue" d="M696.576,-314C757.001,-314 835.67,-314 892.747,-314"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="696.28,-310.5 686.28,-314 696.28,-317.5 696.28,-310.5"/>
 </g>
-<!-- Node22 -->
-<g id="node22" class="node"><title>Node22</title>
-<g id="a_node22"><a xlink:href="group___actions.html#ga15a558d8fa0db299f38ed1e45a60aaaf" target="_top" xlink:title="Insert additional inputs into the transaction by calling CreateTransaction();. ">
+<!-- Node21 -->
+<g id="node21" class="node"><title>Node21</title>
+<g id="a_node21"><a xlink:href="group___actions.html#ga15a558d8fa0db299f38ed1e45a60aaaf" target="_top" xlink:title="Insert additional inputs into the transaction by calling CreateTransaction();. ">
 <polygon fill="white" stroke="black" points="722,-342.5 722,-361.5 856,-361.5 856,-342.5 722,-342.5"/>
 <text text-anchor="middle" x="789" y="-349.5" font-family="Helvetica,sans-Serif" font-size="10.00">CWallet::FundTransaction</text>
 </a>
 </g>
 </g>
-<!-- Node21&#45;&gt;Node22 -->
-<g id="edge28" class="edge"><title>Node21&#45;&gt;Node22</title>
+<!-- Node20&#45;&gt;Node21 -->
+<g id="edge27" class="edge"><title>Node20&#45;&gt;Node21</title>
 <path fill="none" stroke="midnightblue" d="M662.292,-325.681C688.031,-331.07 718.199,-337.386 742.529,-342.48"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="662.805,-322.213 652.3,-323.589 661.371,-329.064 662.805,-322.213"/>
 </g>
-<!-- Node23 -->
-<g id="node23" class="node"><title>Node23</title>
-<g id="a_node23"><a xlink:href="rpcwallet_8cpp.html#aaaebd94e806360dd08e7254b09c7997b" target="_top" xlink:title="FundTransaction">
+<!-- Node22 -->
+<g id="node22" class="node"><title>Node22</title>
+<g id="a_node22"><a xlink:href="rpcwallet_8cpp.html#aaaebd94e806360dd08e7254b09c7997b" target="_top" xlink:title="FundTransaction">
 <polygon fill="white" stroke="black" points="922.5,-342.5 922.5,-361.5 1015.5,-361.5 1015.5,-342.5 922.5,-342.5"/>
 <text text-anchor="middle" x="969" y="-349.5" font-family="Helvetica,sans-Serif" font-size="10.00">FundTransaction</text>
 </a>
 </g>
 </g>
-<!-- Node22&#45;&gt;Node23 -->
-<g id="edge29" class="edge"><title>Node22&#45;&gt;Node23</title>
+<!-- Node21&#45;&gt;Node22 -->
+<g id="edge28" class="edge"><title>Node21&#45;&gt;Node22</title>
 <path fill="none" stroke="midnightblue" d="M866.231,-352C885.339,-352 905.248,-352 922.337,-352"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="866.028,-348.5 856.028,-352 866.028,-355.5 866.028,-348.5"/>
 </g>
-<!-- Node23&#45;&gt;Node8 -->
-<g id="edge30" class="edge"><title>Node23&#45;&gt;Node8</title>
+<!-- Node22&#45;&gt;Node7 -->
+<g id="edge29" class="edge"><title>Node22&#45;&gt;Node7</title>
 <path fill="none" stroke="midnightblue" d="M1025.95,-340.418C1032.83,-338.296 1039.66,-335.836 1046,-333 1086.11,-315.058 1127.38,-282.776 1146.72,-266.677"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1024.54,-337.179 1015.89,-343.289 1026.46,-343.91 1024.54,-337.179"/>
 </g>
-<!-- Node24&#45;&gt;Node3 -->
-<g id="edge33" class="edge"><title>Node24&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M285.913,-268.146C306.993,-264.778 331.087,-260.928 352.528,-257.502"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="285.154,-264.723 275.832,-269.757 286.259,-271.635 285.154,-264.723"/>
+<!-- Node23&#45;&gt;Node3 -->
+<g id="edge32" class="edge"><title>Node23&#45;&gt;Node3</title>
+<path fill="none" stroke="midnightblue" d="M285.913,-258.146C306.993,-254.778 331.087,-250.928 352.528,-247.502"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="285.154,-254.723 275.832,-259.757 286.259,-261.635 285.154,-254.723"/>
 </g>
-<!-- Node24&#45;&gt;Node5 -->
-<g id="edge34" class="edge"><title>Node24&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M285.943,-283.291C339.32,-287.408 421.642,-288.601 489,-267 532.657,-253 575.463,-217.585 594.386,-200.503"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="285.923,-279.778 275.667,-282.435 285.341,-286.754 285.923,-279.778"/>
+<!-- Node23&#45;&gt;Node4 -->
+<g id="edge33" class="edge"><title>Node23&#45;&gt;Node4</title>
+<path fill="none" stroke="midnightblue" d="M285.943,-273.291C339.32,-277.408 421.642,-278.601 489,-257 532.657,-243 575.463,-207.585 594.386,-190.503"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="285.923,-269.778 275.667,-272.435 285.341,-276.754 285.923,-269.778"/>
 </g>
-<!-- Node24&#45;&gt;Node21 -->
-<g id="edge35" class="edge"><title>Node24&#45;&gt;Node21</title>
-<path fill="none" stroke="midnightblue" d="M277.597,-288.873C296.012,-293.066 317.383,-297.386 337,-300 399.807,-308.37 471.532,-311.797 524.892,-313.171"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="278.234,-285.427 267.701,-286.567 276.646,-292.245 278.234,-285.427"/>
+<!-- Node23&#45;&gt;Node20 -->
+<g id="edge34" class="edge"><title>Node23&#45;&gt;Node20</title>
+<path fill="none" stroke="midnightblue" d="M278.994,-278.792C297.106,-282.847 317.908,-287.093 337,-290 399.806,-299.562 471.532,-305.744 524.891,-309.435"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="279.764,-275.378 269.236,-276.568 278.209,-282.203 279.764,-275.378"/>
 </g>
 </g>
 </svg>

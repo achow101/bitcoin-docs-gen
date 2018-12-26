@@ -30,6 +30,5 @@ var searchData=
   ['long_5fdecay',['LONG_DECAY',['../class_c_block_policy_estimator.html#a6fbe5d4ec80d81ee91ca6e5e96fb0c9e',1,'CBlockPolicyEstimator']]],
   ['long_5fscale',['LONG_SCALE',['../class_c_block_policy_estimator.html#a0efa00b28eb147c5d7630b7d42744975',1,'CBlockPolicyEstimator']]],
   ['long_5fterm_5ffee',['long_term_fee',['../struct_output_group.html#a2bb45b2fe65d8e1521c70595e51d337e',1,'OutputGroup']]],
-  ['longstats',['longStats',['../class_c_block_policy_estimator.html#a7badfaa866c048f440e10a65f1082acd',1,'CBlockPolicyEstimator']]],
   ['lp',['lp',['../structupdate__lock__points.html#ab4321c9ba5607ace3583500354b0c2ed',1,'update_lock_points']]]
 ];

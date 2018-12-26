@@ -1,6 +1,7 @@
 var searchData=
 [
   ['params',['Params',['../struct_consensus_1_1_params.html',1,'Consensus']]],
+  ['params',['Params',['../struct_g_c_s_filter_1_1_params.html',1,'GCSFilter']]],
   ['partiallydownloadedblock',['PartiallyDownloadedBlock',['../class_partially_downloaded_block.html',1,'']]],
   ['partiallysignedtransaction',['PartiallySignedTransaction',['../struct_partially_signed_transaction.html',1,'']]],
   ['paymentrequestplus',['PaymentRequestPlus',['../class_payment_request_plus.html',1,'']]],

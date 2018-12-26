@@ -121,6 +121,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3e62f86fd62a8527e171dc27580cb7b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_random_context.html#a3e62f86fd62a8527e171dc27580cb7b2">FastRandomContext</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;seed)</td></tr>
 <tr class="memdesc:a3e62f86fd62a8527e171dc27580cb7b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize with explicit seed (only for testing)  <a href="#a3e62f86fd62a8527e171dc27580cb7b2">More...</a><br /></td></tr>
 <tr class="separator:a3e62f86fd62a8527e171dc27580cb7b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a687c58de9587f63fded3401d7aa975ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_random_context.html#a687c58de9587f63fded3401d7aa975ba">FastRandomContext</a> (const <a class="el" href="class_fast_random_context.html">FastRandomContext</a> &amp;)=delete</td></tr>
+<tr class="separator:a687c58de9587f63fded3401d7aa975ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3039e94273d2b020a2265977c618a135"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_random_context.html#a3039e94273d2b020a2265977c618a135">FastRandomContext</a> (<a class="el" href="class_fast_random_context.html">FastRandomContext</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a3039e94273d2b020a2265977c618a135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c18fff0b9960806ba5b985bd018ca6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_fast_random_context.html">FastRandomContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_random_context.html#a8c18fff0b9960806ba5b985bd018ca6f">operator=</a> (const <a class="el" href="class_fast_random_context.html">FastRandomContext</a> &amp;)=delete</td></tr>
+<tr class="separator:a8c18fff0b9960806ba5b985bd018ca6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd395e3d66671486235a39f7d183bd88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_fast_random_context.html">FastRandomContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_random_context.html#acd395e3d66671486235a39f7d183bd88">operator=</a> (<a class="el" href="class_fast_random_context.html">FastRandomContext</a> &amp;&amp;from) noexcept</td></tr>
+<tr class="memdesc:acd395e3d66671486235a39f7d183bd88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move a <a class="el" href="class_fast_random_context.html" title="Fast randomness source. ">FastRandomContext</a>.  <a href="#acd395e3d66671486235a39f7d183bd88">More...</a><br /></td></tr>
+<tr class="separator:acd395e3d66671486235a39f7d183bd88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59cd586d02fb2b0fd4014a437166c62a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_random_context.html#a59cd586d02fb2b0fd4014a437166c62a">rand64</a> ()</td></tr>
 <tr class="memdesc:a59cd586d02fb2b0fd4014a437166c62a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random 64-bit integer.  <a href="#a59cd586d02fb2b0fd4014a437166c62a">More...</a><br /></td></tr>
 <tr class="separator:a59cd586d02fb2b0fd4014a437166c62a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,7 +201,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random_8h_source.html#l00127">127</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
+<p>Definition at line <a class="el" href="random_8h_source.html#l00135">135</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
 
 </div>
 </div>
@@ -219,7 +228,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random_8cpp_source.html#l00457">457</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00458">458</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -231,7 +240,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_aa0d612a6298227d5378e4a4d8f4386d4_icgraph.svg" width="1518" height="307"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_aa0d612a6298227d5378e4a4d8f4386d4_icgraph.svg" width="1668" height="306"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -261,7 +271,7 @@ Here is the caller graph for this function:</div>
 
 <p>Initialize with explicit seed (only for testing) </p>
 
-<p>Definition at line <a class="el" href="random_8cpp_source.html#l00408">408</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00409">409</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -269,6 +279,54 @@ Here is the call graph for this function:</div>
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_a3e62f86fd62a8527e171dc27580cb7b2_cgraph.svg" width="358" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="a687c58de9587f63fded3401d7aa975ba"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FastRandomContext::FastRandomContext </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_fast_random_context.html">FastRandomContext</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3039e94273d2b020a2265977c618a135"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FastRandomContext::FastRandomContext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_fast_random_context.html">FastRandomContext</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -299,14 +357,16 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_a39c2ce180d58c55e663ec2ba05593a37_cgraph.svg" width="1139" height="170"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_a39c2ce180d58c55e663ec2ba05593a37_cgraph.svg" width="1139" height="227"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_a39c2ce180d58c55e663ec2ba05593a37_icgraph.svg" width="1311" height="307"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_a39c2ce180d58c55e663ec2ba05593a37_icgraph.svg" width="1462" height="306"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -345,7 +405,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_afe719582d74b5ce1dd61042ee27fc2c5_icgraph.svg" width="1724" height="286"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_afe719582d74b5ce1dd61042ee27fc2c5_icgraph.svg" width="1875" height="406"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -372,7 +433,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random_8h_source.html#l00129">129</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
+<p>Definition at line <a class="el" href="random_8h_source.html#l00137">137</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
 
 </div>
 </div>
@@ -397,7 +458,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random_8h_source.html#l00128">128</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
+<p>Definition at line <a class="el" href="random_8h_source.html#l00136">136</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
 
 </div>
 </div>
@@ -422,14 +483,76 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random_8h_source.html#l00130">130</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
+<p>Definition at line <a class="el" href="random_8h_source.html#l00138">138</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_a9798d55b00a02401d19ac20616ab1b85_cgraph.svg" width="1428" height="527"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_a9798d55b00a02401d19ac20616ab1b85_cgraph.svg" width="1139" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8c18fff0b9960806ba5b985bd018ca6f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_fast_random_context.html">FastRandomContext</a>&amp; FastRandomContext::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_fast_random_context.html">FastRandomContext</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_a8c18fff0b9960806ba5b985bd018ca6f_icgraph.svg" width="1668" height="306"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acd395e3d66671486235a39f7d183bd88"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_fast_random_context.html">FastRandomContext</a> &amp; FastRandomContext::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_fast_random_context.html">FastRandomContext</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>from</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move a <a class="el" href="class_fast_random_context.html" title="Fast randomness source. ">FastRandomContext</a>. </p>
+<p>If the original one is used again, it will be reseeded. </p>
+
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00467">467</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
 
 </div>
 </div>
@@ -460,7 +583,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_aaa7592f37a6e2b0ea2ce38f0b0ef0474_icgraph.svg" width="376" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_aaa7592f37a6e2b0ea2ce38f0b0ef0474_icgraph.svg" width="571" height="210"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -489,12 +613,13 @@ Here is the caller graph for this function:</div>
 
 <p>Generate a random 32-bit integer. </p>
 
-<p>Definition at line <a class="el" href="random_8h_source.html#l00118">118</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
+<p>Definition at line <a class="el" href="random_8h_source.html#l00126">126</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_a8ea3fd2c7b2961aa1ee93ca5dc6ad6cf_cgraph.svg" width="1552" height="323"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_a8ea3fd2c7b2961aa1ee93ca5dc6ad6cf_cgraph.svg" width="1552" height="330"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -523,7 +648,7 @@ Here is the call graph for this function:</div>
 
 <p>Generate a random 64-bit integer. </p>
 
-<p>Definition at line <a class="el" href="random_8h_source.html#l00080">80</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
+<p>Definition at line <a class="el" href="random_8h_source.html#l00088">88</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -535,7 +660,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_a59cd586d02fb2b0fd4014a437166c62a_icgraph.svg" width="1518" height="307"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_a59cd586d02fb2b0fd4014a437166c62a_icgraph.svg" width="1668" height="306"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -565,19 +691,21 @@ Here is the caller graph for this function:</div>
 
 <p>Generate a random (bits)-bit integer. </p>
 
-<p>Definition at line <a class="el" href="random_8h_source.html#l00089">89</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
+<p>Definition at line <a class="el" href="random_8h_source.html#l00097">97</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_a95c5189461e49a34f9a9c9127f409481_cgraph.svg" width="1346" height="170"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_a95c5189461e49a34f9a9c9127f409481_cgraph.svg" width="1346" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_a95c5189461e49a34f9a9c9127f409481_icgraph.svg" width="1104" height="307"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_a95c5189461e49a34f9a9c9127f409481_icgraph.svg" width="1255" height="306"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -606,19 +734,21 @@ Here is the caller graph for this function:</div>
 
 <p>Generate a random boolean. </p>
 
-<p>Definition at line <a class="el" href="random_8h_source.html#l00124">124</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
+<p>Definition at line <a class="el" href="random_8h_source.html#l00132">132</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_a721778ad4418922703ac4b7c14ab4722_cgraph.svg" width="1552" height="170"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_a721778ad4418922703ac4b7c14ab4722_cgraph.svg" width="1552" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_a721778ad4418922703ac4b7c14ab4722_icgraph.svg" width="830" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_a721778ad4418922703ac4b7c14ab4722_icgraph.svg" width="591" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -645,14 +775,16 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_a85728a27593cb7bdcca6a2b4b4a1dcbd_cgraph.svg" width="358" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_a85728a27593cb7bdcca6a2b4b4a1dcbd_cgraph.svg" width="726" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_a85728a27593cb7bdcca6a2b4b4a1dcbd_icgraph.svg" width="1004" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_a85728a27593cb7bdcca6a2b4b4a1dcbd_icgraph.svg" width="1208" height="202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -691,7 +823,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_a7fa6ad2737010ee65ee38c9a0fdcf727_icgraph.svg" width="1931" height="286"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_a7fa6ad2737010ee65ee38c9a0fdcf727_icgraph.svg" width="2082" height="459"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -721,19 +854,21 @@ Here is the caller graph for this function:</div>
 
 <p>Generate a random integer in the range [0..range). </p>
 
-<p>Definition at line <a class="el" href="random_8h_source.html#l00104">104</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
+<p>Definition at line <a class="el" href="random_8h_source.html#l00112">112</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_aa000c668f222d36db387034f6bf98f8f_cgraph.svg" width="1552" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_aa000c668f222d36db387034f6bf98f8f_cgraph.svg" width="1552" height="202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_aa000c668f222d36db387034f6bf98f8f_icgraph.svg" width="798" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_fast_random_context_aa000c668f222d36db387034f6bf98f8f_icgraph.svg" width="1002" height="202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -879,7 +1014,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:24 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:54 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

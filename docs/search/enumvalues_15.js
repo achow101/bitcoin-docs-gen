@@ -6,5 +6,6 @@ var searchData=
   ['vnull',['VNULL',['../class_uni_value.html#a2f9803e567ede73e88302b01e394cc63a49973f733a7441eacf39e816229891cd',1,'UniValue']]],
   ['vnum',['VNUM',['../class_uni_value.html#a2f9803e567ede73e88302b01e394cc63aba88a44dcdb6e3be0538d14997ff042b',1,'UniValue']]],
   ['vobj',['VOBJ',['../class_uni_value.html#a2f9803e567ede73e88302b01e394cc63a4d17ac56db012de25e26ac62daf3f475',1,'UniValue']]],
+  ['voutrole',['VOutRole',['../class_coin_control_dialog.html#a9e152748118de88d3403e10f6d2f6210a255dffb508fb02ebe80e74222ff86ece',1,'CoinControlDialog']]],
   ['vstr',['VSTR',['../class_uni_value.html#a2f9803e567ede73e88302b01e394cc63a7afa7b747615105024aab97ff5bf4d11',1,'UniValue']]]
 ];

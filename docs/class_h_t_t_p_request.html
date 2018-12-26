@@ -205,7 +205,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00525">525</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
+<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00513">513</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
 
 </div>
 </div>
@@ -222,12 +222,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00529">529</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
+<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00517">517</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_h_t_t_p_request_ab5864e916f43eddde9d2ccb69e0f1385_cgraph.svg" width="631" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_h_t_t_p_request_ab5864e916f43eddde9d2ccb69e0f1385_cgraph.svg" width="682" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -251,7 +252,7 @@ Here is the call graph for this function:</div>
 <p>Get the request header specified by hdr, or an empty string. </p>
 <p>Return a pair (isPresent,string). </p>
 
-<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00539">539</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
+<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00527">527</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
 
 </div>
 </div>
@@ -270,12 +271,13 @@ Here is the call graph for this function:</div>
 
 <p>Get <a class="el" href="class_c_service.html" title="A combination of a network address (CNetAddr) and a (TCP) port. ">CService</a> (address:ip) for the origin of the http request. </p>
 
-<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00609">609</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
+<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00600">600</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_h_t_t_p_request_a33fff8f29a0da0a2cc3b26748e967375_cgraph.svg" width="755" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_h_t_t_p_request_a33fff8f29a0da0a2cc3b26748e967375_cgraph.svg" width="755" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -296,7 +298,7 @@ Here is the call graph for this function:</div>
 
 <p>Get request method. </p>
 
-<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00628">628</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
+<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00619">619</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
 
 </div>
 </div>
@@ -315,7 +317,7 @@ Here is the call graph for this function:</div>
 
 <p>Get requested URI. </p>
 
-<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00623">623</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
+<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00614">614</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
 
 </div>
 </div>
@@ -336,7 +338,7 @@ Here is the call graph for this function:</div>
 <dl class="section note"><dt>Note</dt><dd>As this consumes the underlying buffer, call this only once. Repeated calls will return an empty string. </dd></dl>
 <p>Trivial implementation: if this is ever a performance bottleneck, internal copying can be avoided in multi-segment buffers by using evbuffer_peek and an awkward loop. Though in that case, it'd be even better to not copy into an intermediate string but use a stream abstraction to consume the evbuffer on the fly in the parsing algorithm.</p>
 
-<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00550">550</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
+<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00538">538</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -374,12 +376,13 @@ Here is the caller graph for this function:</div>
 <p>Write output header. </p>
 <dl class="section note"><dt>Note</dt><dd>call this before calling WriteErrorReply or Reply. </dd></dl>
 
-<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00570">570</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
+<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00558">558</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_h_t_t_p_request_a910ea3b361715e036dc74eb75e92fb62_icgraph.svg" width="412" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_h_t_t_p_request_a910ea3b361715e036dc74eb75e92fb62_icgraph.svg" width="682" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -415,12 +418,13 @@ Here is the caller graph for this function:</div>
 <dl class="section note"><dt>Note</dt><dd>Can be called only once. As this will give the request back to the main thread, do not call any other <a class="el" href="class_h_t_t_p_request.html" title="In-flight HTTP request. ">HTTPRequest</a> methods after calling this.</dd></dl>
 <p>Replies must be sent in the main loop in the main http thread, this cannot be done from worker threads. </p>
 
-<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00582">582</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
+<p>Definition at line <a class="el" href="httpserver_8cpp_source.html#l00570">570</a> of file <a class="el" href="httpserver_8cpp_source.html">httpserver.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_h_t_t_p_request_a43767ec5daf58e5a13a740ed56ddca3f_cgraph.svg" width="376" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_h_t_t_p_request_a43767ec5daf58e5a13a740ed56ddca3f_cgraph.svg" width="427" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -485,7 +489,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 09:23:24 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2018 17:19:55 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
