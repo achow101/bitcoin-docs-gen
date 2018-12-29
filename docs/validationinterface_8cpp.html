@@ -116,6 +116,8 @@ Include dependency graph for validationinterface.cpp:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_validation_interface_connections.html">ValidationInterfaceConnections</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_main_signals_instance.html">MainSignalsInstance</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -157,7 +159,7 @@ Functions</h2></td></tr>
 <p>Pushes a function to callback onto the notification queue, guaranteeing any callbacks generated prior to now are finished when the function is called. </p>
 <p>Be very careful blocking on func to be called if any locks are held - validation interface clients may not be able to make progress as they often wait for things like cs_main, so blocking until func is called with cs_main will result in a deadlock (that DEBUG_LOCKORDER will miss). </p>
 
-<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00113">113</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00116">116</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -181,7 +183,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00069">69</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00087">87</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -208,19 +210,21 @@ Here is the caller graph for this function:</div>
 
 <p>Register a wallet to receive updates from core. </p>
 
-<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00074">74</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00092">92</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8cpp_ade8ef59282b5f7521ecfd870a8e3b137_cgraph.svg" width="976" height="510"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8cpp_ade8ef59282b5f7521ecfd870a8e3b137_cgraph.svg" width="976" height="555"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8cpp_ade8ef59282b5f7521ecfd870a8e3b137_icgraph.svg" width="1596" height="567"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8cpp_ade8ef59282b5f7521ecfd870a8e3b137_icgraph.svg" width="1350" height="312"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -241,7 +245,7 @@ Here is the caller graph for this function:</div>
 
 <p>This is a synonym for the following, which asserts certain locks are not held: std::promise&lt;void&gt; promise; CallFunctionInValidationInterfaceQueue([&amp;promise] { promise.set_value(); }); promise.get_future().wait();. </p>
 
-<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00117">117</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00120">120</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -274,12 +278,13 @@ Here is the caller graph for this function:</div>
 
 <p>Unregister all wallets from core. </p>
 
-<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00098">98</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00109">109</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8cpp_a8fe3fbf8c47cc0419fd7b9a14e8b140d_icgraph.svg" width="1635" height="491"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8cpp_a8fe3fbf8c47cc0419fd7b9a14e8b140d_icgraph.svg" width="1388" height="296"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -301,19 +306,13 @@ Here is the caller graph for this function:</div>
 
 <p>Unregister a wallet from core. </p>
 
-<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00086">86</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8cpp_a5e1776de1f87b4d045e9e2a198236b63_cgraph.svg" width="992" height="510"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
+<p>Definition at line <a class="el" href="validationinterface_8cpp_source.html#l00105">105</a> of file <a class="el" href="validationinterface_8cpp_source.html">validationinterface.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8cpp_a5e1776de1f87b4d045e9e2a198236b63_icgraph.svg" width="1788" height="540"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validationinterface_8cpp_a5e1776de1f87b4d045e9e2a198236b63_icgraph.svg" width="1386" height="483"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -322,7 +321,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 29 2018 12:46:18 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 29 2018 13:16:36 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

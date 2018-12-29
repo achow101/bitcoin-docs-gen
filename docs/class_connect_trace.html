@@ -108,8 +108,6 @@ Collaboration diagram for ConnectTrace:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac9adfb7282344e2747901aa26996ae9c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_connect_trace.html#ac9adfb7282344e2747901aa26996ae9c">ConnectTrace</a> (<a class="el" href="class_c_tx_mem_pool.html">CTxMemPool</a> &amp;_pool)</td></tr>
 <tr class="separator:ac9adfb7282344e2747901aa26996ae9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a762c3c1e391ccb84b6687aeb596664"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_connect_trace.html#a9a762c3c1e391ccb84b6687aeb596664">~ConnectTrace</a> ()</td></tr>
-<tr class="separator:a9a762c3c1e391ccb84b6687aeb596664"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff5e6f4d7968149163fab63d25e04e5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_connect_trace.html#aff5e6f4d7968149163fab63d25e04e5b">BlockConnected</a> (<a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindex, std::shared_ptr&lt; const <a class="el" href="class_c_block.html">CBlock</a> &gt; pblock)</td></tr>
 <tr class="separator:aff5e6f4d7968149163fab63d25e04e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe437ec2f5bfc1c98af1ec52b3849aec"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_per_block_connect_trace.html">PerBlockConnectTrace</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_connect_trace.html#afe437ec2f5bfc1c98af1ec52b3849aec">GetBlocksConnected</a> ()</td></tr>
@@ -123,6 +121,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:abc3f88ad650a2b0356c7e9949eee7440"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69aa6066e6f90e943d318a176cf4a355"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_tx_mem_pool.html">CTxMemPool</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_connect_trace.html#a69aa6066e6f90e943d318a176cf4a355">pool</a></td></tr>
 <tr class="separator:a69aa6066e6f90e943d318a176cf4a355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae04c4406aee4874bc6baa6df8787323a"><td class="memItemLeft" align="right" valign="top">boost::signals2::scoped_connection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_connect_trace.html#ae04c4406aee4874bc6baa6df8787323a">m_connNotifyEntryRemoved</a></td></tr>
+<tr class="separator:ae04c4406aee4874bc6baa6df8787323a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Used to track blocks whose transactions were applied to the UTXO state as a part of a single ActivateBestChainStep call. </p>
@@ -154,44 +154,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02371">2371</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02372">2372</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_connect_trace_ac9adfb7282344e2747901aa26996ae9c_cgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a9a762c3c1e391ccb84b6687aeb596664"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ConnectTrace::~ConnectTrace </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02375">2375</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_connect_trace_a9a762c3c1e391ccb84b6687aeb596664_cgraph.svg" width="459" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -230,7 +198,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02379">2379</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02376">2376</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -262,7 +230,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02388">2388</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02385">2385</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -305,12 +273,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02400">2400</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02397">2397</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_connect_trace_a1c032cc7f55eb3185f43c8e29d33b88d_icgraph.svg" width="459" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_connect_trace_a1c032cc7f55eb3185f43c8e29d33b88d_icgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -336,6 +305,28 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="validation_8cpp_source.html#l02367">2367</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae04c4406aee4874bc6baa6df8787323a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::signals2::scoped_connection ConnectTrace::m_connNotifyEntryRemoved</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="validation_8cpp_source.html#l02369">2369</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
 
 </div>
 </div>
@@ -367,7 +358,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 29 2018 12:46:21 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 29 2018 13:16:40 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

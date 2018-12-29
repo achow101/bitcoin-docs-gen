@@ -52,7 +52,7 @@ var searchData=
   ['network',['network',['../class_c_sub_net.html#a17c8e899bfed76a371c833fb4cd679c9',1,'CSubNet']]],
   ['networkid',['networkId',['../networkstyle_8cpp.html#afd147e4195fa724b6237e3241940dc9a',1,'networkstyle.cpp']]],
   ['newaddresstoselect',['newAddressToSelect',['../class_address_book_page.html#a293e2d01a4e60de367b4b4491e4138df',1,'AddressBookPage']]],
-  ['newpowvalidblock',['NewPoWValidBlock',['../struct_main_signals_instance.html#ad8813e6fd4f2c91aa3faac8307aa8203',1,'MainSignalsInstance']]],
+  ['newpowvalidblock',['NewPoWValidBlock',['../struct_validation_interface_connections.html#a26345465aa9d5f565f86f1b261ded00c',1,'ValidationInterfaceConnections::NewPoWValidBlock()'],['../struct_main_signals_instance.html#ad8813e6fd4f2c91aa3faac8307aa8203',1,'MainSignalsInstance::NewPoWValidBlock()']]],
   ['newtaskmutex',['newTaskMutex',['../class_c_scheduler.html#a6b161d2bf167c00285522b088a05bfa6',1,'CScheduler']]],
   ['newtaskscheduled',['newTaskScheduled',['../class_c_scheduler.html#a9aff0df5c40338dd9ed01334aae05cdf',1,'CScheduler']]],
   ['nexternalchaincounter',['nExternalChainCounter',['../class_c_h_d_chain.html#aff80cf874817b6ca7434b87ab52bd22b',1,'CHDChain']]],

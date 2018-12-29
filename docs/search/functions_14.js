@@ -152,5 +152,5 @@ var searchData=
   ['txtouniv',['TxToUniv',['../core__io_8h.html#a96af8e1e5f4236f7e0a1a757c3fc8c4c',1,'TxToUniv(const CTransaction &amp;tx, const uint256 &amp;hashBlock, UniValue &amp;entry, bool include_hex=true, int serialize_flags=0):&#160;core_write.cpp'],['../core__write_8cpp.html#a14497f9c37438be66cf5904854fc2530',1,'TxToUniv(const CTransaction &amp;tx, const uint256 &amp;hashBlock, UniValue &amp;entry, bool include_hex, int serialize_flags):&#160;core_write.cpp']]],
   ['txviewdelegate',['TxViewDelegate',['../class_tx_view_delegate.html#a12cb6ffffa56bc8a0afc3ea0c8c85a68',1,'TxViewDelegate']]],
   ['txwatchonlydecoration',['txWatchonlyDecoration',['../class_transaction_table_model.html#af7265793d57a7201b1cf62927b1d7248',1,'TransactionTableModel']]],
-  ['type',['type',['../class_uni_value.html#aa9c595a1e1a560e35eff5e8b6d8d859a',1,'UniValue::type()'],['../class_transaction_filter_proxy.html#aaacec79a6362b13ee4cfab7f770e33b5',1,'TransactionFilterProxy::TYPE()']]]
+  ['type',['TYPE',['../class_transaction_filter_proxy.html#aaacec79a6362b13ee4cfab7f770e33b5',1,'TransactionFilterProxy::TYPE()'],['../class_uni_value.html#aa9c595a1e1a560e35eff5e8b6d8d859a',1,'UniValue::type()']]]
 ];

@@ -21,6 +21,8 @@ var searchData=
   ['m_5fconnected_5fwallet_5fhandlers',['m_connected_wallet_handlers',['../class_splash_screen.html#a584f1495eeebaff59e3bfe4cee2699a2',1,'SplashScreen']]],
   ['m_5fconnected_5fwallets',['m_connected_wallets',['../class_splash_screen.html#a29ccfa27c42bb883f882bc2e6c46b6fb',1,'SplashScreen']]],
   ['m_5fconnection',['m_connection',['../handler_8cpp.html#a4f182aa416f1835bba4e08ae7e6615be',1,'handler.cpp']]],
+  ['m_5fconnmainsignals',['m_connMainSignals',['../struct_main_signals_instance.html#a8147fb1986e3d9735604d3096d13a02d',1,'MainSignalsInstance']]],
+  ['m_5fconnnotifyentryremoved',['m_connNotifyEntryRemoved',['../class_connect_trace.html#ae04c4406aee4874bc6baa6df8787323a',1,'ConnectTrace']]],
   ['m_5fcould_5freserve',['m_could_reserve',['../class_coins_view_scan_reserver.html#a54bed0a5396dc91f2c2c5452d0ef6252',1,'CoinsViewScanReserver::m_could_reserve()'],['../class_wallet_rescan_reserver.html#a05f1d9da9ecc3a62533aa50072de407d',1,'WalletRescanReserver::m_could_reserve()']]],
   ['m_5fcs_5fcallbacks_5fpending',['m_cs_callbacks_pending',['../class_single_threaded_scheduler_client.html#a7146ce93667d61911f784affd7904ca6',1,'SingleThreadedSchedulerClient']]],
   ['m_5fcs_5fchainstate',['m_cs_chainstate',['../class_c_chain_state.html#a7de325123fd907fea8398fde92e5a6b1',1,'CChainState']]],

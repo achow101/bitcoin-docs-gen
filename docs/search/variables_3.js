@@ -22,7 +22,7 @@ var searchData=
   ['chainactive',['chainActive',['../class_c_chain_state.html#a9b1419f91f5e56c7d4db775526c14e0d',1,'CChainState::chainActive()'],['../validation_8cpp.html#ac309099e8f5fdc0aca4fac91e4264dd2',1,'chainActive():&#160;validation.cpp'],['../validation_8h.html#ac309099e8f5fdc0aca4fac91e4264dd2',1,'chainActive():&#160;validation.cpp']]],
   ['chaincode',['chaincode',['../struct_c_ext_key.html#ab963200521bcc38d0f68c2d062b5da72',1,'CExtKey::chaincode()'],['../struct_c_ext_pub_key.html#a2a61ccbe1bc8ddc0e5f7bf5972907760',1,'CExtPubKey::chaincode()']]],
   ['chainparams',['chainparams',['../class_block_assembler.html#acbde571f946f076a6957481e35c336cd',1,'BlockAssembler']]],
-  ['chainstateflushed',['ChainStateFlushed',['../struct_main_signals_instance.html#a1d3165fb7ea5b78afb1358c50dcf3214',1,'MainSignalsInstance']]],
+  ['chainstateflushed',['ChainStateFlushed',['../struct_validation_interface_connections.html#a0fbd9ea6a9a11312a65582d42dafae24',1,'ValidationInterfaceConnections::ChainStateFlushed()'],['../struct_main_signals_instance.html#a1d3165fb7ea5b78afb1358c50dcf3214',1,'MainSignalsInstance::ChainStateFlushed()']]],
   ['chaintxdata',['chainTxData',['../class_c_chain_params.html#af19672935456e477dca41b7cea9d3cdb',1,'CChainParams']]],
   ['change',['change',['../structinterfaces_1_1_wallet_tx.html#a7345599871a75cbf25f40ac957b28fb5',1,'interfaces::WalletTx']]],
   ['change_5foutput_5fsize',['change_output_size',['../struct_coin_selection_params.html#a8936b8b7834c8b7e7566d4d11d8ec8df',1,'CoinSelectionParams']]],

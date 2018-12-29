@@ -50,7 +50,6 @@ var searchData=
   ['_7ecnode',['~CNode',['../class_c_node.html#ac9b30cb93e91a48dacc58821abfc44f0',1,'CNode']]],
   ['_7ecoincontroldialog',['~CoinControlDialog',['../class_coin_control_dialog.html#abbd976ba19011319d5e189f87db66e31',1,'CoinControlDialog']]],
   ['_7ecoinsviewscanreserver',['~CoinsViewScanReserver',['../class_coins_view_scan_reserver.html#a9e4139f2cb0f7aaef6e6dc1983162f5f',1,'CoinsViewScanReserver']]],
-  ['_7econnecttrace',['~ConnectTrace',['../class_connect_trace.html#a9a762c3c1e391ccb84b6687aeb596664',1,'ConnectTrace']]],
   ['_7ecreservekey',['~CReserveKey',['../class_c_reserve_key.html#a71dc4f86968df51ffa263371fdb93f3f',1,'CReserveKey']]],
   ['_7ecreservescript',['~CReserveScript',['../class_c_reserve_script.html#a9adba723b91ee92c62d88b120c71e8dd',1,'CReserveScript']]],
   ['_7ecscheduler',['~CScheduler',['../class_c_scheduler.html#ab453c8d28d84cf31ee3d5f621f4f45ed',1,'CScheduler']]],
