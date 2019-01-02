@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['label',['label',['../struct_address_table_entry.html#a4a427495652b7716f84aa88b2cb4f296',1,'AddressTableEntry::label()'],['../class_send_coins_recipient.html#a0152933f2c0cb9164d2fcb36bca83666',1,'SendCoinsRecipient::label()'],['../class_address_table_model.html#a432276ac4504e926466072561c5ddb33aaf8f25cebb70b8a394d6c0f23c941a32',1,'AddressTableModel::Label()'],['../class_recent_requests_table_model.html#a720ff50ef9f8e016a5d2bbd8fd7fb41da6122ebd2a6dc081e6b25727cd4962fad',1,'RecentRequestsTableModel::Label()']]],
+  ['label',['Label',['../class_address_table_model.html#a432276ac4504e926466072561c5ddb33aaf8f25cebb70b8a394d6c0f23c941a32',1,'AddressTableModel::Label()'],['../class_recent_requests_table_model.html#a720ff50ef9f8e016a5d2bbd8fd7fb41da6122ebd2a6dc081e6b25727cd4962fad',1,'RecentRequestsTableModel::Label()'],['../struct_address_table_entry.html#a4a427495652b7716f84aa88b2cb4f296',1,'AddressTableEntry::label()'],['../class_send_coins_recipient.html#a0152933f2c0cb9164d2fcb36bca83666',1,'SendCoinsRecipient::label()']]],
   ['label_5fcolumn_5fwidth',['LABEL_COLUMN_WIDTH',['../class_receive_coins_dialog.html#a348824c8475841e6e0cb35fdf9090656a51bc59ac21abedb1b2f4119e9723da21',1,'ReceiveCoinsDialog']]],
   ['labelblocksicon',['labelBlocksIcon',['../class_bitcoin_g_u_i.html#aacb34d5498f011abe772f16a81bfc099',1,'BitcoinGUI']]],
   ['labelforaddress',['labelForAddress',['../class_address_table_model.html#a1c39ce19eecfc9f3ace10435b162607f',1,'AddressTableModel']]],
