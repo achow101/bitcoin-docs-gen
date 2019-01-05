@@ -267,7 +267,7 @@ var searchData=
   ['outputtype_2eh',['outputtype.h',['../outputtype_8h.html',1,'']]],
   ['overridestream',['OverrideStream',['../class_override_stream.html',1,'OverrideStream&lt; Stream &gt;'],['../class_override_stream.html#a2c45dbac1803bc8a69737795458f8bba',1,'OverrideStream::OverrideStream()']]],
   ['overviewaction',['overviewAction',['../class_bitcoin_g_u_i.html#aab6f7153976abf69c28c5bcafd59241e',1,'BitcoinGUI']]],
-  ['overviewpage',['OverviewPage',['../class_overview_page.html',1,'OverviewPage'],['../class_wallet_view.html#a4049958d049676ab39001ed92a570bf2',1,'WalletView::overviewPage()'],['../class_overview_page.html#ab377237585c9eeabc2eec882cec9a1e2',1,'OverviewPage::OverviewPage()']]],
+  ['overviewpage',['OverviewPage',['../class_overview_page.html',1,'OverviewPage'],['../class_overview_page.html#ab377237585c9eeabc2eec882cec9a1e2',1,'OverviewPage::OverviewPage()'],['../class_wallet_view.html#a4049958d049676ab39001ed92a570bf2',1,'WalletView::overviewPage()']]],
   ['overviewpage_2ecpp',['overviewpage.cpp',['../overviewpage_8cpp.html',1,'']]],
   ['overviewpage_2eh',['overviewpage.h',['../overviewpage_8h.html',1,'']]]
 ];

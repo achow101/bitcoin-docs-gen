@@ -109,14 +109,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="class_wallet_frame.html#af5cce5026575d013cb9d6933ebe7aa98">gotoVerifyMessageTab</a>(QString addr=&quot;&quot;)</td><td class="entry"><a class="el" href="class_wallet_frame.html">WalletFrame</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_wallet_frame.html#ad44a50e3e2fe727a6a78827d87407ff6">gui</a></td><td class="entry"><a class="el" href="class_wallet_frame.html">WalletFrame</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_wallet_frame.html#aa8c5b10f2240df164795619ca41c619c">handlePaymentRequest</a>(const SendCoinsRecipient &amp;recipient)</td><td class="entry"><a class="el" href="class_wallet_frame.html">WalletFrame</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_wallet_frame.html#a808927a1b2a23f9b11a97468076ff8d0">mapWalletViews</a></td><td class="entry"><a class="el" href="class_wallet_frame.html">WalletFrame</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_wallet_frame.html#ac9152856f683aee88f4fda5946b99fa5">mapWalletViews</a></td><td class="entry"><a class="el" href="class_wallet_frame.html">WalletFrame</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_wallet_frame.html#a9b846a7ce32f1bca329a0ef634c73524">outOfSyncWarningClicked</a>()</td><td class="entry"><a class="el" href="class_wallet_frame.html">WalletFrame</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_wallet_frame.html#a6b04720eeaaeba5c92aa9957bf6faf6a">platformStyle</a></td><td class="entry"><a class="el" href="class_wallet_frame.html">WalletFrame</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_wallet_frame.html#a022ecdc6281ee7ac3dc2618b5a150e93">removeAllWallets</a>()</td><td class="entry"><a class="el" href="class_wallet_frame.html">WalletFrame</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_wallet_frame.html#a1d9bd941464bb92318851855e0f8ddc6">removeWallet</a>(const QString &amp;name)</td><td class="entry"><a class="el" href="class_wallet_frame.html">WalletFrame</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_wallet_frame.html#a8ce6828ffced3e7a3e4cd964128f572d">removeWallet</a>(WalletModel *wallet_model)</td><td class="entry"><a class="el" href="class_wallet_frame.html">WalletFrame</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_wallet_frame.html#a2fb29d62adea87db27f6185e5a4ceb85">requestedSyncWarningInfo</a>()</td><td class="entry"><a class="el" href="class_wallet_frame.html">WalletFrame</a></td><td class="entry"><span class="mlabel">signal</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_wallet_frame.html#a72f3a61b1d882a894c65fbf1adc1a954">setClientModel</a>(ClientModel *clientModel)</td><td class="entry"><a class="el" href="class_wallet_frame.html">WalletFrame</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_wallet_frame.html#ab6d4f86307bf1b28b53c2583c5166905">setCurrentWallet</a>(const QString &amp;name)</td><td class="entry"><a class="el" href="class_wallet_frame.html">WalletFrame</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_wallet_frame.html#aefddfcd716a29af158a7cec4b324663f">setCurrentWallet</a>(WalletModel *wallet_model)</td><td class="entry"><a class="el" href="class_wallet_frame.html">WalletFrame</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_wallet_frame.html#aeda920e4141c99d457814f20fa89dde6">showOutOfSyncWarning</a>(bool fShow)</td><td class="entry"><a class="el" href="class_wallet_frame.html">WalletFrame</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_wallet_frame.html#a31b6e87c87b383ef53225b6c2b37f057">unlockWallet</a>()</td><td class="entry"><a class="el" href="class_wallet_frame.html">WalletFrame</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_wallet_frame.html#a9273a0b98cf7ec9fc344658c38a4a0a3">usedReceivingAddresses</a>()</td><td class="entry"><a class="el" href="class_wallet_frame.html">WalletFrame</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
@@ -127,7 +127,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 2 2019 16:21:03 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 5 2019 20:01:37 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

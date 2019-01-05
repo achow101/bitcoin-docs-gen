@@ -116,7 +116,8 @@ Inheritance diagram for RPCConsole:</div>
 <div class="dynheader">
 Collaboration diagram for RPCConsole:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_r_p_c_console__coll__graph.svg" width="1254" height="306"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_r_p_c_console__coll__graph.svg" width="1476" height="932"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -197,8 +198,8 @@ Public Slots</h2></td></tr>
 Signals</h2></td></tr>
 <tr class="memitem:aa2ff103a6180259899b7661ef963345b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_c_console.html#aa2ff103a6180259899b7661ef963345b">stopExecutor</a> ()</td></tr>
 <tr class="separator:aa2ff103a6180259899b7661ef963345b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5e78a2c9c66e30c43463e3dd756f035"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_c_console.html#ae5e78a2c9c66e30c43463e3dd756f035">cmdRequest</a> (const QString &amp;command, const QString &amp;walletID)</td></tr>
-<tr class="separator:ae5e78a2c9c66e30c43463e3dd756f035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1694fa0da735d15735ce2bae01653bd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_c_console.html#a1694fa0da735d15735ce2bae01653bd8">cmdRequest</a> (const QString &amp;command, const <a class="el" href="class_wallet_model.html">WalletModel</a> *wallet_model)</td></tr>
+<tr class="separator:a1694fa0da735d15735ce2bae01653bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -221,11 +222,11 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a9198da9ced3d97314b9b549c214b6c20"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_c_console.html#a9198da9ced3d97314b9b549c214b6c20">RPCParseCommandLine</a> (<a class="el" href="classinterfaces_1_1_node.html">interfaces::Node</a> *node, std::string &amp;strResult, const std::string &amp;strCommand, bool fExecute, std::string *const pstrFilteredOut=nullptr, const std::string *walletID=nullptr)</td></tr>
-<tr class="memdesc:a9198da9ced3d97314b9b549c214b6c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split shell command line into a list of arguments and optionally execute the command(s).  <a href="#a9198da9ced3d97314b9b549c214b6c20">More...</a><br /></td></tr>
-<tr class="separator:a9198da9ced3d97314b9b549c214b6c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06ae7f8295a3af7cfbefc3f1044717cd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_c_console.html#a06ae7f8295a3af7cfbefc3f1044717cd">RPCExecuteCommandLine</a> (<a class="el" href="classinterfaces_1_1_node.html">interfaces::Node</a> &amp;node, std::string &amp;strResult, const std::string &amp;strCommand, std::string *const pstrFilteredOut=nullptr, const std::string *walletID=nullptr)</td></tr>
-<tr class="separator:a06ae7f8295a3af7cfbefc3f1044717cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49ae75439e266c6c114191d44c25bfe6"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_c_console.html#a49ae75439e266c6c114191d44c25bfe6">RPCParseCommandLine</a> (<a class="el" href="classinterfaces_1_1_node.html">interfaces::Node</a> *node, std::string &amp;strResult, const std::string &amp;strCommand, bool fExecute, std::string *const pstrFilteredOut=nullptr, const <a class="el" href="class_wallet_model.html">WalletModel</a> *wallet_model=nullptr)</td></tr>
+<tr class="memdesc:a49ae75439e266c6c114191d44c25bfe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split shell command line into a list of arguments and optionally execute the command(s).  <a href="#a49ae75439e266c6c114191d44c25bfe6">More...</a><br /></td></tr>
+<tr class="separator:a49ae75439e266c6c114191d44c25bfe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60bd57cb303f5c24849f04f9766d51e5"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_c_console.html#a60bd57cb303f5c24849f04f9766d51e5">RPCExecuteCommandLine</a> (<a class="el" href="classinterfaces_1_1_node.html">interfaces::Node</a> &amp;node, std::string &amp;strResult, const std::string &amp;strCommand, std::string *const pstrFilteredOut=nullptr, const <a class="el" href="class_wallet_model.html">WalletModel</a> *wallet_model=nullptr)</td></tr>
+<tr class="separator:a60bd57cb303f5c24849f04f9766d51e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -324,8 +325,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a755213e58580a4b754c1f304c2af6912"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8dd28d72488852c5811794f62e66311"><td class="memItemLeft" align="right" valign="top">QThread&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_c_console.html#af8dd28d72488852c5811794f62e66311">thread</a></td></tr>
 <tr class="separator:af8dd28d72488852c5811794f62e66311"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1ffb63afb3b9a33e858a27fd7c45041"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_c_console.html#aa1ffb63afb3b9a33e858a27fd7c45041">m_last_wallet_id</a></td></tr>
-<tr class="separator:aa1ffb63afb3b9a33e858a27fd7c45041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef90b93c0dba5a54e15676415aac738b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_wallet_model.html">WalletModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_c_console.html#aef90b93c0dba5a54e15676415aac738b">m_last_wallet_model</a> {nullptr}</td></tr>
+<tr class="separator:aef90b93c0dba5a54e15676415aac738b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Local Bitcoin RPC console. </p>
@@ -455,7 +456,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00449">449</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00447">447</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -479,7 +480,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00509">509</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00507">507</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -538,7 +539,7 @@ Here is the caller graph for this function:</div>
 
 <p>Ban a selected node on the Peers tab. </p>
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01212">1212</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01207">1207</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -580,7 +581,7 @@ Here is the caller graph for this function:</div>
 
 <p>Go forward or back in history. </p>
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00950">950</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00945">945</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -613,7 +614,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00772">772</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00767">767</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -654,7 +655,7 @@ Here is the caller graph for this function:</div>
 
 <p>clear the selected node </p>
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01260">1260</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01255">1255</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -665,7 +666,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ae5e78a2c9c66e30c43463e3dd756f035"></a>
+<a class="anchor" id="a1694fa0da735d15735ce2bae01653bd8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -681,8 +682,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>walletID</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_wallet_model.html">WalletModel</a> *&#160;</td>
+          <td class="paramname"><em>wallet_model</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -700,7 +701,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_r_p_c_console_ae5e78a2c9c66e30c43463e3dd756f035_icgraph.svg" width="1582" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_r_p_c_console_a1694fa0da735d15735ce2bae01653bd8_icgraph.svg" width="1582" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -729,7 +731,7 @@ Here is the caller graph for this function:</div>
 
 <p>Disconnect a selected node on the Peers tab. </p>
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01198">1198</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01193">1193</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -779,7 +781,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00518">518</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00516">516</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -811,7 +813,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00737">737</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00732">732</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -850,7 +852,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00742">742</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00737">737</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -890,7 +892,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01173">1173</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01168">1168</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -923,7 +925,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00823">823</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00818">818</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 </div>
 </div>
@@ -1017,7 +1019,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00831">831</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00826">826</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1049,12 +1051,13 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00891">891</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00886">886</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_r_p_c_console_a2ab27700348f83acaee6ceb7c22225f8_cgraph.svg" width="2154" height="667"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_r_p_c_console_a2ab27700348f83acaee6ceb7c22225f8_cgraph.svg" width="2154" height="702"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1083,7 +1086,7 @@ Here is the call graph for this function:</div>
 
 <p>open the debug.log from the current datadir </p>
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01001">1001</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00996">996</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1118,7 +1121,7 @@ Here is the call graph for this function:</div>
 
 <p>change the time range of the network traffic graph </p>
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01012">1012</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01007">1007</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1151,7 +1154,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00993">993</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00988">988</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1185,7 +1188,7 @@ Here is the call graph for this function:</div>
 
 <p>Handle selection caching before update. </p>
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01043">1043</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01038">1038</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1226,7 +1229,7 @@ Here is the caller graph for this function:</div>
 
 <p>Handle updated peer information. </p>
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01054">1054</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01049">1049</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1278,7 +1281,7 @@ Here is the caller graph for this function:</div>
 
 <p>Handle selection of peer in peers list. </p>
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01031">1031</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01026">1026</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1341,11 +1344,11 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01157">1157</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01152">1152</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a06ae7f8295a3af7cfbefc3f1044717cd"></a>
+<a class="anchor" id="a60bd57cb303f5c24849f04f9766d51e5"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1379,8 +1382,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string *&#160;</td>
-          <td class="paramname"><em>walletID</em> = <code>nullptr</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_wallet_model.html">WalletModel</a> *&#160;</td>
+          <td class="paramname"><em>wallet_model</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1400,13 +1403,14 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_r_p_c_console_a06ae7f8295a3af7cfbefc3f1044717cd_icgraph.svg" width="1879" height="132"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_r_p_c_console_a60bd57cb303f5c24849f04f9766d51e5_icgraph.svg" width="1879" height="132"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a9198da9ced3d97314b9b549c214b6c20"></a>
+<a class="anchor" id="a49ae75439e266c6c114191d44c25bfe6"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1446,8 +1450,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string *&#160;</td>
-          <td class="paramname"><em>walletID</em> = <code>nullptr</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_wallet_model.html">WalletModel</a> *&#160;</td>
+          <td class="paramname"><em>wallet_model</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1492,14 +1496,16 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_r_p_c_console_a9198da9ced3d97314b9b549c214b6c20_cgraph.svg" width="1931" height="667"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_r_p_c_console_a49ae75439e266c6c114191d44c25bfe6_cgraph.svg" width="1931" height="702"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_r_p_c_console_a9198da9ced3d97314b9b549c214b6c20_icgraph.svg" width="492" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_r_p_c_console_a49ae75439e266c6c114191d44c25bfe6_icgraph.svg" width="492" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1528,7 +1534,7 @@ Here is the caller graph for this function:</div>
 
 <p>Scroll console view to end. </p>
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01006">1006</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01001">1001</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1553,12 +1559,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00563">563</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00561">561</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_r_p_c_console_a355349a33664a07628e9ca22a60f5fa7_cgraph.svg" width="1320" height="2075"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_r_p_c_console_a355349a33664a07628e9ca22a60f5fa7_cgraph.svg" width="1320" height="2075"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1593,7 +1600,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00747">747</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00742">742</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1645,7 +1652,7 @@ Here is the caller graph for this function:</div>
 
 <p>Set size (number of transactions and memory usage) of the mempool in the UI. </p>
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00881">881</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00876">876</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1680,7 +1687,7 @@ Here is the caller graph for this function:</div>
 
 <p>Set network state shown in the UI. </p>
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00868">868</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00863">863</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1744,7 +1751,7 @@ Here is the caller graph for this function:</div>
 
 <p>Set number of blocks and last block date shown in the UI. </p>
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00873">873</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00868">868</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1779,7 +1786,7 @@ Here is the caller graph for this function:</div>
 
 <p>Set number of connections shown in the UI. </p>
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00860">860</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00855">855</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1821,7 +1828,7 @@ Here is the caller graph for this function:</div>
 
 <p>set which tab has the focus (is visible) </p>
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01283">1283</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01278">1278</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1854,7 +1861,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01019">1019</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01014">1014</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1896,7 +1903,7 @@ Here is the caller graph for this function:</div>
 
 <p>Show custom context menu on Bans tab. </p>
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01191">1191</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01186">1186</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1929,7 +1936,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01162">1162</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01157">1157</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1963,7 +1970,7 @@ Here is the call graph for this function:</div>
 
 <p>Hides ban table if no bans are present. </p>
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01268">1268</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01263">1263</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2005,7 +2012,7 @@ Here is the caller graph for this function:</div>
 
 <p>Show custom context menu on Peers tab. </p>
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01184">1184</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01179">1179</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -2037,12 +2044,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00971">971</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00966">966</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_r_p_c_console_ac6250045ef6f8bd5e5fece3e478e141d_cgraph.svg" width="944" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_r_p_c_console_ac6250045ef6f8bd5e5fece3e478e141d_cgraph.svg" width="944" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2098,7 +2106,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01278">1278</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01273">1273</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 </div>
 </div>
@@ -2148,7 +2156,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01288">1288</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01283">1283</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -2182,7 +2190,7 @@ Here is the caller graph for this function:</div>
 
 <p>Unban a selected node on the Bans tab. </p>
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01239">1239</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01234">1234</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2223,7 +2231,7 @@ Here is the caller graph for this function:</div>
 
 <p>Update UI with latest network info from model. </p>
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00847">847</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l00842">842</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2265,7 +2273,7 @@ Here is the caller graph for this function:</div>
 
 <p>show detailed information on ui about selected node </p>
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01111">1111</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01106">1106</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2317,7 +2325,7 @@ Here is the caller graph for this function:</div>
 
 <p>update traffic statistics </p>
 
-<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01025">1025</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcconsole_8cpp_source.html#l01020">1020</a> of file <a class="el" href="rpcconsole_8cpp_source.html">rpcconsole.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2512,7 +2520,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="aa1ffb63afb3b9a33e858a27fd7c45041"></a>
+<a class="anchor" id="aef90b93c0dba5a54e15676415aac738b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -2520,7 +2528,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QString RPCConsole::m_last_wallet_id</td>
+          <td class="memname"><a class="el" href="class_wallet_model.html">WalletModel</a>* RPCConsole::m_last_wallet_model {nullptr}</td>
         </tr>
       </table>
   </td>
@@ -2673,7 +2681,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 2 2019 16:21:02 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 5 2019 20:01:35 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

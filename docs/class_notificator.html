@@ -148,8 +148,8 @@ Private Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ac48ec94cd02fc4ea80db6c50e24086c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_notificator.html#ac48ec94cd02fc4ea80db6c50e24086c1">notifySystray</a> (<a class="el" href="class_notificator.html#aa2ff8a05d471e32e77584a2b8dd182ab">Class</a> cls, const QString &amp;title, const QString &amp;text, const QIcon &amp;icon, int millisTimeout)</td></tr>
-<tr class="separator:ac48ec94cd02fc4ea80db6c50e24086c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac05ea429e163f11560a72a474696b574"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_notificator.html#ac05ea429e163f11560a72a474696b574">notifySystray</a> (<a class="el" href="class_notificator.html#aa2ff8a05d471e32e77584a2b8dd182ab">Class</a> cls, const QString &amp;title, const QString &amp;text, int millisTimeout)</td></tr>
+<tr class="separator:ac05ea429e163f11560a72a474696b574"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -217,7 +217,7 @@ Private Attributes</h2></td></tr>
 <p>Use DBus org.freedesktop.Notifications. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="aaa6bef35e7e183f0ac23e046dc3ea73ea2793742e55df091325c5d26e9e3db5fc"></a>QSystemTray&#160;</td><td class="fielddoc">
-<p>Use QSystemTray::showMessage. </p>
+<p>Use QSystemTrayIcon::showMessage() </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="aaa6bef35e7e183f0ac23e046dc3ea73ea1691fdf2248407f7b714712f0c986d5e"></a>UserNotificationCenter&#160;</td><td class="fielddoc">
 <p>Use the 10.8+ User Notification Center (Mac only) </p>
@@ -354,12 +354,13 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Platform implementations are free to ignore any of the provided fields except for <em>text</em>. </dd></dl>
 
-<p>Definition at line <a class="el" href="notificator_8cpp_source.html#l00234">234</a> of file <a class="el" href="notificator_8cpp_source.html">notificator.cpp</a>.</p>
+<p>Definition at line <a class="el" href="notificator_8cpp_source.html#l00232">232</a> of file <a class="el" href="notificator_8cpp_source.html">notificator.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_notificator_ae08e1e7e85ddc4690f307649021f7fdc_cgraph.svg" width="587" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_notificator_ae08e1e7e85ddc4690f307649021f7fdc_cgraph.svg" width="587" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -372,7 +373,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ac48ec94cd02fc4ea80db6c50e24086c1"></a>
+<a class="anchor" id="ac05ea429e163f11560a72a474696b574"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -400,12 +401,6 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const QIcon &amp;&#160;</td>
-          <td class="paramname"><em>icon</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>millisTimeout</em>&#160;</td>
         </tr>
@@ -427,14 +422,16 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_notificator_ac48ec94cd02fc4ea80db6c50e24086c1_cgraph.svg" width="408" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_notificator_ac05ea429e163f11560a72a474696b574_cgraph.svg" width="408" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_notificator_ac48ec94cd02fc4ea80db6c50e24086c1_icgraph.svg" width="1947" height="255"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_notificator_ac05ea429e163f11560a72a474696b574_icgraph.svg" width="1947" height="255"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -536,7 +533,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 2 2019 16:21:01 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 5 2019 20:01:34 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
