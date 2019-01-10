@@ -111,16 +111,8 @@ Include dependency graph for strencodings.h:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a5f5e63e2c340bc52049e38c09b37e6e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strencodings_8h.html#a5f5e63e2c340bc52049e38c09b37e6e1">BEGIN</a>(a)&#160;&#160;&#160;((char*)&amp;(a))</td></tr>
-<tr class="memdesc:a5f5e63e2c340bc52049e38c09b37e6e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utilities for converting data from/to strings.  <a href="#a5f5e63e2c340bc52049e38c09b37e6e1">More...</a><br /></td></tr>
-<tr class="separator:a5f5e63e2c340bc52049e38c09b37e6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac32457d3f041434e57a2924847796fda"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strencodings_8h.html#ac32457d3f041434e57a2924847796fda">END</a>(a)&#160;&#160;&#160;((char*)&amp;((&amp;(a))[1]))</td></tr>
-<tr class="separator:ac32457d3f041434e57a2924847796fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a903229f3d520fdb700f1c82586368b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strencodings_8h.html#a4a903229f3d520fdb700f1c82586368b">UBEGIN</a>(a)&#160;&#160;&#160;((unsigned char*)&amp;(a))</td></tr>
-<tr class="separator:a4a903229f3d520fdb700f1c82586368b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0f53b3b9bd67803cd1efe42c7894aa3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strencodings_8h.html#af0f53b3b9bd67803cd1efe42c7894aa3">UEND</a>(a)&#160;&#160;&#160;((unsigned char*)&amp;((&amp;(a))[1]))</td></tr>
-<tr class="separator:af0f53b3b9bd67803cd1efe42c7894aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35bf72ac971bd331fba0b3e8117bcbf9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strencodings_8h.html#a35bf72ac971bd331fba0b3e8117bcbf9">ARRAYLEN</a>(array)&#160;&#160;&#160;(sizeof(array)/sizeof((array)[0]))</td></tr>
+<tr class="memdesc:a35bf72ac971bd331fba0b3e8117bcbf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utilities for converting data from/to strings.  <a href="#a35bf72ac971bd331fba0b3e8117bcbf9">More...</a><br /></td></tr>
 <tr class="separator:a35bf72ac971bd331fba0b3e8117bcbf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -221,15 +213,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a9078e3b38b70dba4247f2c9d00e3f614"><td class="memItemLeft" align="right" valign="top"><a class="el" href="attributes_8h.html#abf13e44576a768044e199191d4f26f7e">NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strencodings_8h.html#a9078e3b38b70dba4247f2c9d00e3f614">ParseHDKeypath</a> (const std::string &amp;keypath_str, std::vector&lt; uint32_t &gt; &amp;keypath)</td></tr>
 <tr class="memdesc:a9078e3b38b70dba4247f2c9d00e3f614"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an HD keypaths like "m/7/0'/2000".  <a href="#a9078e3b38b70dba4247f2c9d00e3f614">More...</a><br /></td></tr>
 <tr class="separator:a9078e3b38b70dba4247f2c9d00e3f614"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a879b5fdf563d3d7d07e7686fd9e025d7"><td class="memItemLeft" align="right" valign="top">constexpr unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strencodings_8h.html#a879b5fdf563d3d7d07e7686fd9e025d7">ToLower</a> (unsigned char c)</td></tr>
-<tr class="memdesc:a879b5fdf563d3d7d07e7686fd9e025d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the given character to its lowercase equivalent.  <a href="#a879b5fdf563d3d7d07e7686fd9e025d7">More...</a><br /></td></tr>
-<tr class="separator:a879b5fdf563d3d7d07e7686fd9e025d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3556fcd948bc859caaa04f7355a71b16"><td class="memItemLeft" align="right" valign="top">constexpr char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strencodings_8h.html#a3556fcd948bc859caaa04f7355a71b16">ToLower</a> (char c)</td></tr>
+<tr class="memdesc:a3556fcd948bc859caaa04f7355a71b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the given character to its lowercase equivalent.  <a href="#a3556fcd948bc859caaa04f7355a71b16">More...</a><br /></td></tr>
+<tr class="separator:a3556fcd948bc859caaa04f7355a71b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0112c4a0e8c623b7fc4a52730c57e2d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strencodings_8h.html#a0112c4a0e8c623b7fc4a52730c57e2d0">Downcase</a> (std::string &amp;str)</td></tr>
 <tr class="memdesc:a0112c4a0e8c623b7fc4a52730c57e2d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the given string to its lowercase equivalent.  <a href="#a0112c4a0e8c623b7fc4a52730c57e2d0">More...</a><br /></td></tr>
 <tr class="separator:a0112c4a0e8c623b7fc4a52730c57e2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a305ed1b8de935913a95c40bacfd98fdc"><td class="memItemLeft" align="right" valign="top">constexpr unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strencodings_8h.html#a305ed1b8de935913a95c40bacfd98fdc">ToUpper</a> (unsigned char c)</td></tr>
-<tr class="memdesc:a305ed1b8de935913a95c40bacfd98fdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the given character to its uppercase equivalent.  <a href="#a305ed1b8de935913a95c40bacfd98fdc">More...</a><br /></td></tr>
-<tr class="separator:a305ed1b8de935913a95c40bacfd98fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ab061d81af0af4cc5b84418bc5427b7"><td class="memItemLeft" align="right" valign="top">constexpr char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strencodings_8h.html#a5ab061d81af0af4cc5b84418bc5427b7">ToUpper</a> (char c)</td></tr>
+<tr class="memdesc:a5ab061d81af0af4cc5b84418bc5427b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the given character to its uppercase equivalent.  <a href="#a5ab061d81af0af4cc5b84418bc5427b7">More...</a><br /></td></tr>
+<tr class="separator:a5ab061d81af0af4cc5b84418bc5427b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07fea13e4dba45392e84b1205a3fa598"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strencodings_8h.html#a07fea13e4dba45392e84b1205a3fa598">Capitalize</a> (std::string str)</td></tr>
 <tr class="memdesc:a07fea13e4dba45392e84b1205a3fa598"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capitalizes the first character of the given string.  <a href="#a07fea13e4dba45392e84b1205a3fa598">More...</a><br /></td></tr>
 <tr class="separator:a07fea13e4dba45392e84b1205a3fa598"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -249,81 +241,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="strencodings_8h_source.html#l00022">22</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5f5e63e2c340bc52049e38c09b37e6e1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BEGIN</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a</td><td>)</td>
-          <td>&#160;&#160;&#160;((char*)&amp;(a))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
 <p>Utilities for converting data from/to strings. </p>
 
 <p>Definition at line <a class="el" href="strencodings_8h_source.html#l00018">18</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac32457d3f041434e57a2924847796fda"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define END</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a</td><td>)</td>
-          <td>&#160;&#160;&#160;((char*)&amp;((&amp;(a))[1]))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="strencodings_8h_source.html#l00019">19</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4a903229f3d520fdb700f1c82586368b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define UBEGIN</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a</td><td>)</td>
-          <td>&#160;&#160;&#160;((unsigned char*)&amp;(a))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="strencodings_8h_source.html#l00020">20</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af0f53b3b9bd67803cd1efe42c7894aa3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define UEND</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a</td><td>)</td>
-          <td>&#160;&#160;&#160;((unsigned char*)&amp;((&amp;(a))[1]))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="strencodings_8h_source.html#l00021">21</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
 
 </div>
 </div>
@@ -354,7 +274,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="strencodings_8h_source.html#l00025">25</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
+<p>Definition at line <a class="el" href="strencodings_8h_source.html#l00021">21</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
 
 </div>
 </div>
@@ -462,14 +382,16 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="strencodings_8h_a07fea13e4dba45392e84b1205a3fa598_cgraph.svg" width="218" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="strencodings_8h_a07fea13e4dba45392e84b1205a3fa598_cgraph.svg" width="218" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="strencodings_8h_a07fea13e4dba45392e84b1205a3fa598_icgraph.svg" width="2098" height="480"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="strencodings_8h_a07fea13e4dba45392e84b1205a3fa598_icgraph.svg" width="2098" height="480"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -509,7 +431,7 @@ template&lt;int frombits, int tobits, bool pad, typename O , typename I &gt; </d
 
 <p>Convert from one power-of-2 number base to another. </p>
 
-<p>Definition at line <a class="el" href="strencodings_8h_source.html#l00182">182</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
+<p>Definition at line <a class="el" href="strencodings_8h_source.html#l00178">178</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -667,14 +589,16 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="strencodings_8h_a0112c4a0e8c623b7fc4a52730c57e2d0_cgraph.svg" width="218" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="strencodings_8h_a0112c4a0e8c623b7fc4a52730c57e2d0_cgraph.svg" width="218" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="strencodings_8h_a0112c4a0e8c623b7fc4a52730c57e2d0_icgraph.svg" width="1812" height="2303"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="strencodings_8h_a0112c4a0e8c623b7fc4a52730c57e2d0_icgraph.svg" width="1812" height="2303"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -900,7 +824,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="strencodings_8h_source.html#l00128">128</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
+<p>Definition at line <a class="el" href="strencodings_8h_source.html#l00124">124</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -945,7 +869,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="strencodings_8h_source.html#l00147">147</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
+<p>Definition at line <a class="el" href="strencodings_8h_source.html#l00143">143</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1004,7 +928,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the argument is a decimal digit; otherwise false. </dd></dl>
 
-<p>Definition at line <a class="el" href="strencodings_8h_source.html#l00072">72</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
+<p>Definition at line <a class="el" href="strencodings_8h_source.html#l00068">68</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1115,7 +1039,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the argument is a whitespace character; otherwise false </dd></dl>
 
-<p>Definition at line <a class="el" href="strencodings_8h_source.html#l00088">88</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
+<p>Definition at line <a class="el" href="strencodings_8h_source.html#l00084">84</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1623,7 +1547,7 @@ template&lt;typename T &gt; </div>
 <p>Timing-attack-resistant comparison. </p>
 <p>Takes time proportional to length of first argument. </p>
 
-<p>Definition at line <a class="el" href="strencodings_8h_source.html#l00164">164</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
+<p>Definition at line <a class="el" href="strencodings_8h_source.html#l00160">160</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1634,14 +1558,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a879b5fdf563d3d7d07e7686fd9e025d7"></a>
+<a class="anchor" id="a3556fcd948bc859caaa04f7355a71b16"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr unsigned char ToLower </td>
+          <td class="memname">constexpr char ToLower </td>
           <td>(</td>
-          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramtype">char&#160;</td>
           <td class="paramname"><em>c</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1657,32 +1581,34 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the lowercase equivalent of c; or the argument if no conversion is possible. </dd></dl>
 
-<p>Definition at line <a class="el" href="strencodings_8h_source.html#l00215">215</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
+<p>Definition at line <a class="el" href="strencodings_8h_source.html#l00211">211</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="strencodings_8h_a879b5fdf563d3d7d07e7686fd9e025d7_cgraph.svg" width="218" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="strencodings_8h_a3556fcd948bc859caaa04f7355a71b16_cgraph.svg" width="218" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="strencodings_8h_a879b5fdf563d3d7d07e7686fd9e025d7_icgraph.svg" width="1640" height="2239"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="strencodings_8h_a3556fcd948bc859caaa04f7355a71b16_icgraph.svg" width="1640" height="2239"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a305ed1b8de935913a95c40bacfd98fdc"></a>
+<a class="anchor" id="a5ab061d81af0af4cc5b84418bc5427b7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr unsigned char ToUpper </td>
+          <td class="memname">constexpr char ToUpper </td>
           <td>(</td>
-          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramtype">char&#160;</td>
           <td class="paramname"><em>c</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1698,19 +1624,21 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the uppercase equivalent of c; or the argument if no conversion is possible. </dd></dl>
 
-<p>Definition at line <a class="el" href="strencodings_8h_source.html#l00236">236</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
+<p>Definition at line <a class="el" href="strencodings_8h_source.html#l00232">232</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="strencodings_8h_a305ed1b8de935913a95c40bacfd98fdc_cgraph.svg" width="218" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="strencodings_8h_a5ab061d81af0af4cc5b84418bc5427b7_cgraph.svg" width="218" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="strencodings_8h_a305ed1b8de935913a95c40bacfd98fdc_icgraph.svg" width="2220" height="480"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="strencodings_8h_a5ab061d81af0af4cc5b84418bc5427b7_icgraph.svg" width="2220" height="480"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1719,7 +1647,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 10 2019 14:58:42 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 10 2019 17:12:59 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

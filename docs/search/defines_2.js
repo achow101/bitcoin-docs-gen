@@ -1,7 +1,6 @@
 var searchData=
 [
   ['be32',['BE32',['../hash__impl_8h.html#a1d0e2eaadc95216b3a3c775409a6093e',1,'hash_impl.h']]],
-  ['begin',['BEGIN',['../strencodings_8h.html#a5f5e63e2c340bc52049e38c09b37e6e1',1,'strencodings.h']]],
   ['benchmark',['BENCHMARK',['../bench_2bench_8h.html#a517d1d925e006cdc2a70dd7488f0d31f',1,'bench.h']]],
   ['bit_5frange',['BIT_RANGE',['../ctaes_8c.html#aeac962bad35eb8afa4f01a5f2a4b884e',1,'ctaes.c']]],
   ['bit_5frange_5fleft',['BIT_RANGE_LEFT',['../ctaes_8c.html#aedfd55db5c9b0abeed72b1d4737b2f49',1,'ctaes.c']]],
