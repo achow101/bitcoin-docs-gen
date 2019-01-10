@@ -191,7 +191,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Allocate and lock memory pages. </p>
-<p>If len is not a multiple of the system page size, it is rounded up. Returns 0 in case of allocation failure.</p>
+<p>If len is not a multiple of the system page size, it is rounded up. Returns nullptr in case of allocation failure.</p>
 <p>If locking the memory pages could not be accomplished it will still return the memory, however the lockingSuccess flag will be false. lockingSuccess is undefined if the allocation fails. </p>
 
 <p>Implemented in <a class="el" href="class_posix_locked_page_allocator.html#a7e4f8913732fb519b177796acd3f7538">PosixLockedPageAllocator</a>.</p>
@@ -292,7 +292,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 8 2019 14:55:27 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 10 2019 02:16:34 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -115,8 +115,6 @@ Collaboration diagram for CReserveKey:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab5c15654a1e28bf5f2852512381d07c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_reserve_key.html#ab5c15654a1e28bf5f2852512381d07c4">CReserveKey</a> (<a class="el" href="class_c_wallet.html">CWallet</a> *pwalletIn)</td></tr>
 <tr class="separator:ab5c15654a1e28bf5f2852512381d07c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9907acd153b5681c8822f6135bbc3900"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_reserve_key.html#a9907acd153b5681c8822f6135bbc3900">CReserveKey</a> ()=default</td></tr>
-<tr class="separator:a9907acd153b5681c8822f6135bbc3900"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8a281148a18737db4fcae5ac72b0a2b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_reserve_key.html#ab8a281148a18737db4fcae5ac72b0a2b">CReserveKey</a> (const <a class="el" href="class_c_reserve_key.html">CReserveKey</a> &amp;)=delete</td></tr>
 <tr class="separator:ab8a281148a18737db4fcae5ac72b0a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33f292d0412a1902cf6b5cf95dd1ae31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_reserve_key.html">CReserveKey</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_reserve_key.html#a33f292d0412a1902cf6b5cf95dd1ae31">operator=</a> (const <a class="el" href="class_c_reserve_key.html">CReserveKey</a> &amp;)=delete</td></tr>
@@ -141,11 +139,11 @@ Public Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:aab8a4052c0b9a4337248ae53e77c6115"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_wallet.html">CWallet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_reserve_key.html#aab8a4052c0b9a4337248ae53e77c6115">pwallet</a></td></tr>
 <tr class="separator:aab8a4052c0b9a4337248ae53e77c6115"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16d05c9be039eb772f2daf412cca1991"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_reserve_key.html#a16d05c9be039eb772f2daf412cca1991">nIndex</a></td></tr>
+<tr class="memitem:a16d05c9be039eb772f2daf412cca1991"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_reserve_key.html#a16d05c9be039eb772f2daf412cca1991">nIndex</a> {-1}</td></tr>
 <tr class="separator:a16d05c9be039eb772f2daf412cca1991"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b252444577b6aca8b497c2207ff17a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_pub_key.html">CPubKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_reserve_key.html#a2b252444577b6aca8b497c2207ff17a4">vchPubKey</a></td></tr>
 <tr class="separator:a2b252444577b6aca8b497c2207ff17a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a75f578ef7c23d614dc7fa0f4b4accf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_reserve_key.html#a7a75f578ef7c23d614dc7fa0f4b4accf">fInternal</a></td></tr>
+<tr class="memitem:a7a75f578ef7c23d614dc7fa0f4b4accf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_reserve_key.html#a7a75f578ef7c23d614dc7fa0f4b4accf">fInternal</a> {false}</td></tr>
 <tr class="separator:a7a75f578ef7c23d614dc7fa0f4b4accf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -181,30 +179,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l01185">1185</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9907acd153b5681c8822f6135bbc3900"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">CReserveKey::CReserveKey </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l01186">1186</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -253,7 +228,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l01196">1196</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l01194">1194</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -281,7 +256,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_c_reserve_script.html#ac4ff7d2d0481251974465c6c796abb5c">CReserveScript</a>.</p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l01204">1204</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l01202">1202</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -318,7 +293,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool CReserveKey::fInternal</td>
+          <td class="memname">bool CReserveKey::fInternal {false}</td>
         </tr>
       </table>
   </td>
@@ -340,7 +315,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int64_t CReserveKey::nIndex</td>
+          <td class="memname">int64_t CReserveKey::nIndex {-1}</td>
         </tr>
       </table>
   </td>
@@ -405,7 +380,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 8 2019 14:55:25 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 10 2019 02:16:33 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

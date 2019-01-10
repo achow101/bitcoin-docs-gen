@@ -25,6 +25,7 @@ var searchData=
   ['bitcoin_2dconfig_2eh',['bitcoin-config.h',['../bitcoin-config_8h.html',1,'']]],
   ['bitcoin_2dtx_2ecpp',['bitcoin-tx.cpp',['../bitcoin-tx_8cpp.html',1,'']]],
   ['bitcoin_2ecpp',['bitcoin.cpp',['../bitcoin_8cpp.html',1,'']]],
+  ['bitcoin_2eh',['bitcoin.h',['../bitcoin_8h.html',1,'']]],
   ['bitcoinaddressvalidator_2ecpp',['bitcoinaddressvalidator.cpp',['../bitcoinaddressvalidator_8cpp.html',1,'']]],
   ['bitcoinaddressvalidator_2eh',['bitcoinaddressvalidator.h',['../bitcoinaddressvalidator_8h.html',1,'']]],
   ['bitcoinamountfield_2ecpp',['bitcoinamountfield.cpp',['../bitcoinamountfield_8cpp.html',1,'']]],

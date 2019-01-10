@@ -174,6 +174,9 @@ Signals</h2></td></tr>
 <tr class="memitem:a15d55a3b292c9eec64298797d262fa32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bitcoin_g_u_i.html#a15d55a3b292c9eec64298797d262fa32">receivedURI</a> (const QString &amp;uri)</td></tr>
 <tr class="memdesc:a15d55a3b292c9eec64298797d262fa32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal raised when a URI was entered or dragged to the GUI.  <a href="#a15d55a3b292c9eec64298797d262fa32">More...</a><br /></td></tr>
 <tr class="separator:a15d55a3b292c9eec64298797d262fa32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f6037f94bca20e79541847f3f88466f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bitcoin_g_u_i.html#a7f6037f94bca20e79541847f3f88466f">consoleShown</a> (<a class="el" href="class_r_p_c_console.html">RPCConsole</a> *console)</td></tr>
+<tr class="memdesc:a7f6037f94bca20e79541847f3f88466f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal raised when RPC console shown.  <a href="#a7f6037f94bca20e79541847f3f88466f">More...</a><br /></td></tr>
+<tr class="separator:a7f6037f94bca20e79541847f3f88466f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -184,6 +187,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a99d71e1f8478ab937ce2522c8d3815e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bitcoin_g_u_i.html#a99d71e1f8478ab937ce2522c8d3815e3">setClientModel</a> (<a class="el" href="class_client_model.html">ClientModel</a> *<a class="el" href="class_bitcoin_g_u_i.html#accf122b3c397e6a06559b15dbbd9ace8">clientModel</a>)</td></tr>
 <tr class="memdesc:a99d71e1f8478ab937ce2522c8d3815e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the client model.  <a href="#a99d71e1f8478ab937ce2522c8d3815e3">More...</a><br /></td></tr>
 <tr class="separator:a99d71e1f8478ab937ce2522c8d3815e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8c19a3895bd04dfa046710eee1ecbcd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bitcoin_g_u_i.html#af8c19a3895bd04dfa046710eee1ecbcd">hasTrayIcon</a> () const </td></tr>
+<tr class="memdesc:af8c19a3895bd04dfa046710eee1ecbcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the tray icon status.  <a href="#af8c19a3895bd04dfa046710eee1ecbcd">More...</a><br /></td></tr>
+<tr class="separator:af8c19a3895bd04dfa046710eee1ecbcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -426,7 +432,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00218">218</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00219">219</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -461,7 +467,7 @@ Here is the call graph for this function:</div>
 
 <p>Show about dialog. </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00713">713</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00717">717</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -494,7 +500,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01017">1017</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01022">1022</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -527,12 +533,46 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01041">1041</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01046">1046</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_ac46f8826c13b6340f5568d3f31fc3dfa_cgraph.svg" width="436" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7f6037f94bca20e79541847f3f88466f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BitcoinGUI::consoleShown </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_r_p_c_console.html">RPCConsole</a> *&#160;</td>
+          <td class="paramname"><em>console</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal raised when RPC console shown. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_a7f6037f94bca20e79541847f3f88466f_icgraph.svg" width="1182" height="159"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -561,7 +601,7 @@ Here is the call graph for this function:</div>
 
 <p>Create the main UI actions. </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00236">236</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00237">237</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -602,7 +642,7 @@ Here is the caller graph for this function:</div>
 
 <p>Create the menu bar and sub-menus. </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00370">370</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00372">372</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -643,7 +683,7 @@ Here is the caller graph for this function:</div>
 
 <p>Create the toolbars. </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00465">465</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00467">467</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -678,7 +718,7 @@ Here is the caller graph for this function:</div>
 
 <p>Create system tray icon and notification. </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00638">638</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00640">640</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -719,7 +759,7 @@ Here is the caller graph for this function:</div>
 
 <p>Create system tray menu (or setup the dock menu) </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00649">649</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00653">653</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -731,7 +771,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_a6373ff0bd56c1c633f3a3dc2f34af884_icgraph.svg" width="1131" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_a6373ff0bd56c1c633f3a3dc2f34af884_icgraph.svg" width="1252" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -760,7 +801,7 @@ Here is the caller graph for this function:</div>
 
 <p>called by a timer to check if <a class="el" href="shutdown_8cpp.html#a6f201ca9fe6b594f1985c12b4482ea5a">ShutdownRequested()</a> has been set </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01223">1223</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01228">1228</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -772,7 +813,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_ab538e65665498f59d10baa6b157270f9_icgraph.svg" width="496" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_ab538e65665498f59d10baa6b157270f9_icgraph.svg" width="618" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -800,7 +842,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01091">1091</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01096">1096</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 </div>
 </div>
@@ -826,7 +868,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01098">1098</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01103">1103</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 </div>
 </div>
@@ -862,12 +904,48 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01110">1110</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01115">1115</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_aeee2453bf1a3fb39bb22757e21f676d4_cgraph.svg" width="1834" height="1814"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af8c19a3895bd04dfa046710eee1ecbcd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BitcoinGUI::hasTrayIcon </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the tray icon status. </p>
+<p>Some systems have not "system tray" or "notification area" available. </p>
+
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00092">92</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_af8c19a3895bd04dfa046710eee1ecbcd_icgraph.svg" width="962" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -934,7 +1012,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00957">957</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00962">962</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -946,7 +1024,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_ad3d278358e571a9b70ee99dacaeaa0f5_icgraph.svg" width="1542" height="255"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_ad3d278358e571a9b70ee99dacaeaa0f5_icgraph.svg" width="1663" height="255"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -976,7 +1055,7 @@ Here is the caller graph for this function:</div>
 
 <p>Open the <a class="el" href="class_options_dialog.html" title="Preferences dialog. ">OptionsDialog</a> on the specified tab index. </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00831">831</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00836">836</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1017,7 +1096,7 @@ Here is the caller graph for this function:</div>
 
 <p>Show configuration dialog. </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00708">708</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00712">712</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1062,7 +1141,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_a15d55a3b292c9eec64298797d262fa32_icgraph.svg" width="990" height="231"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_a15d55a3b292c9eec64298797d262fa32_icgraph.svg" width="1111" height="231"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1085,7 +1165,7 @@ Here is the caller graph for this function:</div>
 <p>Set the client model. </p>
 <p>The client model represents the part of the core that communicates with the P2P network, and is wallet-agnostic. </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00501">501</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00503">503</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1097,7 +1177,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_a99d71e1f8478ab937ce2522c8d3815e3_icgraph.svg" width="860" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_a99d71e1f8478ab937ce2522c8d3815e3_icgraph.svg" width="982" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1127,7 +1208,7 @@ Here is the caller graph for this function:</div>
 
 <p>Set network state shown in the UI. </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00817">817</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00822">822</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1139,7 +1220,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_afe40030466c11a4a3aace3c2576d2c60_icgraph.svg" width="1115" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_afe40030466c11a4a3aace3c2576d2c60_icgraph.svg" width="1236" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1191,7 +1273,7 @@ Here is the caller graph for this function:</div>
 
 <p>Set number of blocks and last block date shown in the UI. </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00842">842</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00847">847</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1203,7 +1285,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_a6cd4a94b6742919131e9ce2154580711_icgraph.svg" width="1096" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_a6cd4a94b6742919131e9ce2154580711_icgraph.svg" width="1218" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1233,7 +1316,7 @@ Here is the caller graph for this function:</div>
 
 <p>Set number of connections shown in the UI. </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00812">812</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00817">817</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1245,7 +1328,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_ae5b9dc62c6a52764a92cfacbe128626f_icgraph.svg" width="1135" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_ae5b9dc62c6a52764a92cfacbe128626f_icgraph.svg" width="1256" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1275,12 +1359,13 @@ Here is the caller graph for this function:</div>
 
 <p>When hideTrayIcon setting is changed in <a class="el" href="class_options_model.html" title="Interface from Qt to configuration data structure for Bitcoin client. ">OptionsModel</a> hide or show the icon accordingly. </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01256">1256</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01261">1261</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_ad20ff9ce84d5b030976dc298320fbad2_icgraph.svg" width="1116" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_ad20ff9ce84d5b030976dc298320fbad2_icgraph.svg" width="1238" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1310,12 +1395,13 @@ Here is the caller graph for this function:</div>
 
 <p>Enable or disable all wallet-related actions. </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00620">620</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00622">622</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_aa0a8982fc9bc4ae45f4a1e5320528335_icgraph.svg" width="1108" height="132"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_aa0a8982fc9bc4ae45f4a1e5320528335_icgraph.svg" width="1230" height="132"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1344,7 +1430,7 @@ Here is the caller graph for this function:</div>
 
 <p>Show debug window. </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00722">722</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00726">726</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1385,7 +1471,7 @@ Here is the caller graph for this function:</div>
 
 <p>Show debug window and set focus to the console. </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00727">727</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00732">732</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1425,7 +1511,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01064">1064</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01069">1069</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1459,7 +1545,7 @@ Here is the call graph for this function:</div>
 
 <p>Show help message dialog. </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00733">733</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00738">738</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1498,7 +1584,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01264">1264</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01269">1269</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1539,7 +1625,7 @@ Here is the caller graph for this function:</div>
 
 <p>Show window if hidden, unminimize when minimized, rise when obscured or show if hidden and fToggleHidden is true. </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00277">277</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00284">284</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1551,7 +1637,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_aca9a193e0484c1caf924e76d96800a9f_icgraph.svg" width="1854" height="443"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_aca9a193e0484c1caf924e76d96800a9f_icgraph.svg" width="1975" height="443"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1579,7 +1666,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01206">1206</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01211">1211</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1625,12 +1712,13 @@ Here is the call graph for this function:</div>
 <p>Show progress dialog e.g. </p>
 <p>for verifychain </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01233">1233</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01238">1238</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_a89029e61a405a976ba8117d4b38568f0_icgraph.svg" width="1092" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_a89029e61a405a976ba8117d4b38568f0_icgraph.svg" width="1214" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1659,7 +1747,7 @@ Here is the caller graph for this function:</div>
 
 <p>Connect core signals to GUI client. </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01287">1287</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01292">1292</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1700,7 +1788,7 @@ Here is the caller graph for this function:</div>
 
 <p>Simply calls showNormalIfMinimized(true) for use in SLOT() macro. </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01218">1218</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01223">1223</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1712,7 +1800,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_a6ca9ded69ab510195ff04fe7f5754ff5_icgraph.svg" width="1615" height="132"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_a6ca9ded69ab510195ff04fe7f5754ff5_icgraph.svg" width="1736" height="132"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1742,7 +1831,7 @@ Here is the caller graph for this function:</div>
 
 <p>Handle tray icon clicked. </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00692">692</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00696">696</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1754,7 +1843,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_ae753f1d521f7c17804419f6a9054738b_icgraph.svg" width="1386" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_ae753f1d521f7c17804419f6a9054738b_icgraph.svg" width="1507" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1783,7 +1873,7 @@ Here is the caller graph for this function:</div>
 
 <p>Disconnect core signals from GUI client. </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01294">1294</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01299">1299</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1815,7 +1905,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00822">822</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00827">827</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1827,7 +1917,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_ad06b7274e4d51189c0a1994866835f17_icgraph.svg" width="1339" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_ad06b7274e4d51189c0a1994866835f17_icgraph.svg" width="1460" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1856,7 +1947,7 @@ Here is the caller graph for this function:</div>
 
 <p>Update UI with latest network info from model. </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00783">783</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l00788">788</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1868,7 +1959,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_a6f96b70c5cf881831ff04df0f97c0af1_icgraph.svg" width="1376" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_a6f96b70c5cf881831ff04df0f97c0af1_icgraph.svg" width="1498" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1897,7 +1989,7 @@ Here is the caller graph for this function:</div>
 
 <p>Set the proxy-enabled icon as shown in the UI. </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01188">1188</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8cpp_source.html#l01193">1193</a> of file <a class="el" href="bitcoingui_8cpp_source.html">bitcoingui.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1909,7 +2001,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_a4795699a03140316ff014740fdbea8ca_icgraph.svg" width="1111" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_bitcoin_g_u_i_a4795699a03140316ff014740fdbea8ca_icgraph.svg" width="1232" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1934,7 +2027,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00125">125</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00130">130</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -1956,7 +2049,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00133">133</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00138">138</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -1978,7 +2071,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00114">114</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00119">119</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2000,7 +2093,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00115">115</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00120">120</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2022,7 +2115,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00131">131</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00136">136</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2044,7 +2137,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00132">132</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00137">137</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2066,7 +2159,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00101">101</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00106">106</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2088,7 +2181,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00108">108</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00113">113</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2146,7 +2239,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00130">130</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00135">135</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2168,7 +2261,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00147">147</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00152">152</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2190,7 +2283,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00117">117</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00122">122</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2212,7 +2305,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00109">109</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00114">114</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2234,7 +2327,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00107">107</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00112">112</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2256,7 +2349,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00105">105</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00110">110</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2278,7 +2371,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00106">106</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00111">111</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2300,7 +2393,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00099">99</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00104">104</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2322,7 +2415,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00100">100</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00105">105</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2344,7 +2437,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00098">98</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00103">103</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2366,7 +2459,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00141">141</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00146">146</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2388,7 +2481,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00138">138</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00143">143</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2410,7 +2503,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00140">140</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00145">145</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2432,7 +2525,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00137">137</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00142">142</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2454,7 +2547,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00148">148</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00153">153</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2476,7 +2569,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00145">145</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00150">150</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2498,7 +2591,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00135">135</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00140">140</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2520,7 +2613,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00134">134</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00139">139</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2542,7 +2635,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00128">128</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00133">133</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2564,7 +2657,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00116">116</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00121">121</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2586,7 +2679,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00158">158</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00163">163</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2610,7 +2703,7 @@ Here is the caller graph for this function:</div>
 
 <p>Keep track of previous number of blocks, to detect progress. </p>
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00155">155</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00160">160</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2632,7 +2725,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00111">111</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00116">116</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2654,7 +2747,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00110">110</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00115">115</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2676,7 +2769,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00112">112</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00117">117</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2698,7 +2791,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00118">118</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00123">123</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2720,7 +2813,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00126">126</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00131">131</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2742,7 +2835,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00127">127</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00132">132</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2764,7 +2857,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00146">146</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00151">151</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2786,7 +2879,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00119">119</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00124">124</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2808,7 +2901,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00120">120</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00125">125</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2830,7 +2923,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00136">136</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00141">141</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2852,7 +2945,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00123">123</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00128">128</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2874,7 +2967,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00156">156</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00161">161</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2896,7 +2989,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00129">129</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00134">134</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2918,7 +3011,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00143">143</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00148">148</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2940,7 +3033,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00144">144</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00149">149</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2962,7 +3055,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00104">104</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00109">109</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -2984,7 +3077,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00122">122</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00127">127</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -3006,7 +3099,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00121">121</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00126">126</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -3028,7 +3121,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00124">124</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00129">129</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -3050,7 +3143,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00102">102</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
+<p>Definition at line <a class="el" href="bitcoingui_8h_source.html#l00107">107</a> of file <a class="el" href="bitcoingui_8h_source.html">bitcoingui.h</a>.</p>
 
 </div>
 </div>
@@ -3061,7 +3154,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 8 2019 14:55:23 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 10 2019 02:16:30 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
