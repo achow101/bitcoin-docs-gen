@@ -145,6 +145,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aab181655e60d8b6ca2097b4f5e5e38c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac94f7ec975b4ea1da143f9ac22ecd57c"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_params.html#ac94f7ec975b4ea1da143f9ac22ecd57c">PruneAfterHeight</a> () const </td></tr>
 <tr class="separator:ac94f7ec975b4ea1da143f9ac22ecd57c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5da488993cf92ea2f099a8b268920903"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_params.html#a5da488993cf92ea2f099a8b268920903">AssumedBlockchainSize</a> () const </td></tr>
+<tr class="memdesc:a5da488993cf92ea2f099a8b268920903"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum free space (in GB) needed for data directory.  <a href="#a5da488993cf92ea2f099a8b268920903">More...</a><br /></td></tr>
+<tr class="separator:a5da488993cf92ea2f099a8b268920903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9db219029d14c7b9cd3cc493edfdf1cd"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_params.html#a9db219029d14c7b9cd3cc493edfdf1cd">AssumedChainStateSize</a> () const </td></tr>
+<tr class="memdesc:a9db219029d14c7b9cd3cc493edfdf1cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum free space (in GB) needed for data directory when pruned; Does not include prune target.  <a href="#a9db219029d14c7b9cd3cc493edfdf1cd">More...</a><br /></td></tr>
+<tr class="separator:a9db219029d14c7b9cd3cc493edfdf1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43391a278460183ece50859c286c46bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_params.html#a43391a278460183ece50859c286c46bd">MineBlocksOnDemand</a> () const </td></tr>
 <tr class="memdesc:a43391a278460183ece50859c286c46bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make miner stop after a block is found.  <a href="#a43391a278460183ece50859c286c46bd">More...</a><br /></td></tr>
 <tr class="separator:a43391a278460183ece50859c286c46bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,6 +189,10 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a76d9a8dc59e179ca94b6b9e04a93e5f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee6b9132f0ce8dcbfc242c3d2e1293e6"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_params.html#aee6b9132f0ce8dcbfc242c3d2e1293e6">nPruneAfterHeight</a></td></tr>
 <tr class="separator:aee6b9132f0ce8dcbfc242c3d2e1293e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b403bfba955c0fa78d42aac4f759893"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_params.html#a4b403bfba955c0fa78d42aac4f759893">m_assumed_blockchain_size</a></td></tr>
+<tr class="separator:a4b403bfba955c0fa78d42aac4f759893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04c14173f6fca9eda34c8e13014b7c3d"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_params.html#a04c14173f6fca9eda34c8e13014b7c3d">m_assumed_chain_state_size</a></td></tr>
+<tr class="separator:a04c14173f6fca9eda34c8e13014b7c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac38d681a176f5e0429254a030dec24bb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_params.html#ac38d681a176f5e0429254a030dec24bb">vSeeds</a></td></tr>
 <tr class="separator:ac38d681a176f5e0429254a030dec24bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a923d956c5d3891d0c682b7ef5410ed8f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_params.html#a923d956c5d3891d0c682b7ef5410ed8f">base58Prefixes</a> [<a class="el" href="class_c_chain_params.html#aa294058ec2e3586bd8d03d6c39667058a6b21a525c7fab64a5df656e708f71a98">MAX_BASE58_TYPES</a>]</td></tr>
@@ -264,11 +274,65 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00084">84</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00088">88</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a5da488993cf92ea2f099a8b268920903"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t CChainParams::AssumedBlockchainSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Minimum free space (in GB) needed for data directory. </p>
+
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00071">71</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9db219029d14c7b9cd3cc493edfdf1cd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t CChainParams::AssumedChainStateSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Minimum free space (in GB) needed for data directory when pruned; Does not include prune target. </p>
+
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00073">73</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a6088d3a4f45d89c90e7e6117c3c5720d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -291,7 +355,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00078">78</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00082">82</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -323,7 +387,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00079">79</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00083">83</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
 
 </div>
 </div>
@@ -348,7 +412,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00081">81</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00085">85</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -416,7 +480,7 @@ Here is the caller graph for this function:</div>
 
 <p>Return the list of hostnames to look up for DNS seeds. </p>
 
-<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00077">77</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00081">81</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -448,7 +512,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00080">80</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00084">84</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
 
 </div>
 </div>
@@ -571,7 +635,7 @@ Here is the caller graph for this function:</div>
 
 <p>Return true if the fallback fee is by default enabled for this network. </p>
 
-<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00075">75</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00079">79</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -638,7 +702,7 @@ Here is the caller graph for this function:</div>
 <p>Make miner stop after a block is found. </p>
 <p>In RPC, don't return until nGenProcLimit blocks are generated </p>
 
-<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00071">71</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00075">75</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -672,7 +736,7 @@ Here is the caller graph for this function:</div>
 
 <p>Return the BIP70 network string (main, test or regtest) </p>
 
-<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00073">73</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00077">77</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -770,7 +834,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00082">82</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00086">86</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -800,7 +864,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00091">91</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00097">97</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
 
 </div>
 </div>
@@ -822,7 +886,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00092">92</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00098">98</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
 
 </div>
 </div>
@@ -844,7 +908,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00100">100</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00106">106</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
 
 </div>
 </div>
@@ -866,7 +930,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00099">99</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00105">105</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
 
 </div>
 </div>
@@ -888,7 +952,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00086">86</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00090">90</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
 
 </div>
 </div>
@@ -910,7 +974,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00096">96</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00102">102</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
 
 </div>
 </div>
@@ -932,7 +996,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00098">98</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00104">104</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
 
 </div>
 </div>
@@ -954,7 +1018,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00097">97</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00103">103</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
 
 </div>
 </div>
@@ -976,7 +1040,51 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00100">100</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4b403bfba955c0fa78d42aac4f759893"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t CChainParams::m_assumed_blockchain_size</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 <p>Definition at line <a class="el" href="chainparams_8h_source.html#l00094">94</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a04c14173f6fca9eda34c8e13014b7c3d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t CChainParams::m_assumed_chain_state_size</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00095">95</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
 
 </div>
 </div>
@@ -998,7 +1106,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00101">101</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00107">107</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
 
 </div>
 </div>
@@ -1020,7 +1128,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00088">88</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00092">92</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
 
 </div>
 </div>
@@ -1042,7 +1150,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00089">89</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00093">93</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
 
 </div>
 </div>
@@ -1064,7 +1172,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00087">87</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00091">91</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
 
 </div>
 </div>
@@ -1086,7 +1194,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00093">93</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00099">99</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
 
 </div>
 </div>
@@ -1108,7 +1216,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00095">95</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00101">101</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
 
 </div>
 </div>
@@ -1130,7 +1238,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00090">90</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
+<p>Definition at line <a class="el" href="chainparams_8h_source.html#l00096">96</a> of file <a class="el" href="chainparams_8h_source.html">chainparams.h</a>.</p>
 
 </div>
 </div>
@@ -1140,7 +1248,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 10 2019 18:03:57 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 12 2019 00:35:32 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -72,7 +72,7 @@ var searchData=
   ['watchonly_5fcolumn_5fwidth',['WATCHONLY_COLUMN_WIDTH',['../class_transaction_view.html#a330f6333f7d24ceef963729fa35fe985a3b652334c12361760c237732b101a9f9',1,'TransactionView']]],
   ['watchonlychangedfn',['WatchOnlyChangedFn',['../classinterfaces_1_1_wallet.html#a214b4d2833529c5332cb28905f4ed99e',1,'interfaces::Wallet']]],
   ['watchonlydecorationrole',['WatchonlyDecorationRole',['../class_transaction_table_model.html#a4b248508c36df598476affbf9871d1e6ab8c8d02e47656a5086bafcb7c21847db',1,'TransactionTableModel']]],
-  ['watchonlyfilter',['watchOnlyFilter',['../class_transaction_filter_proxy.html#a707bda5a9eb88e93be96257c08d17f5c',1,'TransactionFilterProxy::watchOnlyFilter()'],['../class_transaction_filter_proxy.html#ab41d9f1ee436dd8f037eeca709c2b472',1,'TransactionFilterProxy::WatchOnlyFilter()']]],
+  ['watchonlyfilter',['WatchOnlyFilter',['../class_transaction_filter_proxy.html#ab41d9f1ee436dd8f037eeca709c2b472',1,'TransactionFilterProxy::WatchOnlyFilter()'],['../class_transaction_filter_proxy.html#a707bda5a9eb88e93be96257c08d17f5c',1,'TransactionFilterProxy::watchOnlyFilter()']]],
   ['watchonlyfilter_5fall',['WatchOnlyFilter_All',['../class_transaction_filter_proxy.html#ab41d9f1ee436dd8f037eeca709c2b472aa1380cb25b441027933d531dbca4729c',1,'TransactionFilterProxy']]],
   ['watchonlyfilter_5fno',['WatchOnlyFilter_No',['../class_transaction_filter_proxy.html#ab41d9f1ee436dd8f037eeca709c2b472ab43ab69858738616da7eb71336d3fc2f',1,'TransactionFilterProxy']]],
   ['watchonlyfilter_5fyes',['WatchOnlyFilter_Yes',['../class_transaction_filter_proxy.html#ab41d9f1ee436dd8f037eeca709c2b472a4fdceea2b530121daaf6bc5db8aefb45',1,'TransactionFilterProxy']]],

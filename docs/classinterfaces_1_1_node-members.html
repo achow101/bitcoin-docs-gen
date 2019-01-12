@@ -106,6 +106,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr><td class="entry"><a class="el" href="classinterfaces_1_1_node.html#ab35e681fca8845cf5da5644f13e41088">disconnect</a>(NodeId id)=0</td><td class="entry"><a class="el" href="classinterfaces_1_1_node.html">interfaces::Node</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classinterfaces_1_1_node.html#aadf5741d11a0c6f5e4bcc9fdf97e2ec5">estimateSmartFee</a>(int num_blocks, bool conservative, int *returned_target=nullptr)=0</td><td class="entry"><a class="el" href="classinterfaces_1_1_node.html">interfaces::Node</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classinterfaces_1_1_node.html#a5f1109e67c9678f251953242fb7aac54">executeRpc</a>(const std::string &amp;command, const UniValue &amp;params, const std::string &amp;uri)=0</td><td class="entry"><a class="el" href="classinterfaces_1_1_node.html">interfaces::Node</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classinterfaces_1_1_node.html#ae9bccce873011dc25d35e0f005c6ba39">getAssumedBlockchainSize</a>()=0</td><td class="entry"><a class="el" href="classinterfaces_1_1_node.html">interfaces::Node</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classinterfaces_1_1_node.html#a4f39f2898b01d8fb1813bdb09db42351">getAssumedChainStateSize</a>()=0</td><td class="entry"><a class="el" href="classinterfaces_1_1_node.html">interfaces::Node</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classinterfaces_1_1_node.html#a684bd1a7377d7a4d0ea61273c429c352">getBanned</a>(banmap_t &amp;banmap)=0</td><td class="entry"><a class="el" href="classinterfaces_1_1_node.html">interfaces::Node</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classinterfaces_1_1_node.html#af4f0bfc100d1bff9862b55adef983f9d">getDustRelayFee</a>()=0</td><td class="entry"><a class="el" href="classinterfaces_1_1_node.html">interfaces::Node</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classinterfaces_1_1_node.html#aa7305fdaaf98f0002a2569a2b8e32b60">getHeaderTip</a>(int &amp;height, int64_t &amp;block_time)=0</td><td class="entry"><a class="el" href="classinterfaces_1_1_node.html">interfaces::Node</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
@@ -173,7 +175,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 10 2019 18:04:03 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 12 2019 00:35:38 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

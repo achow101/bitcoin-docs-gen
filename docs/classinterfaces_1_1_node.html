@@ -163,6 +163,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa9113520724be1e56bc7f0eea13ab9fd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_node.html#aa9113520724be1e56bc7f0eea13ab9fd">selectParams</a> (const std::string &amp;network)=0</td></tr>
 <tr class="memdesc:aa9113520724be1e56bc7f0eea13ab9fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose network parameters.  <a href="#aa9113520724be1e56bc7f0eea13ab9fd">More...</a><br /></td></tr>
 <tr class="separator:aa9113520724be1e56bc7f0eea13ab9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9bccce873011dc25d35e0f005c6ba39"><td class="memItemLeft" align="right" valign="top">virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_node.html#ae9bccce873011dc25d35e0f005c6ba39">getAssumedBlockchainSize</a> ()=0</td></tr>
+<tr class="memdesc:ae9bccce873011dc25d35e0f005c6ba39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the (assumed) blockchain size.  <a href="#ae9bccce873011dc25d35e0f005c6ba39">More...</a><br /></td></tr>
+<tr class="separator:ae9bccce873011dc25d35e0f005c6ba39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f39f2898b01d8fb1813bdb09db42351"><td class="memItemLeft" align="right" valign="top">virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_node.html#a4f39f2898b01d8fb1813bdb09db42351">getAssumedChainStateSize</a> ()=0</td></tr>
+<tr class="memdesc:a4f39f2898b01d8fb1813bdb09db42351"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the (assumed) chain state size.  <a href="#a4f39f2898b01d8fb1813bdb09db42351">More...</a><br /></td></tr>
+<tr class="separator:a4f39f2898b01d8fb1813bdb09db42351"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b05152fe56cb8d90c3c58039e6d5599"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_node.html#a6b05152fe56cb8d90c3c58039e6d5599">getNetwork</a> ()=0</td></tr>
 <tr class="memdesc:a6b05152fe56cb8d90c3c58039e6d5599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get network name.  <a href="#a6b05152fe56cb8d90c3c58039e6d5599">More...</a><br /></td></tr>
 <tr class="separator:a6b05152fe56cb8d90c3c58039e6d5599"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -330,7 +336,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for ban list messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00222">222</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00228">228</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -346,7 +352,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for init messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00186">186</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00192">192</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -362,7 +368,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for load wallet messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00206">206</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00212">212</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -378,7 +384,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for message box messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00191">191</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00197">197</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -394,7 +400,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Get stats for connected nodes. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00098">98</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00104">104</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -410,7 +416,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for notify alert messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00218">218</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00224">224</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -426,7 +432,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for block tip messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00227">227</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00233">233</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -442,7 +448,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for header tip messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00232">232</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00238">238</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -458,7 +464,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for network active messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00214">214</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00220">220</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -474,7 +480,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for number of connections changed messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00210">210</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00216">216</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -490,7 +496,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for question messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00198">198</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00204">204</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -506,7 +512,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for progress messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00202">202</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00208">208</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -537,7 +543,8 @@ Public Member Functions</h2></td></tr>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_aa7cc2494c0b0b47c0fbe5373c3bbd0b3_cgraph.svg" width="1206" height="1566"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_aa7cc2494c0b0b47c0fbe5373c3bbd0b3_cgraph.svg" width="1171" height="1696"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -808,6 +815,72 @@ Here is the caller graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_a5f1109e67c9678f251953242fb7aac54_icgraph.svg" width="750" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae9bccce873011dc25d35e0f005c6ba39"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint64_t interfaces::Node::getAssumedBlockchainSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the (assumed) blockchain size. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_ae9bccce873011dc25d35e0f005c6ba39_icgraph.svg" width="679" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4f39f2898b01d8fb1813bdb09db42351"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint64_t interfaces::Node::getAssumedChainStateSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the (assumed) chain state size. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_a4f39f2898b01d8fb1813bdb09db42351_icgraph.svg" width="679" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2277,7 +2350,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_aa9113520724be1e56bc7f0eea13ab9fd_icgraph.svg" width="731" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_aa9113520724be1e56bc7f0eea13ab9fd_icgraph.svg" width="731" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2537,7 +2611,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 10 2019 18:04:03 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 12 2019 00:35:38 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

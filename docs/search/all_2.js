@@ -216,7 +216,6 @@ var searchData=
   ['block_2eh',['block.h',['../block_8h.html',1,'']]],
   ['block_5fassemble_2ecpp',['block_assemble.cpp',['../block__assemble_8cpp.html',1,'']]],
   ['block_5fbench',['block_bench',['../namespaceblock__bench.html',1,'']]],
-  ['block_5fchain_5fsize',['BLOCK_CHAIN_SIZE',['../intro_8cpp.html#a88553e157c601648074f352719eb2af2',1,'intro.cpp']]],
   ['block_5fcreation',['BLOCK_CREATION',['../system_8h.html#a317721a7331c499cfe39b49b39c26cbda9fb78486ea1b0af77fab07a32abf6896',1,'system.h']]],
   ['block_5ffailed_5fchild',['BLOCK_FAILED_CHILD',['../chain_8h.html#a0d8c285f70a59a32f4f6ab41b78f93ada8653dc31c354a84e6fd0be105889262f',1,'chain.h']]],
   ['block_5ffailed_5fmask',['BLOCK_FAILED_MASK',['../chain_8h.html#a0d8c285f70a59a32f4f6ab41b78f93ada88df51e92f2f675baff60e0a5bd170ef',1,'chain.h']]],
