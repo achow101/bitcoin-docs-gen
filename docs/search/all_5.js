@@ -29,7 +29,7 @@ var searchData=
   ['ecmult_5ftable_5fget_5fge_5fstorage',['ECMULT_TABLE_GET_GE_STORAGE',['../ecmult__impl_8h.html#a45d4a36e1a06a0214837d20789239f8b',1,'ecmult_impl.h']]],
   ['ecmult_5ftable_5fsize',['ECMULT_TABLE_SIZE',['../ecmult__impl_8h.html#a97c6c6e5aa98f202eec77c4c931e02f1',1,'ecmult_impl.h']]],
   ['economical',['ECONOMICAL',['../policy_2fees_8h.html#aff36f74244c52c764c1af21d5f812173a9a8fe38b9338f969a8a3c903ef4f2a73',1,'fees.h']]],
-  ['editaddressdialog',['EditAddressDialog',['../class_edit_address_dialog.html',1,'EditAddressDialog'],['../class_edit_address_dialog.html#af9edc8753ff1c8ba8ec5dbedf97160ac',1,'EditAddressDialog::EditAddressDialog()']]],
+  ['editaddressdialog',['EditAddressDialog',['../class_edit_address_dialog.html',1,'EditAddressDialog'],['../class_edit_address_dialog.html#a1a695eafd9b1f8f5aca971b8631e7f23',1,'EditAddressDialog::EditAddressDialog()']]],
   ['editaddressdialog_2ecpp',['editaddressdialog.cpp',['../editaddressdialog_8cpp.html',1,'']]],
   ['editaddressdialog_2eh',['editaddressdialog.h',['../editaddressdialog_8h.html',1,'']]],
   ['editlabel',['editLabel',['../class_transaction_view.html#a18817639384e53f94fc1ad956d7263d9',1,'TransactionView']]],

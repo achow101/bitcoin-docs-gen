@@ -94,11 +94,11 @@ var searchData=
   ['options',['Options',['../struct_block_assembler_1_1_options.html#a925bbf758862a6397c2299777fc38762',1,'BlockAssembler::Options']]],
   ['optionsclicked',['optionsClicked',['../class_bitcoin_g_u_i.html#a366dfb05459cb49fec8adb7f97bf2ad7',1,'BitcoinGUI']]],
   ['optionsdialog',['OptionsDialog',['../class_options_dialog.html#ac74fd1c2837d30f6687cb1898d99f8d1',1,'OptionsDialog']]],
-  ['optionsmodel',['OptionsModel',['../class_options_model.html#ae861bde6a4f4d0235860589d5aca2f77',1,'OptionsModel']]],
+  ['optionsmodel',['OptionsModel',['../class_options_model.html#acfaa978b19a2775baae0320a263248da',1,'OptionsModel']]],
   ['outboundtargetreached',['OutboundTargetReached',['../class_c_connman.html#aa12d154df14eef07418a36362d1cb8d7',1,'CConnman']]],
   ['outofsyncwarningclicked',['outOfSyncWarningClicked',['../class_overview_page.html#ac5a5af7e79928d5598d359ed99dab88a',1,'OverviewPage::outOfSyncWarningClicked()'],['../class_wallet_frame.html#a9b846a7ce32f1bca329a0ef634c73524',1,'WalletFrame::outOfSyncWarningClicked()'],['../class_wallet_view.html#a47eb3f77f98547fb2f8d900a77770274',1,'WalletView::outOfSyncWarningClicked()']]],
   ['output',['Output',['../class_cha_cha20.html#a51cd39ceec49088f7bd6409b2d97c459',1,'ChaCha20']]],
   ['outputgroup',['OutputGroup',['../struct_output_group.html#a1445cad119d4255b8973bfa446d177ce',1,'OutputGroup::OutputGroup()'],['../struct_output_group.html#ad76dc0b02e8a6a0eb5fe77f9422b8127',1,'OutputGroup::OutputGroup(std::vector&lt; CInputCoin &gt; &amp;&amp;outputs, bool from_me, CAmount value, int depth, size_t ancestors, size_t descendants)'],['../struct_output_group.html#a24e82790c3258c394c66df892724cc67',1,'OutputGroup::OutputGroup(const CInputCoin &amp;output, int depth, bool from_me, size_t ancestors, size_t descendants)']]],
   ['overridestream',['OverrideStream',['../class_override_stream.html#a2c45dbac1803bc8a69737795458f8bba',1,'OverrideStream']]],
-  ['overviewpage',['OverviewPage',['../class_overview_page.html#ab377237585c9eeabc2eec882cec9a1e2',1,'OverviewPage']]]
+  ['overviewpage',['OverviewPage',['../class_overview_page.html#abbbc2d5cad9290087b591b2db60754f2',1,'OverviewPage']]]
 ];

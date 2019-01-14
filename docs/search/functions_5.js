@@ -12,7 +12,7 @@ var searchData=
   ['ecmult_5fconst_5fcommutativity',['ecmult_const_commutativity',['../tests_8c.html#ab1ac8e94f017ab831c8c50cc7384fd87',1,'tests.c']]],
   ['ecmult_5fconst_5fmult_5fzero_5fone',['ecmult_const_mult_zero_one',['../tests_8c.html#aa7d1b408b3e21121300c1a6348251ab2',1,'tests.c']]],
   ['ecmult_5fconst_5frandom_5fmult',['ecmult_const_random_mult',['../tests_8c.html#a2e747532c49b7e398aff44547a7ff477',1,'tests.c']]],
-  ['editaddressdialog',['EditAddressDialog',['../class_edit_address_dialog.html#af9edc8753ff1c8ba8ec5dbedf97160ac',1,'EditAddressDialog']]],
+  ['editaddressdialog',['EditAddressDialog',['../class_edit_address_dialog.html#a1a695eafd9b1f8f5aca971b8631e7f23',1,'EditAddressDialog']]],
   ['editlabel',['editLabel',['../class_transaction_view.html#a18817639384e53f94fc1ad956d7263d9',1,'TransactionView']]],
   ['eligibleforspending',['EligibleForSpending',['../struct_output_group.html#a5f431b81e289a2283a9ab9ebb17ddec2',1,'OutputGroup']]],
   ['emitdatachanged',['emitDataChanged',['../class_address_table_model.html#a42cbcc82a8752c4af3b75fd62e8c7a40',1,'AddressTableModel']]],
