@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['rebind',['rebind',['../structzero__after__free__allocator_1_1rebind.html',1,'zero_after_free_allocator']]],
   ['rebind',['rebind',['../structsecure__allocator_1_1rebind.html',1,'secure_allocator']]],
+  ['rebind',['rebind',['../structzero__after__free__allocator_1_1rebind.html',1,'zero_after_free_allocator']]],
   ['receivecoinsdialog',['ReceiveCoinsDialog',['../class_receive_coins_dialog.html',1,'']]],
   ['receiverequestdialog',['ReceiveRequestDialog',['../class_receive_request_dialog.html',1,'']]],
   ['recentrequestentry',['RecentRequestEntry',['../class_recent_request_entry.html',1,'']]],
@@ -11,9 +11,12 @@ var searchData=
   ['reverse_5flock',['reverse_lock',['../classreverse__lock.html',1,'']]],
   ['reverse_5frange',['reverse_range',['../classreverse__range.html',1,'']]],
   ['rpcarg',['RPCArg',['../struct_r_p_c_arg.html',1,'']]],
+  ['rpccommandexecution',['RPCCommandExecution',['../struct_r_p_c_command_execution.html',1,'']]],
+  ['rpccommandexecutioninfo',['RPCCommandExecutionInfo',['../struct_r_p_c_command_execution_info.html',1,'']]],
   ['rpcconsole',['RPCConsole',['../class_r_p_c_console.html',1,'']]],
   ['rpcexecutor',['RPCExecutor',['../class_r_p_c_executor.html',1,'']]],
   ['rpchelpman',['RPCHelpMan',['../class_r_p_c_help_man.html',1,'']]],
+  ['rpcserverinfo',['RPCServerInfo',['../struct_r_p_c_server_info.html',1,'']]],
   ['rpctimerbase',['RPCTimerBase',['../class_r_p_c_timer_base.html',1,'']]],
   ['rpctimerinterface',['RPCTimerInterface',['../class_r_p_c_timer_interface.html',1,'']]]
 ];
