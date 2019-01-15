@@ -88,7 +88,7 @@ var searchData=
   ['updateproxyvalidationstate',['updateProxyValidationState',['../class_options_dialog.html#a47a812f6d8e96f7a672dd39283822341',1,'OptionsDialog']]],
   ['updaterates',['updateRates',['../class_traffic_graph_widget.html#a5a1ae0d0a8cc43c67386de4aa1111340',1,'TrafficGraphWidget']]],
   ['updatesmartfeelabel',['updateSmartFeeLabel',['../class_send_coins_dialog.html#ac42a9db733fbb2e06882660400c49517',1,'SendCoinsDialog']]],
-  ['updatestatus',['updateStatus',['../class_transaction_record.html#ae15929bffc7ce776c8ceaed53cb869e8',1,'TransactionRecord::updateStatus()'],['../class_wallet_model.html#a89180a13e5b0c2ca7732164b9dec3806',1,'WalletModel::updateStatus()']]],
+  ['updatestatus',['updateStatus',['../class_transaction_record.html#a14b819672042a3594cf6394dc43bf855',1,'TransactionRecord::updateStatus()'],['../class_wallet_model.html#a89180a13e5b0c2ca7732164b9dec3806',1,'WalletModel::updateStatus()']]],
   ['updatetabsandlabels',['updateTabsAndLabels',['../class_send_coins_dialog.html#a3b834c739f7d02d8086a2bf58525c5f0',1,'SendCoinsDialog']]],
   ['updatetime',['UpdateTime',['../miner_8cpp.html#a9c09903c7d6401b5405db02af064179c',1,'UpdateTime(CBlockHeader *pblock, const Consensus::Params &amp;consensusParams, const CBlockIndex *pindexPrev):&#160;miner.cpp'],['../miner_8h.html#a9c09903c7d6401b5405db02af064179c',1,'UpdateTime(CBlockHeader *pblock, const Consensus::Params &amp;consensusParams, const CBlockIndex *pindexPrev):&#160;miner.cpp']]],
   ['updatetimefirstkey',['UpdateTimeFirstKey',['../group__map_wallet.html#gab7b95f29dbf960047aa0511713036871',1,'CWallet']]],

@@ -159,7 +159,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="classinterfaces_1_1_wallet.html#aa7817e0f925058802dcf08f5ef92906e">transactionCanBeBumped</a>(const uint256 &amp;txid)=0</td><td class="entry"><a class="el" href="classinterfaces_1_1_wallet.html">interfaces::Wallet</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classinterfaces_1_1_wallet.html#a2952d91248fe1ec1bb705c31e8fee06f">TransactionChangedFn</a> typedef</td><td class="entry"><a class="el" href="classinterfaces_1_1_wallet.html">interfaces::Wallet</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classinterfaces_1_1_wallet.html#a7c4086d2aedc3e5a4b22f22bf6b4f9bc">tryGetBalances</a>(WalletBalances &amp;balances, int &amp;num_blocks)=0</td><td class="entry"><a class="el" href="classinterfaces_1_1_wallet.html">interfaces::Wallet</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classinterfaces_1_1_wallet.html#a85789f14a927b08f00390a848a56c02d">tryGetTxStatus</a>(const uint256 &amp;txid, WalletTxStatus &amp;tx_status, int &amp;num_blocks)=0</td><td class="entry"><a class="el" href="classinterfaces_1_1_wallet.html">interfaces::Wallet</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classinterfaces_1_1_wallet.html#a1c6c35228dbef897c0ed84a9c62b8070">tryGetTxStatus</a>(const uint256 &amp;txid, WalletTxStatus &amp;tx_status, int &amp;num_blocks, int64_t &amp;block_time)=0</td><td class="entry"><a class="el" href="classinterfaces_1_1_wallet.html">interfaces::Wallet</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classinterfaces_1_1_wallet.html#a63a36db2d7254b7e2dd418584064efe0">txinIsMine</a>(const CTxIn &amp;txin)=0</td><td class="entry"><a class="el" href="classinterfaces_1_1_wallet.html">interfaces::Wallet</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classinterfaces_1_1_wallet.html#ad6ef3735d564094c49b9471b707ec942">txoutIsMine</a>(const CTxOut &amp;txout)=0</td><td class="entry"><a class="el" href="classinterfaces_1_1_wallet.html">interfaces::Wallet</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classinterfaces_1_1_wallet.html#a34b4c37600d5516cb862f1eb30e2f2ed">UnloadFn</a> typedef</td><td class="entry"><a class="el" href="classinterfaces_1_1_wallet.html">interfaces::Wallet</a></td><td class="entry"></td></tr>
@@ -170,7 +170,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 15 2019 14:29:14 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 15 2019 16:41:39 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

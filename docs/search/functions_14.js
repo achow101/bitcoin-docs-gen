@@ -134,7 +134,7 @@ var searchData=
   ['trycreatedirectories',['TryCreateDirectories',['../system_8cpp.html#a9042a919d837da9d97311a0c460c597c',1,'TryCreateDirectories(const fs::path &amp;p):&#160;system.cpp'],['../system_8h.html#a9042a919d837da9d97311a0c460c597c',1,'TryCreateDirectories(const fs::path &amp;p):&#160;system.cpp']]],
   ['tryenter',['TryEnter',['../class_unique_lock.html#a030b900160b1e45664c9717503088e44',1,'UniqueLock']]],
   ['trygetbalances',['tryGetBalances',['../classinterfaces_1_1_wallet.html#a7c4086d2aedc3e5a4b22f22bf6b4f9bc',1,'interfaces::Wallet']]],
-  ['trygettxstatus',['tryGetTxStatus',['../classinterfaces_1_1_wallet.html#a85789f14a927b08f00390a848a56c02d',1,'interfaces::Wallet']]],
+  ['trygettxstatus',['tryGetTxStatus',['../classinterfaces_1_1_wallet.html#a1c6c35228dbef897c0ed84a9c62b8070',1,'interfaces::Wallet']]],
   ['trylock',['TryLock',['../classfsbridge_1_1_file_lock.html#a74f33180d84d568d8701ce9ce1dbd5d7',1,'fsbridge::FileLock']]],
   ['txaddressdecoration',['txAddressDecoration',['../class_transaction_table_model.html#a79540ec0dc8011a07c5d88f4c3fb35f4',1,'TransactionTableModel']]],
   ['txconfirmstats',['TxConfirmStats',['../class_tx_confirm_stats.html#a22db235d9ecd68a25381f2eaf2f370ef',1,'TxConfirmStats']]],
