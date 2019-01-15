@@ -294,7 +294,7 @@ var searchData=
   ['trayandwindowicon',['trayAndWindowIcon',['../class_network_style.html#a297a55e4f8698b1ad6ac3176a54a993a',1,'NetworkStyle']]],
   ['trayicon',['trayIcon',['../class_bitcoin_g_u_i.html#ad3176165bc2c5c513332a6e74d066780',1,'BitcoinGUI::trayIcon()'],['../class_notificator.html#ad94b0bdc812c536b2c64b9085e2790a3',1,'Notificator::trayIcon()']]],
   ['trayiconactivated',['trayIconActivated',['../class_bitcoin_g_u_i.html#ae753f1d521f7c17804419f6a9054738b',1,'BitcoinGUI']]],
-  ['trayiconmenu',['trayIconMenu',['../class_bitcoin_g_u_i.html#a257c7002a59198e0f069535119803b18',1,'BitcoinGUI']]],
+  ['trayiconmenu',['trayIconMenu',['../class_bitcoin_g_u_i.html#a53633d98ce11f715d5a0df83207417f8',1,'BitcoinGUI']]],
   ['trigger',['trigger',['../class_h_t_t_p_event.html#ad3e2ab005035c3ac678b29095ac0da87',1,'HTTPEvent']]],
   ['trimtosize',['TrimToSize',['../class_c_tx_mem_pool.html#adb0214b2760eaedf15eb351348bc4f43',1,'CTxMemPool']]],
   ['trivial_5ft',['trivial_t',['../prevector_8cpp.html#ab5738c3eb7291f22f2ac5478fcd81477',1,'prevector.cpp']]],
