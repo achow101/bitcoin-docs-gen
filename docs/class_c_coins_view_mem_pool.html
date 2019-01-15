@@ -158,7 +158,7 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p><a class="el" href="class_c_coins_view.html" title="Abstract view on the open txout dataset. ">CCoinsView</a> that brings transactions from a mempool into view. </p>
 <p>It does not check for spendings by memory pool transactions. Instead, it provides access to all Coins which are either unspent in the base <a class="el" href="class_c_coins_view.html" title="Abstract view on the open txout dataset. ">CCoinsView</a>, or are outputs from any mempool transaction! This allows transaction replacement to work as expected, as you want to have all inputs "available" to check signatures, and any cycles in the dependency graph are checked directly in AcceptToMemoryPool. It also allows you to sign a double-spend directly in signrawtransaction, as long as the conflicting transaction is not yet confirmed. </p>
 
-<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00716">716</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00752">752</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a96bfcb1aab2831180747f82853a01ea6"></a>
 <div class="memitem">
@@ -256,7 +256,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00719">719</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
+<p>Definition at line <a class="el" href="txmempool_8h_source.html#l00755">755</a> of file <a class="el" href="txmempool_8h_source.html">txmempool.h</a>.</p>
 
 </div>
 </div>
@@ -267,7 +267,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 15 2019 16:43:53 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 15 2019 18:45:12 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

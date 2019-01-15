@@ -109,7 +109,7 @@ Collaboration diagram for CTxMemPoolEntry:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0f7612dbb388fabdeebcef62be009dd5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#a0f7612dbb388fabdeebcef62be009dd5">CTxMemPoolEntry</a> (const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;_tx, const <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;_nFee, int64_t _nTime, unsigned int _entryHeight, bool <a class="el" href="class_c_tx_mem_pool_entry.html#a1b62f46c9d110a1149a9fe679bdf4674">spendsCoinbase</a>, int64_t nSigOpsCost, <a class="el" href="struct_lock_points.html">LockPoints</a> lp)</td></tr>
+<tr class="memitem:a0f7612dbb388fabdeebcef62be009dd5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#a0f7612dbb388fabdeebcef62be009dd5">CTxMemPoolEntry</a> (const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;_tx, const <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;_nFee, int64_t _nTime, unsigned int _entryHeight, bool <a class="el" href="class_c_tx_mem_pool_entry.html#a1b62f46c9d110a1149a9fe679bdf4674">spendsCoinbase</a>, int64_t nSigOpsCost, <a class="el" href="struct_lock_points.html">LockPoints</a> <a class="el" href="mempool__eviction_8cpp.html#ad9fc5be56aa884a443262a52de4ed5f6">lp</a>)</td></tr>
 <tr class="separator:a0f7612dbb388fabdeebcef62be009dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59f51f38161c191dae2614c53ed40fb2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_c_transaction.html">CTransaction</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#a59f51f38161c191dae2614c53ed40fb2">GetTx</a> () const </td></tr>
 <tr class="separator:a59f51f38161c191dae2614c53ed40fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,7 +139,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a95448af3ad2f2350deb3ff649ca5ed46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a71f74082074ee714ff266ce5cd5b11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#a1a71f74082074ee714ff266ce5cd5b11">UpdateFeeDelta</a> (int64_t <a class="el" href="class_c_tx_mem_pool_entry.html#a2e63a38667e065be3b07dcd4d28b6911">feeDelta</a>)</td></tr>
 <tr class="separator:a1a71f74082074ee714ff266ce5cd5b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6347f6acc814536e2fc3d1962bb169cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#a6347f6acc814536e2fc3d1962bb169cf">UpdateLockPoints</a> (const <a class="el" href="struct_lock_points.html">LockPoints</a> &amp;lp)</td></tr>
+<tr class="memitem:a6347f6acc814536e2fc3d1962bb169cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#a6347f6acc814536e2fc3d1962bb169cf">UpdateLockPoints</a> (const <a class="el" href="struct_lock_points.html">LockPoints</a> &amp;<a class="el" href="mempool__eviction_8cpp.html#ad9fc5be56aa884a443262a52de4ed5f6">lp</a>)</td></tr>
 <tr class="separator:a6347f6acc814536e2fc3d1962bb169cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e950ff30ad2fa2dab179b26d77ddeac"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tx_mem_pool_entry.html#a1e950ff30ad2fa2dab179b26d77ddeac">GetCountWithDescendants</a> () const </td></tr>
 <tr class="separator:a1e950ff30ad2fa2dab179b26d77ddeac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -311,7 +311,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_entry_ad7c4813ff6286451db779162718618e8_icgraph.svg" width="466" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_entry_ad7c4813ff6286451db779162718618e8_icgraph.svg" width="466" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -407,7 +408,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_entry_a3a7df08c5d61cae8cb4c93970cc82ff6_icgraph.svg" width="1235" height="235"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_entry_a3a7df08c5d61cae8cb4c93970cc82ff6_icgraph.svg" width="1235" height="235"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -439,7 +441,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_entry_ac519a06da6ba8f9358d4301c5cac4ac9_icgraph.svg" width="1182" height="220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_entry_ac519a06da6ba8f9358d4301c5cac4ac9_icgraph.svg" width="1182" height="220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -592,7 +595,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_entry_a999184462e8e1ade9ba97aaf22b31f0f_icgraph.svg" width="492" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_entry_a999184462e8e1ade9ba97aaf22b31f0f_icgraph.svg" width="492" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -795,7 +799,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_entry_a59f51f38161c191dae2614c53ed40fb2_icgraph.svg" width="1927" height="1730"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_entry_a59f51f38161c191dae2614c53ed40fb2_icgraph.svg" width="1927" height="1730"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -826,7 +831,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_entry_a500fcb2039ceb24798d8ddb7d548b7b5_icgraph.svg" width="2206" height="1826"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_tx_mem_pool_entry_a500fcb2039ceb24798d8ddb7d548b7b5_icgraph.svg" width="2206" height="1826"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1425,7 +1431,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 15 2019 16:43:54 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 15 2019 18:45:14 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -126,6 +126,7 @@ var searchData=
   ['recovercompact',['RecoverCompact',['../class_c_pub_key.html#a169505e735a02db385486b0affeb565c',1,'CPubKey']]],
   ['recoverfunc_5ftype',['recoverFunc_type',['../class_berkeley_environment.html#a4097b6a84480eaf6c00be5d57789a114',1,'BerkeleyEnvironment']]],
   ['recoverkeysonlyfilter',['RecoverKeysOnlyFilter',['../class_wallet_batch.html#a104b46c34eff3b01f72c7f75b0536938',1,'WalletBatch']]],
+  ['recursivemutex',['RecursiveMutex',['../sync_8h.html#a5d71768bc9626b7482055d56d4e2c533',1,'sync.h']]],
   ['recvfromother',['RecvFromOther',['../class_transaction_record.html#afb76f5876fba21c3d2c388b98a35d685af952e16195e2dad5c132b3d77856ea05',1,'TransactionRecord']]],
   ['recvwithaddress',['RecvWithAddress',['../class_transaction_record.html#afb76f5876fba21c3d2c388b98a35d685ab0bb06b109e1fa70877d42a1c22f709f',1,'TransactionRecord']]],
   ['redeem_5fscript',['redeem_script',['../struct_signature_data.html#ac9392ab0ec475515a556afaa9ae2fdd7',1,'SignatureData::redeem_script()'],['../struct_p_s_b_t_input.html#acea9c6fe8e2d6da1d0efbad196623296',1,'PSBTInput::redeem_script()'],['../struct_p_s_b_t_output.html#a88accbf58defde9e31c2a89aba720b83',1,'PSBTOutput::redeem_script()']]],

@@ -59,7 +59,7 @@ var searchData=
   ['disconnectnode',['DisconnectNode',['../class_c_connman.html#a61837aadc0749654a483532d145c277b',1,'CConnman::DisconnectNode(const std::string &amp;node)'],['../class_c_connman.html#a5c9ecf4263c3d490fc709b23f93e2e07',1,'CConnman::DisconnectNode(NodeId id)']]],
   ['disconnectnodes',['DisconnectNodes',['../class_c_connman.html#aeb0a142fce003c50ff64d202c7bfb901',1,'CConnman']]],
   ['disconnectselectednode',['disconnectSelectedNode',['../class_r_p_c_console.html#a697e3fab280ee0c9033eeff2f64ec742',1,'RPCConsole']]],
-  ['disconnecttip',['DisconnectTip',['../class_c_chain_state.html#a57682556dc35715fba5f0c6075efcc6e',1,'CChainState']]],
+  ['disconnecttip',['DisconnectTip',['../class_c_chain_state.html#a29c507c11fc5d2c34a3e7472e0d4dc07',1,'CChainState']]],
   ['disconnectviewheaderssignals',['disconnectViewHeadersSignals',['../class_g_u_i_util_1_1_table_view_last_column_resizing_fixer.html#ae36cd142d60656073928ba6bd05a6661',1,'GUIUtil::TableViewLastColumnResizingFixer']]],
   ['discover',['Discover',['../net_8cpp.html#af69db74c5fca7ac2e39ab3c412de3dd4',1,'Discover():&#160;net.cpp'],['../net_8h.html#af69db74c5fca7ac2e39ab3c412de3dd4',1,'Discover():&#160;net.cpp']]],
   ['displayunitchanged',['displayUnitChanged',['../class_options_model.html#a7827a9cf0ceea0a429522974b620f11e',1,'OptionsModel']]],
