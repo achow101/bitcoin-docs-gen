@@ -261,7 +261,7 @@ var searchData=
   ['maxdepth',['maxDepth',['../class_work_queue.html#a9be06784f8d48f7d20bed3ffef363824',1,'WorkQueue']]],
   ['maxinputblock',['maxInputBlock',['../struct_lock_points.html#a5e7196b9f3603d6532afeae8370e9a73',1,'LockPoints']]],
   ['maxmoney',['maxMoney',['../class_bitcoin_units.html#a310bc10d6973f335b5757a341909b7fe',1,'BitcoinUnits']]],
-  ['maxtxfee',['maxTxFee',['../validation_8cpp.html#a77a17dcfb43cece2a434c0a9bfe9e441',1,'maxTxFee():&#160;validation.cpp'],['../validation_8h.html#a77a17dcfb43cece2a434c0a9bfe9e441',1,'maxTxFee():&#160;validation.cpp'],['../policy_2fees_8h.html#ad4442247e3a53b4e0e9142797e833186aa0e98aa16a33821e31e85316b70d8eb0',1,'MAXTXFEE():&#160;fees.h']]],
+  ['maxtxfee',['MAXTXFEE',['../policy_2fees_8h.html#ad4442247e3a53b4e0e9142797e833186aa0e98aa16a33821e31e85316b70d8eb0',1,'MAXTXFEE():&#160;fees.h'],['../validation_8cpp.html#a77a17dcfb43cece2a434c0a9bfe9e441',1,'maxTxFee():&#160;validation.cpp'],['../validation_8h.html#a77a17dcfb43cece2a434c0a9bfe9e441',1,'maxTxFee():&#160;validation.cpp']]],
   ['maxusableestimate',['MaxUsableEstimate',['../class_c_block_policy_estimator.html#aa1190c8276ed40774ee972d084bfd501',1,'CBlockPolicyEstimator']]],
   ['maybecompactwalletdb',['MaybeCompactWalletDB',['../walletdb_8cpp.html#a1e1e0409e1e009a4202a703e38ad2cd9',1,'MaybeCompactWalletDB():&#160;walletdb.cpp'],['../walletdb_8h.html#a1e1e0409e1e009a4202a703e38ad2cd9',1,'MaybeCompactWalletDB():&#160;walletdb.cpp']]],
   ['maybescheduleprocessqueue',['MaybeScheduleProcessQueue',['../class_single_threaded_scheduler_client.html#a4ba96c33ff19150bb0f055b1f3435f70',1,'SingleThreadedSchedulerClient']]],

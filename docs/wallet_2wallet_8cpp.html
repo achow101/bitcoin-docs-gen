@@ -145,6 +145,9 @@ Functions</h2></td></tr>
 <tr class="separator:ab8562a8762a7793fdf5b8ae9465e1b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59fb74ca7a0b34f8f86ec58464a72f8a"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_c_wallet.html">CWallet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet_2wallet_8cpp.html#a59fb74ca7a0b34f8f86ec58464a72f8a">GetWallet</a> (const std::string &amp;<a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)</td></tr>
 <tr class="separator:a59fb74ca7a0b34f8f86ec58464a72f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c2a7725ff8796f03471f844ecded3d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet_2wallet_8cpp.html#a5c2a7725ff8796f03471f844ecded3d9">UnloadWallet</a> (std::shared_ptr&lt; <a class="el" href="class_c_wallet.html">CWallet</a> &gt; &amp;&amp;wallet)</td></tr>
+<tr class="memdesc:a5c2a7725ff8796f03471f844ecded3d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly unload and delete the wallet.  <a href="#a5c2a7725ff8796f03471f844ecded3d9">More...</a><br /></td></tr>
+<tr class="separator:a5c2a7725ff8796f03471f844ecded3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacb65e7716d90a3e44022b0f9fce577d2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_c_key_i_d.html">CKeyID</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gacb65e7716d90a3e44022b0f9fce577d2">GetAffectedKeys</a> (const <a class="el" href="class_c_script.html">CScript</a> &amp;spk, const <a class="el" href="class_signing_provider.html">SigningProvider</a> &amp;provider)</td></tr>
 <tr class="separator:gacb65e7716d90a3e44022b0f9fce577d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0fd4c6f23ea3ccac9050ef55ad5f90b0"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga0fd4c6f23ea3ccac9050ef55ad5f90b0">CalculateMaximumSignedTxSize</a> (const <a class="el" href="class_c_transaction.html">CTransaction</a> &amp;tx, const <a class="el" href="class_c_wallet.html">CWallet</a> *wallet, bool use_max_sig)</td></tr>
@@ -204,7 +207,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8cpp_a59fb74ca7a0b34f8f86ec58464a72f8a_cgraph.svg" width="794" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8cpp_a59fb74ca7a0b34f8f86ec58464a72f8a_cgraph.svg" width="814" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -283,6 +287,34 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a5c2a7725ff8796f03471f844ecded3d9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnloadWallet </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_c_wallet.html">CWallet</a> &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>wallet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Explicitly unload and delete the wallet. </p>
+
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00110">110</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8cpp_a5c2a7725ff8796f03471f844ecded3d9_icgraph.svg" width="500" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a class="anchor" id="a9449d18f1333bc39482cdd20ecf38845"></a>
 <div class="memitem">
@@ -294,14 +326,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00094">94</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00133">133</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 14 2019 17:09:35 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 15 2019 13:40:23 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
