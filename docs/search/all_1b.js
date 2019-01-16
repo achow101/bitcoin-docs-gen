@@ -99,6 +99,7 @@ var searchData=
   ['_7erpcconsole',['~RPCConsole',['../class_r_p_c_console.html#af069a33d262cba428ec5c1390dd5acff',1,'RPCConsole']]],
   ['_7erpctimerbase',['~RPCTimerBase',['../class_r_p_c_timer_base.html#ad478959ba7dd7047ba0c311323606ada',1,'RPCTimerBase']]],
   ['_7erpctimerinterface',['~RPCTimerInterface',['../class_r_p_c_timer_interface.html#a602365351a3a0be637aabeed4cb33223',1,'RPCTimerInterface']]],
+  ['_7esafedbt',['~SafeDbt',['../class_berkeley_batch_1_1_safe_dbt.html#a0ad1df53c691032e1bd954031ea7ad13',1,'BerkeleyBatch::SafeDbt']]],
   ['_7esecp256k1init',['~Secp256k1Init',['../class_secp256k1_init.html#afc30fc1b48da30544d3365df6ed3e3f4',1,'Secp256k1Init']]],
   ['_7esecure_5fallocator',['~secure_allocator',['../structsecure__allocator.html#aa87165cab744a01bc01b242af43f6bf4',1,'secure_allocator']]],
   ['_7esendcoinsdialog',['~SendCoinsDialog',['../class_send_coins_dialog.html#a8b090008d92d2ca6752c10e93f8b5ff1',1,'SendCoinsDialog']]],

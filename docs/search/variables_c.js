@@ -38,6 +38,7 @@ var searchData=
   ['m_5fdatadir',['m_datadir',['../struct_init_wallet_dir_testing_setup.html#a978e182bc2c6025049c5666dfd12d2ab',1,'InitWalletDirTestingSetup']]],
   ['m_5fdb',['m_db',['../class_tx_index.html#ac4bf186e41641c29266fdde739717cbf',1,'TxIndex::m_db()'],['../class_berkeley_database.html#adacfe75b91569d8a1ca093fa162e4e59',1,'BerkeleyDatabase::m_db()']]],
   ['m_5fdb_5fin_5fuse',['m_db_in_use',['../class_berkeley_environment.html#ac021cd59bece125d5e3e0d9229d7a896',1,'BerkeleyEnvironment']]],
+  ['m_5fdbt',['m_dbt',['../class_berkeley_batch_1_1_safe_dbt.html#a7219b9f02db73f70858ef70e79c7077d',1,'BerkeleyBatch::SafeDbt']]],
   ['m_5fdebug_5fonly',['m_debug_only',['../struct_args_manager_1_1_arg.html#aac44bef30380c3c39e8a7176aef3cfa1',1,'ArgsManager::Arg']]],
   ['m_5fdefault_5faddress_5ftype',['m_default_address_type',['../class_c_wallet.html#a772acf41f8abd87ca6dd28ebbfa555ca',1,'CWallet']]],
   ['m_5fdefault_5fchange_5ftype',['m_default_change_type',['../class_c_wallet.html#a9a84ec3f1f70176885990d834dd6693f',1,'CWallet']]],

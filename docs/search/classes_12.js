@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['safedbt',['SafeDbt',['../class_berkeley_batch_1_1_safe_dbt.html',1,'BerkeleyBatch']]],
   ['saltedoutpointhasher',['SaltedOutpointHasher',['../class_salted_outpoint_hasher.html',1,'']]],
   ['saltedtxidhasher',['SaltedTxidHasher',['../class_salted_txid_hasher.html',1,'']]],
   ['scriptnum_5ferror',['scriptnum_error',['../classscriptnum__error.html',1,'']]],
