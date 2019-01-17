@@ -251,7 +251,7 @@ var searchData=
   ['org_5fbitcoin_5fsecp256k1context_2ec',['org_bitcoin_Secp256k1Context.c',['../org__bitcoin___secp256k1_context_8c.html',1,'']]],
   ['org_5fbitcoin_5fsecp256k1context_2eh',['org_bitcoin_Secp256k1Context.h',['../org__bitcoin___secp256k1_context_8h.html',1,'']]],
   ['origins',['origins',['../struct_flat_signing_provider.html#a7d07944a5bd2d96e14cd1c457081f1f9',1,'FlatSigningProvider']]],
-  ['other',['Other',['../class_transaction_record.html#afb76f5876fba21c3d2c388b98a35d685aecbcb11ffbb16d3853676e3ce12c12df',1,'TransactionRecord::Other()'],['../structsecure__allocator_1_1rebind.html#aa0688d32e40d8ae116efec5946f1a3b5',1,'secure_allocator::rebind::other()'],['../structzero__after__free__allocator_1_1rebind.html#aef5ba2251ba370df22fbd0a05e3cf284',1,'zero_after_free_allocator::rebind::other()']]],
+  ['other',['other',['../structsecure__allocator_1_1rebind.html#aa0688d32e40d8ae116efec5946f1a3b5',1,'secure_allocator::rebind::other()'],['../structzero__after__free__allocator_1_1rebind.html#aef5ba2251ba370df22fbd0a05e3cf284',1,'zero_after_free_allocator::rebind::other()'],['../class_transaction_record.html#afb76f5876fba21c3d2c388b98a35d685aecbcb11ffbb16d3853676e3ce12c12df',1,'TransactionRecord::Other()']]],
   ['out',['out',['../class_coin.html#aa1c3ccdcdb7754b184f433cc1f583a71',1,'Coin::out()'],['../struct_c_coin.html#a15c9b12a37610f0295326529fee9afea',1,'CCoin::out()']]],
   ['outbound_5fmessage_5fhigh_5fwater_5fmark',['outbound_message_high_water_mark',['../class_c_z_m_q_abstract_notifier.html#aee38846653508fcdbe995b58c6245c13',1,'CZMQAbstractNotifier']]],
   ['outboundtargetreached',['OutboundTargetReached',['../class_c_connman.html#aa12d154df14eef07418a36362d1cb8d7',1,'CConnman']]],
