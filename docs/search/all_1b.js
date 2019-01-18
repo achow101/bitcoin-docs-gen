@@ -116,6 +116,7 @@ var searchData=
   ['_7eunivalue',['~UniValue',['../class_uni_value.html#ab4f57573be7973c2d441a2f5fd0edb2d',1,'UniValue']]],
   ['_7eunlockcontext',['~UnlockContext',['../class_wallet_model_1_1_unlock_context.html#aa8d5445b1bc2a13ad8bfc06080b164d4',1,'WalletModel::UnlockContext']]],
   ['_7ewallet',['~Wallet',['../classinterfaces_1_1_wallet.html#a6dcbe2a99c23bc713b616d2d189cd9b7',1,'interfaces::Wallet']]],
+  ['_7ewalletcontroller',['~WalletController',['../class_wallet_controller.html#ac5b3fc9b1d8ddd2e38f2dd231a544ac9',1,'WalletController']]],
   ['_7ewalletframe',['~WalletFrame',['../class_wallet_frame.html#a953cb8184f83043d527ee645eec9a24f',1,'WalletFrame']]],
   ['_7ewalletinitinterface',['~WalletInitInterface',['../class_wallet_init_interface.html#a10e9b127566a8a77892de3e676053696',1,'WalletInitInterface']]],
   ['_7ewalletmodel',['~WalletModel',['../class_wallet_model.html#a592c6cf71f62981c2925bbb19e83df8a',1,'WalletModel']]],

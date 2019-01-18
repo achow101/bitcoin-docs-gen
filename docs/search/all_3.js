@@ -328,7 +328,7 @@ var searchData=
   ['coinselector_5ftests_2ecpp',['coinselector_tests.cpp',['../coinselector__tests_8cpp.html',1,'']]],
   ['coinset',['CoinSet',['../coin__selection_8cpp.html#ab21c9fc35f2e7aee21996a06a1c1d28e',1,'CoinSet():&#160;coin_selection.cpp'],['../coinselector__tests_8cpp.html#ab21c9fc35f2e7aee21996a06a1c1d28e',1,'CoinSet():&#160;coinselector_tests.cpp']]],
   ['coinslist',['CoinsList',['../classinterfaces_1_1_wallet.html#acb0ab20d05b6b2caf92bf0ba485f0fc1',1,'interfaces::Wallet']]],
-  ['coinssent',['coinsSent',['../class_send_coins_dialog.html#ae0fa01943dffa4e0b0cbbd172d0c72f4',1,'SendCoinsDialog::coinsSent()'],['../class_wallet_model.html#ab61e020be4eb3812b36d0995e843321a',1,'WalletModel::coinsSent()']]],
+  ['coinssent',['coinsSent',['../class_send_coins_dialog.html#ae0fa01943dffa4e0b0cbbd172d0c72f4',1,'SendCoinsDialog::coinsSent()'],['../class_wallet_controller.html#a68ecff9cd77abb7d3206f153b03cadf7',1,'WalletController::coinsSent()'],['../class_wallet_model.html#ab61e020be4eb3812b36d0995e843321a',1,'WalletModel::coinsSent()']]],
   ['coinsviewscanreserver',['CoinsViewScanReserver',['../class_coins_view_scan_reserver.html',1,'CoinsViewScanReserver'],['../class_coins_view_scan_reserver.html#a596823012feceb69d9c709686a8d3288',1,'CoinsViewScanReserver::CoinsViewScanReserver()']]],
   ['collection_5fflags',['collection_flags',['../class_cuckoo_cache_1_1cache.html#a73f56a65c98279dab65269f62e5506a3',1,'CuckooCache::cache']]],
   ['color',['color',['../structmemusage_1_1stl__tree__node.html#adbf0a4eeb6acfcf27e4ef1ba76c0d481',1,'memusage::stl_tree_node']]],

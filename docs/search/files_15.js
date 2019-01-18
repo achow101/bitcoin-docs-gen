@@ -8,6 +8,8 @@ var searchData=
   ['wallet_5ftest_5ffixture_2ecpp',['wallet_test_fixture.cpp',['../wallet__test__fixture_8cpp.html',1,'']]],
   ['wallet_5ftest_5ffixture_2eh',['wallet_test_fixture.h',['../wallet__test__fixture_8h.html',1,'']]],
   ['wallet_5ftests_2ecpp',['wallet_tests.cpp',['../wallet__tests_8cpp.html',1,'']]],
+  ['walletcontroller_2ecpp',['walletcontroller.cpp',['../walletcontroller_8cpp.html',1,'']]],
+  ['walletcontroller_2eh',['walletcontroller.h',['../walletcontroller_8h.html',1,'']]],
   ['walletdb_2ecpp',['walletdb.cpp',['../walletdb_8cpp.html',1,'']]],
   ['walletdb_2eh',['walletdb.h',['../walletdb_8h.html',1,'']]],
   ['walletframe_2ecpp',['walletframe.cpp',['../walletframe_8cpp.html',1,'']]],

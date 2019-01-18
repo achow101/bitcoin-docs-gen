@@ -4,6 +4,7 @@ var searchData=
   ['walletaddress',['WalletAddress',['../structinterfaces_1_1_wallet_address.html',1,'interfaces']]],
   ['walletbalances',['WalletBalances',['../structinterfaces_1_1_wallet_balances.html',1,'interfaces']]],
   ['walletbatch',['WalletBatch',['../class_wallet_batch.html',1,'']]],
+  ['walletcontroller',['WalletController',['../class_wallet_controller.html',1,'']]],
   ['walletdatabasefileid',['WalletDatabaseFileId',['../struct_wallet_database_file_id.html',1,'']]],
   ['walletframe',['WalletFrame',['../class_wallet_frame.html',1,'']]],
   ['walletinit',['WalletInit',['../class_wallet_init.html',1,'']]],
