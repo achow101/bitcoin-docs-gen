@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['wait',['wait',['../class_c_semaphore.html#a1c108bd981fe68527ec8ef5e7b0d116c',1,'CSemaphore::wait()'],['../class_c_check_queue.html#a4ff3e0e8241491efa1803eeb3a53e7fa',1,'CCheckQueue::Wait()'],['../class_c_check_queue_control.html#ab31d809a76b876d21608c0c5d0e3baf0',1,'CCheckQueueControl::Wait()']]],
+  ['wait',['Wait',['../class_c_check_queue.html#a4ff3e0e8241491efa1803eeb3a53e7fa',1,'CCheckQueue::Wait()'],['../class_c_check_queue_control.html#ab31d809a76b876d21608c0c5d0e3baf0',1,'CCheckQueueControl::Wait()'],['../class_c_semaphore.html#a1c108bd981fe68527ec8ef5e7b0d116c',1,'CSemaphore::wait()']]],
   ['wakemessagehandler',['WakeMessageHandler',['../class_c_connman.html#a999ec42f1515f77096556c94c29c6538',1,'CConnman']]],
   ['wallet',['wallet',['../class_wallet_model.html#a1c5870f02d5221d26a9a50f188c42d1f',1,'WalletModel']]],
   ['walletadded',['walletAdded',['../class_wallet_controller.html#a4706b150905dfbfc4101246bb602164a',1,'WalletController']]],

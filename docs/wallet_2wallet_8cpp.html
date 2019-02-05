@@ -207,7 +207,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8cpp_a59fb74ca7a0b34f8f86ec58464a72f8a_cgraph.svg" width="814" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8cpp_a59fb74ca7a0b34f8f86ec58464a72f8a_cgraph.svg" width="814" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -301,6 +302,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Explicitly unload and delete the wallet. </p>
+<p>Blocks the current thread after signaling the unload intent so that all wallet clients release the wallet. Note that, when blocking is not required, the wallet is implicitly unloaded by the shared pointer deleter. </p>
 
 <p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00110">110</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
@@ -331,7 +333,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 21 2019 00:41:38 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 5 2019 04:11:09 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

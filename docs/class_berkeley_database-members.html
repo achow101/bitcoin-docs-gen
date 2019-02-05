@@ -97,11 +97,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="class_berkeley_database.html#a1ed1a615fe31ee72e30087a0707b4461">Backup</a>(const std::string &amp;strDest)</td><td class="entry"><a class="el" href="class_berkeley_database.html">BerkeleyDatabase</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_berkeley_database.html#a7064d2c1ece394b46ebf74ccdc1c624f">BerkeleyBatch</a> class</td><td class="entry"><a class="el" href="class_berkeley_database.html">BerkeleyDatabase</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_berkeley_database.html#abe1d8986a264d895e3776321f1ebd0f9">BerkeleyDatabase</a>()</td><td class="entry"><a class="el" href="class_berkeley_database.html">BerkeleyDatabase</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_berkeley_database.html#a2b0e32e1f4c1530057a3bccac9fd017c">BerkeleyDatabase</a>(const fs::path &amp;wallet_path, bool mock=false)</td><td class="entry"><a class="el" href="class_berkeley_database.html">BerkeleyDatabase</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_berkeley_database.html#a1a85b682ab9cccd3aa877471d8bf3823">BerkeleyDatabase</a>(std::shared_ptr&lt; BerkeleyEnvironment &gt; env, std::string filename)</td><td class="entry"><a class="el" href="class_berkeley_database.html">BerkeleyDatabase</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_berkeley_database.html#aa8261d4a4224a6e6d8ad358549379788">Create</a>(const fs::path &amp;path)</td><td class="entry"><a class="el" href="class_berkeley_database.html">BerkeleyDatabase</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_berkeley_database.html#a66c0f9ed9325cb69e9902fb15ceb509a">CreateDummy</a>()</td><td class="entry"><a class="el" href="class_berkeley_database.html">BerkeleyDatabase</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_berkeley_database.html#acd50f7e44ad659b6c3a3dc94c8155859">CreateMock</a>()</td><td class="entry"><a class="el" href="class_berkeley_database.html">BerkeleyDatabase</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_berkeley_database.html#a1c97b1d2271608ad818d26d0e6b2ce5f">env</a></td><td class="entry"><a class="el" href="class_berkeley_database.html">BerkeleyDatabase</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_berkeley_database.html#a047e46a9b0ad5ee9d48fbc2a02f13c30">env</a></td><td class="entry"><a class="el" href="class_berkeley_database.html">BerkeleyDatabase</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_berkeley_database.html#a103225e3af28d95103942d46cd819d4d">Flush</a>(bool shutdown)</td><td class="entry"><a class="el" href="class_berkeley_database.html">BerkeleyDatabase</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_berkeley_database.html#a313cd767c211da5738bdb5578cd59af7">IncrementUpdateCounter</a>()</td><td class="entry"><a class="el" href="class_berkeley_database.html">BerkeleyDatabase</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_berkeley_database.html#a613ff711faa19bc0a970fb598ab4f886">IsDummy</a>()</td><td class="entry"><a class="el" href="class_berkeley_database.html">BerkeleyDatabase</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
@@ -117,7 +117,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 21 2019 00:41:49 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 5 2019 04:11:14 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -1,7 +1,6 @@
 var searchData=
 [
   ['safechars',['SafeChars',['../strencodings_8h.html#aecdd292e3acadfcc5ffe4fabe452cfef',1,'strencodings.h']]],
-  ['scanresult',['ScanResult',['../class_c_wallet.html#a570fe909452f0229717b5da9d580d482',1,'CWallet']]],
   ['scriptcontext',['ScriptContext',['../rpcdump_8cpp.html#a994c8748aaa60fbb78009ff8a0638dea',1,'rpcdump.cpp']]],
   ['scripterror_5ft',['ScriptError_t',['../script__error_8h.html#a3150eb7362e5d1e0732dd10c973a0eb5',1,'script_error.h']]],
   ['separatorstyle',['SeparatorStyle',['../class_bitcoin_units.html#a5151919ed4f75e0597047b0287b9ebf8',1,'BitcoinUnits']]],

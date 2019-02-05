@@ -117,17 +117,17 @@ Functions</h2></td></tr>
 <tr class="memitem:ae2b30e9f6c829c9dd50f50ae8d96ec64"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="db_8cpp.html#ae2b30e9f6c829c9dd50f50ae8d96ec64">IsWalletLoaded</a> (const fs::path &amp;wallet_path)</td></tr>
 <tr class="memdesc:ae2b30e9f6c829c9dd50f50ae8d96ec64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether a wallet database is currently loaded.  <a href="#ae2b30e9f6c829c9dd50f50ae8d96ec64">More...</a><br /></td></tr>
 <tr class="separator:ae2b30e9f6c829c9dd50f50ae8d96ec64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad35888bb71f9a2822294063004aab1d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_berkeley_environment.html">BerkeleyEnvironment</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="db_8cpp.html#ad35888bb71f9a2822294063004aab1d5">GetWalletEnv</a> (const fs::path &amp;wallet_path, std::string &amp;database_filename)</td></tr>
-<tr class="memdesc:ad35888bb71f9a2822294063004aab1d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="class_berkeley_environment.html">BerkeleyEnvironment</a> and database filename given a wallet path.  <a href="#ad35888bb71f9a2822294063004aab1d5">More...</a><br /></td></tr>
-<tr class="separator:ad35888bb71f9a2822294063004aab1d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af47b460400edbb95fbf5bcefa84284d4"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_berkeley_environment.html">BerkeleyEnvironment</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="db_8cpp.html#af47b460400edbb95fbf5bcefa84284d4">GetWalletEnv</a> (const fs::path &amp;wallet_path, std::string &amp;database_filename)</td></tr>
+<tr class="memdesc:af47b460400edbb95fbf5bcefa84284d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="class_berkeley_environment.html">BerkeleyEnvironment</a> and database filename given a wallet path.  <a href="#af47b460400edbb95fbf5bcefa84284d4">More...</a><br /></td></tr>
+<tr class="separator:af47b460400edbb95fbf5bcefa84284d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ad35888bb71f9a2822294063004aab1d5"></a>
+<a class="anchor" id="af47b460400edbb95fbf5bcefa84284d4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_berkeley_environment.html">BerkeleyEnvironment</a>* GetWalletEnv </td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_berkeley_environment.html">BerkeleyEnvironment</a>&gt; GetWalletEnv </td>
           <td>(</td>
           <td class="paramtype">const fs::path &amp;&#160;</td>
           <td class="paramname"><em>wallet_path</em>, </td>
@@ -147,13 +147,23 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get <a class="el" href="class_berkeley_environment.html">BerkeleyEnvironment</a> and database filename given a wallet path. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wallet_path</td><td>Path to wallet directory. Or (for backwards compatibility only) a path to a berkeley btree data file inside a wallet directory. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">database_filename</td><td>Filename of berkeley btree data file inside the wallet directory. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A shared pointer to the <a class="el" href="class_berkeley_environment.html">BerkeleyEnvironment</a> object for the wallet directory, never empty because ~BerkeleyEnvironment erases the weak pointer from the g_dbenvs map. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>A new <a class="el" href="class_berkeley_environment.html">BerkeleyEnvironment</a> weak pointer is inserted into g_dbenvs if the directory path key was not already in the map. </dd></dl>
 
-<p>Definition at line <a class="el" href="db_8cpp_source.html#l00086">86</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
+<p>Definition at line <a class="el" href="db_8cpp_source.html#l00094">94</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="db_8cpp_ad35888bb71f9a2822294063004aab1d5_icgraph.svg" width="1754" height="270"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="db_8cpp_af47b460400edbb95fbf5bcefa84284d4_icgraph.svg" width="1600" height="424"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -187,7 +197,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="db_8cpp_ae2b30e9f6c829c9dd50f50ae8d96ec64_icgraph.svg" width="1586" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="db_8cpp_ae2b30e9f6c829c9dd50f50ae8d96ec64_icgraph.svg" width="780" height="151"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -196,7 +207,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 21 2019 00:41:48 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 5 2019 04:11:13 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['banman',['BanMan',['../class_ban_man.html',1,'']]],
   ['bannednodelessthan',['BannedNodeLessThan',['../class_banned_node_less_than.html',1,'']]],
   ['bantablemodel',['BanTableModel',['../class_ban_table_model.html',1,'']]],
   ['bantablepriv',['BanTablePriv',['../class_ban_table_priv.html',1,'']]],

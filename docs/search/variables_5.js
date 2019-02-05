@@ -12,7 +12,7 @@ var searchData=
   ['encryptwalletaction',['encryptWalletAction',['../class_bitcoin_g_u_i.html#a6ce1b4dd69ba9b8cef1548e32ef18136',1,'BitcoinGUI']]],
   ['end',['end',['../struct_estimator_bucket.html#a3215916874d6fa408347e109d44e9e8e',1,'EstimatorBucket::end()'],['../class_arena.html#a4f9680a852e9c59e41918878dd3fc9d4',1,'Arena::end()']]],
   ['entryheight',['entryHeight',['../class_c_tx_mem_pool_entry.html#aef8caf698c9f18a0c540e4a1ff253449',1,'CTxMemPoolEntry']]],
-  ['env',['env',['../class_berkeley_database.html#a1c97b1d2271608ad818d26d0e6b2ce5f',1,'BerkeleyDatabase::env()'],['../class_berkeley_batch.html#aa82892c83dbb9c553dff637fa2188c7e',1,'BerkeleyBatch::env()']]],
+  ['env',['env',['../class_berkeley_database.html#a047e46a9b0ad5ee9d48fbc2a02f13c30',1,'BerkeleyDatabase::env()'],['../class_berkeley_batch.html#aa82892c83dbb9c553dff637fa2188c7e',1,'BerkeleyBatch::env()']]],
   ['epoch_5fflags',['epoch_flags',['../class_cuckoo_cache_1_1cache.html#a6e81a89c32f6f5c1093ddd30a99734a9',1,'CuckooCache::cache']]],
   ['epoch_5fheuristic_5fcounter',['epoch_heuristic_counter',['../class_cuckoo_cache_1_1cache.html#a2bef78baf7f3c950b7b31394dd562e8a',1,'CuckooCache::cache']]],
   ['epoch_5fsize',['epoch_size',['../class_cuckoo_cache_1_1cache.html#a6c66f444f485ed95ba23c5908939fde6',1,'CuckooCache::cache']]],

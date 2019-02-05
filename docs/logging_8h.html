@@ -115,7 +115,8 @@ Include dependency graph for logging.h:</div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="logging_8h__dep__incl.svg" width="7162" height="262"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="logging_8h__dep__incl.svg" width="7023" height="262"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="logging_8h_source.html">Go to the source code of this file.</a></p>
@@ -169,6 +170,8 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:afc8466b8556e8436bdfe35f4b5b3a7d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_b_c_log_1_1_logger.html">BCLog::Logger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#afc8466b8556e8436bdfe35f4b5b3a7d5">LogInstance</a> ()</td></tr>
+<tr class="separator:afc8466b8556e8436bdfe35f4b5b3a7d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa895919a708b682e4e7dd03ea2b6b41d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#aa895919a708b682e4e7dd03ea2b6b41d">ListLogCategories</a> ()</td></tr>
 <tr class="memdesc:aa895919a708b682e4e7dd03ea2b6b41d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string with the log categories.  <a href="#aa895919a708b682e4e7dd03ea2b6b41d">More...</a><br /></td></tr>
 <tr class="separator:aa895919a708b682e4e7dd03ea2b6b41d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,9 +188,6 @@ Variables</h2></td></tr>
 <tr class="separator:aa83b5532d9039198c491d090c1335583"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e02420c2f7c53579ccb90acf301ae75"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a8e02420c2f7c53579ccb90acf301ae75">fLogIPs</a></td></tr>
 <tr class="separator:a8e02420c2f7c53579ccb90acf301ae75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cd4848010c61770cf10fbb8f02855ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_b_c_log_1_1_logger.html">BCLog::Logger</a> *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a1cd4848010c61770cf10fbb8f02855ca">g_logger</a></td></tr>
-<tr class="memdesc:a1cd4848010c61770cf10fbb8f02855ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">NOTE: the logger instances is leaked on exit.  <a href="#a1cd4848010c61770cf10fbb8f02855ca">More...</a><br /></td></tr>
-<tr class="separator:a1cd4848010c61770cf10fbb8f02855ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a84d90a032a1e6f85635d8afe47d324f3"></a>
@@ -216,7 +216,7 @@ Variables</h2></td></tr>
 
 <p>Return true if str parses as a log category and set the flag. </p>
 
-<p>Definition at line <a class="el" href="logging_8cpp_source.html#l00126">126</a> of file <a class="el" href="logging_8cpp_source.html">logging.cpp</a>.</p>
+<p>Definition at line <a class="el" href="logging_8cpp_source.html#l00132">132</a> of file <a class="el" href="logging_8cpp_source.html">logging.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -242,7 +242,7 @@ Here is the caller graph for this function:</div>
 
 <p>Returns a vector of the active log categories. </p>
 
-<p>Definition at line <a class="el" href="logging_8cpp_source.html#l00156">156</a> of file <a class="el" href="logging_8cpp_source.html">logging.cpp</a>.</p>
+<p>Definition at line <a class="el" href="logging_8cpp_source.html#l00162">162</a> of file <a class="el" href="logging_8cpp_source.html">logging.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -268,12 +268,39 @@ Here is the caller graph for this function:</div>
 
 <p>Returns a string with the log categories. </p>
 
-<p>Definition at line <a class="el" href="logging_8cpp_source.html#l00141">141</a> of file <a class="el" href="logging_8cpp_source.html">logging.cpp</a>.</p>
+<p>Definition at line <a class="el" href="logging_8cpp_source.html#l00147">147</a> of file <a class="el" href="logging_8cpp_source.html">logging.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="logging_8h_aa895919a708b682e4e7dd03ea2b6b41d_icgraph.svg" width="548" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afc8466b8556e8436bdfe35f4b5b3a7d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_b_c_log_1_1_logger.html">BCLog::Logger</a>&amp; LogInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>NOTE: the logger instances is leaked on exit. This is ugly, but will be cleaned up by the OS/libc. Defining a logger as a global object doesn't work since the order of destruction of static/global objects is undefined. Consider if the logger gets destroyed, and then some later destructor calls LogPrintf, maybe indirectly, and you get a core dump at shutdown trying to access the logger. When the shutdown sequence is fully audited and tested, explicit destruction of these objects can be implemented by changing this from a raw pointer to a std::unique_ptr. Since the destructor is never called, the logger and all its members must have a trivial destructor.</p>
+<p>This method of initialization was originally introduced in ee3374234c60aba2cc4c5cd5cac1c0aefc2d817c.</p>
+
+<p>Definition at line <a class="el" href="logging_8cpp_source.html#l00011">11</a> of file <a class="el" href="logging_8cpp_source.html">logging.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="logging_8h_afc8466b8556e8436bdfe35f4b5b3a7d5_icgraph.svg" width="678" height="339"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -304,32 +331,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="logging_8cpp_source.html#l00026">26</a> of file <a class="el" href="logging_8cpp_source.html">logging.cpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1cd4848010c61770cf10fbb8f02855ca"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_b_c_log_1_1_logger.html">BCLog::Logger</a>* const g_logger</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>NOTE: the logger instances is leaked on exit. </p>
-<p>This is ugly, but will be cleaned up by the OS/libc. Defining a logger as a global object doesn't work since the order of destruction of static/global objects is undefined. Consider if the logger gets destroyed, and then some later destructor calls LogPrintf, maybe indirectly, and you get a core dump at shutdown trying to access the logger. When the shutdown sequence is fully audited and tested, explicit destruction of these objects can be implemented by changing this from a raw pointer to a std::unique_ptr.</p>
-<p>This method of initialization was originally introduced in ee3374234c60aba2cc4c5cd5cac1c0aefc2d817c. </p>
-
-<p>Definition at line <a class="el" href="logging_8cpp_source.html#l00024">24</a> of file <a class="el" href="logging_8cpp_source.html">logging.cpp</a>.</p>
+<p>Definition at line <a class="el" href="logging_8cpp_source.html#l00032">32</a> of file <a class="el" href="logging_8cpp_source.html">logging.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 21 2019 00:41:38 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 5 2019 04:11:09 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

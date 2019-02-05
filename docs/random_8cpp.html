@@ -90,7 +90,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">random.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -104,48 +106,98 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;chrono&gt;</code><br />
 <code>#include &lt;thread&gt;</code><br />
+<code>#include &lt;<a class="el" href="secure_8h_source.html">support/allocators/secure.h</a>&gt;</code><br />
 <code>#include &lt;fcntl.h&gt;</code><br />
 <code>#include &lt;sys/time.h&gt;</code><br />
 <code>#include &lt;mutex&gt;</code><br />
 <code>#include &lt;openssl/err.h&gt;</code><br />
 <code>#include &lt;openssl/rand.h&gt;</code><br />
+<code>#include &lt;openssl/conf.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for random.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp__incl.svg" width="2187" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp__incl.svg" width="2979" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="random_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:acb01085e46d55c91f668739b25cc481e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cpp.html#acb01085e46d55c91f668739b25cc481e">RNGLevel</a> { <a class="el" href="random_8cpp.html#acb01085e46d55c91f668739b25cc481eadca6e617f6fb54033deb311e7e7c93cc">RNGLevel::FAST</a>, 
+<a class="el" href="random_8cpp.html#acb01085e46d55c91f668739b25cc481ea0e3066cbbd284dce8b76e7c4620d6d75">RNGLevel::SLOW</a>, 
+<a class="el" href="random_8cpp.html#acb01085e46d55c91f668739b25cc481eab32bd403b93dc6deffdab7af55e82596">RNGLevel::SLEEP</a>
+ }</td></tr>
+<tr class="separator:acb01085e46d55c91f668739b25cc481e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab699fbdf803610a4e2060fd87787f7e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cpp.html#ab699fbdf803610a4e2060fd87787f7e0">RandAddSeed</a> ()</td></tr>
-<tr class="separator:ab699fbdf803610a4e2060fd87787f7e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5a1de953fbf69ebdf3db0387a8271d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cpp.html#ad5a1de953fbf69ebdf3db0387a8271d3">GetOSRand</a> (unsigned char *ent32)</td></tr>
 <tr class="memdesc:ad5a1de953fbf69ebdf3db0387a8271d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get 32 bytes of system entropy.  <a href="#ad5a1de953fbf69ebdf3db0387a8271d3">More...</a><br /></td></tr>
 <tr class="separator:ad5a1de953fbf69ebdf3db0387a8271d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada0c29949c4d1ac0cc027d93c4771423"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cpp.html#ada0c29949c4d1ac0cc027d93c4771423">GetRandBytes</a> (unsigned char *buf, int num)</td></tr>
-<tr class="memdesc:ada0c29949c4d1ac0cc027d93c4771423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions to gather random data via the OpenSSL PRNG.  <a href="#ada0c29949c4d1ac0cc027d93c4771423">More...</a><br /></td></tr>
-<tr class="separator:ada0c29949c4d1ac0cc027d93c4771423"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b44800604cfaf321ec4836c5a30ec0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cpp.html#a5b44800604cfaf321ec4836c5a30ec0e">LockingCallbackOpenSSL</a> (int mode, int i, const char *file, int line)</td></tr>
+<tr class="separator:a5b44800604cfaf321ec4836c5a30ec0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ee67373bce34cf387d83c86b438ff84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cpp.html#a6ee67373bce34cf387d83c86b438ff84">GetRandBytes</a> (unsigned char *buf, int num) noexcept</td></tr>
+<tr class="memdesc:a6ee67373bce34cf387d83c86b438ff84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overall design of the RNG and entropy sources.  <a href="#a6ee67373bce34cf387d83c86b438ff84">More...</a><br /></td></tr>
+<tr class="separator:a6ee67373bce34cf387d83c86b438ff84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72ecdcabd16ee4b868d96beaa9a2f188"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cpp.html#a72ecdcabd16ee4b868d96beaa9a2f188">GetStrongRandBytes</a> (unsigned char *buf, int num) noexcept</td></tr>
+<tr class="memdesc:a72ecdcabd16ee4b868d96beaa9a2f188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gather entropy from various sources, feed it into the internal PRNG, and generate random data using it.  <a href="#a72ecdcabd16ee4b868d96beaa9a2f188">More...</a><br /></td></tr>
+<tr class="separator:a72ecdcabd16ee4b868d96beaa9a2f188"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac625a0557cc78c5412aaefc4afee852a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cpp.html#ac625a0557cc78c5412aaefc4afee852a">RandAddSeedSleep</a> ()</td></tr>
-<tr class="memdesc:ac625a0557cc78c5412aaefc4afee852a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a little bit of randomness to the output of GetStrongRangBytes.  <a href="#ac625a0557cc78c5412aaefc4afee852a">More...</a><br /></td></tr>
+<tr class="memdesc:ac625a0557cc78c5412aaefc4afee852a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sleep for 1ms, gather entropy from various sources, and feed them to the PRNG state.  <a href="#ac625a0557cc78c5412aaefc4afee852a">More...</a><br /></td></tr>
 <tr class="separator:ac625a0557cc78c5412aaefc4afee852a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3431dd191f6ae9977f482c150da3d6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cpp.html#ad3431dd191f6ae9977f482c150da3d6f">GetStrongRandBytes</a> (unsigned char *out, int num)</td></tr>
-<tr class="memdesc:ad3431dd191f6ae9977f482c150da3d6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to gather random data from multiple sources, failing whenever any of those sources fail to provide a result.  <a href="#ad3431dd191f6ae9977f482c150da3d6f">More...</a><br /></td></tr>
-<tr class="separator:ad3431dd191f6ae9977f482c150da3d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27d9149d522b1fa87d84e5e9ca902aef"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cpp.html#a27d9149d522b1fa87d84e5e9ca902aef">GetRand</a> (uint64_t nMax)</td></tr>
-<tr class="separator:a27d9149d522b1fa87d84e5e9ca902aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e44e088732172da6662db2d5e37d4b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cpp.html#a0e44e088732172da6662db2d5e37d4b2">GetRandInt</a> (int nMax)</td></tr>
-<tr class="separator:a0e44e088732172da6662db2d5e37d4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3aedae75efabb170337a497457f7ecf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classuint256.html">uint256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cpp.html#af3aedae75efabb170337a497457f7ecf">GetRandHash</a> ()</td></tr>
-<tr class="separator:af3aedae75efabb170337a497457f7ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff7638559e8b1ef5f843dc470c2e46e"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cpp.html#abff7638559e8b1ef5f843dc470c2e46e">GetRand</a> (uint64_t nMax) noexcept</td></tr>
+<tr class="separator:abff7638559e8b1ef5f843dc470c2e46e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae518f187cf4aa836b705462977c3981a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cpp.html#ae518f187cf4aa836b705462977c3981a">GetRandInt</a> (int nMax) noexcept</td></tr>
+<tr class="separator:ae518f187cf4aa836b705462977c3981a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88672f91432a247654f2c06298dd58ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classuint256.html">uint256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cpp.html#a88672f91432a247654f2c06298dd58ee">GetRandHash</a> () noexcept</td></tr>
+<tr class="separator:a88672f91432a247654f2c06298dd58ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fb6c441a23070a7f510fd48b5ca2a18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cpp.html#a7fb6c441a23070a7f510fd48b5ca2a18">Random_SanityCheck</a> ()</td></tr>
 <tr class="memdesc:a7fb6c441a23070a7f510fd48b5ca2a18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that OS randomness is available and returning the requested number of bytes.  <a href="#a7fb6c441a23070a7f510fd48b5ca2a18">More...</a><br /></td></tr>
 <tr class="separator:a7fb6c441a23070a7f510fd48b5ca2a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4c101f3cf6614b5922770a6f5ca7209"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cpp.html#aa4c101f3cf6614b5922770a6f5ca7209">RandomInit</a> ()</td></tr>
-<tr class="memdesc:aa4c101f3cf6614b5922770a6f5ca7209"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the RNG.  <a href="#aa4c101f3cf6614b5922770a6f5ca7209">More...</a><br /></td></tr>
+<tr class="memdesc:aa4c101f3cf6614b5922770a6f5ca7209"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize global RNG state and log any CPU features that are used.  <a href="#aa4c101f3cf6614b5922770a6f5ca7209">More...</a><br /></td></tr>
 <tr class="separator:aa4c101f3cf6614b5922770a6f5ca7209"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a383ba0931c57b45e70b767187f505b05"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cpp.html#a383ba0931c57b45e70b767187f505b05">g_mock_deterministic_tests</a> {false}</td></tr>
+<tr class="separator:a383ba0931c57b45e70b767187f505b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="acb01085e46d55c91f668739b25cc481e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="random_8cpp.html#acb01085e46d55c91f668739b25cc481e">RNGLevel</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="acb01085e46d55c91f668739b25cc481eadca6e617f6fb54033deb311e7e7c93cc"></a>FAST&#160;</td><td class="fielddoc">
+<p>Automatically called by GetRandBytes. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="acb01085e46d55c91f668739b25cc481ea0e3066cbbd284dce8b76e7c4620d6d75"></a>SLOW&#160;</td><td class="fielddoc">
+<p>Automatically called by GetStrongRandBytes. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="acb01085e46d55c91f668739b25cc481eab32bd403b93dc6deffdab7af55e82596"></a>SLEEP&#160;</td><td class="fielddoc">
+<p>Called by <a class="el" href="random_8cpp.html#ac625a0557cc78c5412aaefc4afee852a" title="Sleep for 1ms, gather entropy from various sources, and feed them to the PRNG state. ">RandAddSeedSleep()</a> </p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00470">470</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ad5a1de953fbf69ebdf3db0387a8271d3"></a>
 <div class="memitem">
@@ -163,20 +215,32 @@ Functions</h2></td></tr>
 
 <p>Get 32 bytes of system entropy. </p>
 
-<p>Definition at line <a class="el" href="random_8cpp_source.html#l00204">204</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00208">208</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_ad5a1de953fbf69ebdf3db0387a8271d3_cgraph.svg" width="878" height="267"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_ad5a1de953fbf69ebdf3db0387a8271d3_icgraph.svg" width="2274" height="752"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_ad5a1de953fbf69ebdf3db0387a8271d3_icgraph.svg" width="1970" height="480"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a27d9149d522b1fa87d84e5e9ca902aef"></a>
+<a class="anchor" id="abff7638559e8b1ef5f843dc470c2e46e"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">uint64_t GetRand </td>
@@ -186,29 +250,39 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random_8cpp_source.html#l00354">354</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00519">519</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_a27d9149d522b1fa87d84e5e9ca902aef_cgraph.svg" width="250" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_abff7638559e8b1ef5f843dc470c2e46e_cgraph.svg" width="295" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_a27d9149d522b1fa87d84e5e9ca902aef_icgraph.svg" width="1976" height="743"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_abff7638559e8b1ef5f843dc470c2e46e_icgraph.svg" width="1976" height="743"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="ada0c29949c4d1ac0cc027d93c4771423"></a>
+<a class="anchor" id="a6ee67373bce34cf387d83c86b438ff84"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void GetRandBytes </td>
@@ -228,24 +302,60 @@ Here is the caller graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Functions to gather random data via the OpenSSL PRNG. </p>
+<p>Overall design of the RNG and entropy sources. </p>
+<p>We maintain a single global 256-bit RNG state for all high-quality randomness. The following (classes of) functions interact with that state by mixing in new entropy, and optionally extracting random output from it:</p>
+<ul>
+<li>The GetRand*() class of functions, as well as construction of <a class="el" href="class_fast_random_context.html" title="Fast randomness source. ">FastRandomContext</a> objects, perform 'fast' seeding, consisting of mixing in:<ul>
+<li>A stack pointer (indirectly committing to calling thread and call stack)</li>
+<li>A high-precision timestamp (rdtsc when available, c++ high_resolution_clock otherwise)</li>
+<li>Hardware RNG (rdrand) when available. These entropy sources are very fast, and only designed to protect against situations where a VM state restore/copy results in multiple systems with the same randomness. <a class="el" href="class_fast_random_context.html" title="Fast randomness source. ">FastRandomContext</a> on the other hand does not protect against this once created, but is even faster (and acceptable to use inside tight loops).</li>
+</ul>
+</li>
+<li>The GetStrongRand*() class of function perform 'slow' seeding, including everything that fast seeding includes, but additionally:<ul>
+<li>OS entropy (/dev/urandom, getrandom(), ...). The application will terminate if this entropy source fails.</li>
+<li>Bytes from OpenSSL's RNG (which itself may be seeded from various sources)</li>
+<li>Another high-precision timestamp (indirectly committing to a benchmark of all the previous sources). These entropy sources are slower, but designed to make sure the RNG state contains fresh data that is unpredictable to attackers.</li>
+</ul>
+</li>
+<li><a class="el" href="random_8h.html#ac625a0557cc78c5412aaefc4afee852a" title="Sleep for 1ms, gather entropy from various sources, and feed them to the PRNG state. ">RandAddSeedSleep()</a> seeds everything that fast seeding includes, but additionally:<ul>
+<li>A high-precision timestamp before and after sleeping 1ms.</li>
+<li>(On Windows) Once every 10 minutes, performance monitoring data from the OS. These just exploit the fact the system is idle to improve the quality of the RNG slightly.</li>
+</ul>
+</li>
+</ul>
+<p>On first use of the RNG (regardless of what function is called first), all entropy sources used in the 'slow' seeder are included, but also:</p><ul>
+<li>(On Windows) Performance monitoring data from the OS.</li>
+<li>(On Windows) Through OpenSSL, the screen contents.</li>
+</ul>
+<p>When mixing in new entropy, H = SHA512(entropy || old_rng_state) is computed, and (up to) the first 32 bytes of H are produced as output, while the last 32 bytes become the new RNG state. Generate random data via the internal PRNG.</p>
+<p>These functions are designed to be fast (sub microsecond), but do not necessarily meaningfully add entropy to the PRNG state.</p>
+<p>Thread-safe. </p>
 
-<p>Definition at line <a class="el" href="random_8cpp_source.html#l00275">275</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00513">513</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_ada0c29949c4d1ac0cc027d93c4771423_icgraph.svg" width="1422" height="1563"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_a6ee67373bce34cf387d83c86b438ff84_icgraph.svg" width="1767" height="1134"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="af3aedae75efabb170337a497457f7ecf"></a>
+<a class="anchor" id="a88672f91432a247654f2c06298dd58ee"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classuint256.html">uint256</a> GetRandHash </td>
@@ -254,29 +364,39 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random_8cpp_source.html#l00374">374</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00529">529</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_af3aedae75efabb170337a497457f7ecf_cgraph.svg" width="283" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_a88672f91432a247654f2c06298dd58ee_cgraph.svg" width="283" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_af3aedae75efabb170337a497457f7ecf_icgraph.svg" width="1794" height="2392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_a88672f91432a247654f2c06298dd58ee_icgraph.svg" width="1962" height="2170"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a0e44e088732172da6662db2d5e37d4b2"></a>
+<a class="anchor" id="ae518f187cf4aa836b705462977c3981a"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int GetRandInt </td>
@@ -286,35 +406,45 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random_8cpp_source.html#l00369">369</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00524">524</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_a0e44e088732172da6662db2d5e37d4b2_cgraph.svg" width="391" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_ae518f187cf4aa836b705462977c3981a_cgraph.svg" width="436" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_a0e44e088732172da6662db2d5e37d4b2_icgraph.svg" width="1138" height="468"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_ae518f187cf4aa836b705462977c3981a_icgraph.svg" width="1138" height="468"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="ad3431dd191f6ae9977f482c150da3d6f"></a>
+<a class="anchor" id="a72ecdcabd16ee4b868d96beaa9a2f188"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void GetStrongRandBytes </td>
           <td>(</td>
           <td class="paramtype">unsigned char *&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
+          <td class="paramname"><em>buf</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -328,54 +458,80 @@ Here is the caller graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Function to gather random data from multiple sources, failing whenever any of those sources fail to provide a result. </p>
+<p>Gather entropy from various sources, feed it into the internal PRNG, and generate random data using it. </p>
+<p>This function will cause failure whenever the OS RNG fails.</p>
+<p>Thread-safe. </p>
 
-<p>Definition at line <a class="el" href="random_8cpp_source.html#l00319">319</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_ad3431dd191f6ae9977f482c150da3d6f_cgraph.svg" width="892" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00514">514</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_ad3431dd191f6ae9977f482c150da3d6f_icgraph.svg" width="2119" height="666"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_a72ecdcabd16ee4b868d96beaa9a2f188_icgraph.svg" width="2119" height="666"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="ab699fbdf803610a4e2060fd87787f7e0"></a>
+<a class="anchor" id="a5b44800604cfaf321ec4836c5a30ec0e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void RandAddSeed </td>
+          <td class="memname">void LockingCallbackOpenSSL </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random_8cpp_source.html#l00132">132</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00369">369</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_ab699fbdf803610a4e2060fd87787f7e0_cgraph.svg" width="303" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_a5b44800604cfaf321ec4836c5a30ec0e_cgraph.svg" width="1063" height="234"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_ab699fbdf803610a4e2060fd87787f7e0_icgraph.svg" width="418" height="87"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_a5b44800604cfaf321ec4836c5a30ec0e_icgraph.svg" width="1826" height="480"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -394,17 +550,10 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Add a little bit of randomness to the output of GetStrongRangBytes. </p>
-<p>This sleeps for a millisecond, so should only be called when there is no other work to be done. </p>
+<p>Sleep for 1ms, gather entropy from various sources, and feed them to the PRNG state. </p>
+<p>Thread-safe. </p>
 
-<p>Definition at line <a class="el" href="random_8cpp_source.html#l00284">284</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_ac625a0557cc78c5412aaefc4afee852a_cgraph.svg" width="884" height="215"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00515">515</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -430,12 +579,13 @@ Here is the caller graph for this function:</div>
 
 <p>Check that OS randomness is available and returning the requested number of bytes. </p>
 
-<p>Definition at line <a class="el" href="random_8cpp_source.html#l00414">414</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00569">569</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_a7fb6c441a23070a7f510fd48b5ca2a18_cgraph.svg" width="1226" height="747"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_a7fb6c441a23070a7f510fd48b5ca2a18_cgraph.svg" width="1244" height="956"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -461,23 +611,40 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize the RNG. </p>
+<p>Initialize global RNG state and log any CPU features that are used. </p>
+<p>Calling this function is optional. RNG state will be initialized when first needed if it is not called. </p>
 
-<p>Definition at line <a class="el" href="random_8cpp_source.html#l00481">481</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00638">638</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_aa4c101f3cf6614b5922770a6f5ca7209_icgraph.svg" width="1302" height="480"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="random_8cpp_aa4c101f3cf6614b5922770a6f5ca7209_icgraph.svg" width="1302" height="480"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a383ba0931c57b45e70b767187f505b05"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool g_mock_deterministic_tests {false}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00517">517</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 21 2019 00:41:41 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 5 2019 04:11:11 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

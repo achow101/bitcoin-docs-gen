@@ -2,6 +2,7 @@ var searchData=
 [
   ['handleaddressbookchanged',['handleAddressBookChanged',['../classinterfaces_1_1_wallet.html#ad8be5a4fb852c3bd41967218cdb015b5',1,'interfaces::Wallet']]],
   ['handlebannedlistchanged',['handleBannedListChanged',['../classinterfaces_1_1_node.html#aafa49a069e6c431edd3d318924757359',1,'interfaces::Node']]],
+  ['handlecangetaddresseschanged',['handleCanGetAddressesChanged',['../classinterfaces_1_1_wallet.html#a36b3e28f1acb53ddbba18f634c6944cf',1,'interfaces::Wallet']]],
   ['handleerror',['HandleError',['../namespacedbwrapper__private.html#a69015f423e1a3c2bcf387e4a208c3c36',1,'dbwrapper_private']]],
   ['handleinitmessage',['handleInitMessage',['../classinterfaces_1_1_node.html#a66bef8c0f6d31af98de5309c5b41932d',1,'interfaces::Node']]],
   ['handleloadwallet',['handleLoadWallet',['../classinterfaces_1_1_node.html#acc99a5ba1173402cb0b3535cdb65bf87',1,'interfaces::Node']]],
@@ -38,6 +39,7 @@ var searchData=
   ['haswalletsupport',['HasWalletSupport',['../class_dummy_wallet_init.html#abfa30b2845904be357b8c0b2b5de192e',1,'DummyWalletInit::HasWalletSupport()'],['../class_wallet_init.html#ae7a01f085f3d6c05fc97d910a7159fd8',1,'WalletInit::HasWalletSupport()'],['../class_wallet_init_interface.html#a103d3e3b3b14bf4ef8a6c47cf995393a',1,'WalletInitInterface::HasWalletSupport()']]],
   ['haswitness',['HasWitness',['../class_c_transaction.html#adc7bc3ff623754f511fe7852592c136c',1,'CTransaction::HasWitness()'],['../struct_c_mutable_transaction.html#a2f3e68714708ca9703fc7041853dd5e3',1,'CMutableTransaction::HasWitness()']]],
   ['have_5fflag',['have_flag',['../bench__internal_8c.html#a11ad6602b2858a905ba935d8002639db',1,'bench_internal.c']]],
+  ['haveblockondisk',['haveBlockOnDisk',['../classinterfaces_1_1_chain_1_1_lock.html#aaf0c0c0053b38e2b0d80e93bae1a6a8e',1,'interfaces::Chain::Lock']]],
   ['havecoin',['HaveCoin',['../class_c_coins_view.html#a68309b189f669dd874b0d857095bb463',1,'CCoinsView::HaveCoin()'],['../class_c_coins_view_backed.html#a14265b7d1864f2817d23b257d8342a38',1,'CCoinsViewBacked::HaveCoin()'],['../class_c_coins_view_cache.html#af097128dca85eb8f94b864015d839d46',1,'CCoinsViewCache::HaveCoin()'],['../class_c_coins_view_d_b.html#a3fcf56cd1715d603eccacc500ef03609',1,'CCoinsViewDB::HaveCoin()']]],
   ['havecoinincache',['HaveCoinInCache',['../class_c_coins_view_cache.html#a8797ac75fd9b777363c627a033b8ddd5',1,'CCoinsViewCache']]],
   ['havecscript',['HaveCScript',['../class_c_key_store.html#a51c9fc86b2c3fece10d86146231fa58d',1,'CKeyStore::HaveCScript()'],['../class_c_basic_key_store.html#ad7d3983c6d1f1396896d4304b6437028',1,'CBasicKeyStore::HaveCScript()']]],

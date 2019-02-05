@@ -1,4 +1,20 @@
 <map id="interfaces::Chain::Lock::~Lock" name="interfaces::Chain::Lock::~Lock">
-<area shape="rect" id="node2" href="$classinterfaces_1_1_chain.html#ad3a8681b5aeabaebe0e31ee762aa53da" title="Return Lock interface. " alt="" coords="191,5,353,32"/>
-<area shape="rect" id="node3" href="$classinterfaces_1_1_chain.html#ab5fb8952fb4e44b4d6ecb2f34a783e85" title="Return Lock interface assuming chain is already locked. " alt="" coords="203,57,341,98"/>
+<area shape="rect" id="node2" href="$classinterfaces_1_1_chain_1_1_lock.html#acd6970b05caec9c0f257355413ab9c5d" title="Get current chain height, not including genesis block (returns 0 if chain only contains genesis block..." alt="" coords="231,5,369,47"/>
+<area shape="rect" id="node3" href="$classinterfaces_1_1_chain_1_1_lock.html#af6735230c0e9c82305a9d59e04ac666e" title="Get block height above genesis block. " alt="" coords="222,71,378,112"/>
+<area shape="rect" id="node4" href="$classinterfaces_1_1_chain_1_1_lock.html#a151dbafe7a2b47de7749829909b4d72e" title="Get block depth. " alt="" coords="223,136,377,177"/>
+<area shape="rect" id="node5" href="$classinterfaces_1_1_chain_1_1_lock.html#abf8260c51bd24dee60ef69441a4c7061" title="Get block hash. Height must be valid or this function will abort. " alt="" coords="227,201,373,243"/>
+<area shape="rect" id="node6" href="$classinterfaces_1_1_chain_1_1_lock.html#a70f3cae68f585292dbff5d94fb910c88" title="Get block time. Height must be valid or this function will abort. " alt="" coords="227,267,373,308"/>
+<area shape="rect" id="node7" href="$classinterfaces_1_1_chain_1_1_lock.html#ad1e1c91bb42592ac567f61c5c82bbd0d" title="Get block median time past. " alt="" coords="191,332,409,373"/>
+<area shape="rect" id="node8" href="$classinterfaces_1_1_chain_1_1_lock.html#aaf0c0c0053b38e2b0d80e93bae1a6a8e" title="Check that the block is available on disk (i.e. " alt="" coords="215,397,385,439"/>
+<area shape="rect" id="node9" href="$classinterfaces_1_1_chain_1_1_lock.html#a29bf92cc65ba43f3ec58f891be23a954" title="Return height of the first block in the chain with timestamp equal or greater than the given time..." alt="" coords="200,463,400,504"/>
+<area shape="rect" id="node10" href="$classinterfaces_1_1_chain_1_1_lock.html#a9945dc506e6606a46b987eccbe128b5b" title="Return height of the first block in the chain with timestamp equal or greater than the given time and..." alt="" coords="200,527,400,583"/>
+<area shape="rect" id="node11" href="$classinterfaces_1_1_chain_1_1_lock.html#acce7b2ac050252e9aa47025fff70cf0b" title="Return height of last block in the specified range which is pruned, or nullopt if no block in the ran..." alt="" coords="231,607,369,648"/>
+<area shape="rect" id="node12" href="$classinterfaces_1_1_chain_1_1_lock.html#a0fde9fb0229d2dda8247e2f3f525f2a0" title="Return height of the highest block on the chain that is an ancestor of the specified block..." alt="" coords="231,672,369,713"/>
+<area shape="rect" id="node13" href="$classinterfaces_1_1_chain_1_1_lock.html#a185abdb8e7c6dc96129b246d5760f984" title="Return true if block hash points to the current chain tip, or to a possible descendant of the current..." alt="" coords="229,737,371,779"/>
+<area shape="rect" id="node14" href="$classinterfaces_1_1_chain_1_1_lock.html#a03e780ea358e268f3a9bff7b11c7490e" title="Get locator for the current chain tip. " alt="" coords="231,803,369,844"/>
+<area shape="rect" id="node15" href="$classinterfaces_1_1_chain_1_1_lock.html#ae29af2aec694b4c5408ddc25a37b682a" title="Return height of the latest block common to locator and chain, which is guaranteed to be an ancestor ..." alt="" coords="221,868,379,909"/>
+<area shape="rect" id="node16" href="$classinterfaces_1_1_chain.html#ad3a8681b5aeabaebe0e31ee762aa53da" title="Return Lock interface. " alt="" coords="219,934,381,961"/>
+<area shape="rect" id="node17" href="$classinterfaces_1_1_chain.html#ab5fb8952fb4e44b4d6ecb2f34a783e85" title="Return Lock interface assuming chain is already locked. " alt="" coords="231,985,369,1027"/>
+<area shape="rect" id="node18" href="$classinterfaces_1_1_chain.html#a134d392dd907e3843949a6ae110321f2" title="Return whether node has the block and optionally return block metadata or contents. " alt="" coords="231,1051,369,1092"/>
+<area shape="rect" id="node19" href="$classinterfaces_1_1_chain.html#a96232e28fad3f0ad72e6f6a9aa46f3c6" title="Estimate fraction of total transactions verified if blocks up to the specified block hash are verifie..." alt="" coords="207,1116,393,1157"/>
 </map>

@@ -63,7 +63,7 @@ var searchData=
   ['addtoprocessqueue',['AddToProcessQueue',['../class_single_threaded_scheduler_client.html#a627fd930cb0b0a84660a9698ee4d3fdc',1,'SingleThreadedSchedulerClient']]],
   ['addtospends',['AddToSpends',['../group__map_wallet.html#gad87827a3161e8767ac2ba7a6177579d7',1,'CWallet::AddToSpends(const COutPoint &amp;outpoint, const uint256 &amp;wtxid) EXCLUSIVE_LOCKS_REQUIRED(cs_wallet)'],['../group__map_wallet.html#ga952ef7d10f5d6a0422796de0a809a88c',1,'CWallet::AddToSpends(const uint256 &amp;wtxid) EXCLUSIVE_LOCKS_REQUIRED(cs_wallet)']]],
   ['addtowallet',['AddToWallet',['../group__map_wallet.html#ga71c829a50abbcd74c1884b1f86527755',1,'CWallet']]],
-  ['addtowalletifinvolvingme',['AddToWalletIfInvolvingMe',['../group__map_wallet.html#gaee8f634287d083737471595f658da519',1,'CWallet']]],
+  ['addtowalletifinvolvingme',['AddToWalletIfInvolvingMe',['../group__map_wallet.html#ga36dd8c1759c6c640232c5795b225c933',1,'CWallet']]],
   ['addtransaction',['addTransaction',['../struct_disconnected_block_transactions.html#ab4b218d76bfc674cd32fe7d3319fbf66',1,'DisconnectedBlockTransactions']]],
   ['addtransactionsupdated',['AddTransactionsUpdated',['../class_c_tx_mem_pool.html#a3039b67e5eebaa3ff830261c192816f2',1,'CTxMemPool']]],
   ['addtx',['AddTx',['../class_list_coins_testing_setup.html#a8ce37c5d8d073c901b91153f83c47ee8',1,'ListCoinsTestingSetup']]],

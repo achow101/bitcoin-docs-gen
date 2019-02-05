@@ -3,6 +3,7 @@ var searchData=
   ['safedbt',['SafeDbt',['../class_berkeley_batch_1_1_safe_dbt.html',1,'BerkeleyBatch']]],
   ['saltedoutpointhasher',['SaltedOutpointHasher',['../class_salted_outpoint_hasher.html',1,'']]],
   ['saltedtxidhasher',['SaltedTxidHasher',['../class_salted_txid_hasher.html',1,'']]],
+  ['scanresult',['ScanResult',['../struct_c_wallet_1_1_scan_result.html',1,'CWallet']]],
   ['scriptnum_5ferror',['scriptnum_error',['../classscriptnum__error.html',1,'']]],
   ['secp256k1_5fcallback',['secp256k1_callback',['../structsecp256k1__callback.html',1,'']]],
   ['secp256k1_5fcontext_5fstruct',['secp256k1_context_struct',['../structsecp256k1__context__struct.html',1,'']]],

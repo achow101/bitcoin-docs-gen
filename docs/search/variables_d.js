@@ -139,6 +139,7 @@ var searchData=
   ['notifyaddressbookchanged',['NotifyAddressBookChanged',['../class_c_wallet.html#a793db3da2b7cbbe90494e7a6208076b7',1,'CWallet']]],
   ['notifyalertchanged',['NotifyAlertChanged',['../struct_u_i_signals.html#a254bfd4b12d5622b8bb9b7439e3c401d',1,'UISignals']]],
   ['notifyblocktip',['NotifyBlockTip',['../struct_u_i_signals.html#a4a0e4adc087889cd7c2c7ebf67c84dd0',1,'UISignals']]],
+  ['notifycangetaddresseschanged',['NotifyCanGetAddressesChanged',['../class_c_wallet.html#a8ec9af7fd85cfa590ea7e4d091ebed6c',1,'CWallet']]],
   ['notifyentryadded',['NotifyEntryAdded',['../class_c_tx_mem_pool.html#a2b164de14ffe2b255bf1510faac3e06c',1,'CTxMemPool']]],
   ['notifyentryremoved',['NotifyEntryRemoved',['../class_c_tx_mem_pool.html#ad20d466f2c37008f1a1fcf37e01d509d',1,'CTxMemPool']]],
   ['notifyheadertip',['NotifyHeaderTip',['../struct_u_i_signals.html#a2ef442e57aa69012ad149be45a45a5a7',1,'UISignals']]],

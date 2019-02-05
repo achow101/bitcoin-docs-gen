@@ -118,12 +118,13 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a62bf19db5dc92ca7db4c454d44a4dd2c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_berkeley_environment.html#a62bf19db5dc92ca7db4c454d44a4dd2c">BerkeleyEnvironment</a> (const fs::path &amp;env_directory)</td></tr>
 <tr class="separator:a62bf19db5dc92ca7db4c454d44a4dd2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec772ec512f6642d76cc9c6e56959704"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_berkeley_environment.html#aec772ec512f6642d76cc9c6e56959704">BerkeleyEnvironment</a> ()</td></tr>
+<tr class="memdesc:aec772ec512f6642d76cc9c6e56959704"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an in-memory mock Berkeley environment for testing and as a place-holder for g_dbenvs emplace.  <a href="#aec772ec512f6642d76cc9c6e56959704">More...</a><br /></td></tr>
+<tr class="separator:aec772ec512f6642d76cc9c6e56959704"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adab8b3d1eb8f5b399eca23519e9662d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_berkeley_environment.html#adab8b3d1eb8f5b399eca23519e9662d1">~BerkeleyEnvironment</a> ()</td></tr>
 <tr class="separator:adab8b3d1eb8f5b399eca23519e9662d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a825b4ec0595a609f84317453e2727211"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_berkeley_environment.html#a825b4ec0595a609f84317453e2727211">Reset</a> ()</td></tr>
 <tr class="separator:a825b4ec0595a609f84317453e2727211"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15c2c90dfdb1135c55523d7f61b670fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_berkeley_environment.html#a15c2c90dfdb1135c55523d7f61b670fc">MakeMock</a> ()</td></tr>
-<tr class="separator:a15c2c90dfdb1135c55523d7f61b670fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd99b4bb577f07cf7bd23637b08e6b9e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_berkeley_environment.html#abd99b4bb577f07cf7bd23637b08e6b9e">IsMock</a> () const </td></tr>
 <tr class="separator:abd99b4bb577f07cf7bd23637b08e6b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cba06993540d9c07ec12b67e5e9d474"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_berkeley_environment.html#a3cba06993540d9c07ec12b67e5e9d474">IsInitialized</a> () const </td></tr>
@@ -257,12 +258,39 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="db_8cpp_source.html#l00133">133</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
+<p>Definition at line <a class="el" href="db_8cpp_source.html#l00143">143</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_environment_a62bf19db5dc92ca7db4c454d44a4dd2c_cgraph.svg" width="384" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aec772ec512f6642d76cc9c6e56959704"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BerkeleyEnvironment::BerkeleyEnvironment </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct an in-memory mock Berkeley environment for testing and as a place-holder for g_dbenvs emplace. </p>
+
+<p>Definition at line <a class="el" href="db_8cpp_source.html#l00230">230</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_environment_aec772ec512f6642d76cc9c6e56959704_cgraph.svg" width="384" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -281,7 +309,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="db_8cpp_source.html#l00138">138</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
+<p>Definition at line <a class="el" href="db_8cpp_source.html#l00148">148</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -307,7 +335,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="db_8cpp_source.html#l00492">492</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
+<p>Definition at line <a class="el" href="db_8cpp_source.html#l00504">504</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -331,12 +359,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="db_8cpp_source.html#l00102">102</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
+<p>Definition at line <a class="el" href="db_8cpp_source.html#l00112">112</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_environment_a7cc70622c474660323b65b691d371023_icgraph.svg" width="420" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_environment_a7cc70622c474660323b65b691d371023_icgraph.svg" width="395" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -356,7 +385,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="db_8cpp_source.html#l00617">617</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
+<p>Definition at line <a class="el" href="db_8cpp_source.html#l00629">629</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -393,7 +422,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_environment_a2c65d3d0c70cc1a9e52860dfe2100e11_icgraph.svg" width="1270" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_environment_a2c65d3d0c70cc1a9e52860dfe2100e11_icgraph.svg" width="412" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -413,12 +443,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="db_8cpp_source.html#l00747">747</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
+<p>Definition at line <a class="el" href="db_8cpp_source.html#l00759">759</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_environment_ac889c4eb2edf8143204e3bbaeab61303_cgraph.svg" width="1242" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_environment_ac889c4eb2edf8143204e3bbaeab61303_cgraph.svg" width="1242" height="194"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -458,7 +489,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_environment_a63d2d5ed67f86302a6db3b4db1dd036a_icgraph.svg" width="1792" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_environment_a63d2d5ed67f86302a6db3b4db1dd036a_icgraph.svg" width="987" height="151"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -521,30 +553,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a15c2c90dfdb1135c55523d7f61b670fc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void BerkeleyEnvironment::MakeMock </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="db_8cpp_source.html#l00217">217</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_environment_a15c2c90dfdb1135c55523d7f61b670fc_icgraph.svg" width="420" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
-
-</div>
-</div>
 <a class="anchor" id="a377e27a4fe936bf73091c6b0560492fd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -560,19 +568,21 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>debug </p>
 
-<p>Definition at line <a class="el" href="db_8cpp_source.html#l00143">143</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
+<p>Definition at line <a class="el" href="db_8cpp_source.html#l00155">155</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_environment_a377e27a4fe936bf73091c6b0560492fd_cgraph.svg" width="1834" height="1320"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_environment_a377e27a4fe936bf73091c6b0560492fd_cgraph.svg" width="1834" height="1320"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_environment_a377e27a4fe936bf73091c6b0560492fd_icgraph.svg" width="1268" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_environment_a377e27a4fe936bf73091c6b0560492fd_icgraph.svg" width="432" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -591,12 +601,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="db_8cpp_source.html#l00632">632</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
+<p>Definition at line <a class="el" href="db_8cpp_source.html#l00644">644</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_environment_a2bb5277700853996eaaeb4d13b9b917b_cgraph.svg" width="1036" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_environment_a2bb5277700853996eaaeb4d13b9b917b_cgraph.svg" width="1036" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -622,12 +633,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="db_8cpp_source.html#l00126">126</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
+<p>Definition at line <a class="el" href="db_8cpp_source.html#l00136">136</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_environment_a825b4ec0595a609f84317453e2727211_icgraph.svg" width="1519" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_environment_a825b4ec0595a609f84317453e2727211_icgraph.svg" width="647" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -663,19 +675,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="db_8cpp_source.html#l00431">431</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
+<p>Definition at line <a class="el" href="db_8cpp_source.html#l00443">443</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_environment_ad46d4e55a431a0701e1a6e4d9f36590e_cgraph.svg" width="575" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_environment_ad46d4e55a431a0701e1a6e4d9f36590e_icgraph.svg" width="1406" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -708,14 +713,16 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_environment_a9cd3582d09828aedb10d8ac3c9065dad_cgraph.svg" width="540" height="96"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_environment_a9cd3582d09828aedb10d8ac3c9065dad_cgraph.svg" width="540" height="96"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_environment_a9cd3582d09828aedb10d8ac3c9065dad_icgraph.svg" width="1422" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_environment_a9cd3582d09828aedb10d8ac3c9065dad_icgraph.svg" width="608" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -751,14 +758,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="db_8cpp_source.html#l00249">249</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_berkeley_environment_a7ff8fa4ca71a32b5ee8ecaed23dd31f8_icgraph.svg" width="1270" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
+<p>Definition at line <a class="el" href="db_8cpp_source.html#l00261">261</a> of file <a class="el" href="db_8cpp_source.html">db.cpp</a>.</p>
 
 </div>
 </div>
@@ -906,7 +906,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 21 2019 00:41:49 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 5 2019 04:11:14 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

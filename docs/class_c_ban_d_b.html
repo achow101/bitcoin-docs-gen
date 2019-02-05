@@ -103,8 +103,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aaa72a14ee1c95a75cd5be52ffac0386b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ban_d_b.html#aaa72a14ee1c95a75cd5be52ffac0386b">CBanDB</a> ()</td></tr>
-<tr class="separator:aaa72a14ee1c95a75cd5be52ffac0386b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade8ac28917979755415486bdad0de16e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ban_d_b.html#ade8ac28917979755415486bdad0de16e">CBanDB</a> (fs::path ban_list_path)</td></tr>
+<tr class="separator:ade8ac28917979755415486bdad0de16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0550a06c6b5987869f557467fe7f9896"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ban_d_b.html#a0550a06c6b5987869f557467fe7f9896">Write</a> (const <a class="el" href="addrdb_8h.html#af9675d81650e48d20ae495adf73da102">banmap_t</a> &amp;banSet)</td></tr>
 <tr class="separator:a0550a06c6b5987869f557467fe7f9896"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3bb0e398409c933bf79a9af56c807f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ban_d_b.html#aa3bb0e398409c933bf79a9af56c807f2">Read</a> (<a class="el" href="addrdb_8h.html#af9675d81650e48d20ae495adf73da102">banmap_t</a> &amp;banSet)</td></tr>
@@ -112,35 +112,37 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a1932cc0a6f0801f84daeaaf0d1adf878"><td class="memItemLeft" align="right" valign="top">fs::path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ban_d_b.html#a1932cc0a6f0801f84daeaaf0d1adf878">pathBanlist</a></td></tr>
-<tr class="separator:a1932cc0a6f0801f84daeaaf0d1adf878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a178b88fa16d853849163bf975254502c"><td class="memItemLeft" align="right" valign="top">const fs::path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ban_d_b.html#a178b88fa16d853849163bf975254502c">m_ban_list_path</a></td></tr>
+<tr class="separator:a178b88fa16d853849163bf975254502c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Access to the banlist database (banlist.dat) </p>
 
-<p>Definition at line <a class="el" href="addrdb_8h_source.html#l00092">92</a> of file <a class="el" href="addrdb_8h_source.html">addrdb.h</a>.</p>
+<p>Definition at line <a class="el" href="addrdb_8h_source.html#l00097">97</a> of file <a class="el" href="addrdb_8h_source.html">addrdb.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aaa72a14ee1c95a75cd5be52ffac0386b"></a>
+<a class="anchor" id="ade8ac28917979755415486bdad0de16e"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">CBanDB::CBanDB </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">fs::path&#160;</td>
+          <td class="paramname"><em>ban_list_path</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="addrdb_8cpp_source.html#l00108">108</a> of file <a class="el" href="addrdb_8cpp_source.html">addrdb.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_ban_d_b_aaa72a14ee1c95a75cd5be52ffac0386b_cgraph.svg" width="998" height="252"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
 
 </div>
 </div>
@@ -159,12 +161,13 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="addrdb_8cpp_source.html#l00118">118</a> of file <a class="el" href="addrdb_8cpp_source.html">addrdb.cpp</a>.</p>
+<p>Definition at line <a class="el" href="addrdb_8cpp_source.html#l00117">117</a> of file <a class="el" href="addrdb_8cpp_source.html">addrdb.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_ban_d_b_aa3bb0e398409c933bf79a9af56c807f2_icgraph.svg" width="307" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_ban_d_b_aa3bb0e398409c933bf79a9af56c807f2_icgraph.svg" width="308" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -184,19 +187,20 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="addrdb_8cpp_source.html#l00113">113</a> of file <a class="el" href="addrdb_8cpp_source.html">addrdb.cpp</a>.</p>
+<p>Definition at line <a class="el" href="addrdb_8cpp_source.html#l00112">112</a> of file <a class="el" href="addrdb_8cpp_source.html">addrdb.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_ban_d_b_a0550a06c6b5987869f557467fe7f9896_icgraph.svg" width="999" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_ban_d_b_a0550a06c6b5987869f557467fe7f9896_icgraph.svg" width="550" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a1932cc0a6f0801f84daeaaf0d1adf878"></a>
+<a class="anchor" id="a178b88fa16d853849163bf975254502c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -204,7 +208,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">fs::path CBanDB::pathBanlist</td>
+          <td class="memname">const fs::path CBanDB::m_ban_list_path</td>
         </tr>
       </table>
   </td>
@@ -214,7 +218,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="addrdb_8h_source.html#l00095">95</a> of file <a class="el" href="addrdb_8h_source.html">addrdb.h</a>.</p>
+<p>Definition at line <a class="el" href="addrdb_8h_source.html#l00100">100</a> of file <a class="el" href="addrdb_8h_source.html">addrdb.h</a>.</p>
 
 </div>
 </div>
@@ -225,7 +229,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 21 2019 00:41:49 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 5 2019 04:11:15 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -32,7 +32,6 @@ var searchData=
   ['input',['input',['../class_cha_cha20.html#a95cd2d6adfd477a46c4bd95c1658ea1b',1,'ChaCha20']]],
   ['inputs',['inputs',['../struct_partially_signed_transaction.html#a819c009786b34cfe379a46d2cea7db72',1,'PartiallySignedTransaction']]],
   ['insecure_5frand',['insecure_rand',['../class_c_addr_man.html#a1b3363a376e6a01f22e3a89fd53a3cd3',1,'CAddrMan::insecure_rand()'],['../class_fee_filter_rounder.html#a2ead1ef520cdb046d4775eb478426533',1,'FeeFilterRounder::insecure_rand()']]],
-  ['instance_5fof_5fcinit',['instance_of_cinit',['../system_8cpp.html#a510877804e96f753028e87b2359258c2',1,'system.cpp']]],
   ['instance_5fof_5fcmaincleanup',['instance_of_cmaincleanup',['../validation_8cpp.html#ab6d68cfd5d324de04347be2061768643',1,'validation.cpp']]],
   ['instance_5fof_5fcnetcleanup',['instance_of_cnetcleanup',['../net_8cpp.html#ae560d3fdf794873af9a1212644985fdd',1,'net.cpp']]],
   ['instance_5fof_5fcnetprocessingcleanup',['instance_of_cnetprocessingcleanup',['../net__processing_8cpp.html#a450d2be8350b29dcb4f3adc3325f56b2',1,'net_processing.cpp']]],

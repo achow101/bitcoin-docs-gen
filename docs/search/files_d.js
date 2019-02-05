@@ -3,6 +3,7 @@ var searchData=
   ['object_2ecpp',['object.cpp',['../object_8cpp.html',1,'']]],
   ['openuridialog_2ecpp',['openuridialog.cpp',['../openuridialog_8cpp.html',1,'']]],
   ['openuridialog_2eh',['openuridialog.h',['../openuridialog_8h.html',1,'']]],
+  ['optional_2eh',['optional.h',['../optional_8h.html',1,'']]],
   ['optionsdialog_2ecpp',['optionsdialog.cpp',['../optionsdialog_8cpp.html',1,'']]],
   ['optionsdialog_2eh',['optionsdialog.h',['../optionsdialog_8h.html',1,'']]],
   ['optionsmodel_2ecpp',['optionsmodel.cpp',['../optionsmodel_8cpp.html',1,'']]],

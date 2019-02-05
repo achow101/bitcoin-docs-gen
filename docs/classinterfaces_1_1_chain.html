@@ -121,11 +121,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab5fb8952fb4e44b4d6ecb2f34a783e85"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classinterfaces_1_1_chain_1_1_lock.html">Lock</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#ab5fb8952fb4e44b4d6ecb2f34a783e85">assumeLocked</a> ()=0</td></tr>
 <tr class="memdesc:ab5fb8952fb4e44b4d6ecb2f34a783e85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return <a class="el" href="classinterfaces_1_1_chain_1_1_lock.html" title="Interface for querying locked chain state, used by legacy code that assumes state won&#39;t change betwee...">Lock</a> interface assuming chain is already locked.  <a href="#ab5fb8952fb4e44b4d6ecb2f34a783e85">More...</a><br /></td></tr>
 <tr class="separator:ab5fb8952fb4e44b4d6ecb2f34a783e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a134d392dd907e3843949a6ae110321f2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#a134d392dd907e3843949a6ae110321f2">findBlock</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;hash, <a class="el" href="class_c_block.html">CBlock</a> *block=nullptr, int64_t *time=nullptr, int64_t *max_time=nullptr)=0</td></tr>
+<tr class="memdesc:a134d392dd907e3843949a6ae110321f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether node has the block and optionally return block metadata or contents.  <a href="#a134d392dd907e3843949a6ae110321f2">More...</a><br /></td></tr>
+<tr class="separator:a134d392dd907e3843949a6ae110321f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96232e28fad3f0ad72e6f6a9aa46f3c6"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#a96232e28fad3f0ad72e6f6a9aa46f3c6">guessVerificationProgress</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;block_hash)=0</td></tr>
+<tr class="memdesc:a96232e28fad3f0ad72e6f6a9aa46f3c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate fraction of total transactions verified if blocks up to the specified block hash are verified.  <a href="#a96232e28fad3f0ad72e6f6a9aa46f3c6">More...</a><br /></td></tr>
+<tr class="separator:a96232e28fad3f0ad72e6f6a9aa46f3c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface for giving wallet processes access to blockchain state. </p>
 
-<p>Definition at line <a class="el" href="interfaces_2chain_8h_source.html#l00017">17</a> of file <a class="el" href="interfaces_2chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="interfaces_2chain_8h_source.html#l00023">23</a> of file <a class="el" href="interfaces_2chain_8h_source.html">chain.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac618fba80d2e947f18c3471c9a513f51"></a>
 <div class="memitem">
@@ -148,7 +154,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="interfaces_2chain_8h_source.html#l00020">20</a> of file <a class="el" href="interfaces_2chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="interfaces_2chain_8h_source.html#l00026">26</a> of file <a class="el" href="interfaces_2chain_8h_source.html">chain.h</a>.</p>
 
 </div>
 </div>
@@ -181,6 +187,97 @@ Public Member Functions</h2></td></tr>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_ab5fb8952fb4e44b4d6ecb2f34a783e85_icgraph.svg" width="790" height="130"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a134d392dd907e3843949a6ae110321f2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool interfaces::Chain::findBlock </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classuint256.html">uint256</a> &amp;&#160;</td>
+          <td class="paramname"><em>hash</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_block.html">CBlock</a> *&#160;</td>
+          <td class="paramname"><em>block</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t *&#160;</td>
+          <td class="paramname"><em>time</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t *&#160;</td>
+          <td class="paramname"><em>max_time</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return whether node has the block and optionally return block metadata or contents. </p>
+<p>If a block pointer is provided to retrieve the block contents, and the block exists but doesn't have data (for example due to pruning), the block will be empty and all fields set to null. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_a134d392dd907e3843949a6ae110321f2_icgraph.svg" width="872" height="420"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a96232e28fad3f0ad72e6f6a9aa46f3c6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double interfaces::Chain::guessVerificationProgress </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classuint256.html">uint256</a> &amp;&#160;</td>
+          <td class="paramname"><em>block_hash</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Estimate fraction of total transactions verified if blocks up to the specified block hash are verified. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_a96232e28fad3f0ad72e6f6a9aa46f3c6_icgraph.svg" width="383" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -226,7 +323,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 21 2019 00:41:56 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 5 2019 04:11:21 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

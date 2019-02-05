@@ -107,7 +107,6 @@ var searchData=
   ['cs_5fmaplocalhost',['cs_mapLocalHost',['../net_8cpp.html#a62111271618110807cc534e55c13cb70',1,'cs_mapLocalHost():&#160;net.cpp'],['../net_8h.html#a62111271618110807cc534e55c13cb70',1,'cs_mapLocalHost():&#160;net.cpp']]],
   ['cs_5fnblocksequenceid',['cs_nBlockSequenceId',['../class_c_chain_state.html#ad9e45b0fb23eacbbc2c0675f429d5c3b',1,'CChainState']]],
   ['cs_5fsendprocessing',['cs_sendProcessing',['../class_c_node.html#a02ff160a77ce5439ab4869c08f305190',1,'CNode']]],
-  ['cs_5fsetbanned',['cs_setBanned',['../class_c_connman.html#a734f3771091eeb4cb12aef25c7402469',1,'CConnman']]],
   ['cs_5fsubver',['cs_SubVer',['../class_c_node.html#acf48a43182292a6636c9de3ea7453d72',1,'CNode']]],
   ['cs_5ftotalbytesrecv',['cs_totalBytesRecv',['../class_c_connman.html#a376121b9eccd7ebbe19d3c3c058146d4',1,'CConnman']]],
   ['cs_5ftotalbytessent',['cs_totalBytesSent',['../class_c_connman.html#a50689d29e242bd9070f17bc62d32e90f',1,'CConnman']]],

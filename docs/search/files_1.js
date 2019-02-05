@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['banman_2ecpp',['banman.cpp',['../banman_8cpp.html',1,'']]],
+  ['banman_2eh',['banman.h',['../banman_8h.html',1,'']]],
   ['bantablemodel_2ecpp',['bantablemodel.cpp',['../bantablemodel_8cpp.html',1,'']]],
   ['bantablemodel_2eh',['bantablemodel.h',['../bantablemodel_8h.html',1,'']]],
   ['base_2ecpp',['base.cpp',['../base_8cpp.html',1,'']]],
@@ -24,6 +26,7 @@ var searchData=
   ['bitcoin_2dcli_2ecpp',['bitcoin-cli.cpp',['../bitcoin-cli_8cpp.html',1,'']]],
   ['bitcoin_2dconfig_2eh',['bitcoin-config.h',['../bitcoin-config_8h.html',1,'']]],
   ['bitcoin_2dtx_2ecpp',['bitcoin-tx.cpp',['../bitcoin-tx_8cpp.html',1,'']]],
+  ['bitcoin_2dwallet_2ecpp',['bitcoin-wallet.cpp',['../bitcoin-wallet_8cpp.html',1,'']]],
   ['bitcoin_2ecpp',['bitcoin.cpp',['../bitcoin_8cpp.html',1,'']]],
   ['bitcoin_2eh',['bitcoin.h',['../bitcoin_8h.html',1,'']]],
   ['bitcoinaddressvalidator_2ecpp',['bitcoinaddressvalidator.cpp',['../bitcoinaddressvalidator_8cpp.html',1,'']]],

@@ -5,6 +5,7 @@ var searchData=
   ['faddressesinitialized',['fAddressesInitialized',['../class_c_connman.html#ab07810a88d9b1d7a0309509cf0cadd57',1,'CConnman']]],
   ['fail',['fail',['../struct_estimation_result.html#a33c2840ac6b6392b5c8531b9a163e4ee',1,'EstimationResult']]],
   ['failavg',['failAvg',['../class_tx_confirm_stats.html#a15e96a16f53676ba11a49da19a889d71',1,'TxConfirmStats']]],
+  ['failed_5fblock',['failed_block',['../struct_c_wallet_1_1_scan_result.html#a9f640eb2649f2a817e6d94c932607fb0',1,'CWallet::ScanResult']]],
   ['fallok',['fAllOk',['../class_c_check_queue.html#a0f8ef0bce2f6c6ee71c85215a90ed41e',1,'CCheckQueue']]],
   ['fallowotherinputs',['fAllowOtherInputs',['../class_c_coin_control.html#acd3e8686c8d78535153ed9fd734ef029',1,'CCoinControl']]],
   ['fallowwatchonly',['fAllowWatchOnly',['../class_c_coin_control.html#a83d3144efcfdd0e87467f0b2d98b4302',1,'CCoinControl']]],

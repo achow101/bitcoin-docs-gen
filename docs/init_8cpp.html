@@ -101,6 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#include &lt;<a class="el" href="init_8h_source.html">init.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="addrman_8h_source.html">addrman.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="amount_8h_source.html">amount.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="banman_8h_source.html">banman.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="chain_8h_source.html">chain.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="chainparams_8h_source.html">chainparams.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="checkpoints_8h_source.html">checkpoints.h</a>&gt;</code><br />
@@ -147,11 +148,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;boost/algorithm/string/split.hpp&gt;</code><br />
 <code>#include &lt;boost/thread.hpp&gt;</code><br />
 <code>#include &lt;openssl/crypto.h&gt;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for init.cpp:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="init_8cpp__incl.svg" width="4580" height="500"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 </div>
 <p><a href="init_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -211,6 +207,8 @@ Variables</h2></td></tr>
 <tr class="separator:a152c3d2ceeeaf7a300666dcbcc8bb945"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afad7ee4e7c8698bf63a91a4e80b30ed8"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_peer_logic_validation.html">PeerLogicValidation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8cpp.html#afad7ee4e7c8698bf63a91a4e80b30ed8">peerLogic</a></td></tr>
 <tr class="separator:afad7ee4e7c8698bf63a91a4e80b30ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdaebb72752b2012ad682398425e2683"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_ban_man.html">BanMan</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8cpp.html#abdaebb72752b2012ad682398425e2683">g_banman</a></td></tr>
+<tr class="separator:abdaebb72752b2012ad682398425e2683"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a42e91d203626e60d6c5c4f14cd04e421"></a>
@@ -223,7 +221,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00085">85</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l00090">90</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>
@@ -245,12 +243,13 @@ Variables</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>This can be done before daemonization. Do not call <a class="el" href="init_8h.html#aadf7f77f5efa149dc63b413e86cc63f3">Shutdown()</a> if this function fails. </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>Parameters should be parsed and config file should be read. </dd></dl>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00876">876</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l00882">882</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="init_8cpp_a9a36b6e6dd92e2126a5c955b16553ba5_cgraph.svg" width="842" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="init_8cpp_a9a36b6e6dd92e2126a5c955b16553ba5_cgraph.svg" width="842" height="244"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -273,7 +272,7 @@ Here is the call graph for this function:</div>
 <dl class="section note"><dt>Note</dt><dd>This should only be done after daemonization. Do not call <a class="el" href="init_8h.html#aadf7f77f5efa149dc63b413e86cc63f3">Shutdown()</a> if this function fails. </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>Parameters should be parsed and config file should be read, AppInitSanityChecks should have been called. </dd></dl>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l01175">1175</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l01181">1181</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>
@@ -295,7 +294,7 @@ Here is the call graph for this function:</div>
 <dl class="section note"><dt>Note</dt><dd>This should only be done after daemonization. Call <a class="el" href="init_8h.html#aadf7f77f5efa149dc63b413e86cc63f3">Shutdown()</a> if this function fails. </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>Parameters should be parsed and config file should be read, AppInitLockDataDirectory should have been called. </dd></dl>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l01187">1187</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l01193">1193</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>
@@ -316,12 +315,13 @@ Here is the call graph for this function:</div>
 <dl class="section note"><dt>Note</dt><dd>This can be done before daemonization. Do not call <a class="el" href="init_8h.html#aadf7f77f5efa149dc63b413e86cc63f3">Shutdown()</a> if this function fails. </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>Parameters should be parsed and config file should be read, AppInitBasicSetup should have been called. </dd></dl>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00926">926</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l00932">932</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="init_8cpp_a8c93f3a0ec8f251966c4de603f33e56a_cgraph.svg" width="1406" height="1840"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="init_8cpp_a8c93f3a0ec8f251966c4de603f33e56a_cgraph.svg" width="1406" height="1867"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -344,12 +344,13 @@ Here is the call graph for this function:</div>
 <dl class="section note"><dt>Note</dt><dd>This can be done before daemonization. Do not call <a class="el" href="init_8h.html#aadf7f77f5efa149dc63b413e86cc63f3">Shutdown()</a> if this function fails. </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>Parameters should be parsed and config file should be read, AppInitParameterInteraction should have been called. </dd></dl>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l01154">1154</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l01160">1160</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="init_8cpp_a9b9eb8049d0171e22b36e976d02158a5_cgraph.svg" width="654" height="443"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="init_8cpp_a9b9eb8049d0171e22b36e976d02158a5_cgraph.svg" width="654" height="443"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -372,12 +373,13 @@ Here is the call graph for this function:</div>
 <p>Initialize the logging infrastructure.</p>
 <p>Note that this is called very early in the process lifetime, so you should be careful about what global state you rely on here. </p>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00828">828</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l00834">834</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="init_8cpp_a9c6fd2b1fc6d60ab2f80b2799b0fa81e_cgraph.svg" width="1171" height="322"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="init_8cpp_a9c6fd2b1fc6d60ab2f80b2799b0fa81e_cgraph.svg" width="1171" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -398,12 +400,13 @@ Here is the call graph for this function:</div>
 
 <p>Parameter interaction: change current parameters depending on various rules. </p>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00741">741</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l00747">747</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="init_8cpp_a430da8b19402c5a5ca72eb039cf794d7_cgraph.svg" width="1394" height="459"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="init_8cpp_a430da8b19402c5a5ca72eb039cf794d7_cgraph.svg" width="1426" height="430"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -424,7 +427,7 @@ Here is the call graph for this function:</div>
 
 <p>Interrupt threads. </p>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00146">146</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l00151">151</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -457,12 +460,13 @@ Here is the caller graph for this function:</div>
 
 <p>Returns licensing information (for -version) </p>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00524">524</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l00530">530</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="init_8cpp_ac9e2081343d328ca68b7c4c4793442d2_cgraph.svg" width="806" height="331"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="init_8cpp_ac9e2081343d328ca68b7c4c4793442d2_cgraph.svg" width="806" height="332"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -490,7 +494,7 @@ Here is the caller graph for this function:</div>
 
 <p>Setup the arguments for gArgs. </p>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00321">321</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l00327">327</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -516,12 +520,13 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Note: <a class="el" href="init_8cpp.html#aadf7f77f5efa149dc63b413e86cc63f3">Shutdown()</a> must be able to handle cases in which initialization failed part of the way, for example if the data directory was found to be locked. Be sure that anything that writes files or flushes caches only does this if the respective module was initialized. </p>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00161">161</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l00166">166</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="init_8cpp_aadf7f77f5efa149dc63b413e86cc63f3_cgraph.svg" width="1295" height="1482"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="init_8cpp_aadf7f77f5efa149dc63b413e86cc63f3_cgraph.svg" width="1271" height="1472"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -538,7 +543,21 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00071">71</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l00072">72</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abdaebb72752b2012ad682398425e2683"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="class_ban_man.html">BanMan</a>&gt; g_banman</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l00082">82</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>
@@ -552,7 +571,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00076">76</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l00080">80</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>
@@ -566,14 +585,14 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00077">77</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l00081">81</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 21 2019 00:41:38 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 5 2019 04:11:09 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

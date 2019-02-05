@@ -76,7 +76,6 @@ var searchData=
   ['chmac_5fsha256',['CHMAC_SHA256',['../class_c_h_m_a_c___s_h_a256.html',1,'']]],
   ['chmac_5fsha512',['CHMAC_SHA512',['../class_c_h_m_a_c___s_h_a512.html',1,'']]],
   ['cimportingnow',['CImportingNow',['../struct_c_importing_now.html',1,'']]],
-  ['cinit',['CInit',['../class_c_init.html',1,'']]],
   ['cinputcoin',['CInputCoin',['../class_c_input_coin.html',1,'']]],
   ['cinv',['CInv',['../class_c_inv.html',1,'']]],
   ['ckey',['CKey',['../class_c_key.html',1,'']]],

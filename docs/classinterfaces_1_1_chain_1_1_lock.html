@@ -95,7 +95,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classinterfaces_1_1_chain_1_1_lock-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">interfaces::Chain::Lock Class Reference</div>  </div>
+<div class="title">interfaces::Chain::Lock Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -108,12 +108,54 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aba03076266625fffec4225131fae1746"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_1_1_lock.html#aba03076266625fffec4225131fae1746">~Lock</a> ()</td></tr>
 <tr class="separator:aba03076266625fffec4225131fae1746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd6970b05caec9c0f257355413ab9c5d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="optional_8h.html#ad2d809b9d71f39717698ac42fe339257">Optional</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_1_1_lock.html#acd6970b05caec9c0f257355413ab9c5d">getHeight</a> ()=0</td></tr>
+<tr class="memdesc:acd6970b05caec9c0f257355413ab9c5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current chain height, not including genesis block (returns 0 if chain only contains genesis block, nullopt if chain does not contain any blocks).  <a href="#acd6970b05caec9c0f257355413ab9c5d">More...</a><br /></td></tr>
+<tr class="separator:acd6970b05caec9c0f257355413ab9c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6735230c0e9c82305a9d59e04ac666e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="optional_8h.html#ad2d809b9d71f39717698ac42fe339257">Optional</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_1_1_lock.html#af6735230c0e9c82305a9d59e04ac666e">getBlockHeight</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;hash)=0</td></tr>
+<tr class="memdesc:af6735230c0e9c82305a9d59e04ac666e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get block height above genesis block.  <a href="#af6735230c0e9c82305a9d59e04ac666e">More...</a><br /></td></tr>
+<tr class="separator:af6735230c0e9c82305a9d59e04ac666e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a151dbafe7a2b47de7749829909b4d72e"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_1_1_lock.html#a151dbafe7a2b47de7749829909b4d72e">getBlockDepth</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;hash)=0</td></tr>
+<tr class="memdesc:a151dbafe7a2b47de7749829909b4d72e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get block depth.  <a href="#a151dbafe7a2b47de7749829909b4d72e">More...</a><br /></td></tr>
+<tr class="separator:a151dbafe7a2b47de7749829909b4d72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf8260c51bd24dee60ef69441a4c7061"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classuint256.html">uint256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_1_1_lock.html#abf8260c51bd24dee60ef69441a4c7061">getBlockHash</a> (int height)=0</td></tr>
+<tr class="memdesc:abf8260c51bd24dee60ef69441a4c7061"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get block hash. Height must be valid or this function will abort.  <a href="#abf8260c51bd24dee60ef69441a4c7061">More...</a><br /></td></tr>
+<tr class="separator:abf8260c51bd24dee60ef69441a4c7061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70f3cae68f585292dbff5d94fb910c88"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_1_1_lock.html#a70f3cae68f585292dbff5d94fb910c88">getBlockTime</a> (int height)=0</td></tr>
+<tr class="memdesc:a70f3cae68f585292dbff5d94fb910c88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get block time. Height must be valid or this function will abort.  <a href="#a70f3cae68f585292dbff5d94fb910c88">More...</a><br /></td></tr>
+<tr class="separator:a70f3cae68f585292dbff5d94fb910c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1e1c91bb42592ac567f61c5c82bbd0d"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_1_1_lock.html#ad1e1c91bb42592ac567f61c5c82bbd0d">getBlockMedianTimePast</a> (int height)=0</td></tr>
+<tr class="memdesc:ad1e1c91bb42592ac567f61c5c82bbd0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get block median time past.  <a href="#ad1e1c91bb42592ac567f61c5c82bbd0d">More...</a><br /></td></tr>
+<tr class="separator:ad1e1c91bb42592ac567f61c5c82bbd0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf0c0c0053b38e2b0d80e93bae1a6a8e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_1_1_lock.html#aaf0c0c0053b38e2b0d80e93bae1a6a8e">haveBlockOnDisk</a> (int height)=0</td></tr>
+<tr class="memdesc:aaf0c0c0053b38e2b0d80e93bae1a6a8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that the block is available on disk (i.e.  <a href="#aaf0c0c0053b38e2b0d80e93bae1a6a8e">More...</a><br /></td></tr>
+<tr class="separator:aaf0c0c0053b38e2b0d80e93bae1a6a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29bf92cc65ba43f3ec58f891be23a954"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="optional_8h.html#ad2d809b9d71f39717698ac42fe339257">Optional</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_1_1_lock.html#a29bf92cc65ba43f3ec58f891be23a954">findFirstBlockWithTime</a> (int64_t time, <a class="el" href="classuint256.html">uint256</a> *hash)=0</td></tr>
+<tr class="memdesc:a29bf92cc65ba43f3ec58f891be23a954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return height of the first block in the chain with timestamp equal or greater than the given time, or nullopt if there is no block with a high enough timestamp.  <a href="#a29bf92cc65ba43f3ec58f891be23a954">More...</a><br /></td></tr>
+<tr class="separator:a29bf92cc65ba43f3ec58f891be23a954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9945dc506e6606a46b987eccbe128b5b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="optional_8h.html#ad2d809b9d71f39717698ac42fe339257">Optional</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_1_1_lock.html#a9945dc506e6606a46b987eccbe128b5b">findFirstBlockWithTimeAndHeight</a> (int64_t time, int height)=0</td></tr>
+<tr class="memdesc:a9945dc506e6606a46b987eccbe128b5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return height of the first block in the chain with timestamp equal or greater than the given time and height equal or greater than the given height, or nullopt if there is no such block.  <a href="#a9945dc506e6606a46b987eccbe128b5b">More...</a><br /></td></tr>
+<tr class="separator:a9945dc506e6606a46b987eccbe128b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acce7b2ac050252e9aa47025fff70cf0b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="optional_8h.html#ad2d809b9d71f39717698ac42fe339257">Optional</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_1_1_lock.html#acce7b2ac050252e9aa47025fff70cf0b">findPruned</a> (int start_height=0, <a class="el" href="optional_8h.html#ad2d809b9d71f39717698ac42fe339257">Optional</a>&lt; int &gt; stop_height=nullopt)=0</td></tr>
+<tr class="memdesc:acce7b2ac050252e9aa47025fff70cf0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return height of last block in the specified range which is pruned, or nullopt if no block in the range is pruned.  <a href="#acce7b2ac050252e9aa47025fff70cf0b">More...</a><br /></td></tr>
+<tr class="separator:acce7b2ac050252e9aa47025fff70cf0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fde9fb0229d2dda8247e2f3f525f2a0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="optional_8h.html#ad2d809b9d71f39717698ac42fe339257">Optional</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_1_1_lock.html#a0fde9fb0229d2dda8247e2f3f525f2a0">findFork</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;hash, <a class="el" href="optional_8h.html#ad2d809b9d71f39717698ac42fe339257">Optional</a>&lt; int &gt; *height)=0</td></tr>
+<tr class="memdesc:a0fde9fb0229d2dda8247e2f3f525f2a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return height of the highest block on the chain that is an ancestor of the specified block, or nullopt if no common ancestor is found.  <a href="#a0fde9fb0229d2dda8247e2f3f525f2a0">More...</a><br /></td></tr>
+<tr class="separator:a0fde9fb0229d2dda8247e2f3f525f2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a185abdb8e7c6dc96129b246d5760f984"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_1_1_lock.html#a185abdb8e7c6dc96129b246d5760f984">isPotentialTip</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;hash)=0</td></tr>
+<tr class="memdesc:a185abdb8e7c6dc96129b246d5760f984"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if block hash points to the current chain tip, or to a possible descendant of the current chain tip that isn't currently connected.  <a href="#a185abdb8e7c6dc96129b246d5760f984">More...</a><br /></td></tr>
+<tr class="separator:a185abdb8e7c6dc96129b246d5760f984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e780ea358e268f3a9bff7b11c7490e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_c_block_locator.html">CBlockLocator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_1_1_lock.html#a03e780ea358e268f3a9bff7b11c7490e">getLocator</a> ()=0</td></tr>
+<tr class="memdesc:a03e780ea358e268f3a9bff7b11c7490e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get locator for the current chain tip.  <a href="#a03e780ea358e268f3a9bff7b11c7490e">More...</a><br /></td></tr>
+<tr class="separator:a03e780ea358e268f3a9bff7b11c7490e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae29af2aec694b4c5408ddc25a37b682a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="optional_8h.html#ad2d809b9d71f39717698ac42fe339257">Optional</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_1_1_lock.html#ae29af2aec694b4c5408ddc25a37b682a">findLocatorFork</a> (const <a class="el" href="struct_c_block_locator.html">CBlockLocator</a> &amp;locator)=0</td></tr>
+<tr class="memdesc:ae29af2aec694b4c5408ddc25a37b682a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return height of the latest block common to locator and chain, which is guaranteed to be an ancestor of the block used to create the locator.  <a href="#ae29af2aec694b4c5408ddc25a37b682a">More...</a><br /></td></tr>
+<tr class="separator:ae29af2aec694b4c5408ddc25a37b682a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface for querying locked chain state, used by legacy code that assumes state won't change between calls. </p>
 <p>New code should avoid using the <a class="el" href="classinterfaces_1_1_chain_1_1_lock.html" title="Interface for querying locked chain state, used by legacy code that assumes state won&#39;t change betwee...">Lock</a> interface and instead call higher-level <a class="el" href="classinterfaces_1_1_chain.html" title="Interface for giving wallet processes access to blockchain state. ">Chain</a> methods that return more information so the chain doesn't need to stay locked between calls. </p>
 
-<p>Definition at line <a class="el" href="interfaces_2chain_8h_source.html#l00027">27</a> of file <a class="el" href="interfaces_2chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="interfaces_2chain_8h_source.html#l00033">33</a> of file <a class="el" href="interfaces_2chain_8h_source.html">chain.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aba03076266625fffec4225131fae1746"></a>
 <div class="memitem">
@@ -136,12 +178,536 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="interfaces_2chain_8h_source.html#l00030">30</a> of file <a class="el" href="interfaces_2chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="interfaces_2chain_8h_source.html#l00036">36</a> of file <a class="el" href="interfaces_2chain_8h_source.html">chain.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_aba03076266625fffec4225131fae1746_cgraph.svg" width="359" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_aba03076266625fffec4225131fae1746_cgraph.svg" width="415" height="1163"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a29bf92cc65ba43f3ec58f891be23a954"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="optional_8h.html#ad2d809b9d71f39717698ac42fe339257">Optional</a>&lt;int&gt; interfaces::Chain::Lock::findFirstBlockWithTime </td>
+          <td>(</td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classuint256.html">uint256</a> *&#160;</td>
+          <td class="paramname"><em>hash</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return height of the first block in the chain with timestamp equal or greater than the given time, or nullopt if there is no block with a high enough timestamp. </p>
+<p>Also return the block hash as an optional output parameter (to avoid the cost of a second lookup in case this information is needed.) </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_a29bf92cc65ba43f3ec58f891be23a954_icgraph.svg" width="396" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9945dc506e6606a46b987eccbe128b5b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="optional_8h.html#ad2d809b9d71f39717698ac42fe339257">Optional</a>&lt;int&gt; interfaces::Chain::Lock::findFirstBlockWithTimeAndHeight </td>
+          <td>(</td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return height of the first block in the chain with timestamp equal or greater than the given time and height equal or greater than the given height, or nullopt if there is no such block. </p>
+<p>Calling this with height 0 is equivalent to calling findFirstBlockWithTime, but less efficient because it requires a linear instead of a binary search. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_a9945dc506e6606a46b987eccbe128b5b_icgraph.svg" width="852" height="130"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0fde9fb0229d2dda8247e2f3f525f2a0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="optional_8h.html#ad2d809b9d71f39717698ac42fe339257">Optional</a>&lt;int&gt; interfaces::Chain::Lock::findFork </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classuint256.html">uint256</a> &amp;&#160;</td>
+          <td class="paramname"><em>hash</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="optional_8h.html#ad2d809b9d71f39717698ac42fe339257">Optional</a>&lt; int &gt; *&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return height of the highest block on the chain that is an ancestor of the specified block, or nullopt if no common ancestor is found. </p>
+<p>Also return the height of the specified block as an optional output parameter (to avoid the cost of a second hash lookup in case this information is desired). </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_a0fde9fb0229d2dda8247e2f3f525f2a0_icgraph.svg" width="552" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae29af2aec694b4c5408ddc25a37b682a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="optional_8h.html#ad2d809b9d71f39717698ac42fe339257">Optional</a>&lt;int&gt; interfaces::Chain::Lock::findLocatorFork </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_c_block_locator.html">CBlockLocator</a> &amp;&#160;</td>
+          <td class="paramname"><em>locator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return height of the latest block common to locator and chain, which is guaranteed to be an ancestor of the block used to create the locator. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_ae29af2aec694b4c5408ddc25a37b682a_icgraph.svg" width="810" height="130"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acce7b2ac050252e9aa47025fff70cf0b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="optional_8h.html#ad2d809b9d71f39717698ac42fe339257">Optional</a>&lt;int&gt; interfaces::Chain::Lock::findPruned </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>start_height</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="optional_8h.html#ad2d809b9d71f39717698ac42fe339257">Optional</a>&lt; int &gt;&#160;</td>
+          <td class="paramname"><em>stop_height</em> = <code>nullopt</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return height of last block in the specified range which is pruned, or nullopt if no block in the range is pruned. </p>
+<p>Range is inclusive. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_acce7b2ac050252e9aa47025fff70cf0b_icgraph.svg" width="552" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a151dbafe7a2b47de7749829909b4d72e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int interfaces::Chain::Lock::getBlockDepth </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classuint256.html">uint256</a> &amp;&#160;</td>
+          <td class="paramname"><em>hash</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get block depth. </p>
+<p>Returns 1 for chain tip, 2 for preceding block, and so on. Returns 0 for a block not included in the current chain. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_a151dbafe7a2b47de7749829909b4d72e_icgraph.svg" width="1494" height="763"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abf8260c51bd24dee60ef69441a4c7061"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classuint256.html">uint256</a> interfaces::Chain::Lock::getBlockHash </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get block hash. Height must be valid or this function will abort. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_abf8260c51bd24dee60ef69441a4c7061_icgraph.svg" width="812" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af6735230c0e9c82305a9d59e04ac666e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="optional_8h.html#ad2d809b9d71f39717698ac42fe339257">Optional</a>&lt;int&gt; interfaces::Chain::Lock::getBlockHeight </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classuint256.html">uint256</a> &amp;&#160;</td>
+          <td class="paramname"><em>hash</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get block height above genesis block. </p>
+<p>Returns 0 for genesis block, 1 for following block, and so on. Returns nullopt for a block not included in the current chain. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_af6735230c0e9c82305a9d59e04ac666e_icgraph.svg" width="800" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad1e1c91bb42592ac567f61c5c82bbd0d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int64_t interfaces::Chain::Lock::getBlockMedianTimePast </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get block median time past. </p>
+<p>Height must be valid or this function will abort. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_ad1e1c91bb42592ac567f61c5c82bbd0d_icgraph.svg" width="415" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a70f3cae68f585292dbff5d94fb910c88"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int64_t interfaces::Chain::Lock::getBlockTime </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get block time. Height must be valid or this function will abort. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_a70f3cae68f585292dbff5d94fb910c88_icgraph.svg" width="790" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acd6970b05caec9c0f257355413ab9c5d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="optional_8h.html#ad2d809b9d71f39717698ac42fe339257">Optional</a>&lt;int&gt; interfaces::Chain::Lock::getHeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get current chain height, not including genesis block (returns 0 if chain only contains genesis block, nullopt if chain does not contain any blocks). </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_acd6970b05caec9c0f257355413ab9c5d_icgraph.svg" width="838" height="307"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a03e780ea358e268f3a9bff7b11c7490e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_c_block_locator.html">CBlockLocator</a> interfaces::Chain::Lock::getLocator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get locator for the current chain tip. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_a03e780ea358e268f3a9bff7b11c7490e_icgraph.svg" width="790" height="130"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aaf0c0c0053b38e2b0d80e93bae1a6a8e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool interfaces::Chain::Lock::haveBlockOnDisk </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check that the block is available on disk (i.e. </p>
+<p>has not been pruned), and contains transactions. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_aaf0c0c0053b38e2b0d80e93bae1a6a8e_icgraph.svg" width="822" height="130"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a185abdb8e7c6dc96129b246d5760f984"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool interfaces::Chain::Lock::isPotentialTip </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classuint256.html">uint256</a> &amp;&#160;</td>
+          <td class="paramname"><em>hash</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if block hash points to the current chain tip, or to a possible descendant of the current chain tip that isn't currently connected. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_a185abdb8e7c6dc96129b246d5760f984_icgraph.svg" width="339" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -153,7 +719,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 21 2019 00:41:56 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 5 2019 04:11:21 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

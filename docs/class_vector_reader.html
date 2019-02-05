@@ -107,6 +107,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a54fc2bf829565ca0d45aaff007960954"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c7c1d3f2c0980f198195af1af5eacc5"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:a3c7c1d3f2c0980f198195af1af5eacc5"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_vector_reader.html#a3c7c1d3f2c0980f198195af1af5eacc5">VectorReader</a> (int type, int version, const std::vector&lt; unsigned char &gt; &amp;data, size_t pos, Args &amp;&amp;...args)</td></tr>
+<tr class="memdesc:a3c7c1d3f2c0980f198195af1af5eacc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">(other params same as above)  <a href="#a3c7c1d3f2c0980f198195af1af5eacc5">More...</a><br /></td></tr>
 <tr class="separator:a3c7c1d3f2c0980f198195af1af5eacc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af70b898aa39afb50a28c5d1b9681dab2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:af70b898aa39afb50a28c5d1b9681dab2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_vector_reader.html">VectorReader</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_vector_reader.html#af70b898aa39afb50a28c5d1b9681dab2">operator&gt;&gt;</a> (T &amp;obj)</td></tr>
@@ -181,6 +182,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>Serialization Type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">version</td><td>Serialization Version (including any flags) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Referenced byte vector to overwrite/append </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td>Starting position. Vector index where reads should start. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Definition at line <a class="el" href="streams_8h_source.html#l00148">148</a> of file <a class="el" href="streams_8h_source.html">streams.h</a>.</p>
 
@@ -237,6 +247,14 @@ template&lt;typename... Args&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>(other params same as above) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>A list of items to deserialize starting at pos. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Definition at line <a class="el" href="streams_8h_source.html#l00161">161</a> of file <a class="el" href="streams_8h_source.html">streams.h</a>.</p>
 
@@ -530,7 +548,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 21 2019 00:41:55 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 5 2019 04:11:20 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

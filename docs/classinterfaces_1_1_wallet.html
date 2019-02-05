@@ -128,6 +128,9 @@ Public Types</h2></td></tr>
 <tr class="memitem:a214b4d2833529c5332cb28905f4ed99e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_wallet.html#a214b4d2833529c5332cb28905f4ed99e">WatchOnlyChangedFn</a> = std::function&lt; void(bool have_watch_only)&gt;</td></tr>
 <tr class="memdesc:a214b4d2833529c5332cb28905f4ed99e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register handler for watchonly changed messages.  <a href="#a214b4d2833529c5332cb28905f4ed99e">More...</a><br /></td></tr>
 <tr class="separator:a214b4d2833529c5332cb28905f4ed99e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6eda64cfd275dad8bc68aed3806b2b3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_wallet.html#af6eda64cfd275dad8bc68aed3806b2b3">CanGetAddressesChangedFn</a> = std::function&lt; void()&gt;</td></tr>
+<tr class="memdesc:af6eda64cfd275dad8bc68aed3806b2b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register handler for keypool changed messages.  <a href="#af6eda64cfd275dad8bc68aed3806b2b3">More...</a><br /></td></tr>
+<tr class="separator:af6eda64cfd275dad8bc68aed3806b2b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -194,7 +197,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac21e0213080f3400bf202649a45e707f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_wallet.html#ac21e0213080f3400bf202649a45e707f">eraseDestData</a> (const <a class="el" href="standard_8h.html#ae9ce1f2e14383eb495b964486ac7273c">CTxDestination</a> &amp;dest, const std::string &amp;key)=0</td></tr>
 <tr class="memdesc:ac21e0213080f3400bf202649a45e707f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erase dest data.  <a href="#ac21e0213080f3400bf202649a45e707f">More...</a><br /></td></tr>
 <tr class="separator:ac21e0213080f3400bf202649a45e707f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1adb2634aa66d36099e02b31fcf9951"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_wallet.html#aa1adb2634aa66d36099e02b31fcf9951">getDestValues</a> (const std::string &amp;prefix)=0</td></tr>
+<tr class="memitem:aa1adb2634aa66d36099e02b31fcf9951"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_wallet.html#aa1adb2634aa66d36099e02b31fcf9951">getDestValues</a> (const std::string &amp;<a class="el" href="rest_8cpp.html#a5b41c5ae4505891e6c53e26df197e02b">prefix</a>)=0</td></tr>
 <tr class="memdesc:aa1adb2634aa66d36099e02b31fcf9951"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get dest values with prefix.  <a href="#aa1adb2634aa66d36099e02b31fcf9951">More...</a><br /></td></tr>
 <tr class="separator:aa1adb2634aa66d36099e02b31fcf9951"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af342a6619d7b64b4d6118c2b6cc30ceb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_wallet.html#af342a6619d7b64b4d6118c2b6cc30ceb">lockCoin</a> (const <a class="el" href="class_c_out_point.html">COutPoint</a> &amp;output)=0</td></tr>
@@ -303,6 +306,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afc9e06143d724797ff2d350726fdc895"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51aa1a4a4d35226dd49d4d9851f80c3e"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classinterfaces_1_1_handler.html">Handler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_wallet.html#a51aa1a4a4d35226dd49d4d9851f80c3e">handleWatchOnlyChanged</a> (<a class="el" href="classinterfaces_1_1_wallet.html#a214b4d2833529c5332cb28905f4ed99e">WatchOnlyChangedFn</a> fn)=0</td></tr>
 <tr class="separator:a51aa1a4a4d35226dd49d4d9851f80c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36b3e28f1acb53ddbba18f634c6944cf"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classinterfaces_1_1_handler.html">Handler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_wallet.html#a36b3e28f1acb53ddbba18f634c6944cf">handleCanGetAddressesChanged</a> (<a class="el" href="classinterfaces_1_1_wallet.html#af6eda64cfd275dad8bc68aed3806b2b3">CanGetAddressesChangedFn</a> fn)=0</td></tr>
+<tr class="separator:a36b3e28f1acb53ddbba18f634c6944cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface for accessing a wallet. </p>
@@ -322,6 +327,22 @@ Public Member Functions</h2></td></tr>
 <p>Register handler for address book changed messages. </p>
 
 <p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00264">264</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af6eda64cfd275dad8bc68aed3806b2b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classinterfaces_1_1_wallet.html#af6eda64cfd275dad8bc68aed3806b2b3">interfaces::Wallet::CanGetAddressesChangedFn</a> =  std::function&lt;void()&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register handler for keypool changed messages. </p>
+
+<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00276">276</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -1806,6 +1827,30 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a36b3e28f1acb53ddbba18f634c6944cf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::unique_ptr&lt;<a class="el" href="classinterfaces_1_1_handler.html">Handler</a>&gt; interfaces::Wallet::handleCanGetAddressesChanged </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classinterfaces_1_1_wallet.html#af6eda64cfd275dad8bc68aed3806b2b3">CanGetAddressesChangedFn</a>&#160;</td>
+          <td class="paramname"><em>fn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a8c2182155f0cae6757df87821a07a2a3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2711,7 +2756,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 21 2019 00:41:56 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 5 2019 04:11:21 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -14,8 +14,11 @@ var searchData=
   ['rpccommandexecution',['RPCCommandExecution',['../struct_r_p_c_command_execution.html',1,'']]],
   ['rpccommandexecutioninfo',['RPCCommandExecutionInfo',['../struct_r_p_c_command_execution_info.html',1,'']]],
   ['rpcconsole',['RPCConsole',['../class_r_p_c_console.html',1,'']]],
+  ['rpcexamples',['RPCExamples',['../struct_r_p_c_examples.html',1,'']]],
   ['rpcexecutor',['RPCExecutor',['../class_r_p_c_executor.html',1,'']]],
   ['rpchelpman',['RPCHelpMan',['../class_r_p_c_help_man.html',1,'']]],
+  ['rpcresult',['RPCResult',['../struct_r_p_c_result.html',1,'']]],
+  ['rpcresults',['RPCResults',['../struct_r_p_c_results.html',1,'']]],
   ['rpcserverinfo',['RPCServerInfo',['../struct_r_p_c_server_info.html',1,'']]],
   ['rpctimerbase',['RPCTimerBase',['../class_r_p_c_timer_base.html',1,'']]],
   ['rpctimerinterface',['RPCTimerInterface',['../class_r_p_c_timer_interface.html',1,'']]]

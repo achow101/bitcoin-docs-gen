@@ -97,11 +97,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="rpc_2util_8h_source.html">util.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for RPCHelpMan:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_r_p_c_help_man__coll__graph.svg" width="239" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab40ec57932ae27d70a9c1da8946babeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_c_help_man.html#ab40ec57932ae27d70a9c1da8946babeb">RPCHelpMan</a> (const std::string &amp;<a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, const std::string &amp;description, const std::vector&lt; <a class="el" href="struct_r_p_c_arg.html">RPCArg</a> &gt; &amp;args)</td></tr>
-<tr class="separator:ab40ec57932ae27d70a9c1da8946babeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50a4811dbb4c00bf11977241f63fd999"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_c_help_man.html#a50a4811dbb4c00bf11977241f63fd999">RPCHelpMan</a> (std::string <a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, std::string description, std::vector&lt; <a class="el" href="struct_r_p_c_arg.html">RPCArg</a> &gt; args, <a class="el" href="struct_r_p_c_results.html">RPCResults</a> results, <a class="el" href="struct_r_p_c_examples.html">RPCExamples</a> examples)</td></tr>
+<tr class="separator:a50a4811dbb4c00bf11977241f63fd999"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2eddb830e1d723cf9452e4d2b86572d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_c_help_man.html#ad2eddb830e1d723cf9452e4d2b86572d">ToString</a> () const </td></tr>
 <tr class="separator:ad2eddb830e1d723cf9452e4d2b86572d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -113,32 +119,48 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a513d669cd81141c6585096cfc783d2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab965e9b8470f49d9891fe785ca6a28e7"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="struct_r_p_c_arg.html">RPCArg</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_c_help_man.html#ab965e9b8470f49d9891fe785ca6a28e7">m_args</a></td></tr>
 <tr class="separator:ab965e9b8470f49d9891fe785ca6a28e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d27cb1e378ab30cdfc479584362b786"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_r_p_c_results.html">RPCResults</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_c_help_man.html#a9d27cb1e378ab30cdfc479584362b786">m_results</a></td></tr>
+<tr class="separator:a9d27cb1e378ab30cdfc479584362b786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14bfec3eaa7727bc5ba94457d9a522f9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_r_p_c_examples.html">RPCExamples</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_c_help_man.html#a14bfec3eaa7727bc5ba94457d9a522f9">m_examples</a></td></tr>
+<tr class="separator:a14bfec3eaa7727bc5ba94457d9a522f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00109">109</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
+<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00161">161</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ab40ec57932ae27d70a9c1da8946babeb"></a>
+<a class="anchor" id="a50a4811dbb4c00bf11977241f63fd999"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">RPCHelpMan::RPCHelpMan </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>description</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="struct_r_p_c_arg.html">RPCArg</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="struct_r_p_c_arg.html">RPCArg</a> &gt;&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_r_p_c_results.html">RPCResults</a>&#160;</td>
+          <td class="paramname"><em>results</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_r_p_c_examples.html">RPCExamples</a>&#160;</td>
+          <td class="paramname"><em>examples</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -166,19 +188,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00255">255</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00278">278</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_r_p_c_help_man_ad2eddb830e1d723cf9452e4d2b86572d_cgraph.svg" width="606" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_r_p_c_help_man_ad2eddb830e1d723cf9452e4d2b86572d_cgraph.svg" width="672" height="271"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_r_p_c_help_man_ad2eddb830e1d723cf9452e4d2b86572d_icgraph.svg" width="1923" height="822"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -203,7 +219,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00119">119</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
+<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00171">171</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -225,7 +241,29 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00118">118</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
+<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00170">170</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a14bfec3eaa7727bc5ba94457d9a522f9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_r_p_c_examples.html">RPCExamples</a> RPCHelpMan::m_examples</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00173">173</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -247,7 +285,29 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00117">117</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
+<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00169">169</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9d27cb1e378ab30cdfc479584362b786"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_r_p_c_results.html">RPCResults</a> RPCHelpMan::m_results</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00172">172</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -258,7 +318,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 21 2019 00:41:54 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 5 2019 04:11:19 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

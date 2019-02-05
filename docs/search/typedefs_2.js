@@ -2,6 +2,7 @@ var searchData=
 [
   ['cachemap',['cacheMap',['../class_c_tx_mem_pool.html#ab8c5d7b49c7e2576e7da2cb604fc96dc',1,'CTxMemPool']]],
   ['camount',['CAmount',['../amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564',1,'amount.h']]],
+  ['cangetaddresseschangedfn',['CanGetAddressesChangedFn',['../classinterfaces_1_1_wallet.html#af6eda64cfd275dad8bc68aed3806b2b3',1,'interfaces::Wallet']]],
   ['ccoinsmap',['CCoinsMap',['../coins_8h.html#a6d9207327f736296422186c8192d3d30',1,'coins.h']]],
   ['ccriticalsection',['CCriticalSection',['../sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1',1,'sync.h']]],
   ['chaincode',['ChainCode',['../hash_8h.html#aa201a9867f780a040c7af908e0a85db3',1,'ChainCode():&#160;hash.h'],['../pubkey_8h.html#aa201a9867f780a040c7af908e0a85db3',1,'ChainCode():&#160;pubkey.h']]],

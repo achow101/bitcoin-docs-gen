@@ -89,6 +89,8 @@ var searchData=
   ['sighash_5fnone',['SIGHASH_NONE',['../interpreter_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8acaba9b1f029a1628196345fce5667f6f',1,'interpreter.h']]],
   ['sighash_5fsingle',['SIGHASH_SINGLE',['../interpreter_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8ad9bb96e76cf9f1b6ebbf50373f4f9ca5',1,'interpreter.h']]],
   ['sizelimit',['SIZELIMIT',['../txmempool_8h.html#a2bc6653552b5871101b6cbefdbaf251fa3466a0da83a34aa41240dd21eca8ee78',1,'txmempool.h']]],
+  ['sleep',['SLEEP',['../random_8cpp.html#acb01085e46d55c91f668739b25cc481eab32bd403b93dc6deffdab7af55e82596',1,'random.cpp']]],
+  ['slow',['SLOW',['../random_8cpp.html#acb01085e46d55c91f668739b25cc481ea0e3066cbbd284dce8b76e7c4620d6d75',1,'random.cpp']]],
   ['socks4',['SOCKS4',['../netbase_8cpp.html#a4350f026c66bf05a4aa5e9f67067a234a373141c2c1e64b1adeb35fcf5618fa63',1,'netbase.cpp']]],
   ['socks5',['SOCKS5',['../netbase_8cpp.html#a4350f026c66bf05a4aa5e9f67067a234a8c9618d95ba78a6d8138358129c1e316',1,'netbase.cpp']]],
   ['spendzeroconfchange',['SpendZeroConfChange',['../class_options_model.html#a5c6c9ca8a01aca9f53e91f118e4878d2ad36ecf2d47c136740e5c2eb6e70a5497',1,'OptionsModel']]],
@@ -104,5 +106,5 @@ var searchData=
   ['subversion',['Subversion',['../class_peer_table_model.html#a10a32ec5f31c9765c80b611760f7e590aa4408c536a178490700310f01cf0d455',1,'PeerTableModel']]],
   ['subversion_5fcolumn_5fwidth',['SUBVERSION_COLUMN_WIDTH',['../class_r_p_c_console.html#a73581a931ea8b13a11ecb590f4bf6fe1a9920cb469f9e0c61ac55857140667ab8',1,'RPCConsole']]],
   ['succeeded',['SUCCEEDED',['../netbase_8cpp.html#a97f842edf4ac3c020601432e9418c02eac416a0ceff582d19692ee0238278f307',1,'netbase.cpp']]],
-  ['success',['SUCCESS',['../class_c_wallet.html#a570fe909452f0229717b5da9d580d482ad0749aaba8b833466dfcbb0428e4f89c',1,'CWallet']]]
+  ['success',['SUCCESS',['../struct_c_wallet_1_1_scan_result.html#aec068c496f8435e5147a5adadeb98dd3a27cb2d330834d01126ec092545e5d83b',1,'CWallet::ScanResult']]]
 ];

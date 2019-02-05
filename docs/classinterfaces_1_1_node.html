@@ -221,8 +221,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a80ebcf4a091a73010e36f2a5dcd84a54"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_node.html#a80ebcf4a091a73010e36f2a5dcd84a54">unban</a> (const <a class="el" href="class_c_sub_net.html">CSubNet</a> &amp;ip)=0</td></tr>
 <tr class="memdesc:a80ebcf4a091a73010e36f2a5dcd84a54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unban node.  <a href="#a80ebcf4a091a73010e36f2a5dcd84a54">More...</a><br /></td></tr>
 <tr class="separator:a80ebcf4a091a73010e36f2a5dcd84a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a899e4836b95f05817587e53397bdbc5f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_node.html#a899e4836b95f05817587e53397bdbc5f">disconnect</a> (const <a class="el" href="class_c_net_addr.html">CNetAddr</a> &amp;net_addr)=0</td></tr>
+<tr class="memdesc:a899e4836b95f05817587e53397bdbc5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect node by address.  <a href="#a899e4836b95f05817587e53397bdbc5f">More...</a><br /></td></tr>
+<tr class="separator:a899e4836b95f05817587e53397bdbc5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab35e681fca8845cf5da5644f13e41088"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_node.html#ab35e681fca8845cf5da5644f13e41088">disconnect</a> (<a class="el" href="net_8h.html#aa637b11e18b77724b35db2229cd12788">NodeId</a> id)=0</td></tr>
-<tr class="memdesc:ab35e681fca8845cf5da5644f13e41088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect node.  <a href="#ab35e681fca8845cf5da5644f13e41088">More...</a><br /></td></tr>
+<tr class="memdesc:ab35e681fca8845cf5da5644f13e41088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect node by id.  <a href="#ab35e681fca8845cf5da5644f13e41088">More...</a><br /></td></tr>
 <tr class="separator:ab35e681fca8845cf5da5644f13e41088"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad3ff5433693832c54d5874dd0b8bd45"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_node.html#aad3ff5433693832c54d5874dd0b8bd45">getTotalBytesRecv</a> ()=0</td></tr>
 <tr class="memdesc:aad3ff5433693832c54d5874dd0b8bd45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get total bytes recv.  <a href="#aad3ff5433693832c54d5874dd0b8bd45">More...</a><br /></td></tr>
@@ -322,7 +325,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Top-level interface for a bitcoin node (bitcoind process). </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00035">35</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00036">36</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a0168991cd58a791c8d2b6c48390988aa"></a>
 <div class="memitem">
@@ -336,7 +339,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for ban list messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00228">228</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00232">232</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -352,7 +355,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for init messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00192">192</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00196">196</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -368,7 +371,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for load wallet messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00212">212</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00216">216</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -384,7 +387,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for message box messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00197">197</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00201">201</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -400,7 +403,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Get stats for connected nodes. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00104">104</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00105">105</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -416,7 +419,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for notify alert messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00224">224</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00228">228</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -432,7 +435,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for block tip messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00233">233</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00237">237</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -448,7 +451,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for header tip messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00238">238</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00242">242</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -464,7 +467,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for network active messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00220">220</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00224">224</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -480,7 +483,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for number of connections changed messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00216">216</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00220">220</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -496,7 +499,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for question messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00204">204</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00208">208</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -512,7 +515,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for progress messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00208">208</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00212">212</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -538,7 +541,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00038">38</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00039">39</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -695,6 +698,40 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a899e4836b95f05817587e53397bdbc5f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool interfaces::Node::disconnect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_net_addr.html">CNetAddr</a> &amp;&#160;</td>
+          <td class="paramname"><em>net_addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Disconnect node by address. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_a899e4836b95f05817587e53397bdbc5f_icgraph.svg" width="1795" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="ab35e681fca8845cf5da5644f13e41088"></a>
 <div class="memitem">
 <div class="memproto">
@@ -717,14 +754,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Disconnect node. </p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_ab35e681fca8845cf5da5644f13e41088_icgraph.svg" width="1795" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
+<p>Disconnect node by id. </p>
 
 </div>
 </div>
@@ -845,7 +875,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_ae9bccce873011dc25d35e0f005c6ba39_icgraph.svg" width="679" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_ae9bccce873011dc25d35e0f005c6ba39_icgraph.svg" width="1399" height="191"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2607,7 +2638,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 21 2019 00:41:56 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 5 2019 04:11:21 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

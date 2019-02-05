@@ -19,6 +19,8 @@ var searchData=
   ['walletmodel_2eh',['walletmodel.h',['../walletmodel_8h.html',1,'']]],
   ['walletmodeltransaction_2ecpp',['walletmodeltransaction.cpp',['../walletmodeltransaction_8cpp.html',1,'']]],
   ['walletmodeltransaction_2eh',['walletmodeltransaction.h',['../walletmodeltransaction_8h.html',1,'']]],
+  ['wallettool_2ecpp',['wallettool.cpp',['../wallettool_8cpp.html',1,'']]],
+  ['wallettool_2eh',['wallettool.h',['../wallettool_8h.html',1,'']]],
   ['walletutil_2ecpp',['walletutil.cpp',['../walletutil_8cpp.html',1,'']]],
   ['walletutil_2eh',['walletutil.h',['../walletutil_8h.html',1,'']]],
   ['walletview_2ecpp',['walletview.cpp',['../walletview_8cpp.html',1,'']]],
