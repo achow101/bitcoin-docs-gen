@@ -58,6 +58,7 @@ var searchData=
   ['unlockcoin',['unlockCoin',['../classinterfaces_1_1_wallet.html#a42d54de3092c4255be472052a21b21a5',1,'interfaces::Wallet::unlockCoin()'],['../class_coin_control_dialog.html#a3097ebdc8972660aae30f49f2ccd1d8c',1,'CoinControlDialog::unlockCoin()'],['../group___actions.html#ga4ec396195d8682b32c1883b1331d3d23',1,'CWallet::UnlockCoin()']]],
   ['unlockcontext',['UnlockContext',['../class_wallet_model_1_1_unlock_context.html',1,'WalletModel']]],
   ['unlockcontext',['UnlockContext',['../class_wallet_model_1_1_unlock_context.html#a1b23753195fd29066fda2bc547c01e52',1,'WalletModel::UnlockContext::UnlockContext(WalletModel *wallet, bool valid, bool relock)'],['../class_wallet_model_1_1_unlock_context.html#afad6dc72ce1f4af4989efd2aed155759',1,'WalletModel::UnlockContext::UnlockContext(const UnlockContext &amp;obj)']]],
+  ['unlockdirectory',['UnlockDirectory',['../system_8cpp.html#a3e9e4ea96c8d168ad5b7d1428780418b',1,'UnlockDirectory(const fs::path &amp;directory, const std::string &amp;lockfile_name):&#160;system.cpp'],['../system_8h.html#a3e9e4ea96c8d168ad5b7d1428780418b',1,'UnlockDirectory(const fs::path &amp;directory, const std::string &amp;lockfile_name):&#160;system.cpp']]],
   ['unlocked',['Unlocked',['../class_wallet_model.html#a58f6f0bb5a7b8b4e4d0812185ccc0616a60d7f605079e8e1738ba66d543467a3c',1,'WalletModel']]],
   ['unlockwallet',['unlockWallet',['../class_wallet_frame.html#a31b6e87c87b383ef53225b6c2b37f057',1,'WalletFrame::unlockWallet()'],['../class_wallet_view.html#ac258d549f0e55ad4f84b9d21848faf02',1,'WalletView::unlockWallet()']]],
   ['unordered_5fnode',['unordered_node',['../structmemusage_1_1unordered__node.html',1,'memusage']]],
@@ -180,8 +181,8 @@ var searchData=
   ['usernotificationcenter',['UserNotificationCenter',['../class_notificator.html#aaa6bef35e7e183f0ac23e046dc3ea73ea1691fdf2248407f7b714712f0c986d5e',1,'Notificator']]],
   ['util',['util',['../namespaceutil.html',1,'']]],
   ['util_2ecpp',['util.cpp',['../util_8cpp.html',1,'']]],
-  ['util_2eh',['util.h',['../rpc_2util_8h.html',1,'']]],
   ['util_2eh',['util.h',['../secp256k1_2src_2util_8h.html',1,'']]],
+  ['util_2eh',['util.h',['../rpc_2util_8h.html',1,'']]],
   ['utilitydialog_2ecpp',['utilitydialog.cpp',['../utilitydialog_8cpp.html',1,'']]],
   ['utilitydialog_2eh',['utilitydialog.h',['../utilitydialog_8h.html',1,'']]],
   ['uvtypename',['uvTypeName',['../univalue_8h.html#aa037153cdbc98dd3683ff1918dc70932',1,'uvTypeName(UniValue::VType t):&#160;univalue.cpp'],['../univalue_8cpp.html#aa037153cdbc98dd3683ff1918dc70932',1,'uvTypeName(UniValue::VType t):&#160;univalue.cpp']]]

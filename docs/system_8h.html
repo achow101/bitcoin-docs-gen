@@ -192,6 +192,8 @@ Functions</h2></td></tr>
 <tr class="separator:a579657da2b55b131ecd453bf1b0d2314"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f16e26cc90b17ed75fcbbe7ce75e7c3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system_8h.html#a9f16e26cc90b17ed75fcbbe7ce75e7c3">LockDirectory</a> (const fs::path &amp;directory, const std::string lockfile_name, bool probe_only=false)</td></tr>
 <tr class="separator:a9f16e26cc90b17ed75fcbbe7ce75e7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e9e4ea96c8d168ad5b7d1428780418b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system_8h.html#a3e9e4ea96c8d168ad5b7d1428780418b">UnlockDirectory</a> (const fs::path &amp;directory, const std::string &amp;lockfile_name)</td></tr>
+<tr class="separator:a3e9e4ea96c8d168ad5b7d1428780418b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d79c90e36d7957a773336ec3d55a842"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system_8h.html#a4d79c90e36d7957a773336ec3d55a842">DirIsWritable</a> (const fs::path &amp;directory)</td></tr>
 <tr class="separator:a4d79c90e36d7957a773336ec3d55a842"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a851fa89def443bac9d04ddb908cb91bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system_8h.html#a851fa89def443bac9d04ddb908cb91bb">ReleaseDirectoryLocks</a> ()</td></tr>
@@ -311,7 +313,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="system_8h_source.html#l00115">115</a> of file <a class="el" href="system_8h_source.html">system.h</a>.</p>
+<p>Definition at line <a class="el" href="system_8h_source.html#l00116">116</a> of file <a class="el" href="system_8h_source.html">system.h</a>.</p>
 
 </div>
 </div>
@@ -393,7 +395,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The normalized path. </dd></dl>
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l01229">1229</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01235">1235</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -443,7 +445,7 @@ Here is the caller graph for this function:</div>
 
 <p>this function tries to make a particular range of a file allocated (corresponding to disk space) it is advisory, and the range specified in the arguments will never contain live data </p>
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l01071">1071</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01077">1077</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -467,7 +469,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00761">761</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00767">767</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -492,7 +494,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l01212">1212</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01218">1218</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -534,7 +536,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00962">962</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00968">968</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -566,7 +568,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00120">120</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00126">126</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -615,7 +617,8 @@ template&lt;typename... Args&gt; </div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a0605c886f88f190fa6a51ae07ca7558a_cgraph.svg" width="1420" height="1048"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a0605c886f88f190fa6a51ae07ca7558a_cgraph.svg" width="1420" height="1099"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -635,7 +638,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l01003">1003</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01009">1009</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -659,7 +662,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00701">701</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00707">707</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -691,12 +694,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00770">770</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00776">776</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_aa634f312705d4811dfa2a5392bddf6cf_cgraph.svg" width="1574" height="1007"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_aa634f312705d4811dfa2a5392bddf6cf_cgraph.svg" width="1574" height="1059"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -723,7 +727,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00729">729</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00735">735</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -754,7 +758,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00670">670</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00676">676</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -781,7 +785,7 @@ Here is the caller graph for this function:</div>
 <p>Return the number of cores available on the current system. </p>
 <dl class="section note"><dt>Note</dt><dd>This does count virtual cores, such as those provided by HyperThreading. </dd></dl>
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l01207">1207</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01213">1213</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -805,7 +809,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00957">957</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00963">963</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -838,7 +842,7 @@ Here is the caller graph for this function:</div>
 
 <p>Server/client environment: argument handling, config file parsing, thread wrappers, startup time. </p>
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l01224">1224</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01230">1230</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -872,7 +876,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the formatted string </dd></dl>
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00636">636</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00642">642</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -917,7 +921,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the formatted string </dd></dl>
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00640">640</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00646">646</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -950,7 +954,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true if help has been requested via a command-line arg </dd></dl>
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00627">627</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00633">633</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -990,7 +994,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8h_source.html#l00106">106</a> of file <a class="el" href="system_8h_source.html">system.h</a>.</p>
+<p>Definition at line <a class="el" href="system_8h_source.html#l00107">107</a> of file <a class="el" href="system_8h_source.html">system.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1036,7 +1040,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a9f16e26cc90b17ed75fcbbe7ce75e7c3_cgraph.svg" width="1578" height="995"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a9f16e26cc90b17ed75fcbbe7ce75e7c3_cgraph.svg" width="1578" height="1048"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1073,7 +1078,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00663">663</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00669">669</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1101,7 +1106,7 @@ Here is the caller graph for this function:</div>
 <p>this function tries to raise the file descriptor limit to the requested number. </p>
 <p>It returns the actual file descriptor limit (which may be more or less than nMinFD) </p>
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l01048">1048</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01054">1054</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1128,7 +1133,7 @@ Here is the caller graph for this function:</div>
 <p>Release all directory locks. </p>
 <p>This is used for unit testing only, at runtime the global destructor will take care of the locks. </p>
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00114">114</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00120">120</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1163,7 +1168,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00973">973</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00979">979</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1188,7 +1193,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l01142">1142</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01148">1148</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1213,7 +1218,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l01130">1130</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01136">1136</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1241,7 +1246,7 @@ Here is the caller graph for this function:</div>
 <p>See SCHED_BATCH in sched(7) for details.</p>
 <dl class="section return"><dt>Returns</dt><dd>The return value of sched_setschedule(), or 1 on systems without sched_setschedule(). </dd></dl>
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l01234">1234</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01240">1240</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1265,7 +1270,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l01158">1158</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01164">1164</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1289,7 +1294,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l01195">1195</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01201">1201</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1329,7 +1334,7 @@ template&lt;typename Callable &gt; </div>
 <p></p>
 <p>. and a wrapper that just calls func once </p>
 
-<p>Definition at line <a class="el" href="system_8h_source.html#l00325">325</a> of file <a class="el" href="system_8h_source.html">system.h</a>.</p>
+<p>Definition at line <a class="el" href="system_8h_source.html#l00326">326</a> of file <a class="el" href="system_8h_source.html">system.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1371,7 +1376,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l01036">1036</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01042">1042</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1399,12 +1404,48 @@ Here is the caller graph for this function:</div>
 <p>Ignores exceptions thrown by Boost's create_directories if the requested directory exists. </p>
 <p>Specifically handles case where path p exists, but it wasn't possible for the user to write to the parent directory. </p>
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00989">989</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00995">995</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a9042a919d837da9d97311a0c460c597c_icgraph.svg" width="1706" height="2390"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e9e4ea96c8d168ad5b7d1428780418b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnlockDirectory </td>
+          <td>(</td>
+          <td class="paramtype">const fs::path &amp;&#160;</td>
+          <td class="paramname"><em>directory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>lockfile_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00114">114</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a3e9e4ea96c8d168ad5b7d1428780418b_icgraph.svg" width="1646" height="2528"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1473,7 +1514,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 5 2019 17:17:44 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 5 2019 21:12:49 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
