@@ -208,7 +208,7 @@ var searchData=
   ['notaccepted',['NotAccepted',['../class_transaction_status.html#aaa6cc19ca3509bbae72d0df1661f85cbaa00ed76c9186371bd649ffeec45d37e9',1,'TransactionStatus']]],
   ['notallowed',['NOTALLOWED',['../netbase_8cpp.html#a97f842edf4ac3c020601432e9418c02eacf7afb4c9e2797389003dafb32884ea9',1,'netbase.cpp']]],
   ['notfound',['NOTFOUND',['../namespace_net_msg_type.html#a567653d3f26a7e711889682e7fd1c484',1,'NetMsgType']]],
-  ['notificator',['Notificator',['../class_notificator.html',1,'Notificator'],['../class_notificator.html#ac98c8b73d4e06ea85e9f58426c5c935d',1,'Notificator::Notificator()'],['../class_bitcoin_g_u_i.html#af65cec710d0a77e26724933d14d01855',1,'BitcoinGUI::notificator()']]],
+  ['notificator',['Notificator',['../class_notificator.html',1,'Notificator'],['../class_bitcoin_g_u_i.html#af65cec710d0a77e26724933d14d01855',1,'BitcoinGUI::notificator()'],['../class_notificator.html#ac98c8b73d4e06ea85e9f58426c5c935d',1,'Notificator::Notificator()']]],
   ['notificator_2ecpp',['notificator.cpp',['../notificator_8cpp.html',1,'']]],
   ['notificator_2eh',['notificator.h',['../notificator_8h.html',1,'']]],
   ['notifiers',['notifiers',['../class_c_z_m_q_notification_interface.html#ae6efcc50da585512e06bbea587c7860b',1,'CZMQNotificationInterface']]],

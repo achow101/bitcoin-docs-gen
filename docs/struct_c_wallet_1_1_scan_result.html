@@ -104,7 +104,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="dynheader">
 Collaboration diagram for CWallet::ScanResult:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_c_wallet_1_1_scan_result__coll__graph.svg" width="159" height="218"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_c_wallet_1_1_scan_result__coll__graph.svg" width="210" height="218"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -120,14 +120,14 @@ Public Types</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a2e4f1a3930470e1ae17579ca2ff074dd"><td class="memItemLeft" align="right" valign="top">enum CWallet::ScanResult:: { ... } &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_wallet_1_1_scan_result.html#a2e4f1a3930470e1ae17579ca2ff074dd">status</a> = <a class="el" href="struct_c_wallet_1_1_scan_result.html#aec068c496f8435e5147a5adadeb98dd3a27cb2d330834d01126ec092545e5d83b">SUCCESS</a></td></tr>
 <tr class="separator:a2e4f1a3930470e1ae17579ca2ff074dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7643093e55d9bc71306648a582a8a3a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classuint256.html">uint256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_wallet_1_1_scan_result.html#a7643093e55d9bc71306648a582a8a3a3">stop_block</a></td></tr>
-<tr class="memdesc:a7643093e55d9bc71306648a582a8a3a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash and height of most recent block that was successfully scanned.  <a href="#a7643093e55d9bc71306648a582a8a3a3">More...</a><br /></td></tr>
-<tr class="separator:a7643093e55d9bc71306648a582a8a3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadd674c29a71d5a958470db6675df73c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="optional_8h.html#ad2d809b9d71f39717698ac42fe339257">Optional</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_wallet_1_1_scan_result.html#aadd674c29a71d5a958470db6675df73c">stop_height</a></td></tr>
-<tr class="separator:aadd674c29a71d5a958470db6675df73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f640eb2649f2a817e6d94c932607fb0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classuint256.html">uint256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_wallet_1_1_scan_result.html#a9f640eb2649f2a817e6d94c932607fb0">failed_block</a></td></tr>
-<tr class="memdesc:a9f640eb2649f2a817e6d94c932607fb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Height of the most recent block that could not be scanned due to read errors or pruning.  <a href="#a9f640eb2649f2a817e6d94c932607fb0">More...</a><br /></td></tr>
-<tr class="separator:a9f640eb2649f2a817e6d94c932607fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abedd49717dd9384e47ef090aef650815"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classuint256.html">uint256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_wallet_1_1_scan_result.html#abedd49717dd9384e47ef090aef650815">last_scanned_block</a></td></tr>
+<tr class="memdesc:abedd49717dd9384e47ef090aef650815"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash and height of most recent block that was successfully scanned.  <a href="#abedd49717dd9384e47ef090aef650815">More...</a><br /></td></tr>
+<tr class="separator:abedd49717dd9384e47ef090aef650815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a162b0806b257c08d1eb8c4b039921c35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="optional_8h.html#ad2d809b9d71f39717698ac42fe339257">Optional</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_wallet_1_1_scan_result.html#a162b0806b257c08d1eb8c4b039921c35">last_scanned_height</a></td></tr>
+<tr class="separator:a162b0806b257c08d1eb8c4b039921c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c1d6b96d70fc0ad5a015bce68a8af6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classuint256.html">uint256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_wallet_1_1_scan_result.html#a6c1d6b96d70fc0ad5a015bce68a8af6a">last_failed_block</a></td></tr>
+<tr class="memdesc:a6c1d6b96d70fc0ad5a015bce68a8af6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Height of the most recent block that could not be scanned due to read errors or pruning.  <a href="#a6c1d6b96d70fc0ad5a015bce68a8af6a">More...</a><br /></td></tr>
+<tr class="separator:a6c1d6b96d70fc0ad5a015bce68a8af6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -156,12 +156,12 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a9f640eb2649f2a817e6d94c932607fb0"></a>
+<a class="anchor" id="a6c1d6b96d70fc0ad5a015bce68a8af6a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classuint256.html">uint256</a> CWallet::ScanResult::failed_block</td>
+          <td class="memname"><a class="el" href="classuint256.html">uint256</a> CWallet::ScanResult::last_failed_block</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -170,6 +170,37 @@ Public Attributes</h2></td></tr>
 <p>Will be set if status is FAILURE, unset if status is SUCCESS, and may or may not be set if status is USER_ABORT. </p>
 
 <p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00922">922</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abedd49717dd9384e47ef090aef650815"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classuint256.html">uint256</a> CWallet::ScanResult::last_scanned_block</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Hash and height of most recent block that was successfully scanned. </p>
+<p>Unset if no blocks were scanned due to read errors or the chain being empty. </p>
+
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00915">915</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a162b0806b257c08d1eb8c4b039921c35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="optional_8h.html#ad2d809b9d71f39717698ac42fe339257">Optional</a>&lt;int&gt; CWallet::ScanResult::last_scanned_height</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00916">916</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -185,44 +216,13 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7643093e55d9bc71306648a582a8a3a3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classuint256.html">uint256</a> CWallet::ScanResult::stop_block</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Hash and height of most recent block that was successfully scanned. </p>
-<p>Unset if no blocks were scanned due to read errors or the chain being empty. </p>
-
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00915">915</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aadd674c29a71d5a958470db6675df73c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="optional_8h.html#ad2d809b9d71f39717698ac42fe339257">Optional</a>&lt;int&gt; CWallet::ScanResult::stop_height</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00916">916</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/wallet/<a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 5 2019 04:11:18 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 5 2019 15:42:21 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
