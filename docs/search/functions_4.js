@@ -37,6 +37,7 @@ var searchData=
   ['deleteclicked',['deleteClicked',['../class_send_coins_entry.html#aa749b51119d0504f204bbf7c90744e2e',1,'SendCoinsEntry']]],
   ['deletenode',['DeleteNode',['../class_c_connman.html#a1c476458d499d52f2c87c88d93082a9d',1,'CConnman']]],
   ['derive',['Derive',['../class_c_key.html#a1bae09b7447a951d8fc3328b7dcc3a3f',1,'CKey::Derive()'],['../struct_c_ext_key.html#a2fa3a39434ae09efbbd4058d1d081aa2',1,'CExtKey::Derive()'],['../class_c_pub_key.html#add183528b09791bdd0f982e63308d263',1,'CPubKey::Derive()'],['../struct_c_ext_pub_key.html#a404798f7d800ffb539cf97431025597f',1,'CExtPubKey::Derive()']]],
+  ['deriveaddresses',['deriveaddresses',['../misc_8cpp.html#ac83965fd04331e12058ef7b84ec835cd',1,'misc.cpp']]],
   ['derivenewchildkey',['DeriveNewChildKey',['../group__map_wallet.html#gafb01fcc10d890174b2db560a7f27b58a',1,'CWallet']]],
   ['derivenewseed',['DeriveNewSeed',['../group__map_wallet.html#gaf72003c77abf215cc1576ab6c50125f7',1,'CWallet']]],
   ['describe',['describe',['../class_transaction_table_priv.html#a5abfd796c5a65c0a2be564465556b99f',1,'TransactionTablePriv']]],

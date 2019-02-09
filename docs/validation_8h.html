@@ -148,6 +148,8 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a7eb425469e9f152f7efad4b710fa26c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="validation_8h.html#a6b962fe256607627c8140021ae7a23e1">BlockMap</a> &amp;<a class="el" href="validation_8cpp.html#aeccc8c1b7fffcca5d6c0d8486cc9b48b">mapBlockIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#a7eb425469e9f152f7efad4b710fa26c2">GUARDED_BY</a> (<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="separator:a7eb425469e9f152f7efad4b710fa26c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32c6dfc4ade001f117ac3fac3da9d123"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#a32c6dfc4ade001f117ac3fac3da9d123">ProcessNewBlock</a> (const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;chainparams, const std::shared_ptr&lt; const <a class="el" href="class_c_block.html">CBlock</a> &gt; pblock, bool fForceProcessing, bool *fNewBlock) <a class="el" href="threadsafety_8h.html#a6bb97382864d0bd2cd4dd5191bb03f6c">LOCKS_EXCLUDED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
 <tr class="memdesc:a32c6dfc4ade001f117ac3fac3da9d123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process an incoming block.  <a href="#a32c6dfc4ade001f117ac3fac3da9d123">More...</a><br /></td></tr>
 <tr class="separator:a32c6dfc4ade001f117ac3fac3da9d123"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,9 +200,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a5d513fc954905589bc2a99da7d51e923"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#a5d513fc954905589bc2a99da7d51e923">CalculateCurrentUsage</a> ()</td></tr>
 <tr class="memdesc:a5d513fc954905589bc2a99da7d51e923"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the amount of disk space the block &amp; undo files currently use.  <a href="#a5d513fc954905589bc2a99da7d51e923">More...</a><br /></td></tr>
 <tr class="separator:a5d513fc954905589bc2a99da7d51e923"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abea7dd6e39fc3fe079801b73182264b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#abea7dd6e39fc3fe079801b73182264b8">PruneOneBlockFile</a> (const int fileNumber)</td></tr>
-<tr class="memdesc:abea7dd6e39fc3fe079801b73182264b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark one block file as pruned.  <a href="#abea7dd6e39fc3fe079801b73182264b8">More...</a><br /></td></tr>
-<tr class="separator:abea7dd6e39fc3fe079801b73182264b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ebc263091ba81ceaa3ec37d1000bf9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#a6ebc263091ba81ceaa3ec37d1000bf9b">PruneOneBlockFile</a> (const int fileNumber) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="memdesc:a6ebc263091ba81ceaa3ec37d1000bf9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark one block file as pruned.  <a href="#a6ebc263091ba81ceaa3ec37d1000bf9b">More...</a><br /></td></tr>
+<tr class="separator:a6ebc263091ba81ceaa3ec37d1000bf9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeec5391c3d81044fb887645b81803b4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#aeec5391c3d81044fb887645b81803b4b">UnlinkPrunedFiles</a> (const std::set&lt; int &gt; &amp;setFilesToPrune)</td></tr>
 <tr class="memdesc:aeec5391c3d81044fb887645b81803b4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actually unlink the specified files.  <a href="#aeec5391c3d81044fb887645b81803b4b">More...</a><br /></td></tr>
 <tr class="separator:aeec5391c3d81044fb887645b81803b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -323,8 +325,6 @@ Variables</h2></td></tr>
 <tr class="separator:abc71256f703e47c9254093e32ed2994c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29b135067740b41c632d8da65fa7e56d"><td class="memItemLeft" align="right" valign="top">std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#a29b135067740b41c632d8da65fa7e56d">g_is_mempool_loaded</a></td></tr>
 <tr class="separator:a29b135067740b41c632d8da65fa7e56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeccc8c1b7fffcca5d6c0d8486cc9b48b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="validation_8h.html#a6b962fe256607627c8140021ae7a23e1">BlockMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#aeccc8c1b7fffcca5d6c0d8486cc9b48b">mapBlockIndex</a></td></tr>
-<tr class="separator:aeccc8c1b7fffcca5d6c0d8486cc9b48b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31f8b0d3c96670151ba997019820e0f4"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#a31f8b0d3c96670151ba997019820e0f4">nLastBlockTx</a></td></tr>
 <tr class="separator:a31f8b0d3c96670151ba997019820e0f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae50cfac8d3fef92948a44965e6085e1c"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#ae50cfac8d3fef92948a44965e6085e1c">nLastBlockWeight</a></td></tr>
@@ -1225,6 +1225,22 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a7eb425469e9f152f7efad4b710fa26c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="validation_8h.html#a6b962fe256607627c8140021ae7a23e1">BlockMap</a>&amp; <a class="el" href="validation_8cpp.html#aeccc8c1b7fffcca5d6c0d8486cc9b48b">mapBlockIndex</a> GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a38412dd688f31cbca0f6d28a9adc0310"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2031,7 +2047,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="abea7dd6e39fc3fe079801b73182264b8"></a>
+<a class="anchor" id="a6ebc263091ba81ceaa3ec37d1000bf9b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2052,7 +2068,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_abea7dd6e39fc3fe079801b73182264b8_icgraph.svg" width="1583" height="252"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h_a6ebc263091ba81ceaa3ec37d1000bf9b_icgraph.svg" width="1583" height="252"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -3042,20 +3059,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="aeccc8c1b7fffcca5d6c0d8486cc9b48b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="validation_8h.html#a6b962fe256607627c8140021ae7a23e1">BlockMap</a>&amp; mapBlockIndex</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l00225">225</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a77a17dcfb43cece2a434c0a9bfe9e441"></a>
 <div class="memitem">
 <div class="memproto">
@@ -3297,7 +3300,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 5 2019 22:44:15 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 9 2019 05:08:14 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -160,6 +160,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a324c8eb5c0dd2b3ece84a73728386236"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96bd200ef60382b7ea0e5278186544c5"><td class="memItemLeft" align="right" valign="top">int64_t nOrderPosNext&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet.html#a96bd200ef60382b7ea0e5278186544c5">GUARDED_BY</a> (<a class="el" href="class_c_wallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)=0</td></tr>
 <tr class="separator:a96bd200ef60382b7ea0e5278186544c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a027938758fbcf14b85396f3ed5f88576"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="standard_8h.html#ae9ce1f2e14383eb495b964486ac7273c">CTxDestination</a>, <a class="el" href="class_c_address_book_data.html">CAddressBookData</a> &gt; mapAddressBook&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet.html#a027938758fbcf14b85396f3ed5f88576">GUARDED_BY</a> (<a class="el" href="class_c_wallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
+<tr class="separator:a027938758fbcf14b85396f3ed5f88576"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1eb2590013da6f933861521169973817"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="class_c_out_point.html">COutPoint</a> &gt; setLockedCoins&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet.html#a1eb2590013da6f933861521169973817">GUARDED_BY</a> (<a class="el" href="class_c_wallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
 <tr class="separator:a1eb2590013da6f933861521169973817"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f5d867670b11d16e3b720d475c3989a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classinterfaces_1_1_chain.html">interfaces::Chain</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet.html#a1f5d867670b11d16e3b720d475c3989a">chain</a> () const </td></tr>
@@ -235,21 +237,21 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ga15df27607f4dde9f262e0f030c9414b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadbf0abef9da8102f000d4afd5cec5bbc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gadbf0abef9da8102f000d4afd5cec5bbc">LoadCScript</a> (const <a class="el" href="class_c_script.html">CScript</a> &amp;redeemScript)</td></tr>
 <tr class="separator:gadbf0abef9da8102f000d4afd5cec5bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbeae89a10e129930e5059d9167697e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet.html#acbeae89a10e129930e5059d9167697e5">AddDestData</a> (const <a class="el" href="standard_8h.html#ae9ce1f2e14383eb495b964486ac7273c">CTxDestination</a> &amp;dest, const std::string &amp;key, const std::string &amp;value)</td></tr>
-<tr class="memdesc:acbeae89a10e129930e5059d9167697e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a destination data tuple to the store, and saves it to disk.  <a href="#acbeae89a10e129930e5059d9167697e5">More...</a><br /></td></tr>
-<tr class="separator:acbeae89a10e129930e5059d9167697e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a03cf9972842588178387839f0ded3c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet.html#a9a03cf9972842588178387839f0ded3c">EraseDestData</a> (const <a class="el" href="standard_8h.html#ae9ce1f2e14383eb495b964486ac7273c">CTxDestination</a> &amp;dest, const std::string &amp;key)</td></tr>
-<tr class="memdesc:a9a03cf9972842588178387839f0ded3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erases a destination data tuple in the store and on disk.  <a href="#a9a03cf9972842588178387839f0ded3c">More...</a><br /></td></tr>
-<tr class="separator:a9a03cf9972842588178387839f0ded3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09c13a93e644fba48c6ed0a2e1960a83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet.html#a09c13a93e644fba48c6ed0a2e1960a83">LoadDestData</a> (const <a class="el" href="standard_8h.html#ae9ce1f2e14383eb495b964486ac7273c">CTxDestination</a> &amp;dest, const std::string &amp;key, const std::string &amp;value)</td></tr>
-<tr class="memdesc:a09c13a93e644fba48c6ed0a2e1960a83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a destination data tuple to the store, without saving it to disk.  <a href="#a09c13a93e644fba48c6ed0a2e1960a83">More...</a><br /></td></tr>
-<tr class="separator:a09c13a93e644fba48c6ed0a2e1960a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad295a5a7044642c829b1772c855a2da5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet.html#ad295a5a7044642c829b1772c855a2da5">GetDestData</a> (const <a class="el" href="standard_8h.html#ae9ce1f2e14383eb495b964486ac7273c">CTxDestination</a> &amp;dest, const std::string &amp;key, std::string *value) const </td></tr>
-<tr class="memdesc:ad295a5a7044642c829b1772c855a2da5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look up a destination data tuple in the store, return true if found false otherwise.  <a href="#ad295a5a7044642c829b1772c855a2da5">More...</a><br /></td></tr>
-<tr class="separator:ad295a5a7044642c829b1772c855a2da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b20c305e207d38e599ca7fe5ffc07b7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet.html#a6b20c305e207d38e599ca7fe5ffc07b7">GetDestValues</a> (const std::string &amp;<a class="el" href="rest_8cpp.html#a5b41c5ae4505891e6c53e26df197e02b">prefix</a>) const </td></tr>
-<tr class="memdesc:a6b20c305e207d38e599ca7fe5ffc07b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all destination values matching a prefix.  <a href="#a6b20c305e207d38e599ca7fe5ffc07b7">More...</a><br /></td></tr>
-<tr class="separator:a6b20c305e207d38e599ca7fe5ffc07b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42b1405934c6253eb7cea16fcb8e0780"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet.html#a42b1405934c6253eb7cea16fcb8e0780">AddDestData</a> (const <a class="el" href="standard_8h.html#ae9ce1f2e14383eb495b964486ac7273c">CTxDestination</a> &amp;dest, const std::string &amp;key, const std::string &amp;value) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="class_c_wallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
+<tr class="memdesc:a42b1405934c6253eb7cea16fcb8e0780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a destination data tuple to the store, and saves it to disk.  <a href="#a42b1405934c6253eb7cea16fcb8e0780">More...</a><br /></td></tr>
+<tr class="separator:a42b1405934c6253eb7cea16fcb8e0780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab02992dc530fc07a2bdd5be78a6804e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet.html#aab02992dc530fc07a2bdd5be78a6804e">EraseDestData</a> (const <a class="el" href="standard_8h.html#ae9ce1f2e14383eb495b964486ac7273c">CTxDestination</a> &amp;dest, const std::string &amp;key) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="class_c_wallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
+<tr class="memdesc:aab02992dc530fc07a2bdd5be78a6804e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erases a destination data tuple in the store and on disk.  <a href="#aab02992dc530fc07a2bdd5be78a6804e">More...</a><br /></td></tr>
+<tr class="separator:aab02992dc530fc07a2bdd5be78a6804e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb08fda3939f1e00f636fb0d03b8e4e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet.html#aeb08fda3939f1e00f636fb0d03b8e4e7">LoadDestData</a> (const <a class="el" href="standard_8h.html#ae9ce1f2e14383eb495b964486ac7273c">CTxDestination</a> &amp;dest, const std::string &amp;key, const std::string &amp;value) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="class_c_wallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
+<tr class="memdesc:aeb08fda3939f1e00f636fb0d03b8e4e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a destination data tuple to the store, without saving it to disk.  <a href="#aeb08fda3939f1e00f636fb0d03b8e4e7">More...</a><br /></td></tr>
+<tr class="separator:aeb08fda3939f1e00f636fb0d03b8e4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a566fd7c9a03cbff1897b12491fb377b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet.html#a566fd7c9a03cbff1897b12491fb377b5">GetDestData</a> (const <a class="el" href="standard_8h.html#ae9ce1f2e14383eb495b964486ac7273c">CTxDestination</a> &amp;dest, const std::string &amp;key, std::string *value) const <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="class_c_wallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
+<tr class="memdesc:a566fd7c9a03cbff1897b12491fb377b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look up a destination data tuple in the store, return true if found false otherwise.  <a href="#a566fd7c9a03cbff1897b12491fb377b5">More...</a><br /></td></tr>
+<tr class="separator:a566fd7c9a03cbff1897b12491fb377b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab952025ce8504beca1ff7c6961a966bb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet.html#ab952025ce8504beca1ff7c6961a966bb">GetDestValues</a> (const std::string &amp;<a class="el" href="rest_8cpp.html#a5b41c5ae4505891e6c53e26df197e02b">prefix</a>) const <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="class_c_wallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
+<tr class="memdesc:ab952025ce8504beca1ff7c6961a966bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all destination values matching a prefix.  <a href="#ab952025ce8504beca1ff7c6961a966bb">More...</a><br /></td></tr>
+<tr class="separator:ab952025ce8504beca1ff7c6961a966bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf96e275eac457df2013e8ceb1810b703"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gaf96e275eac457df2013e8ceb1810b703">AddWatchOnly</a> (const <a class="el" href="class_c_script.html">CScript</a> &amp;dest, int64_t nCreateTime) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="class_c_wallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
 <tr class="memdesc:gaf96e275eac457df2013e8ceb1810b703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a watch-only address to the store, and saves it to disk.  <a href="group__map_wallet.html#gaf96e275eac457df2013e8ceb1810b703">More...</a><br /></td></tr>
 <tr class="separator:gaf96e275eac457df2013e8ceb1810b703"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -409,8 +411,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ga53e5528d7005608594e73f500bc5bb8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac6542da8493cbb958068b7a01c05b631"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actions.html#gac6542da8493cbb958068b7a01c05b631">DelAddressBook</a> (const <a class="el" href="standard_8h.html#ae9ce1f2e14383eb495b964486ac7273c">CTxDestination</a> &amp;address)</td></tr>
 <tr class="separator:gac6542da8493cbb958068b7a01c05b631"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga76055756d57a6151369aaf7c2f47f9e5"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actions.html#ga76055756d57a6151369aaf7c2f47f9e5">GetLabelName</a> (const <a class="el" href="class_c_script.html">CScript</a> &amp;scriptPubKey) const </td></tr>
-<tr class="separator:ga76055756d57a6151369aaf7c2f47f9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d2833fba7153c6410632008c2f1503b"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actions.html#ga9d2833fba7153c6410632008c2f1503b">GetLabelName</a> (const <a class="el" href="class_c_script.html">CScript</a> &amp;scriptPubKey) const <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="class_c_wallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
+<tr class="separator:ga9d2833fba7153c6410632008c2f1503b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaef7bc7ec0afff07a559e74847791f501"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actions.html#gaef7bc7ec0afff07a559e74847791f501">GetScriptForMining</a> (std::shared_ptr&lt; <a class="el" href="class_c_reserve_script.html">CReserveScript</a> &gt; &amp;script)</td></tr>
 <tr class="separator:gaef7bc7ec0afff07a559e74847791f501"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a157f4e912f74ba0d2bd53fc089332add"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet.html#a157f4e912f74ba0d2bd53fc089332add">GetKeyPoolSize</a> () <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="class_c_wallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
@@ -547,8 +549,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a2620c000d747ea03db198c38dce9f7b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18f695486dc955bc3c477d8ec2d8f513"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet.html#a18f695486dc955bc3c477d8ec2d8f513">nAccountingEntryNumber</a> = 0</td></tr>
 <tr class="separator:a18f695486dc955bc3c477d8ec2d8f513"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a360f527f08dfaaa29e3a8c9950b30905"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="standard_8h.html#ae9ce1f2e14383eb495b964486ac7273c">CTxDestination</a>, <a class="el" href="class_c_address_book_data.html">CAddressBookData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet.html#a360f527f08dfaaa29e3a8c9950b30905">mapAddressBook</a></td></tr>
-<tr class="separator:a360f527f08dfaaa29e3a8c9950b30905"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49e7cbbe996bd7cc20a5d56185de9862"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wallet.html#a49e7cbbe996bd7cc20a5d56185de9862">nRelockTime</a> = 0</td></tr>
 <tr class="memdesc:a49e7cbbe996bd7cc20a5d56185de9862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds a timestamp at which point the wallet is scheduled (externally) to be relocked. Caller must arrange for actual relocking to occur via <a class="el" href="class_c_crypto_key_store.html#ab73ebcbfa6e0aaf271d0fff9369a6685">Lock()</a>.  <a href="#a49e7cbbe996bd7cc20a5d56185de9862">More...</a><br /></td></tr>
 <tr class="separator:a49e7cbbe996bd7cc20a5d56185de9862"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -905,7 +905,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="acbeae89a10e129930e5059d9167697e5"></a>
+<a class="anchor" id="a42b1405934c6253eb7cea16fcb8e0780"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -942,14 +942,16 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_wallet_acbeae89a10e129930e5059d9167697e5_cgraph.svg" width="612" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_wallet_a42b1405934c6253eb7cea16fcb8e0780_cgraph.svg" width="612" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_wallet_acbeae89a10e129930e5059d9167697e5_icgraph.svg" width="412" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_wallet_a42b1405934c6253eb7cea16fcb8e0780_icgraph.svg" width="412" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -969,7 +971,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l04287">4287</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l04286">4286</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1122,7 +1124,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03954">3954</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03953">3953</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1189,7 +1191,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a9a03cf9972842588178387839f0ded3c"></a>
+<a class="anchor" id="aab02992dc530fc07a2bdd5be78a6804e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1220,7 +1222,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_wallet_a9a03cf9972842588178387839f0ded3c_cgraph.svg" width="634" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_wallet_aab02992dc530fc07a2bdd5be78a6804e_cgraph.svg" width="634" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1334,7 +1337,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ad295a5a7044642c829b1772c855a2da5"></a>
+<a class="anchor" id="a566fd7c9a03cbff1897b12491fb377b5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1370,7 +1373,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a6b20c305e207d38e599ca7fe5ffc07b7"></a>
+<a class="anchor" id="ab952025ce8504beca1ff7c6961a966bb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1391,7 +1394,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_wallet_a6b20c305e207d38e599ca7fe5ffc07b7_icgraph.svg" width="420" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_wallet_ab952025ce8504beca1ff7c6961a966bb_icgraph.svg" width="420" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1548,7 +1552,7 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="class_signing_provider.html#aed022fc3fb7cceab5925d0ca68da3a61">SigningProvider</a>.</p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l04409">4409</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l04408">4408</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1722,7 +1726,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l04379">4379</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l04378">4378</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1951,6 +1955,22 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a027938758fbcf14b85396f3ed5f88576"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="standard_8h.html#ae9ce1f2e14383eb495b964486ac7273c">CTxDestination</a>, <a class="el" href="class_c_address_book_data.html">CAddressBookData</a>&gt; mapAddressBook CWallet::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_wallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a1eb2590013da6f933861521169973817"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2047,7 +2067,7 @@ Here is the caller graph for this function:</div>
 
 <p>Same as LearnRelatedScripts, but when the OutputType is not known (and could be anything). </p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l04373">4373</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l04372">4372</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -2085,7 +2105,7 @@ Here is the caller graph for this function:</div>
 <p>Explicitly make the wallet learn the related scripts for outputs to the given key. </p>
 <p>This is purely to make the wallet file compatible with older software, as <a class="el" href="class_c_basic_key_store.html" title="Basic key store, that keeps keys in an address-&gt;secret map. ">CBasicKeyStore</a> automatically does this implicitly for all keys now. </p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l04362">4362</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l04361">4361</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2103,7 +2123,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a09c13a93e644fba48c6ed0a2e1960a83"></a>
+<a class="anchor" id="aeb08fda3939f1e00f636fb0d03b8e4e7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2140,7 +2160,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_wallet_a09c13a93e644fba48c6ed0a2e1960a83_icgraph.svg" width="416" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_wallet_aeb08fda3939f1e00f636fb0d03b8e4e7_icgraph.svg" width="416" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2244,7 +2265,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03884">3884</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03883">3883</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2270,7 +2291,7 @@ Here is the call graph for this function:</div>
 
 <p>Wallet post-init setup Gives the wallet a chance to register repetitive tasks and complete post-init tasks. </p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l04280">4280</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l04279">4279</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2354,7 +2375,7 @@ Here is the call graph for this function:</div>
 
 <p>Verify wallet naming and perform salvage on the wallet if required. </p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03902">3902</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l03901">3901</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2855,20 +2876,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a360f527f08dfaaa29e3a8c9950b30905"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::map&lt;<a class="el" href="standard_8h.html#ae9ce1f2e14383eb495b964486ac7273c">CTxDestination</a>, <a class="el" href="class_c_address_book_data.html">CAddressBookData</a>&gt; CWallet::mapAddressBook</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00791">791</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a23c5badf56c297a95557af3073d4aa32"></a>
 <div class="memitem">
 <div class="memproto">
@@ -3181,7 +3188,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 5 2019 22:44:24 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 9 2019 05:08:28 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

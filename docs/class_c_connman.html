@@ -134,8 +134,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab4bc83003310d960423d963148d5c9ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4709e5604e0f4369dada0a211493565"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_connman.html#aa4709e5604e0f4369dada0a211493565">Start</a> (<a class="el" href="class_c_scheduler.html">CScheduler</a> &amp;scheduler, const <a class="el" href="struct_c_connman_1_1_options.html">Options</a> &amp;options)</td></tr>
 <tr class="separator:aa4709e5604e0f4369dada0a211493565"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a289dca0ee65310fcfc5b552249fc0401"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_connman.html#a289dca0ee65310fcfc5b552249fc0401">Stop</a> ()</td></tr>
-<tr class="separator:a289dca0ee65310fcfc5b552249fc0401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a378672f17b857fda1318b26d017989ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_connman.html#a378672f17b857fda1318b26d017989ac">Stop</a> () <a class="el" href="threadsafety_8h.html#ab8ec653d80c013941ef73e4c80cd44cf">NO_THREAD_SAFETY_ANALYSIS</a></td></tr>
+<tr class="separator:a378672f17b857fda1318b26d017989ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d51a2b0b901b8538ed7cf6a8df7a3ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_connman.html#a4d51a2b0b901b8538ed7cf6a8df7a3ef">Interrupt</a> ()</td></tr>
 <tr class="separator:a4d51a2b0b901b8538ed7cf6a8df7a3ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbe3fb231a7495cd17adcc51bf615c28"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_connman.html#afbe3fb231a7495cd17adcc51bf615c28">GetNetworkActive</a> () const </td></tr>
@@ -319,6 +319,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:ac92b17574cb030af0341a70fe39ed348"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a434fcf9cda8ba37ea6e5137c09facd09"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt; vAddedNodes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_connman.html#a434fcf9cda8ba37ea6e5137c09facd09">GUARDED_BY</a> (<a class="el" href="class_c_connman.html#af185d7f8ac4389a0247a47cf16e4610c">cs_vAddedNodes</a>)</td></tr>
 <tr class="separator:a434fcf9cda8ba37ea6e5137c09facd09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a3fdd1edfcdd93a180cda455731b61b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_c_node.html">CNode</a> * &gt; vNodes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_connman.html#a2a3fdd1edfcdd93a180cda455731b61b">GUARDED_BY</a> (<a class="el" href="class_c_connman.html#a19b622717b482d588b2e9510a1163d35">cs_vNodes</a>)</td></tr>
+<tr class="separator:a2a3fdd1edfcdd93a180cda455731b61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
@@ -351,8 +353,6 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aedb5dff92cf5677c8465bb8ad43312e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af185d7f8ac4389a0247a47cf16e4610c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_connman.html#af185d7f8ac4389a0247a47cf16e4610c">cs_vAddedNodes</a></td></tr>
 <tr class="separator:af185d7f8ac4389a0247a47cf16e4610c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adce92c07b7355e841906b59cafdbe0c5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_c_node.html">CNode</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_connman.html#adce92c07b7355e841906b59cafdbe0c5">vNodes</a></td></tr>
-<tr class="separator:adce92c07b7355e841906b59cafdbe0c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a320b487f2f4437c2518cf6d2b37f95fd"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_c_node.html">CNode</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_connman.html#a320b487f2f4437c2518cf6d2b37f95fd">vNodesDisconnected</a></td></tr>
 <tr class="separator:a320b487f2f4437c2518cf6d2b37f95fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19b622717b482d588b2e9510a1163d35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_connman.html#a19b622717b482d588b2e9510a1163d35">cs_vNodes</a></td></tr>
@@ -425,7 +425,7 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="net_8h_source.html#l00117">117</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00113">113</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a78c7481e9b2575bb1fb37078e28a1c6a"></a>
 <div class="memitem">
@@ -447,7 +447,7 @@ Friends</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00121">121</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00117">117</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -476,7 +476,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02128">2128</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02126">2126</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -500,12 +500,13 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02365">2365</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02363">2363</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_connman_ab4bc83003310d960423d963148d5c9ec_cgraph.svg" width="866" height="358"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_connman_ab4bc83003310d960423d963148d5c9ec_cgraph.svg" width="866" height="358"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -534,7 +535,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l00891">891</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l00889">889</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -582,7 +583,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02386">2386</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02384">2384</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -614,7 +615,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02396">2396</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02394">2394</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 </div>
 </div>
@@ -640,7 +641,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l00090">90</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l00088">88</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -675,7 +676,7 @@ Here is the caller graph for this function:</div>
 <p>Try to find a connection to evict when the node is full. </p>
 <p>Extreme care must be taken to avoid opening the node to attacker triggered network partitioning. The strategy used here is to protect a small number of peers for each of several distinct characteristics which are difficult to forge. In order to partition a node the attacker must be simultaneously better at all of them than honest peers. </p>
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l00807">807</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l00805">805</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -718,7 +719,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02142">2142</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02140">2140</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -774,7 +775,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l01995">1995</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l01993">1993</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -814,7 +815,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02757">2757</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02721">2721</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -846,7 +847,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l00327">327</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l00325">325</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -909,7 +910,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>debug print </p>
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l00353">353</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l00351">351</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -949,7 +950,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02354">2354</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02352">2352</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -961,7 +962,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_connman_a1c476458d499d52f2c87c88d93082a9d_icgraph.svg" width="918" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_connman_a1c476458d499d52f2c87c88d93082a9d_icgraph.svg" width="918" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -981,7 +983,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02446">2446</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02444">2444</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1013,7 +1015,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02456">2456</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02454">2454</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1038,7 +1040,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02469">2469</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02467">2467</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1063,7 +1065,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02474">2474</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02472">2472</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 </div>
 </div>
@@ -1088,7 +1090,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l00977">977</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l00975">975</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1127,7 +1129,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l01600">1600</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l01598">1598</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1139,7 +1141,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_connman_aefdc911e6c978574ec42051faeaea041_icgraph.svg" width="630" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_connman_aefdc911e6c978574ec42051faeaea041_icgraph.svg" width="630" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1167,7 +1170,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l00283">283</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l00281">281</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1200,7 +1203,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l00294">294</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l00292">292</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1233,7 +1236,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l00305">305</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l00303">303</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 </div>
 </div>
@@ -1259,7 +1262,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l00316">316</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l00314">314</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 </div>
 </div>
@@ -1287,7 +1290,7 @@ template&lt;typename Callable &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00194">194</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00201">201</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1322,7 +1325,7 @@ template&lt;typename Callable &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00204">204</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00211">211</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1360,7 +1363,7 @@ template&lt;typename Callable , typename CallableAfter &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00214">214</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00221">221</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1405,7 +1408,7 @@ template&lt;typename Callable , typename CallableAfter &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00225">225</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00232">232</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1433,7 +1436,7 @@ template&lt;typename Callable , typename CallableAfter &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02723">2723</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02687">2687</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1489,7 +1492,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l01086">1086</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l01084">1084</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1520,7 +1523,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l01820">1820</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l01818">1818</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1551,7 +1554,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02371">2371</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02369">2369</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1582,7 +1585,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02391">2391</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02389">2389</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1613,7 +1616,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02604">2604</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02602">2602</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1640,7 +1643,7 @@ Here is the caller graph for this function:</div>
 
 <p>Get a unique deterministic randomizer. </p>
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02752">2752</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02716">2716</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1671,7 +1674,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l01645">1645</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l01643">1643</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1695,7 +1698,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02594">2594</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02592">2592</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 </div>
 </div>
@@ -1712,7 +1715,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02515">2515</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02513">2513</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 </div>
 </div>
@@ -1729,7 +1732,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02521">2521</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02519">2519</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 </div>
 </div>
@@ -1748,7 +1751,7 @@ Here is the caller graph for this function:</div>
 
 <p>response the time in second left in the current max outbound cycle in case of no limit, it will always response 0 </p>
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02527">2527</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02525">2525</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1787,7 +1790,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00183">183</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00190">190</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1819,7 +1822,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02136">2136</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02134">2134</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1844,7 +1847,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02419">2419</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02417">2417</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 </div>
 </div>
@@ -1862,7 +1865,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02435">2435</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02433">2433</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 </div>
 </div>
@@ -1881,7 +1884,7 @@ Here is the caller graph for this function:</div>
 
 <p>response the bytes left in the current max outbound cycle in case of no limit, it will always response 0 </p>
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02573">2573</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02571">2571</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 </div>
 </div>
@@ -1898,7 +1901,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02609">2609</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02607">2607</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1922,7 +1925,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02582">2582</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02580">2580</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 </div>
 </div>
@@ -1939,7 +1942,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02588">2588</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02586">2586</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 </div>
 </div>
@@ -1956,7 +1959,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l01628">1628</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l01626">1626</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1988,7 +1991,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00184">184</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00191">191</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -2191,6 +2194,30 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a2a3fdd1edfcdd93a180cda455731b61b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="class_c_node.html">CNode</a>*&gt; vNodes CConnman::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_connman.html#a19b622717b482d588b2e9510a1163d35">cs_vNodes</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ac7c20a9d4a6d7256e26645a93cdb7181"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2213,7 +2240,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l01053">1053</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l01051">1051</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2253,7 +2280,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00152">152</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00148">148</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2303,7 +2330,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02155">2155</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02153">2153</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2334,7 +2361,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02289">2289</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02287">2287</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2374,7 +2401,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l00460">460</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l00458">458</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -2399,7 +2426,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02381">2381</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02379">2379</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2439,7 +2466,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02681">2681</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02645">2645</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 </div>
 </div>
@@ -2464,7 +2491,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l01039">1039</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l01037">1037</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -2529,7 +2556,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l01902">1902</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l01900">1900</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2563,7 +2590,7 @@ Here is the caller graph for this function:</div>
 
 <p>check if the outbound target is reached if param historicalBlockServingLimit is set true, the function will response true if the limit for serving historical blocks has been reached </p>
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02553">2553</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02551">2551</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2608,7 +2635,7 @@ Here is the caller graph for this function:</div>
 <p>Attempts to obfuscate tx time through exponentially distributed emitting. </p>
 <p>Works assuming that a single interval is used. Variable intervals will result in privacy decrease. </p>
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02736">2736</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02700">2700</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2647,7 +2674,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l01611">1611</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l01609">1609</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2689,7 +2716,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02686">2686</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02650">2650</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2729,7 +2756,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02486">2486</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02484">2484</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -2762,7 +2789,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02492">2492</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02490">2490</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2794,7 +2821,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02407">2407</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02405">2405</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 </div>
 </div>
@@ -2812,7 +2839,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02599">2599</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02597">2597</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -2839,7 +2866,7 @@ Here is the caller graph for this function:</div>
 
 <p>set the max outbound target in bytes </p>
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02509">2509</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02507">2507</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 </div>
 </div>
@@ -2859,7 +2886,7 @@ Here is the caller graph for this function:</div>
 
 <p>set the timeframe for the max outbound target </p>
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02541">2541</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02539">2539</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2884,7 +2911,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02115">2115</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02113">2113</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 </div>
 </div>
@@ -2912,7 +2939,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02376">2376</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02374">2374</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2944,7 +2971,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l01633">1633</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l01631">1631</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -2993,7 +3020,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l01175">1175</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l01173">1173</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -3032,7 +3059,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l01250">1250</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l01248">1248</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -3072,7 +3099,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l00691">691</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l00689">689</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -3114,7 +3141,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02173">2173</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02171">2171</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -3125,7 +3152,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a289dca0ee65310fcfc5b552249fc0401"></a>
+<a class="anchor" id="a378672f17b857fda1318b26d017989ac"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3138,19 +3165,21 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02313">2313</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02311">2311</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_connman_a289dca0ee65310fcfc5b552249fc0401_cgraph.svg" width="610" height="358"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_connman_a378672f17b857fda1318b26d017989ac_cgraph.svg" width="610" height="358"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_connman_a289dca0ee65310fcfc5b552249fc0401_icgraph.svg" width="372" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_connman_a378672f17b857fda1318b26d017989ac_icgraph.svg" width="372" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -3177,7 +3206,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l01524">1524</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l01522">1522</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -3216,7 +3245,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l01941">1941</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l01939">1939</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -3255,7 +3284,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l01874">1874</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l01872">1872</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -3295,7 +3324,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l01659">1659</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l01657">1657</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -3334,7 +3363,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l01373">1373</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l01371">1371</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -3365,7 +3394,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l01383">1383</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l01381">1381</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -3402,7 +3431,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00435">435</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00442">442</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -3425,7 +3454,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00384">384</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00391">391</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -3447,7 +3476,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00406">406</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00413">413</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -3469,7 +3498,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00416">416</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00423">423</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -3491,7 +3520,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00360">360</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00367">367</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -3513,7 +3542,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00361">361</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00368">368</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -3535,7 +3564,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00388">388</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00395">395</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -3557,7 +3586,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00391">391</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00398">398</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -3579,7 +3608,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00386">386</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00393">393</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -3601,7 +3630,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00383">383</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00390">390</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -3623,7 +3652,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00418">418</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00425">425</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -3647,7 +3676,7 @@ Here is the caller graph for this function:</div>
 
 <p>flag for waking the message processor. </p>
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00414">414</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00421">421</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -3669,7 +3698,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00382">382</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00389">389</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -3691,7 +3720,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00420">420</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00427">427</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -3713,7 +3742,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00408">408</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00415">415</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -3735,7 +3764,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00407">407</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00414">414</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -3757,7 +3786,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00433">433</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00440">440</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -3779,7 +3808,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00372">372</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00379">379</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -3803,7 +3832,7 @@ Here is the caller graph for this function:</div>
 
 <p>flag for deciding to connect to an extra outbound peer, in excess of nMaxOutbound This takes the place of a feeler connection </p>
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00431">431</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00438">438</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -3825,7 +3854,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00404">404</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00411">411</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -3847,7 +3876,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00417">417</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00424">424</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -3869,7 +3898,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00405">405</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00412">412</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -3891,7 +3920,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00392">392</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00399">399</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -3915,7 +3944,7 @@ Here is the caller graph for this function:</div>
 
 <p>Services this instance offers. </p>
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00396">396</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00403">403</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -3937,7 +3966,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00402">402</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00409">409</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -3959,7 +3988,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00400">400</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00407">407</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -3981,7 +4010,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00403">403</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00410">410</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -4003,7 +4032,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00401">401</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00408">408</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -4025,7 +4054,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00393">393</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00400">400</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -4047,7 +4076,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00379">379</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00386">386</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -4071,7 +4100,7 @@ Here is the caller graph for this function:</div>
 
 <p>SipHasher seeds for deterministic randomness. </p>
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00411">411</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00418">418</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -4093,7 +4122,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00411">411</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00418">418</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -4115,7 +4144,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00378">378</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00385">385</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -4137,7 +4166,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00399">399</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00406">406</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -4159,7 +4188,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00398">398</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00405">405</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -4181,7 +4210,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00422">422</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00429">429</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -4203,7 +4232,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00426">426</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00433">433</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -4225,7 +4254,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00424">424</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00431">431</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -4247,7 +4276,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00425">425</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00432">432</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -4269,7 +4298,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00423">423</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00430">430</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -4291,29 +4320,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00381">381</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="adce92c07b7355e841906b59cafdbe0c5"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="class_c_node.html">CNode</a>*&gt; CConnman::vNodes</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="net_8h_source.html#l00389">389</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00388">388</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -4335,7 +4342,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00390">390</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00397">397</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -4357,7 +4364,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00376">376</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00383">383</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -4368,7 +4375,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 5 2019 22:44:22 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 9 2019 05:08:26 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

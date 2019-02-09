@@ -108,6 +108,8 @@ Collaboration diagram for CChainState:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a3703bd0134dfe07b5ea2398ebe69089d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="validation_8h.html#a6b962fe256607627c8140021ae7a23e1">BlockMap</a> <a class="el" href="validation_8cpp.html#aeccc8c1b7fffcca5d6c0d8486cc9b48b">mapBlockIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a3703bd0134dfe07b5ea2398ebe69089d">GUARDED_BY</a> (<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
+<tr class="separator:a3703bd0134dfe07b5ea2398ebe69089d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25df87c65c89c79a4061f28c09599856"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a25df87c65c89c79a4061f28c09599856">LoadBlockIndex</a> (const <a class="el" href="struct_consensus_1_1_params.html">Consensus::Params</a> &amp;consensus_params, <a class="el" href="class_c_block_tree_d_b.html">CBlockTreeDB</a> &amp;blocktree) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
 <tr class="separator:a25df87c65c89c79a4061f28c09599856"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a24c6da53ff4b725e2d1c8b4af007fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a5a24c6da53ff4b725e2d1c8b4af007fe">ActivateBestChain</a> (<a class="el" href="class_c_validation_state.html">CValidationState</a> &amp;state, const <a class="el" href="class_c_chain_params.html">CChainParams</a> &amp;chainparams, std::shared_ptr&lt; const <a class="el" href="class_c_block.html">CBlock</a> &gt; pblock)</td></tr>
@@ -150,8 +152,6 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a9b1419f91f5e56c7d4db775526c14e0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_chain.html">CChain</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a9b1419f91f5e56c7d4db775526c14e0d">chainActive</a></td></tr>
 <tr class="separator:a9b1419f91f5e56c7d4db775526c14e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95e2cf108ec02553707ae715b3acf0ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="validation_8h.html#a6b962fe256607627c8140021ae7a23e1">BlockMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a95e2cf108ec02553707ae715b3acf0ee">mapBlockIndex</a></td></tr>
-<tr class="separator:a95e2cf108ec02553707ae715b3acf0ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a318040c11336b79eddc71e1d3b176f2a"><td class="memItemLeft" align="right" valign="top">std::multimap&lt; <a class="el" href="class_c_block_index.html">CBlockIndex</a> *, <a class="el" href="class_c_block_index.html">CBlockIndex</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#a318040c11336b79eddc71e1d3b176f2a">mapBlocksUnlinked</a></td></tr>
 <tr class="separator:a318040c11336b79eddc71e1d3b176f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0ae491f2e6b031587a5ad35fdafe546"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_block_index.html">CBlockIndex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_chain_state.html#ae0ae491f2e6b031587a5ad35fdafe546">pindexBestInvalid</a> = nullptr</td></tr>
@@ -808,6 +808,22 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a3703bd0134dfe07b5ea2398ebe69089d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="validation_8h.html#a6b962fe256607627c8140021ae7a23e1">BlockMap</a> <a class="el" href="validation_8cpp.html#aeccc8c1b7fffcca5d6c0d8486cc9b48b">mapBlockIndex</a> CChainState::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ab23edc8172cd1b029dbec82bafacd33e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1417,20 +1433,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a95e2cf108ec02553707ae715b3acf0ee"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="validation_8h.html#a6b962fe256607627c8140021ae7a23e1">BlockMap</a> CChainState::mapBlockIndex</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="validation_8cpp_source.html#l00155">155</a> of file <a class="el" href="validation_8cpp_source.html">validation.cpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a318040c11336b79eddc71e1d3b176f2a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1562,7 +1564,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 5 2019 22:44:22 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 9 2019 05:08:25 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

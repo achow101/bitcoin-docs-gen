@@ -91,6 +91,7 @@ var searchData=
   ['depth_5flimit',['depth_limit',['../class_cuckoo_cache_1_1cache.html#a22923824d2f457d0b3ef99a85a7fa293',1,'CuckooCache::cache']]],
   ['dereferencingcomparator',['DereferencingComparator',['../struct_dereferencing_comparator.html',1,'']]],
   ['derive',['Derive',['../class_c_key.html#a1bae09b7447a951d8fc3328b7dcc3a3f',1,'CKey::Derive()'],['../struct_c_ext_key.html#a2fa3a39434ae09efbbd4058d1d081aa2',1,'CExtKey::Derive()'],['../class_c_pub_key.html#add183528b09791bdd0f982e63308d263',1,'CPubKey::Derive()'],['../struct_c_ext_pub_key.html#a404798f7d800ffb539cf97431025597f',1,'CExtPubKey::Derive()']]],
+  ['deriveaddresses',['deriveaddresses',['../misc_8cpp.html#ac83965fd04331e12058ef7b84ec835cd',1,'misc.cpp']]],
   ['derivenewchildkey',['DeriveNewChildKey',['../group__map_wallet.html#gafb01fcc10d890174b2db560a7f27b58a',1,'CWallet']]],
   ['derivenewseed',['DeriveNewSeed',['../group__map_wallet.html#gaf72003c77abf215cc1576ab6c50125f7',1,'CWallet']]],
   ['derivetype',['DeriveType',['../descriptor_8cpp.html#aefc2d839ec2eecd42a20f1ecfe24865b',1,'descriptor.cpp']]],

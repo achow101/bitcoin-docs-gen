@@ -95,7 +95,6 @@ var searchData=
   ['viewitemchanged',['viewItemChanged',['../class_coin_control_dialog.html#ac3c37dabd83f71d9c96bf5567fe85234',1,'CoinControlDialog']]],
   ['vin',['vin',['../class_c_transaction.html#ad64447ea044ec850313696fc99412d95',1,'CTransaction::vin()'],['../struct_c_mutable_transaction.html#ad6b1a0a773293fd153a1d384923631da',1,'CMutableTransaction::vin()']]],
   ['vmatchedtxn',['vMatchedTxn',['../class_c_merkle_block.html#a73bbbdcb5d83588b15461c02d0228999',1,'CMerkleBlock']]],
-  ['vnodes',['vNodes',['../class_c_connman.html#adce92c07b7355e841906b59cafdbe0c5',1,'CConnman']]],
   ['vnodesdisconnected',['vNodesDisconnected',['../class_c_connman.html#a320b487f2f4437c2518cf6d2b37f95fd',1,'CConnman']]],
   ['vnull',['VNULL',['../class_uni_value.html#a2f9803e567ede73e88302b01e394cc63a49973f733a7441eacf39e816229891cd',1,'UniValue']]],
   ['vnum',['VNUM',['../class_uni_value.html#a2f9803e567ede73e88302b01e394cc63aba88a44dcdb6e3be0538d14997ff042b',1,'UniValue']]],

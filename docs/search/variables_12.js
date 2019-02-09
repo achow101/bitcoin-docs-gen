@@ -35,7 +35,6 @@ var searchData=
   ['service',['service',['../class_tor_controller.html#aa460dee5c02e036c6784f64b4a3634e3',1,'TorController']]],
   ['service_5fid',['service_id',['../class_tor_controller.html#a471e6bcf2090fd772503d22f3e028968',1,'TorController']]],
   ['set_5fpre_5fsplit_5fkeypool',['set_pre_split_keypool',['../class_c_wallet.html#a3be58e0ef2fe818d115c00f17f5b3b1b',1,'CWallet']]],
-  ['setaskfor',['setAskFor',['../class_c_node.html#a9c8fd0d0ef6e26896c53380e6d6bf331',1,'CNode']]],
   ['setblockindexcandidates',['setBlockIndexCandidates',['../class_c_chain_state.html#a528c14be4a2a7c6837a2d099b2ad7ef7',1,'CChainState']]],
   ['setinternalkeypool',['setInternalKeyPool',['../class_c_wallet.html#ad70dbdd4a3ed8c35eb2b4fabef06d0a7',1,'CWallet']]],
   ['setinventorytxtosend',['setInventoryTxToSend',['../class_c_node.html#af17190ecdeab1d68c55090ef17dcd65c',1,'CNode']]],

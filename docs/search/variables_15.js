@@ -40,7 +40,6 @@ var searchData=
   ['vhlistensocket',['vhListenSocket',['../class_c_connman.html#a6a8dd8e367c6342baf26c697d004906d',1,'CConnman']]],
   ['vin',['vin',['../class_c_transaction.html#ad64447ea044ec850313696fc99412d95',1,'CTransaction::vin()'],['../struct_c_mutable_transaction.html#ad6b1a0a773293fd153a1d384923631da',1,'CMutableTransaction::vin()']]],
   ['vmatchedtxn',['vMatchedTxn',['../class_c_merkle_block.html#a73bbbdcb5d83588b15461c02d0228999',1,'CMerkleBlock']]],
-  ['vnodes',['vNodes',['../class_c_connman.html#adce92c07b7355e841906b59cafdbe0c5',1,'CConnman']]],
   ['vnodesdisconnected',['vNodesDisconnected',['../class_c_connman.html#a320b487f2f4437c2518cf6d2b37f95fd',1,'CConnman']]],
   ['vorderform',['vOrderForm',['../class_c_wallet_tx.html#a923dbbba343b8f4d1c3d89ae73bdcea0',1,'CWalletTx']]],
   ['vout',['vout',['../class_c_transaction.html#a708645274ddfd83829315ffe5c7c5c3e',1,'CTransaction::vout()'],['../struct_c_mutable_transaction.html#aca14a252c78e4af2dfe68d7ea67a77dc',1,'CMutableTransaction::vout()'],['../struct_c_output_entry.html#af2c29f7df8dc2a44513b906c16f8b4ea',1,'COutputEntry::vout()']]],
