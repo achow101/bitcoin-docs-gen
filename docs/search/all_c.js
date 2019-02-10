@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['label',['label',['../struct_address_table_entry.html#a4a427495652b7716f84aa88b2cb4f296',1,'AddressTableEntry::label()'],['../class_send_coins_recipient.html#a0152933f2c0cb9164d2fcb36bca83666',1,'SendCoinsRecipient::label()'],['../class_address_table_model.html#a432276ac4504e926466072561c5ddb33aaf8f25cebb70b8a394d6c0f23c941a32',1,'AddressTableModel::Label()'],['../class_recent_requests_table_model.html#a720ff50ef9f8e016a5d2bbd8fd7fb41da6122ebd2a6dc081e6b25727cd4962fad',1,'RecentRequestsTableModel::Label()']]],
+  ['label',['Label',['../class_address_table_model.html#a432276ac4504e926466072561c5ddb33aaf8f25cebb70b8a394d6c0f23c941a32',1,'AddressTableModel::Label()'],['../class_recent_requests_table_model.html#a720ff50ef9f8e016a5d2bbd8fd7fb41da6122ebd2a6dc081e6b25727cd4962fad',1,'RecentRequestsTableModel::Label()'],['../struct_address_table_entry.html#a4a427495652b7716f84aa88b2cb4f296',1,'AddressTableEntry::label()'],['../class_send_coins_recipient.html#a0152933f2c0cb9164d2fcb36bca83666',1,'SendCoinsRecipient::label()']]],
   ['label_5fcolumn_5fwidth',['LABEL_COLUMN_WIDTH',['../class_receive_coins_dialog.html#a348824c8475841e6e0cb35fdf9090656a51bc59ac21abedb1b2f4119e9723da21',1,'ReceiveCoinsDialog']]],
   ['labelblocksicon',['labelBlocksIcon',['../class_bitcoin_g_u_i.html#aacb34d5498f011abe772f16a81bfc099',1,'BitcoinGUI']]],
   ['labelforaddress',['labelForAddress',['../class_address_table_model.html#a1c39ce19eecfc9f3ace10435b162607f',1,'AddressTableModel']]],
@@ -8,7 +8,7 @@ var searchData=
   ['labelrole',['LabelRole',['../class_transaction_table_model.html#a4b248508c36df598476affbf9871d1e6a286d79e8b1e0bfc8cb6bb72bbec78de2',1,'TransactionTableModel']]],
   ['labelwalletencryptionicon',['labelWalletEncryptionIcon',['../class_bitcoin_g_u_i.html#aaa28ccc5dd4decce652b45848e79d599',1,'BitcoinGUI']]],
   ['labelwallethdstatusicon',['labelWalletHDStatusIcon',['../class_bitcoin_g_u_i.html#ae5285343e1b7c339162931109ce775b2',1,'BitcoinGUI']]],
-  ['language',['Language',['../class_options_model.html#a5c6c9ca8a01aca9f53e91f118e4878d2a6b5dd4d156c9a7909b2651e0ccb56e7c',1,'OptionsModel::Language()'],['../class_options_model.html#ada92cb2e12e1f3d94de602468a188a33',1,'OptionsModel::language()']]],
+  ['language',['language',['../class_options_model.html#ada92cb2e12e1f3d94de602468a188a33',1,'OptionsModel::language()'],['../class_options_model.html#a5c6c9ca8a01aca9f53e91f118e4878d2a6b5dd4d156c9a7909b2651e0ccb56e7c',1,'OptionsModel::Language()']]],
   ['last',['last',['../class_span.html#a79c28d4eca933b4454a77d4fe2fca8dd',1,'Span']]],
   ['last_5ffailed_5fblock',['last_failed_block',['../struct_c_wallet_1_1_scan_result.html#a6c1d6b96d70fc0ad5a015bce68a8af6a',1,'CWallet::ScanResult']]],
   ['last_5fscanned_5fblock',['last_scanned_block',['../struct_c_wallet_1_1_scan_result.html#abedd49717dd9384e47ef090aef650815',1,'CWallet::ScanResult']]],
@@ -117,7 +117,7 @@ var searchData=
   ['lockingcallbackopenssl',['LockingCallbackOpenSSL',['../random_8cpp.html#a5b44800604cfaf321ec4836c5a30ec0e',1,'random.cpp']]],
   ['lockingfailed',['LockingFailed',['../class_locked_pool_manager.html#a8ba9f1bea4a8cdd680eb5d48f8def5a9',1,'LockedPoolManager']]],
   ['lockingfailed_5fcallback',['LockingFailed_Callback',['../class_locked_pool.html#ae6ea659ae70ee30e555e02f5b71871c6',1,'LockedPool']]],
-  ['lockpoints',['LockPoints',['../struct_lock_points.html',1,'LockPoints'],['../class_c_tx_mem_pool_entry.html#ad6809157651778ea15287394e3178124',1,'CTxMemPoolEntry::lockPoints()'],['../struct_lock_points.html#aae4272817e78779c4e62c13a347fce9f',1,'LockPoints::LockPoints()']]],
+  ['lockpoints',['LockPoints',['../struct_lock_points.html',1,'LockPoints'],['../struct_lock_points.html#aae4272817e78779c4e62c13a347fce9f',1,'LockPoints::LockPoints()'],['../class_c_tx_mem_pool_entry.html#ad6809157651778ea15287394e3178124',1,'CTxMemPoolEntry::lockPoints()']]],
   ['locks_5fexcluded',['LOCKS_EXCLUDED',['../threadsafety_8h.html#a6bb97382864d0bd2cd4dd5191bb03f6c',1,'threadsafety.h']]],
   ['log2f_5fold',['log2f_old',['../glibc__compat_8cpp.html#ac78ba35ed6f6a7a61f8101f1c03059cd',1,'glibc_compat.cpp']]],
   ['logcategories',['LogCategories',['../logging_8cpp.html#a13059f8b48211f06d9aff7d05d1aa37b',1,'logging.cpp']]],

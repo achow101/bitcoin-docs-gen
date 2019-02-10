@@ -57,7 +57,7 @@ var searchData=
   ['getassumedblockchainsize',['getAssumedBlockchainSize',['../classinterfaces_1_1_node.html#ae9bccce873011dc25d35e0f005c6ba39',1,'interfaces::Node']]],
   ['getassumedchainstatesize',['getAssumedChainStateSize',['../classinterfaces_1_1_node.html#a4f39f2898b01d8fb1813bdb09db42351',1,'interfaces::Node']]],
   ['getauthcookie',['GetAuthCookie',['../rpc_2protocol_8cpp.html#a25c502e3691e714e8a130c2325d40d63',1,'GetAuthCookie(std::string *cookie_out):&#160;protocol.cpp'],['../rpc_2protocol_8h.html#a25c502e3691e714e8a130c2325d40d63',1,'GetAuthCookie(std::string *cookie_out):&#160;protocol.cpp']]],
-  ['getavailablebalance',['GetAvailableBalance',['../group___actions.html#gac09f21755f47f12252267017aa651483',1,'CWallet::GetAvailableBalance()'],['../classinterfaces_1_1_wallet.html#a3ce03dcae0b94cba593fb5d93ebfad2b',1,'interfaces::Wallet::getAvailableBalance()']]],
+  ['getavailablebalance',['getAvailableBalance',['../classinterfaces_1_1_wallet.html#a3ce03dcae0b94cba593fb5d93ebfad2b',1,'interfaces::Wallet::getAvailableBalance()'],['../group___actions.html#gac09f21755f47f12252267017aa651483',1,'CWallet::GetAvailableBalance()']]],
   ['getavailablecredit',['GetAvailableCredit',['../group__map_wallet.html#ga1b582470fc100dac5f1fd3e141bf528b',1,'CWalletTx']]],
   ['getavailablewidthforcolumn',['getAvailableWidthForColumn',['../class_g_u_i_util_1_1_table_view_last_column_resizing_fixer.html#ad0c6ff117107634ae8d37f056d27e711',1,'GUIUtil::TableViewLastColumnResizingFixer']]],
   ['getbalance',['getBalance',['../classinterfaces_1_1_wallet.html#a862a91f3f272e1fd176b9ef96c67876a',1,'interfaces::Wallet::getBalance()'],['../group___actions.html#gae070923b904360013ff759342d1ec070',1,'CWallet::GetBalance()']]],
