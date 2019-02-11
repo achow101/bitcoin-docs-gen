@@ -99,14 +99,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="key__io_8h_source.html">key_io.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="keystore_8h_source.html">keystore.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="policy_2fees_8h_source.html">policy/fees.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="rpc_2protocol_8h_source.html">rpc/protocol.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="rpc_2util_8h_source.html">rpc/util.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="tinyformat_8h_source.html">tinyformat.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="strencodings_8h_source.html">util/strencodings.h</a>&gt;</code><br />
+<code>#include &lt;validation.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for util.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="util_8cpp__incl.svg" width="3224" height="575"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="util_8cpp__incl.svg" width="3303" height="575"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="util_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -130,6 +133,9 @@ Functions</h2></td></tr>
 <tr class="separator:a804d6824bed98b30dc92d53b40d776c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af91efe7877ce4e77064e04d13888ae4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_uni_value.html">UniValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#af91efe7877ce4e77064e04d13888ae4f">DescribeAddress</a> (const <a class="el" href="standard_8h.html#ae9ce1f2e14383eb495b964486ac7273c">CTxDestination</a> &amp;dest)</td></tr>
 <tr class="separator:af91efe7877ce4e77064e04d13888ae4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeae629d66e8abfac91fb0b43f5f1962e"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#aeae629d66e8abfac91fb0b43f5f1962e">ParseConfirmTarget</a> (const <a class="el" href="class_uni_value.html">UniValue</a> &amp;value)</td></tr>
+<tr class="memdesc:aeae629d66e8abfac91fb0b43f5f1962e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a confirm target option and raise an RPC error if it is invalid.  <a href="#aeae629d66e8abfac91fb0b43f5f1962e">More...</a><br /></td></tr>
+<tr class="separator:aeae629d66e8abfac91fb0b43f5f1962e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -162,7 +168,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00028">28</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00030">30</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -204,7 +210,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00049">49</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00051">51</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -236,7 +242,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00127">127</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00129">129</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -268,7 +274,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00015">15</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00017">17</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -281,6 +287,42 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="util_8cpp_ac18ea86a874bf7841b716eca2b467746_icgraph.svg" width="842" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aeae629d66e8abfac91fb0b43f5f1962e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ParseConfirmTarget </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_uni_value.html">UniValue</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parse a confirm target option and raise an RPC error if it is invalid. </p>
+
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00134">134</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="util_8cpp_aeae629d66e8abfac91fb0b43f5f1962e_cgraph.svg" width="1922" height="1240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="util_8cpp_aeae629d66e8abfac91fb0b43f5f1962e_icgraph.svg" width="900" height="424"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -300,14 +342,14 @@ Here is the caller graph for this function:</div>
 <p>Pointers to interfaces that need to be accessible from RPC methods. </p>
 <p>Due to limitations of the RPC framework, there's currently no direct way to pass in state to RPC method implementations. </p>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00012">12</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00014">14</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 11 2019 13:25:03 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 11 2019 13:38:20 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
