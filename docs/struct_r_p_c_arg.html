@@ -114,22 +114,29 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a0ce667013a0bcfc34bf4bc5dd8e4aad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3b97706e3215f0b484d2597108bf927"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_p_c_arg.html#ae3b97706e3215f0b484d2597108bf927">Optional</a> { <a class="el" href="struct_r_p_c_arg.html#ae3b97706e3215f0b484d2597108bf927ac2f3f489a00553e7a01d369c103c7251">Optional::NO</a>, 
+<a class="el" href="struct_r_p_c_arg.html#ae3b97706e3215f0b484d2597108bf927a0ea08898e41ad6eda1dffb0b2cf94bb9">Optional::OMITTED_NAMED_ARG</a>, 
+<a class="el" href="struct_r_p_c_arg.html#ae3b97706e3215f0b484d2597108bf927a3b1c7263d9d59d86114f90b1f57c91c4">Optional::OMITTED</a>
+ }</td></tr>
+<tr class="separator:ae3b97706e3215f0b484d2597108bf927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a394f8105bc4ed63f584fe054f9b6077e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_p_c_arg.html#a394f8105bc4ed63f584fe054f9b6077e">Fallback</a> = boost::variant&lt; <a class="el" href="struct_r_p_c_arg.html#ae3b97706e3215f0b484d2597108bf927">Optional</a>, std::string &gt;</td></tr>
+<tr class="separator:a394f8105bc4ed63f584fe054f9b6077e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8d17c90c4908c460325f3ea37d1b7265"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_p_c_arg.html#a8d17c90c4908c460325f3ea37d1b7265">RPCArg</a> (const std::string &amp;<a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, const <a class="el" href="struct_r_p_c_arg.html#a0ce667013a0bcfc34bf4bc5dd8e4aad2">Type</a> &amp;type, const bool opt, const std::string &amp;default_val, const std::string &amp;description, const std::string &amp;oneline_description=&quot;&quot;, const std::vector&lt; std::string &gt; &amp;type_str={})</td></tr>
-<tr class="separator:a8d17c90c4908c460325f3ea37d1b7265"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03f947b475702c0af16133765c35cf63"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_p_c_arg.html#a03f947b475702c0af16133765c35cf63">RPCArg</a> (const std::string &amp;<a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, const <a class="el" href="struct_r_p_c_arg.html#a0ce667013a0bcfc34bf4bc5dd8e4aad2">Type</a> &amp;type, const bool opt, const std::string &amp;default_val, const std::string &amp;description, const std::vector&lt; <a class="el" href="struct_r_p_c_arg.html">RPCArg</a> &gt; &amp;inner, const std::string &amp;oneline_description=&quot;&quot;, const std::vector&lt; std::string &gt; &amp;type_str={})</td></tr>
-<tr class="separator:a03f947b475702c0af16133765c35cf63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4327563db92bdced01e9d1f730f03dfe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_p_c_arg.html#a4327563db92bdced01e9d1f730f03dfe">RPCArg</a> (const std::string &amp;<a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, const <a class="el" href="struct_r_p_c_arg.html#a0ce667013a0bcfc34bf4bc5dd8e4aad2">Type</a> &amp;type, const <a class="el" href="struct_r_p_c_arg.html#a394f8105bc4ed63f584fe054f9b6077e">Fallback</a> &amp;fallback, const std::string &amp;description, const std::string &amp;oneline_description=&quot;&quot;, const std::vector&lt; std::string &gt; &amp;type_str={})</td></tr>
+<tr class="separator:a4327563db92bdced01e9d1f730f03dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a984e784cc3ff9880702c679487156b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_p_c_arg.html#a9a984e784cc3ff9880702c679487156b">RPCArg</a> (const std::string &amp;<a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, const <a class="el" href="struct_r_p_c_arg.html#a0ce667013a0bcfc34bf4bc5dd8e4aad2">Type</a> &amp;type, const <a class="el" href="struct_r_p_c_arg.html#a394f8105bc4ed63f584fe054f9b6077e">Fallback</a> &amp;fallback, const std::string &amp;description, const std::vector&lt; <a class="el" href="struct_r_p_c_arg.html">RPCArg</a> &gt; &amp;inner, const std::string &amp;oneline_description=&quot;&quot;, const std::vector&lt; std::string &gt; &amp;type_str={})</td></tr>
+<tr class="separator:a9a984e784cc3ff9880702c679487156b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5443eae00b088c53321a8aabe29e7263"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_p_c_arg.html#a5443eae00b088c53321a8aabe29e7263">ToString</a> (bool oneline) const </td></tr>
 <tr class="memdesc:a5443eae00b088c53321a8aabe29e7263"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the type string of the argument.  <a href="#a5443eae00b088c53321a8aabe29e7263">More...</a><br /></td></tr>
 <tr class="separator:a5443eae00b088c53321a8aabe29e7263"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35d54de51c4fa41496ca4c65335a93a1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_p_c_arg.html#a35d54de51c4fa41496ca4c65335a93a1">ToStringObj</a> (bool oneline) const </td></tr>
 <tr class="memdesc:a35d54de51c4fa41496ca4c65335a93a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the type string of the argument when it is in an object (dict).  <a href="#a35d54de51c4fa41496ca4c65335a93a1">More...</a><br /></td></tr>
 <tr class="separator:a35d54de51c4fa41496ca4c65335a93a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae97b1b1e373438e3398d2ad8d76ca1c4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_p_c_arg.html#ae97b1b1e373438e3398d2ad8d76ca1c4">ToDescriptionString</a> (bool implicitly_required=false) const </td></tr>
-<tr class="memdesc:ae97b1b1e373438e3398d2ad8d76ca1c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the description string, including the argument type and whether the argument is required.  <a href="#ae97b1b1e373438e3398d2ad8d76ca1c4">More...</a><br /></td></tr>
-<tr class="separator:ae97b1b1e373438e3398d2ad8d76ca1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d449498b7bb3b5339a429d98faa4b3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_p_c_arg.html#a38d449498b7bb3b5339a429d98faa4b3">ToDescriptionString</a> () const </td></tr>
+<tr class="memdesc:a38d449498b7bb3b5339a429d98faa4b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the description string, including the argument type and whether the argument is required.  <a href="#a38d449498b7bb3b5339a429d98faa4b3">More...</a><br /></td></tr>
+<tr class="separator:a38d449498b7bb3b5339a429d98faa4b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -141,11 +148,8 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a0e93be59bfa3c67c839a03fa26aa4681"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="struct_r_p_c_arg.html">RPCArg</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_p_c_arg.html#a0e93be59bfa3c67c839a03fa26aa4681">m_inner</a></td></tr>
 <tr class="memdesc:a0e93be59bfa3c67c839a03fa26aa4681"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only used for arrays or dicts.  <a href="#a0e93be59bfa3c67c839a03fa26aa4681">More...</a><br /></td></tr>
 <tr class="separator:a0e93be59bfa3c67c839a03fa26aa4681"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac747ea4df331df1d0bdba970d9e73ac2"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_p_c_arg.html#ac747ea4df331df1d0bdba970d9e73ac2">m_optional</a></td></tr>
-<tr class="separator:ac747ea4df331df1d0bdba970d9e73ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb02d67ab65206c4745099007b6a11b5"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_p_c_arg.html#abb02d67ab65206c4745099007b6a11b5">m_default_value</a></td></tr>
-<tr class="memdesc:abb02d67ab65206c4745099007b6a11b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only used for optional args.  <a href="#abb02d67ab65206c4745099007b6a11b5">More...</a><br /></td></tr>
-<tr class="separator:abb02d67ab65206c4745099007b6a11b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34b4f800f08152e546e7680c58d61815"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_r_p_c_arg.html#a394f8105bc4ed63f584fe054f9b6077e">Fallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_p_c_arg.html#a34b4f800f08152e546e7680c58d61815">m_fallback</a></td></tr>
+<tr class="separator:a34b4f800f08152e546e7680c58d61815"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68e8a9b8b96b6543a07cc88dfe904812"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_p_c_arg.html#a68e8a9b8b96b6543a07cc88dfe904812">m_description</a></td></tr>
 <tr class="separator:a68e8a9b8b96b6543a07cc88dfe904812"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0c48e8a58df31d403f553084117c4a5"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_p_c_arg.html#ab0c48e8a58df31d403f553084117c4a5">m_oneline_description</a></td></tr>
@@ -157,8 +161,58 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00034">34</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00036">36</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a394f8105bc4ed63f584fe054f9b6077e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="struct_r_p_c_arg.html#a394f8105bc4ed63f584fe054f9b6077e">RPCArg::Fallback</a> =  boost::variant&lt;<a class="el" href="struct_r_p_c_arg.html#ae3b97706e3215f0b484d2597108bf927">Optional</a>, std::string&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00064">64</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="ae3b97706e3215f0b484d2597108bf927"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="struct_r_p_c_arg.html#ae3b97706e3215f0b484d2597108bf927">RPCArg::Optional</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ae3b97706e3215f0b484d2597108bf927ac2f3f489a00553e7a01d369c103c7251"></a>NO&#160;</td><td class="fielddoc">
+<p>Required arg. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ae3b97706e3215f0b484d2597108bf927a0ea08898e41ad6eda1dffb0b2cf94bb9"></a>OMITTED_NAMED_ARG&#160;</td><td class="fielddoc">
+<p>Optinal arg that is a named argument and has a default value of <code>null</code>. </p>
+<p>When possible, the default value should be specified. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ae3b97706e3215f0b484d2597108bf927a3b1c7263d9d59d86114f90b1f57c91c4"></a>OMITTED&#160;</td><td class="fielddoc">
+<p>Optional argument with default value omitted because they are implicitly clear. </p>
+<p>That is, elements in an array or object may not exist by default. When possible, the default value should be specified. </p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00048">48</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a0ce667013a0bcfc34bf4bc5dd8e4aad2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -198,12 +252,12 @@ Public Attributes</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00035">35</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
+<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00037">37</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a8d17c90c4908c460325f3ea37d1b7265"></a>
+<a class="anchor" id="a4327563db92bdced01e9d1f730f03dfe"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -225,14 +279,8 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const bool&#160;</td>
-          <td class="paramname"><em>opt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>default_val</em>, </td>
+          <td class="paramtype">const <a class="el" href="struct_r_p_c_arg.html#a394f8105bc4ed63f584fe054f9b6077e">Fallback</a> &amp;&#160;</td>
+          <td class="paramname"><em>fallback</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -265,11 +313,11 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00054">54</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
+<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00073">73</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a03f947b475702c0af16133765c35cf63"></a>
+<a class="anchor" id="a9a984e784cc3ff9880702c679487156b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -291,14 +339,8 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const bool&#160;</td>
-          <td class="paramname"><em>opt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>default_val</em>, </td>
+          <td class="paramtype">const <a class="el" href="struct_r_p_c_arg.html#a394f8105bc4ed63f584fe054f9b6077e">Fallback</a> &amp;&#160;</td>
+          <td class="paramname"><em>fallback</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -337,41 +379,41 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00073">73</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
+<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00090">90</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_r_p_c_arg_a03f947b475702c0af16133765c35cf63_cgraph.svg" width="383" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_r_p_c_arg_a9a984e784cc3ff9880702c679487156b_cgraph.svg" width="383" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ae97b1b1e373438e3398d2ad8d76ca1c4"></a>
+<a class="anchor" id="a38d449498b7bb3b5339a429d98faa4b3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">std::string RPCArg::ToDescriptionString </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>implicitly_required</em> = <code>false</code></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Return the description string, including the argument type and whether the argument is required. </p>
-<p>implicitly_required is set for arguments in an array, which are neither optional nor required. </p>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00339">339</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00345">345</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_r_p_c_arg_ae97b1b1e373438e3398d2ad8d76ca1c4_icgraph.svg" width="674" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_r_p_c_arg_a38d449498b7bb3b5339a429d98faa4b3_icgraph.svg" width="674" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -394,12 +436,13 @@ Here is the caller graph for this function:</div>
 <p>Return the type string of the argument. </p>
 <p>Set oneline to allow it to be overridden by a custom oneline type string (m_oneline_description). </p>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00434">434</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00445">445</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_r_p_c_arg_a5443eae00b088c53321a8aabe29e7263_icgraph.svg" width="522" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_r_p_c_arg_a5443eae00b088c53321a8aabe29e7263_icgraph.svg" width="522" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -422,34 +465,19 @@ Here is the caller graph for this function:</div>
 <p>Return the type string of the argument when it is in an object (dict). </p>
 <p>Set oneline to get the oneline representation (less whitespace) </p>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00397">397</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00408">408</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_r_p_c_arg_a35d54de51c4fa41496ca4c65335a93a1_icgraph.svg" width="543" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_r_p_c_arg_a35d54de51c4fa41496ca4c65335a93a1_icgraph.svg" width="543" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="abb02d67ab65206c4745099007b6a11b5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::string RPCArg::m_default_value</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Only used for optional args. </p>
-
-<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00049">49</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a68e8a9b8b96b6543a07cc88dfe904812"></a>
 <div class="memitem">
 <div class="memproto">
@@ -460,7 +488,21 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00050">50</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
+<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00069">69</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a34b4f800f08152e546e7680c58d61815"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_r_p_c_arg.html#a394f8105bc4ed63f584fe054f9b6077e">Fallback</a> RPCArg::m_fallback</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00068">68</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -476,7 +518,7 @@ Here is the caller graph for this function:</div>
 
 <p>Only used for arrays or dicts. </p>
 
-<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00047">47</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
+<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00067">67</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -492,7 +534,7 @@ Here is the caller graph for this function:</div>
 
 <p>The name of the arg (can be empty for inner args) </p>
 
-<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00045">45</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
+<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00065">65</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -508,21 +550,7 @@ Here is the caller graph for this function:</div>
 
 <p>Should be empty unless it is supposed to override the auto-generated summary line. </p>
 
-<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00051">51</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac747ea4df331df1d0bdba970d9e73ac2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool RPCArg::m_optional</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00048">48</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
+<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00070">70</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -536,7 +564,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00046">46</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
+<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00066">66</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -552,7 +580,7 @@ Here is the caller graph for this function:</div>
 
 <p>Should be empty unless it is supposed to override the auto-generated type strings. Vector length is either 0 or 2, m_type_str.at(0) will override the type of the value in a key-value pair, m_type_str.at(1) will override the type in the argument description. </p>
 
-<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00052">52</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
+<p>Definition at line <a class="el" href="rpc_2util_8h_source.html#l00071">71</a> of file <a class="el" href="rpc_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -563,7 +591,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 12 2019 21:56:57 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 12 2019 23:48:00 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

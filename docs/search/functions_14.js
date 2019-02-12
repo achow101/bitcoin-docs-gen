@@ -77,7 +77,7 @@ var searchData=
   ['tip',['Tip',['../class_c_chain.html#a7482d06d8e8143f46326cf9c12c06daf',1,'CChain']]],
   ['tipupdate',['tipUpdate',['../class_modal_overlay.html#a38186ebf7dbb5eba5dda872b3313d4fb',1,'ModalOverlay']]],
   ['tobytevector',['ToByteVector',['../script_8h.html#a54e10bc63d490dd5d39d245102b81359',1,'script.h']]],
-  ['todescriptionstring',['ToDescriptionString',['../struct_r_p_c_arg.html#ae97b1b1e373438e3398d2ad8d76ca1c4',1,'RPCArg::ToDescriptionString()'],['../struct_r_p_c_results.html#abe7c88cd3d72175a59df40605ccc6f00',1,'RPCResults::ToDescriptionString()'],['../struct_r_p_c_examples.html#a9bdcb9c04442f8f4c8e272335b75b5bb',1,'RPCExamples::ToDescriptionString()']]],
+  ['todescriptionstring',['ToDescriptionString',['../struct_r_p_c_arg.html#a38d449498b7bb3b5339a429d98faa4b3',1,'RPCArg::ToDescriptionString()'],['../struct_r_p_c_results.html#abe7c88cd3d72175a59df40605ccc6f00',1,'RPCResults::ToDescriptionString()'],['../struct_r_p_c_examples.html#a9bdcb9c04442f8f4c8e272335b75b5bb',1,'RPCExamples::ToDescriptionString()']]],
   ['togglehidden',['toggleHidden',['../class_bitcoin_g_u_i.html#a6ca9ded69ab510195ff04fe7f5754ff5',1,'BitcoinGUI']]],
   ['toggleprunewarning',['togglePruneWarning',['../class_options_dialog.html#a5c34115da016060677582839740b7ba6',1,'OptionsDialog']]],
   ['toggleshowpassword',['toggleShowPassword',['../class_ask_passphrase_dialog.html#a2b4caf1032dbadb21a7e8bea20ea7384',1,'AskPassphraseDialog']]],

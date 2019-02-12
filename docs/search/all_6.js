@@ -10,7 +10,7 @@ var searchData=
   ['failavg',['failAvg',['../class_tx_confirm_stats.html#a15e96a16f53676ba11a49da19a889d71',1,'TxConfirmStats']]],
   ['failed',['FAILED',['../versionbits_8h.html#ae7f620361ae33b80687a42adb26fd7a4ab9e14d9b2886bcff408b85aefa780419',1,'versionbits.h']]],
   ['failure',['FAILURE',['../struct_c_wallet_1_1_scan_result.html#aec068c496f8435e5147a5adadeb98dd3a0a5b9d078d3f900cd70513f965efcfcd',1,'CWallet::ScanResult']]],
-  ['fallback',['FALLBACK',['../policy_2fees_8h.html#ad4442247e3a53b4e0e9142797e833186af35b388d8d4adeab05bce916c73d7a72',1,'fees.h']]],
+  ['fallback',['Fallback',['../struct_r_p_c_arg.html#a394f8105bc4ed63f584fe054f9b6077e',1,'RPCArg::Fallback()'],['../policy_2fees_8h.html#ad4442247e3a53b4e0e9142797e833186af35b388d8d4adeab05bce916c73d7a72',1,'FALLBACK():&#160;fees.h']]],
   ['fallok',['fAllOk',['../class_c_check_queue.html#a0f8ef0bce2f6c6ee71c85215a90ed41e',1,'CCheckQueue']]],
   ['fallowotherinputs',['fAllowOtherInputs',['../class_c_coin_control.html#acd3e8686c8d78535153ed9fd734ef029',1,'CCoinControl']]],
   ['fallowwatchonly',['fAllowWatchOnly',['../class_c_coin_control.html#a83d3144efcfdd0e87467f0b2d98b4302',1,'CCoinControl']]],
