@@ -154,6 +154,7 @@ var searchData=
   ['findwallettx',['FindWalletTx',['../class_wallet_batch.html#a32af4723c4cb7cb41958b42b13f78f78',1,'WalletBatch']]],
   ['fingerprint',['fingerprint',['../struct_key_origin_info.html#a3891fc24e985facbc7234ea37d109ef6',1,'KeyOriginInfo']]],
   ['finish',['finish',['../class_splash_screen.html#a51f59fd64fdb6cb5569b3d9ac9f83b8c',1,'SplashScreen']]],
+  ['finished',['finished',['../class_open_wallet_activity.html#a71dd14aea2f2bb84dbe01392d7b8c7df',1,'OpenWalletActivity']]],
   ['finmempool',['fInMempool',['../class_c_wallet_tx.html#ab9c91b56fd806110a82456298fb68d89',1,'CWalletTx']]],
   ['finternal',['fInternal',['../class_c_key_pool.html#a000d3e23c4b76e6fce4ad59e29d5d45b',1,'CKeyPool::fInternal()'],['../class_c_reserve_key.html#a7a75f578ef7c23d614dc7fa0f4b4accf',1,'CReserveKey::fInternal()']]],
   ['fintried',['fInTried',['../class_c_addr_info.html#a7fe19a664819fa36ef549c06a5fe0fda',1,'CAddrInfo']]],

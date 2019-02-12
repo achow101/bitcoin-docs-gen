@@ -148,6 +148,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a5c2a7725ff8796f03471f844ecded3d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet_2wallet_8cpp.html#a5c2a7725ff8796f03471f844ecded3d9">UnloadWallet</a> (std::shared_ptr&lt; <a class="el" href="class_c_wallet.html">CWallet</a> &gt; &amp;&amp;wallet)</td></tr>
 <tr class="memdesc:a5c2a7725ff8796f03471f844ecded3d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly unload and delete the wallet.  <a href="#a5c2a7725ff8796f03471f844ecded3d9">More...</a><br /></td></tr>
 <tr class="separator:a5c2a7725ff8796f03471f844ecded3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab115d1b86c25902d2a32d7a919382bd1"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_c_wallet.html">CWallet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet_2wallet_8cpp.html#ab115d1b86c25902d2a32d7a919382bd1">LoadWallet</a> (<a class="el" href="classinterfaces_1_1_chain.html">interfaces::Chain</a> &amp;chain, const <a class="el" href="class_wallet_location.html">WalletLocation</a> &amp;location, std::string &amp;<a class="el" href="system_8h.html#a0605c886f88f190fa6a51ae07ca7558a">error</a>, std::string &amp;warning)</td></tr>
+<tr class="separator:ab115d1b86c25902d2a32d7a919382bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e3b0724aabb0c37fda10ce9f4c86432"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_c_wallet.html">CWallet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet_2wallet_8cpp.html#a1e3b0724aabb0c37fda10ce9f4c86432">LoadWallet</a> (<a class="el" href="classinterfaces_1_1_chain.html">interfaces::Chain</a> &amp;chain, const std::string &amp;<a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, std::string &amp;<a class="el" href="system_8h.html#a0605c886f88f190fa6a51ae07ca7558a">error</a>, std::string &amp;warning)</td></tr>
+<tr class="separator:a1e3b0724aabb0c37fda10ce9f4c86432"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacb65e7716d90a3e44022b0f9fce577d2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_c_key_i_d.html">CKeyID</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gacb65e7716d90a3e44022b0f9fce577d2">GetAffectedKeys</a> (const <a class="el" href="class_c_script.html">CScript</a> &amp;spk, const <a class="el" href="class_signing_provider.html">SigningProvider</a> &amp;provider)</td></tr>
 <tr class="separator:gacb65e7716d90a3e44022b0f9fce577d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0fd4c6f23ea3ccac9050ef55ad5f90b0"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga0fd4c6f23ea3ccac9050ef55ad5f90b0">CalculateMaximumSignedTxSize</a> (const <a class="el" href="class_c_transaction.html">CTransaction</a> &amp;tx, const <a class="el" href="class_c_wallet.html">CWallet</a> *wallet, bool use_max_sig)</td></tr>
@@ -182,7 +186,8 @@ Variables</h2></td></tr>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8cpp_ad523200398c9a7518de131353d4a6ac5_icgraph.svg" width="567" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8cpp_ad523200398c9a7518de131353d4a6ac5_icgraph.svg" width="986" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -261,6 +266,110 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="ab115d1b86c25902d2a32d7a919382bd1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_c_wallet.html">CWallet</a>&gt; LoadWallet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classinterfaces_1_1_chain.html">interfaces::Chain</a> &amp;&#160;</td>
+          <td class="paramname"><em>chain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_wallet_location.html">WalletLocation</a> &amp;&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>warning</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00133">133</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8cpp_ab115d1b86c25902d2a32d7a919382bd1_cgraph.svg" width="844" height="2370"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8cpp_ab115d1b86c25902d2a32d7a919382bd1_icgraph.svg" width="739" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1e3b0724aabb0c37fda10ce9f4c86432"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_c_wallet.html">CWallet</a>&gt; LoadWallet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classinterfaces_1_1_chain.html">interfaces::Chain</a> &amp;&#160;</td>
+          <td class="paramname"><em>chain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>warning</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00150">150</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8cpp_a1e3b0724aabb0c37fda10ce9f4c86432_cgraph.svg" width="983" height="2318"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a44f59518880060eb908ce080cbb39377"></a>
 <div class="memitem">
 <div class="memproto">
@@ -325,14 +434,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00133">133</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00155">155</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 12 2019 16:20:00 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 12 2019 18:23:13 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

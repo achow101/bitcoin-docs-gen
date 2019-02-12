@@ -299,6 +299,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3428e79c308e1a669872b4789e004bfa"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::unique_ptr&lt; <a class="el" href="classinterfaces_1_1_wallet.html">Wallet</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_node.html#a3428e79c308e1a669872b4789e004bfa">getWallets</a> ()=0</td></tr>
 <tr class="memdesc:a3428e79c308e1a669872b4789e004bfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return interfaces for accessing wallets (if any).  <a href="#a3428e79c308e1a669872b4789e004bfa">More...</a><br /></td></tr>
 <tr class="separator:a3428e79c308e1a669872b4789e004bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8355bd1c52d1a38f691be682e4c77c4"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classinterfaces_1_1_wallet.html">Wallet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_node.html#aa8355bd1c52d1a38f691be682e4c77c4">loadWallet</a> (const std::string &amp;<a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, std::string &amp;<a class="el" href="system_8h.html#a0605c886f88f190fa6a51ae07ca7558a">error</a>, std::string &amp;warning)=0</td></tr>
+<tr class="memdesc:aa8355bd1c52d1a38f691be682e4c77c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to load a wallet from file or directory.  <a href="#aa8355bd1c52d1a38f691be682e4c77c4">More...</a><br /></td></tr>
+<tr class="separator:aa8355bd1c52d1a38f691be682e4c77c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66bef8c0f6d31af98de5309c5b41932d"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classinterfaces_1_1_handler.html">Handler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_node.html#a66bef8c0f6d31af98de5309c5b41932d">handleInitMessage</a> (<a class="el" href="classinterfaces_1_1_node.html#a3baeb0fdfc9ed04ff65418f7714c7097">InitMessageFn</a> fn)=0</td></tr>
 <tr class="separator:a66bef8c0f6d31af98de5309c5b41932d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c3c77921882f4bf8c21997bc5570f92"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classinterfaces_1_1_handler.html">Handler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_node.html#a8c3c77921882f4bf8c21997bc5570f92">handleMessageBox</a> (<a class="el" href="classinterfaces_1_1_node.html#a0485e254f6f45f207ba3f52864135bfd">MessageBoxFn</a> fn)=0</td></tr>
@@ -339,7 +342,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for ban list messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00232">232</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00237">237</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -355,7 +358,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for init messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00196">196</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00201">201</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -371,7 +374,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for load wallet messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00216">216</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00221">221</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -387,7 +390,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for message box messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00201">201</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00206">206</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -419,7 +422,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for notify alert messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00228">228</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00233">233</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -435,7 +438,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for block tip messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00237">237</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00242">242</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -451,7 +454,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for header tip messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00242">242</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00247">247</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -467,7 +470,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for network active messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00224">224</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00229">229</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -483,7 +486,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for number of connections changed messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00220">220</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00225">225</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -499,7 +502,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for question messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00208">208</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00213">213</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -515,7 +518,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for progress messages. </p>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00212">212</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00217">217</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -2166,6 +2169,65 @@ Here is the caller graph for this function:</div>
 
 <p>Return available wallets in wallet directory. </p>
 
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_a150d00cb0e3fb871d3853a9a80bbfc66_icgraph.svg" width="904" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa8355bd1c52d1a38f691be682e4c77c4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::unique_ptr&lt;<a class="el" href="classinterfaces_1_1_wallet.html">Wallet</a>&gt; interfaces::Node::loadWallet </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>warning</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Attempts to load a wallet from file or directory. </p>
+<p>The loaded wallet is also notified to handlers previously registered with handleLoadWallet. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_node_aa8355bd1c52d1a38f691be682e4c77c4_icgraph.svg" width="396" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a62a0c7c7c535b845639fe7bc5b3ae757"></a>
@@ -2636,7 +2698,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 12 2019 16:20:12 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 12 2019 18:23:25 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

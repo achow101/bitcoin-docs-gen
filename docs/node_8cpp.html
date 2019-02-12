@@ -145,6 +145,8 @@ Functions</h2></td></tr>
 <tr class="separator:a0db2d80f498cd2ac9d03bb28935c61ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8562a8762a7793fdf5b8ae9465e1b85"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_c_wallet.html">CWallet</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="node_8cpp.html#ab8562a8762a7793fdf5b8ae9465e1b85">GetWallets</a> ()</td></tr>
 <tr class="separator:ab8562a8762a7793fdf5b8ae9465e1b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e3b0724aabb0c37fda10ce9f4c86432"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_c_wallet.html">CWallet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="node_8cpp.html#a1e3b0724aabb0c37fda10ce9f4c86432">LoadWallet</a> (<a class="el" href="classinterfaces_1_1_chain.html">interfaces::Chain</a> &amp;chain, const std::string &amp;<a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, std::string &amp;<a class="el" href="system_8h.html#a0605c886f88f190fa6a51ae07ca7558a">error</a>, std::string &amp;warning)</td></tr>
+<tr class="separator:a1e3b0724aabb0c37fda10ce9f4c86432"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a23c590486567821eaf2e19a7952389"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; Node &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinterfaces.html#a5a23c590486567821eaf2e19a7952389">interfaces::MakeNode</a> ()</td></tr>
 <tr class="memdesc:a5a23c590486567821eaf2e19a7952389"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return implementation of <a class="el" href="classinterfaces_1_1_node.html" title="Top-level interface for a bitcoin node (bitcoind process). ">Node</a> interface.  <a href="namespaceinterfaces.html#a5a23c590486567821eaf2e19a7952389">More...</a><br /></td></tr>
 <tr class="separator:a5a23c590486567821eaf2e19a7952389"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,7 +165,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dummywallet_8cpp_source.html#l00031">31</a> of file <a class="el" href="dummywallet_8cpp_source.html">dummywallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="dummywallet_8cpp_source.html#l00035">35</a> of file <a class="el" href="dummywallet_8cpp_source.html">dummywallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -180,7 +182,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dummywallet_8cpp_source.html#l00041">41</a> of file <a class="el" href="dummywallet_8cpp_source.html">dummywallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="dummywallet_8cpp_source.html#l00045">45</a> of file <a class="el" href="dummywallet_8cpp_source.html">dummywallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -197,7 +199,63 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dummywallet_8cpp_source.html#l00036">36</a> of file <a class="el" href="dummywallet_8cpp_source.html">dummywallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="dummywallet_8cpp_source.html#l00040">40</a> of file <a class="el" href="dummywallet_8cpp_source.html">dummywallet.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1e3b0724aabb0c37fda10ce9f4c86432"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_c_wallet.html">CWallet</a>&gt; LoadWallet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classinterfaces_1_1_chain.html">interfaces::Chain</a> &amp;&#160;</td>
+          <td class="paramname"><em>chain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>warning</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="dummywallet_8cpp_source.html#l00050">50</a> of file <a class="el" href="dummywallet_8cpp_source.html">dummywallet.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="node_8cpp_a1e3b0724aabb0c37fda10ce9f4c86432_cgraph.svg" width="983" height="2318"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="node_8cpp_a1e3b0724aabb0c37fda10ce9f4c86432_icgraph.svg" width="547" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -212,14 +270,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l00306">306</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l00311">311</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 12 2019 16:20:00 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 12 2019 18:23:13 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

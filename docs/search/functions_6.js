@@ -41,6 +41,7 @@ var searchData=
   ['findtx',['FindTx',['../class_tx_index.html#a3afb69a776345e408580bcacca36334a',1,'TxIndex']]],
   ['findwallettx',['FindWalletTx',['../class_wallet_batch.html#a32af4723c4cb7cb41958b42b13f78f78',1,'WalletBatch']]],
   ['finish',['finish',['../class_splash_screen.html#a51f59fd64fdb6cb5569b3d9ac9f83b8c',1,'SplashScreen']]],
+  ['finished',['finished',['../class_open_wallet_activity.html#a71dd14aea2f2bb84dbe01392d7b8c7df',1,'OpenWalletActivity']]],
   ['first',['first',['../class_span.html#a220199867615694ef8de3818def0d413',1,'Span']]],
   ['fixedpitchfont',['fixedPitchFont',['../namespace_g_u_i_util.html#af6b9624383a5313a5d856c59913b599b',1,'GUIUtil']]],
   ['fixedseeds',['FixedSeeds',['../class_c_chain_params.html#ac4c17493e8b08765e614b028cfa69385',1,'CChainParams']]],
