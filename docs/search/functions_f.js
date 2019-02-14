@@ -53,7 +53,7 @@ var searchData=
   ['onmenuselection',['onMenuSelection',['../class_unit_display_status_bar_control.html#a8989bed2d30e0e376046356adc216a12',1,'UnitDisplayStatusBarControl']]],
   ['onstarted',['OnStarted',['../namespace_r_p_c_server.html#ab38f9a4ad5abfb7a1ade85fae6fa75d2',1,'RPCServer']]],
   ['onstopped',['OnStopped',['../namespace_r_p_c_server.html#abe44263b00af3bb92721b23a903aa5ae',1,'RPCServer']]],
-  ['open',['open',['../class_open_wallet_activity.html#af0180de966c38596aeb8ba04e3f86f9e',1,'OpenWalletActivity::open()'],['../class_berkeley_environment.html#a377e27a4fe936bf73091c6b0560492fd',1,'BerkeleyEnvironment::Open()']]],
+  ['open',['Open',['../class_berkeley_environment.html#a377e27a4fe936bf73091c6b0560492fd',1,'BerkeleyEnvironment::Open()'],['../class_open_wallet_activity.html#af0180de966c38596aeb8ba04e3f86f9e',1,'OpenWalletActivity::open()']]],
   ['openbitcoinconf',['openBitcoinConf',['../namespace_g_u_i_util.html#a112f6813ba035d745ad5b8f5f8de7d82',1,'GUIUtil']]],
   ['openblockfile',['OpenBlockFile',['../validation_8cpp.html#a0d81388930a4ccb6a69b9abdd1ef5097',1,'OpenBlockFile(const CDiskBlockPos &amp;pos, bool fReadOnly):&#160;validation.cpp'],['../validation_8h.html#a531eb79ff695289ac9a4f8daf292273c',1,'OpenBlockFile(const CDiskBlockPos &amp;pos, bool fReadOnly=false):&#160;validation.cpp']]],
   ['opendebuglog',['OpenDebugLog',['../class_b_c_log_1_1_logger.html#a12ad70c2b4904e1326f2af1097ed9216',1,'BCLog::Logger']]],
