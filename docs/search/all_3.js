@@ -266,6 +266,7 @@ var searchData=
   ['closeevent',['closeEvent',['../class_bitcoin_g_u_i.html#ac46f8826c13b6340f5568d3f31fc3dfa',1,'BitcoinGUI::closeEvent()'],['../class_splash_screen.html#af2b8ee5e860e5584621eb6224ce7c959',1,'SplashScreen::closeEvent()'],['../class_shutdown_window.html#aa0ad00e74fefcdb13a4c5bc3267ae285',1,'ShutdownWindow::closeEvent()']]],
   ['closesocket',['CloseSocket',['../netbase_8cpp.html#aeb0961aecb19bbca063c3514b25b20c9',1,'CloseSocket(SOCKET &amp;hSocket):&#160;netbase.cpp'],['../netbase_8h.html#aeb0961aecb19bbca063c3514b25b20c9',1,'CloseSocket(SOCKET &amp;hSocket):&#160;netbase.cpp']]],
   ['closesocketdisconnect',['CloseSocketDisconnect',['../class_c_node.html#a63a6091a0b0fc0987d9436e1ec708423',1,'CNode']]],
+  ['closewallet',['closeWallet',['../class_wallet_controller.html#ac9958e172f70e66b0939e4bdc75a6d7f',1,'WalletController']]],
   ['cmaincleanup',['CMainCleanup',['../class_c_main_cleanup.html',1,'CMainCleanup'],['../class_c_main_cleanup.html#a2cc109dba5ab39dff1e8271a84577095',1,'CMainCleanup::CMainCleanup()']]],
   ['cmainparams',['CMainParams',['../class_c_main_params.html',1,'CMainParams'],['../class_c_main_params.html#ab7dfebf3c4dd5cc0ebdfabe1111056d6',1,'CMainParams::CMainParams()']]],
   ['cmainsignals',['CMainSignals',['../class_c_main_signals.html',1,'']]],

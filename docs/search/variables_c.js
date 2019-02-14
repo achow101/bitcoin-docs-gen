@@ -26,6 +26,7 @@ var searchData=
   ['m_5fchain_5fstate_5fsize',['m_chain_state_size',['../class_intro.html#ae02baf32d0705c1484d25016cc2b1682',1,'Intro']]],
   ['m_5fchange_5ftype',['m_change_type',['../class_c_coin_control.html#a68e1480b706f695870f221312a8c39a2',1,'CCoinControl']]],
   ['m_5fclient_5finterface',['m_client_interface',['../class_ban_man.html#aaa4e6101d74dd3b5eb8fa92aeb354fd8',1,'BanMan']]],
+  ['m_5fclose_5fwallet_5faction',['m_close_wallet_action',['../class_bitcoin_g_u_i.html#aa904ea040bd906e9189ca1f2c51547b9',1,'BitcoinGUI']]],
   ['m_5fcond',['m_cond',['../struct_r_p_c_result.html#a85be7ba02fe2d46ec55cd46aeb70a8cc',1,'RPCResult']]],
   ['m_5fconfirm_5ftarget',['m_confirm_target',['../class_c_coin_control.html#a1a23e80ecdb65448ae1d87f6760c5d34',1,'CCoinControl::m_confirm_target()'],['../class_c_wallet.html#afa47d8903aabf4f2f3926d25eb2b84dd',1,'CWallet::m_confirm_target()']]],
   ['m_5fconnected_5fwallet_5fhandlers',['m_connected_wallet_handlers',['../class_splash_screen.html#a584f1495eeebaff59e3bfe4cee2699a2',1,'SplashScreen']]],

@@ -2,7 +2,7 @@ var searchData=
 [
   ['testcrypter',['TestCrypter',['../class_c_crypter.html#a466e571a8158463000f2abf3cd2def70',1,'CCrypter']]],
   ['w',['w',['../classorg_1_1bitcoin_1_1_native_secp256k1.html#a6a82cf9b53aeb2ac3d7b868716bb28fd',1,'org::bitcoin::NativeSecp256k1']]],
-  ['wait',['Wait',['../class_c_check_queue.html#a4ff3e0e8241491efa1803eeb3a53e7fa',1,'CCheckQueue::Wait()'],['../class_c_check_queue_control.html#ab31d809a76b876d21608c0c5d0e3baf0',1,'CCheckQueueControl::Wait()'],['../class_c_semaphore.html#a1c108bd981fe68527ec8ef5e7b0d116c',1,'CSemaphore::wait()']]],
+  ['wait',['wait',['../class_c_semaphore.html#a1c108bd981fe68527ec8ef5e7b0d116c',1,'CSemaphore::wait()'],['../class_c_check_queue.html#a4ff3e0e8241491efa1803eeb3a53e7fa',1,'CCheckQueue::Wait()'],['../class_c_check_queue_control.html#ab31d809a76b876d21608c0c5d0e3baf0',1,'CCheckQueueControl::Wait()']]],
   ['wait_5flock',['WAIT_LOCK',['../sync_8h.html#a05166a687f0bfba57b8ea332c7dd57e0',1,'sync.h']]],
   ['wakemessagehandler',['WakeMessageHandler',['../class_c_connman.html#a999ec42f1515f77096556c94c29c6538',1,'CConnman']]],
   ['wallet',['Wallet',['../classinterfaces_1_1_wallet.html',1,'interfaces']]],
@@ -39,7 +39,7 @@ var searchData=
   ['walletdb_2eh',['walletdb.h',['../walletdb_8h.html',1,'']]],
   ['walletfeature',['WalletFeature',['../wallet_2wallet_8h.html#a39a6b71da3eb95cddc0836d3b27ac7c9',1,'wallet.h']]],
   ['walletflags',['WalletFlags',['../wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8',1,'wallet.h']]],
-  ['walletframe',['WalletFrame',['../class_wallet_frame.html',1,'WalletFrame'],['../class_bitcoin_g_u_i.html#a42dfc96f52d82e554cd633b776b41186',1,'BitcoinGUI::walletFrame()'],['../class_wallet_frame.html#ab400effaa9aecf3b850de2e13fdf5043',1,'WalletFrame::WalletFrame()']]],
+  ['walletframe',['WalletFrame',['../class_wallet_frame.html',1,'WalletFrame'],['../class_wallet_frame.html#ab400effaa9aecf3b850de2e13fdf5043',1,'WalletFrame::WalletFrame()'],['../class_bitcoin_g_u_i.html#a42dfc96f52d82e554cd633b776b41186',1,'BitcoinGUI::walletFrame()']]],
   ['walletframe_2ecpp',['walletframe.cpp',['../walletframe_8cpp.html',1,'']]],
   ['walletframe_2eh',['walletframe.h',['../walletframe_8h.html',1,'']]],
   ['walletinit',['WalletInit',['../class_wallet_init.html',1,'']]],

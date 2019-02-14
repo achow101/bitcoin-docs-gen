@@ -97,6 +97,7 @@ var searchData=
   ['release',['Release',['../class_c_node.html#af804bf7c7f9794e80a3b916e1befece9',1,'CNode::Release()'],['../class_c_semaphore_grant.html#a8d985eeace74e037baeb39bd2d586576',1,'CSemaphoreGrant::Release()'],['../class_c_auto_file.html#a25b51d94dc85c4140da0b15494ac9f8a',1,'CAutoFile::release()']]],
   ['releasedirectorylocks',['ReleaseDirectoryLocks',['../system_8cpp.html#a851fa89def443bac9d04ddb908cb91bb',1,'ReleaseDirectoryLocks():&#160;system.cpp'],['../system_8h.html#a851fa89def443bac9d04ddb908cb91bb',1,'ReleaseDirectoryLocks():&#160;system.cpp']]],
   ['reloaddbenv',['ReloadDbEnv',['../class_berkeley_environment.html#a2bb5277700853996eaaeb4d13b9b917b',1,'BerkeleyEnvironment::ReloadDbEnv()'],['../class_berkeley_database.html#abda71c652ce8bbb4ac0edf7d0b28f96d',1,'BerkeleyDatabase::ReloadDbEnv()']]],
+  ['remove',['remove',['../classinterfaces_1_1_wallet.html#ac6e9390999a0a2329a5fd96d50d10b9b',1,'interfaces::Wallet']]],
   ['removeaddednode',['RemoveAddedNode',['../class_c_connman.html#af9af880a6906571013cf3f21c2761110',1,'CConnman']]],
   ['removeallwallets',['removeAllWallets',['../class_wallet_frame.html#a022ecdc6281ee7ac3dc2618b5a150e93',1,'WalletFrame']]],
   ['removeanddeletewallet',['removeAndDeleteWallet',['../class_wallet_controller.html#a29984209f2b9aafeace1102b5cc729f4',1,'WalletController']]],
