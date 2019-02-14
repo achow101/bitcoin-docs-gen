@@ -36,6 +36,7 @@ var searchData=
   ['addhiddenargs',['AddHiddenArgs',['../class_args_manager.html#afa6e08d5af7e87c1eb9e3f4986f7c5fc',1,'ArgsManager']]],
   ['addinventoryknown',['AddInventoryKnown',['../class_c_node.html#ac3054eb6ade84e8968f032ce3e700f6a',1,'CNode']]],
   ['addkey',['AddKey',['../class_c_basic_key_store.html#a07950fc7f9bba7f2460d89a882ac544b',1,'CBasicKeyStore']]],
+  ['addkeyorigin',['AddKeyOrigin',['../class_c_wallet.html#a85627c9536743658ff95c5ca60e6e448',1,'CWallet']]],
   ['addkeypathtomap',['AddKeypathToMap',['../rpcwallet_8cpp.html#a614a0b6d4fe51abf85bdb57475cb9d48',1,'rpcwallet.cpp']]],
   ['addkeypubkey',['AddKeyPubKey',['../class_c_key_store.html#a1956e4f5860ded321d6f697047d8236a',1,'CKeyStore::AddKeyPubKey()'],['../class_c_basic_key_store.html#a62dbf1659066ca8d3da145843ba44815',1,'CBasicKeyStore::AddKeyPubKey()'],['../class_c_crypto_key_store.html#a4a2d6d44d1c5e844cf0166d286f5eb18',1,'CCryptoKeyStore::AddKeyPubKey()'],['../group__map_wallet.html#ga2b0c518df362a1a765a241c1ca5c69a0',1,'CWallet::AddKeyPubKey()']]],
   ['addkeypubkeywithdb',['AddKeyPubKeyWithDB',['../group__map_wallet.html#gaf482ede71b2fde291b8c6ec262b22ef4',1,'CWallet']]],

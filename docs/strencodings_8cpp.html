@@ -176,9 +176,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a88871b16821d50d5f98a07312f8f1ffb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strencodings_8cpp.html#a88871b16821d50d5f98a07312f8f1ffb">ParseFixedPoint</a> (const std::string &amp;val, int decimals, int64_t *amount_out)</td></tr>
 <tr class="memdesc:a88871b16821d50d5f98a07312f8f1ffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse number as fixed point according to JSON number syntax.  <a href="#a88871b16821d50d5f98a07312f8f1ffb">More...</a><br /></td></tr>
 <tr class="separator:a88871b16821d50d5f98a07312f8f1ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04f5f8ee6f40f3b445bf0e914f8f47b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strencodings_8cpp.html#a04f5f8ee6f40f3b445bf0e914f8f47b2">ParseHDKeypath</a> (const std::string &amp;keypath_str, std::vector&lt; uint32_t &gt; &amp;keypath)</td></tr>
-<tr class="memdesc:a04f5f8ee6f40f3b445bf0e914f8f47b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an HD keypaths like "m/7/0'/2000".  <a href="#a04f5f8ee6f40f3b445bf0e914f8f47b2">More...</a><br /></td></tr>
-<tr class="separator:a04f5f8ee6f40f3b445bf0e914f8f47b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0112c4a0e8c623b7fc4a52730c57e2d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strencodings_8cpp.html#a0112c4a0e8c623b7fc4a52730c57e2d0">Downcase</a> (std::string &amp;str)</td></tr>
 <tr class="memdesc:a0112c4a0e8c623b7fc4a52730c57e2d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the given string to its lowercase equivalent.  <a href="#a0112c4a0e8c623b7fc4a52730c57e2d0">More...</a><br /></td></tr>
 <tr class="separator:a0112c4a0e8c623b7fc4a52730c57e2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -290,7 +287,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string with the first letter capitalized. </dd></dl>
 
-<p>Definition at line <a class="el" href="strencodings_8cpp_source.html#l00595">595</a> of file <a class="el" href="strencodings_8cpp_source.html">strencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="strencodings_8cpp_source.html#l00554">554</a> of file <a class="el" href="strencodings_8cpp_source.html">strencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -470,7 +467,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="strencodings_8cpp_source.html#l00590">590</a> of file <a class="el" href="strencodings_8cpp_source.html">strencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="strencodings_8cpp_source.html#l00549">549</a> of file <a class="el" href="strencodings_8cpp_source.html">strencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -882,50 +879,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a04f5f8ee6f40f3b445bf0e914f8f47b2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ParseHDKeypath </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>keypath_str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; uint32_t &gt; &amp;&#160;</td>
-          <td class="paramname"><em>keypath</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Parse an HD keypaths like "m/7/0'/2000". </p>
-
-<p>Definition at line <a class="el" href="strencodings_8cpp_source.html#l00549">549</a> of file <a class="el" href="strencodings_8cpp_source.html">strencodings.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="strencodings_8cpp_a04f5f8ee6f40f3b445bf0e914f8f47b2_cgraph.svg" width="286" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="strencodings_8cpp_a04f5f8ee6f40f3b445bf0e914f8f47b2_icgraph.svg" width="564" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
-
-</div>
-</div>
 <a class="anchor" id="a5a787187ddd5c52baae692350ec5a2cb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1091,7 +1044,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="strencodings_8cpp_a756716cfc0795fae1dec5761c43acd31_icgraph.svg" width="1354" height="1640"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="strencodings_8cpp_a756716cfc0795fae1dec5761c43acd31_icgraph.svg" width="1378" height="1691"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1246,7 +1200,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 14 2019 21:44:55 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 14 2019 23:13:56 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -31,6 +31,7 @@ var searchData=
   ['version_5fhd_5fbase',['VERSION_HD_BASE',['../class_c_h_d_chain.html#a0f29e725b2fe771c8b2e9078fda6ad66',1,'CHDChain']]],
   ['version_5fhd_5fchain_5fsplit',['VERSION_HD_CHAIN_SPLIT',['../class_c_h_d_chain.html#a9af68e1269d82c126fefe5de606ef283',1,'CHDChain']]],
   ['version_5fwith_5fhddata',['VERSION_WITH_HDDATA',['../class_c_key_metadata.html#afb1a68abbe27b76f9689aa1384e9c285',1,'CKeyMetadata']]],
+  ['version_5fwith_5fkey_5forigin',['VERSION_WITH_KEY_ORIGIN',['../class_c_key_metadata.html#a17d59e55c973da6f010328eb30d35bc9',1,'CKeyMetadata']]],
   ['versionbitscache',['versionbitscache',['../validation_8h.html#a32c4ae3ae181d8510133629460c2bf20',1,'validation.h']]],
   ['versionbitsdeploymentinfo',['VersionBitsDeploymentInfo',['../versionbitsinfo_8cpp.html#a75964f3a7faa272ca1fd7ffa94d5be76',1,'VersionBitsDeploymentInfo():&#160;versionbitsinfo.cpp'],['../versionbitsinfo_8h.html#a9df2ee9bea0d40211ba6b89f4549e82d',1,'VersionBitsDeploymentInfo():&#160;versionbitsinfo.cpp']]],
   ['vfixedseeds',['vFixedSeeds',['../class_c_chain_params.html#a6853ff4c88ca3df1d864a8d72153614d',1,'CChainParams']]],

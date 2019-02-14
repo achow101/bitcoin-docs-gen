@@ -128,7 +128,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for wallet.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h__incl.svg" width="3691" height="575"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h__incl.svg" width="3720" height="575"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -196,7 +197,8 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:a39a6b71da3eb95cddc0836d3b27ac7c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">(client) version numbers for particular wallet features  <a href="wallet_2wallet_8h.html#a39a6b71da3eb95cddc0836d3b27ac7c9">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:a39a6b71da3eb95cddc0836d3b27ac7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a399ea1efa219e50cce4be2b4bbf703f8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8">WalletFlags</a> : uint64_t { <a class="el" href="wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a47b6a219e3ca6733b2a251be3e5def86">WALLET_FLAG_DISABLE_PRIVATE_KEYS</a> = (1ULL &lt;&lt; 32), 
+<tr class="memitem:a399ea1efa219e50cce4be2b4bbf703f8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8">WalletFlags</a> : uint64_t { <a class="el" href="wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a9ff9eb97aab76e3f2d02bb5c881cbbcc">WALLET_FLAG_KEY_ORIGIN_METADATA</a> = (1ULL &lt;&lt; 1), 
+<a class="el" href="wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a47b6a219e3ca6733b2a251be3e5def86">WALLET_FLAG_DISABLE_PRIVATE_KEYS</a> = (1ULL &lt;&lt; 32), 
 <a class="el" href="wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8ae89353a8ab93640fdd04106570ba8660">WALLET_FLAG_BLANK_WALLET</a> = (1ULL &lt;&lt; 33)
  }</td></tr>
 <tr class="separator:a399ea1efa219e50cce4be2b4bbf703f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -266,7 +268,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00222">222</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00225">225</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -315,7 +317,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a399ea1efa219e50cce4be2b4bbf703f8a47b6a219e3ca6733b2a251be3e5def86"></a>WALLET_FLAG_DISABLE_PRIVATE_KEYS&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a399ea1efa219e50cce4be2b4bbf703f8a9ff9eb97aab76e3f2d02bb5c881cbbcc"></a>WALLET_FLAG_KEY_ORIGIN_METADATA&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a399ea1efa219e50cce4be2b4bbf703f8a47b6a219e3ca6733b2a251be3e5def86"></a>WALLET_FLAG_DISABLE_PRIVATE_KEYS&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a399ea1efa219e50cce4be2b4bbf703f8ae89353a8ab93640fdd04106570ba8660"></a>WALLET_FLAG_BLANK_WALLET&#160;</td><td class="fielddoc">
 <p>Flag set when a wallet contains no HD seed and no private keys, scripts, addresses, and other watch only things, and is therefore "blank.". </p>
@@ -343,7 +347,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00044">44</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00045">45</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -394,7 +398,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00076">76</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00077">77</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -449,7 +453,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00064">64</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00065">65</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -496,7 +500,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00133">133</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00134">134</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -565,7 +569,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00054">54</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00055">55</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -646,7 +650,7 @@ Here is the call graph for this function:</div>
 <p>Explicitly unload and delete the wallet. </p>
 <p>Blocks the current thread after signaling the unload intent so that all wallet clients release the wallet. Note that, when blocking is not required, the wallet is implicitly unloaded by the shared pointer deleter. </p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00110">110</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8cpp_source.html#l00111">111</a> of file <a class="el" href="wallet_2wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -773,7 +777,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 14 2019 21:44:52 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 14 2019 23:13:53 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -101,7 +101,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="dynheader">
 Collaboration diagram for CKeyMetadata:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_key_metadata__coll__graph.svg" width="159" height="279"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_key_metadata__coll__graph.svg" width="243" height="279"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -126,6 +127,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:abe171b19d4440c30b73cb59c57be1beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9a03aa0f4b93e765b1c71677bffc95a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_key_i_d.html">CKeyID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_key_metadata.html#af9a03aa0f4b93e765b1c71677bffc95a">hd_seed_id</a></td></tr>
 <tr class="separator:af9a03aa0f4b93e765b1c71677bffc95a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33797af715859e756551cedb037310bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_key_origin_info.html">KeyOriginInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_key_metadata.html#a33797af715859e756551cedb037310bc">key_origin</a></td></tr>
+<tr class="separator:a33797af715859e756551cedb037310bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b00f2b4fedc76ed16113604bf6afa7e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_key_metadata.html#a3b00f2b4fedc76ed16113604bf6afa7e">has_key_origin</a> = false</td></tr>
+<tr class="separator:a3b00f2b4fedc76ed16113604bf6afa7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e1f57544d6d63342bddeee5a08aba1a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_key_metadata.html#a7e1f57544d6d63342bddeee5a08aba1a">ADD_SERIALIZE_METHODS</a></td></tr>
 <tr class="separator:a7e1f57544d6d63342bddeee5a08aba1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -135,12 +140,14 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a4bd4582d97c322a921a908447d5d9ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb1a68abbe27b76f9689aa1384e9c285"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_key_metadata.html#afb1a68abbe27b76f9689aa1384e9c285">VERSION_WITH_HDDATA</a> =10</td></tr>
 <tr class="separator:afb1a68abbe27b76f9689aa1384e9c285"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a805f9472960eec81031596ce1133e629"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_key_metadata.html#a805f9472960eec81031596ce1133e629">CURRENT_VERSION</a> =<a class="el" href="class_c_key_metadata.html#afb1a68abbe27b76f9689aa1384e9c285">VERSION_WITH_HDDATA</a></td></tr>
+<tr class="memitem:a17d59e55c973da6f010328eb30d35bc9"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_key_metadata.html#a17d59e55c973da6f010328eb30d35bc9">VERSION_WITH_KEY_ORIGIN</a> = 12</td></tr>
+<tr class="separator:a17d59e55c973da6f010328eb30d35bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a805f9472960eec81031596ce1133e629"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_key_metadata.html#a805f9472960eec81031596ce1133e629">CURRENT_VERSION</a> =<a class="el" href="class_c_key_metadata.html#a17d59e55c973da6f010328eb30d35bc9">VERSION_WITH_KEY_ORIGIN</a></td></tr>
 <tr class="separator:a805f9472960eec81031596ce1133e629"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00091">91</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
+<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00092">92</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aa8b0f7b007fdc16d2ebf97c893a6760b"></a>
 <div class="memitem">
@@ -163,7 +170,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00102">102</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
+<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00106">106</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
 
 </div>
 </div>
@@ -189,7 +196,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00106">106</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
+<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00110">110</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
 
 </div>
 </div>
@@ -228,7 +235,7 @@ template&lt;typename Stream , typename Operation &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00115">115</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
+<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00119">119</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
 
 </div>
 </div>
@@ -253,12 +260,13 @@ template&lt;typename Stream , typename Operation &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00125">125</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
+<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00134">134</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_key_metadata_ab78641eb092af623a363b5c403c06a1f_cgraph.svg" width="368" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_key_metadata_ab78641eb092af623a363b5c403c06a1f_cgraph.svg" width="370" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -275,7 +283,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00112">112</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
+<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00116">116</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
 
 </div>
 </div>
@@ -287,7 +295,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const int CKeyMetadata::CURRENT_VERSION =<a class="el" href="class_c_key_metadata.html#afb1a68abbe27b76f9689aa1384e9c285">VERSION_WITH_HDDATA</a></td>
+          <td class="memname">const int CKeyMetadata::CURRENT_VERSION =<a class="el" href="class_c_key_metadata.html#a17d59e55c973da6f010328eb30d35bc9">VERSION_WITH_KEY_ORIGIN</a></td>
         </tr>
       </table>
   </td>
@@ -297,7 +305,21 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00096">96</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
+<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00098">98</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b00f2b4fedc76ed16113604bf6afa7e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CKeyMetadata::has_key_origin = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00104">104</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
 
 </div>
 </div>
@@ -311,7 +333,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00100">100</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
+<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00102">102</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
 
 </div>
 </div>
@@ -325,7 +347,21 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00099">99</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
+<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00101">101</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a33797af715859e756551cedb037310bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_key_origin_info.html">KeyOriginInfo</a> CKeyMetadata::key_origin</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00103">103</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
 
 </div>
 </div>
@@ -339,7 +375,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00098">98</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
+<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00100">100</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
 
 </div>
 </div>
@@ -353,7 +389,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00097">97</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
+<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00099">99</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
 
 </div>
 </div>
@@ -375,7 +411,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00094">94</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
+<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00095">95</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
 
 </div>
 </div>
@@ -397,7 +433,29 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00095">95</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
+<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00096">96</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a17d59e55c973da6f010328eb30d35bc9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int CKeyMetadata::VERSION_WITH_KEY_ORIGIN = 12</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="walletdb_8h_source.html#l00097">97</a> of file <a class="el" href="walletdb_8h_source.html">walletdb.h</a>.</p>
 
 </div>
 </div>
@@ -407,7 +465,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 14 2019 21:44:58 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 14 2019 23:14:00 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -12,6 +12,8 @@ var searchData=
   ['key_5fgeneration_5ffailure',['KEY_GENERATION_FAILURE',['../class_address_table_model.html#a3d502b85fc09461e779dae4589c29956a9e181f9108c727771403c11c6a9a62dd',1,'AddressTableModel']]],
   ['key_5fio_2ecpp',['key_io.cpp',['../key__io_8cpp.html',1,'']]],
   ['key_5fio_2eh',['key_io.h',['../key__io_8h.html',1,'']]],
+  ['key_5forigin',['key_origin',['../class_c_key_metadata.html#a33797af715859e756551cedb037310bc',1,'CKeyMetadata']]],
+  ['key_5forigins',['key_origins',['../struct_import_data.html#ad45b1e7b3f7964ab128671e300919de6',1,'ImportData']]],
   ['key_5ftype',['key_type',['../classlimitedmap.html#aebf71255c65df699225cdcefe88717b9',1,'limitedmap']]],
   ['keydata',['keydata',['../class_c_key.html#ac33045c8ff935a693d17ebd3b560910a',1,'CKey']]],
   ['keyescapepressed',['keyEscapePressed',['../class_g_u_i_util_1_1_item_delegate.html#a32ceb2f4048dca49d70e36579888277e',1,'GUIUtil::ItemDelegate']]],

@@ -210,9 +210,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a4fee31ef1b96d5adf488c5f77324de73"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="strencodings_8h.html#a4fee31ef1b96d5adf488c5f77324de73">ConvertBits</a> (const O &amp;outfn, I it, I end)</td></tr>
 <tr class="memdesc:a4fee31ef1b96d5adf488c5f77324de73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert from one power-of-2 number base to another.  <a href="#a4fee31ef1b96d5adf488c5f77324de73">More...</a><br /></td></tr>
 <tr class="separator:a4fee31ef1b96d5adf488c5f77324de73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9078e3b38b70dba4247f2c9d00e3f614"><td class="memItemLeft" align="right" valign="top"><a class="el" href="attributes_8h.html#abf13e44576a768044e199191d4f26f7e">NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strencodings_8h.html#a9078e3b38b70dba4247f2c9d00e3f614">ParseHDKeypath</a> (const std::string &amp;keypath_str, std::vector&lt; uint32_t &gt; &amp;keypath)</td></tr>
-<tr class="memdesc:a9078e3b38b70dba4247f2c9d00e3f614"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an HD keypaths like "m/7/0'/2000".  <a href="#a9078e3b38b70dba4247f2c9d00e3f614">More...</a><br /></td></tr>
-<tr class="separator:a9078e3b38b70dba4247f2c9d00e3f614"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3556fcd948bc859caaa04f7355a71b16"><td class="memItemLeft" align="right" valign="top">constexpr char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strencodings_8h.html#a3556fcd948bc859caaa04f7355a71b16">ToLower</a> (char c)</td></tr>
 <tr class="memdesc:a3556fcd948bc859caaa04f7355a71b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the given character to its lowercase equivalent.  <a href="#a3556fcd948bc859caaa04f7355a71b16">More...</a><br /></td></tr>
 <tr class="separator:a3556fcd948bc859caaa04f7355a71b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -377,7 +374,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string with the first letter capitalized. </dd></dl>
 
-<p>Definition at line <a class="el" href="strencodings_8cpp_source.html#l00595">595</a> of file <a class="el" href="strencodings_8cpp_source.html">strencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="strencodings_8cpp_source.html#l00554">554</a> of file <a class="el" href="strencodings_8cpp_source.html">strencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -430,13 +427,6 @@ template&lt;int frombits, int tobits, bool pad, typename O , typename I &gt; </d
 <p>Convert from one power-of-2 number base to another. </p>
 
 <p>Definition at line <a class="el" href="strencodings_8h_source.html#l00178">178</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="strencodings_8h_a4fee31ef1b96d5adf488c5f77324de73_cgraph.svg" width="430" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
 
 </div>
 </div>
@@ -602,7 +592,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="strencodings_8cpp_source.html#l00590">590</a> of file <a class="el" href="strencodings_8cpp_source.html">strencodings.cpp</a>.</p>
+<p>Definition at line <a class="el" href="strencodings_8cpp_source.html#l00549">549</a> of file <a class="el" href="strencodings_8cpp_source.html">strencodings.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1188,50 +1178,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a9078e3b38b70dba4247f2c9d00e3f614"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="attributes_8h.html#abf13e44576a768044e199191d4f26f7e">NODISCARD</a> bool ParseHDKeypath </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>keypath_str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; uint32_t &gt; &amp;&#160;</td>
-          <td class="paramname"><em>keypath</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Parse an HD keypaths like "m/7/0'/2000". </p>
-
-<p>Definition at line <a class="el" href="strencodings_8cpp_source.html#l00549">549</a> of file <a class="el" href="strencodings_8cpp_source.html">strencodings.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="strencodings_8h_a9078e3b38b70dba4247f2c9d00e3f614_cgraph.svg" width="286" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="strencodings_8h_a9078e3b38b70dba4247f2c9d00e3f614_icgraph.svg" width="564" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
-
-</div>
-</div>
 <a class="anchor" id="a5a787187ddd5c52baae692350ec5a2cb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1397,7 +1343,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="strencodings_8h_ad4cd67d1bc9cc91801e9c22a0bd94ca7_icgraph.svg" width="1354" height="1640"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="strencodings_8h_ad4cd67d1bc9cc91801e9c22a0bd94ca7_icgraph.svg" width="1378" height="1691"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1597,7 +1544,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the lowercase equivalent of c; or the argument if no conversion is possible. </dd></dl>
 
-<p>Definition at line <a class="el" href="strencodings_8h_source.html#l00211">211</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
+<p>Definition at line <a class="el" href="strencodings_8h_source.html#l00208">208</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1638,7 +1585,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the uppercase equivalent of c; or the argument if no conversion is possible. </dd></dl>
 
-<p>Definition at line <a class="el" href="strencodings_8h_source.html#l00232">232</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
+<p>Definition at line <a class="el" href="strencodings_8h_source.html#l00229">229</a> of file <a class="el" href="strencodings_8h_source.html">strencodings.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1659,7 +1606,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 14 2019 21:44:55 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 14 2019 23:13:56 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -234,7 +234,7 @@ var searchData=
   ['notifytransaction',['NotifyTransaction',['../class_c_z_m_q_abstract_notifier.html#a91809065c7bf730a5f2144e2424b7d8f',1,'CZMQAbstractNotifier::NotifyTransaction()'],['../class_c_z_m_q_publish_hash_transaction_notifier.html#a5e3efb11ded1cac9aead9748e5fd949b',1,'CZMQPublishHashTransactionNotifier::NotifyTransaction()'],['../class_c_z_m_q_publish_raw_transaction_notifier.html#ab863302cdb7c1539ae5cf90d5069ecd7',1,'CZMQPublishRawTransactionNotifier::NotifyTransaction()']]],
   ['notifytransactionchanged',['NotifyTransactionChanged',['../class_c_wallet.html#acd26616ef558afbc5bc62d72603957fc',1,'CWallet']]],
   ['notifyunload',['NotifyUnload',['../class_c_wallet.html#aba33a423aecc69fea1791c88fc2bd300',1,'CWallet']]],
-  ['notifywatchonlychanged',['NotifyWatchonlyChanged',['../class_c_wallet.html#a52e8f380ef8d36622381687056d95df8',1,'CWallet::NotifyWatchonlyChanged()'],['../class_wallet_model.html#a6568a470db58549d57c0ccf5d6b0d997',1,'WalletModel::notifyWatchonlyChanged()']]],
+  ['notifywatchonlychanged',['notifyWatchonlyChanged',['../class_wallet_model.html#a6568a470db58549d57c0ccf5d6b0d997',1,'WalletModel::notifyWatchonlyChanged()'],['../class_c_wallet.html#a52e8f380ef8d36622381687056d95df8',1,'CWallet::NotifyWatchonlyChanged()']]],
   ['noui_2ecpp',['noui.cpp',['../noui_8cpp.html',1,'']]],
   ['noui_2eh',['noui.h',['../noui_8h.html',1,'']]],
   ['noui_5fconnect',['noui_connect',['../noui_8cpp.html#ad4eab1820a36fab7debaa999ca082f9d',1,'noui_connect():&#160;noui.cpp'],['../noui_8h.html#ad4eab1820a36fab7debaa999ca082f9d',1,'noui_connect():&#160;noui.cpp']]],

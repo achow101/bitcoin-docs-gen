@@ -183,7 +183,7 @@ var searchData=
   ['op_5fwithin',['OP_WITHIN',['../script_8h.html#a63e349a6089a54da9fe09a3d858648bdaa466abc3265ca25ce078a6bdb3151a69',1,'script.h']]],
   ['op_5fxor',['OP_XOR',['../script_8h.html#a63e349a6089a54da9fe09a3d858648bdaa0587506ce6da96de3a95a97d84b0fc4',1,'script.h']]],
   ['opcodetype',['opcodetype',['../script_8h.html#a63e349a6089a54da9fe09a3d858648bd',1,'script.h']]],
-  ['open',['Open',['../class_berkeley_environment.html#a377e27a4fe936bf73091c6b0560492fd',1,'BerkeleyEnvironment::Open()'],['../class_open_wallet_activity.html#af0180de966c38596aeb8ba04e3f86f9e',1,'OpenWalletActivity::open()']]],
+  ['open',['open',['../class_open_wallet_activity.html#af0180de966c38596aeb8ba04e3f86f9e',1,'OpenWalletActivity::open()'],['../class_berkeley_environment.html#a377e27a4fe936bf73091c6b0560492fd',1,'BerkeleyEnvironment::Open()']]],
   ['open_5ffor',['open_for',['../class_transaction_status.html#a861ed66c0fd49440bc1aacab5315a938',1,'TransactionStatus']]],
   ['openaction',['openAction',['../class_bitcoin_g_u_i.html#a0e195ed362031079070862c4ab55885c',1,'BitcoinGUI']]],
   ['openbitcoinconf',['openBitcoinConf',['../namespace_g_u_i_util.html#a112f6813ba035d745ad5b8f5f8de7d82',1,'GUIUtil']]],

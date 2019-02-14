@@ -139,6 +139,8 @@ var searchData=
   ['bindlistenport',['BindListenPort',['../class_c_connman.html#ad2f3516addf9e195688437021a8e3182',1,'CConnman::BindListenPort()'],['../net_8h.html#a8a814f8f9920a3ece14c33fe051acdf3',1,'BindListenPort():&#160;net.h']]],
   ['bindwallet',['BindWallet',['../class_c_wallet_tx.html#ab0ee7347584bff886dc24b9f63ff023c',1,'CWalletTx']]],
   ['bip16exception',['BIP16Exception',['../struct_consensus_1_1_params.html#aea60bd2b5e732046a7b07a94987db850',1,'Consensus::Params']]],
+  ['bip32_2ecpp',['bip32.cpp',['../bip32_8cpp.html',1,'']]],
+  ['bip32_2eh',['bip32.h',['../bip32_8h.html',1,'']]],
   ['bip32_5fextkey_5fsize',['BIP32_EXTKEY_SIZE',['../pubkey_8h.html#a702db985212b196f8243268bc752c8ec',1,'pubkey.h']]],
   ['bip32_5fhardened_5fkey_5flimit',['BIP32_HARDENED_KEY_LIMIT',['../wallet_2wallet_8cpp.html#a9449d18f1333bc39482cdd20ecf38845',1,'wallet.cpp']]],
   ['bip32hash',['BIP32Hash',['../hash_8cpp.html#a391c1a6a1f947abbc53cc51fc709110e',1,'BIP32Hash(const ChainCode &amp;chainCode, unsigned int nChild, unsigned char header, const unsigned char data[32], unsigned char output[64]):&#160;hash.cpp'],['../hash_8h.html#a391c1a6a1f947abbc53cc51fc709110e',1,'BIP32Hash(const ChainCode &amp;chainCode, unsigned int nChild, unsigned char header, const unsigned char data[32], unsigned char output[64]):&#160;hash.cpp']]],

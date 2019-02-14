@@ -23,6 +23,8 @@ var searchData=
   ['bench_5frecover_2ec',['bench_recover.c',['../bench__recover_8c.html',1,'']]],
   ['bench_5fsign_2ec',['bench_sign.c',['../bench__sign_8c.html',1,'']]],
   ['bench_5fverify_2ec',['bench_verify.c',['../bench__verify_8c.html',1,'']]],
+  ['bip32_2ecpp',['bip32.cpp',['../bip32_8cpp.html',1,'']]],
+  ['bip32_2eh',['bip32.h',['../bip32_8h.html',1,'']]],
   ['bitcoin_2dcli_2ecpp',['bitcoin-cli.cpp',['../bitcoin-cli_8cpp.html',1,'']]],
   ['bitcoin_2dconfig_2eh',['bitcoin-config.h',['../bitcoin-config_8h.html',1,'']]],
   ['bitcoin_2dtx_2ecpp',['bitcoin-tx.cpp',['../bitcoin-tx_8cpp.html',1,'']]],
