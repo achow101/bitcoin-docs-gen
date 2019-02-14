@@ -8,7 +8,7 @@ var searchData=
   ['labelrole',['LabelRole',['../class_transaction_table_model.html#a4b248508c36df598476affbf9871d1e6a286d79e8b1e0bfc8cb6bb72bbec78de2',1,'TransactionTableModel']]],
   ['labelwalletencryptionicon',['labelWalletEncryptionIcon',['../class_bitcoin_g_u_i.html#aaa28ccc5dd4decce652b45848e79d599',1,'BitcoinGUI']]],
   ['labelwallethdstatusicon',['labelWalletHDStatusIcon',['../class_bitcoin_g_u_i.html#ae5285343e1b7c339162931109ce775b2',1,'BitcoinGUI']]],
-  ['language',['language',['../class_options_model.html#ada92cb2e12e1f3d94de602468a188a33',1,'OptionsModel::language()'],['../class_options_model.html#a5c6c9ca8a01aca9f53e91f118e4878d2a6b5dd4d156c9a7909b2651e0ccb56e7c',1,'OptionsModel::Language()']]],
+  ['language',['Language',['../class_options_model.html#a5c6c9ca8a01aca9f53e91f118e4878d2a6b5dd4d156c9a7909b2651e0ccb56e7c',1,'OptionsModel::Language()'],['../class_options_model.html#ada92cb2e12e1f3d94de602468a188a33',1,'OptionsModel::language()']]],
   ['last',['last',['../class_span.html#a79c28d4eca933b4454a77d4fe2fca8dd',1,'Span']]],
   ['last_5ffailed_5fblock',['last_failed_block',['../struct_c_wallet_1_1_scan_result.html#a6c1d6b96d70fc0ad5a015bce68a8af6a',1,'CWallet::ScanResult']]],
   ['last_5fscanned_5fblock',['last_scanned_block',['../struct_c_wallet_1_1_scan_result.html#abedd49717dd9384e47ef090aef650815',1,'CWallet::ScanResult']]],

@@ -101,6 +101,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="class_c_wallet.html#a42b1405934c6253eb7cea16fcb8e0780">AddDestData</a>(const CTxDestination &amp;dest, const std::string &amp;key, const std::string &amp;value) EXCLUSIVE_LOCKS_REQUIRED(cs_wallet)</td><td class="entry"><a class="el" href="class_c_wallet.html">CWallet</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_c_basic_key_store.html#a07950fc7f9bba7f2460d89a882ac544b">AddKey</a>(const CKey &amp;key)</td><td class="entry"><a class="el" href="class_c_basic_key_store.html">CBasicKeyStore</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_c_wallet.html#a85627c9536743658ff95c5ca60e6e448">AddKeyOrigin</a>(const CPubKey &amp;pubkey, const KeyOriginInfo &amp;info)</td><td class="entry"><a class="el" href="class_c_wallet.html">CWallet</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="group___actions.html#ga4953c4d49433104e1450335e39d995fe">AddKeypoolPubkey</a>(const CPubKey &amp;pubkey, const bool internal)</td><td class="entry"><a class="el" href="class_c_wallet.html">CWallet</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="group___actions.html#ga80b28741c26126d916203d0544b85dc5">AddKeypoolPubkeyWithDB</a>(const CPubKey &amp;pubkey, const bool internal, WalletBatch &amp;batch)</td><td class="entry"><a class="el" href="class_c_wallet.html">CWallet</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="group__map_wallet.html#ga2b0c518df362a1a765a241c1ca5c69a0">AddKeyPubKey</a>(const CKey &amp;key, const CPubKey &amp;pubkey) override EXCLUSIVE_LOCKS_REQUIRED(cs_wallet)</td><td class="entry"><a class="el" href="class_c_wallet.html">CWallet</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="group__map_wallet.html#gaf482ede71b2fde291b8c6ec262b22ef4">AddKeyPubKeyWithDB</a>(WalletBatch &amp;batch, const CKey &amp;key, const CPubKey &amp;pubkey) EXCLUSIVE_LOCKS_REQUIRED(cs_wallet)</td><td class="entry"><a class="el" href="class_c_wallet.html">CWallet</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="group__map_wallet.html#gad87827a3161e8767ac2ba7a6177579d7">AddToSpends</a>(const COutPoint &amp;outpoint, const uint256 &amp;wtxid) EXCLUSIVE_LOCKS_REQUIRED(cs_wallet)</td><td class="entry"><a class="el" href="class_c_wallet.html">CWallet</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
@@ -345,7 +347,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 14 2019 23:14:01 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 14 2019 23:53:43 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

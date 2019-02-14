@@ -38,6 +38,8 @@ var searchData=
   ['addkey',['AddKey',['../class_c_basic_key_store.html#a07950fc7f9bba7f2460d89a882ac544b',1,'CBasicKeyStore']]],
   ['addkeyorigin',['AddKeyOrigin',['../class_c_wallet.html#a85627c9536743658ff95c5ca60e6e448',1,'CWallet']]],
   ['addkeypathtomap',['AddKeypathToMap',['../rpcwallet_8cpp.html#a614a0b6d4fe51abf85bdb57475cb9d48',1,'rpcwallet.cpp']]],
+  ['addkeypoolpubkey',['AddKeypoolPubkey',['../group___actions.html#ga4953c4d49433104e1450335e39d995fe',1,'CWallet']]],
+  ['addkeypoolpubkeywithdb',['AddKeypoolPubkeyWithDB',['../group___actions.html#ga80b28741c26126d916203d0544b85dc5',1,'CWallet']]],
   ['addkeypubkey',['AddKeyPubKey',['../class_c_key_store.html#a1956e4f5860ded321d6f697047d8236a',1,'CKeyStore::AddKeyPubKey()'],['../class_c_basic_key_store.html#a62dbf1659066ca8d3da145843ba44815',1,'CBasicKeyStore::AddKeyPubKey()'],['../class_c_crypto_key_store.html#a4a2d6d44d1c5e844cf0166d286f5eb18',1,'CCryptoKeyStore::AddKeyPubKey()'],['../group__map_wallet.html#ga2b0c518df362a1a765a241c1ca5c69a0',1,'CWallet::AddKeyPubKey()']]],
   ['addkeypubkeywithdb',['AddKeyPubKeyWithDB',['../group__map_wallet.html#gaf482ede71b2fde291b8c6ec262b22ef4',1,'CWallet']]],
   ['addlocal',['AddLocal',['../net_8cpp.html#abb92a02eecc581e8927c8a6e31968645',1,'AddLocal(const CService &amp;addr, int nScore):&#160;net.cpp'],['../net_8cpp.html#a5a95db59a5d1a78e0d8694ae48d205cd',1,'AddLocal(const CNetAddr &amp;addr, int nScore):&#160;net.cpp'],['../net_8h.html#a337d6af198a6b0d75f830e56da9b91e9',1,'AddLocal(const CService &amp;addr, int nScore=LOCAL_NONE):&#160;net.cpp'],['../net_8h.html#abda4e8f87772f9a9d9d8f52a93791ffc',1,'AddLocal(const CNetAddr &amp;addr, int nScore=LOCAL_NONE):&#160;net.cpp']]],
