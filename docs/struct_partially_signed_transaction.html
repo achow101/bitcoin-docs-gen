@@ -90,7 +90,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="struct_partially_signed_transaction-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">PartiallySignedTransaction Struct Reference</div>  </div>
@@ -100,14 +99,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>A version of <a class="el" href="class_c_transaction.html" title="The basic transaction that is broadcasted on the network and contained in blocks. ...">CTransaction</a> with the PSBT format.  
  <a href="struct_partially_signed_transaction.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="sign_8h_source.html">sign.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="psbt_8h_source.html">psbt.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3e69c02c0528f5703f2ee85e1b8adc82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_partially_signed_transaction.html#a3e69c02c0528f5703f2ee85e1b8adc82">IsNull</a> () const </td></tr>
 <tr class="separator:a3e69c02c0528f5703f2ee85e1b8adc82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a9dc53ef43aede2a8819910d726e1cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_partially_signed_transaction.html#a0a9dc53ef43aede2a8819910d726e1cf">Merge</a> (const <a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;psbt)</td></tr>
-<tr class="separator:a0a9dc53ef43aede2a8819910d726e1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fcb0eccd190d1a6523259637479875c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="attributes_8h.html#abf13e44576a768044e199191d4f26f7e">NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_partially_signed_transaction.html#a1fcb0eccd190d1a6523259637479875c">Merge</a> (const <a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;psbt)</td></tr>
+<tr class="memdesc:a1fcb0eccd190d1a6523259637479875c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merge psbt into this.  <a href="#a1fcb0eccd190d1a6523259637479875c">More...</a><br /></td></tr>
+<tr class="separator:a1fcb0eccd190d1a6523259637479875c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11dbcf6ba6b72cad936560161bdf57dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_partially_signed_transaction.html#a11dbcf6ba6b72cad936560161bdf57dd">IsSane</a> () const </td></tr>
 <tr class="separator:a11dbcf6ba6b72cad936560161bdf57dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a310a40da8f9bc5860a4bf118b2a0790c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_partially_signed_transaction.html#a310a40da8f9bc5860a4bf118b2a0790c">PartiallySignedTransaction</a> ()</td></tr>
@@ -136,18 +136,11 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ab2324efa99f9d6c892e3cce76b1e056b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7710a833000f6bd4ef41a76503e1d941"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::vector&lt; unsigned char &gt;, std::vector&lt; unsigned char &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_partially_signed_transaction.html#a7710a833000f6bd4ef41a76503e1d941">unknown</a></td></tr>
 <tr class="separator:a7710a833000f6bd4ef41a76503e1d941"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:a40bc7adf1608810d2b7e800e3f22a811"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_partially_signed_transaction.html#a40bc7adf1608810d2b7e800e3f22a811">operator==</a> (const <a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;a, const <a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;b)</td></tr>
-<tr class="separator:a40bc7adf1608810d2b7e800e3f22a811"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65f3f61a262c3f4d7fdff43a54ac3be7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_partially_signed_transaction.html#a65f3f61a262c3f4d7fdff43a54ac3be7">operator!=</a> (const <a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;a, const <a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;b)</td></tr>
-<tr class="separator:a65f3f61a262c3f4d7fdff43a54ac3be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A version of <a class="el" href="class_c_transaction.html" title="The basic transaction that is broadcasted on the network and contained in blocks. ...">CTransaction</a> with the PSBT format. </p>
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00565">565</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="psbt_8h_source.html#l00379">379</a> of file <a class="el" href="psbt_8h_source.html">psbt.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a310a40da8f9bc5860a4bf118b2a0790c"></a>
 <div class="memitem">
@@ -170,7 +163,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00575">575</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="psbt_8h_source.html#l00392">392</a> of file <a class="el" href="psbt_8h_source.html">psbt.h</a>.</p>
 
 </div>
 </div>
@@ -196,7 +189,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00576">576</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="psbt_8h_source.html#l00393">393</a> of file <a class="el" href="psbt_8h_source.html">psbt.h</a>.</p>
 
 </div>
 </div>
@@ -222,7 +215,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sign_8cpp_source.html#l00512">512</a> of file <a class="el" href="sign_8cpp_source.html">sign.cpp</a>.</p>
+<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00008">8</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
 
 </div>
 </div>
@@ -260,12 +253,13 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00729">729</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="psbt_8h_source.html#l00536">536</a> of file <a class="el" href="psbt_8h_source.html">psbt.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_partially_signed_transaction_ad225d3ca4c91abcd8e1731534a6addff_cgraph.svg" width="1760" height="1195"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_partially_signed_transaction_ad225d3ca4c91abcd8e1731534a6addff_cgraph.svg" width="1534" height="1627"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -285,7 +279,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sign_8cpp_source.html#l00518">518</a> of file <a class="el" href="sign_8cpp_source.html">sign.cpp</a>.</p>
+<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00014">14</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
 
 </div>
 </div>
@@ -302,23 +296,24 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sign_8cpp_source.html#l00534">534</a> of file <a class="el" href="sign_8cpp_source.html">sign.cpp</a>.</p>
+<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00037">37</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_partially_signed_transaction_a11dbcf6ba6b72cad936560161bdf57dd_icgraph.svg" width="510" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_partially_signed_transaction_a11dbcf6ba6b72cad936560161bdf57dd_icgraph.svg" width="764" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a0a9dc53ef43aede2a8819910d726e1cf"></a>
+<a class="anchor" id="a1fcb0eccd190d1a6523259637479875c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PartiallySignedTransaction::Merge </td>
+          <td class="memname">bool PartiallySignedTransaction::Merge </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;&#160;</td>
           <td class="paramname"><em>psbt</em></td><td>)</td>
@@ -327,12 +322,16 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sign_8cpp_source.html#l00523">523</a> of file <a class="el" href="sign_8cpp_source.html">sign.cpp</a>.</p>
+<p>Merge psbt into this. </p>
+<p>The two psbts must have the same underlying <a class="el" href="class_c_transaction.html" title="The basic transaction that is broadcasted on the network and contained in blocks. ...">CTransaction</a> (i.e. the same actual Bitcoin transaction.) Returns true if the merge succeeded, false otherwise. </p>
+
+<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00019">19</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_partially_signed_transaction_a0a9dc53ef43aede2a8819910d726e1cf_icgraph.svg" width="510" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_partially_signed_transaction_a1fcb0eccd190d1a6523259637479875c_icgraph.svg" width="764" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -362,7 +361,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00590">590</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="psbt_8h_source.html#l00397">397</a> of file <a class="el" href="psbt_8h_source.html">psbt.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -397,87 +396,15 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00623">623</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="psbt_8h_source.html#l00430">430</a> of file <a class="el" href="psbt_8h_source.html">psbt.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_partially_signed_transaction_afa6fe61b057282e81eb54b8f814b2f83_cgraph.svg" width="908" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_partially_signed_transaction_afa6fe61b057282e81eb54b8f814b2f83_cgraph.svg" width="908" height="342"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
-
-</div>
-</div>
-<h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a class="anchor" id="a65f3f61a262c3f4d7fdff43a54ac3be7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool operator!= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00584">584</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a40bc7adf1608810d2b7e800e3f22a811"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool operator== </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00580">580</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
 
 </div>
 </div>
@@ -492,7 +419,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00568">568</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="psbt_8h_source.html#l00382">382</a> of file <a class="el" href="psbt_8h_source.html">psbt.h</a>.</p>
 
 </div>
 </div>
@@ -506,7 +433,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00569">569</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="psbt_8h_source.html#l00383">383</a> of file <a class="el" href="psbt_8h_source.html">psbt.h</a>.</p>
 
 </div>
 </div>
@@ -520,7 +447,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00567">567</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="psbt_8h_source.html#l00381">381</a> of file <a class="el" href="psbt_8h_source.html">psbt.h</a>.</p>
 
 </div>
 </div>
@@ -534,18 +461,18 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00570">570</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="psbt_8h_source.html#l00384">384</a> of file <a class="el" href="psbt_8h_source.html">psbt.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
-<li>src/script/<a class="el" href="sign_8h_source.html">sign.h</a></li>
-<li>src/script/<a class="el" href="sign_8cpp_source.html">sign.cpp</a></li>
+<li>src/<a class="el" href="psbt_8h_source.html">psbt.h</a></li>
+<li>src/<a class="el" href="psbt_8cpp_source.html">psbt.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 13 2019 21:53:49 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 14 2019 08:50:49 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

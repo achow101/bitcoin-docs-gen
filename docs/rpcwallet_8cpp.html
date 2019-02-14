@@ -106,6 +106,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;validation.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="key__io_8h_source.html">key_io.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="net_8h_source.html">net.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="node_2transaction_8h_source.html">node/transaction.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="outputtype_8h_source.html">outputtype.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="feerate_8h_source.html">policy/feerate.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="policy_2fees_8h_source.html">policy/fees.h</a>&gt;</code><br />
@@ -123,6 +124,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="moneystr_8h_source.html">util/moneystr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="coincontrol_8h_source.html">wallet/coincontrol.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="feebumper_8h_source.html">wallet/feebumper.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="psbtwallet_8h_source.html">wallet/psbtwallet.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="rpcwallet_8h_source.html">wallet/rpcwallet.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="wallet_2wallet_8h_source.html">wallet/wallet.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="walletdb_8h_source.html">wallet/walletdb.h</a>&gt;</code><br />
@@ -133,7 +135,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for rpcwallet.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rpcwallet_8cpp__incl.svg" width="3978" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpcwallet_8cpp__incl.svg" width="4236" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="rpcwallet_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -174,8 +177,6 @@ Functions</h2></td></tr>
 <tr class="separator:a61c7a90d1b36888fe11b751e746e18c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a614a0b6d4fe51abf85bdb57475cb9d48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpcwallet_8cpp.html#a614a0b6d4fe51abf85bdb57475cb9d48">AddKeypathToMap</a> (const <a class="el" href="class_c_wallet.html">CWallet</a> *pwallet, const <a class="el" href="class_c_key_i_d.html">CKeyID</a> &amp;keyID, std::map&lt; <a class="el" href="class_c_pub_key.html">CPubKey</a>, <a class="el" href="struct_key_origin_info.html">KeyOriginInfo</a> &gt; &amp;hd_keypaths)</td></tr>
 <tr class="separator:a614a0b6d4fe51abf85bdb57475cb9d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0239001d0a4657f3fe07941e28ab5674"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpcwallet_8cpp.html#a0239001d0a4657f3fe07941e28ab5674">FillPSBT</a> (const <a class="el" href="class_c_wallet.html">CWallet</a> *pwallet, <a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;psbtx, int sighash_type, bool sign, bool bip32derivs)</td></tr>
-<tr class="separator:a0239001d0a4657f3fe07941e28ab5674"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c99ceacf389a1ce91977c6f7ffa5022"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_uni_value.html">UniValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpcwallet_8cpp.html#a9c99ceacf389a1ce91977c6f7ffa5022">walletprocesspsbt</a> (const <a class="el" href="class_j_s_o_n_r_p_c_request.html">JSONRPCRequest</a> &amp;request)</td></tr>
 <tr class="separator:a9c99ceacf389a1ce91977c6f7ffa5022"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afca55ac7a3c6c274b8b7b3e6eab9cd86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_uni_value.html">UniValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpcwallet_8cpp.html#afca55ac7a3c6c274b8b7b3e6eab9cd86">walletcreatefundedpsbt</a> (const <a class="el" href="class_j_s_o_n_r_p_c_request.html">JSONRPCRequest</a> &amp;request)</td></tr>
@@ -266,7 +267,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l03928">3928</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l03930">3930</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -358,7 +359,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l00076">76</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l00078">78</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -390,72 +391,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l00088">88</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l00090">90</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="rpcwallet_8cpp_a4eb48c19268ebfbfc0e9b6d7904e877f_icgraph.svg" width="907" height="430"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a0239001d0a4657f3fe07941e28ab5674"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool FillPSBT </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_c_wallet.html">CWallet</a> *&#160;</td>
-          <td class="paramname"><em>pwallet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;&#160;</td>
-          <td class="paramname"><em>psbtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>sighash_type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>sign</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bip32derivs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l03941">3941</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rpcwallet_8cpp_a0239001d0a4657f3fe07941e28ab5674_cgraph.svg" width="1659" height="1640"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rpcwallet_8cpp_a0239001d0a4657f3fe07941e28ab5674_icgraph.svg" width="539" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -503,7 +444,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l02905">2905</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l02907">2907</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -535,7 +476,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l03347">3347</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l03349">3349</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -567,7 +508,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l03616">3616</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l03618">3618</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -608,7 +549,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>nullptr if no wallet should be used, or a pointer to the <a class="el" href="class_c_wallet.html" title="A CWallet is an extension of a keystore, which also maintains a set of transactions and balances...">CWallet</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l00056">56</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l00058">58</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -650,7 +591,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l00046">46</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l00048">48</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -682,7 +623,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l00069">69</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l00071">71</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -892,7 +833,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l01399">1399</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l01401">1401</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -917,7 +858,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l04250">4250</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l04206">4206</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -981,7 +922,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l03403">3403</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l03405">3405</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1013,7 +954,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l03849">3849</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l03851">3851</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1045,7 +986,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l03115">3115</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l03117">3117</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1077,12 +1018,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l04060">4060</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l04012">4012</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rpcwallet_8cpp_afca55ac7a3c6c274b8b7b3e6eab9cd86_cgraph.svg" width="1342" height="4087"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpcwallet_8cpp_afca55ac7a3c6c274b8b7b3e6eab9cd86_cgraph.svg" width="1342" height="4087"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1102,12 +1044,13 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l03995">3995</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rpcwallet_8cpp_source.html#l03943">3943</a> of file <a class="el" href="rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rpcwallet_8cpp_a9c99ceacf389a1ce91977c6f7ffa5022_cgraph.svg" width="1520" height="1646"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpcwallet_8cpp_a9c99ceacf389a1ce91977c6f7ffa5022_cgraph.svg" width="1520" height="1659"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1123,7 +1066,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 13 2019 21:53:45 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 14 2019 08:50:45 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -17,7 +17,7 @@ var searchData=
   ['window',['window',['../class_bitcoin_application.html#a5b6f0bbe1f8a1c1f3174079233a5af76',1,'BitcoinApplication']]],
   ['withintarget',['withinTarget',['../struct_estimator_bucket.html#a83642861f96b23d40a1acd6224b58769',1,'EstimatorBucket']]],
   ['witness',['witness',['../struct_signature_data.html#a3a62dfdb8c62eee4a9f397622f84c437',1,'SignatureData']]],
-  ['witness_5fscript',['witness_script',['../struct_signature_data.html#adf378063234367395a35bd87453e2606',1,'SignatureData::witness_script()'],['../struct_p_s_b_t_input.html#afc199fdc7a536053a4fd418d244e764b',1,'PSBTInput::witness_script()'],['../struct_p_s_b_t_output.html#a3bbf65afe4864b6e0f491479bc052117',1,'PSBTOutput::witness_script()']]],
+  ['witness_5fscript',['witness_script',['../struct_p_s_b_t_input.html#afc199fdc7a536053a4fd418d244e764b',1,'PSBTInput::witness_script()'],['../struct_p_s_b_t_output.html#a3bbf65afe4864b6e0f491479bc052117',1,'PSBTOutput::witness_script()'],['../struct_signature_data.html#adf378063234367395a35bd87453e2606',1,'SignatureData::witness_script()']]],
   ['witness_5futxo',['witness_utxo',['../struct_p_s_b_t_input.html#af8bfa83cd96c957d861306d7ed5e4352',1,'PSBTInput']]],
   ['witnessscript',['witnessscript',['../struct_import_data.html#a5a1d075875cfcdf4bb187e78357eba3f',1,'ImportData']]],
   ['wnaf',['wnaf',['../structbench__inv__t.html#ad3f27ccce40e43c4d9efd6942b911de1',1,'bench_inv_t']]],

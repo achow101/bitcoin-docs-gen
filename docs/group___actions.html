@@ -124,10 +124,10 @@ Functions</h2></td></tr>
 <tr class="separator:ga15a558d8fa0db299f38ed1e45a60aaaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3b62fa3eb391c354d1e940d0573ce838"><td class="memItemLeft" align="right" valign="top"><a class="el" href="outputtype_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3">OutputType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actions.html#ga3b62fa3eb391c354d1e940d0573ce838">CWallet::TransactionChangeType</a> (<a class="el" href="outputtype_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3">OutputType</a> change_type, const std::vector&lt; <a class="el" href="struct_c_recipient.html">CRecipient</a> &gt; &amp;vecSend)</td></tr>
 <tr class="separator:ga3b62fa3eb391c354d1e940d0573ce838"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga42068df76177627faf57b6902f83b8c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actions.html#ga42068df76177627faf57b6902f83b8c2">CWallet::CreateTransaction</a> (<a class="el" href="classinterfaces_1_1_chain_1_1_lock.html">interfaces::Chain::Lock</a> &amp;locked_chain, const std::vector&lt; <a class="el" href="struct_c_recipient.html">CRecipient</a> &gt; &amp;vecSend, <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx, <a class="el" href="class_c_reserve_key.html">CReserveKey</a> &amp;reservekey, <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;nFeeRet, int &amp;nChangePosInOut, std::string &amp;strFailReason, const <a class="el" href="class_c_coin_control.html">CCoinControl</a> &amp;coin_control, bool sign=true)</td></tr>
+<tr class="memitem:ga42068df76177627faf57b6902f83b8c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actions.html#ga42068df76177627faf57b6902f83b8c2">CWallet::CreateTransaction</a> (<a class="el" href="classinterfaces_1_1_chain_1_1_lock.html">interfaces::Chain::Lock</a> &amp;locked_chain, const std::vector&lt; <a class="el" href="struct_c_recipient.html">CRecipient</a> &gt; &amp;vecSend, <a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx, <a class="el" href="class_c_reserve_key.html">CReserveKey</a> &amp;reservekey, <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;nFeeRet, int &amp;nChangePosInOut, std::string &amp;strFailReason, const <a class="el" href="class_c_coin_control.html">CCoinControl</a> &amp;coin_control, bool sign=true)</td></tr>
 <tr class="memdesc:ga42068df76177627faf57b6902f83b8c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new transaction paying the recipients with a set of coins selected by <a class="el" href="group___actions.html#ga04c446d786f3fc77d196b352bb28c76a" title="Select a set of coins such that nValueRet &gt;= nTargetValue and at least all coins from coinControl are...">SelectCoins()</a>; Also create the change output, when needed.  <a href="#ga42068df76177627faf57b6902f83b8c2">More...</a><br /></td></tr>
 <tr class="separator:ga42068df76177627faf57b6902f83b8c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2faeb244cf83bbae1304ae2f4acc7d93"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actions.html#ga2faeb244cf83bbae1304ae2f4acc7d93">CWallet::CommitTransaction</a> (<a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> tx, <a class="el" href="wallet_2wallet_8h.html#aaf509cb8d82c13c57426420ef68ced6a">mapValue_t</a> mapValue, std::vector&lt; std::pair&lt; std::string, std::string &gt;&gt; orderForm, <a class="el" href="class_c_reserve_key.html">CReserveKey</a> &amp;reservekey, <a class="el" href="class_c_connman.html">CConnman</a> *connman, <a class="el" href="class_c_validation_state.html">CValidationState</a> &amp;state)</td></tr>
+<tr class="memitem:ga2faeb244cf83bbae1304ae2f4acc7d93"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actions.html#ga2faeb244cf83bbae1304ae2f4acc7d93">CWallet::CommitTransaction</a> (<a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> tx, <a class="el" href="wallet_2wallet_8h.html#aaf509cb8d82c13c57426420ef68ced6a">mapValue_t</a> mapValue, std::vector&lt; std::pair&lt; std::string, std::string &gt;&gt; orderForm, <a class="el" href="class_c_reserve_key.html">CReserveKey</a> &amp;reservekey, <a class="el" href="class_c_connman.html">CConnman</a> *connman, <a class="el" href="class_c_validation_state.html">CValidationState</a> &amp;state)</td></tr>
 <tr class="memdesc:ga2faeb244cf83bbae1304ae2f4acc7d93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call after CreateTransaction unless you want to abort.  <a href="#ga2faeb244cf83bbae1304ae2f4acc7d93">More...</a><br /></td></tr>
 <tr class="separator:ga2faeb244cf83bbae1304ae2f4acc7d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5d7b244b8ed0cbe24233ee0b6ca3cae0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="walletdb_8h.html#a7558d92e9ea1d446075da1b514c4a944">DBErrors</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actions.html#ga5d7b244b8ed0cbe24233ee0b6ca3cae0">CWallet::LoadWallet</a> (bool &amp;fFirstRunRet)</td></tr>
@@ -291,7 +291,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">bool CWallet::CommitTransaction </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a>&#160;</td>
           <td class="paramname"><em>tx</em>, </td>
         </tr>
         <tr>
@@ -371,7 +371,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;&#160;</td>
           <td class="paramname"><em>tx</em>, </td>
         </tr>
         <tr>
@@ -1882,7 +1882,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 13 2019 21:53:45 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 14 2019 08:50:45 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -129,10 +129,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a33097d2313d722ff02dd0f2c77f66d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2eceddf8e9e3ac248ba922ef24eb8d3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_z_m_q_notification_interface.html#a2eceddf8e9e3ac248ba922ef24eb8d3a">Shutdown</a> ()</td></tr>
 <tr class="separator:a2eceddf8e9e3ac248ba922ef24eb8d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6e8baf086fdb469b72efd04daf253ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_z_m_q_notification_interface.html#ad6e8baf086fdb469b72efd04daf253ec">TransactionAddedToMempool</a> (const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx) override</td></tr>
+<tr class="memitem:ad6e8baf086fdb469b72efd04daf253ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_z_m_q_notification_interface.html#ad6e8baf086fdb469b72efd04daf253ec">TransactionAddedToMempool</a> (const <a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx) override</td></tr>
 <tr class="memdesc:ad6e8baf086fdb469b72efd04daf253ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies listeners of a transaction having been added to mempool.  <a href="#ad6e8baf086fdb469b72efd04daf253ec">More...</a><br /></td></tr>
 <tr class="separator:ad6e8baf086fdb469b72efd04daf253ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af41681618cdb13b354ead2fe3074545b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_z_m_q_notification_interface.html#af41681618cdb13b354ead2fe3074545b">BlockConnected</a> (const std::shared_ptr&lt; const <a class="el" href="class_c_block.html">CBlock</a> &gt; &amp;pblock, const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindexConnected, const std::vector&lt; <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &gt; &amp;vtxConflicted) override</td></tr>
+<tr class="memitem:af41681618cdb13b354ead2fe3074545b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_z_m_q_notification_interface.html#af41681618cdb13b354ead2fe3074545b">BlockConnected</a> (const std::shared_ptr&lt; const <a class="el" href="class_c_block.html">CBlock</a> &gt; &amp;pblock, const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindexConnected, const std::vector&lt; <a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &gt; &amp;vtxConflicted) override</td></tr>
 <tr class="memdesc:af41681618cdb13b354ead2fe3074545b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies listeners of a block being connected.  <a href="#af41681618cdb13b354ead2fe3074545b">More...</a><br /></td></tr>
 <tr class="separator:af41681618cdb13b354ead2fe3074545b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a079d7619911433f35230b51d650abdf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_z_m_q_notification_interface.html#a079d7619911433f35230b51d650abdf7">BlockDisconnected</a> (const std::shared_ptr&lt; const <a class="el" href="class_c_block.html">CBlock</a> &gt; &amp;pblock) override</td></tr>
@@ -145,7 +145,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aff4c65cb3c2d1d803a14756a0445238f inherit pro_methods_class_c_validation_interface"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_validation_interface.html#aff4c65cb3c2d1d803a14756a0445238f">~CValidationInterface</a> ()=default</td></tr>
 <tr class="memdesc:aff4c65cb3c2d1d803a14756a0445238f inherit pro_methods_class_c_validation_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protected destructor so that instances can only be deleted by derived classes.  <a href="#aff4c65cb3c2d1d803a14756a0445238f">More...</a><br /></td></tr>
 <tr class="separator:aff4c65cb3c2d1d803a14756a0445238f inherit pro_methods_class_c_validation_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6de358ebc946cbd33ce73eef61993fe5 inherit pro_methods_class_c_validation_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_validation_interface.html#a6de358ebc946cbd33ce73eef61993fe5">TransactionRemovedFromMempool</a> (const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;ptx)</td></tr>
+<tr class="memitem:a6de358ebc946cbd33ce73eef61993fe5 inherit pro_methods_class_c_validation_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_validation_interface.html#a6de358ebc946cbd33ce73eef61993fe5">TransactionRemovedFromMempool</a> (const <a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;ptx)</td></tr>
 <tr class="memdesc:a6de358ebc946cbd33ce73eef61993fe5 inherit pro_methods_class_c_validation_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies listeners of a transaction leaving mempool.  <a href="#a6de358ebc946cbd33ce73eef61993fe5">More...</a><br /></td></tr>
 <tr class="separator:a6de358ebc946cbd33ce73eef61993fe5 inherit pro_methods_class_c_validation_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a406070080c92a1aa3f6ed8f9b4295df7 inherit pro_methods_class_c_validation_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_validation_interface.html#a406070080c92a1aa3f6ed8f9b4295df7">ChainStateFlushed</a> (const <a class="el" href="struct_c_block_locator.html">CBlockLocator</a> &amp;locator)</td></tr>
@@ -270,7 +270,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>txnConflicted</em>&#160;</td>
         </tr>
         <tr>
@@ -485,7 +485,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void CZMQNotificationInterface::TransactionAddedToMempool </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;&#160;</td>
           <td class="paramname"><em>ptxn</em></td><td>)</td>
           <td></td>
         </tr>
@@ -627,7 +627,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 13 2019 21:53:49 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 14 2019 08:50:49 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -187,27 +187,27 @@ Functions</h2></td></tr>
 <tr class="separator:ga71c829a50abbcd74c1884b1f86527755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab48b61409e849cb854c76d607624da5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gab48b61409e849cb854c76d607624da5a">CWallet::LoadToWallet</a> (const <a class="el" href="class_c_wallet_tx.html">CWalletTx</a> &amp;wtxIn) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(cs_wallet)</td></tr>
 <tr class="separator:gab48b61409e849cb854c76d607624da5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga36dd8c1759c6c640232c5795b225c933"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga36dd8c1759c6c640232c5795b225c933">CWallet::AddToWalletIfInvolvingMe</a> (const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx, const <a class="el" href="classuint256.html">uint256</a> &amp;block_hash, int posInBlock, bool fUpdate) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(cs_wallet)</td></tr>
+<tr class="memitem:ga36dd8c1759c6c640232c5795b225c933"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga36dd8c1759c6c640232c5795b225c933">CWallet::AddToWalletIfInvolvingMe</a> (const <a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx, const <a class="el" href="classuint256.html">uint256</a> &amp;block_hash, int posInBlock, bool fUpdate) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(cs_wallet)</td></tr>
 <tr class="memdesc:ga36dd8c1759c6c640232c5795b225c933"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a transaction to the wallet, or update it.  <a href="#ga36dd8c1759c6c640232c5795b225c933">More...</a><br /></td></tr>
 <tr class="separator:ga36dd8c1759c6c640232c5795b225c933"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7cf842d8c4df5b39bbd1110d805f4433"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga7cf842d8c4df5b39bbd1110d805f4433">CWallet::TransactionCanBeAbandoned</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;hashTx) const </td></tr>
 <tr class="memdesc:ga7cf842d8c4df5b39bbd1110d805f4433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether transaction can be abandoned.  <a href="#ga7cf842d8c4df5b39bbd1110d805f4433">More...</a><br /></td></tr>
 <tr class="separator:ga7cf842d8c4df5b39bbd1110d805f4433"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8aa650003f4df8575ac4f4d98c26cf4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga8aa650003f4df8575ac4f4d98c26cf4f">CWallet::MarkInputsDirty</a> (const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(cs_wallet)</td></tr>
+<tr class="memitem:ga8aa650003f4df8575ac4f4d98c26cf4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga8aa650003f4df8575ac4f4d98c26cf4f">CWallet::MarkInputsDirty</a> (const <a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(cs_wallet)</td></tr>
 <tr class="separator:ga8aa650003f4df8575ac4f4d98c26cf4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae8bbd2e7ce9931419a16cf9fb65317e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gae8bbd2e7ce9931419a16cf9fb65317e2">CWallet::AbandonTransaction</a> (<a class="el" href="classinterfaces_1_1_chain_1_1_lock.html">interfaces::Chain::Lock</a> &amp;locked_chain, const <a class="el" href="classuint256.html">uint256</a> &amp;hashTx)</td></tr>
 <tr class="separator:gae8bbd2e7ce9931419a16cf9fb65317e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga009ea6afd94f2c5d560ae063883628b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga009ea6afd94f2c5d560ae063883628b5">CWallet::MarkConflicted</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;hashBlock, const <a class="el" href="classuint256.html">uint256</a> &amp;hashTx)</td></tr>
 <tr class="separator:ga009ea6afd94f2c5d560ae063883628b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga71098245667fb107e061c5471a34968e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga71098245667fb107e061c5471a34968e">CWallet::SyncTransaction</a> (const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx, const <a class="el" href="classuint256.html">uint256</a> &amp;block_hash, int posInBlock=0, bool update_tx=true) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(cs_wallet)</td></tr>
+<tr class="memitem:ga71098245667fb107e061c5471a34968e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga71098245667fb107e061c5471a34968e">CWallet::SyncTransaction</a> (const <a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx, const <a class="el" href="classuint256.html">uint256</a> &amp;block_hash, int posInBlock=0, bool update_tx=true) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(cs_wallet)</td></tr>
 <tr class="separator:ga71098245667fb107e061c5471a34968e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae44ec090ec7c87725fb22d33887ad1a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gae44ec090ec7c87725fb22d33887ad1a7">CWallet::TransactionAddedToMempool</a> (const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx) override</td></tr>
+<tr class="memitem:gae44ec090ec7c87725fb22d33887ad1a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#gae44ec090ec7c87725fb22d33887ad1a7">CWallet::TransactionAddedToMempool</a> (const <a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx) override</td></tr>
 <tr class="memdesc:gae44ec090ec7c87725fb22d33887ad1a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies listeners of a transaction having been added to mempool.  <a href="#gae44ec090ec7c87725fb22d33887ad1a7">More...</a><br /></td></tr>
 <tr class="separator:gae44ec090ec7c87725fb22d33887ad1a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga39c0720765e514f201d1c2ca148be7db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga39c0720765e514f201d1c2ca148be7db">CWallet::TransactionRemovedFromMempool</a> (const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;ptx) override</td></tr>
+<tr class="memitem:ga39c0720765e514f201d1c2ca148be7db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga39c0720765e514f201d1c2ca148be7db">CWallet::TransactionRemovedFromMempool</a> (const <a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;ptx) override</td></tr>
 <tr class="memdesc:ga39c0720765e514f201d1c2ca148be7db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies listeners of a transaction leaving mempool.  <a href="#ga39c0720765e514f201d1c2ca148be7db">More...</a><br /></td></tr>
 <tr class="separator:ga39c0720765e514f201d1c2ca148be7db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8871fb58a2872900558d69d71baddfca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga8871fb58a2872900558d69d71baddfca">CWallet::BlockConnected</a> (const std::shared_ptr&lt; const <a class="el" href="class_c_block.html">CBlock</a> &gt; &amp;pblock, const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindex, const std::vector&lt; <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &gt; &amp;vtxConflicted) override</td></tr>
+<tr class="memitem:ga8871fb58a2872900558d69d71baddfca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga8871fb58a2872900558d69d71baddfca">CWallet::BlockConnected</a> (const std::shared_ptr&lt; const <a class="el" href="class_c_block.html">CBlock</a> &gt; &amp;pblock, const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindex, const std::vector&lt; <a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &gt; &amp;vtxConflicted) override</td></tr>
 <tr class="memdesc:ga8871fb58a2872900558d69d71baddfca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies listeners of a block being connected.  <a href="#ga8871fb58a2872900558d69d71baddfca">More...</a><br /></td></tr>
 <tr class="separator:ga8871fb58a2872900558d69d71baddfca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3aa53a08f7071c42c0ef82ea468d19ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__map_wallet.html#ga3aa53a08f7071c42c0ef82ea468d19ae">CWallet::BlockDisconnected</a> (const std::shared_ptr&lt; const <a class="el" href="class_c_block.html">CBlock</a> &gt; &amp;pblock) override</td></tr>
@@ -667,7 +667,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">bool CWallet::AddToWalletIfInvolvingMe </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;&#160;</td>
           <td class="paramname"><em>tx</em>, </td>
         </tr>
         <tr>
@@ -813,7 +813,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>txnConflicted</em>&#160;</td>
         </tr>
         <tr>
@@ -2748,7 +2748,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void CWallet::MarkInputsDirty </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;&#160;</td>
           <td class="paramname"><em>tx</em></td><td>)</td>
           <td></td>
         </tr>
@@ -3418,7 +3418,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void CWallet::SyncTransaction </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;&#160;</td>
           <td class="paramname"><em>tx</em>, </td>
         </tr>
         <tr>
@@ -3497,7 +3497,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void CWallet::TransactionAddedToMempool </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;&#160;</td>
           <td class="paramname"><em>ptxn</em></td><td>)</td>
           <td></td>
         </tr>
@@ -3555,7 +3555,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void CWallet::TransactionRemovedFromMempool </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;&#160;</td>
           <td class="paramname"><em>ptx</em></td><td>)</td>
           <td></td>
         </tr>
@@ -3677,7 +3677,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 13 2019 21:53:45 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 14 2019 08:50:45 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

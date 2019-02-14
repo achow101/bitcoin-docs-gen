@@ -86,6 +86,7 @@ var searchData=
   ['short_5fhalflife',['SHORT_HALFLIFE',['../policy_2fees_8h.html#a8e4bdf4356d17e4e14401a8c92da04f2a55535e5be30f4713167dd5225a9b89c6',1,'fees.h']]],
   ['sighash_5fall',['SIGHASH_ALL',['../interpreter_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8ac68c7df6528b3001624e56b2de3826de',1,'interpreter.h']]],
   ['sighash_5fanyonecanpay',['SIGHASH_ANYONECANPAY',['../interpreter_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8a9412c721b741fe9be1e3247dc390a4d2',1,'interpreter.h']]],
+  ['sighash_5fmismatch',['SIGHASH_MISMATCH',['../node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867acad2e3cb7ce8f643cef5bdc509fd524bd1',1,'transaction.h']]],
   ['sighash_5fnone',['SIGHASH_NONE',['../interpreter_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8acaba9b1f029a1628196345fce5667f6f',1,'interpreter.h']]],
   ['sighash_5fsingle',['SIGHASH_SINGLE',['../interpreter_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8ad9bb96e76cf9f1b6ebbf50373f4f9ca5',1,'interpreter.h']]],
   ['sizelimit',['SIZELIMIT',['../txmempool_8h.html#a2bc6653552b5871101b6cbefdbaf251fa3466a0da83a34aa41240dd21eca8ee78',1,'txmempool.h']]],

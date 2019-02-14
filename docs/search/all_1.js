@@ -162,6 +162,7 @@ var searchData=
   ['allocator',['allocator',['../class_locked_pool.html#a61ae4cb092fc91a21a134e815e73a604',1,'LockedPool::allocator()'],['../class_locked_pool_1_1_locked_page_arena.html#ab83b92edc6c221f5c64c357678eca4d5',1,'LockedPool::LockedPageArena::allocator()']]],
   ['allocator_5ftype',['allocator_type',['../class_c_data_stream.html#a297dff00e40bb161aab89fde868ee7b1',1,'CDataStream']]],
   ['allow_5ferase',['allow_erase',['../class_cuckoo_cache_1_1cache.html#a31a0af132dc18e62df7999b83c1839f2',1,'CuckooCache::cache']]],
+  ['already_5fin_5fchain',['ALREADY_IN_CHAIN',['../node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867acaf59d78645dc2866dd7eb19fa7d9c993f',1,'transaction.h']]],
   ['altstacktop',['altstacktop',['../interpreter_8cpp.html#ab87a1e371e31c052501ad87f84ac36d7',1,'interpreter.cpp']]],
   ['always',['ALWAYS',['../validation_8cpp.html#ae2877520fcc46d869b4f5e9768227e25af3fc827ade4b968e50406496907ef962',1,'validation.cpp']]],
   ['always_5factive',['ALWAYS_ACTIVE',['../struct_consensus_1_1_b_i_p9_deployment.html#a20761e70997e6f45e6aea41b1f78ecc3',1,'Consensus::BIP9Deployment']]],

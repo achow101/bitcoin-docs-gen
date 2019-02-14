@@ -105,10 +105,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="key__io_8h_source.html">key_io.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="keystore_8h_source.html">keystore.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="merkleblock_8h_source.html">merkleblock.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="net_8h_source.html">net.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="node_2transaction_8h_source.html">node/transaction.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="policy_8h_source.html">policy/policy.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="rbf_8h_source.html">policy/rbf.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="transaction_8h_source.html">primitives/transaction.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="primitives_2transaction_8h_source.html">primitives/transaction.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="psbt_8h_source.html">psbt.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="rawtransaction_8h_source.html">rpc/rawtransaction.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="server_8h_source.html">rpc/server.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="rpc_2util_8h_source.html">rpc/util.h</a>&gt;</code><br />
@@ -116,18 +117,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="script__error_8h_source.html">script/script_error.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="sign_8h_source.html">script/sign.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="standard_8h_source.html">script/standard.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="txmempool_8h_source.html">txmempool.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="uint256_8h_source.html">uint256.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="strencodings_8h_source.html">util/strencodings.h</a>&gt;</code><br />
 <code>#include &lt;validation.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="validationinterface_8h_source.html">validationinterface.h</a>&gt;</code><br />
-<code>#include &lt;future&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="univalue_8h_source.html">univalue.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for rawtransaction.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rawtransaction_8cpp__incl.svg" width="3928" height="710"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rawtransaction_8cpp__incl.svg" width="4190" height="710"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="rawtransaction_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -171,12 +171,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rawtransaction_8cpp_source.html#l01494">1494</a> of file <a class="el" href="rawtransaction_8cpp_source.html">rawtransaction.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rawtransaction_8cpp_source.html#l01441">1441</a> of file <a class="el" href="rawtransaction_8cpp_source.html">rawtransaction.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rawtransaction_8cpp_a220a68cf9c7fa672caf17951c5d280bd_cgraph.svg" width="1994" height="1588"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rawtransaction_8cpp_a220a68cf9c7fa672caf17951c5d280bd_cgraph.svg" width="1383" height="1240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -227,7 +228,7 @@ Here is the caller graph for this function:</div>
 
 <p>Create a transaction from univalue parameters. </p>
 
-<p>Definition at line <a class="el" href="rawtransaction_8cpp_source.html#l00351">351</a> of file <a class="el" href="rawtransaction_8cpp_source.html">rawtransaction.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rawtransaction_8cpp_source.html#l00350">350</a> of file <a class="el" href="rawtransaction_8cpp_source.html">rawtransaction.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -259,12 +260,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rawtransaction_8cpp_source.html#l01693">1693</a> of file <a class="el" href="rawtransaction_8cpp_source.html">rawtransaction.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rawtransaction_8cpp_source.html#l01627">1627</a> of file <a class="el" href="rawtransaction_8cpp_source.html">rawtransaction.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rawtransaction_8cpp_a6b6a0c0d5bd5b55553ea48b3da2e796c_cgraph.svg" width="1220" height="2518"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rawtransaction_8cpp_a6b6a0c0d5bd5b55553ea48b3da2e796c_cgraph.svg" width="1220" height="2526"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -284,7 +286,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rawtransaction_8cpp_source.html#l01617">1617</a> of file <a class="el" href="rawtransaction_8cpp_source.html">rawtransaction.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rawtransaction_8cpp_source.html#l01551">1551</a> of file <a class="el" href="rawtransaction_8cpp_source.html">rawtransaction.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -316,12 +318,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rawtransaction_8cpp_source.html#l01219">1219</a> of file <a class="el" href="rawtransaction_8cpp_source.html">rawtransaction.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rawtransaction_8cpp_source.html#l01166">1166</a> of file <a class="el" href="rawtransaction_8cpp_source.html">rawtransaction.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rawtransaction_8cpp_a0e9b5930a41831d5be26d74565f07340_cgraph.svg" width="1350" height="1648"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rawtransaction_8cpp_a0e9b5930a41831d5be26d74565f07340_cgraph.svg" width="1350" height="1848"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -348,12 +351,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rawtransaction_8cpp_source.html#l01552">1552</a> of file <a class="el" href="rawtransaction_8cpp_source.html">rawtransaction.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rawtransaction_8cpp_source.html#l01492">1492</a> of file <a class="el" href="rawtransaction_8cpp_source.html">rawtransaction.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rawtransaction_8cpp_a5edaef38949646889470912893a56b88_cgraph.svg" width="1334" height="1572"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rawtransaction_8cpp_a5edaef38949646889470912893a56b88_cgraph.svg" width="1366" height="1214"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -382,7 +386,7 @@ Here is the caller graph for this function:</div>
 
 <p>Register raw transaction RPC commands. </p>
 
-<p>Definition at line <a class="el" href="rawtransaction_8cpp_source.html#l01784">1784</a> of file <a class="el" href="rawtransaction_8cpp_source.html">rawtransaction.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rawtransaction_8cpp_source.html#l01718">1718</a> of file <a class="el" href="rawtransaction_8cpp_source.html">rawtransaction.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -407,12 +411,13 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rawtransaction_8cpp_source.html#l01010">1010</a> of file <a class="el" href="rawtransaction_8cpp_source.html">rawtransaction.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rawtransaction_8cpp_source.html#l01009">1009</a> of file <a class="el" href="rawtransaction_8cpp_source.html">rawtransaction.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rawtransaction_8cpp_a5b2abfea4548c97e780cfae39f9ac11b_cgraph.svg" width="1192" height="2084"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rawtransaction_8cpp_a5b2abfea4548c97e780cfae39f9ac11b_cgraph.svg" width="1354" height="1351"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -475,7 +480,7 @@ Here is the caller graph for this function:</div>
 
 <p>Sign a transaction with the given keystore and previous transactions. </p>
 
-<p>Definition at line <a class="el" href="rawtransaction_8cpp_source.html#l00789">789</a> of file <a class="el" href="rawtransaction_8cpp_source.html">rawtransaction.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rawtransaction_8cpp_source.html#l00788">788</a> of file <a class="el" href="rawtransaction_8cpp_source.html">rawtransaction.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -496,7 +501,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 13 2019 21:53:42 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 14 2019 08:50:42 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

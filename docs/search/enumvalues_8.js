@@ -11,6 +11,7 @@ var searchData=
   ['invalid_5faddress',['INVALID_ADDRESS',['../class_address_table_model.html#a3d502b85fc09461e779dae4589c29956a7e1e745ad0209b0cd8dd5866a7615021',1,'AddressTableModel']]],
   ['invalid_5faddress_5for_5fkey',['INVALID_ADDRESS_OR_KEY',['../namespacefeebumper.html#a08fe575802ef410f95f786253c489bc6a17e958c4b09cbb64fd75df0211dd49c6',1,'feebumper']]],
   ['invalid_5fparameter',['INVALID_PARAMETER',['../namespacefeebumper.html#a08fe575802ef410f95f786253c489bc6afeb1a30cb74c35aaf4ea067736109e30',1,'feebumper']]],
+  ['invalid_5fpsbt',['INVALID_PSBT',['../node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867acab6a6f3fe01996bce6d6d24892483ff17',1,'transaction.h']]],
   ['invalid_5frequest',['INVALID_REQUEST',['../namespacefeebumper.html#a08fe575802ef410f95f786253c489bc6ab8c9d7ce4c399c56136475f36309020f',1,'feebumper']]],
   ['invalidaddress',['InvalidAddress',['../class_wallet_model.html#afb93f64411320dce4692c2190b7d35cca449b63ba5da98abf17fab342d8b95fa2',1,'WalletModel']]],
   ['invalidamount',['InvalidAmount',['../class_wallet_model.html#afb93f64411320dce4692c2190b7d35ccaaf7eb8f25529cc4d6b93a4a3440fc6c8',1,'WalletModel']]],

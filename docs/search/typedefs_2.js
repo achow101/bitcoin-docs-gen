@@ -19,7 +19,7 @@ var searchData=
   ['cryptedkeymap',['CryptedKeyMap',['../class_c_crypto_key_store.html#a87503165c56e04697411b912c52f50f5',1,'CCryptoKeyStore']]],
   ['cscriptbase',['CScriptBase',['../script_8h.html#a38aa7e93d54cc9ffa05bd3f73105dc20',1,'script.h']]],
   ['cserializedata',['CSerializeData',['../zeroafterfree_8h.html#a77935f92ff5ba1d71d692166f6ce0c1b',1,'zeroafterfree.h']]],
-  ['ctransactionref',['CTransactionRef',['../transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97',1,'transaction.h']]],
+  ['ctransactionref',['CTransactionRef',['../primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97',1,'transaction.h']]],
   ['ctxdestination',['CTxDestination',['../standard_8h.html#ae9ce1f2e14383eb495b964486ac7273c',1,'standard.h']]],
   ['czmqnotifierfactory',['CZMQNotifierFactory',['../zmqabstractnotifier_8h.html#aee6321c2bf06d430f490086c94a4705f',1,'zmqabstractnotifier.h']]]
 ];

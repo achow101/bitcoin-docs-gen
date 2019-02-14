@@ -100,6 +100,7 @@ var searchData=
   ['erasewatchonly',['EraseWatchOnly',['../class_wallet_batch.html#a440e6261a45315893be17b92d2d86e27',1,'WalletBatch']]],
   ['error',['error',['../struct_h_t_t_p_reply.html#af10328deec9dd5b65a5c9953159448ce',1,'HTTPReply::error()'],['../class_c_script_check.html#a93e4567a5f6b6d5682f8b1b8357fa848',1,'CScriptCheck::error()'],['../class_c_validation_state.html#a1c8f7d76fb09c745222c00f9472f4636',1,'CValidationState::Error()'],['../system_8h.html#a0605c886f88f190fa6a51ae07ca7558a',1,'error():&#160;system.h']]],
   ['error_5fcallback',['error_callback',['../structsecp256k1__context__struct.html#aa34a996f869676899e8625adfb6c6f1d',1,'secp256k1_context_struct']]],
+  ['error_5fcount',['ERROR_COUNT',['../node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867aca7a7ffa2b5e191a5b72a50c596afab449',1,'transaction.h']]],
   ['est',['est',['../struct_fee_calculation.html#ad3aaa246c3e9fa75d55db2ee1f5a38fa',1,'FeeCalculation']]],
   ['estimatecombinedfee',['estimateCombinedFee',['../class_c_block_policy_estimator.html#a31f06439558e93eb79f014ffea3af75b',1,'CBlockPolicyEstimator']]],
   ['estimateconservativefee',['estimateConservativeFee',['../class_c_block_policy_estimator.html#a76c9d6730cd237e9f721961c83fb5e91',1,'CBlockPolicyEstimator']]],

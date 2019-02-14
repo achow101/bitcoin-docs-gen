@@ -112,7 +112,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="policy_2fees_8h_source.html">policy/fees.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="policy_8h_source.html">policy/policy.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="block_8h_source.html">primitives/block.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="transaction_8h_source.html">primitives/transaction.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="primitives_2transaction_8h_source.html">primitives/transaction.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="random_8h_source.html">random.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="reverse__iterator_8h_source.html">reverse_iterator.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="scheduler_8h_source.html">scheduler.h</a>&gt;</code><br />
@@ -126,7 +126,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for net_processing.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="net__processing_8cpp__incl.svg" width="3819" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="net__processing_8cpp__incl.svg" width="3819" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="net__processing_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -152,7 +153,7 @@ Functions</h2></td></tr>
 <tr class="memitem:af0793c7c14e94d2d642f4ac89067a429"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#af0793c7c14e94d2d642f4ac89067a429">GetNodeStateStats</a> (<a class="el" href="net_8h.html#aa637b11e18b77724b35db2229cd12788">NodeId</a> nodeid, <a class="el" href="struct_c_node_state_stats.html">CNodeStateStats</a> &amp;stats)</td></tr>
 <tr class="memdesc:af0793c7c14e94d2d642f4ac89067a429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get statistics from node state.  <a href="#af0793c7c14e94d2d642f4ac89067a429">More...</a><br /></td></tr>
 <tr class="separator:af0793c7c14e94d2d642f4ac89067a429"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd6140f46766ceef29bf97f4e83bbec1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#abd6140f46766ceef29bf97f4e83bbec1">AddOrphanTx</a> (const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx, <a class="el" href="net_8h.html#aa637b11e18b77724b35db2229cd12788">NodeId</a> peer) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="net__processing_8cpp.html#ac02c85606709a83ec7aa7f23109fa898">g_cs_orphans</a>)</td></tr>
+<tr class="memitem:abd6140f46766ceef29bf97f4e83bbec1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#abd6140f46766ceef29bf97f4e83bbec1">AddOrphanTx</a> (const <a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx, <a class="el" href="net_8h.html#aa637b11e18b77724b35db2229cd12788">NodeId</a> peer) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="net__processing_8cpp.html#ac02c85606709a83ec7aa7f23109fa898">g_cs_orphans</a>)</td></tr>
 <tr class="separator:abd6140f46766ceef29bf97f4e83bbec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03c1ac9fc43feb8f1d67e92f17cceb38"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#a03c1ac9fc43feb8f1d67e92f17cceb38">LimitOrphanTxSize</a> (unsigned int nMaxOrphans)</td></tr>
 <tr class="separator:a03c1ac9fc43feb8f1d67e92f17cceb38"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,7 +173,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">bool AddOrphanTx </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;&#160;</td>
           <td class="paramname"><em>tx</em>, </td>
         </tr>
         <tr>
@@ -433,7 +434,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 13 2019 21:53:41 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 14 2019 08:50:41 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

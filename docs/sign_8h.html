@@ -106,12 +106,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sign.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sign_8h__incl.svg" width="2508" height="575"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sign_8h__incl.svg" width="2508" height="575"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sign_8h__dep__incl.svg" width="4610" height="455"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sign_8h__dep__incl.svg" width="4882" height="455"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="sign_8h_source.html">Go to the source code of this file.</a></p>
@@ -134,15 +136,6 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A signature creator for transactions.  <a href="class_mutable_transaction_signature_creator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_signature_data.html">SignatureData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_s_b_t_input.html">PSBTInput</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure for PSBTs which contain per-input information.  <a href="struct_p_s_b_t_input.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_s_b_t_output.html">PSBTOutput</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure for PSBTs which contains per output information.  <a href="struct_p_s_b_t_output.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A version of <a class="el" href="class_c_transaction.html" title="The basic transaction that is broadcasted on the network and contained in blocks. ...">CTransaction</a> with the PSBT format.  <a href="struct_partially_signed_transaction.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -174,12 +167,6 @@ Functions</h2></td></tr>
 <tr class="separator:aa09067df63f8ce6eab55fd2f938bf91c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac425c440cbc90e69519067760dc68df7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sign_8h.html#ac425c440cbc90e69519067760dc68df7">SignSignature</a> (const <a class="el" href="class_signing_provider.html">SigningProvider</a> &amp;provider, const <a class="el" href="class_c_transaction.html">CTransaction</a> &amp;txFrom, <a class="el" href="struct_c_mutable_transaction.html">CMutableTransaction</a> &amp;txTo, unsigned int nIn, int nHashType)</td></tr>
 <tr class="separator:ac425c440cbc90e69519067760dc68df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a237c1813186bd75fd7c3c92aedc2ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sign_8h.html#a1a237c1813186bd75fd7c3c92aedc2ed">PSBTInputSigned</a> (<a class="el" href="struct_p_s_b_t_input.html">PSBTInput</a> &amp;input)</td></tr>
-<tr class="memdesc:a1a237c1813186bd75fd7c3c92aedc2ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a <a class="el" href="struct_p_s_b_t_input.html" title="A structure for PSBTs which contain per-input information. ">PSBTInput</a> is already signed.  <a href="#a1a237c1813186bd75fd7c3c92aedc2ed">More...</a><br /></td></tr>
-<tr class="separator:a1a237c1813186bd75fd7c3c92aedc2ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e9b3177340f5cafd03267a6c1150779"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sign_8h.html#a7e9b3177340f5cafd03267a6c1150779">SignPSBTInput</a> (const <a class="el" href="class_signing_provider.html">SigningProvider</a> &amp;provider, <a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;psbt, int index, int sighash=<a class="el" href="interpreter_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8ac68c7df6528b3001624e56b2de3826de">SIGHASH_ALL</a>)</td></tr>
-<tr class="memdesc:a7e9b3177340f5cafd03267a6c1150779"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signs a <a class="el" href="struct_p_s_b_t_input.html" title="A structure for PSBTs which contain per-input information. ">PSBTInput</a>, verifying that all provided data matches what is being signed.  <a href="#a7e9b3177340f5cafd03267a6c1150779">More...</a><br /></td></tr>
-<tr class="separator:a7e9b3177340f5cafd03267a6c1150779"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac43070bee0b6bc72e2e2a738892dd1f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_signature_data.html">SignatureData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sign_8h.html#ac43070bee0b6bc72e2e2a738892dd1f3">DataFromTransaction</a> (const <a class="el" href="struct_c_mutable_transaction.html">CMutableTransaction</a> &amp;tx, unsigned int nIn, const <a class="el" href="class_c_tx_out.html">CTxOut</a> &amp;txout)</td></tr>
 <tr class="memdesc:ac43070bee0b6bc72e2e2a738892dd1f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract signature data from a transaction input, and insert it.  <a href="#ac43070bee0b6bc72e2e2a738892dd1f3">More...</a><br /></td></tr>
 <tr class="separator:ac43070bee0b6bc72e2e2a738892dd1f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -247,7 +234,7 @@ Variables</h2></td></tr>
 
 <p>Extract signature data from a transaction input, and insert it. </p>
 
-<p>Definition at line <a class="el" href="sign_8cpp_source.html#l00333">333</a> of file <a class="el" href="sign_8cpp_source.html">sign.cpp</a>.</p>
+<p>Definition at line <a class="el" href="sign_8cpp_source.html#l00272">272</a> of file <a class="el" href="sign_8cpp_source.html">sign.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -259,7 +246,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sign_8h_ac43070bee0b6bc72e2e2a738892dd1f3_icgraph.svg" width="880" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sign_8h_ac43070bee0b6bc72e2e2a738892dd1f3_icgraph.svg" width="842" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -297,7 +285,7 @@ template&lt;typename Stream &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00176">176</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="sign_8h_source.html#l00150">150</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -309,7 +297,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sign_8h_acd331ecf16a63bfe92939ea7d5465bd0_icgraph.svg" width="407" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sign_8h_acd331ecf16a63bfe92939ea7d5465bd0_icgraph.svg" width="650" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -339,7 +328,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sign_8cpp_source.html#l00493">493</a> of file <a class="el" href="sign_8cpp_source.html">sign.cpp</a>.</p>
+<p>Definition at line <a class="el" href="sign_8cpp_source.html#l00432">432</a> of file <a class="el" href="sign_8cpp_source.html">sign.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -351,7 +340,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sign_8h_a88a309e2fcf97929f223e03eaba88bd6_icgraph.svg" width="1128" height="419"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sign_8h_a88a309e2fcf97929f223e03eaba88bd6_icgraph.svg" width="1128" height="432"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -381,7 +371,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sign_8cpp_source.html#l00699">699</a> of file <a class="el" href="sign_8cpp_source.html">sign.cpp</a>.</p>
+<p>Definition at line <a class="el" href="sign_8cpp_source.html#l00478">478</a> of file <a class="el" href="sign_8cpp_source.html">sign.cpp</a>.</p>
 
 </div>
 </div>
@@ -435,41 +425,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sign_8h_ae60f8fa32dcf02079b8536a8f3e7942b_icgraph.svg" width="2012" height="991"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sign_8h_ae60f8fa32dcf02079b8536a8f3e7942b_icgraph.svg" width="2012" height="944"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a1a237c1813186bd75fd7c3c92aedc2ed"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool PSBTInputSigned </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_p_s_b_t_input.html">PSBTInput</a> &amp;&#160;</td>
-          <td class="paramname"><em>input</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Checks whether a <a class="el" href="struct_p_s_b_t_input.html" title="A structure for PSBTs which contain per-input information. ">PSBTInput</a> is already signed. </p>
-
-<p>Definition at line <a class="el" href="sign_8cpp_source.html#l00235">235</a> of file <a class="el" href="sign_8cpp_source.html">sign.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sign_8h_a1a237c1813186bd75fd7c3c92aedc2ed_cgraph.svg" width="704" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sign_8h_a1a237c1813186bd75fd7c3c92aedc2ed_icgraph.svg" width="1004" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -507,12 +464,13 @@ template&lt;typename Stream &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00211">211</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="sign_8h_source.html#l00185">185</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sign_8h_ac41104c16086f2946ec4c3926643e4c3_cgraph.svg" width="771" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sign_8h_ac41104c16086f2946ec4c3926643e4c3_cgraph.svg" width="1910" height="1546"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -551,7 +509,7 @@ template&lt;typename Stream , typename... X&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00155">155</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="sign_8h_source.html#l00129">129</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -563,63 +521,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sign_8h_a43d9d4ba5f9e4acca8a1ecd6ef82f263_icgraph.svg" width="586" height="180"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sign_8h_a43d9d4ba5f9e4acca8a1ecd6ef82f263_icgraph.svg" width="586" height="154"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a7e9b3177340f5cafd03267a6c1150779"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool SignPSBTInput </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_signing_provider.html">SigningProvider</a> &amp;&#160;</td>
-          <td class="paramname"><em>provider</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;&#160;</td>
-          <td class="paramname"><em>psbt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>sighash</em> = <code><a class="el" href="interpreter_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8ac68c7df6528b3001624e56b2de3826de">SIGHASH_ALL</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Signs a <a class="el" href="struct_p_s_b_t_input.html" title="A structure for PSBTs which contain per-input information. ">PSBTInput</a>, verifying that all provided data matches what is being signed. </p>
-
-<p>Definition at line <a class="el" href="sign_8cpp_source.html#l00240">240</a> of file <a class="el" href="sign_8cpp_source.html">sign.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sign_8h_a7e9b3177340f5cafd03267a6c1150779_cgraph.svg" width="1974" height="1530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sign_8h_a7e9b3177340f5cafd03267a6c1150779_icgraph.svg" width="826" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -675,7 +578,7 @@ Here is the caller graph for this function:</div>
 
 <p>Produce a script signature for a transaction. </p>
 
-<p>Definition at line <a class="el" href="sign_8cpp_source.html#l00420">420</a> of file <a class="el" href="sign_8cpp_source.html">sign.cpp</a>.</p>
+<p>Definition at line <a class="el" href="sign_8cpp_source.html#l00359">359</a> of file <a class="el" href="sign_8cpp_source.html">sign.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -687,7 +590,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sign_8h_aa09067df63f8ce6eab55fd2f938bf91c_icgraph.svg" width="366" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sign_8h_aa09067df63f8ce6eab55fd2f938bf91c_icgraph.svg" width="535" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -735,7 +639,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sign_8cpp_source.html#l00432">432</a> of file <a class="el" href="sign_8cpp_source.html">sign.cpp</a>.</p>
+<p>Definition at line <a class="el" href="sign_8cpp_source.html#l00371">371</a> of file <a class="el" href="sign_8cpp_source.html">sign.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -772,7 +676,7 @@ template&lt;typename Stream , typename... X&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sign_8h_source.html#l00163">163</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
+<p>Definition at line <a class="el" href="sign_8h_source.html#l00137">137</a> of file <a class="el" href="sign_8h_source.html">sign.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -784,7 +688,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sign_8h_a1ffa12b0e8b9fd052e93a5f9ae6cd061_icgraph.svg" width="411" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sign_8h_a1ffa12b0e8b9fd052e93a5f9ae6cd061_icgraph.svg" width="654" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -814,12 +719,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sign_8cpp_source.html#l00398">398</a> of file <a class="el" href="sign_8cpp_source.html">sign.cpp</a>.</p>
+<p>Definition at line <a class="el" href="sign_8cpp_source.html#l00337">337</a> of file <a class="el" href="sign_8cpp_source.html">sign.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sign_8h_a2051a9625f7300cb8ad7fdc1bc06f5c5_icgraph.svg" width="1927" height="746"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sign_8h_a2051a9625f7300cb8ad7fdc1bc06f5c5_icgraph.svg" width="1943" height="792"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -838,7 +744,7 @@ Here is the caller graph for this function:</div>
 
 <p>A signature creator that just produces 72-byte empty signatures. </p>
 
-<p>Definition at line <a class="el" href="sign_8cpp_source.html#l00490">490</a> of file <a class="el" href="sign_8cpp_source.html">sign.cpp</a>.</p>
+<p>Definition at line <a class="el" href="sign_8cpp_source.html#l00429">429</a> of file <a class="el" href="sign_8cpp_source.html">sign.cpp</a>.</p>
 
 </div>
 </div>
@@ -854,7 +760,7 @@ Here is the caller graph for this function:</div>
 
 <p>A signature creator that just produces 71-byte empty signatures. </p>
 
-<p>Definition at line <a class="el" href="sign_8cpp_source.html#l00489">489</a> of file <a class="el" href="sign_8cpp_source.html">sign.cpp</a>.</p>
+<p>Definition at line <a class="el" href="sign_8cpp_source.html#l00428">428</a> of file <a class="el" href="sign_8cpp_source.html">sign.cpp</a>.</p>
 
 </div>
 </div>
@@ -868,14 +774,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sign_8cpp_source.html#l00491">491</a> of file <a class="el" href="sign_8cpp_source.html">sign.cpp</a>.</p>
+<p>Definition at line <a class="el" href="sign_8cpp_source.html#l00430">430</a> of file <a class="el" href="sign_8cpp_source.html">sign.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 13 2019 21:53:43 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 14 2019 08:50:43 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

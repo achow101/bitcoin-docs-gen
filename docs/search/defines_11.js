@@ -78,5 +78,6 @@ var searchData=
   ['tinyformat_5fvarargs_5f7',['TINYFORMAT_VARARGS_7',['../tinyformat_8h.html#a62c588966a11bd3889e4d6c771e81003',1,'tinyformat.h']]],
   ['tinyformat_5fvarargs_5f8',['TINYFORMAT_VARARGS_8',['../tinyformat_8h.html#a9c70447bc42824aeaae231a7e8a04cd5',1,'tinyformat.h']]],
   ['tinyformat_5fvarargs_5f9',['TINYFORMAT_VARARGS_9',['../tinyformat_8h.html#a5a8a23a3c9f9e193fe47abebac6a6f01',1,'tinyformat.h']]],
+  ['transaction_5ferr_5flast',['TRANSACTION_ERR_LAST',['../node_2transaction_8h.html#a329d95988ade54e7e6a04ef17dc20835',1,'transaction.h']]],
   ['try_5flock',['TRY_LOCK',['../sync_8h.html#aca08e7299069c2d60b8aa726fc550612',1,'sync.h']]]
 ];

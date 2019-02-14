@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['db',['DB',['../class_tx_index_1_1_d_b.html',1,'TxIndex']]],
   ['db',['DB',['../class_base_index_1_1_d_b.html',1,'BaseIndex']]],
+  ['db',['DB',['../class_tx_index_1_1_d_b.html',1,'TxIndex']]],
   ['dbwrapper_5ferror',['dbwrapper_error',['../classdbwrapper__error.html',1,'']]],
   ['defaultrequesthandler',['DefaultRequestHandler',['../class_default_request_handler.html',1,'']]],
   ['dereferencingcomparator',['DereferencingComparator',['../struct_dereferencing_comparator.html',1,'']]],
