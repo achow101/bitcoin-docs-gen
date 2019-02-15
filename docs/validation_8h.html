@@ -102,8 +102,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="coins_8h_source.html">coins.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="common_8h_source.html">crypto/common.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="fs_8h_source.html">fs.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="protocol_8h_source.html">protocol.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="feerate_8h_source.html">policy/feerate.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="protocol_8h_source.html">protocol.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="script__error_8h_source.html">script/script_error.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="sync_8h_source.html">sync.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="versionbits_8h_source.html">versionbits.h</a>&gt;</code><br />
@@ -120,7 +120,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for validation.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h__incl.svg" width="3639" height="635"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="validation_8h__incl.svg" width="3639" height="635"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -325,10 +326,6 @@ Variables</h2></td></tr>
 <tr class="separator:abc71256f703e47c9254093e32ed2994c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29b135067740b41c632d8da65fa7e56d"><td class="memItemLeft" align="right" valign="top">std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#a29b135067740b41c632d8da65fa7e56d">g_is_mempool_loaded</a></td></tr>
 <tr class="separator:a29b135067740b41c632d8da65fa7e56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31f8b0d3c96670151ba997019820e0f4"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#a31f8b0d3c96670151ba997019820e0f4">nLastBlockTx</a></td></tr>
-<tr class="separator:a31f8b0d3c96670151ba997019820e0f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae50cfac8d3fef92948a44965e6085e1c"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#ae50cfac8d3fef92948a44965e6085e1c">nLastBlockWeight</a></td></tr>
-<tr class="separator:ae50cfac8d3fef92948a44965e6085e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2874c632b3b462164de12be5abcd9d43"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#a2874c632b3b462164de12be5abcd9d43">strMessageMagic</a></td></tr>
 <tr class="separator:a2874c632b3b462164de12be5abcd9d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8eac72ec736df33431343671e4defc14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#a9c9c99acb9d093cae8cc54aeef3248f9">Mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validation_8h.html#a8eac72ec736df33431343671e4defc14">g_best_block_mutex</a></td></tr>
@@ -1393,7 +1390,7 @@ Here is the caller graph for this function:</div>
 
 <p>Check whether the block associated with this index entry is pruned or not. </p>
 
-<p>Definition at line <a class="el" href="validation_8h_source.html#l00502">502</a> of file <a class="el" href="validation_8h_source.html">validation.h</a>.</p>
+<p>Definition at line <a class="el" href="validation_8h_source.html#l00500">500</a> of file <a class="el" href="validation_8h_source.html">validation.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1732,7 +1729,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="validation_8h_source.html#l00435">435</a> of file <a class="el" href="validation_8h_source.html">validation.h</a>.</p>
+<p>Definition at line <a class="el" href="validation_8h_source.html#l00433">433</a> of file <a class="el" href="validation_8h_source.html">validation.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -3116,34 +3113,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a31f8b0d3c96670151ba997019820e0f4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t nLastBlockTx</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="miner_8cpp_source.html#l00037">37</a> of file <a class="el" href="miner_8cpp_source.html">miner.cpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae50cfac8d3fef92948a44965e6085e1c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t nLastBlockWeight</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="miner_8cpp_source.html#l00038">38</a> of file <a class="el" href="miner_8cpp_source.html">miner.cpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="af66174e55ad9bafa7a92e4740db6b575"></a>
 <div class="memitem">
 <div class="memproto">
@@ -3299,7 +3268,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 15 2019 12:20:43 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 15 2019 13:59:46 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

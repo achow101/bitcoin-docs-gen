@@ -406,7 +406,7 @@ var searchData=
   ['getuseaddrmanoutgoing',['GetUseAddrmanOutgoing',['../class_c_connman.html#ab3df254dbc1990b63f6de8eba159ae58',1,'CConnman']]],
   ['getuseextraspacing',['getUseExtraSpacing',['../class_platform_style.html#a5fb02349284d8a71f5f2fde5fefef0ad',1,'PlatformStyle']]],
   ['getvalstr',['getValStr',['../class_uni_value.html#ae8e17c2a90b668d0771a0523d70cd70d',1,'UniValue']]],
-  ['getvalue',['getValue',['../class_send_coins_entry.html#af36fb0ed9e2e07079c1a982b31e793c8',1,'SendCoinsEntry::getValue()'],['../class_c_coins_view_cursor.html#ad86274fb9d5809e9c578b8c1612cc13e',1,'CCoinsViewCursor::GetValue()'],['../class_c_d_b_iterator.html#a1b99353b18b45216db24940526838e7a',1,'CDBIterator::GetValue()'],['../class_c_coins_view_d_b_cursor.html#a5c6e5ef1cfb94d71a8043682a2a8de1f',1,'CCoinsViewDBCursor::GetValue()']]],
+  ['getvalue',['GetValue',['../class_c_coins_view_cursor.html#ad86274fb9d5809e9c578b8c1612cc13e',1,'CCoinsViewCursor::GetValue()'],['../class_c_d_b_iterator.html#a1b99353b18b45216db24940526838e7a',1,'CDBIterator::GetValue()'],['../class_c_coins_view_d_b_cursor.html#a5c6e5ef1cfb94d71a8043682a2a8de1f',1,'CCoinsViewDBCursor::GetValue()'],['../class_send_coins_entry.html#af36fb0ed9e2e07079c1a982b31e793c8',1,'SendCoinsEntry::getValue()']]],
   ['getvaluein',['GetValueIn',['../class_c_coins_view_cache.html#a7fd5ad106e1ac2c2770005672421ff93',1,'CCoinsViewCache']]],
   ['getvalueout',['GetValueOut',['../class_c_transaction.html#aef472df5cb11c53281d975ee9e7cf133',1,'CTransaction']]],
   ['getvalues',['getValues',['../class_uni_value.html#ac69674f357ce37046be79bd9e982ca67',1,'UniValue']]],

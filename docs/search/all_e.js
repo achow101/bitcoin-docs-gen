@@ -129,8 +129,6 @@ var searchData=
   ['nkeymeta',['nKeyMeta',['../class_c_wallet_scan_state.html#a2cfbc8894839188b57be22e72f2d6de4',1,'CWalletScanState']]],
   ['nkeys',['nKeys',['../class_c_wallet_scan_state.html#a8a6e0071320cbfffc6d7d49ded5d506e',1,'CWalletScanState']]],
   ['nlastblocktime',['nLastBlockTime',['../struct_node_eviction_candidate.html#a13e9f6fa3d68cf3c428c18452302a3c6',1,'NodeEvictionCandidate::nLastBlockTime()'],['../class_c_node.html#ad253434141efcbca34150864069aee7e',1,'CNode::nLastBlockTime()']]],
-  ['nlastblocktx',['nLastBlockTx',['../miner_8cpp.html#a31f8b0d3c96670151ba997019820e0f4',1,'nLastBlockTx():&#160;miner.cpp'],['../validation_8h.html#a31f8b0d3c96670151ba997019820e0f4',1,'nLastBlockTx():&#160;miner.cpp']]],
-  ['nlastblockweight',['nLastBlockWeight',['../miner_8cpp.html#ae50cfac8d3fef92948a44965e6085e1c',1,'nLastBlockWeight():&#160;miner.cpp'],['../validation_8h.html#ae50cfac8d3fef92948a44965e6085e1c',1,'nLastBlockWeight():&#160;miner.cpp']]],
   ['nlastbytesin',['nLastBytesIn',['../class_traffic_graph_widget.html#ad8a4e57f7003d2e7725f6e8e7803ad7d',1,'TrafficGraphWidget']]],
   ['nlastbytesout',['nLastBytesOut',['../class_traffic_graph_widget.html#a9806f65ac94ab028573cb170e91f10a0',1,'TrafficGraphWidget']]],
   ['nlastcountattempt',['nLastCountAttempt',['../class_c_addr_info.html#a3b0c84f13937219e7ee40e414bf84c50',1,'CAddrInfo']]],
