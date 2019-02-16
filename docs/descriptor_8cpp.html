@@ -125,9 +125,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a967390c7d7e5f248617364ad2941b7d1"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="struct_descriptor.html">Descriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="descriptor_8cpp.html#a967390c7d7e5f248617364ad2941b7d1">Parse</a> (const std::string &amp;descriptor, <a class="el" href="struct_flat_signing_provider.html">FlatSigningProvider</a> &amp;out)</td></tr>
-<tr class="memdesc:a967390c7d7e5f248617364ad2941b7d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a descriptor string.  <a href="#a967390c7d7e5f248617364ad2941b7d1">More...</a><br /></td></tr>
-<tr class="separator:a967390c7d7e5f248617364ad2941b7d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb1fcc7f0e1c90f01b1d47beecaa4880"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="struct_descriptor.html">Descriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="descriptor_8cpp.html#adb1fcc7f0e1c90f01b1d47beecaa4880">Parse</a> (const std::string &amp;descriptor, <a class="el" href="struct_flat_signing_provider.html">FlatSigningProvider</a> &amp;out, bool require_checksum)</td></tr>
+<tr class="memdesc:adb1fcc7f0e1c90f01b1d47beecaa4880"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a descriptor string.  <a href="#adb1fcc7f0e1c90f01b1d47beecaa4880">More...</a><br /></td></tr>
+<tr class="separator:adb1fcc7f0e1c90f01b1d47beecaa4880"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae75dd07a3fc7e942c4ed979623c05c48"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="struct_descriptor.html">Descriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="descriptor_8cpp.html#ae75dd07a3fc7e942c4ed979623c05c48">InferDescriptor</a> (const <a class="el" href="class_c_script.html">CScript</a> &amp;script, const <a class="el" href="class_signing_provider.html">SigningProvider</a> &amp;provider)</td></tr>
 <tr class="memdesc:ae75dd07a3fc7e942c4ed979623c05c48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a descriptor for the specified script, using information from provider where possible.  <a href="#ae75dd07a3fc7e942c4ed979623c05c48">More...</a><br /></td></tr>
 <tr class="separator:ae75dd07a3fc7e942c4ed979623c05c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,7 +151,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="descriptor_8cpp_source.html#l00108">108</a> of file <a class="el" href="descriptor_8cpp_source.html">descriptor.cpp</a>.</p>
+<p>Definition at line <a class="el" href="descriptor_8cpp_source.html#l00227">227</a> of file <a class="el" href="descriptor_8cpp_source.html">descriptor.cpp</a>.</p>
 
 </div>
 </div>
@@ -173,7 +173,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="descriptor_8cpp_source.html#l00469">469</a> of file <a class="el" href="descriptor_8cpp_source.html">descriptor.cpp</a>.</p>
+<p>Definition at line <a class="el" href="descriptor_8cpp_source.html#l00593">593</a> of file <a class="el" href="descriptor_8cpp_source.html">descriptor.cpp</a>.</p>
 
 </div>
 </div>
@@ -211,7 +211,7 @@ Functions</h2></td></tr>
 <li>Failing that, a "raw()" descriptor is returned. </li>
 </ul>
 
-<p>Definition at line <a class="el" href="descriptor_8cpp_source.html#l00764">764</a> of file <a class="el" href="descriptor_8cpp_source.html">descriptor.cpp</a>.</p>
+<p>Definition at line <a class="el" href="descriptor_8cpp_source.html#l00902">902</a> of file <a class="el" href="descriptor_8cpp_source.html">descriptor.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -222,7 +222,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a967390c7d7e5f248617364ad2941b7d1"></a>
+<a class="anchor" id="adb1fcc7f0e1c90f01b1d47beecaa4880"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -236,7 +236,13 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="struct_flat_signing_provider.html">FlatSigningProvider</a> &amp;&#160;</td>
-          <td class="paramname"><em>out</em>&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>require_checksum</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -247,21 +253,25 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Parse a descriptor string. </p>
-<p>Included private keys are put in out. Returns nullptr if parsing fails. </p>
+<p>Included private keys are put in out.</p>
+<p>If the descriptor has a checksum, it must be valid. If require_checksum is set, the checksum is mandatory - otherwise it is optional.</p>
+<p>If a parse error occurs, or the checksum is missing/invalid, or anything else is wrong, nullptr is returned. </p>
 
-<p>Definition at line <a class="el" href="descriptor_8cpp_source.html#l00756">756</a> of file <a class="el" href="descriptor_8cpp_source.html">descriptor.cpp</a>.</p>
+<p>Definition at line <a class="el" href="descriptor_8cpp_source.html#l00881">881</a> of file <a class="el" href="descriptor_8cpp_source.html">descriptor.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="descriptor_8cpp_a967390c7d7e5f248617364ad2941b7d1_cgraph.svg" width="1036" height="763"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="descriptor_8cpp_adb1fcc7f0e1c90f01b1d47beecaa4880_cgraph.svg" width="1040" height="763"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="descriptor_8cpp_a967390c7d7e5f248617364ad2941b7d1_icgraph.svg" width="359" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="descriptor_8cpp_adb1fcc7f0e1c90f01b1d47beecaa4880_icgraph.svg" width="363" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -270,7 +280,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 16 2019 19:47:27 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 16 2019 20:41:30 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
