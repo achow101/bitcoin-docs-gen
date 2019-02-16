@@ -110,9 +110,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a1a237c1813186bd75fd7c3c92aedc2ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="psbt_8cpp.html#a1a237c1813186bd75fd7c3c92aedc2ed">PSBTInputSigned</a> (<a class="el" href="struct_p_s_b_t_input.html">PSBTInput</a> &amp;input)</td></tr>
 <tr class="memdesc:a1a237c1813186bd75fd7c3c92aedc2ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a <a class="el" href="struct_p_s_b_t_input.html" title="A structure for PSBTs which contain per-input information. ">PSBTInput</a> is already signed.  <a href="#a1a237c1813186bd75fd7c3c92aedc2ed">More...</a><br /></td></tr>
 <tr class="separator:a1a237c1813186bd75fd7c3c92aedc2ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea6d6c03545be31d808dc38c7da4756e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="psbt_8cpp.html#aea6d6c03545be31d808dc38c7da4756e">SignPSBTInput</a> (const <a class="el" href="class_signing_provider.html">SigningProvider</a> &amp;provider, <a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;psbt, int index, int sighash)</td></tr>
-<tr class="memdesc:aea6d6c03545be31d808dc38c7da4756e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signs a <a class="el" href="struct_p_s_b_t_input.html" title="A structure for PSBTs which contain per-input information. ">PSBTInput</a>, verifying that all provided data matches what is being signed.  <a href="#aea6d6c03545be31d808dc38c7da4756e">More...</a><br /></td></tr>
-<tr class="separator:aea6d6c03545be31d808dc38c7da4756e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96344560c713d0d723a507927096f447"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="psbt_8cpp.html#a96344560c713d0d723a507927096f447">SignPSBTInput</a> (const <a class="el" href="class_signing_provider.html">SigningProvider</a> &amp;provider, <a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;psbt, int index, int sighash, <a class="el" href="struct_signature_data.html">SignatureData</a> *out_sigdata, bool use_dummy)</td></tr>
+<tr class="memdesc:a96344560c713d0d723a507927096f447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signs a <a class="el" href="struct_p_s_b_t_input.html" title="A structure for PSBTs which contain per-input information. ">PSBTInput</a>, verifying that all provided data matches what is being signed.  <a href="#a96344560c713d0d723a507927096f447">More...</a><br /></td></tr>
+<tr class="separator:a96344560c713d0d723a507927096f447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae928e40974eb627033adb546395ae535"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="psbt_8cpp.html#ae928e40974eb627033adb546395ae535">FinalizePSBT</a> (<a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;psbtx)</td></tr>
 <tr class="memdesc:ae928e40974eb627033adb546395ae535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalizes a PSBT if possible, combining partial signatures.  <a href="#ae928e40974eb627033adb546395ae535">More...</a><br /></td></tr>
 <tr class="separator:ae928e40974eb627033adb546395ae535"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,7 +165,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if we successfully combined the transactions, false if they were not compatible </dd></dl>
 
-<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00266">266</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
+<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00312">312</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -177,7 +177,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_acef8d6e37ebba1add6b88d8a3fd37d0d_icgraph.svg" width="530" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_acef8d6e37ebba1add6b88d8a3fd37d0d_icgraph.svg" width="518" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -217,19 +218,21 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if we successfully extracted the transaction, false otherwise </dd></dl>
 
-<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00250">250</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
+<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00296">296</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_aab3ec9bcf6f951016a077dcfcbb3da0a_cgraph.svg" width="2331" height="1474"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_aab3ec9bcf6f951016a077dcfcbb3da0a_cgraph.svg" width="2331" height="1474"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_aab3ec9bcf6f951016a077dcfcbb3da0a_icgraph.svg" width="583" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_aab3ec9bcf6f951016a077dcfcbb3da0a_icgraph.svg" width="571" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -257,19 +260,21 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00236">236</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
+<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00282">282</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_ae928e40974eb627033adb546395ae535_cgraph.svg" width="2123" height="1655"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_ae928e40974eb627033adb546395ae535_cgraph.svg" width="2123" height="1655"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_ae928e40974eb627033adb546395ae535_icgraph.svg" width="732" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_ae928e40974eb627033adb546395ae535_icgraph.svg" width="720" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -291,7 +296,7 @@ Here is the caller graph for this function:</div>
 
 <p>Checks whether a <a class="el" href="struct_p_s_b_t_input.html" title="A structure for PSBTs which contain per-input information. ">PSBTInput</a> is already signed. </p>
 
-<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00175">175</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
+<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00208">208</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -303,13 +308,14 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_a1a237c1813186bd75fd7c3c92aedc2ed_icgraph.svg" width="1094" height="286"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_a1a237c1813186bd75fd7c3c92aedc2ed_icgraph.svg" width="1082" height="368"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aea6d6c03545be31d808dc38c7da4756e"></a>
+<a class="anchor" id="a96344560c713d0d723a507927096f447"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -335,7 +341,19 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>sighash</em> = <code><a class="el" href="interpreter_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8ac68c7df6528b3001624e56b2de3826de">SIGHASH_ALL</a></code>&#160;</td>
+          <td class="paramname"><em>sighash</em> = <code><a class="el" href="interpreter_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8ac68c7df6528b3001624e56b2de3826de">SIGHASH_ALL</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_signature_data.html">SignatureData</a> *&#160;</td>
+          <td class="paramname"><em>out_sigdata</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>use_dummy</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -347,19 +365,21 @@ Here is the caller graph for this function:</div>
 
 <p>Signs a <a class="el" href="struct_p_s_b_t_input.html" title="A structure for PSBTs which contain per-input information. ">PSBTInput</a>, verifying that all provided data matches what is being signed. </p>
 
-<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00180">180</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
+<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00213">213</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_aea6d6c03545be31d808dc38c7da4756e_cgraph.svg" width="1974" height="1530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_a96344560c713d0d723a507927096f447_cgraph.svg" width="1974" height="1530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_aea6d6c03545be31d808dc38c7da4756e_icgraph.svg" width="915" height="295"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_a96344560c713d0d723a507927096f447_icgraph.svg" width="903" height="319"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -368,7 +388,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 16 2019 18:00:18 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 16 2019 19:47:26 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
