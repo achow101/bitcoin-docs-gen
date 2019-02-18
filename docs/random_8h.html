@@ -169,7 +169,7 @@ Functions</h2></td></tr>
 <p>Get 32 bytes of system entropy. </p>
 <p>Do not use this in application code: use GetStrongRandBytes instead.</p>
 
-<p>Definition at line <a class="el" href="random_8cpp_source.html#l00208">208</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00302">302</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -209,7 +209,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random_8cpp_source.html#l00519">519</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00615">615</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -265,7 +265,7 @@ Here is the caller graph for this function:</div>
 <li>The GetRand*() class of functions, as well as construction of <a class="el" href="class_fast_random_context.html" title="Fast randomness source. ">FastRandomContext</a> objects, perform 'fast' seeding, consisting of mixing in:<ul>
 <li>A stack pointer (indirectly committing to calling thread and call stack)</li>
 <li>A high-precision timestamp (rdtsc when available, c++ high_resolution_clock otherwise)</li>
-<li>Hardware RNG (rdrand) when available. These entropy sources are very fast, and only designed to protect against situations where a VM state restore/copy results in multiple systems with the same randomness. <a class="el" href="class_fast_random_context.html" title="Fast randomness source. ">FastRandomContext</a> on the other hand does not protect against this once created, but is even faster (and acceptable to use inside tight loops).</li>
+<li>64 bits from the hardware RNG (rdrand) when available. These entropy sources are very fast, and only designed to protect against situations where a VM state restore/copy results in multiple systems with the same randomness. <a class="el" href="class_fast_random_context.html" title="Fast randomness source. ">FastRandomContext</a> on the other hand does not protect against this once created, but is even faster (and acceptable to use inside tight loops).</li>
 </ul>
 </li>
 <li>The GetStrongRand*() class of function perform 'slow' seeding, including everything that fast seeding includes, but additionally:<ul>
@@ -281,6 +281,7 @@ Here is the caller graph for this function:</div>
 </li>
 </ul>
 <p>On first use of the RNG (regardless of what function is called first), all entropy sources used in the 'slow' seeder are included, but also:</p><ul>
+<li>256 bits from the hardware RNG (rdseed or rdrand) when available.</li>
 <li>(On Windows) Performance monitoring data from the OS.</li>
 <li>(On Windows) Through OpenSSL, the screen contents.</li>
 </ul>
@@ -288,7 +289,7 @@ Here is the caller graph for this function:</div>
 <p>These functions are designed to be fast (sub microsecond), but do not necessarily meaningfully add entropy to the PRNG state.</p>
 <p>Thread-safe. </p>
 
-<p>Definition at line <a class="el" href="random_8cpp_source.html#l00513">513</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00609">609</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -320,7 +321,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random_8cpp_source.html#l00529">529</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00625">625</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -360,7 +361,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random_8cpp_source.html#l00524">524</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00620">620</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -414,7 +415,7 @@ Here is the caller graph for this function:</div>
 <p>This function will cause failure whenever the OS RNG fails.</p>
 <p>Thread-safe. </p>
 
-<p>Definition at line <a class="el" href="random_8cpp_source.html#l00514">514</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00610">610</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -441,7 +442,7 @@ Here is the caller graph for this function:</div>
 <p>Sleep for 1ms, gather entropy from various sources, and feed them to the PRNG state. </p>
 <p>Thread-safe. </p>
 
-<p>Definition at line <a class="el" href="random_8cpp_source.html#l00515">515</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00611">611</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -467,7 +468,7 @@ Here is the caller graph for this function:</div>
 
 <p>Check that OS randomness is available and returning the requested number of bytes. </p>
 
-<p>Definition at line <a class="el" href="random_8cpp_source.html#l00569">569</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00665">665</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -501,7 +502,7 @@ Here is the caller graph for this function:</div>
 <p>Initialize global RNG state and log any CPU features that are used. </p>
 <p>Calling this function is optional. RNG state will be initialized when first needed if it is not called. </p>
 
-<p>Definition at line <a class="el" href="random_8cpp_source.html#l00638">638</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00734">734</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -548,7 +549,7 @@ template&lt;typename I , typename R &gt; </div>
 <p>This is more efficient as std::shuffle will consume entropy in groups of 64 bits at the time and throw away most.</p>
 <p>This also works around a bug in libstdc++ std::shuffle that may cause type::operator=(type&amp;&amp;) to be invoked on itself, which the library's debug mode detects and panics on. This is a known issue, see <a href="https://stackoverflow.com/questions/22915325/avoiding-self-assignment-in-stdshuffle">https://stackoverflow.com/questions/22915325/avoiding-self-assignment-in-stdshuffle</a> </p>
 
-<p>Definition at line <a class="el" href="random_8h_source.html#l00202">202</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
+<p>Definition at line <a class="el" href="random_8h_source.html#l00203">203</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -569,7 +570,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 18 2019 09:54:51 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 18 2019 09:58:18 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
