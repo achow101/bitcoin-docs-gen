@@ -28,7 +28,6 @@ var searchData=
   ['bitbuf_5fsize',['bitbuf_size',['../class_fast_random_context.html#a896da2cd5cba141c33f96b9eb6a8f794',1,'FastRandomContext']]],
   ['bitcoin_5fconf_5ffilename',['BITCOIN_CONF_FILENAME',['../system_8cpp.html#abf57498ee2b7213f49662a019744a74d',1,'BITCOIN_CONF_FILENAME():&#160;system.cpp'],['../system_8h.html#abf57498ee2b7213f49662a019744a74d',1,'BITCOIN_CONF_FILENAME():&#160;system.cpp']]],
   ['bitcoin_5fipc_5fconnect_5ftimeout',['BITCOIN_IPC_CONNECT_TIMEOUT',['../paymentserver_8cpp.html#a5ed09c108cbabac0b92338993ce290e0',1,'paymentserver.cpp']]],
-  ['bitcoin_5fpid_5ffilename',['BITCOIN_PID_FILENAME',['../system_8cpp.html#a9c6941232aba4a4c523285e8de1e8d92',1,'BITCOIN_PID_FILENAME():&#160;system.cpp'],['../system_8h.html#a9c6941232aba4a4c523285e8de1e8d92',1,'BITCOIN_PID_FILENAME():&#160;system.cpp']]],
   ['blind',['blind',['../structsecp256k1__ecmult__gen__context.html#af2f3064a367e86f936ab1c8b93d6f27e',1,'secp256k1_ecmult_gen_context']]],
   ['block',['block',['../struct_c_block_template.html#a13261cbac4dc94f996d1b3ff78e41139',1,'CBlockTemplate::block()'],['../namespace_net_msg_type.html#a1842ab3e065d8bc5180974b9e3f44377',1,'NetMsgType::BLOCK()']]],
   ['block_5fheight',['block_height',['../structinterfaces_1_1_wallet_tx_status.html#a2ccc5928a2846bff7c195b785923cf45',1,'interfaces::WalletTxStatus']]],

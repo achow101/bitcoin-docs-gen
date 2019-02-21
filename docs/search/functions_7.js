@@ -270,7 +270,6 @@ var searchData=
   ['getpayto',['getPayTo',['../class_payment_request_plus.html#a1762371bf662f1b03424888cb79a4ea8',1,'PaymentRequestPlus']]],
   ['getpeer',['GetPeer',['../class_h_t_t_p_request.html#a33fff8f29a0da0a2cc3b26748e967375',1,'HTTPRequest']]],
   ['getpeertablemodel',['getPeerTableModel',['../class_client_model.html#a643fc112ce94f50ac7187ecdf3c75360',1,'ClientModel']]],
-  ['getpidfile',['GetPidFile',['../system_8cpp.html#aa0172eabeecce5061826cb19990fbde2',1,'GetPidFile():&#160;system.cpp'],['../system_8h.html#aa0172eabeecce5061826cb19990fbde2',1,'GetPidFile():&#160;system.cpp']]],
   ['getport',['GetPort',['../class_c_service.html#a49df6ecaf59be814632c4d7755f26637',1,'CService']]],
   ['getpos',['GetPos',['../class_c_buffered_file.html#ac36ab23517eba3876763e29c4b67dd5f',1,'CBufferedFile']]],
   ['getprivatekeyfile',['GetPrivateKeyFile',['../class_tor_controller.html#a55913c25c46f3d6cd49acb173664c350',1,'TorController']]],

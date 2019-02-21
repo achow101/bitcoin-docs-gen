@@ -282,7 +282,6 @@ var searchData=
   ['createnewblock',['CreateNewBlock',['../class_block_assembler.html#acd45f01ed2556e805c82907def19efcb',1,'BlockAssembler']]],
   ['createobfuscatekey',['CreateObfuscateKey',['../class_c_d_b_wrapper.html#aaf3ccbb98bbaaef461a172664549a0fe',1,'CDBWrapper']]],
   ['createoptionsmodel',['createOptionsModel',['../class_bitcoin_application.html#aa352466adf81869a9943d220fea7b5ff',1,'BitcoinApplication']]],
-  ['createpidfile',['CreatePidFile',['../system_8cpp.html#a1c0f9b041628dcb399a023bc9913f41d',1,'CreatePidFile(const fs::path &amp;path, pid_t pid):&#160;system.cpp'],['../system_8h.html#a1c0f9b041628dcb399a023bc9913f41d',1,'CreatePidFile(const fs::path &amp;path, pid_t pid):&#160;system.cpp']]],
   ['createpsbt',['createpsbt',['../rawtransaction_8cpp.html#ab96b0b3cf82a8f50975ee74c26c4dbf8',1,'rawtransaction.cpp']]],
   ['createsig',['CreateSig',['../class_base_signature_creator.html#a5c5492979e9759376971993788616f8a',1,'BaseSignatureCreator::CreateSig()'],['../class_mutable_transaction_signature_creator.html#ad66cfa8bc9e1222e30125c90d1ecaddf',1,'MutableTransactionSignatureCreator::CreateSig()']]],
   ['createsocket',['CreateSocket',['../netbase_8cpp.html#afa8f8cfab29615e04a43a866c368706e',1,'CreateSocket(const CService &amp;addrConnect):&#160;netbase.cpp'],['../netbase_8h.html#afa8f8cfab29615e04a43a866c368706e',1,'CreateSocket(const CService &amp;addrConnect):&#160;netbase.cpp']]],
