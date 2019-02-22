@@ -8,7 +8,6 @@ var searchData=
   ['unencrypted',['Unencrypted',['../class_wallet_model.html#a58f6f0bb5a7b8b4e4d0812185ccc0616aab8ddcb74c78f880c81f610e327bdcd7',1,'WalletModel']]],
   ['unitrole',['UnitRole',['../class_bitcoin_units.html#a094a1a150647021c419f06a923795959adba268d796f853874a3b830bb92c5c80',1,'BitcoinUnits']]],
   ['unknown',['UNKNOWN',['../class_h_t_t_p_request.html#a1afe92e9caad997b8f88f0cb07dcc5aaae2331c29519b3237f4926d5be5f7c7a4',1,'HTTPRequest::UNKNOWN()'],['../rbf_8h.html#a8a266cb2957aad5d08cc4c382ef6d32ea696b031073e74bf2cb98e5ef201d4aa3',1,'UNKNOWN():&#160;rbf.h'],['../txmempool_8h.html#a2bc6653552b5871101b6cbefdbaf251fa696b031073e74bf2cb98e5ef201d4aa3',1,'UNKNOWN():&#160;txmempool.h']]],
-  ['unknown_5ferror',['UNKNOWN_ERROR',['../node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867aca9a10f345b0f755d461a8673a5e9ef6b4',1,'transaction.h']]],
   ['unlock',['Unlock',['../class_ask_passphrase_dialog.html#a96abf4d3c36c1ef9e268fb546ae76538a2af79cac6134924405d6c620fb0f4c7e',1,'AskPassphraseDialog']]],
   ['unlocked',['Unlocked',['../class_wallet_model.html#a58f6f0bb5a7b8b4e4d0812185ccc0616a60d7f605079e8e1738ba66d543467a3c',1,'WalletModel']]],
   ['unset',['UNSET',['../policy_2fees_8h.html#aff36f74244c52c764c1af21d5f812173a666a87025ab0d8965e221050c8948001',1,'fees.h']]],

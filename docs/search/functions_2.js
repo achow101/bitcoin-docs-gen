@@ -101,7 +101,7 @@ var searchData=
   ['boostpathtoqstring',['boostPathToQString',['../namespace_g_u_i_util.html#a82887fd3dd003600d4e30dc07ee866d2',1,'GUIUtil']]],
   ['bringtofront',['bringToFront',['../namespace_g_u_i_util.html#a996e72c7c34342bf3bd7c0a2cb524e90',1,'GUIUtil']]],
   ['broadcast',['Broadcast',['../class_c_main_signals.html#ab57756efee0f6f12b5a14cbbbd283df7',1,'CMainSignals']]],
-  ['broadcasttransaction',['BroadcastTransaction',['../node_2transaction_8cpp.html#a01d6b317d1f900d54b049c55760fdb0f',1,'BroadcastTransaction(const CTransactionRef tx, uint256 &amp;hashTx, TransactionError &amp;error, std::string &amp;err_string, const bool allowhighfees):&#160;transaction.cpp'],['../node_2transaction_8h.html#a6ff59cb655d7a493960fef018e26198d',1,'BroadcastTransaction(CTransactionRef tx, uint256 &amp;txid, TransactionError &amp;error, std::string &amp;err_string, bool allowhighfees=false):&#160;transaction.cpp']]],
+  ['broadcasttransaction',['BroadcastTransaction',['../node_2transaction_8cpp.html#ae137570ac6cc657bcbdbf496310ca33c',1,'BroadcastTransaction(const CTransactionRef tx, uint256 &amp;hashTx, std::string &amp;err_string, const CAmount &amp;highfee):&#160;transaction.cpp'],['../node_2transaction_8h.html#a79bd3efb52d56050ad796b0bc07c611e',1,'BroadcastTransaction(CTransactionRef tx, uint256 &amp;txid, std::string &amp;err_string, const CAmount &amp;highfee):&#160;transaction.cpp']]],
   ['browsehistory',['browseHistory',['../class_r_p_c_console.html#a1c2ccbaedfeb8ed8cd3f73307a38bd7f',1,'RPCConsole']]],
   ['bswap_5f16',['bswap_16',['../byteswap_8h.html#a085ea880e2990a5fe43dab707c45db42',1,'byteswap.h']]],
   ['bswap_5f32',['bswap_32',['../byteswap_8h.html#acdd5094f58e4c6e2b0176654b7f20e1c',1,'byteswap.h']]],

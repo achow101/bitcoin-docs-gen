@@ -102,7 +102,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for psbtwallet.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="psbtwallet_8h__incl.svg" width="3742" height="710"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="psbtwallet_8h__incl.svg" width="3890" height="710"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -114,17 +115,17 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac646193ad114277f27b0b3a26fb16260"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="psbtwallet_8h.html#ac646193ad114277f27b0b3a26fb16260">FillPSBT</a> (const <a class="el" href="class_c_wallet.html">CWallet</a> *pwallet, <a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;psbtx, <a class="el" href="node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867ac">TransactionError</a> &amp;<a class="el" href="system_8h.html#a0605c886f88f190fa6a51ae07ca7558a">error</a>, bool &amp;complete, int sighash_type=1, bool sign=true, bool bip32derivs=false)</td></tr>
-<tr class="memdesc:ac646193ad114277f27b0b3a26fb16260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills out a PSBT with information from the wallet.  <a href="#ac646193ad114277f27b0b3a26fb16260">More...</a><br /></td></tr>
-<tr class="separator:ac646193ad114277f27b0b3a26fb16260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b008ba042c649048a3b5f200f80b106"><td class="memItemLeft" align="right" valign="top"><a class="el" href="attributes_8h.html#abf13e44576a768044e199191d4f26f7e">NODISCARD</a> <a class="el" href="node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867ac">TransactionError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="psbtwallet_8h.html#a3b008ba042c649048a3b5f200f80b106">FillPSBT</a> (const <a class="el" href="class_c_wallet.html">CWallet</a> *pwallet, <a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;psbtx, bool &amp;complete, int sighash_type=1, bool sign=true, bool bip32derivs=false)</td></tr>
+<tr class="memdesc:a3b008ba042c649048a3b5f200f80b106"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills out a PSBT with information from the wallet.  <a href="#a3b008ba042c649048a3b5f200f80b106">More...</a><br /></td></tr>
+<tr class="separator:a3b008ba042c649048a3b5f200f80b106"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ac646193ad114277f27b0b3a26fb16260"></a>
+<a class="anchor" id="a3b008ba042c649048a3b5f200f80b106"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool FillPSBT </td>
+          <td class="memname"><a class="el" href="attributes_8h.html#abf13e44576a768044e199191d4f26f7e">NODISCARD</a> <a class="el" href="node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867ac">TransactionError</a> FillPSBT </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_c_wallet.html">CWallet</a> *&#160;</td>
           <td class="paramname"><em>pwallet</em>, </td>
@@ -134,12 +135,6 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype"><a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;&#160;</td>
           <td class="paramname"><em>psbtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867ac">TransactionError</a> &amp;&#160;</td>
-          <td class="paramname"><em>error</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -179,11 +174,10 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pwallet</td><td>pointer to a wallet </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">&amp;psbtx</td><td>reference to <a class="el" href="struct_partially_signed_transaction.html" title="A version of CTransaction with the PSBT format. ">PartiallySignedTransaction</a> to fill in </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">&amp;error</td><td>reference to <a class="el" href="class_uni_value.html">UniValue</a> to fill with error info on failure </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">&amp;complete</td><td>indicates whether the PSBT is now complete </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">sighash_type</td><td>the sighash type to use when signing (if PSBT does not specify) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">sign</td><td>whether to sign or not </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bip32derivs</td><td>whether to fill in bip32 derivation information if available return true on success, false on error (and fills in <code>error</code>) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bip32derivs</td><td>whether to fill in bip32 derivation information if available return error </td></tr>
   </table>
   </dd>
 </dl>
@@ -193,14 +187,16 @@ Functions</h2></td></tr>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="psbtwallet_8h_ac646193ad114277f27b0b3a26fb16260_cgraph.svg" width="2199" height="1743"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="psbtwallet_8h_a3b008ba042c649048a3b5f200f80b106_cgraph.svg" width="2199" height="1743"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="psbtwallet_8h_ac646193ad114277f27b0b3a26fb16260_icgraph.svg" width="539" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="psbtwallet_8h_a3b008ba042c649048a3b5f200f80b106_icgraph.svg" width="539" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -209,7 +205,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 22 2019 15:46:38 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 22 2019 16:16:06 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

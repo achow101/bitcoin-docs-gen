@@ -4,7 +4,6 @@ var searchData=
   ['editreceivingaddress',['EditReceivingAddress',['../class_edit_address_dialog.html#a456fdd27ee1c150824241ded7bb4de3aa9fb7cde7f74d41aa4439d6c1a8b53507',1,'EditAddressDialog']]],
   ['editsendingaddress',['EditSendingAddress',['../class_edit_address_dialog.html#a456fdd27ee1c150824241ded7bb4de3aa16a8a82d7d10059eb7c03952438aa193',1,'EditAddressDialog']]],
   ['encrypt',['Encrypt',['../class_ask_passphrase_dialog.html#a96abf4d3c36c1ef9e268fb546ae76538a5894886141cada548b21488927acc467',1,'AskPassphraseDialog']]],
-  ['error_5fcount',['ERROR_COUNT',['../node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867aca7a7ffa2b5e191a5b72a50c596afab449',1,'transaction.h']]],
   ['estimatefee',['ESTIMATEFEE',['../namespace_b_c_log.html#ad1037484206121adbcda9f9c824ab6b2a016dbf01ec954f59f031454943700846',1,'BCLog']]],
   ['exp_5farr_5fvalue',['EXP_ARR_VALUE',['../univalue__read_8cpp.html#ad3207a8d28df469fcecf6553d44bcd67a11056d150425befef7d3e747ab0c7922',1,'univalue_read.cpp']]],
   ['exp_5fcolon',['EXP_COLON',['../univalue__read_8cpp.html#ad3207a8d28df469fcecf6553d44bcd67a8aef9104b6f6e264d74b8dc442e0263d',1,'univalue_read.cpp']]],
