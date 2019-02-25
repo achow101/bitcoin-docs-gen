@@ -128,6 +128,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4327563db92bdced01e9d1f730f03dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a984e784cc3ff9880702c679487156b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_p_c_arg.html#a9a984e784cc3ff9880702c679487156b">RPCArg</a> (const std::string &amp;<a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, const <a class="el" href="struct_r_p_c_arg.html#a0ce667013a0bcfc34bf4bc5dd8e4aad2">Type</a> &amp;type, const <a class="el" href="struct_r_p_c_arg.html#a394f8105bc4ed63f584fe054f9b6077e">Fallback</a> &amp;fallback, const std::string &amp;description, const std::vector&lt; <a class="el" href="struct_r_p_c_arg.html">RPCArg</a> &gt; &amp;inner, const std::string &amp;oneline_description=&quot;&quot;, const std::vector&lt; std::string &gt; &amp;type_str={})</td></tr>
 <tr class="separator:a9a984e784cc3ff9880702c679487156b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01d74d8a867ee1f1674ed1a6944ad285"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_p_c_arg.html#a01d74d8a867ee1f1674ed1a6944ad285">IsOptional</a> () const </td></tr>
+<tr class="separator:a01d74d8a867ee1f1674ed1a6944ad285"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5443eae00b088c53321a8aabe29e7263"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_p_c_arg.html#a5443eae00b088c53321a8aabe29e7263">ToString</a> (bool oneline) const </td></tr>
 <tr class="memdesc:a5443eae00b088c53321a8aabe29e7263"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the type string of the argument.  <a href="#a5443eae00b088c53321a8aabe29e7263">More...</a><br /></td></tr>
 <tr class="separator:a5443eae00b088c53321a8aabe29e7263"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,7 +202,7 @@ Public Attributes</h2></td></tr>
 <p>Required arg. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ae3b97706e3215f0b484d2597108bf927a0ea08898e41ad6eda1dffb0b2cf94bb9"></a>OMITTED_NAMED_ARG&#160;</td><td class="fielddoc">
-<p>Optinal arg that is a named argument and has a default value of <code>null</code>. </p>
+<p>Optional arg that is a named argument and has a default value of <code>null</code>. </p>
 <p>When possible, the default value should be specified. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ae3b97706e3215f0b484d2597108bf927a3b1c7263d9d59d86114f90b1f57c91c4"></a>OMITTED&#160;</td><td class="fielddoc">
@@ -384,13 +386,39 @@ Public Attributes</h2></td></tr>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_r_p_c_arg_a9a984e784cc3ff9880702c679487156b_cgraph.svg" width="383" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_r_p_c_arg_a9a984e784cc3ff9880702c679487156b_cgraph.svg" width="383" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a01d74d8a867ee1f1674ed1a6944ad285"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPCArg::IsOptional </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00378">378</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_r_p_c_arg_a01d74d8a867ee1f1674ed1a6944ad285_icgraph.svg" width="323" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a38d449498b7bb3b5339a429d98faa4b3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -406,7 +434,7 @@ Here is the call graph for this function:</div>
 
 <p>Return the description string, including the argument type and whether the argument is required. </p>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00372">372</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00387">387</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -434,7 +462,7 @@ Here is the caller graph for this function:</div>
 <p>Return the type string of the argument. </p>
 <p>Set oneline to allow it to be overridden by a custom oneline type string (m_oneline_description). </p>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00472">472</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00487">487</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -462,7 +490,7 @@ Here is the caller graph for this function:</div>
 <p>Return the type string of the argument when it is in an object (dict). </p>
 <p>Set oneline to get the oneline representation (less whitespace) </p>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00435">435</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00450">450</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -587,7 +615,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 24 2019 06:09:59 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 25 2019 08:32:33 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

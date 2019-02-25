@@ -94,7 +94,7 @@ var searchData=
   ['peerlogicvalidation',['PeerLogicValidation',['../class_peer_logic_validation.html',1,'PeerLogicValidation'],['../class_peer_logic_validation.html#a4008bb6f7e655ea33e7985c0efa31b45',1,'PeerLogicValidation::PeerLogicValidation()']]],
   ['peerselected',['peerSelected',['../class_r_p_c_console.html#a2487fa6a90cddcbb17ae4bb13ecc5359',1,'RPCConsole']]],
   ['peerstablecontextmenu',['peersTableContextMenu',['../class_r_p_c_console.html#a0758e9c056200928253234c9cd4a61af',1,'RPCConsole']]],
-  ['peertablemodel',['PeerTableModel',['../class_peer_table_model.html',1,'PeerTableModel'],['../class_peer_table_model.html#a1aac9bd1c850c165da04edfd7f29135f',1,'PeerTableModel::PeerTableModel()'],['../class_client_model.html#aeb1c6a931b133c75a8be12f2a35cf5c3',1,'ClientModel::peerTableModel()']]],
+  ['peertablemodel',['PeerTableModel',['../class_peer_table_model.html',1,'PeerTableModel'],['../class_client_model.html#aeb1c6a931b133c75a8be12f2a35cf5c3',1,'ClientModel::peerTableModel()'],['../class_peer_table_model.html#a1aac9bd1c850c165da04edfd7f29135f',1,'PeerTableModel::PeerTableModel()']]],
   ['peertablemodel_2ecpp',['peertablemodel.cpp',['../peertablemodel_8cpp.html',1,'']]],
   ['peertablemodel_2eh',['peertablemodel.h',['../peertablemodel_8h.html',1,'']]],
   ['peertablepriv',['PeerTablePriv',['../class_peer_table_priv.html',1,'']]],
