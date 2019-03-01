@@ -1,7 +1,7 @@
 var searchData=
 [
   ['rand',['RAND',['../namespace_b_c_log.html#ad1037484206121adbcda9f9c824ab6b2a30afc862d8c3d7283c6b6b4da554b1e3',1,'BCLog']]],
-  ['range',['Range',['../class_transaction_view.html#a73d1bbedc72fa131591aadb3aba150f8a5282c94849c51ee19eaa9cf929428b10',1,'TransactionView']]],
+  ['range',['Range',['../class_transaction_view.html#a73d1bbedc72fa131591aadb3aba150f8a5282c94849c51ee19eaa9cf929428b10',1,'TransactionView::Range()'],['../struct_r_p_c_arg.html#a0ce667013a0bcfc34bf4bc5dd8e4aad2a01036ddcc971d02f6c32c3da31a119f2',1,'RPCArg::RANGE()']]],
   ['rawdecorationrole',['RawDecorationRole',['../class_transaction_table_model.html#a4b248508c36df598476affbf9871d1e6a94c1dfc5416685e694bdfd1bbb74763c',1,'TransactionTableModel']]],
   ['read_5fstatus_5fcheckblock_5ffailed',['READ_STATUS_CHECKBLOCK_FAILED',['../blockencodings_8h.html#a2454e2824c9d3db86bf62fbc974f50cea621a133f4612584c0447723fba51c098',1,'blockencodings.h']]],
   ['read_5fstatus_5ffailed',['READ_STATUS_FAILED',['../blockencodings_8h.html#a2454e2824c9d3db86bf62fbc974f50ceaee0cfe0767680ec8c16bb91d3c1d9b22',1,'blockencodings.h']]],

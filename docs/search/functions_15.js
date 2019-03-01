@@ -6,7 +6,7 @@ var searchData=
   ['uint_5ferror',['uint_error',['../classuint__error.html#a3d37e73d7d585ede158ebba7d32352c3',1,'uint_error']]],
   ['uinttoarith256',['UintToArith256',['../arith__uint256_8cpp.html#a6a6e0e2e41ba7e31c4a741eb2426a516',1,'UintToArith256(const uint256 &amp;a):&#160;arith_uint256.cpp'],['../arith__uint256_8h.html#a9c9f84c20851f10a8ca5082bec97666a',1,'UintToArith256(const uint256 &amp;):&#160;arith_uint256.cpp']]],
   ['uiready',['uiReady',['../class_payment_server.html#abb6c65fabbf97ba95381997ca9cd6993',1,'PaymentServer']]],
-  ['unban',['unban',['../classinterfaces_1_1_node.html#a80ebcf4a091a73010e36f2a5dcd84a54',1,'interfaces::Node::unban()'],['../class_ban_man.html#ac8a16c22b36eb2bc490385284d584b6b',1,'BanMan::Unban(const CNetAddr &amp;net_addr)'],['../class_ban_man.html#acbe81b25ca0e9ab706aaa1eaea7c186e',1,'BanMan::Unban(const CSubNet &amp;sub_net)']]],
+  ['unban',['Unban',['../class_ban_man.html#ac8a16c22b36eb2bc490385284d584b6b',1,'BanMan::Unban(const CNetAddr &amp;net_addr)'],['../class_ban_man.html#acbe81b25ca0e9ab706aaa1eaea7c186e',1,'BanMan::Unban(const CSubNet &amp;sub_net)'],['../classinterfaces_1_1_node.html#a80ebcf4a091a73010e36f2a5dcd84a54',1,'interfaces::Node::unban()']]],
   ['unbanselectednode',['unbanSelectedNode',['../class_r_p_c_console.html#a9a974887c33bf1d4b25eb6aeea002941',1,'RPCConsole']]],
   ['uncache',['Uncache',['../class_c_coins_view_cache.html#a4251130f7fac0fd8f7c9eb630179e986',1,'CCoinsViewCache']]],
   ['unescape_5funicode_5ftest',['unescape_unicode_test',['../unitester_8cpp.html#a2400a235d180e17ce44cc065cfab46e9',1,'unitester.cpp']]],
