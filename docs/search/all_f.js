@@ -258,7 +258,7 @@ var searchData=
   ['org_5fbitcoin_5fsecp256k1context_2ec',['org_bitcoin_Secp256k1Context.c',['../org__bitcoin___secp256k1_context_8c.html',1,'']]],
   ['org_5fbitcoin_5fsecp256k1context_2eh',['org_bitcoin_Secp256k1Context.h',['../org__bitcoin___secp256k1_context_8h.html',1,'']]],
   ['origins',['origins',['../struct_flat_signing_provider.html#a7d07944a5bd2d96e14cd1c457081f1f9',1,'FlatSigningProvider']]],
-  ['other',['other',['../structsecure__allocator_1_1rebind.html#aa0688d32e40d8ae116efec5946f1a3b5',1,'secure_allocator::rebind::other()'],['../structzero__after__free__allocator_1_1rebind.html#aef5ba2251ba370df22fbd0a05e3cf284',1,'zero_after_free_allocator::rebind::other()'],['../class_transaction_record.html#afb76f5876fba21c3d2c388b98a35d685aecbcb11ffbb16d3853676e3ce12c12df',1,'TransactionRecord::Other()']]],
+  ['other',['Other',['../class_transaction_record.html#afb76f5876fba21c3d2c388b98a35d685aecbcb11ffbb16d3853676e3ce12c12df',1,'TransactionRecord::Other()'],['../structsecure__allocator_1_1rebind.html#aa0688d32e40d8ae116efec5946f1a3b5',1,'secure_allocator::rebind::other()'],['../structzero__after__free__allocator_1_1rebind.html#aef5ba2251ba370df22fbd0a05e3cf284',1,'zero_after_free_allocator::rebind::other()']]],
   ['out',['out',['../class_coin.html#aa1c3ccdcdb7754b184f433cc1f583a71',1,'Coin::out()'],['../struct_c_coin.html#a15c9b12a37610f0295326529fee9afea',1,'CCoin::out()']]],
   ['outbound_5fmessage_5fhigh_5fwater_5fmark',['outbound_message_high_water_mark',['../class_c_z_m_q_abstract_notifier.html#aee38846653508fcdbe995b58c6245c13',1,'CZMQAbstractNotifier']]],
   ['outboundtargetreached',['OutboundTargetReached',['../class_c_connman.html#aa12d154df14eef07418a36362d1cb8d7',1,'CConnman']]],
@@ -275,7 +275,7 @@ var searchData=
   ['outputtype_2eh',['outputtype.h',['../outputtype_8h.html',1,'']]],
   ['overridestream',['OverrideStream',['../class_override_stream.html',1,'OverrideStream&lt; Stream &gt;'],['../class_override_stream.html#a2c45dbac1803bc8a69737795458f8bba',1,'OverrideStream::OverrideStream()']]],
   ['overviewaction',['overviewAction',['../class_bitcoin_g_u_i.html#aab6f7153976abf69c28c5bcafd59241e',1,'BitcoinGUI']]],
-  ['overviewpage',['OverviewPage',['../class_overview_page.html',1,'OverviewPage'],['../class_overview_page.html#abbbc2d5cad9290087b591b2db60754f2',1,'OverviewPage::OverviewPage()'],['../class_wallet_view.html#a4049958d049676ab39001ed92a570bf2',1,'WalletView::overviewPage()']]],
+  ['overviewpage',['OverviewPage',['../class_overview_page.html',1,'OverviewPage'],['../class_wallet_view.html#a4049958d049676ab39001ed92a570bf2',1,'WalletView::overviewPage()'],['../class_overview_page.html#abbbc2d5cad9290087b591b2db60754f2',1,'OverviewPage::OverviewPage()']]],
   ['overviewpage_2ecpp',['overviewpage.cpp',['../overviewpage_8cpp.html',1,'']]],
   ['overviewpage_2eh',['overviewpage.h',['../overviewpage_8h.html',1,'']]]
 ];
