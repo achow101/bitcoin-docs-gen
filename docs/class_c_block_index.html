@@ -120,10 +120,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0eff34cbfb4470885020734581dc1555"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acaf83989071b40966072161c513a17a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_index.html#acaf83989071b40966072161c513a17a7">CBlockIndex</a> (const <a class="el" href="class_c_block_header.html">CBlockHeader</a> &amp;block)</td></tr>
 <tr class="separator:acaf83989071b40966072161c513a17a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2b58426ae9365dce6cfacc5d0c92e44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_disk_block_pos.html">CDiskBlockPos</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_index.html#ae2b58426ae9365dce6cfacc5d0c92e44">GetBlockPos</a> () const </td></tr>
-<tr class="separator:ae2b58426ae9365dce6cfacc5d0c92e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62654ef291abc44d2e32db9a8d85b7d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_disk_block_pos.html">CDiskBlockPos</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_index.html#a62654ef291abc44d2e32db9a8d85b7d1">GetUndoPos</a> () const </td></tr>
-<tr class="separator:a62654ef291abc44d2e32db9a8d85b7d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd1b6b76b6ce243f14562996cc96b3ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_flat_file_pos.html">FlatFilePos</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_index.html#abd1b6b76b6ce243f14562996cc96b3ff">GetBlockPos</a> () const </td></tr>
+<tr class="separator:abd1b6b76b6ce243f14562996cc96b3ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28ade356f9ef6c1d3997a5c3e032a30c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_flat_file_pos.html">FlatFilePos</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_index.html#a28ade356f9ef6c1d3997a5c3e032a30c">GetUndoPos</a> () const </td></tr>
+<tr class="separator:a28ade356f9ef6c1d3997a5c3e032a30c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8292a7bf7e79e207306a8659bf7da3a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_block_header.html">CBlockHeader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_index.html#a8292a7bf7e79e207306a8659bf7da3a6">GetBlockHeader</a> () const </td></tr>
 <tr class="separator:a8292a7bf7e79e207306a8659bf7da3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab843ef9b8b0a0193ec3a5c24738e484f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classuint256.html">uint256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_block_index.html#ab843ef9b8b0a0193ec3a5c24738e484f">GetBlockHash</a> () const </td></tr>
@@ -216,7 +216,7 @@ Static Public Attributes</h2></td></tr>
 <div class="textblock"><p>The block chain is a tree shaped structure starting with the genesis block at the root, with each block potentially having multiple candidates to be the next block. </p>
 <p>A blockindex may have multiple pprev pointing to it, but at most one of them can be part of the currently active branch. </p>
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00178">178</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00139">139</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a0eff34cbfb4470885020734581dc1555"></a>
 <div class="memitem">
@@ -239,7 +239,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00253">253</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00214">214</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -272,7 +272,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00258">258</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00219">219</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -376,7 +376,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00300">300</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00261">261</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -408,7 +408,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00287">287</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00248">248</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -426,7 +426,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ae2b58426ae9365dce6cfacc5d0c92e44"></a>
+<a class="anchor" id="abd1b6b76b6ce243f14562996cc96b3ff"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -434,7 +434,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_c_disk_block_pos.html">CDiskBlockPos</a> CBlockIndex::GetBlockPos </td>
+          <td class="memname"><a class="el" href="struct_flat_file_pos.html">FlatFilePos</a> CBlockIndex::GetBlockPos </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -447,12 +447,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00269">269</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00230">230</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_index_ae2b58426ae9365dce6cfacc5d0c92e44_icgraph.svg" width="451" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_index_abd1b6b76b6ce243f14562996cc96b3ff_icgraph.svg" width="451" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -479,12 +480,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00314">314</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00275">275</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_index_ab63b774ae798f5f9e54b400ac8b5ef4b_icgraph.svg" width="2188" height="2448"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_index_ab63b774ae798f5f9e54b400ac8b5ef4b_icgraph.svg" width="2188" height="2448"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -511,7 +513,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00319">319</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00280">280</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -543,7 +545,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00326">326</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00287">287</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -555,13 +557,14 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_index_abffb24cc73329a3dce024403ba770b4a_icgraph.svg" width="2496" height="2032"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_index_abffb24cc73329a3dce024403ba770b4a_icgraph.svg" width="2496" height="2032"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a62654ef291abc44d2e32db9a8d85b7d1"></a>
+<a class="anchor" id="a28ade356f9ef6c1d3997a5c3e032a30c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -569,7 +572,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_c_disk_block_pos.html">CDiskBlockPos</a> CBlockIndex::GetUndoPos </td>
+          <td class="memname"><a class="el" href="struct_flat_file_pos.html">FlatFilePos</a> CBlockIndex::GetUndoPos </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -582,12 +585,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00278">278</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00239">239</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_index_a62654ef291abc44d2e32db9a8d85b7d1_icgraph.svg" width="1831" height="1882"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_index_a28ade356f9ef6c1d3997a5c3e032a30c_icgraph.svg" width="1831" height="1882"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -617,12 +621,13 @@ Here is the caller graph for this function:</div>
 <p>Check whether this block's and all previous blocks' transactions have been downloaded (and stored to disk) at some point. </p>
 <p>Does not imply the transactions are consensus-valid (ConnectTip might fail) Does not imply the transactions are still stored on disk. (IsBlockPruned might return true) </p>
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00312">312</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00273">273</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_index_aa31a93fd2095ae5bcfe54ccaadfcbbbd_icgraph.svg" width="2618" height="2188"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_index_aa31a93fd2095ae5bcfe54ccaadfcbbbd_icgraph.svg" width="2618" height="2188"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -652,12 +657,13 @@ Here is the caller graph for this function:</div>
 
 <p>Check whether this block index entry is valid up to the passed validity level. </p>
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00349">349</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00310">310</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_index_ab79ac7f3db34001898a371ecce27808f_icgraph.svg" width="2543" height="2290"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_index_ab79ac7f3db34001898a371ecce27808f_icgraph.svg" width="2543" height="2290"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -688,7 +694,7 @@ Here is the caller graph for this function:</div>
 <p>Raise the validity level of this block index entry. </p>
 <p>Returns true if the validity was changed. </p>
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00359">359</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00320">320</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -700,7 +706,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_index_a076aff906933e9d75a37aa9b81c01384_icgraph.svg" width="1080" height="268"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_index_a076aff906933e9d75a37aa9b81c01384_icgraph.svg" width="1080" height="268"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -727,7 +734,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00230">230</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00191">191</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 </div>
 </div>
@@ -752,7 +759,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00340">340</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00301">301</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -781,7 +788,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00219">219</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00180">180</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 </div>
 </div>
@@ -795,7 +802,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00221">221</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00182">182</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 </div>
 </div>
@@ -812,7 +819,7 @@ Here is the caller graph for this function:</div>
 <p>(memory only) Number of transactions in the chain up to and including this block. </p>
 <p>This value will be non-zero only if and only if transactions for this block and all its parents are available. Change to 64-bit type when necessary; won't happen before 2030 </p>
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00212">212</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00173">173</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 </div>
 </div>
@@ -828,7 +835,7 @@ Here is the caller graph for this function:</div>
 
 <p>(memory only) Total amount of work (expected number of hashes) in the chain up to and including this block </p>
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00203">203</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00164">164</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 </div>
 </div>
@@ -844,7 +851,7 @@ Here is the caller graph for this function:</div>
 
 <p>Byte offset within blk?????.dat where this block's data is stored. </p>
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00197">197</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00158">158</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 </div>
 </div>
@@ -860,7 +867,7 @@ Here is the caller graph for this function:</div>
 
 <p>Which # file this block is stored in (blk?????.dat) </p>
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00194">194</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00155">155</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 </div>
 </div>
@@ -876,7 +883,7 @@ Here is the caller graph for this function:</div>
 
 <p>height of the entry in the chain. The genesis block has height 0 </p>
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00191">191</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00152">152</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 </div>
 </div>
@@ -898,7 +905,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00324">324</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00285">285</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 </div>
 </div>
@@ -912,7 +919,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00222">222</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00183">183</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 </div>
 </div>
@@ -928,7 +935,7 @@ Here is the caller graph for this function:</div>
 
 <p>(memory only) Sequential id assigned to distinguish order in which blocks are received. </p>
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00225">225</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00186">186</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 </div>
 </div>
@@ -944,7 +951,7 @@ Here is the caller graph for this function:</div>
 
 <p>Verification status of this block. See enum BlockStatus. </p>
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00215">215</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00176">176</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 </div>
 </div>
@@ -958,7 +965,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00220">220</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00181">181</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 </div>
 </div>
@@ -974,7 +981,7 @@ Here is the caller graph for this function:</div>
 
 <p>(memory only) Maximum nTime in the chain up to and including this block. </p>
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00228">228</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00189">189</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 </div>
 </div>
@@ -991,7 +998,7 @@ Here is the caller graph for this function:</div>
 <p>Number of transactions in this block. </p>
 <p>Note: in a potential headers-first mode, this number cannot be relied upon </p>
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00207">207</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00168">168</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 </div>
 </div>
@@ -1007,7 +1014,7 @@ Here is the caller graph for this function:</div>
 
 <p>Byte offset within rev?????.dat where this block's undo data is stored. </p>
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00200">200</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00161">161</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 </div>
 </div>
@@ -1023,7 +1030,7 @@ Here is the caller graph for this function:</div>
 
 <p>block header </p>
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00218">218</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00179">179</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 </div>
 </div>
@@ -1039,7 +1046,7 @@ Here is the caller graph for this function:</div>
 
 <p>pointer to the hash of the block, if any. Memory is owned by this <a class="el" href="class_c_block_index.html" title="The block chain is a tree shaped structure starting with the genesis block at the root...">CBlockIndex</a> </p>
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00182">182</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00143">143</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 </div>
 </div>
@@ -1055,7 +1062,7 @@ Here is the caller graph for this function:</div>
 
 <p>pointer to the index of the predecessor of this block </p>
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00185">185</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00146">146</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 </div>
 </div>
@@ -1071,7 +1078,7 @@ Here is the caller graph for this function:</div>
 
 <p>pointer to the index of some further predecessor of this block </p>
 
-<p>Definition at line <a class="el" href="chain_8h_source.html#l00188">188</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="chain_8h_source.html#l00149">149</a> of file <a class="el" href="chain_8h_source.html">chain.h</a>.</p>
 
 </div>
 </div>
@@ -1082,7 +1089,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 2 2019 15:02:28 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 2 2019 22:22:45 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -95,7 +95,7 @@ var searchData=
   ['updatetabsandlabels',['updateTabsAndLabels',['../class_send_coins_dialog.html#a3b834c739f7d02d8086a2bf58525c5f0',1,'SendCoinsDialog']]],
   ['updatetime',['UpdateTime',['../miner_8cpp.html#a9c09903c7d6401b5405db02af064179c',1,'UpdateTime(CBlockHeader *pblock, const Consensus::Params &amp;consensusParams, const CBlockIndex *pindexPrev):&#160;miner.cpp'],['../miner_8h.html#a9c09903c7d6401b5405db02af064179c',1,'UpdateTime(CBlockHeader *pblock, const Consensus::Params &amp;consensusParams, const CBlockIndex *pindexPrev):&#160;miner.cpp']]],
   ['updatetimefirstkey',['UpdateTimeFirstKey',['../group__map_wallet.html#gab7b95f29dbf960047aa0511713036871',1,'CWallet']]],
-  ['updatetimer',['updateTimer',['../class_client_model.html#a82d434ebd032c00736e043ce2d36ac5e',1,'ClientModel::updateTimer()'],['../classbenchmark_1_1_state.html#ad017335f7f375bffa3b5a588c5438cfc',1,'benchmark::State::UpdateTimer()']]],
+  ['updatetimer',['UpdateTimer',['../classbenchmark_1_1_state.html#ad017335f7f375bffa3b5a588c5438cfc',1,'benchmark::State::UpdateTimer()'],['../class_client_model.html#a82d434ebd032c00736e043ce2d36ac5e',1,'ClientModel::updateTimer()']]],
   ['updatetrafficstats',['updateTrafficStats',['../class_r_p_c_console.html#a41bc6977fc2aab06f408da81dfd2034f',1,'RPCConsole']]],
   ['updatetransaction',['updateTransaction',['../class_transaction_table_model.html#a8de43b3c7ba0612304906eb5a2f51a06',1,'TransactionTableModel::updateTransaction()'],['../class_wallet_model.html#acf4f77d87e8b96a704c79b1d6cb53701',1,'WalletModel::updateTransaction()']]],
   ['updatetransactionsfromblock',['UpdateTransactionsFromBlock',['../class_c_tx_mem_pool.html#a55b2f048ae3e0d44a9c56664ee28d1f3',1,'CTxMemPool']]],

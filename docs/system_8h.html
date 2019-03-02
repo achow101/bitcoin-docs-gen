@@ -199,6 +199,8 @@ Functions</h2></td></tr>
 <tr class="separator:a3e9e4ea96c8d168ad5b7d1428780418b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d79c90e36d7957a773336ec3d55a842"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system_8h.html#a4d79c90e36d7957a773336ec3d55a842">DirIsWritable</a> (const fs::path &amp;directory)</td></tr>
 <tr class="separator:a4d79c90e36d7957a773336ec3d55a842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3146bd0d098c155f18c731c29814ae9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system_8h.html#ad3146bd0d098c155f18c731c29814ae9">CheckDiskSpace</a> (const fs::path &amp;dir, uint64_t additional_bytes=0)</td></tr>
+<tr class="separator:ad3146bd0d098c155f18c731c29814ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a851fa89def443bac9d04ddb908cb91bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system_8h.html#a851fa89def443bac9d04ddb908cb91bb">ReleaseDirectoryLocks</a> ()</td></tr>
 <tr class="memdesc:a851fa89def443bac9d04ddb908cb91bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release all directory locks.  <a href="#a851fa89def443bac9d04ddb908cb91bb">More...</a><br /></td></tr>
 <tr class="separator:a851fa89def443bac9d04ddb908cb91bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -313,7 +315,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="system_8h_source.html#l00112">112</a> of file <a class="el" href="system_8h_source.html">system.h</a>.</p>
+<p>Definition at line <a class="el" href="system_8h_source.html#l00113">113</a> of file <a class="el" href="system_8h_source.html">system.h</a>.</p>
 
 </div>
 </div>
@@ -355,7 +357,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_aad133bb6103b53cebf03fd01e2f11ba1_icgraph.svg" width="858" height="1624"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_aad133bb6103b53cebf03fd01e2f11ba1_icgraph.svg" width="858" height="1691"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -395,7 +398,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The normalized path. </dd></dl>
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l01219">1219</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01227">1227</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -445,12 +448,57 @@ Here is the caller graph for this function:</div>
 
 <p>this function tries to make a particular range of a file allocated (corresponding to disk space) it is advisory, and the range specified in the arguments will never contain live data </p>
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l01061">1061</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01069">1069</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a91c763bffc49cf7ed8d45cc44870e55c_icgraph.svg" width="1275" height="2498"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a91c763bffc49cf7ed8d45cc44870e55c_icgraph.svg" width="1144" height="2462"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad3146bd0d098c155f18c731c29814ae9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CheckDiskSpace </td>
+          <td>(</td>
+          <td class="paramtype">const fs::path &amp;&#160;</td>
+          <td class="paramname"><em>dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>additional_bytes</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00138">138</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_ad3146bd0d098c155f18c731c29814ae9_cgraph.svg" width="235" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_ad3146bd0d098c155f18c731c29814ae9_icgraph.svg" width="1139" height="2523"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -469,12 +517,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00768">768</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00776">776</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_abfb50dfe077aced7591f2aba601f605d_icgraph.svg" width="1291" height="2483"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_abfb50dfe077aced7591f2aba601f605d_icgraph.svg" width="1292" height="2482"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -494,7 +543,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l01202">1202</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01210">1210</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -531,14 +580,16 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a4d79c90e36d7957a773336ec3d55a842_cgraph.svg" width="276" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a4d79c90e36d7957a773336ec3d55a842_cgraph.svg" width="276" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a4d79c90e36d7957a773336ec3d55a842_icgraph.svg" width="1242" height="2496"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a4d79c90e36d7957a773336ec3d55a842_icgraph.svg" width="1250" height="2475"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -575,7 +626,8 @@ template&lt;typename... Args&gt; </div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a0605c886f88f190fa6a51ae07ca7558a_cgraph.svg" width="1420" height="1048"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a0605c886f88f190fa6a51ae07ca7558a_cgraph.svg" width="1420" height="1099"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -595,12 +647,13 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00993">993</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01001">1001</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_aedd7d9ab25c6cfb8c81a4aaa917b104e_icgraph.svg" width="1302" height="2447"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_aedd7d9ab25c6cfb8c81a4aaa917b104e_icgraph.svg" width="1310" height="2431"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -619,7 +672,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00708">708</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00716">716</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -631,7 +684,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_ad04024054d5b0cafa53288c7207de4cb_icgraph.svg" width="1158" height="2463"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_ad04024054d5b0cafa53288c7207de4cb_icgraph.svg" width="1400" height="2487"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -651,19 +705,21 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00777">777</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00785">785</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_aa634f312705d4811dfa2a5392bddf6cf_cgraph.svg" width="1500" height="903"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_aa634f312705d4811dfa2a5392bddf6cf_cgraph.svg" width="1500" height="979"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_aa634f312705d4811dfa2a5392bddf6cf_icgraph.svg" width="1172" height="2458"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_aa634f312705d4811dfa2a5392bddf6cf_icgraph.svg" width="1180" height="2440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -683,7 +739,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00736">736</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00744">744</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -695,7 +751,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_abb63dfb710832aefb746933af05198d4_icgraph.svg" width="1572" height="2056"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_abb63dfb710832aefb746933af05198d4_icgraph.svg" width="1588" height="2076"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -714,12 +771,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00677">677</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00685">685</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a15cb85964fe08c264605537f44570d3c_icgraph.svg" width="1458" height="1646"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a15cb85964fe08c264605537f44570d3c_icgraph.svg" width="1458" height="1954"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -741,7 +799,7 @@ Here is the caller graph for this function:</div>
 <p>Return the number of cores available on the current system. </p>
 <dl class="section note"><dt>Note</dt><dd>This does count virtual cores, such as those provided by HyperThreading. </dd></dl>
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l01197">1197</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01205">1205</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -767,7 +825,7 @@ Here is the caller graph for this function:</div>
 
 <p>Server/client environment: argument handling, config file parsing, thread wrappers, startup time. </p>
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l01214">1214</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01222">1222</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -801,7 +859,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the formatted string </dd></dl>
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00643">643</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00651">651</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -846,7 +904,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the formatted string </dd></dl>
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00647">647</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00655">655</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -879,7 +937,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true if help has been requested via a command-line arg </dd></dl>
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00628">628</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00636">636</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -919,7 +977,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8h_source.html#l00103">103</a> of file <a class="el" href="system_8h_source.html">system.h</a>.</p>
+<p>Definition at line <a class="el" href="system_8h_source.html#l00104">104</a> of file <a class="el" href="system_8h_source.html">system.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -965,14 +1023,16 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a9f16e26cc90b17ed75fcbbe7ce75e7c3_cgraph.svg" width="1578" height="1127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a9f16e26cc90b17ed75fcbbe7ce75e7c3_cgraph.svg" width="1578" height="983"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a9f16e26cc90b17ed75fcbbe7ce75e7c3_icgraph.svg" width="1399" height="2416"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a9f16e26cc90b17ed75fcbbe7ce75e7c3_icgraph.svg" width="1407" height="2444"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1002,12 +1062,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00670">670</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00678">678</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_aaada8c5faa502eb0c33fc01294955db8_icgraph.svg" width="1147" height="2228"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_aaada8c5faa502eb0c33fc01294955db8_icgraph.svg" width="1147" height="2228"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1030,12 +1091,13 @@ Here is the caller graph for this function:</div>
 <p>this function tries to raise the file descriptor limit to the requested number. </p>
 <p>It returns the actual file descriptor limit (which may be more or less than nMinFD) </p>
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l01038">1038</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01046">1046</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a756a5c49a4bb607d16d9842f8f3ede4f_icgraph.svg" width="1315" height="2495"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a756a5c49a4bb607d16d9842f8f3ede4f_icgraph.svg" width="1323" height="2474"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1062,7 +1124,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a851fa89def443bac9d04ddb908cb91bb_icgraph.svg" width="1307" height="2538"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a851fa89def443bac9d04ddb908cb91bb_icgraph.svg" width="1315" height="2515"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1092,12 +1155,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00963">963</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00971">971</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a579657da2b55b131ecd453bf1b0d2314_icgraph.svg" width="1150" height="2419"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a579657da2b55b131ecd453bf1b0d2314_icgraph.svg" width="1158" height="2400"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1117,7 +1181,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l01132">1132</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01140">1140</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1142,12 +1206,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l01120">1120</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01128">1128</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_aa803aa631ab8b4bd79fa9d7b2172bf9a_icgraph.svg" width="1115" height="2427"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_aa803aa631ab8b4bd79fa9d7b2172bf9a_icgraph.svg" width="1123" height="2448"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1170,7 +1235,7 @@ Here is the caller graph for this function:</div>
 <p>See SCHED_BATCH in sched(7) for details.</p>
 <dl class="section return"><dt>Returns</dt><dd>The return value of sched_setschedule(), or 1 on systems without sched_setschedule(). </dd></dl>
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l01224">1224</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01232">1232</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1194,12 +1259,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l01148">1148</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01156">1156</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a9ed616020f4ef9b1a261b222bbec78e2_icgraph.svg" width="1166" height="1726"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a9ed616020f4ef9b1a261b222bbec78e2_icgraph.svg" width="1166" height="1792"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1221,7 +1287,7 @@ Here is the caller graph for this function:</div>
 
 <p>Add help options to the args manager. </p>
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00633">633</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00641">641</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1252,12 +1318,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l01185">1185</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01193">1193</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a66791919e137c59061e988d2d87ee9a1_icgraph.svg" width="1136" height="1624"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a66791919e137c59061e988d2d87ee9a1_icgraph.svg" width="1136" height="1691"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1292,7 +1359,7 @@ template&lt;typename Callable &gt; </div>
 <p></p>
 <p>. and a wrapper that just calls func once </p>
 
-<p>Definition at line <a class="el" href="system_8h_source.html#l00332">332</a> of file <a class="el" href="system_8h_source.html">system.h</a>.</p>
+<p>Definition at line <a class="el" href="system_8h_source.html#l00333">333</a> of file <a class="el" href="system_8h_source.html">system.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1334,12 +1401,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l01026">1026</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l01034">1034</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_acb8d6b822bc1bfa609bf43bbac1a0d44_icgraph.svg" width="1238" height="2498"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_acb8d6b822bc1bfa609bf43bbac1a0d44_icgraph.svg" width="1246" height="2487"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1362,12 +1430,13 @@ Here is the caller graph for this function:</div>
 <p>Ignores exceptions thrown by Boost's create_directories if the requested directory exists. </p>
 <p>Specifically handles case where path p exists, but it wasn't possible for the user to write to the parent directory. </p>
 
-<p>Definition at line <a class="el" href="system_8cpp_source.html#l00979">979</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
+<p>Definition at line <a class="el" href="system_8cpp_source.html#l00987">987</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a9042a919d837da9d97311a0c460c597c_icgraph.svg" width="1195" height="2399"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a9042a919d837da9d97311a0c460c597c_icgraph.svg" width="1203" height="2390"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1402,7 +1471,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a3e9e4ea96c8d168ad5b7d1428780418b_icgraph.svg" width="1370" height="2467"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="system_8h_a3e9e4ea96c8d168ad5b7d1428780418b_icgraph.svg" width="1378" height="2495"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1457,7 +1527,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 2 2019 15:02:26 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 2 2019 22:22:43 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

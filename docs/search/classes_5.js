@@ -5,6 +5,8 @@ var searchData=
   ['feecalculation',['FeeCalculation',['../struct_fee_calculation.html',1,'']]],
   ['feefilterrounder',['FeeFilterRounder',['../class_fee_filter_rounder.html',1,'']]],
   ['filelock',['FileLock',['../classfsbridge_1_1_file_lock.html',1,'fsbridge']]],
+  ['flatfilepos',['FlatFilePos',['../struct_flat_file_pos.html',1,'']]],
+  ['flatfileseq',['FlatFileSeq',['../class_flat_file_seq.html',1,'']]],
   ['flatsigningprovider',['FlatSigningProvider',['../struct_flat_signing_provider.html',1,'']]],
   ['format_5ferror',['format_error',['../classtinyformat_1_1format__error.html',1,'tinyformat']]],
   ['formatarg',['FormatArg',['../classtinyformat_1_1detail_1_1_format_arg.html',1,'tinyformat::detail']]],

@@ -58,7 +58,6 @@ var searchData=
   ['cdbiterator',['CDBIterator',['../class_c_d_b_iterator.html',1,'']]],
   ['cdbwrapper',['CDBWrapper',['../class_c_d_b_wrapper.html',1,'']]],
   ['cdiskblockindex',['CDiskBlockIndex',['../class_c_disk_block_index.html',1,'']]],
-  ['cdiskblockpos',['CDiskBlockPos',['../struct_c_disk_block_pos.html',1,'']]],
   ['cdisktxpos',['CDiskTxPos',['../struct_c_disk_tx_pos.html',1,'']]],
   ['cextkey',['CExtKey',['../struct_c_ext_key.html',1,'']]],
   ['cextpubkey',['CExtPubKey',['../struct_c_ext_pub_key.html',1,'']]],

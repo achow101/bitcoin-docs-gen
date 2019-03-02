@@ -4,10 +4,10 @@ var searchData=
   ['feebumper_2eh',['feebumper.h',['../feebumper_8h.html',1,'']]],
   ['feerate_2ecpp',['feerate.cpp',['../feerate_8cpp.html',1,'']]],
   ['feerate_2eh',['feerate.h',['../feerate_8h.html',1,'']]],
-  ['fees_2ecpp',['fees.cpp',['../policy_2fees_8cpp.html',1,'']]],
   ['fees_2ecpp',['fees.cpp',['../wallet_2fees_8cpp.html',1,'']]],
-  ['fees_2eh',['fees.h',['../wallet_2fees_8h.html',1,'']]],
+  ['fees_2ecpp',['fees.cpp',['../policy_2fees_8cpp.html',1,'']]],
   ['fees_2eh',['fees.h',['../policy_2fees_8h.html',1,'']]],
+  ['fees_2eh',['fees.h',['../wallet_2fees_8h.html',1,'']]],
   ['field_2eh',['field.h',['../field_8h.html',1,'']]],
   ['field_5f10x26_2eh',['field_10x26.h',['../field__10x26_8h.html',1,'']]],
   ['field_5f10x26_5fimpl_2eh',['field_10x26_impl.h',['../field__10x26__impl_8h.html',1,'']]],
@@ -16,6 +16,8 @@ var searchData=
   ['field_5f5x52_5fimpl_2eh',['field_5x52_impl.h',['../field__5x52__impl_8h.html',1,'']]],
   ['field_5f5x52_5fint128_5fimpl_2eh',['field_5x52_int128_impl.h',['../field__5x52__int128__impl_8h.html',1,'']]],
   ['field_5fimpl_2eh',['field_impl.h',['../field__impl_8h.html',1,'']]],
+  ['flatfile_2ecpp',['flatfile.cpp',['../flatfile_8cpp.html',1,'']]],
+  ['flatfile_2eh',['flatfile.h',['../flatfile_8h.html',1,'']]],
   ['fs_2ecpp',['fs.cpp',['../fs_8cpp.html',1,'']]],
   ['fs_2eh',['fs.h',['../fs_8h.html',1,'']]]
 ];
