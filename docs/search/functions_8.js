@@ -25,6 +25,7 @@ var searchData=
   ['handleuriconnection',['handleURIConnection',['../class_payment_server.html#a6ee6e29e1255605582459463d195a651',1,'PaymentServer']]],
   ['handleuriorfile',['handleURIOrFile',['../class_payment_server.html#adf4f844b3ce7f053690fd9260210640d',1,'PaymentServer']]],
   ['handlewatchonlychanged',['handleWatchOnlyChanged',['../classinterfaces_1_1_wallet.html#a51aa1a4a4d35226dd49d4d9851f80c3e',1,'interfaces::Wallet']]],
+  ['hasdescendantsinmempool',['hasDescendantsInMempool',['../classinterfaces_1_1_chain.html#a0af898428367886cd51c77168fcce134',1,'interfaces::Chain']]],
   ['hash',['Hash',['../class_c_bloom_filter.html#aa4381af6e52b4f2279d790738b868509',1,'CBloomFilter::Hash()'],['../hash_8h.html#ab3f6c437460137530d86e09c2c102e99',1,'Hash(const T1 pbegin, const T1 pend):&#160;hash.h'],['../hash_8h.html#aea8943bbdf28dfc2030d00b330f4cdd6',1,'Hash(const T1 p1begin, const T1 p1end, const T2 p2begin, const T2 p2end):&#160;hash.h']]],
   ['hash160',['Hash160',['../hash_8h.html#a4490f70ddae16e9e48460a0416a48a6b',1,'Hash160(const T1 pbegin, const T1 pend):&#160;hash.h'],['../hash_8h.html#a78eccd4352c5377b614ad3f5a1b5b223',1,'Hash160(const std::vector&lt; unsigned char &gt; &amp;vch):&#160;hash.h'],['../hash_8h.html#a0219e6058a104e8f9c26fb539302bbec',1,'Hash160(const prevector&lt; N, unsigned char &gt; &amp;vch):&#160;hash.h']]],
   ['hashtorange',['HashToRange',['../class_g_c_s_filter.html#a0ab794dd015454a943b5886f60a6c37b',1,'GCSFilter']]],
