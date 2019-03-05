@@ -97,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html">Chain</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for giving wallet processes access to blockchain state.  <a href="classinterfaces_1_1_chain.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface giving clients (wallet processes, maybe other analysis tools in the future) ability to access to the chain state, receive notifications, estimate fees, and submit transactions.  <a href="classinterfaces_1_1_chain.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_client.html">ChainClient</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface to let node manage chain clients (wallets, or maybe tools for monitoring and analysis in the future).  <a href="classinterfaces_1_1_chain_client.html#details">More...</a><br /></td></tr>
@@ -142,7 +142,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a745628bd197c8179029bfb2aa61deb55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return implementation of <a class="el" href="classinterfaces_1_1_wallet.html" title="Interface for accessing a wallet. ">Wallet</a> interface.  <a href="#a745628bd197c8179029bfb2aa61deb55">More...</a><br /></td></tr>
 <tr class="separator:a745628bd197c8179029bfb2aa61deb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a402cd23e3f69061eb649f4ba764aa997"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classinterfaces_1_1_chain.html">Chain</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinterfaces.html#a402cd23e3f69061eb649f4ba764aa997">MakeChain</a> ()</td></tr>
-<tr class="memdesc:a402cd23e3f69061eb649f4ba764aa997"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return implementation of <a class="el" href="classinterfaces_1_1_chain.html" title="Interface for giving wallet processes access to blockchain state. ">Chain</a> interface.  <a href="#a402cd23e3f69061eb649f4ba764aa997">More...</a><br /></td></tr>
+<tr class="memdesc:a402cd23e3f69061eb649f4ba764aa997"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return implementation of <a class="el" href="classinterfaces_1_1_chain.html" title="Interface giving clients (wallet processes, maybe other analysis tools in the future) ability to acce...">Chain</a> interface.  <a href="#a402cd23e3f69061eb649f4ba764aa997">More...</a><br /></td></tr>
 <tr class="separator:a402cd23e3f69061eb649f4ba764aa997"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14e7017f789ef0e6fdc172e39ed335a4"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classinterfaces_1_1_chain_client.html">ChainClient</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinterfaces.html#a14e7017f789ef0e6fdc172e39ed335a4">MakeWalletClient</a> (<a class="el" href="classinterfaces_1_1_chain.html">Chain</a> &amp;chain, std::vector&lt; std::string &gt; wallet_filenames)</td></tr>
 <tr class="memdesc:a14e7017f789ef0e6fdc172e39ed335a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return implementation of <a class="el" href="classinterfaces_1_1_chain_client.html" title="Interface to let node manage chain clients (wallets, or maybe tools for monitoring and analysis in th...">ChainClient</a> interface for a wallet client.  <a href="#a14e7017f789ef0e6fdc172e39ed335a4">More...</a><br /></td></tr>
@@ -197,7 +197,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Return implementation of <a class="el" href="classinterfaces_1_1_chain.html" title="Interface for giving wallet processes access to blockchain state. ">Chain</a> interface. </p>
+<p>Return implementation of <a class="el" href="classinterfaces_1_1_chain.html" title="Interface giving clients (wallet processes, maybe other analysis tools in the future) ability to acce...">Chain</a> interface. </p>
 
 <p>Definition at line <a class="el" href="interfaces_2chain_8cpp_source.html#l00261">261</a> of file <a class="el" href="interfaces_2chain_8cpp_source.html">chain.cpp</a>.</p>
 
@@ -333,7 +333,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 5 2019 14:16:47 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 5 2019 14:23:01 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

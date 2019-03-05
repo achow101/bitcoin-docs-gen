@@ -98,7 +98,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="optional_8h_source.html">optional.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="rbf_8h_source.html">policy/rbf.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="primitives_2transaction_8h_source.html">primitives/transaction.h</a>&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
@@ -108,7 +107,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for chain.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="interfaces_2chain_8h__incl.svg" width="2716" height="724"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="interfaces_2chain_8h__incl.svg" width="2071" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -121,7 +121,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html">interfaces::Chain</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for giving wallet processes access to blockchain state.  <a href="classinterfaces_1_1_chain.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface giving clients (wallet processes, maybe other analysis tools in the future) ability to access to the chain state, receive notifications, estimate fees, and submit transactions.  <a href="classinterfaces_1_1_chain.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_1_1_lock.html">interfaces::Chain::Lock</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for querying locked chain state, used by legacy code that assumes state won't change between calls.  <a href="classinterfaces_1_1_chain_1_1_lock.html#details">More...</a><br /></td></tr>
@@ -138,7 +138,7 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a402cd23e3f69061eb649f4ba764aa997"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; Chain &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinterfaces.html#a402cd23e3f69061eb649f4ba764aa997">interfaces::MakeChain</a> ()</td></tr>
-<tr class="memdesc:a402cd23e3f69061eb649f4ba764aa997"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return implementation of <a class="el" href="classinterfaces_1_1_chain.html" title="Interface for giving wallet processes access to blockchain state. ">Chain</a> interface.  <a href="namespaceinterfaces.html#a402cd23e3f69061eb649f4ba764aa997">More...</a><br /></td></tr>
+<tr class="memdesc:a402cd23e3f69061eb649f4ba764aa997"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return implementation of <a class="el" href="classinterfaces_1_1_chain.html" title="Interface giving clients (wallet processes, maybe other analysis tools in the future) ability to acce...">Chain</a> interface.  <a href="namespaceinterfaces.html#a402cd23e3f69061eb649f4ba764aa997">More...</a><br /></td></tr>
 <tr class="separator:a402cd23e3f69061eb649f4ba764aa997"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14e7017f789ef0e6fdc172e39ed335a4"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; ChainClient &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinterfaces.html#a14e7017f789ef0e6fdc172e39ed335a4">interfaces::MakeWalletClient</a> (Chain &amp;chain, std::vector&lt; std::string &gt; wallet_filenames)</td></tr>
 <tr class="memdesc:a14e7017f789ef0e6fdc172e39ed335a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return implementation of <a class="el" href="classinterfaces_1_1_chain_client.html" title="Interface to let node manage chain clients (wallets, or maybe tools for monitoring and analysis in th...">ChainClient</a> interface for a wallet client.  <a href="namespaceinterfaces.html#a14e7017f789ef0e6fdc172e39ed335a4">More...</a><br /></td></tr>
@@ -147,7 +147,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 5 2019 14:16:35 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 5 2019 14:22:49 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -100,7 +100,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Interface for giving wallet processes access to blockchain state.  
+<p>Interface giving clients (wallet processes, maybe other analysis tools in the future) ability to access to the chain state, receive notifications, estimate fees, and submit transactions.  
  <a href="classinterfaces_1_1_chain.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="interfaces_2chain_8h_source.html">chain.h</a>&gt;</code></p>
@@ -139,9 +139,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8b16c2dfd9853f1bb9f179c648124c17"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#a8b16c2dfd9853f1bb9f179c648124c17">getTransactionAncestry</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;txid, size_t &amp;ancestors, size_t &amp;descendants)=0</td></tr>
 <tr class="memdesc:a8b16c2dfd9853f1bb9f179c648124c17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate mempool ancestor and descendant counts for the given transaction.  <a href="#a8b16c2dfd9853f1bb9f179c648124c17">More...</a><br /></td></tr>
 <tr class="separator:a8b16c2dfd9853f1bb9f179c648124c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae50ee7c95370a0115772493aab6bc175"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#ae50ee7c95370a0115772493aab6bc175">checkChainLimits</a> (<a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> tx)=0</td></tr>
-<tr class="memdesc:ae50ee7c95370a0115772493aab6bc175"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check chain limits.  <a href="#ae50ee7c95370a0115772493aab6bc175">More...</a><br /></td></tr>
-<tr class="separator:ae50ee7c95370a0115772493aab6bc175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd39109d5f57042751424b74496cf370"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#abd39109d5f57042751424b74496cf370">checkChainLimits</a> (const <a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx)=0</td></tr>
+<tr class="memdesc:abd39109d5f57042751424b74496cf370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if transaction will pass the mempool's chain limits.  <a href="#abd39109d5f57042751424b74496cf370">More...</a><br /></td></tr>
+<tr class="separator:abd39109d5f57042751424b74496cf370"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addd83bb64a4dd4b14ffe567defc773cc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_fee_rate.html">CFeeRate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#addd83bb64a4dd4b14ffe567defc773cc">estimateSmartFee</a> (int num_blocks, bool conservative, <a class="el" href="struct_fee_calculation.html">FeeCalculation</a> *calc=nullptr)=0</td></tr>
 <tr class="memdesc:addd83bb64a4dd4b14ffe567defc773cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate smart fee.  <a href="#addd83bb64a4dd4b14ffe567defc773cc">More...</a><br /></td></tr>
 <tr class="separator:addd83bb64a4dd4b14ffe567defc773cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,10 +149,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab83ded195b4e15be8835fabc4f2ece39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fee estimator max target.  <a href="#ab83ded195b4e15be8835fabc4f2ece39">More...</a><br /></td></tr>
 <tr class="separator:ab83ded195b4e15be8835fabc4f2ece39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa95de888c93d5fccece97a2caa587c90"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_fee_rate.html">CFeeRate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#aa95de888c93d5fccece97a2caa587c90">mempoolMinFee</a> ()=0</td></tr>
-<tr class="memdesc:aa95de888c93d5fccece97a2caa587c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pool min fee.  <a href="#aa95de888c93d5fccece97a2caa587c90">More...</a><br /></td></tr>
+<tr class="memdesc:aa95de888c93d5fccece97a2caa587c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mempool minimum fee.  <a href="#aa95de888c93d5fccece97a2caa587c90">More...</a><br /></td></tr>
 <tr class="separator:aa95de888c93d5fccece97a2caa587c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7b51f9e155dfe61085cfabf300c3dc7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#aa7b51f9e155dfe61085cfabf300c3dc7">maxTxFee</a> ()=0</td></tr>
-<tr class="memdesc:aa7b51f9e155dfe61085cfabf300c3dc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get node max tx fee setting (-maxtxfee).  <a href="#aa7b51f9e155dfe61085cfabf300c3dc7">More...</a><br /></td></tr>
+<tr class="memdesc:aa7b51f9e155dfe61085cfabf300c3dc7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classinterfaces_1_1_node.html" title="Top-level interface for a bitcoin node (bitcoind process). ">Node</a> max tx fee setting (-maxtxfee).  <a href="#aa7b51f9e155dfe61085cfabf300c3dc7">More...</a><br /></td></tr>
 <tr class="separator:aa7b51f9e155dfe61085cfabf300c3dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acff09db3655587b36a51daa649bd3768"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#acff09db3655587b36a51daa649bd3768">getPruneMode</a> ()=0</td></tr>
 <tr class="memdesc:acff09db3655587b36a51daa649bd3768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if pruning is enabled.  <a href="#acff09db3655587b36a51daa649bd3768">More...</a><br /></td></tr>
@@ -179,9 +179,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad66341a19b8617d5da9474d9502fc311"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Interface for giving wallet processes access to blockchain state. </p>
+<div class="textblock"><p>Interface giving clients (wallet processes, maybe other analysis tools in the future) ability to access to the chain state, receive notifications, estimate fees, and submit transactions. </p>
+<p>TODO: Current chain methods are too low level, exposing too much of the internal workings of the bitcoin node, and not being very convenient to use. <a class="el" href="classinterfaces_1_1_chain.html" title="Interface giving clients (wallet processes, maybe other analysis tools in the future) ability to acce...">Chain</a> methods should be cleaned up and simplified over time. Examples:</p>
+<ul>
+<li>The <a class="el" href="classinterfaces_1_1_chain.html#ad3a8681b5aeabaebe0e31ee762aa53da" title="Return Lock interface. ">Chain::lock()</a> method, which lets clients delay chain tip updates should be removed when clients are able to respond to updates asynchronously (<a href="https://github.com/bitcoin/bitcoin/pull/10973#issuecomment-380101269">https://github.com/bitcoin/bitcoin/pull/10973#issuecomment-380101269</a>).</li>
+<li>The relayTransactions() and submitToMemoryPool() methods could be replaced with a higher-level broadcastTransaction method (<a href="https://github.com/bitcoin/bitcoin/pull/14978#issuecomment-459373984">https://github.com/bitcoin/bitcoin/pull/14978#issuecomment-459373984</a>).</li>
+<li>The initMessages() and <a class="el" href="classinterfaces_1_1_chain.html#ad66341a19b8617d5da9474d9502fc311" title="Send wallet load notification to the GUI. ">loadWallet()</a> methods which the wallet uses to send notifications to the GUI should go away when GUI and wallet can directly communicate with each other without going through the node (<a href="https://github.com/bitcoin/bitcoin/pull/15288#discussion_r253321096">https://github.com/bitcoin/bitcoin/pull/15288#discussion_r253321096</a>). </li>
+</ul>
 
-<p>Definition at line <a class="el" href="interfaces_2chain_8h_source.html#l00030">30</a> of file <a class="el" href="interfaces_2chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="interfaces_2chain_8h_source.html#l00051">51</a> of file <a class="el" href="interfaces_2chain_8h_source.html">chain.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac618fba80d2e947f18c3471c9a513f51"></a>
 <div class="memitem">
@@ -204,7 +210,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="interfaces_2chain_8h_source.html#l00033">33</a> of file <a class="el" href="interfaces_2chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="interfaces_2chain_8h_source.html#l00054">54</a> of file <a class="el" href="interfaces_2chain_8h_source.html">chain.h</a>.</p>
 
 </div>
 </div>
@@ -242,7 +248,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ae50ee7c95370a0115772493aab6bc175"></a>
+<a class="anchor" id="abd39109d5f57042751424b74496cf370"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -252,7 +258,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">virtual bool interfaces::Chain::checkChainLimits </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;&#160;</td>
           <td class="paramname"><em>tx</em></td><td>)</td>
           <td></td>
         </tr>
@@ -264,12 +270,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Check chain limits. </p>
+<p>Check if transaction will pass the mempool's chain limits. </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_ae50ee7c95370a0115772493aab6bc175_icgraph.svg" width="334" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_abd39109d5f57042751424b74496cf370_icgraph.svg" width="334" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -809,7 +816,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Return <a class="el" href="classinterfaces_1_1_chain_1_1_lock.html" title="Interface for querying locked chain state, used by legacy code that assumes state won&#39;t change betwee...">Lock</a> interface. </p>
-<p><a class="el" href="classinterfaces_1_1_chain.html" title="Interface for giving wallet processes access to blockchain state. ">Chain</a> is locked when this is called, and unlocked when the returned interface is freed. </p>
+<p><a class="el" href="classinterfaces_1_1_chain.html" title="Interface giving clients (wallet processes, maybe other analysis tools in the future) ability to acce...">Chain</a> is locked when this is called, and unlocked when the returned interface is freed. </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -841,7 +848,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Get node max tx fee setting (-maxtxfee). </p>
+<p><a class="el" href="classinterfaces_1_1_node.html" title="Top-level interface for a bitcoin node (bitcoind process). ">Node</a> max tx fee setting (-maxtxfee). </p>
 <p>This could be replaced by a per-wallet max fee, as proposed at <a href="https://github.com/bitcoin/bitcoin/issues/15355">https://github.com/bitcoin/bitcoin/issues/15355</a> But for the time being, wallets call this to access the node setting. </p>
 
 <p><div class="dynheader">
@@ -874,7 +881,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Pool min fee. </p>
+<p>Mempool minimum fee. </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -956,7 +963,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 5 2019 14:16:47 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 5 2019 14:23:02 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

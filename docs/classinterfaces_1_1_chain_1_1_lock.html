@@ -153,15 +153,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a27bb48764b1292e32915a99d680787fd"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_1_1_lock.html#a27bb48764b1292e32915a99d680787fd">checkFinalTx</a> (const <a class="el" href="class_c_transaction.html">CTransaction</a> &amp;tx)=0</td></tr>
 <tr class="memdesc:a27bb48764b1292e32915a99d680787fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if transaction will be final given chain height current time.  <a href="#a27bb48764b1292e32915a99d680787fd">More...</a><br /></td></tr>
 <tr class="separator:a27bb48764b1292e32915a99d680787fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4951a98589456477b5fa03ef5ff4ab13"><td class="memItemLeft" align="right" valign="top">*virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_1_1_lock.html#a4951a98589456477b5fa03ef5ff4ab13">submitToMemoryPool</a> (<a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> tx, <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> absurd_fee, <a class="el" href="class_c_validation_state.html">CValidationState</a> &amp;state)=0</td></tr>
-<tr class="memdesc:a4951a98589456477b5fa03ef5ff4ab13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add transaction to memory pool if the transaction fee is below the amount specified by absurd_fee (as a safeguard).  <a href="#a4951a98589456477b5fa03ef5ff4ab13">More...</a><br /></td></tr>
-<tr class="separator:a4951a98589456477b5fa03ef5ff4ab13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8731903b56020a42b51a863d4e1d39c5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_1_1_lock.html#a8731903b56020a42b51a863d4e1d39c5">submitToMemoryPool</a> (const <a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx, <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> absurd_fee, <a class="el" href="class_c_validation_state.html">CValidationState</a> &amp;state)=0</td></tr>
+<tr class="memdesc:a8731903b56020a42b51a863d4e1d39c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add transaction to memory pool if the transaction fee is below the amount specified by absurd_fee.  <a href="#a8731903b56020a42b51a863d4e1d39c5">More...</a><br /></td></tr>
+<tr class="separator:a8731903b56020a42b51a863d4e1d39c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface for querying locked chain state, used by legacy code that assumes state won't change between calls. </p>
-<p>New code should avoid using the <a class="el" href="classinterfaces_1_1_chain_1_1_lock.html" title="Interface for querying locked chain state, used by legacy code that assumes state won&#39;t change betwee...">Lock</a> interface and instead call higher-level <a class="el" href="classinterfaces_1_1_chain.html" title="Interface for giving wallet processes access to blockchain state. ">Chain</a> methods that return more information so the chain doesn't need to stay locked between calls. </p>
+<p>New code should avoid using the <a class="el" href="classinterfaces_1_1_chain_1_1_lock.html" title="Interface for querying locked chain state, used by legacy code that assumes state won&#39;t change betwee...">Lock</a> interface and instead call higher-level <a class="el" href="classinterfaces_1_1_chain.html" title="Interface giving clients (wallet processes, maybe other analysis tools in the future) ability to acce...">Chain</a> methods that return more information so the chain doesn't need to stay locked between calls. </p>
 
-<p>Definition at line <a class="el" href="interfaces_2chain_8h_source.html#l00040">40</a> of file <a class="el" href="interfaces_2chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="interfaces_2chain_8h_source.html#l00061">61</a> of file <a class="el" href="interfaces_2chain_8h_source.html">chain.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aba03076266625fffec4225131fae1746"></a>
 <div class="memitem">
@@ -184,12 +184,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="interfaces_2chain_8h_source.html#l00043">43</a> of file <a class="el" href="interfaces_2chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="interfaces_2chain_8h_source.html#l00064">64</a> of file <a class="el" href="interfaces_2chain_8h_source.html">chain.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_aba03076266625fffec4225131fae1746_cgraph.svg" width="415" height="2404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_aba03076266625fffec4225131fae1746_cgraph.svg" width="415" height="2404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -737,7 +738,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a4951a98589456477b5fa03ef5ff4ab13"></a>
+<a class="anchor" id="a8731903b56020a42b51a863d4e1d39c5"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -745,9 +746,9 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">* virtual bool interfaces::Chain::Lock::submitToMemoryPool </td>
+          <td class="memname">virtual bool interfaces::Chain::Lock::submitToMemoryPool </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;&#160;</td>
           <td class="paramname"><em>tx</em>, </td>
         </tr>
         <tr>
@@ -775,12 +776,14 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Add transaction to memory pool if the transaction fee is below the amount specified by absurd_fee (as a safeguard). </p>
+<p>Add transaction to memory pool if the transaction fee is below the amount specified by absurd_fee. </p>
+<p>Returns false if the transaction could not be added due to the fee or for another reason. </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_a4951a98589456477b5fa03ef5ff4ab13_icgraph.svg" width="1195" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_a8731903b56020a42b51a863d4e1d39c5_icgraph.svg" width="1195" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -792,7 +795,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 5 2019 14:16:47 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 5 2019 14:23:02 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
