@@ -103,7 +103,7 @@ var searchData=
   ['pendingwallettx',['PendingWalletTx',['../classinterfaces_1_1_pending_wallet_tx.html',1,'interfaces']]],
   ['penv',['penv',['../class_c_d_b_wrapper.html#a35d77fd25139ca46b82be7cd9f9f43c6',1,'CDBWrapper']]],
   ['perblockconnecttrace',['PerBlockConnectTrace',['../struct_per_block_connect_trace.html',1,'PerBlockConnectTrace'],['../struct_per_block_connect_trace.html#ac6b90e71bfd1f0e1820a40de200dd6c8',1,'PerBlockConnectTrace::PerBlockConnectTrace()']]],
-  ['period',['period',['../struct_b_i_p9_stats.html#aec773340b01c7a75a8ba9258da858207',1,'BIP9Stats::period()'],['../class_warning_bits_condition_checker.html#ab40a10489886979d02a280e2cda51542',1,'WarningBitsConditionChecker::Period()'],['../class_abstract_threshold_condition_checker.html#a34b66faf36426413918aedda5213d110',1,'AbstractThresholdConditionChecker::Period()']]],
+  ['period',['Period',['../class_warning_bits_condition_checker.html#ab40a10489886979d02a280e2cda51542',1,'WarningBitsConditionChecker::Period()'],['../class_abstract_threshold_condition_checker.html#a34b66faf36426413918aedda5213d110',1,'AbstractThresholdConditionChecker::Period()'],['../struct_b_i_p9_stats.html#aec773340b01c7a75a8ba9258da858207',1,'BIP9Stats::period()']]],
   ['periodic',['PERIODIC',['../validation_8cpp.html#ae2877520fcc46d869b4f5e9768227e25ad9d83fc826ae0d42075af007a477e2c9',1,'validation.cpp']]],
   ['periodicflush',['PeriodicFlush',['../class_berkeley_batch.html#a75cb5ceff1a83033d06e8c8f2a6d7d2a',1,'BerkeleyBatch']]],
   ['phashblock',['phashBlock',['../class_c_block_index.html#afac8099e03ffda463c7153ca82d37b66',1,'CBlockIndex']]],
