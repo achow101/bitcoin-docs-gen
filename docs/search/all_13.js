@@ -383,7 +383,7 @@ var searchData=
   ['setcorruptionpossible',['SetCorruptionPossible',['../class_c_validation_state.html#a7878ea7bc35dfe77c56080008bd0fa21',1,'CValidationState']]],
   ['setcrypted',['SetCrypted',['../class_c_crypto_key_store.html#af202f587051735be5a39344d9e333720',1,'CCryptoKeyStore']]],
   ['setcurrenttab',['setCurrentTab',['../class_options_dialog.html#a29e0d6044e8d6ec6de789eb77b06e1bc',1,'OptionsDialog']]],
-  ['setcurrentwallet',['setCurrentWallet',['../class_wallet_frame.html#aefddfcd716a29af158a7cec4b324663f',1,'WalletFrame']]],
+  ['setcurrentwallet',['setCurrentWallet',['../class_wallet_frame.html#aa1d3a9856255453a3c8abd9761de02a7',1,'WalletFrame']]],
   ['setdata',['setData',['../class_address_table_model.html#a5c6bd467fd1fc499d126fe2b7380ce5c',1,'AddressTableModel::setData()'],['../class_options_model.html#a3102b457f4d46efac8ecb03b3d536b62',1,'OptionsModel::setData()'],['../class_recent_requests_table_model.html#a57aa7dfaeead22d00b9dd3d704fb20e2',1,'RecentRequestsTableModel::setData()']]],
   ['setdatadirectory',['setDataDirectory',['../class_intro.html#a2f11c0fccc56ec7bb53cfddec98ee21b',1,'Intro']]],
   ['setdaterange',['setDateRange',['../class_transaction_filter_proxy.html#ad57cc552db9ce70bb4e8e1c12909992d',1,'TransactionFilterProxy']]],
