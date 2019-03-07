@@ -95,7 +95,7 @@ var searchData=
   ['reject',['reject',['../class_receive_coins_dialog.html#aeed78dd55cfc9def8b1b3ec3cec4bc11',1,'ReceiveCoinsDialog::reject()'],['../class_send_coins_dialog.html#a4879553d77d29f522ac92ac04580f4ad',1,'SendCoinsDialog::reject()']]],
   ['relaytransaction',['relayTransaction',['../classinterfaces_1_1_chain.html#ab6c7f08afec2a6a933c8309a34917a2c',1,'interfaces::Chain']]],
   ['relaywallettransaction',['RelayWalletTransaction',['../group__map_wallet.html#ga4c4dfefe50d9cf543fcaf39e245d3423',1,'CWalletTx']]],
-  ['release',['release',['../class_c_auto_file.html#a25b51d94dc85c4140da0b15494ac9f8a',1,'CAutoFile::release()'],['../class_c_node.html#af804bf7c7f9794e80a3b916e1befece9',1,'CNode::Release()'],['../class_c_semaphore_grant.html#a8d985eeace74e037baeb39bd2d586576',1,'CSemaphoreGrant::Release()']]],
+  ['release',['Release',['../class_c_node.html#af804bf7c7f9794e80a3b916e1befece9',1,'CNode::Release()'],['../class_c_semaphore_grant.html#a8d985eeace74e037baeb39bd2d586576',1,'CSemaphoreGrant::Release()'],['../class_c_auto_file.html#a25b51d94dc85c4140da0b15494ac9f8a',1,'CAutoFile::release()']]],
   ['releasedirectorylocks',['ReleaseDirectoryLocks',['../system_8cpp.html#a851fa89def443bac9d04ddb908cb91bb',1,'ReleaseDirectoryLocks():&#160;system.cpp'],['../system_8h.html#a851fa89def443bac9d04ddb908cb91bb',1,'ReleaseDirectoryLocks():&#160;system.cpp']]],
   ['reloaddbenv',['ReloadDbEnv',['../class_berkeley_environment.html#a2bb5277700853996eaaeb4d13b9b917b',1,'BerkeleyEnvironment::ReloadDbEnv()'],['../class_berkeley_database.html#abda71c652ce8bbb4ac0edf7d0b28f96d',1,'BerkeleyDatabase::ReloadDbEnv()']]],
   ['remove',['remove',['../classinterfaces_1_1_wallet.html#ac6e9390999a0a2329a5fd96d50d10b9b',1,'interfaces::Wallet']]],
