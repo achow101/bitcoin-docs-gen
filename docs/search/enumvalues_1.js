@@ -7,7 +7,7 @@ var searchData=
   ['bantime',['Bantime',['../class_ban_table_model.html#ad1a416d31ef95529e8be0ef01c0b7eedafa45fbbf9e0cb4bf29125e7e740b77c7',1,'BanTableModel']]],
   ['bantime_5fcolumn_5fwidth',['BANTIME_COLUMN_WIDTH',['../class_r_p_c_console.html#a73581a931ea8b13a11ecb590f4bf6fe1a461c99f3aa7f0aac045ebf788b286742',1,'RPCConsole']]],
   ['base',['BASE',['../interpreter_8h.html#a3db3199560fd5419a3be2fcd88a28f8fae7b1a5c82772e0e055096008cb9883ef',1,'interpreter.h']]],
-  ['basic',['BASIC',['../blockfilter_8h.html#a530bf73ca0d532a142641644a1605250a13c45196813cb44e6e81e9c48a5ec1b4',1,'blockfilter.h']]],
+  ['basic',['BASIC',['../blockfilter_8h.html#a530bf73ca0d532a142641644a1605250ae4ac03f6c9f00665644e868dd1fb9f1e',1,'blockfilter.h']]],
   ['bech32',['BECH32',['../outputtype_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3ad4fd7223ebde09ed36b615658d29d7bc',1,'outputtype.h']]],
   ['bench',['BENCH',['../namespace_b_c_log.html#ad1037484206121adbcda9f9c824ab6b2aeef09e555a040eddde174b40bca953b5',1,'BCLog']]],
   ['bf_5fexplicit',['BF_EXPLICIT',['../net_8cpp.html#a3517133609e0c817dd6f9bb02709d55ba6f8bf60811c9c280c6c3804c10a831b5',1,'net.cpp']]],

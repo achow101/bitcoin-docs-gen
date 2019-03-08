@@ -51,7 +51,7 @@ var searchData=
   ['baserequesthandler',['BaseRequestHandler',['../class_base_request_handler.html',1,'']]],
   ['basesignaturechecker',['BaseSignatureChecker',['../class_base_signature_checker.html',1,'']]],
   ['basesignaturecreator',['BaseSignatureCreator',['../class_base_signature_creator.html',1,'']]],
-  ['basic',['BASIC',['../blockfilter_8h.html#a530bf73ca0d532a142641644a1605250a13c45196813cb44e6e81e9c48a5ec1b4',1,'blockfilter.h']]],
+  ['basic',['BASIC',['../blockfilter_8h.html#a530bf73ca0d532a142641644a1605250ae4ac03f6c9f00665644e868dd1fb9f1e',1,'blockfilter.h']]],
   ['basic_2dconfig_2eh',['basic-config.h',['../basic-config_8h.html',1,'']]],
   ['basic_5ffilter_5fm',['BASIC_FILTER_M',['../blockfilter_8h.html#acf43d7aca6779d71261e2753a23e0312',1,'blockfilter.h']]],
   ['basic_5ffilter_5fp',['BASIC_FILTER_P',['../blockfilter_8h.html#a603871b93eb8a05bedbbebdce89523b9',1,'blockfilter.h']]],

@@ -8,6 +8,7 @@ var searchData=
   ['immature',['Immature',['../class_transaction_status.html#aaa6cc19ca3509bbae72d0df1661f85cba6b7a65301bf5a9eb371b34f2dcbd0e30',1,'TransactionStatus']]],
   ['information',['Information',['../class_notificator.html#aa2ff8a05d471e32e77584a2b8dd182aba195b01e918cc724c6ad65f5037e85f83',1,'Notificator']]],
   ['interrupted',['Interrupted',['../netbase_8cpp.html#a016a344931d1ff79d2489292ad877b37a12c37c4278b8c0db6c2f65052569cd80',1,'netbase.cpp']]],
+  ['invalid',['INVALID',['../blockfilter_8h.html#a530bf73ca0d532a142641644a1605250accc0377a8afbf50e7094f5c23a8af223',1,'blockfilter.h']]],
   ['invalid_5faddress',['INVALID_ADDRESS',['../class_address_table_model.html#a3d502b85fc09461e779dae4589c29956a7e1e745ad0209b0cd8dd5866a7615021',1,'AddressTableModel']]],
   ['invalid_5faddress_5for_5fkey',['INVALID_ADDRESS_OR_KEY',['../namespacefeebumper.html#a08fe575802ef410f95f786253c489bc6a17e958c4b09cbb64fd75df0211dd49c6',1,'feebumper']]],
   ['invalid_5fparameter',['INVALID_PARAMETER',['../namespacefeebumper.html#a08fe575802ef410f95f786253c489bc6afeb1a30cb74c35aaf4ea067736109e30',1,'feebumper']]],
