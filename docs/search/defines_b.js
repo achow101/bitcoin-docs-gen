@@ -10,6 +10,7 @@ var searchData=
   ['msg_5fdontwait',['MSG_DONTWAIT',['../net_8cpp.html#ab18d3d439e4a9c8d0f73e7166e8eb376',1,'net.cpp']]],
   ['msg_5fnosignal',['MSG_NOSIGNAL',['../net_8cpp.html#a9f55d0e90dc8cc6b2287312435cdde48',1,'MSG_NOSIGNAL():&#160;net.cpp'],['../netbase_8cpp.html#a9f55d0e90dc8cc6b2287312435cdde48',1,'MSG_NOSIGNAL():&#160;netbase.cpp']]],
   ['msize',['MSIZE',['../bench_2lockedpool_8cpp.html#a849adc9d20371988bb26f86618fa75ba',1,'lockedpool.cpp']]],
+  ['mul32x32_5f64',['mul32x32_64',['../crypto_2poly1305_8cpp.html#a704d22f25cb87e1cecc62297a5610aab',1,'poly1305.cpp']]],
   ['muladd',['muladd',['../scalar__4x64__impl_8h.html#a7c03352e405b1d65f6afd0b7a0f01730',1,'muladd():&#160;scalar_4x64_impl.h'],['../scalar__8x32__impl_8h.html#a7c03352e405b1d65f6afd0b7a0f01730',1,'muladd():&#160;scalar_8x32_impl.h']]],
   ['muladd2',['muladd2',['../scalar__4x64__impl_8h.html#a838fb18f65d05d5d8e5ea9f0584af83f',1,'muladd2():&#160;scalar_4x64_impl.h'],['../scalar__8x32__impl_8h.html#a838fb18f65d05d5d8e5ea9f0584af83f',1,'muladd2():&#160;scalar_8x32_impl.h']]],
   ['muladd_5ffast',['muladd_fast',['../scalar__4x64__impl_8h.html#adeb6e766b53f39bb9c0c9f6502aa3b62',1,'muladd_fast():&#160;scalar_4x64_impl.h'],['../scalar__8x32__impl_8h.html#adeb6e766b53f39bb9c0c9f6502aa3b62',1,'muladd_fast():&#160;scalar_8x32_impl.h']]]

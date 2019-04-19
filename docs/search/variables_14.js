@@ -5,6 +5,7 @@ var searchData=
   ['unconfirmed_5fbalance',['unconfirmed_balance',['../structinterfaces_1_1_wallet_balances.html#a767037b55f7e6cbdca1cbff3fe6cb534',1,'interfaces::WalletBalances']]],
   ['unconfirmed_5fwatch_5fonly_5fbalance',['unconfirmed_watch_only_balance',['../structinterfaces_1_1_wallet_balances.html#ad40942b35435b4af92adec08c34fa70f',1,'interfaces::WalletBalances']]],
   ['unconftxs',['unconfTxs',['../class_tx_confirm_stats.html#ab80a5b84994e90d568f798632a510ab3',1,'TxConfirmStats']]],
+  ['unique_5fid',['unique_id',['../class_c_r_p_c_command.html#a4baf9c30801f96e49a3ee997566b3a5f',1,'CRPCCommand']]],
   ['unit',['unit',['../class_bitcoin_amount_field.html#a16bddf5c239da4adbf0121cb4be1e022',1,'BitcoinAmountField::unit()'],['../class_tx_view_delegate.html#a4281e394dd7e90ecd8401fdca7b0413a',1,'TxViewDelegate::unit()']]],
   ['unitdisplaycontrol',['unitDisplayControl',['../class_bitcoin_g_u_i.html#a98c3911483371f87ebb20ca5ef2e5548',1,'BitcoinGUI']]],
   ['unitlist',['unitlist',['../class_bitcoin_units.html#a148dab31b39a0fe432ca718201ba48a5',1,'BitcoinUnits']]],

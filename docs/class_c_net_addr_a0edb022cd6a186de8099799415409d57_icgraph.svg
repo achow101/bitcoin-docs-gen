@@ -29,7 +29,7 @@
 </g>
 <!-- Node6 -->
 <g id="node6" class="node"><title>Node6</title>
-<g id="a_node6"><a xlink:href="class_c_net_addr.html#add7811be50f5fe60c4fa65b461dea98c" target="_top" xlink:title="CNetAddr::GetIn6Addr">
+<g id="a_node6"><a xlink:href="class_c_net_addr.html#add7811be50f5fe60c4fa65b461dea98c" target="_top" xlink:title="Try to get our IPv6 address. ">
 <polygon fill="white" stroke="black" points="132,-1079.5 132,-1098.5 255,-1098.5 255,-1079.5 132,-1079.5"/>
 <text text-anchor="middle" x="193.5" y="-1086.5" font-family="Helvetica,sans-Serif" font-size="10.00">CNetAddr::GetIn6Addr</text>
 </a>
@@ -42,7 +42,7 @@
 </g>
 <!-- Node7 -->
 <g id="node7" class="node"><title>Node7</title>
-<g id="a_node7"><a xlink:href="class_c_service.html#ab0f791c174511056236119cc1580faeb" target="_top" xlink:title="CService::GetSockAddr">
+<g id="a_node7"><a xlink:href="class_c_service.html#ab0f791c174511056236119cc1580faeb" target="_top" xlink:title="Obtain the IPv4/6 socket address this represents. ">
 <polygon fill="white" stroke="black" points="291,-1079.5 291,-1098.5 419,-1098.5 419,-1079.5 291,-1079.5"/>
 <text text-anchor="middle" x="355" y="-1086.5" font-family="Helvetica,sans-Serif" font-size="10.00">CService::GetSockAddr</text>
 </a>
@@ -365,16 +365,15 @@
 </g>
 <!-- Node18 -->
 <g id="node18" class="node"><title>Node18</title>
-<g id="a_node18"><a xlink:href="class_peer_logic_validation.html#a124965d7310e0df08cc027d4e1cbbe7b" target="_top" xlink:title="Overridden from CValidationInterface. ">
-<polygon fill="white" stroke="black" points="1241.5,-551 1241.5,-581 1351.5,-581 1351.5,-551 1241.5,-551"/>
-<text text-anchor="start" x="1249.5" y="-569" font-family="Helvetica,sans-Serif" font-size="10.00">PeerLogicValidation</text>
-<text text-anchor="middle" x="1296.5" y="-558" font-family="Helvetica,sans-Serif" font-size="10.00">::BlockChecked</text>
+<g id="a_node18"><a xlink:href="net__processing_8cpp.html#a4c3f4b7e7b0e61fb40a351f816b363c5" target="_top" xlink:title="while">
+<polygon fill="white" stroke="black" points="1276.5,-556.5 1276.5,-575.5 1316.5,-575.5 1316.5,-556.5 1276.5,-556.5"/>
+<text text-anchor="middle" x="1296.5" y="-563.5" font-family="Helvetica,sans-Serif" font-size="10.00">while</text>
 </a>
 </g>
 </g>
 <!-- Node17&#45;&gt;Node18 -->
 <g id="edge23" class="edge"><title>Node17&#45;&gt;Node18</title>
-<path fill="none" stroke="midnightblue" d="M1096.06,-344.61C1115.28,-377.551 1158.41,-447.327 1206,-497 1226.22,-518.11 1253.22,-538.021 1272.26,-550.978"/>
+<path fill="none" stroke="midnightblue" d="M1096.06,-344.61C1115.28,-377.551 1158.41,-447.327 1206,-497 1229.34,-521.369 1261.72,-544.14 1280.46,-556.459"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1098.91,-342.548 1090.88,-335.633 1092.85,-346.044 1098.91,-342.548"/>
 </g>
 <!-- Node20 -->
@@ -523,7 +522,7 @@
 </g>
 <!-- Node30&#45;&gt;Node18 -->
 <g id="edge57" class="edge"><title>Node30&#45;&gt;Node18</title>
-<path fill="none" stroke="midnightblue" d="M900.219,-680.675C917.625,-654.135 953.878,-605.892 999,-585 1077.17,-548.807 1179.53,-551.749 1241.25,-558.169"/>
+<path fill="none" stroke="midnightblue" d="M900.219,-680.675C917.625,-654.135 953.878,-605.892 999,-585 1094.96,-540.571 1227.36,-555.114 1276.31,-562.672"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="897.095,-679.065 894.678,-689.381 903,-682.824 897.095,-679.065"/>
 </g>
 <!-- Node30&#45;&gt;Node22 -->
@@ -586,16 +585,16 @@
 <!-- Node35 -->
 <g id="node35" class="node"><title>Node35</title>
 <g id="a_node35"><a xlink:href="class_tor_controller.html#a78b762c14a006b2f509261a95963ff67" target="_top" xlink:title="Callback for ADD_ONION result. ">
-<polygon fill="white" stroke="red" points="1246,-652 1246,-682 1347,-682 1347,-652 1246,-652"/>
-<text text-anchor="start" x="1254" y="-670" font-family="Helvetica,sans-Serif" font-size="10.00">TorController::add</text>
-<text text-anchor="middle" x="1296.5" y="-659" font-family="Helvetica,sans-Serif" font-size="10.00">_onion_cb</text>
+<polygon fill="white" stroke="red" points="1246,-649 1246,-679 1347,-679 1347,-649 1246,-649"/>
+<text text-anchor="start" x="1254" y="-667" font-family="Helvetica,sans-Serif" font-size="10.00">TorController::add</text>
+<text text-anchor="middle" x="1296.5" y="-656" font-family="Helvetica,sans-Serif" font-size="10.00">_onion_cb</text>
 </a>
 </g>
 </g>
 <!-- Node30&#45;&gt;Node35 -->
 <g id="edge66" class="edge"><title>Node30&#45;&gt;Node35</title>
-<path fill="none" stroke="midnightblue" d="M950.043,-703.363C1007.15,-706.414 1094.7,-708.449 1170,-699 1196.21,-695.711 1224.8,-688.699 1248.07,-682.076"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="949.925,-699.851 939.744,-702.784 949.532,-706.84 949.925,-699.851"/>
+<path fill="none" stroke="midnightblue" d="M949.835,-703.736C1006.97,-707.066 1094.69,-709.304 1170,-699 1198.13,-695.152 1228.84,-686.665 1252.84,-679.012"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="949.728,-700.223 939.532,-703.104 949.299,-707.209 949.728,-700.223"/>
 </g>
 <!-- Node36 -->
 <g id="node36" class="node"><title>Node36</title>
@@ -695,12 +694,12 @@
 </g>
 <!-- Node34&#45;&gt;Node35 -->
 <g id="edge46" class="edge"><title>Node34&#45;&gt;Node35</title>
-<path fill="none" stroke="midnightblue" d="M1124.76,-479.009C1140.39,-481.258 1157.57,-486.29 1170,-497 1203.57,-525.935 1180.43,-553.795 1206,-590 1223.97,-615.45 1252.15,-637.824 1272.09,-651.802"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1125.11,-475.526 1114.78,-477.902 1124.34,-482.484 1125.11,-475.526"/>
+<path fill="none" stroke="midnightblue" d="M1124.66,-479.126C1140.27,-481.394 1157.47,-486.409 1170,-497 1202.27,-524.282 1181.52,-550.558 1206,-585 1224.49,-611.014 1253.12,-634.318 1273,-648.759"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="1125.03,-475.645 1114.7,-478.002 1124.24,-482.601 1125.03,-475.645"/>
 </g>
 <!-- Node37&#45;&gt;Node18 -->
 <g id="edge50" class="edge"><title>Node37&#45;&gt;Node18</title>
-<path fill="none" stroke="midnightblue" d="M1145.91,-630.008C1154.08,-627.925 1162.3,-625.585 1170,-623 1204.26,-611.505 1241.77,-593.739 1266.77,-581.1"/>
+<path fill="none" stroke="midnightblue" d="M1145.91,-630.008C1154.08,-627.925 1162.3,-625.585 1170,-623 1209.7,-609.678 1253.77,-587.933 1277.68,-575.507"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1144.9,-626.653 1136.01,-632.421 1146.56,-633.454 1144.9,-626.653"/>
 </g>
 <!-- Node39&#45;&gt;Node20 -->

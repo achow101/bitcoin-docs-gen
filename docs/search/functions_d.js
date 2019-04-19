@@ -35,6 +35,7 @@ var searchData=
   ['maxtxfee',['maxTxFee',['../classinterfaces_1_1_chain.html#aa7b51f9e155dfe61085cfabf300c3dc7',1,'interfaces::Chain']]],
   ['maxusableestimate',['MaxUsableEstimate',['../class_c_block_policy_estimator.html#aa1190c8276ed40774ee972d084bfd501',1,'CBlockPolicyEstimator']]],
   ['maybecompactwalletdb',['MaybeCompactWalletDB',['../walletdb_8cpp.html#a1e1e0409e1e009a4202a703e38ad2cd9',1,'MaybeCompactWalletDB():&#160;walletdb.cpp'],['../walletdb_8h.html#a1e1e0409e1e009a4202a703e38ad2cd9',1,'MaybeCompactWalletDB():&#160;walletdb.cpp']]],
+  ['mayberesendwallettxs',['MaybeResendWalletTxs',['../wallet_2wallet_8cpp.html#a3dd76d3c4b1bd804a23bf22519423623',1,'MaybeResendWalletTxs():&#160;wallet.cpp'],['../wallet_2wallet_8h.html#a3dd76d3c4b1bd804a23bf22519423623',1,'MaybeResendWalletTxs():&#160;wallet.cpp']]],
   ['maybescheduleprocessqueue',['MaybeScheduleProcessQueue',['../class_single_threaded_scheduler_client.html#a4ba96c33ff19150bb0f055b1f3435f70',1,'SingleThreadedSchedulerClient']]],
   ['maybesetaddrname',['MaybeSetAddrName',['../class_c_node.html#a88a08c2ff988b03c659f59befebd04c9',1,'CNode']]],
   ['median',['median',['../class_c_median_filter.html#aab6b67fbb63024c462bfa30bbe789c31',1,'CMedianFilter']]],

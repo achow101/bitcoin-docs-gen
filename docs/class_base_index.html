@@ -106,7 +106,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="dynheader">
 Inheritance diagram for BaseIndex:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index__inherit__graph.svg" width="160" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index__inherit__graph.svg" width="227" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for BaseIndex:</div>
@@ -150,6 +151,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a8960ca12b00a8a6c38428a07849ef88a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_index.html#a8960ca12b00a8a6c38428a07849ef88a">WriteBlock</a> (const <a class="el" href="class_c_block.html">CBlock</a> &amp;block, const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindex)</td></tr>
 <tr class="memdesc:a8960ca12b00a8a6c38428a07849ef88a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write update index entries for a newly connected block.  <a href="#a8960ca12b00a8a6c38428a07849ef88a">More...</a><br /></td></tr>
 <tr class="separator:a8960ca12b00a8a6c38428a07849ef88a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec6caefe1e5a3ac16ac4b6bf882efa4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_index.html#a3ec6caefe1e5a3ac16ac4b6bf882efa4">CommitInternal</a> (<a class="el" href="class_c_d_b_batch.html">CDBBatch</a> &amp;batch)</td></tr>
+<tr class="memdesc:a3ec6caefe1e5a3ac16ac4b6bf882efa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method called internally by Commit that can be overridden to atomically commit more index state.  <a href="#a3ec6caefe1e5a3ac16ac4b6bf882efa4">More...</a><br /></td></tr>
+<tr class="separator:a3ec6caefe1e5a3ac16ac4b6bf882efa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac13f802a2cb0e6254253606448c9bce2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_index.html#ac13f802a2cb0e6254253606448c9bce2">Rewind</a> (const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *current_tip, const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *new_tip)</td></tr>
+<tr class="memdesc:ac13f802a2cb0e6254253606448c9bce2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rewind index to an earlier chain tip during a chain reorg.  <a href="#ac13f802a2cb0e6254253606448c9bce2">More...</a><br /></td></tr>
+<tr class="separator:ac13f802a2cb0e6254253606448c9bce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0f67531ab8c5fbcc292f8a19bc9e971"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_base_index_1_1_d_b.html">DB</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_index.html#ab0f67531ab8c5fbcc292f8a19bc9e971">GetDB</a> () const =0</td></tr>
 <tr class="separator:ab0f67531ab8c5fbcc292f8a19bc9e971"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2ff5765e378de359b41dfdf7ca17fba"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_index.html#af2ff5765e378de359b41dfdf7ca17fba">GetName</a> () const =0</td></tr>
@@ -171,9 +178,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a914de3420613e1a2281180f856dca88e inherit pro_methods_class_c_validation_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_validation_interface.html#a914de3420613e1a2281180f856dca88e">BlockDisconnected</a> (const std::shared_ptr&lt; const <a class="el" href="class_c_block.html">CBlock</a> &gt; &amp;block)</td></tr>
 <tr class="memdesc:a914de3420613e1a2281180f856dca88e inherit pro_methods_class_c_validation_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies listeners of a block being disconnected.  <a href="#a914de3420613e1a2281180f856dca88e">More...</a><br /></td></tr>
 <tr class="separator:a914de3420613e1a2281180f856dca88e inherit pro_methods_class_c_validation_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3473492a52200fb5678c0db596a5093a inherit pro_methods_class_c_validation_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_validation_interface.html#a3473492a52200fb5678c0db596a5093a">ResendWalletTransactions</a> (int64_t nBestBlockTime, <a class="el" href="class_c_connman.html">CConnman</a> *connman)</td></tr>
-<tr class="memdesc:a3473492a52200fb5678c0db596a5093a inherit pro_methods_class_c_validation_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells listeners to broadcast their data.  <a href="#a3473492a52200fb5678c0db596a5093a">More...</a><br /></td></tr>
-<tr class="separator:a3473492a52200fb5678c0db596a5093a inherit pro_methods_class_c_validation_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb34ef6814685cabc29062ed7be25441 inherit pro_methods_class_c_validation_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_validation_interface.html#aeb34ef6814685cabc29062ed7be25441">BlockChecked</a> (const <a class="el" href="class_c_block.html">CBlock</a> &amp;, const <a class="el" href="class_c_validation_state.html">CValidationState</a> &amp;)</td></tr>
 <tr class="memdesc:aeb34ef6814685cabc29062ed7be25441 inherit pro_methods_class_c_validation_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies listeners of a block validation result.  <a href="#aeb34ef6814685cabc29062ed7be25441">More...</a><br /></td></tr>
 <tr class="separator:aeb34ef6814685cabc29062ed7be25441 inherit pro_methods_class_c_validation_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,9 +196,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a96a7407421fbf877509248bbe64f8d87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_index.html#a96a7407421fbf877509248bbe64f8d87">ThreadSync</a> ()</td></tr>
 <tr class="memdesc:a96a7407421fbf877509248bbe64f8d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sync the index with the block index starting from the current best block.  <a href="#a96a7407421fbf877509248bbe64f8d87">More...</a><br /></td></tr>
 <tr class="separator:a96a7407421fbf877509248bbe64f8d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec33bcb4ab5a0b0de416b4f3c4a1774b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_index.html#aec33bcb4ab5a0b0de416b4f3c4a1774b">WriteBestBlock</a> (const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *block_index)</td></tr>
-<tr class="memdesc:aec33bcb4ab5a0b0de416b4f3c4a1774b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the current chain block locator to the <a class="el" href="class_base_index_1_1_d_b.html">DB</a>.  <a href="#aec33bcb4ab5a0b0de416b4f3c4a1774b">More...</a><br /></td></tr>
-<tr class="separator:aec33bcb4ab5a0b0de416b4f3c4a1774b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8312c39e9778111d586dcc5f19b789c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_index.html#a8312c39e9778111d586dcc5f19b789c5">Commit</a> ()</td></tr>
+<tr class="memdesc:a8312c39e9778111d586dcc5f19b789c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the current index state (eg.  <a href="#a8312c39e9778111d586dcc5f19b789c5">More...</a><br /></td></tr>
+<tr class="separator:a8312c39e9778111d586dcc5f19b789c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -250,7 +254,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a2c103bcce27f46a14cc210c53d10b595_icgraph.svg" width="816" height="107"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a2c103bcce27f46a14cc210c53d10b595_icgraph.svg" width="960" height="107"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -301,12 +306,13 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="class_c_validation_interface.html#a5c8ac00b2b08a57c28e8bbc991f34ed4">CValidationInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="base_8cpp_source.html#l00156">156</a> of file <a class="el" href="base_8cpp_source.html">base.cpp</a>.</p>
+<p>Definition at line <a class="el" href="base_8cpp_source.html#l00191">191</a> of file <a class="el" href="base_8cpp_source.html">base.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_ab3f7a06bc635950918ee072262887223_cgraph.svg" width="1704" height="1694"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_ab3f7a06bc635950918ee072262887223_cgraph.svg" width="2147" height="1379"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -328,7 +334,7 @@ Here is the call graph for this function:</div>
 <p>Blocks the current thread until the index is caught up to the current state of the block chain. </p>
 <p>This only blocks if the index has gotten in sync once and only needs to process blocks in the ValidationInterface queue. If the index is catching up from far behind, this method does not block and immediately returns false. </p>
 
-<p>Definition at line <a class="el" href="base_8cpp_source.html#l00232">232</a> of file <a class="el" href="base_8cpp_source.html">base.cpp</a>.</p>
+<p>Definition at line <a class="el" href="base_8cpp_source.html#l00273">273</a> of file <a class="el" href="base_8cpp_source.html">base.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -340,7 +346,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a4043488455bdad2e2822fe4ee9449feb_icgraph.svg" width="850" height="107"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a4043488455bdad2e2822fe4ee9449feb_icgraph.svg" width="994" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -376,12 +383,104 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="class_c_validation_interface.html#a406070080c92a1aa3f6ed8f9b4295df7">CValidationInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="base_8cpp_source.html#l00194">194</a> of file <a class="el" href="base_8cpp_source.html">base.cpp</a>.</p>
+<p>Definition at line <a class="el" href="base_8cpp_source.html#l00234">234</a> of file <a class="el" href="base_8cpp_source.html">base.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a770e60b2fcbc0b8adaaeb54f18eb9c8a_cgraph.svg" width="1140" height="1763"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a770e60b2fcbc0b8adaaeb54f18eb9c8a_cgraph.svg" width="1418" height="1746"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8312c39e9778111d586dcc5f19b789c5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BaseIndex::Commit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Write the current index state (eg. </p>
+<p>chain block locator and subclass-specific items) to disk.</p>
+<p>Recommendations for error handling: If called on a successor of the previous committed best block in the index, the index can continue processing without risk of corruption, though the index state will need to catch up from further behind on reboot. If the new state is not a successor of the previous state (due to a chain reorganization), the index must halt until Commit succeeds or else it could end up getting corrupted. </p>
+
+<p>Definition at line <a class="el" href="base_8cpp_source.html#l00159">159</a> of file <a class="el" href="base_8cpp_source.html">base.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a8312c39e9778111d586dcc5f19b789c5_cgraph.svg" width="1382" height="1360"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a8312c39e9778111d586dcc5f19b789c5_icgraph.svg" width="1272" height="152"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3ec6caefe1e5a3ac16ac4b6bf882efa4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BaseIndex::CommitInternal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_d_b_batch.html">CDBBatch</a> &amp;&#160;</td>
+          <td class="paramname"><em>batch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual method called internally by Commit that can be overridden to atomically commit more index state. </p>
+
+<p>Reimplemented in <a class="el" href="class_block_filter_index.html#a17b4f53fca57771a37ee30de25cd62af">BlockFilterIndex</a>.</p>
+
+<p>Definition at line <a class="el" href="base_8cpp_source.html#l00168">168</a> of file <a class="el" href="base_8cpp_source.html">base.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a3ec6caefe1e5a3ac16ac4b6bf882efa4_cgraph.svg" width="1102" height="367"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a3ec6caefe1e5a3ac16ac4b6bf882efa4_icgraph.svg" width="1547" height="284"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -408,12 +507,13 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_tx_index.html#a29616fb30d6bec9338c943f1d8ac4864">TxIndex</a>.</p>
+<p>Implemented in <a class="el" href="class_block_filter_index.html#a76f092ba8cfc2cbe1fee19668ff47ab7">BlockFilterIndex</a>, and <a class="el" href="class_tx_index.html#a29616fb30d6bec9338c943f1d8ac4864">TxIndex</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_ab0f67531ab8c5fbcc292f8a19bc9e971_icgraph.svg" width="1046" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_ab0f67531ab8c5fbcc292f8a19bc9e971_icgraph.svg" width="1348" height="443"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -442,12 +542,13 @@ Here is the caller graph for this function:</div>
 
 <p>Get the name of the index for display in logs. </p>
 
-<p>Implemented in <a class="el" href="class_tx_index.html#acccd6ba0330149fe58eac33e9b7104df">TxIndex</a>.</p>
+<p>Implemented in <a class="el" href="class_block_filter_index.html#aad5464284e5e4a5a3650c5649648e304">BlockFilterIndex</a>, and <a class="el" href="class_tx_index.html#acccd6ba0330149fe58eac33e9b7104df">TxIndex</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_af2ff5765e378de359b41dfdf7ca17fba_icgraph.svg" width="1099" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_af2ff5765e378de359b41dfdf7ca17fba_icgraph.svg" width="1539" height="412"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -476,21 +577,23 @@ Here is the caller graph for this function:</div>
 
 <p>Initialize internal state from the database and block index. </p>
 
-<p>Reimplemented in <a class="el" href="class_tx_index.html#a2ebe57b9a6d64ab90a9c6f8390649b48">TxIndex</a>.</p>
+<p>Reimplemented in <a class="el" href="class_block_filter_index.html#a77a5500d15d374075a3f14837edbc358">BlockFilterIndex</a>, and <a class="el" href="class_tx_index.html#a2ebe57b9a6d64ab90a9c6f8390649b48">TxIndex</a>.</p>
 
 <p>Definition at line <a class="el" href="base_8cpp_source.html#l00055">55</a> of file <a class="el" href="base_8cpp_source.html">base.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a10dbed01cf8ad8126b6195844a62d281_cgraph.svg" width="1315" height="1732"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a10dbed01cf8ad8126b6195844a62d281_cgraph.svg" width="1296" height="1894"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a10dbed01cf8ad8126b6195844a62d281_icgraph.svg" width="758" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a10dbed01cf8ad8126b6195844a62d281_icgraph.svg" width="776" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -509,12 +612,70 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="base_8cpp_source.html#l00256">256</a> of file <a class="el" href="base_8cpp_source.html">base.cpp</a>.</p>
+<p>Definition at line <a class="el" href="base_8cpp_source.html#l00297">297</a> of file <a class="el" href="base_8cpp_source.html">base.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a45a33fee646b99f42391a244b8cae3e4_icgraph.svg" width="1015" height="107"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a45a33fee646b99f42391a244b8cae3e4_icgraph.svg" width="1159" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac13f802a2cb0e6254253606448c9bce2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BaseIndex::Rewind </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *&#160;</td>
+          <td class="paramname"><em>current_tip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *&#160;</td>
+          <td class="paramname"><em>new_tip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rewind index to an earlier chain tip during a chain reorg. </p>
+<p>The tip must be an ancestor of the current best block. </p>
+
+<p>Reimplemented in <a class="el" href="class_block_filter_index.html#a27070dd7f050bb97b80046842e3ca6f3">BlockFilterIndex</a>.</p>
+
+<p>Definition at line <a class="el" href="base_8cpp_source.html#l00175">175</a> of file <a class="el" href="base_8cpp_source.html">base.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_ac13f802a2cb0e6254253606448c9bce2_cgraph.svg" width="1568" height="1384"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_ac13f802a2cb0e6254253606448c9bce2_icgraph.svg" width="1000" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -535,19 +696,21 @@ Here is the caller graph for this function:</div>
 
 <p>Start initializes the sync state and registers the instance as a ValidationInterface so that it stays in sync with blockchain updates. </p>
 
-<p>Definition at line <a class="el" href="base_8cpp_source.html#l00261">261</a> of file <a class="el" href="base_8cpp_source.html">base.cpp</a>.</p>
+<p>Definition at line <a class="el" href="base_8cpp_source.html#l00302">302</a> of file <a class="el" href="base_8cpp_source.html">base.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a2babb71bb9b93aadba06dae6e62d721b_cgraph.svg" width="1220" height="1831"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a2babb71bb9b93aadba06dae6e62d721b_cgraph.svg" width="1680" height="1642"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a2babb71bb9b93aadba06dae6e62d721b_icgraph.svg" width="595" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a2babb71bb9b93aadba06dae6e62d721b_icgraph.svg" width="595" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -568,7 +731,7 @@ Here is the caller graph for this function:</div>
 
 <p>Stops the instance from staying in sync with blockchain updates. </p>
 
-<p>Definition at line <a class="el" href="base_8cpp_source.html#l00275">275</a> of file <a class="el" href="base_8cpp_source.html">base.cpp</a>.</p>
+<p>Definition at line <a class="el" href="base_8cpp_source.html#l00316">316</a> of file <a class="el" href="base_8cpp_source.html">base.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -580,7 +743,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a0a8a238dd17aadc16839592098e9c42c_icgraph.svg" width="991" height="107"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a0a8a238dd17aadc16839592098e9c42c_icgraph.svg" width="1135" height="164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -615,49 +779,16 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a96a7407421fbf877509248bbe64f8d87_cgraph.svg" width="922" height="1591"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a96a7407421fbf877509248bbe64f8d87_cgraph.svg" width="1679" height="1448"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a96a7407421fbf877509248bbe64f8d87_icgraph.svg" width="814" height="63"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a96a7407421fbf877509248bbe64f8d87_icgraph.svg" width="814" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="aec33bcb4ab5a0b0de416b4f3c4a1774b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool BaseIndex::WriteBestBlock </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *&#160;</td>
-          <td class="paramname"><em>block_index</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Write the current chain block locator to the <a class="el" href="class_base_index_1_1_d_b.html">DB</a>. </p>
-
-<p>Definition at line <a class="el" href="base_8cpp_source.html#l00147">147</a> of file <a class="el" href="base_8cpp_source.html">base.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_aec33bcb4ab5a0b0de416b4f3c4a1774b_cgraph.svg" width="1643" height="1396"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -697,21 +828,23 @@ Here is the call graph for this function:</div>
 
 <p>Write update index entries for a newly connected block. </p>
 
-<p>Reimplemented in <a class="el" href="class_tx_index.html#ab299b61b0caa60029e782f9f93177c19">TxIndex</a>.</p>
+<p>Reimplemented in <a class="el" href="class_block_filter_index.html#a80c35affe452d433d73a102dce8c2052">BlockFilterIndex</a>, and <a class="el" href="class_tx_index.html#ab299b61b0caa60029e782f9f93177c19">TxIndex</a>.</p>
 
-<p>Definition at line <a class="el" href="base_8h_source.html#l00070">70</a> of file <a class="el" href="base_8h_source.html">base.h</a>.</p>
+<p>Definition at line <a class="el" href="base_8h_source.html#l00077">77</a> of file <a class="el" href="base_8h_source.html">base.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a8960ca12b00a8a6c38428a07849ef88a_cgraph.svg" width="1491" height="1843"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a8960ca12b00a8a6c38428a07849ef88a_cgraph.svg" width="1944" height="1502"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a8960ca12b00a8a6c38428a07849ef88a_icgraph.svg" width="595" height="107"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_base_index_a8960ca12b00a8a6c38428a07849ef88a_icgraph.svg" width="739" height="107"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -818,7 +951,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 14 2019 14:06:33 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 19 2019 03:50:02 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

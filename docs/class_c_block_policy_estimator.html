@@ -262,7 +262,7 @@ Static Private Attributes</h2></td></tr>
 <p>Here is a brief description of the implementation: When a transaction enters the mempool, we track the height of the block chain at entry. All further calculations are conducted only on this set of "seen" transactions. Whenever a block comes in, we count the number of transactions in each bucket and the total amount of feerate paid in each bucket. Then we calculate how many blocks Y it took each transaction to be mined. We convert from a number of blocks to a number of periods Y' each encompassing "scale" blocks. This is tracked in 3 different data sets each up to a maximum number of periods. Within each data set we have an array of counters in each feerate bucket and we increment all the counters from Y' up to max periods representing that a tx was successfully confirmed in less than or equal to that many periods. We want to save a history of this information, so at any time we have a counter of the total number of transactions that happened in a given feerate bucket and the total number that were confirmed in each of the periods or less for any bucket. We save this history by keeping an exponentially decaying moving average of each one of these stats. This is done for a different decay in each of the 3 data sets to keep relevant data from different time horizons. Furthermore we also keep track of the number unmined (in mempool or left mempool without being included in a block) transactions in each bucket and for how many blocks they have been outstanding and use both of these numbers to increase the number of transactions we've seen in that feerate bucket when calculating an estimate for any number of confirmations below the number of blocks they've been outstanding.</p>
 <p>We want to be able to estimate feerates that are needed on tx's to be included in a certain number of blocks. Every time a block is added to the best chain, this class records stats on the transactions included in that block </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00136">136</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00132">132</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a622d29021f0eec6aefe9b028c7936c2d"></a>
 <div class="memitem">
@@ -279,7 +279,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Create new BlockPolicyEstimator and initialize stats tracking classes with default values. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00527">527</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00493">493</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 </div>
 </div>
@@ -296,7 +296,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00545">545</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00511">511</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 </div>
 </div>
@@ -324,7 +324,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Number of blocks of data recorded while fee estimates have been running. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00730">730</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00696">696</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -383,7 +383,7 @@ Here is the caller graph for this function:</div>
 <p>Return a fee estimate at the required successThreshold from the shortest time horizon which tracks confirmations up to the desired target.</p>
 <p>If checkShorterHorizon is requested, also allow short time horizon estimates for a lower target to reduce the given answer </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00758">758</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00724">724</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -429,7 +429,7 @@ Here is the caller graph for this function:</div>
 <p>Helper for estimateSmartFee. </p>
 <p>Ensure that for a conservative estimate, the DOUBLE_SUCCESS_PCT is also met at 2 * target for any longer time horizons. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00797">797</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00763">763</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -457,7 +457,7 @@ Here is the caller graph for this function:</div>
 <p>DEPRECATED. </p>
 <p>Return a feerate estimate </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00664">664</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00630">630</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -506,7 +506,7 @@ Here is the call graph for this function:</div>
 
 <p>Return a specific fee estimate calculation with a given success threshold and time horizon, and optionally return detailed data about calculation. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00673">673</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00639">639</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -560,7 +560,7 @@ Here is the caller graph for this function:</div>
 <p>Each calculation is performed at the shortest time horizon which tracks the required target. Conservative estimates, however, required the 95% threshold at 2 * target be met for any longer time horizons also. </p>
 <p>true is passed to estimateCombined fee for target/2 and target so that we check the max confirms for shorter time horizons as well. This is necessary to preserve monotonically increasing estimates. For non-conservative estimates we do the same thing for 2*target, but for conservative estimates we want to skip these shorter horizons checks for 2*target because we are taking the max over all time horizons so we already have monotonically increasing estimates and the purpose of conservative estimates is not to let short term fluctuations lower our estimates by too much.</p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00821">821</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00787">787</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -593,7 +593,7 @@ Here is the caller graph for this function:</div>
 
 <p>Empty mempool transactions on shutdown to record failure to confirm for txs still in mempool. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00985">985</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00951">951</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -843,7 +843,7 @@ Here is the caller graph for this function:</div>
 
 <p>Calculation of highest target that estimates are tracked for. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00711">711</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00677">677</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -877,7 +877,7 @@ Here is the caller graph for this function:</div>
 
 <p>Number of blocks of recorded fee estimate data represented in saved data file. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00738">738</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00704">704</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -911,7 +911,7 @@ Here is the caller graph for this function:</div>
 
 <p>Calculation of highest target that reasonable estimate can be provided for. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00748">748</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00714">714</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -955,12 +955,13 @@ Here is the caller graph for this function:</div>
 
 <p>Process all the transactions that have been included in a block. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00615">615</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00581">581</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_af4bf4d8e0b4e30410ff6c70b509f400b_cgraph.svg" width="875" height="438"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_af4bf4d8e0b4e30410ff6c70b509f400b_cgraph.svg" width="875" height="438"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1007,12 +1008,13 @@ Here is the caller graph for this function:</div>
 
 <p>Process a transaction confirmed in a block. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00588">588</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00554">554</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_acfe66c0e0e83a37bb6469be80a90fff0_cgraph.svg" width="664" height="307"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_acfe66c0e0e83a37bb6469be80a90fff0_cgraph.svg" width="664" height="307"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1051,12 +1053,13 @@ Here is the caller graph for this function:</div>
 
 <p>Process a transaction accepted to the mempool. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00549">549</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00515">515</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_af34606ec5f6af217e23b47b8c3b2e361_cgraph.svg" width="939" height="316"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_block_policy_estimator_af34606ec5f6af217e23b47b8c3b2e361_cgraph.svg" width="939" height="316"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1159,7 +1162,7 @@ Here is the caller graph for this function:</div>
 
 <p>Read estimation data from a file. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00925">925</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00891">891</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1203,7 +1206,7 @@ Here is the caller graph for this function:</div>
 
 <p>Remove a transaction from the mempool tracking stats. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00512">512</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00478">478</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1230,7 +1233,7 @@ Here is the caller graph for this function:</div>
 
 <p>Write estimation data to a file. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00900">900</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8cpp_source.html#l00866">866</a> of file <a class="el" href="policy_2fees_8cpp_source.html">fees.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1269,7 +1272,7 @@ Here is the caller graph for this function:</div>
 
 <p>Require greater than 95% of X feerate transactions to be confirmed within 2 * Y blocks. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00163">163</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00159">159</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
 
 </div>
 </div>
@@ -1293,7 +1296,7 @@ Here is the caller graph for this function:</div>
 
 <p>Spacing of FeeRate buckets We have to lump transactions into buckets based on feerate, but we want to be able to give accurate estimates over a large range of potential feerates Therefore it makes sense to exponentially space the buckets. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00185">185</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00181">181</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
 
 </div>
 </div>
@@ -1317,7 +1320,7 @@ Here is the caller graph for this function:</div>
 
 <p>Require greater than 60% of X feerate transactions to be confirmed within Y/2 blocks. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00159">159</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00155">155</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
 
 </div>
 </div>
@@ -1341,7 +1344,7 @@ Here is the caller graph for this function:</div>
 
 <p>Track confirm delays up to 1008 blocks for long horizon. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00146">146</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00142">142</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
 
 </div>
 </div>
@@ -1365,7 +1368,7 @@ Here is the caller graph for this function:</div>
 
 <p>Decay of .9995 is a half-life of 1008 blocks or about 1 week. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00156">156</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00152">152</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
 
 </div>
 </div>
@@ -1387,7 +1390,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00147">147</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00143">143</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
 
 </div>
 </div>
@@ -1409,7 +1412,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00231">231</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00227">227</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
 
 </div>
 </div>
@@ -1431,7 +1434,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00178">178</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00174">174</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
 
 </div>
 </div>
@@ -1455,7 +1458,7 @@ Here is the caller graph for this function:</div>
 
 <p>Track confirm delays up to 48 blocks for medium horizon. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00143">143</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00139">139</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
 
 </div>
 </div>
@@ -1479,7 +1482,7 @@ Here is the caller graph for this function:</div>
 
 <p>Decay of .998 is a half-life of 144 blocks or about 1 day. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00154">154</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00150">150</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
 
 </div>
 </div>
@@ -1501,7 +1504,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00144">144</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00140">140</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
 
 </div>
 </div>
@@ -1526,7 +1529,7 @@ Here is the caller graph for this function:</div>
 <p>Minimum and Maximum values for tracking feerates The MIN_BUCKET_FEERATE should just be set to the lowest reasonable feerate we might ever want to track. </p>
 <p>Historically this has been 1000 since it was inheriting DEFAULT_MIN_RELAY_TX_FEE and changing it is disruptive as it invalidates old estimates files. So leave it at 1000 unless it becomes necessary to lower it, and then lower it substantially. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00177">177</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00173">173</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
 
 </div>
 </div>
@@ -1550,7 +1553,7 @@ Here is the caller graph for this function:</div>
 
 <p>Historical estimates that are older than this aren't valid. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00149">149</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00145">145</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
 
 </div>
 </div>
@@ -1574,7 +1577,7 @@ Here is the caller graph for this function:</div>
 
 <p>Track confirm delays up to 12 blocks for short horizon. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00140">140</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00136">136</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
 
 </div>
 </div>
@@ -1598,7 +1601,7 @@ Here is the caller graph for this function:</div>
 
 <p>Decay of .962 is a half-life of 18 blocks or about 3 hours. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00152">152</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00148">148</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
 
 </div>
 </div>
@@ -1620,7 +1623,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00141">141</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00137">137</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
 
 </div>
 </div>
@@ -1644,7 +1647,7 @@ Here is the caller graph for this function:</div>
 
 <p>Require greater than 85% of X feerate transactions to be confirmed within Y blocks. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00161">161</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00157">157</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
 
 </div>
 </div>
@@ -1668,7 +1671,7 @@ Here is the caller graph for this function:</div>
 
 <p>Require an avg of 0.1 tx in the combined feerate bucket per block to have stat significance. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00166">166</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00162">162</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
 
 </div>
 </div>
@@ -1692,7 +1695,7 @@ Here is the caller graph for this function:</div>
 
 <p>Require an avg of 0.5 tx when using short decay since there are fewer blocks considered. </p>
 
-<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00168">168</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
+<p>Definition at line <a class="el" href="policy_2fees_8h_source.html#l00164">164</a> of file <a class="el" href="policy_2fees_8h_source.html">fees.h</a>.</p>
 
 </div>
 </div>
@@ -1703,7 +1706,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 14 2019 14:06:34 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 19 2019 03:50:03 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

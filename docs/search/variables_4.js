@@ -11,11 +11,14 @@ var searchData=
   ['datewidget',['dateWidget',['../class_transaction_view.html#acc54e9aee244fb3fa7fd94e9fe39076b',1,'TransactionView']]],
   ['db',['db',['../class_c_coins_view_d_b.html#a399b6f07efe5db2a22edef66e83930e6',1,'CCoinsViewDB']]],
   ['db_5fbest_5fblock',['DB_BEST_BLOCK',['../base_8cpp.html#aedeadcd9e3f6ccc2fe7b325bc2c52454',1,'DB_BEST_BLOCK():&#160;base.cpp'],['../txindex_8cpp.html#aedeadcd9e3f6ccc2fe7b325bc2c52454',1,'DB_BEST_BLOCK():&#160;txindex.cpp']]],
+  ['db_5fblock_5fhash',['DB_BLOCK_HASH',['../blockfilterindex_8cpp.html#a2371775598c5fb0684c8763c065dac6f',1,'blockfilterindex.cpp']]],
+  ['db_5fblock_5fheight',['DB_BLOCK_HEIGHT',['../blockfilterindex_8cpp.html#a6da1dbf014bf73165a22714efe10cfea',1,'blockfilterindex.cpp']]],
+  ['db_5ffilter_5fpos',['DB_FILTER_POS',['../blockfilterindex_8cpp.html#ae26412f2526b2b010d2622c4351327dc',1,'blockfilterindex.cpp']]],
   ['db_5ftxindex',['DB_TXINDEX',['../txindex_8cpp.html#a111bc5ae37e78d61c8bc8f59d6c8528f',1,'txindex.cpp']]],
   ['db_5ftxindex_5fblock',['DB_TXINDEX_BLOCK',['../txindex_8cpp.html#af7a91bc8f3f3f7f058d461ea17c5f6d7',1,'txindex.cpp']]],
   ['dbenv',['dbenv',['../class_berkeley_environment.html#aa56eeed071b9d7c907fb8e51fd4e256c',1,'BerkeleyEnvironment']]],
   ['debit',['debit',['../structinterfaces_1_1_wallet_tx.html#a5e3e1ee4c8894407bfcf77b565370a6f',1,'interfaces::WalletTx::debit()'],['../class_transaction_record.html#a536fdaa56c7f7fb789f064cc475d30c1',1,'TransactionRecord::debit()']]],
-  ['dec',['dec',['../class_a_e_s256_c_b_c_decrypt.html#a358d7ef8621950278b4bbff4b960870c',1,'AES256CBCDecrypt::dec()'],['../class_a_e_s128_c_b_c_decrypt.html#a98c7eacc9258ecd66baeba2fd5a5dc83',1,'AES128CBCDecrypt::dec()']]],
+  ['dec',['dec',['../class_a_e_s256_c_b_c_decrypt.html#a358d7ef8621950278b4bbff4b960870c',1,'AES256CBCDecrypt']]],
   ['decay',['decay',['../class_tx_confirm_stats.html#a61076f7531b27abbd85ec8bc7bc90ee2',1,'TxConfirmStats::decay()'],['../struct_estimation_result.html#a7d30253599a69e113a44b960e9feb99b',1,'EstimationResult::decay()']]],
   ['default_5faddress_5ftype',['DEFAULT_ADDRESS_TYPE',['../wallet_2wallet_8h.html#a1f4ba77d8a20991b0efeae4918840ff6',1,'wallet.h']]],
   ['default_5fchange_5ftype',['DEFAULT_CHANGE_TYPE',['../wallet_2wallet_8h.html#a8684d5e79542b8e51cb75c5ba22160f4',1,'wallet.h']]],
@@ -42,6 +45,7 @@ var searchData=
   ['direct',['direct',['../unionprevector_1_1direct__or__indirect.html#a9b38435eba3d32c30bdd8f8e743db55c',1,'prevector::direct_or_indirect']]],
   ['disconnected',['disconnected',['../class_tor_control_connection.html#a98d88047b6f1f841783439060051e384',1,'TorControlConnection']]],
   ['dminping',['dMinPing',['../class_c_node_stats.html#a6bfc3caa74e3e8621808969b178e9864',1,'CNodeStats']]],
+  ['done',['done',['../net__processing_8cpp.html#a1d39aac66e12dae50a24cd7a9100ef33',1,'net_processing.cpp']]],
   ['double_5fsuccess_5fpct',['DOUBLE_SUCCESS_PCT',['../class_c_block_policy_estimator.html#abc08a7dbdb542b1f3bf9ab7e489165a4',1,'CBlockPolicyEstimator']]],
   ['dpingtime',['dPingTime',['../class_c_node_stats.html#a535c198cbe3af112d4538f535e6618cd',1,'CNodeStats']]],
   ['dpingwait',['dPingWait',['../class_c_node_stats.html#a03a38f87940d04b321b9fb3102d0368d',1,'CNodeStats']]],
@@ -50,5 +54,5 @@ var searchData=
   ['dummy_5fmaximum_5fsignature_5fcreator',['DUMMY_MAXIMUM_SIGNATURE_CREATOR',['../sign_8cpp.html#aa46e7059be2d9fa3dc2f4675704e8218',1,'DUMMY_MAXIMUM_SIGNATURE_CREATOR():&#160;sign.cpp'],['../sign_8h.html#aa46e7059be2d9fa3dc2f4675704e8218',1,'DUMMY_MAXIMUM_SIGNATURE_CREATOR():&#160;sign.cpp']]],
   ['dummy_5fsignature_5fcreator',['DUMMY_SIGNATURE_CREATOR',['../sign_8cpp.html#adeb428a7d137dcfc2a1f29dd1a562ca8',1,'DUMMY_SIGNATURE_CREATOR():&#160;sign.cpp'],['../sign_8h.html#adeb428a7d137dcfc2a1f29dd1a562ca8',1,'DUMMY_SIGNATURE_CREATOR():&#160;sign.cpp']]],
   ['dummy_5fsigning_5fprovider',['DUMMY_SIGNING_PROVIDER',['../sign_8cpp.html#a129cc81972e09e3ba1c29777eb9d0ed0',1,'DUMMY_SIGNING_PROVIDER():&#160;sign.cpp'],['../sign_8h.html#a129cc81972e09e3ba1c29777eb9d0ed0',1,'DUMMY_SIGNING_PROVIDER():&#160;sign.cpp']]],
-  ['dustrelayfee',['dustRelayFee',['../policy_8cpp.html#ad66662a4eb8d932f748525ccd4c902cc',1,'dustRelayFee():&#160;policy.cpp'],['../policy_8h.html#ad66662a4eb8d932f748525ccd4c902cc',1,'dustRelayFee():&#160;policy.cpp']]]
+  ['dustrelayfee',['dustRelayFee',['../settings_8cpp.html#ad66662a4eb8d932f748525ccd4c902cc',1,'dustRelayFee():&#160;settings.cpp'],['../settings_8h.html#ad66662a4eb8d932f748525ccd4c902cc',1,'dustRelayFee():&#160;settings.cpp']]]
 ];

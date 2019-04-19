@@ -52,6 +52,8 @@ var searchData=
   ['blockencodings_2eh',['blockencodings.h',['../blockencodings_8h.html',1,'']]],
   ['blockfilter_2ecpp',['blockfilter.cpp',['../blockfilter_8cpp.html',1,'']]],
   ['blockfilter_2eh',['blockfilter.h',['../blockfilter_8h.html',1,'']]],
+  ['blockfilterindex_2ecpp',['blockfilterindex.cpp',['../blockfilterindex_8cpp.html',1,'']]],
+  ['blockfilterindex_2eh',['blockfilterindex.h',['../blockfilterindex_8h.html',1,'']]],
   ['bloom_2ecpp',['bloom.cpp',['../bloom_8cpp.html',1,'']]],
   ['bloom_2eh',['bloom.h',['../bloom_8h.html',1,'']]],
   ['byteswap_2eh',['byteswap.h',['../byteswap_8h.html',1,'']]],

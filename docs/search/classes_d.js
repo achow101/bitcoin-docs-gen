@@ -9,6 +9,7 @@ var searchData=
   ['nodeevictioncandidate',['NodeEvictionCandidate',['../struct_node_eviction_candidate.html',1,'']]],
   ['nodelessthan',['NodeLessThan',['../class_node_less_than.html',1,'']]],
   ['nontrivial_5ft',['nontrivial_t',['../structnontrivial__t.html',1,'']]],
+  ['notifications',['Notifications',['../classinterfaces_1_1_chain_1_1_notifications.html',1,'interfaces::Chain']]],
   ['notificator',['Notificator',['../class_notificator.html',1,'']]],
   ['nsbundle_28returncorrectidentifier_29',['NSBundle(returnCorrectIdentifier)',['../category_n_s_bundle_07return_correct_identifier_08.html',1,'']]]
 ];

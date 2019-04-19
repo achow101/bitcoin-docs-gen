@@ -1,14 +1,14 @@
 <map id="decodepsbt" name="decodepsbt">
 <area shape="rect" id="node2" href="$class_uni_value.html#a61ee4ef0fa78da6d936dddf408a51a13" title="UniValue::size" alt="" coords="410,816,521,843"/>
-<area shape="rect" id="node3" href="$server_8cpp.html#a26bafe3d526ee8cbc84b3c0b0dc3a43b" title="HelpExampleCli" alt="" coords="169,816,291,843"/>
-<area shape="rect" id="node4" href="$server_8cpp.html#a1d3e3ccc5d3ba3ee1314be41a2039e0f" title="Type&#45;check arguments; throws JSONRPCError if wrong type given. " alt="" coords="173,917,287,944"/>
+<area shape="rect" id="node3" href="$util_8cpp.html#a26bafe3d526ee8cbc84b3c0b0dc3a43b" title="HelpExampleCli" alt="" coords="169,816,291,843"/>
+<area shape="rect" id="node4" href="$util_8cpp.html#a1d3e3ccc5d3ba3ee1314be41a2039e0f" title="Type&#45;check arguments; throws JSONRPCError if wrong type given. " alt="" coords="173,917,287,944"/>
 <area shape="rect" id="node7" href="$rpc_2protocol_8cpp.html#a40b75d3d265c4a2e1d5fe3e129743884" title="JSONRPCError" alt="" coords="621,968,732,995"/>
 <area shape="rect" id="node8" href="$system_8h.html#a0605c886f88f190fa6a51ae07ca7558a" title="error" alt="" coords="821,537,874,564"/>
 <area shape="rect" id="node31" href="$class_uni_value.html#abab649c2dbd593233de6364254456026" title="UniValue::pushKV" alt="" coords="780,1221,915,1248"/>
-<area shape="rect" id="node32" href="$core__io_8h.html#a5d7c2f33c7c5aa9c8f0b6f9eb83f027b" title="Decode a base64ed PSBT into a PartiallySignedTransaction. " alt="" coords="154,1120,306,1147"/>
+<area shape="rect" id="node32" href="$psbt_8cpp.html#a17e0c0d158233f8a584b3c209399ac95" title="Decode a base64ed PSBT into a PartiallySignedTransaction. " alt="" coords="154,1120,306,1147"/>
 <area shape="rect" id="node35" href="$class_uni_value.html#a9f69bbd4ccf8d083934cbb510c039cef" title="UniValue::get_str" alt="" coords="165,1196,295,1223"/>
 <area shape="rect" id="node37" href="$core__io_8h.html#a96af8e1e5f4236f7e0a1a757c3fc8c4c" title="TxToUniv" alt="" coords="191,1297,269,1324"/>
-<area shape="rect" id="node40" href="$strencodings_8h.html#ace13a819ca4e98c22847d26b3b357e75" title="HexStr" alt="" coords="643,1576,710,1603"/>
+<area shape="rect" id="node40" href="$strencodings_8h.html#af003e10d5d34c3271ca57ec79059a5ae" title="HexStr" alt="" coords="643,1576,710,1603"/>
 <area shape="rect" id="node43" href="$class_uni_value.html#a944cd1b59b040cd24c9f46b55a68d49a" title="UniValue::push_back" alt="" coords="388,1525,543,1552"/>
 <area shape="rect" id="node44" href="$class_c_tx_out.html#aeaa6b16e0c4caee54196cf8eb0f127f3" title="CTxOut::IsNull" alt="" coords="175,1449,285,1476"/>
 <area shape="rect" id="node45" href="$core__io_8h.html#a513e384f1d458abddd1bf9be05125947" title="ValueFromAmount" alt="" coords="160,1500,300,1527"/>
@@ -18,7 +18,7 @@
 <area shape="rect" id="node49" href="$core__io_8h.html#a9236ffa581211a68db7f7447faa6c27c" title="Create the assembly string representation of a CScript object. " alt="" coords="170,1551,290,1577"/>
 <area shape="rect" id="node50" href="$struct_c_script_witness.html#a6b98b34341614c288d8632b895cdb252" title="CScriptWitness::IsNull" alt="" coords="151,1753,309,1780"/>
 <area shape="rect" id="node5" href="$class_uni_value.html#a70c4bfad8015106cc480042462f413c1" title="UniValue::isNull" alt="" coords="405,867,525,893"/>
-<area shape="rect" id="node6" href="$server_8cpp.html#a34ca526f05cc7f2281e634a5be48c121" title="Type&#45;check one argument; throws JSONRPCError if wrong type given. " alt="" coords="376,917,555,944"/>
+<area shape="rect" id="node6" href="$util_8cpp.html#a34ca526f05cc7f2281e634a5be48c121" title="Type&#45;check one argument; throws JSONRPCError if wrong type given. " alt="" coords="376,917,555,944"/>
 <area shape="rect" id="node24" href="$class_args_manager.html#a565c101a8d753ca2d71c7069a9d411c1" title="Return string argument or default value. " alt="" coords="1184,765,1344,792"/>
 <area shape="rect" id="node28" href="$system_8cpp.html#a162859252c5665f520a6d4bce967947c" title="Most paths passed as configuration arguments are treated as relative to the datadir if they are not a..." alt="" coords="1187,1019,1341,1045"/>
 <area shape="rect" id="node9" href="$namespacetinyformat.html#ad784060b98bfd4f1b3089fbb7686a676" title="Format list of arguments to the stream according to given format string. " alt="" coords="980,56,1119,83"/>
@@ -42,7 +42,7 @@
 <area shape="rect" id="node29" href="$system_8h.html#aa803aa631ab8b4bd79fa9d7b2172bf9a" title="runCommand" alt="" coords="994,867,1105,893"/>
 <area shape="rect" id="node30" href="$system_8h.html#a95a1d5584353ab05e85da8b0e8844c95" title="Most paths passed as configuration arguments are treated as relative to the datadir if they are not a..." alt="" coords="973,917,1126,944"/>
 <area shape="rect" id="node33" href="$strencodings_8cpp.html#a1dc96b8072a362bb90dbd432b0d775f9" title="DecodeBase64" alt="" coords="406,1120,525,1147"/>
-<area shape="rect" id="node34" href="$core__read_8cpp.html#a1529058f62b0f0ccf0e76c885f0552d8" title="Decode a raw (binary blob) PSBT into a PartiallySignedTransaction. " alt="" coords="401,1069,530,1096"/>
+<area shape="rect" id="node34" href="$psbt_8cpp.html#a1529058f62b0f0ccf0e76c885f0552d8" title="Decode a raw (binary blob) PSBT into a PartiallySignedTransaction. " alt="" coords="401,1069,530,1096"/>
 <area shape="rect" id="node36" href="$class_uni_value.html#ae8e17c2a90b668d0771a0523d70cd70d" title="UniValue::getValStr" alt="" coords="393,1171,538,1197"/>
 <area shape="rect" id="node38" href="$class_c_transaction.html#afb3b0e4dc81349259ba6526a34e88990" title="CTransaction::GetHash" alt="" coords="382,1323,549,1349"/>
 <area shape="rect" id="node39" href="$classbase__blob.html#a9541747b1f91f9469ac0aff90665bd32" title="base_blob::GetHex" alt="" coords="394,1475,537,1501"/>

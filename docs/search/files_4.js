@@ -13,6 +13,8 @@ var searchData=
   ['editaddressdialog_2ecpp',['editaddressdialog.cpp',['../editaddressdialog_8cpp.html',1,'']]],
   ['editaddressdialog_2eh',['editaddressdialog.h',['../editaddressdialog_8h.html',1,'']]],
   ['endian_2eh',['endian.h',['../endian_8h.html',1,'']]],
+  ['error_2ecpp',['error.cpp',['../error_8cpp.html',1,'']]],
+  ['error_2eh',['error.h',['../error_8h.html',1,'']]],
   ['events_2eh',['events.h',['../events_8h.html',1,'']]],
   ['examples_2ecpp',['examples.cpp',['../examples_8cpp.html',1,'']]]
 ];

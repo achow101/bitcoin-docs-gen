@@ -2,8 +2,9 @@ var searchData=
 [
   ['wallet_2ecpp',['wallet.cpp',['../interfaces_2wallet_8cpp.html',1,'']]],
   ['wallet_2ecpp',['wallet.cpp',['../wallet_2wallet_8cpp.html',1,'']]],
-  ['wallet_2eh',['wallet.h',['../wallet_2wallet_8h.html',1,'']]],
   ['wallet_2eh',['wallet.h',['../interfaces_2wallet_8h.html',1,'']]],
+  ['wallet_2eh',['wallet.h',['../wallet_2wallet_8h.html',1,'']]],
+  ['wallet_5fbalance_2ecpp',['wallet_balance.cpp',['../wallet__balance_8cpp.html',1,'']]],
   ['wallet_5fcrypto_5ftests_2ecpp',['wallet_crypto_tests.cpp',['../wallet__crypto__tests_8cpp.html',1,'']]],
   ['wallet_5ftest_5ffixture_2ecpp',['wallet_test_fixture.cpp',['../wallet__test__fixture_8cpp.html',1,'']]],
   ['wallet_5ftest_5ffixture_2eh',['wallet_test_fixture.h',['../wallet__test__fixture_8h.html',1,'']]],

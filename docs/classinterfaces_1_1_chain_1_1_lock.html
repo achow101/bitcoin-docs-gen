@@ -139,7 +139,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:acce7b2ac050252e9aa47025fff70cf0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return height of last block in the specified range which is pruned, or nullopt if no block in the range is pruned.  <a href="#acce7b2ac050252e9aa47025fff70cf0b">More...</a><br /></td></tr>
 <tr class="separator:acce7b2ac050252e9aa47025fff70cf0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fde9fb0229d2dda8247e2f3f525f2a0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="optional_8h.html#ad2d809b9d71f39717698ac42fe339257">Optional</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_1_1_lock.html#a0fde9fb0229d2dda8247e2f3f525f2a0">findFork</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;hash, <a class="el" href="optional_8h.html#ad2d809b9d71f39717698ac42fe339257">Optional</a>&lt; int &gt; *height)=0</td></tr>
-<tr class="memdesc:a0fde9fb0229d2dda8247e2f3f525f2a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return height of the highest block on the chain that is an ancestor of the specified block, or nullopt if no common ancestor is found.  <a href="#a0fde9fb0229d2dda8247e2f3f525f2a0">More...</a><br /></td></tr>
+<tr class="memdesc:a0fde9fb0229d2dda8247e2f3f525f2a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return height of the specified block if it is on the chain, otherwise return the height of the highest block on chain that's an ancestor of the specified block, or nullopt if there is no common ancestor.  <a href="#a0fde9fb0229d2dda8247e2f3f525f2a0">More...</a><br /></td></tr>
 <tr class="separator:a0fde9fb0229d2dda8247e2f3f525f2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a185abdb8e7c6dc96129b246d5760f984"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_1_1_lock.html#a185abdb8e7c6dc96129b246d5760f984">isPotentialTip</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;hash)=0</td></tr>
 <tr class="memdesc:a185abdb8e7c6dc96129b246d5760f984"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if block hash points to the current chain tip, or to a possible descendant of the current chain tip that isn't currently connected.  <a href="#a185abdb8e7c6dc96129b246d5760f984">More...</a><br /></td></tr>
@@ -148,7 +148,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad13de67a1e984f413e0b5f8ad9b993b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get locator for the current chain tip.  <a href="#ad13de67a1e984f413e0b5f8ad9b993b6">More...</a><br /></td></tr>
 <tr class="separator:ad13de67a1e984f413e0b5f8ad9b993b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae29af2aec694b4c5408ddc25a37b682a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="optional_8h.html#ad2d809b9d71f39717698ac42fe339257">Optional</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_1_1_lock.html#ae29af2aec694b4c5408ddc25a37b682a">findLocatorFork</a> (const <a class="el" href="struct_c_block_locator.html">CBlockLocator</a> &amp;locator)=0</td></tr>
-<tr class="memdesc:ae29af2aec694b4c5408ddc25a37b682a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return height of the latest block common to locator and chain, which is guaranteed to be an ancestor of the block used to create the locator.  <a href="#ae29af2aec694b4c5408ddc25a37b682a">More...</a><br /></td></tr>
+<tr class="memdesc:ae29af2aec694b4c5408ddc25a37b682a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return height of the highest block on chain in common with the locator, which will either be the original block used to create the locator, or one of its ancestors.  <a href="#ae29af2aec694b4c5408ddc25a37b682a">More...</a><br /></td></tr>
 <tr class="separator:ae29af2aec694b4c5408ddc25a37b682a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27bb48764b1292e32915a99d680787fd"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_1_1_lock.html#a27bb48764b1292e32915a99d680787fd">checkFinalTx</a> (const <a class="el" href="class_c_transaction.html">CTransaction</a> &amp;tx)=0</td></tr>
 <tr class="memdesc:a27bb48764b1292e32915a99d680787fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if transaction will be final given chain height current time.  <a href="#a27bb48764b1292e32915a99d680787fd">More...</a><br /></td></tr>
@@ -161,7 +161,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Interface for querying locked chain state, used by legacy code that assumes state won't change between calls. </p>
 <p>New code should avoid using the <a class="el" href="classinterfaces_1_1_chain_1_1_lock.html" title="Interface for querying locked chain state, used by legacy code that assumes state won&#39;t change betwee...">Lock</a> interface and instead call higher-level <a class="el" href="classinterfaces_1_1_chain.html" title="Interface giving clients (wallet processes, maybe other analysis tools in the future) ability to acce...">Chain</a> methods that return more information so the chain doesn't need to stay locked between calls. </p>
 
-<p>Definition at line <a class="el" href="interfaces_2chain_8h_source.html#l00061">61</a> of file <a class="el" href="interfaces_2chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="interfaces_2chain_8h_source.html#l00074">74</a> of file <a class="el" href="interfaces_2chain_8h_source.html">chain.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aba03076266625fffec4225131fae1746"></a>
 <div class="memitem">
@@ -184,12 +184,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="interfaces_2chain_8h_source.html#l00064">64</a> of file <a class="el" href="interfaces_2chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="interfaces_2chain_8h_source.html#l00077">77</a> of file <a class="el" href="interfaces_2chain_8h_source.html">chain.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_aba03076266625fffec4225131fae1746_cgraph.svg" width="415" height="2404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_aba03076266625fffec4225131fae1746_cgraph.svg" width="415" height="2862"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -223,7 +224,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_a27bb48764b1292e32915a99d680787fd_icgraph.svg" width="1382" height="475"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_a27bb48764b1292e32915a99d680787fd_icgraph.svg" width="1359" height="443"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -311,7 +313,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_a9945dc506e6606a46b987eccbe128b5b_icgraph.svg" width="1271" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_a9945dc506e6606a46b987eccbe128b5b_icgraph.svg" width="1271" height="164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -349,7 +352,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Return height of the highest block on the chain that is an ancestor of the specified block, or nullopt if no common ancestor is found. </p>
+<p>Return height of the specified block if it is on the chain, otherwise return the height of the highest block on chain that's an ancestor of the specified block, or nullopt if there is no common ancestor. </p>
 <p>Also return the height of the specified block as an optional output parameter (to avoid the cost of a second hash lookup in case this information is desired). </p>
 
 <p><div class="dynheader">
@@ -383,12 +386,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Return height of the latest block common to locator and chain, which is guaranteed to be an ancestor of the block used to create the locator. </p>
+<p>Return height of the highest block on chain in common with the locator, which will either be the original block used to create the locator, or one of its ancestors. </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_ae29af2aec694b4c5408ddc25a37b682a_icgraph.svg" width="1228" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_ae29af2aec694b4c5408ddc25a37b682a_icgraph.svg" width="1228" height="164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -466,7 +470,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_a151dbafe7a2b47de7749829909b4d72e_icgraph.svg" width="1494" height="763"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_a151dbafe7a2b47de7749829909b4d72e_icgraph.svg" width="1471" height="595"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -499,7 +504,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_abf8260c51bd24dee60ef69441a4c7061_icgraph.svg" width="1218" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_abf8260c51bd24dee60ef69441a4c7061_icgraph.svg" width="1218" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -600,7 +606,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_a70f3cae68f585292dbff5d94fb910c88_icgraph.svg" width="790" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_a70f3cae68f585292dbff5d94fb910c88_icgraph.svg" width="819" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -632,7 +639,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_acd6970b05caec9c0f257355413ab9c5d_icgraph.svg" width="1214" height="358"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_acd6970b05caec9c0f257355413ab9c5d_icgraph.svg" width="1214" height="358"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -664,7 +672,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_ad13de67a1e984f413e0b5f8ad9b993b6_icgraph.svg" width="1218" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_ad13de67a1e984f413e0b5f8ad9b993b6_icgraph.svg" width="1218" height="164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -698,7 +707,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_aaf0c0c0053b38e2b0d80e93bae1a6a8e_icgraph.svg" width="1240" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_aaf0c0c0053b38e2b0d80e93bae1a6a8e_icgraph.svg" width="1240" height="164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -781,7 +791,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_a8731903b56020a42b51a863d4e1d39c5_icgraph.svg" width="1195" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_1_1_lock_a8731903b56020a42b51a863d4e1d39c5_icgraph.svg" width="1195" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -793,7 +804,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 14 2019 14:06:39 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 19 2019 03:50:10 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

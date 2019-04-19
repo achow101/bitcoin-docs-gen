@@ -108,18 +108,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for util.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h__incl.svg" width="3023" height="635"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h__incl.svg" width="3186" height="560"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h__dep__incl.svg" width="1820" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h__dep__incl.svg" width="2008" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="rpc_2util_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_uni_value_type.html">UniValueType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for <a class="el" href="class_uni_value.html#a2f9803e567ede73e88302b01e394cc63">UniValue::VType</a>, which includes typeAny: Used to denote don't care type.  <a href="struct_uni_value_type.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_p_c_arg.html">RPCArg</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_p_c_result.html">RPCResult</a></td></tr>
@@ -133,6 +138,29 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a6671e87353f4ee4fbcc82275d75bb96a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpc_2util_8h.html#a6671e87353f4ee4fbcc82275d75bb96a">RPCTypeCheck</a> (const <a class="el" href="class_uni_value.html">UniValue</a> &amp;params, const std::list&lt; <a class="el" href="struct_uni_value_type.html">UniValueType</a> &gt; &amp;typesExpected, bool fAllowNull=false)</td></tr>
+<tr class="memdesc:a6671e87353f4ee4fbcc82275d75bb96a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type-check arguments; throws JSONRPCError if wrong type given.  <a href="#a6671e87353f4ee4fbcc82275d75bb96a">More...</a><br /></td></tr>
+<tr class="separator:a6671e87353f4ee4fbcc82275d75bb96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34ca526f05cc7f2281e634a5be48c121"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpc_2util_8h.html#a34ca526f05cc7f2281e634a5be48c121">RPCTypeCheckArgument</a> (const <a class="el" href="class_uni_value.html">UniValue</a> &amp;value, const <a class="el" href="struct_uni_value_type.html">UniValueType</a> &amp;typeExpected)</td></tr>
+<tr class="memdesc:a34ca526f05cc7f2281e634a5be48c121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type-check one argument; throws JSONRPCError if wrong type given.  <a href="#a34ca526f05cc7f2281e634a5be48c121">More...</a><br /></td></tr>
+<tr class="separator:a34ca526f05cc7f2281e634a5be48c121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6e621702aaefd12b164609463e81150"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpc_2util_8h.html#ab6e621702aaefd12b164609463e81150">RPCTypeCheckObj</a> (const <a class="el" href="class_uni_value.html">UniValue</a> &amp;o, const std::map&lt; std::string, <a class="el" href="struct_uni_value_type.html">UniValueType</a> &gt; &amp;typesExpected, bool fAllowNull=false, bool fStrict=false)</td></tr>
+<tr class="separator:ab6e621702aaefd12b164609463e81150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb231eaeb57d26011655ee8aaa5315e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classuint256.html">uint256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpc_2util_8h.html#adb231eaeb57d26011655ee8aaa5315e2">ParseHashV</a> (const <a class="el" href="class_uni_value.html">UniValue</a> &amp;v, std::string strName)</td></tr>
+<tr class="memdesc:adb231eaeb57d26011655ee8aaa5315e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utilities: convert hex-encoded Values (throws error if not hex).  <a href="#adb231eaeb57d26011655ee8aaa5315e2">More...</a><br /></td></tr>
+<tr class="separator:adb231eaeb57d26011655ee8aaa5315e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4549aceb751d2ed900b3235d5342815"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classuint256.html">uint256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpc_2util_8h.html#ad4549aceb751d2ed900b3235d5342815">ParseHashO</a> (const <a class="el" href="class_uni_value.html">UniValue</a> &amp;o, std::string strKey)</td></tr>
+<tr class="separator:ad4549aceb751d2ed900b3235d5342815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a250d292e8ce3793abe154667a8297d08"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpc_2util_8h.html#a250d292e8ce3793abe154667a8297d08">ParseHexV</a> (const <a class="el" href="class_uni_value.html">UniValue</a> &amp;v, std::string strName)</td></tr>
+<tr class="separator:a250d292e8ce3793abe154667a8297d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada8166ce740029507c6f29ab8b025eab"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpc_2util_8h.html#ada8166ce740029507c6f29ab8b025eab">ParseHexO</a> (const <a class="el" href="class_uni_value.html">UniValue</a> &amp;o, std::string strKey)</td></tr>
+<tr class="separator:ada8166ce740029507c6f29ab8b025eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abee2131e97f3e3d0ab3bdc47916e29f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpc_2util_8h.html#abee2131e97f3e3d0ab3bdc47916e29f4">AmountFromValue</a> (const <a class="el" href="class_uni_value.html">UniValue</a> &amp;value)</td></tr>
+<tr class="separator:abee2131e97f3e3d0ab3bdc47916e29f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26bafe3d526ee8cbc84b3c0b0dc3a43b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpc_2util_8h.html#a26bafe3d526ee8cbc84b3c0b0dc3a43b">HelpExampleCli</a> (const std::string &amp;methodname, const std::string &amp;args)</td></tr>
+<tr class="separator:a26bafe3d526ee8cbc84b3c0b0dc3a43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ef4f8fb114508ceb861a0e8c3e0d26e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpc_2util_8h.html#a9ef4f8fb114508ceb861a0e8c3e0d26e">HelpExampleRpc</a> (const std::string &amp;methodname, const std::string &amp;args)</td></tr>
+<tr class="separator:a9ef4f8fb114508ceb861a0e8c3e0d26e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac18ea86a874bf7841b716eca2b467746"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_pub_key.html">CPubKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpc_2util_8h.html#ac18ea86a874bf7841b716eca2b467746">HexToPubKey</a> (const std::string &amp;hex_in)</td></tr>
 <tr class="separator:ac18ea86a874bf7841b716eca2b467746"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad97eb14e556166df34392ec8eb8d3167"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_pub_key.html">CPubKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpc_2util_8h.html#ad97eb14e556166df34392ec8eb8d3167">AddrToPubKey</a> (<a class="el" href="class_c_key_store.html">CKeyStore</a> *const keystore, const std::string &amp;addr_in)</td></tr>
@@ -144,9 +172,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae928fea7d8ddf182a6ccc24e2156b065"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpc_2util_8h.html#ae928fea7d8ddf182a6ccc24e2156b065">ParseConfirmTarget</a> (const <a class="el" href="class_uni_value.html">UniValue</a> &amp;value, unsigned int max_target)</td></tr>
 <tr class="memdesc:ae928fea7d8ddf182a6ccc24e2156b065"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a confirm target option and raise an RPC error if it is invalid.  <a href="#ae928fea7d8ddf182a6ccc24e2156b065">More...</a><br /></td></tr>
 <tr class="separator:ae928fea7d8ddf182a6ccc24e2156b065"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b52c6b4c3f6caac8fca8c341e007b48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rpc_2protocol_8h.html#af867221d51315471f28ed8cdac85dead">RPCErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpc_2util_8h.html#a7b52c6b4c3f6caac8fca8c341e007b48">RPCErrorFromTransactionError</a> (<a class="el" href="node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867ac">TransactionError</a> terr)</td></tr>
+<tr class="memitem:a7b52c6b4c3f6caac8fca8c341e007b48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rpc_2protocol_8h.html#af867221d51315471f28ed8cdac85dead">RPCErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpc_2util_8h.html#a7b52c6b4c3f6caac8fca8c341e007b48">RPCErrorFromTransactionError</a> (<a class="el" href="error_8h.html#a857c3bfc8da2a43cebacd0582cc867ac">TransactionError</a> terr)</td></tr>
 <tr class="separator:a7b52c6b4c3f6caac8fca8c341e007b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e7fc899379e99b7283ad1c441f2da6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_uni_value.html">UniValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpc_2util_8h.html#a3e7fc899379e99b7283ad1c441f2da6d">JSONRPCTransactionError</a> (<a class="el" href="node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867ac">TransactionError</a> terr, const std::string &amp;err_string=&quot;&quot;)</td></tr>
+<tr class="memitem:a3e7fc899379e99b7283ad1c441f2da6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_uni_value.html">UniValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpc_2util_8h.html#a3e7fc899379e99b7283ad1c441f2da6d">JSONRPCTransactionError</a> (<a class="el" href="error_8h.html#a857c3bfc8da2a43cebacd0582cc867ac">TransactionError</a> terr, const std::string &amp;err_string=&quot;&quot;)</td></tr>
 <tr class="separator:a3e7fc899379e99b7283ad1c441f2da6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33cafa17fa50fc9f7b872f8ad2809dfa"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int64_t, int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpc_2util_8h.html#a33cafa17fa50fc9f7b872f8ad2809dfa">ParseRange</a> (const <a class="el" href="class_uni_value.html">UniValue</a> &amp;value)</td></tr>
 <tr class="memdesc:a33cafa17fa50fc9f7b872f8ad2809dfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a JSON range specified as int64, or [int64, int64].  <a href="#a33cafa17fa50fc9f7b872f8ad2809dfa">More...</a><br /></td></tr>
@@ -183,7 +211,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00027">27</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00131">131</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -196,6 +224,40 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_ad97eb14e556166df34392ec8eb8d3167_icgraph.svg" width="846" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abee2131e97f3e3d0ab3bdc47916e29f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> AmountFromValue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_uni_value.html">UniValue</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00067">67</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_abee2131e97f3e3d0ab3bdc47916e29f4_cgraph.svg" width="1883" height="1304"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_abee2131e97f3e3d0ab3bdc47916e29f4_icgraph.svg" width="875" height="544"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -225,7 +287,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00048">48</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00152">152</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -257,7 +319,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00126">126</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00230">230</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -269,7 +331,80 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_af91efe7877ce4e77064e04d13888ae4f_icgraph.svg" width="396" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_af91efe7877ce4e77064e04d13888ae4f_icgraph.svg" width="396" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a26bafe3d526ee8cbc84b3c0b0dc3a43b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string HelpExampleCli </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>methodname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00106">106</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_a26bafe3d526ee8cbc84b3c0b0dc3a43b_icgraph.svg" width="894" height="2219"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ef4f8fb114508ceb861a0e8c3e0d26e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string HelpExampleRpc </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>methodname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00111">111</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_a9ef4f8fb114508ceb861a0e8c3e0d26e_icgraph.svg" width="1898" height="1544"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -289,7 +424,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00014">14</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00118">118</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -314,7 +449,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname"><a class="el" href="class_uni_value.html">UniValue</a> JSONRPCTransactionError </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867ac">TransactionError</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="error_8h.html#a857c3bfc8da2a43cebacd0582cc867ac">TransactionError</a>&#160;</td>
           <td class="paramname"><em>terr</em>, </td>
         </tr>
         <tr>
@@ -331,19 +466,21 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00159">159</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00263">263</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_a3e7fc899379e99b7283ad1c441f2da6d_cgraph.svg" width="1994" height="1302"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_a3e7fc899379e99b7283ad1c441f2da6d_cgraph.svg" width="1994" height="1302"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_a3e7fc899379e99b7283ad1c441f2da6d_icgraph.svg" width="603" height="158"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_a3e7fc899379e99b7283ad1c441f2da6d_icgraph.svg" width="596" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -375,7 +512,7 @@ Here is the caller graph for this function:</div>
 
 <p>Parse a confirm target option and raise an RPC error if it is invalid. </p>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00131">131</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00235">235</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -388,6 +525,184 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_ae928fea7d8ddf182a6ccc24e2156b065_icgraph.svg" width="900" height="424"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad4549aceb751d2ed900b3235d5342815"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classuint256.html">uint256</a> ParseHashO </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_uni_value.html">UniValue</a> &amp;&#160;</td>
+          <td class="paramname"><em>o</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>strKey</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00088">88</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_ad4549aceb751d2ed900b3235d5342815_cgraph.svg" width="1950" height="1406"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_ad4549aceb751d2ed900b3235d5342815_icgraph.svg" width="784" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="adb231eaeb57d26011655ee8aaa5315e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classuint256.html">uint256</a> ParseHashV </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_uni_value.html">UniValue</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>strName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Utilities: convert hex-encoded Values (throws error if not hex). </p>
+
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00079">79</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_adb231eaeb57d26011655ee8aaa5315e2_cgraph.svg" width="1802" height="1406"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_adb231eaeb57d26011655ee8aaa5315e2_icgraph.svg" width="1047" height="622"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ada8166ce740029507c6f29ab8b025eab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;unsigned char&gt; ParseHexO </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_uni_value.html">UniValue</a> &amp;&#160;</td>
+          <td class="paramname"><em>o</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>strKey</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00101">101</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_ada8166ce740029507c6f29ab8b025eab_cgraph.svg" width="1694" height="1470"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_ada8166ce740029507c6f29ab8b025eab_icgraph.svg" width="743" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a250d292e8ce3793abe154667a8297d08"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;unsigned char&gt; ParseHexV </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_uni_value.html">UniValue</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>strName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00092">92</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_a250d292e8ce3793abe154667a8297d08_cgraph.svg" width="1588" height="1470"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_a250d292e8ce3793abe154667a8297d08_icgraph.svg" width="967" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -409,7 +724,7 @@ Here is the caller graph for this function:</div>
 
 <p>Parse a JSON range specified as int64, or [int64, int64]. </p>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00532">532</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00657">657</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -434,19 +749,175 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname"><a class="el" href="rpc_2protocol_8h.html#af867221d51315471f28ed8cdac85dead">RPCErrorCode</a> RPCErrorFromTransactionError </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867ac">TransactionError</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="error_8h.html#a857c3bfc8da2a43cebacd0582cc867ac">TransactionError</a>&#160;</td>
           <td class="paramname"><em>terr</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00140">140</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00244">244</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_a7b52c6b4c3f6caac8fca8c341e007b48_icgraph.svg" width="864" height="158"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_a7b52c6b4c3f6caac8fca8c341e007b48_icgraph.svg" width="858" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6671e87353f4ee4fbcc82275d75bb96a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPCTypeCheck </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_uni_value.html">UniValue</a> &amp;&#160;</td>
+          <td class="paramname"><em>params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::list&lt; <a class="el" href="struct_uni_value_type.html">UniValueType</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>typesExpected</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fAllowNull</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type-check arguments; throws JSONRPCError if wrong type given. </p>
+<p>Does not check that the right number of arguments are passed, just that any passed are the correct type. </p>
+
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00013">13</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_a6671e87353f4ee4fbcc82275d75bb96a_cgraph.svg" width="2054" height="1190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_a6671e87353f4ee4fbcc82275d75bb96a_icgraph.svg" width="630" height="864"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a34ca526f05cc7f2281e634a5be48c121"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPCTypeCheckArgument </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_uni_value.html">UniValue</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_uni_value_type.html">UniValueType</a> &amp;&#160;</td>
+          <td class="paramname"><em>typeExpected</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type-check one argument; throws JSONRPCError if wrong type given. </p>
+
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00030">30</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_a34ca526f05cc7f2281e634a5be48c121_cgraph.svg" width="1891" height="1190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_a34ca526f05cc7f2281e634a5be48c121_icgraph.svg" width="860" height="891"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab6e621702aaefd12b164609463e81150"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPCTypeCheckObj </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_uni_value.html">UniValue</a> &amp;&#160;</td>
+          <td class="paramname"><em>o</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::map&lt; std::string, <a class="el" href="struct_uni_value_type.html">UniValueType</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>typesExpected</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fAllowNull</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fStrict</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00037">37</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_ab6e621702aaefd12b164609463e81150_cgraph.svg" width="1868" height="1304"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="rpc_2util_8h_ab6e621702aaefd12b164609463e81150_icgraph.svg" width="787" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -473,7 +944,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 14 2019 14:06:29 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 19 2019 03:49:57 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

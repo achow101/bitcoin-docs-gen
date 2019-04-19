@@ -165,6 +165,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a770e60b2fcbc0b8adaaeb54f18eb9c8a inherit pro_methods_class_base_index"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_index.html#a770e60b2fcbc0b8adaaeb54f18eb9c8a">ChainStateFlushed</a> (const <a class="el" href="struct_c_block_locator.html">CBlockLocator</a> &amp;locator) override</td></tr>
 <tr class="memdesc:a770e60b2fcbc0b8adaaeb54f18eb9c8a inherit pro_methods_class_base_index"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies listeners of the new active block chain on-disk.  <a href="#a770e60b2fcbc0b8adaaeb54f18eb9c8a">More...</a><br /></td></tr>
 <tr class="separator:a770e60b2fcbc0b8adaaeb54f18eb9c8a inherit pro_methods_class_base_index"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec6caefe1e5a3ac16ac4b6bf882efa4 inherit pro_methods_class_base_index"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_index.html#a3ec6caefe1e5a3ac16ac4b6bf882efa4">CommitInternal</a> (<a class="el" href="class_c_d_b_batch.html">CDBBatch</a> &amp;batch)</td></tr>
+<tr class="memdesc:a3ec6caefe1e5a3ac16ac4b6bf882efa4 inherit pro_methods_class_base_index"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method called internally by Commit that can be overridden to atomically commit more index state.  <a href="#a3ec6caefe1e5a3ac16ac4b6bf882efa4">More...</a><br /></td></tr>
+<tr class="separator:a3ec6caefe1e5a3ac16ac4b6bf882efa4 inherit pro_methods_class_base_index"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac13f802a2cb0e6254253606448c9bce2 inherit pro_methods_class_base_index"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_index.html#ac13f802a2cb0e6254253606448c9bce2">Rewind</a> (const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *current_tip, const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *new_tip)</td></tr>
+<tr class="memdesc:ac13f802a2cb0e6254253606448c9bce2 inherit pro_methods_class_base_index"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rewind index to an earlier chain tip during a chain reorg.  <a href="#ac13f802a2cb0e6254253606448c9bce2">More...</a><br /></td></tr>
+<tr class="separator:ac13f802a2cb0e6254253606448c9bce2 inherit pro_methods_class_base_index"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_c_validation_interface"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_c_validation_interface')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_c_validation_interface.html">CValidationInterface</a></td></tr>
 <tr class="memitem:aff4c65cb3c2d1d803a14756a0445238f inherit pro_methods_class_c_validation_interface"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_validation_interface.html#aff4c65cb3c2d1d803a14756a0445238f">~CValidationInterface</a> ()=default</td></tr>
 <tr class="memdesc:aff4c65cb3c2d1d803a14756a0445238f inherit pro_methods_class_c_validation_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protected destructor so that instances can only be deleted by derived classes.  <a href="#aff4c65cb3c2d1d803a14756a0445238f">More...</a><br /></td></tr>
@@ -181,9 +187,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a914de3420613e1a2281180f856dca88e inherit pro_methods_class_c_validation_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_validation_interface.html#a914de3420613e1a2281180f856dca88e">BlockDisconnected</a> (const std::shared_ptr&lt; const <a class="el" href="class_c_block.html">CBlock</a> &gt; &amp;block)</td></tr>
 <tr class="memdesc:a914de3420613e1a2281180f856dca88e inherit pro_methods_class_c_validation_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies listeners of a block being disconnected.  <a href="#a914de3420613e1a2281180f856dca88e">More...</a><br /></td></tr>
 <tr class="separator:a914de3420613e1a2281180f856dca88e inherit pro_methods_class_c_validation_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3473492a52200fb5678c0db596a5093a inherit pro_methods_class_c_validation_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_validation_interface.html#a3473492a52200fb5678c0db596a5093a">ResendWalletTransactions</a> (int64_t nBestBlockTime, <a class="el" href="class_c_connman.html">CConnman</a> *connman)</td></tr>
-<tr class="memdesc:a3473492a52200fb5678c0db596a5093a inherit pro_methods_class_c_validation_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells listeners to broadcast their data.  <a href="#a3473492a52200fb5678c0db596a5093a">More...</a><br /></td></tr>
-<tr class="separator:a3473492a52200fb5678c0db596a5093a inherit pro_methods_class_c_validation_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb34ef6814685cabc29062ed7be25441 inherit pro_methods_class_c_validation_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_validation_interface.html#aeb34ef6814685cabc29062ed7be25441">BlockChecked</a> (const <a class="el" href="class_c_block.html">CBlock</a> &amp;, const <a class="el" href="class_c_validation_state.html">CValidationState</a> &amp;)</td></tr>
 <tr class="memdesc:aeb34ef6814685cabc29062ed7be25441 inherit pro_methods_class_c_validation_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies listeners of a block validation result.  <a href="#aeb34ef6814685cabc29062ed7be25441">More...</a><br /></td></tr>
 <tr class="separator:aeb34ef6814685cabc29062ed7be25441 inherit pro_methods_class_c_validation_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -444,7 +447,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_tx_index_a2ebe57b9a6d64ab90a9c6f8390649b48_cgraph.svg" width="1442" height="1691"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_tx_index_a2ebe57b9a6d64ab90a9c6f8390649b48_cgraph.svg" width="1412" height="1943"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -527,7 +531,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 14 2019 14:06:38 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 19 2019 03:50:09 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

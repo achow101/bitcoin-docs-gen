@@ -123,10 +123,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7cd81d496a780ca8c75fefc7939b46c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e4d9bcaa9443eabfb19cc94c0eb13f1"><td class="memItemLeft" align="right" valign="top">uint64_t nRecvBytes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a0e4d9bcaa9443eabfb19cc94c0eb13f1">GUARDED_BY</a> (<a class="el" href="class_c_node.html#a0fd361cd13fd9815c5eae1ae38333e53">cs_vRecv</a>)</td></tr>
 <tr class="separator:a0e4d9bcaa9443eabfb19cc94c0eb13f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee4cb324e3b681020d61675cef385a4d"><td class="memItemLeft" align="right" valign="top">std::string strSubVer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#aee4cb324e3b681020d61675cef385a4d">GUARDED_BY</a> (<a class="el" href="class_c_node.html#acf48a43182292a6636c9de3ea7453d72">cs_SubVer</a>)</td></tr>
-<tr class="separator:aee4cb324e3b681020d61675cef385a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7c4364e67e51c7a5d6a5f2c998c2bb2"><td class="memItemLeft" align="right" valign="top">std::string strSubVer cleanSubVer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#ac7c4364e67e51c7a5d6a5f2c998c2bb2">GUARDED_BY</a> (<a class="el" href="class_c_node.html#acf48a43182292a6636c9de3ea7453d72">cs_SubVer</a>)</td></tr>
-<tr class="separator:ac7c4364e67e51c7a5d6a5f2c998c2bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac4cac09b7ce518449682addb2936b13"><td class="memItemLeft" align="right" valign="top">std::string cleanSubVer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#aac4cac09b7ce518449682addb2936b13">GUARDED_BY</a> (<a class="el" href="class_c_node.html#a4488b977b462aa906d6e813bb7a70ff3">cs_SubVer</a>)</td></tr>
+<tr class="memdesc:aac4cac09b7ce518449682addb2936b13"><td class="mdescLeft">&#160;</td><td class="mdescRight">cleanSubVer is a sanitized string of the user agent byte array we read from the wire.  <a href="#aac4cac09b7ce518449682addb2936b13">More...</a><br /></td></tr>
+<tr class="separator:aac4cac09b7ce518449682addb2936b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa6be0807567a0584a07474f886c895e"><td class="memItemLeft" align="right" valign="top">bool <a class="el" href="net_8h.html#a7935254c613d6f3cdadd3ce45f7efbff">fRelayTxes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#aaa6be0807567a0584a07474f886c895e">GUARDED_BY</a> (<a class="el" href="class_c_node.html#a66aeed3b6534635d031dff3eee9538de">cs_filter</a>)</td></tr>
 <tr class="separator:aaa6be0807567a0584a07474f886c895e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac66e33bdda237bb7bd8b652e4ea0da67"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_c_bloom_filter.html">CBloomFilter</a> &gt; pfilter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#ac66e33bdda237bb7bd8b652e4ea0da67">PT_GUARDED_BY</a> (<a class="el" href="class_c_node.html#a66aeed3b6534635d031dff3eee9538de">cs_filter</a>)</td></tr>
@@ -240,8 +239,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a03b99f0d8bf0f44cdfd2cc6e639fb979"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a2cdd01cb730536adf1780c3df66430"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a0a2cdd01cb730536adf1780c3df66430">nVersion</a> {0}</td></tr>
 <tr class="separator:a0a2cdd01cb730536adf1780c3df66430"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf48a43182292a6636c9de3ea7453d72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#acf48a43182292a6636c9de3ea7453d72">cs_SubVer</a></td></tr>
-<tr class="separator:acf48a43182292a6636c9de3ea7453d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4488b977b462aa906d6e813bb7a70ff3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#a5d71768bc9626b7482055d56d4e2c533">RecursiveMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a4488b977b462aa906d6e813bb7a70ff3">cs_SubVer</a></td></tr>
+<tr class="separator:a4488b977b462aa906d6e813bb7a70ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a086a4057ccf740bfb33e6bc220e5008e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a086a4057ccf740bfb33e6bc220e5008e">m_prefer_evict</a> {false}</td></tr>
 <tr class="separator:a086a4057ccf740bfb33e6bc220e5008e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3096c14b54aa39a02edb63a4a734c3e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#ad3096c14b54aa39a02edb63a4a734c3e">fWhitelisted</a> {false}</td></tr>
@@ -316,6 +315,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a9cc211f7e1830a19c4b89641ac706894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a860fddcda79b956e395274c7fda050bb"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#a860fddcda79b956e395274c7fda050bb">nextSendTimeFeeFilter</a> {0}</td></tr>
 <tr class="separator:a860fddcda79b956e395274c7fda050bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa2bef684dff0fa5241f01822638af99"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="classuint256.html">uint256</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_node.html#afa2bef684dff0fa5241f01822638af99">orphan_work_set</a></td></tr>
+<tr class="separator:afa2bef684dff0fa5241f01822638af99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -440,7 +441,8 @@ Friends</h2></td></tr>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_af07af443423c30483ab064f00ad6ecba_cgraph.svg" width="1366" height="531"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_af07af443423c30483ab064f00ad6ecba_cgraph.svg" width="1366" height="531"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -459,7 +461,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8cpp_source.html#l02646">2646</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net_8cpp_source.html#l02645">2645</a> of file <a class="el" href="net_8cpp_source.html">net.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -517,7 +519,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00812">812</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00814">814</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -529,7 +531,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a923c9640a28f97cf9c23a21ae8e13c97_icgraph.svg" width="396" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a923c9640a28f97cf9c23a21ae8e13c97_icgraph.svg" width="303" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -557,12 +560,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00832">832</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00834">834</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_ac3054eb6ade84e8968f032ce3e700f6a_icgraph.svg" width="404" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_ac3054eb6ade84e8968f032ce3e700f6a_icgraph.svg" width="311" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -589,7 +593,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00799">799</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00801">801</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -643,7 +647,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_aaa77188d9df85b80e3f8a30292acf6a9_cgraph.svg" width="1572" height="571"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_aaa77188d9df85b80e3f8a30292acf6a9_cgraph.svg" width="1572" height="571"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -667,7 +672,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a127d2454d06f8a3e794d0654d21abb50_icgraph.svg" width="766" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a127d2454d06f8a3e794d0654d21abb50_icgraph.svg" width="734" height="96"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -718,12 +724,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00764">764</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00766">766</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_ac0f1a22fa938e84138536308e2001340_icgraph.svg" width="1127" height="770"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_ac0f1a22fa938e84138536308e2001340_icgraph.svg" width="1127" height="814"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -750,7 +757,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00768">768</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00770">770</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -775,7 +782,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00862">862</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00864">864</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -787,7 +794,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a2ad278c6405e1570be395f60ce6ea593_icgraph.svg" width="583" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a2ad278c6405e1570be395f60ce6ea593_icgraph.svg" width="583" height="163"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -814,7 +822,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00772">772</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00774">774</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -839,7 +847,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00788">788</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00790">790</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -871,7 +879,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00776">776</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00778">778</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -900,7 +908,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a1845fe236cb4bd5f024cd70c2fe14690_icgraph.svg" width="576" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a1845fe236cb4bd5f024cd70c2fe14690_icgraph.svg" width="576" height="199"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1013,35 +1022,32 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="aee4cb324e3b681020d61675cef385a4d"></a>
+<a class="anchor" id="aac4cac09b7ce518449682addb2936b13"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string strSubVer CNode::GUARDED_BY </td>
+          <td class="memname">std::string cleanSubVer CNode::GUARDED_BY </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_c_node.html#acf48a43182292a6636c9de3ea7453d72">cs_SubVer</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_c_node.html#a4488b977b462aa906d6e813bb7a70ff3">cs_SubVer</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="ac7c4364e67e51c7a5d6a5f2c998c2bb2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string strSubVer cleanSubVer CNode::GUARDED_BY </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_c_node.html#acf48a43182292a6636c9de3ea7453d72">cs_SubVer</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>cleanSubVer is a sanitized string of the user agent byte array we read from the wire. </p>
+<p>This cleaned string can safely be logged or displayed. </p>
+
+<p>Definition at line <a class="el" href="net_8h_source.html#l00658">658</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1401,7 +1407,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00817">817</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00819">819</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1413,7 +1419,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a1f39037c55bed93b832bcbef00597ca5_icgraph.svg" width="556" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a1f39037c55bed93b832bcbef00597ca5_icgraph.svg" width="524" height="96"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1441,7 +1448,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00852">852</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00854">854</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1467,12 +1474,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00840">840</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00842">842</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a7cef2333aa8776127a7e7fcab659eb6a_icgraph.svg" width="718" height="170"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a7cef2333aa8776127a7e7fcab659eb6a_icgraph.svg" width="380" height="222"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1540,7 +1548,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00805">805</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00807">807</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1565,14 +1573,16 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a331888bc15bb49775451d951735e4b6a_cgraph.svg" width="1752" height="1428"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a331888bc15bb49775451d951735e4b6a_cgraph.svg" width="1752" height="1428"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a331888bc15bb49775451d951735e4b6a_icgraph.svg" width="364" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a331888bc15bb49775451d951735e4b6a_icgraph.svg" width="271" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1600,12 +1610,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00784">784</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00786">786</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a94438c6285d1635c62ccff10593780e6_icgraph.svg" width="376" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a94438c6285d1635c62ccff10593780e6_icgraph.svg" width="283" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1637,7 +1648,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a0a55cea2748b1837610b2caed8069a90_icgraph.svg" width="380" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_c_node_a0a55cea2748b1837610b2caed8069a90_icgraph.svg" width="287" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1727,7 +1739,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00761">761</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00763">763</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1749,7 +1761,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00756">756</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00758">758</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1831,17 +1843,17 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="acf48a43182292a6636c9de3ea7453d72"></a>
+<a class="anchor" id="a4488b977b462aa906d6e813bb7a70ff3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a> CNode::cs_SubVer</td>
+          <td class="memname"><a class="el" href="sync_8h.html#a5d71768bc9626b7482055d56d4e2c533">RecursiveMutex</a> CNode::cs_SubVer</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00658">658</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00653">653</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2101,7 +2113,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00748">748</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00750">750</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2285,7 +2297,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00749">749</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00751">751</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2307,7 +2319,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00751">751</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00753">753</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2343,7 +2355,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00752">752</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00754">754</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2491,7 +2503,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00753">753</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00755">755</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2562,6 +2574,20 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="net_8h_source.html#l00652">652</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afa2bef684dff0fa5241f01822638af99"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;<a class="el" href="classuint256.html">uint256</a>&gt; CNode::orphan_work_set</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="net_8h_source.html#l00742">742</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2653,7 +2679,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00754">754</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00756">756</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -2664,7 +2690,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 14 2019 14:06:35 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 19 2019 03:50:05 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

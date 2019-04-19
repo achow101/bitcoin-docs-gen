@@ -28,6 +28,8 @@ var searchData=
   ['serialize_2eh',['serialize.h',['../serialize_8h.html',1,'']]],
   ['server_2ecpp',['server.cpp',['../server_8cpp.html',1,'']]],
   ['server_2eh',['server.h',['../server_8h.html',1,'']]],
+  ['settings_2ecpp',['settings.cpp',['../settings_8cpp.html',1,'']]],
+  ['settings_2eh',['settings.h',['../settings_8h.html',1,'']]],
   ['sha1_2ecpp',['sha1.cpp',['../sha1_8cpp.html',1,'']]],
   ['sha1_2eh',['sha1.h',['../sha1_8h.html',1,'']]],
   ['sha256_2ecpp',['sha256.cpp',['../sha256_8cpp.html',1,'']]],

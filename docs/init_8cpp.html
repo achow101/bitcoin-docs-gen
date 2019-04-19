@@ -102,6 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="addrman_8h_source.html">addrman.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="amount_8h_source.html">amount.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="banman_8h_source.html">banman.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="blockfilter_8h_source.html">blockfilter.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="chain_8h_source.html">chain.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="chainparams_8h_source.html">chainparams.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="checkpoints_8h_source.html">checkpoints.h</a>&gt;</code><br />
@@ -110,6 +111,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="fs_8h_source.html">fs.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="httpserver_8h_source.html">httpserver.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="httprpc_8h_source.html">httprpc.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="blockfilterindex_8h_source.html">index/blockfilterindex.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="interfaces_2chain_8h_source.html">interfaces/chain.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="txindex_8h_source.html">index/txindex.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="key_8h_source.html">key.h</a>&gt;</code><br />
@@ -121,6 +123,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="feerate_8h_source.html">policy/feerate.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="policy_2fees_8h_source.html">policy/fees.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="policy_8h_source.html">policy/policy.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="settings_8h_source.html">policy/settings.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="server_8h_source.html">rpc/server.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="register_8h_source.html">rpc/register.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="blockchain_8h_source.html">rpc/blockchain.h</a>&gt;</code><br />
@@ -136,6 +139,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="ui__interface_8h_source.html">ui_interface.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="system_8h_source.html">util/system.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="moneystr_8h_source.html">util/moneystr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="util_2validation_8h_source.html">util/validation.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="validationinterface_8h_source.html">validationinterface.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="warnings_8h_source.html">warnings.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="walletinitinterface_8h_source.html">walletinitinterface.h</a>&gt;</code><br />
@@ -223,7 +227,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00092">92</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l00096">96</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>
@@ -245,7 +249,7 @@ Variables</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>This can be done before daemonization. Do not call <a class="el" href="init_8h.html#aadf7f77f5efa149dc63b413e86cc63f3">Shutdown()</a> if this function fails. </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>Parameters should be parsed and config file should be read. </dd></dl>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00905">905</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l00904">904</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -273,7 +277,7 @@ Here is the call graph for this function:</div>
 <dl class="section note"><dt>Note</dt><dd>This should only be done after daemonization. Do not call <a class="el" href="init_8h.html#aadf7f77f5efa149dc63b413e86cc63f3">Shutdown()</a> if this function fails. </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>Parameters should be parsed and config file should be read, AppInitSanityChecks should have been called. </dd></dl>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l01211">1211</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l01242">1242</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>
@@ -295,7 +299,7 @@ Here is the call graph for this function:</div>
 <dl class="section note"><dt>Note</dt><dd>This should only be done after daemonization. Call <a class="el" href="init_8h.html#aadf7f77f5efa149dc63b413e86cc63f3">Shutdown()</a> if this function fails. </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>Parameters should be parsed and config file should be read, AppInitLockDataDirectory should have been called. </dd></dl>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l01223">1223</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l01254">1254</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>
@@ -316,12 +320,13 @@ Here is the call graph for this function:</div>
 <dl class="section note"><dt>Note</dt><dd>This can be done before daemonization. Do not call <a class="el" href="init_8h.html#aadf7f77f5efa149dc63b413e86cc63f3">Shutdown()</a> if this function fails. </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>Parameters should be parsed and config file should be read, AppInitBasicSetup should have been called. </dd></dl>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00946">946</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l00945">945</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="init_8cpp_a8c93f3a0ec8f251966c4de603f33e56a_cgraph.svg" width="1406" height="1867"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="init_8cpp_a8c93f3a0ec8f251966c4de603f33e56a_cgraph.svg" width="1424" height="2136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -344,7 +349,7 @@ Here is the call graph for this function:</div>
 <dl class="section note"><dt>Note</dt><dd>This can be done before daemonization. Do not call <a class="el" href="init_8h.html#aadf7f77f5efa149dc63b413e86cc63f3">Shutdown()</a> if this function fails. </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>Parameters should be parsed and config file should be read, AppInitParameterInteraction should have been called. </dd></dl>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l01190">1190</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l01221">1221</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -372,7 +377,7 @@ Here is the call graph for this function:</div>
 <p>Initialize the logging infrastructure.</p>
 <p>Note that this is called very early in the process lifetime, so you should be careful about what global state you rely on here. </p>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00857">857</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l00855">855</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -398,12 +403,13 @@ Here is the call graph for this function:</div>
 
 <p>Parameter interaction: change current parameters depending on various rules. </p>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00770">770</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l00781">781</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="init_8cpp_a430da8b19402c5a5ca72eb039cf794d7_cgraph.svg" width="1426" height="430"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="init_8cpp_a430da8b19402c5a5ca72eb039cf794d7_cgraph.svg" width="1380" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -424,12 +430,13 @@ Here is the call graph for this function:</div>
 
 <p>Interrupt threads. </p>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00179">179</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l00183">183</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="init_8cpp_ac1c30a63fcff78de5e4924f7ee2b822e_cgraph.svg" width="492" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="init_8cpp_ac1c30a63fcff78de5e4924f7ee2b822e_cgraph.svg" width="512" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -457,7 +464,7 @@ Here is the caller graph for this function:</div>
 
 <p>Returns licensing information (for -version) </p>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00553">553</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l00564">564</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -490,12 +497,13 @@ Here is the caller graph for this function:</div>
 
 <p>Setup the arguments for gArgs. </p>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00355">355</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l00362">362</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="init_8cpp_ad94849be44418b435cba219289d3220b_cgraph.svg" width="2443" height="614"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="init_8cpp_ad94849be44418b435cba219289d3220b_cgraph.svg" width="2094" height="680"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -516,12 +524,13 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Note: <a class="el" href="init_8cpp.html#aadf7f77f5efa149dc63b413e86cc63f3">Shutdown()</a> must be able to handle cases in which initialization failed part of the way, for example if the data directory was found to be locked. Be sure that anything that writes files or flushes caches only does this if the respective module was initialized. </p>
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00194">194</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l00199">199</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="init_8cpp_aadf7f77f5efa149dc63b413e86cc63f3_cgraph.svg" width="1126" height="1776"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="init_8cpp_aadf7f77f5efa149dc63b413e86cc63f3_cgraph.svg" width="1131" height="1782"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -538,7 +547,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00074">74</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l00078">78</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>
@@ -552,7 +561,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00084">84</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l00088">88</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>
@@ -566,7 +575,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00082">82</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l00086">86</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>
@@ -580,14 +589,14 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="init_8cpp_source.html#l00083">83</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="init_8cpp_source.html#l00087">87</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 14 2019 14:06:28 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 19 2019 03:49:53 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

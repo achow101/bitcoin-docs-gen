@@ -108,20 +108,21 @@ Inheritance diagram for WalletTestingSetup:</div>
 <div class="dynheader">
 Collaboration diagram for WalletTestingSetup:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_wallet_testing_setup__coll__graph.svg" width="1467" height="454"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_wallet_testing_setup__coll__graph.svg" width="1455" height="468"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0125ada997b4b16803624bfd537d8902"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_wallet_testing_setup.html#a0125ada997b4b16803624bfd537d8902">WalletTestingSetup</a> (const std::string &amp;chainName=<a class="el" href="class_c_base_chain_params.html#ae2c5dfdbbff4d5f92948258a7b4db47b">CBaseChainParams::MAIN</a>)</td></tr>
 <tr class="separator:a0125ada997b4b16803624bfd537d8902"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33e783ffa83796a3611f0b0d9796e0ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_wallet_testing_setup.html#a33e783ffa83796a3611f0b0d9796e0ad">~WalletTestingSetup</a> ()</td></tr>
-<tr class="separator:a33e783ffa83796a3611f0b0d9796e0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a68d738d6b2d222741e2b707863a6693c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classinterfaces_1_1_chain.html">interfaces::Chain</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_wallet_testing_setup.html#a68d738d6b2d222741e2b707863a6693c">m_chain</a> = <a class="el" href="namespaceinterfaces.html#a402cd23e3f69061eb649f4ba764aa997">interfaces::MakeChain</a>()</td></tr>
 <tr class="separator:a68d738d6b2d222741e2b707863a6693c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad248191c8135cf4b2295a6866460bbeb"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classinterfaces_1_1_chain_client.html">interfaces::ChainClient</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_wallet_testing_setup.html#ad248191c8135cf4b2295a6866460bbeb">m_chain_client</a> = <a class="el" href="namespaceinterfaces.html#a14e7017f789ef0e6fdc172e39ed335a4">interfaces::MakeWalletClient</a>(*<a class="el" href="struct_wallet_testing_setup.html#a68d738d6b2d222741e2b707863a6693c">m_chain</a>, {})</td></tr>
+<tr class="separator:ad248191c8135cf4b2295a6866460bbeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15510c00e3369c3493696df87fcdb93d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_wallet.html">CWallet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_wallet_testing_setup.html#a15510c00e3369c3493696df87fcdb93d">m_wallet</a></td></tr>
 <tr class="separator:a15510c00e3369c3493696df87fcdb93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -157,31 +158,8 @@ Public Attributes</h2></td></tr>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_wallet_testing_setup_a0125ada997b4b16803624bfd537d8902_cgraph.svg" width="1452" height="1539"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_wallet_testing_setup_a0125ada997b4b16803624bfd537d8902_cgraph.svg" width="1635" height="1134"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a33e783ffa83796a3611f0b0d9796e0ad"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">WalletTestingSetup::~WalletTestingSetup </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="wallet__test__fixture_8cpp_source.html#l00021">21</a> of file <a class="el" href="wallet__test__fixture_8cpp_source.html">wallet_test_fixture.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_wallet_testing_setup_a33e783ffa83796a3611f0b0d9796e0ad_cgraph.svg" width="426" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -194,6 +172,20 @@ Here is the call graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">std::unique_ptr&lt;<a class="el" href="classinterfaces_1_1_chain.html">interfaces::Chain</a>&gt; WalletTestingSetup::m_chain = <a class="el" href="namespaceinterfaces.html#a402cd23e3f69061eb649f4ba764aa997">interfaces::MakeChain</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="wallet__test__fixture_8h_source.html#l00021">21</a> of file <a class="el" href="wallet__test__fixture_8h_source.html">wallet_test_fixture.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad248191c8135cf4b2295a6866460bbeb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classinterfaces_1_1_chain_client.html">interfaces::ChainClient</a>&gt; WalletTestingSetup::m_chain_client = <a class="el" href="namespaceinterfaces.html#a14e7017f789ef0e6fdc172e39ed335a4">interfaces::MakeWalletClient</a>(*<a class="el" href="struct_wallet_testing_setup.html#a68d738d6b2d222741e2b707863a6693c">m_chain</a>, {})</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -223,7 +215,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 14 2019 14:06:39 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 19 2019 03:50:10 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

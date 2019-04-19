@@ -95,21 +95,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">psbt.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="psbt_8h_source.html">psbt.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="coins_8h_source.html">coins.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="tx__verify_8h_source.html">consensus/tx_verify.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="policy_8h_source.html">policy/policy.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="psbt_8h_source.html">psbt.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="strencodings_8h_source.html">util/strencodings.h</a>&gt;</code><br />
+<code>#include &lt;numeric&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for psbt.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp__incl.svg" width="2600" height="724"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp__incl.svg" width="2915" height="635"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="psbt_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1a237c1813186bd75fd7c3c92aedc2ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="psbt_8cpp.html#a1a237c1813186bd75fd7c3c92aedc2ed">PSBTInputSigned</a> (<a class="el" href="struct_p_s_b_t_input.html">PSBTInput</a> &amp;input)</td></tr>
-<tr class="memdesc:a1a237c1813186bd75fd7c3c92aedc2ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a <a class="el" href="struct_p_s_b_t_input.html" title="A structure for PSBTs which contain per-input information. ">PSBTInput</a> is already signed.  <a href="#a1a237c1813186bd75fd7c3c92aedc2ed">More...</a><br /></td></tr>
-<tr class="separator:a1a237c1813186bd75fd7c3c92aedc2ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb45b4ff9d80ea5612fdfa22afb76fda"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="psbt_8cpp.html#adb45b4ff9d80ea5612fdfa22afb76fda">PSBTInputSigned</a> (const <a class="el" href="struct_p_s_b_t_input.html">PSBTInput</a> &amp;input)</td></tr>
+<tr class="memdesc:adb45b4ff9d80ea5612fdfa22afb76fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a <a class="el" href="struct_p_s_b_t_input.html" title="A structure for PSBTs which contain per-input information. ">PSBTInput</a> is already signed.  <a href="#adb45b4ff9d80ea5612fdfa22afb76fda">More...</a><br /></td></tr>
+<tr class="separator:adb45b4ff9d80ea5612fdfa22afb76fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96344560c713d0d723a507927096f447"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="psbt_8cpp.html#a96344560c713d0d723a507927096f447">SignPSBTInput</a> (const <a class="el" href="class_signing_provider.html">SigningProvider</a> &amp;provider, <a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;psbt, int index, int sighash, <a class="el" href="struct_signature_data.html">SignatureData</a> *out_sigdata, bool use_dummy)</td></tr>
 <tr class="memdesc:a96344560c713d0d723a507927096f447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signs a <a class="el" href="struct_p_s_b_t_input.html" title="A structure for PSBTs which contain per-input information. ">PSBTInput</a>, verifying that all provided data matches what is being signed.  <a href="#a96344560c713d0d723a507927096f447">More...</a><br /></td></tr>
 <tr class="separator:a96344560c713d0d723a507927096f447"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,9 +124,17 @@ Functions</h2></td></tr>
 <tr class="memitem:aab3ec9bcf6f951016a077dcfcbb3da0a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="psbt_8cpp.html#aab3ec9bcf6f951016a077dcfcbb3da0a">FinalizeAndExtractPSBT</a> (<a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;psbtx, <a class="el" href="struct_c_mutable_transaction.html">CMutableTransaction</a> &amp;result)</td></tr>
 <tr class="memdesc:aab3ec9bcf6f951016a077dcfcbb3da0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalizes a PSBT if possible, and extracts it to a <a class="el" href="struct_c_mutable_transaction.html" title="A mutable version of CTransaction. ">CMutableTransaction</a> if it could be finalized.  <a href="#aab3ec9bcf6f951016a077dcfcbb3da0a">More...</a><br /></td></tr>
 <tr class="separator:aab3ec9bcf6f951016a077dcfcbb3da0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3e2bd7bab6f207db3fc3b099b695c32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867ac">TransactionError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="psbt_8cpp.html#ae3e2bd7bab6f207db3fc3b099b695c32">CombinePSBTs</a> (<a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;out, const std::vector&lt; <a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &gt; &amp;psbtxs)</td></tr>
+<tr class="memitem:ae3e2bd7bab6f207db3fc3b099b695c32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="error_8h.html#a857c3bfc8da2a43cebacd0582cc867ac">TransactionError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="psbt_8cpp.html#ae3e2bd7bab6f207db3fc3b099b695c32">CombinePSBTs</a> (<a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;out, const std::vector&lt; <a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &gt; &amp;psbtxs)</td></tr>
 <tr class="memdesc:ae3e2bd7bab6f207db3fc3b099b695c32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Combines PSBTs with the same underlying transaction, resulting in a single PSBT with all partial signatures from each input.  <a href="#ae3e2bd7bab6f207db3fc3b099b695c32">More...</a><br /></td></tr>
 <tr class="separator:ae3e2bd7bab6f207db3fc3b099b695c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a970aef1eb908d625f38a7f26d3096a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="psbt_8cpp.html#a3a970aef1eb908d625f38a7f26d3096a">PSBTRoleName</a> (<a class="el" href="psbt_8h.html#a60377f9d3fc1342a56ec0fdcab343d72">PSBTRole</a> role)</td></tr>
+<tr class="separator:a3a970aef1eb908d625f38a7f26d3096a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17e0c0d158233f8a584b3c209399ac95"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="psbt_8cpp.html#a17e0c0d158233f8a584b3c209399ac95">DecodeBase64PSBT</a> (<a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;psbt, const std::string &amp;base64_tx, std::string &amp;<a class="el" href="system_8h.html#a0605c886f88f190fa6a51ae07ca7558a">error</a>)</td></tr>
+<tr class="memdesc:a17e0c0d158233f8a584b3c209399ac95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode a base64ed PSBT into a <a class="el" href="struct_partially_signed_transaction.html" title="A version of CTransaction with the PSBT format. ">PartiallySignedTransaction</a>.  <a href="#a17e0c0d158233f8a584b3c209399ac95">More...</a><br /></td></tr>
+<tr class="separator:a17e0c0d158233f8a584b3c209399ac95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1529058f62b0f0ccf0e76c885f0552d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="psbt_8cpp.html#a1529058f62b0f0ccf0e76c885f0552d8">DecodeRawPSBT</a> (<a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;psbt, const std::string &amp;tx_data, std::string &amp;<a class="el" href="system_8h.html#a0605c886f88f190fa6a51ae07ca7558a">error</a>)</td></tr>
+<tr class="memdesc:a1529058f62b0f0ccf0e76c885f0552d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode a raw (binary blob) PSBT into a <a class="el" href="struct_partially_signed_transaction.html" title="A version of CTransaction with the PSBT format. ">PartiallySignedTransaction</a>.  <a href="#a1529058f62b0f0ccf0e76c885f0552d8">More...</a><br /></td></tr>
+<tr class="separator:a1529058f62b0f0ccf0e76c885f0552d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ae3e2bd7bab6f207db3fc3b099b695c32"></a>
@@ -129,7 +142,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867ac">TransactionError</a> CombinePSBTs </td>
+          <td class="memname"><a class="el" href="error_8h.html#a857c3bfc8da2a43cebacd0582cc867ac">TransactionError</a> CombinePSBTs </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;&#160;</td>
           <td class="paramname"><em>out</em>, </td>
@@ -158,7 +171,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>error (OK if we successfully combined the transactions, other error if they were not compatible) </dd></dl>
 
-<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00312">312</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
+<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00317">317</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -170,7 +183,104 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_ae3e2bd7bab6f207db3fc3b099b695c32_icgraph.svg" width="518" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_ae3e2bd7bab6f207db3fc3b099b695c32_icgraph.svg" width="428" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a17e0c0d158233f8a584b3c209399ac95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DecodeBase64PSBT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;&#160;</td>
+          <td class="paramname"><em>psbt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>base64_tx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decode a base64ed PSBT into a <a class="el" href="struct_partially_signed_transaction.html" title="A version of CTransaction with the PSBT format. ">PartiallySignedTransaction</a>. </p>
+
+<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00343">343</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_a17e0c0d158233f8a584b3c209399ac95_cgraph.svg" width="340" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_a17e0c0d158233f8a584b3c209399ac95_icgraph.svg" width="566" height="342"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1529058f62b0f0ccf0e76c885f0552d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DecodeRawPSBT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_partially_signed_transaction.html">PartiallySignedTransaction</a> &amp;&#160;</td>
+          <td class="paramname"><em>psbt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>tx_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decode a raw (binary blob) PSBT into a <a class="el" href="struct_partially_signed_transaction.html" title="A version of CTransaction with the PSBT format. ">PartiallySignedTransaction</a>. </p>
+
+<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00354">354</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_a1529058f62b0f0ccf0e76c885f0552d8_icgraph.svg" width="743" height="342"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -210,19 +320,21 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if we successfully extracted the transaction, false otherwise </dd></dl>
 
-<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00296">296</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
+<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00301">301</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_aab3ec9bcf6f951016a077dcfcbb3da0a_cgraph.svg" width="2331" height="1474"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_aab3ec9bcf6f951016a077dcfcbb3da0a_cgraph.svg" width="2331" height="1474"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_aab3ec9bcf6f951016a077dcfcbb3da0a_icgraph.svg" width="571" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_aab3ec9bcf6f951016a077dcfcbb3da0a_icgraph.svg" width="471" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -250,32 +362,34 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00282">282</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
+<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00287">287</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_ae928e40974eb627033adb546395ae535_cgraph.svg" width="2123" height="1655"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_ae928e40974eb627033adb546395ae535_cgraph.svg" width="2123" height="1655"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_ae928e40974eb627033adb546395ae535_icgraph.svg" width="720" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_ae928e40974eb627033adb546395ae535_icgraph.svg" width="620" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a1a237c1813186bd75fd7c3c92aedc2ed"></a>
+<a class="anchor" id="adb45b4ff9d80ea5612fdfa22afb76fda"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">bool PSBTInputSigned </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_p_s_b_t_input.html">PSBTInput</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_p_s_b_t_input.html">PSBTInput</a> &amp;&#160;</td>
           <td class="paramname"><em>input</em></td><td>)</td>
           <td></td>
         </tr>
@@ -284,19 +398,47 @@ Here is the caller graph for this function:</div>
 
 <p>Checks whether a <a class="el" href="struct_p_s_b_t_input.html" title="A structure for PSBTs which contain per-input information. ">PSBTInput</a> is already signed. </p>
 
-<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00208">208</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
+<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00213">213</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_a1a237c1813186bd75fd7c3c92aedc2ed_cgraph.svg" width="704" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_adb45b4ff9d80ea5612fdfa22afb76fda_cgraph.svg" width="704" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_a1a237c1813186bd75fd7c3c92aedc2ed_icgraph.svg" width="1082" height="368"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_adb45b4ff9d80ea5612fdfa22afb76fda_icgraph.svg" width="1062" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a970aef1eb908d625f38a7f26d3096a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string PSBTRoleName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="psbt_8h.html#a60377f9d3fc1342a56ec0fdcab343d72">PSBTRole</a>&#160;</td>
+          <td class="paramname"><em>role</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00334">334</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_a3a970aef1eb908d625f38a7f26d3096a_icgraph.svg" width="278" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -352,19 +494,21 @@ Here is the caller graph for this function:</div>
 
 <p>Signs a <a class="el" href="struct_p_s_b_t_input.html" title="A structure for PSBTs which contain per-input information. ">PSBTInput</a>, verifying that all provided data matches what is being signed. </p>
 
-<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00213">213</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
+<p>Definition at line <a class="el" href="psbt_8cpp_source.html#l00218">218</a> of file <a class="el" href="psbt_8cpp_source.html">psbt.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_a96344560c713d0d723a507927096f447_cgraph.svg" width="1974" height="1530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_a96344560c713d0d723a507927096f447_cgraph.svg" width="1974" height="1530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_a96344560c713d0d723a507927096f447_icgraph.svg" width="903" height="319"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="psbt_8cpp_a96344560c713d0d723a507927096f447_icgraph.svg" width="879" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -373,7 +517,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 14 2019 14:06:29 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 19 2019 03:49:54 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

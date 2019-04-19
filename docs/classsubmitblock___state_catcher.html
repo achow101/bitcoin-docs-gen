@@ -148,9 +148,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a406070080c92a1aa3f6ed8f9b4295df7 inherit pro_methods_class_c_validation_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_validation_interface.html#a406070080c92a1aa3f6ed8f9b4295df7">ChainStateFlushed</a> (const <a class="el" href="struct_c_block_locator.html">CBlockLocator</a> &amp;locator)</td></tr>
 <tr class="memdesc:a406070080c92a1aa3f6ed8f9b4295df7 inherit pro_methods_class_c_validation_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies listeners of the new active block chain on-disk.  <a href="#a406070080c92a1aa3f6ed8f9b4295df7">More...</a><br /></td></tr>
 <tr class="separator:a406070080c92a1aa3f6ed8f9b4295df7 inherit pro_methods_class_c_validation_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3473492a52200fb5678c0db596a5093a inherit pro_methods_class_c_validation_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_validation_interface.html#a3473492a52200fb5678c0db596a5093a">ResendWalletTransactions</a> (int64_t nBestBlockTime, <a class="el" href="class_c_connman.html">CConnman</a> *connman)</td></tr>
-<tr class="memdesc:a3473492a52200fb5678c0db596a5093a inherit pro_methods_class_c_validation_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells listeners to broadcast their data.  <a href="#a3473492a52200fb5678c0db596a5093a">More...</a><br /></td></tr>
-<tr class="separator:a3473492a52200fb5678c0db596a5093a inherit pro_methods_class_c_validation_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07bcbde7de90f5cfbc76f185465d4281 inherit pro_methods_class_c_validation_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_validation_interface.html#a07bcbde7de90f5cfbc76f185465d4281">NewPoWValidBlock</a> (const <a class="el" href="class_c_block_index.html">CBlockIndex</a> *pindex, const std::shared_ptr&lt; const <a class="el" href="class_c_block.html">CBlock</a> &gt; &amp;block)</td></tr>
 <tr class="memdesc:a07bcbde7de90f5cfbc76f185465d4281 inherit pro_methods_class_c_validation_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies listeners that a block which builds directly on our current tip has been received and connected to the headers tree, though not validated yet.  <a href="#a07bcbde7de90f5cfbc76f185465d4281">More...</a><br /></td></tr>
 <tr class="separator:a07bcbde7de90f5cfbc76f185465d4281 inherit pro_methods_class_c_validation_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,7 +160,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="mining_8cpp_source.html#l00682">682</a> of file <a class="el" href="mining_8cpp_source.html">mining.cpp</a>.</p>
+<p>Definition at line <a class="el" href="mining_8cpp_source.html#l00678">678</a> of file <a class="el" href="mining_8cpp_source.html">mining.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4751e652aed4193935ed00e95cfca548"></a>
 <div class="memitem">
@@ -187,7 +184,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mining_8cpp_source.html#l00689">689</a> of file <a class="el" href="mining_8cpp_source.html">mining.cpp</a>.</p>
+<p>Definition at line <a class="el" href="mining_8cpp_source.html#l00685">685</a> of file <a class="el" href="mining_8cpp_source.html">mining.cpp</a>.</p>
 
 </div>
 </div>
@@ -229,12 +226,13 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_c_validation_interface.html#aeb34ef6814685cabc29062ed7be25441">CValidationInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="mining_8cpp_source.html#l00692">692</a> of file <a class="el" href="mining_8cpp_source.html">mining.cpp</a>.</p>
+<p>Definition at line <a class="el" href="mining_8cpp_source.html#l00688">688</a> of file <a class="el" href="mining_8cpp_source.html">mining.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classsubmitblock___state_catcher_a89abec4d0d8ea6b2cd651439e3a4f45f_cgraph.svg" width="1178" height="1910"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classsubmitblock___state_catcher_a89abec4d0d8ea6b2cd651439e3a4f45f_cgraph.svg" width="1178" height="1935"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -251,7 +249,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mining_8cpp_source.html#l00686">686</a> of file <a class="el" href="mining_8cpp_source.html">mining.cpp</a>.</p>
+<p>Definition at line <a class="el" href="mining_8cpp_source.html#l00682">682</a> of file <a class="el" href="mining_8cpp_source.html">mining.cpp</a>.</p>
 
 </div>
 </div>
@@ -265,7 +263,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mining_8cpp_source.html#l00685">685</a> of file <a class="el" href="mining_8cpp_source.html">mining.cpp</a>.</p>
+<p>Definition at line <a class="el" href="mining_8cpp_source.html#l00681">681</a> of file <a class="el" href="mining_8cpp_source.html">mining.cpp</a>.</p>
 
 </div>
 </div>
@@ -279,7 +277,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mining_8cpp_source.html#l00687">687</a> of file <a class="el" href="mining_8cpp_source.html">mining.cpp</a>.</p>
+<p>Definition at line <a class="el" href="mining_8cpp_source.html#l00683">683</a> of file <a class="el" href="mining_8cpp_source.html">mining.cpp</a>.</p>
 
 </div>
 </div>
@@ -289,7 +287,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 14 2019 14:06:38 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 19 2019 03:50:08 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

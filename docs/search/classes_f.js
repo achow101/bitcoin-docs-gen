@@ -22,6 +22,8 @@ var searchData=
   ['proxycredentials',['ProxyCredentials',['../struct_proxy_credentials.html',1,'']]],
   ['proxysetting',['ProxySetting',['../struct_proxy_setting.html',1,'']]],
   ['proxytype',['proxyType',['../classproxy_type.html',1,'']]],
+  ['psbtanalysis',['PSBTAnalysis',['../struct_p_s_b_t_analysis.html',1,'']]],
   ['psbtinput',['PSBTInput',['../struct_p_s_b_t_input.html',1,'']]],
+  ['psbtinputanalysis',['PSBTInputAnalysis',['../struct_p_s_b_t_input_analysis.html',1,'']]],
   ['psbtoutput',['PSBTOutput',['../struct_p_s_b_t_output.html',1,'']]]
 ];

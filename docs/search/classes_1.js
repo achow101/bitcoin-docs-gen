@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['balance',['Balance',['../struct_c_wallet_1_1_balance.html',1,'CWallet']]],
   ['banman',['BanMan',['../class_ban_man.html',1,'']]],
   ['bannednodelessthan',['BannedNodeLessThan',['../class_banned_node_less_than.html',1,'']]],
   ['bantablemodel',['BanTableModel',['../class_ban_table_model.html',1,'']]],
@@ -39,6 +40,7 @@ var searchData=
   ['bitstreamwriter',['BitStreamWriter',['../class_bit_stream_writer.html',1,'']]],
   ['blockassembler',['BlockAssembler',['../class_block_assembler.html',1,'']]],
   ['blockfilter',['BlockFilter',['../class_block_filter.html',1,'']]],
+  ['blockfilterindex',['BlockFilterIndex',['../class_block_filter_index.html',1,'']]],
   ['blockhasher',['BlockHasher',['../struct_block_hasher.html',1,'']]],
   ['blocktransactions',['BlockTransactions',['../class_block_transactions.html',1,'']]],
   ['blocktransactionsrequest',['BlockTransactionsRequest',['../class_block_transactions_request.html',1,'']]],

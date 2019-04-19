@@ -1,51 +1,19 @@
 <map id="PartiallySignedTransaction::PartiallySignedTransaction" name="PartiallySignedTransaction::PartiallySignedTransaction">
-<area shape="rect" id="node2" href="$struct_p_s_b_t_input.html#ac70acbb98d6c3deec5d92358dc91ddb7" title="PSBTInput::Unserialize" alt="" coords="701,208,867,235"/>
-<area shape="rect" id="node19" href="$psbt_8h.html#a1a237c1813186bd75fd7c3c92aedc2ed" title="Checks whether a PSBTInput is already signed. " alt="" coords="959,537,1090,564"/>
-<area shape="rect" id="node20" href="$psbt_8h.html#ab56f2d50d18895eecae0fcec88802a0b" title="Signs a PSBTInput, verifying that all provided data matches what is being signed. ..." alt="" coords="727,385,841,412"/>
-<area shape="rect" id="node44" href="$psbt_8h.html#ae928e40974eb627033adb546395ae535" title="Finalizes a PSBT if possible, combining partial signatures. " alt="" coords="283,436,384,463"/>
-<area shape="rect" id="node46" href="$psbt_8h.html#aab3ec9bcf6f951016a077dcfcbb3da0a" title="Finalizes a PSBT if possible, and extracts it to a CMutableTransaction if it could be finalized..." alt="" coords="248,487,419,513"/>
-<area shape="rect" id="node48" href="$psbt_8h.html#a7a88bb8ee4c112e1318f61efa44f0d66" title="Combines PSBTs with the same underlying transaction, resulting in a single PSBT with all partial sign..." alt="" coords="275,596,392,623"/>
-<area shape="rect" id="node3" href="$sign_8h.html#a1ffa12b0e8b9fd052e93a5f9ae6cd061" title="UnserializeFromVector" alt="" coords="942,132,1107,159"/>
-<area shape="rect" id="node13" href="$class_c_tx_out.html#aeaa6b16e0c4caee54196cf8eb0f127f3" title="CTxOut::IsNull" alt="" coords="969,284,1080,311"/>
-<area shape="rect" id="node14" href="$classprevector.html#a2d6273a734a3e3e4596457a64ff169a5" title="prevector::empty" alt="" coords="1199,385,1331,412"/>
-<area shape="rect" id="node17" href="$sign_8h.html#acd331ecf16a63bfe92939ea7d5465bd0" title="DeserializeHDKeypaths" alt="" coords="939,81,1110,108"/>
-<area shape="rect" id="node18" href="$struct_c_script_witness.html#a6b98b34341614c288d8632b895cdb252" title="CScriptWitness::IsNull" alt="" coords="1411,436,1569,463"/>
-<area shape="rect" id="node4" href="$serialize_8h.html#ae3fd928949b7361accfec79c314aa90f" title="ReadCompactSize" alt="" coords="1195,81,1334,108"/>
-<area shape="rect" id="node12" href="$serialize_8h.html#add59187e3016a2ec53a821b074f9e007" title="UnserializeMany" alt="" coords="1201,132,1328,159"/>
-<area shape="rect" id="node5" href="$serialize_8h.html#a1d1f53d2d72386236484546b49409188" title="ser_readdata8" alt="" coords="1433,107,1547,133"/>
-<area shape="rect" id="node6" href="$serialize_8h.html#a9d79b9c324578a126d1a393047cec9a4" title="ser_readdata16" alt="" coords="1429,157,1551,184"/>
-<area shape="rect" id="node8" href="$serialize_8h.html#ac0bbdc7ba802bbaafbf0cf7774b291d6" title="ser_readdata32" alt="" coords="1429,5,1551,32"/>
-<area shape="rect" id="node10" href="$serialize_8h.html#aa69ce8c2279c2779e04d7b24babe10fc" title="ser_readdata64" alt="" coords="1429,56,1551,83"/>
-<area shape="rect" id="node7" href="$endian_8h.html#a43af2810e0abe8dcaefe0920e64a99f4" title="le16toh" alt="" coords="1693,157,1764,184"/>
-<area shape="rect" id="node9" href="$endian_8h.html#a3b4e83868bbf53b2572b736fc146a319" title="le32toh" alt="" coords="1693,5,1764,32"/>
-<area shape="rect" id="node11" href="$endian_8h.html#afc03933561fbd136419c5e9649f975df" title="le64toh" alt="" coords="1693,56,1764,83"/>
-<area shape="rect" id="node15" href="$classprevector.html#a8430c39b212986d6cd2ba9d6fa939241" title="prevector::size" alt="" coords="1887,588,2003,615"/>
-<area shape="rect" id="node16" href="$classprevector.html#a27fda335354582aa9452867c4b610dab" title="prevector::is_direct" alt="" coords="2075,689,2219,716"/>
-<area shape="rect" id="node21" href="$psbt_8cpp.html#a1a237c1813186bd75fd7c3c92aedc2ed" title="Checks whether a PSBTInput is already signed. " alt="" coords="959,487,1090,513"/>
-<area shape="rect" id="node22" href="$struct_p_s_b_t_input.html#acf6a3a98be175e1437e203bd642d2cc5" title="PSBTInput::FillSignatureData" alt="" coords="923,335,1126,361"/>
-<area shape="rect" id="node23" href="$struct_p_s_b_t_input.html#aadabc13f6ad233788f8e8aa4dd47f367" title="PSBTInput::IsSane" alt="" coords="955,385,1094,412"/>
-<area shape="rect" id="node24" href="$sign_8cpp.html#a0c453416d09212d876bee81dc9353c16" title="Produce a script signature using a generic signature creator. " alt="" coords="957,677,1093,704"/>
-<area shape="rect" id="node43" href="$struct_p_s_b_t_input.html#ad4eae111b69112fac6fd802b9e647d8e" title="PSBTInput::FromSignatureData" alt="" coords="915,436,1135,463"/>
-<area shape="rect" id="node25" href="$script_8h.html#a54e10bc63d490dd5d39d245102b81359" title="ToByteVector" alt="" coords="1212,736,1317,763"/>
-<area shape="rect" id="node26" href="$classprevector.html#aa9210cbe708412a70868d6e0bca844c9" title="prevector::begin" alt="" coords="1665,908,1792,935"/>
-<area shape="rect" id="node31" href="$classprevector.html#aab7f6e13a3cac85cc340fc6b90c5365c" title="prevector::end" alt="" coords="1671,807,1786,833"/>
-<area shape="rect" id="node32" href="$interpreter_8cpp.html#af223e3d69a83b4de8aae7792ae131706" title="VerifyScript" alt="" coords="1217,619,1312,645"/>
-<area shape="rect" id="node42" href="$class_base_signature_creator.html#a523f4e4c27e385fa5a90184b5178bfbc" title="BaseSignatureCreator\l::Checker" alt="" coords="1183,670,1347,711"/>
-<area shape="rect" id="node27" href="$classprevector_1_1iterator.html#ae9dd2b5e8d96f866e4b05d6b7535f285" title="prevector::iterator\l::iterator" alt="" coords="1875,799,2014,841"/>
-<area shape="rect" id="node28" href="$classprevector.html#a59f1d7bcbc751cfa0faddd7ffa184846" title="prevector::item_ptr" alt="" coords="1872,865,2017,892"/>
-<area shape="rect" id="node29" href="$classprevector.html#a20150a43dd87c33f0e855a55bd3418e8" title="prevector::direct_ptr" alt="" coords="2071,891,2223,917"/>
-<area shape="rect" id="node30" href="$classprevector.html#ae3343cc65be9fd678b4a6f8305624de6" title="prevector::indirect_ptr" alt="" coords="2065,840,2228,867"/>
-<area shape="rect" id="node33" href="$class_c_script.html#ac81d0879690dc02cfb6712244e4add43" title="Called by IsStandardTx and P2SH/BIP62 VerifyScript (which makes it consensus&#45;critical). " alt="" coords="1417,705,1563,732"/>
-<area shape="rect" id="node35" href="$interpreter_8cpp.html#a139a577767e128d3fd49a7b7afd4d1cb" title="EvalScript" alt="" coords="1447,647,1533,673"/>
-<area shape="rect" id="node38" href="$interpreter_8cpp.html#a43bc2157638b796f2e3144963e00db34" title="CastToBool" alt="" coords="1683,537,1775,564"/>
-<area shape="rect" id="node39" href="$class_c_script.html#a11e9cac739d4044d83fdd13cdf72ed01" title="CScript::IsWitnessProgram" alt="" coords="1395,857,1585,884"/>
-<area shape="rect" id="node40" href="$class_c_script.html#acba6d6d35776de4ce3a632446f44805f" title="CScript::IsPayToScriptHash" alt="" coords="1633,487,1824,513"/>
-<area shape="rect" id="node41" href="$class_c_script.html#ad4a8173c235111e93a8171b1f8d00ce8" title="Pre&#45;version&#45;0.6, Bitcoin always counted CHECKMULTISIGs as 20 sigops. " alt="" coords="1403,756,1577,783"/>
-<area shape="rect" id="node34" href="$class_c_script.html#ae06205f908e430eaf428922ea3997c1b" title="CScript::GetOp" alt="" coords="1670,756,1787,783"/>
-<area shape="rect" id="node36" href="$class_c_script_num.html#aaa803c18a86acc8b928054f052dcc4c4" title="CScriptNum::getvch" alt="" coords="1653,639,1804,665"/>
-<area shape="rect" id="node37" href="$class_base_signature_checker.html#a4ce7da7dcff570e662130b644cc38c26" title="BaseSignatureChecker\l::CheckLockTime" alt="" coords="1645,690,1813,731"/>
-<area shape="rect" id="node45" href="$psbt_8cpp.html#a96344560c713d0d723a507927096f447" title="Signs a PSBTInput, verifying that all provided data matches what is being signed. ..." alt="" coords="727,436,841,463"/>
-<area shape="rect" id="node47" href="$psbt_8cpp.html#ae928e40974eb627033adb546395ae535" title="Finalizes a PSBT if possible, combining partial signatures. " alt="" coords="509,487,611,513"/>
-<area shape="rect" id="node49" href="$struct_partially_signed_transaction.html#a1fcb0eccd190d1a6523259637479875c" title="Merge psbt into this. " alt="" coords="467,589,653,630"/>
-<area shape="rect" id="node50" href="$struct_partially_signed_transaction.html#a11dbcf6ba6b72cad936560161bdf57dd" title="PartiallySignedTransaction\l::IsSane" alt="" coords="467,654,653,695"/>
+<area shape="rect" id="node2" href="$struct_p_s_b_t_input.html#ac70acbb98d6c3deec5d92358dc91ddb7" title="PSBTInput::Unserialize" alt="" coords="248,157,413,184"/>
+<area shape="rect" id="node3" href="$sign_8h.html#a1ffa12b0e8b9fd052e93a5f9ae6cd061" title="UnserializeFromVector" alt="" coords="464,56,629,83"/>
+<area shape="rect" id="node13" href="$class_c_tx_out.html#aeaa6b16e0c4caee54196cf8eb0f127f3" title="CTxOut::IsNull" alt="" coords="491,107,602,133"/>
+<area shape="rect" id="node14" href="$classprevector.html#a2d6273a734a3e3e4596457a64ff169a5" title="prevector::empty" alt="" coords="481,208,613,235"/>
+<area shape="rect" id="node17" href="$sign_8h.html#acd331ecf16a63bfe92939ea7d5465bd0" title="DeserializeHDKeypaths" alt="" coords="461,157,632,184"/>
+<area shape="rect" id="node18" href="$struct_c_script_witness.html#a6b98b34341614c288d8632b895cdb252" title="CScriptWitness::IsNull" alt="" coords="467,259,626,285"/>
+<area shape="rect" id="node4" href="$serialize_8h.html#ae3fd928949b7361accfec79c314aa90f" title="ReadCompactSize" alt="" coords="680,107,819,133"/>
+<area shape="rect" id="node12" href="$serialize_8h.html#add59187e3016a2ec53a821b074f9e007" title="UnserializeMany" alt="" coords="686,56,813,83"/>
+<area shape="rect" id="node5" href="$serialize_8h.html#a1d1f53d2d72386236484546b49409188" title="ser_readdata8" alt="" coords="881,5,996,32"/>
+<area shape="rect" id="node6" href="$serialize_8h.html#a9d79b9c324578a126d1a393047cec9a4" title="ser_readdata16" alt="" coords="877,56,1000,83"/>
+<area shape="rect" id="node8" href="$serialize_8h.html#ac0bbdc7ba802bbaafbf0cf7774b291d6" title="ser_readdata32" alt="" coords="877,107,1000,133"/>
+<area shape="rect" id="node10" href="$serialize_8h.html#aa69ce8c2279c2779e04d7b24babe10fc" title="ser_readdata64" alt="" coords="877,157,1000,184"/>
+<area shape="rect" id="node7" href="$endian_8h.html#a43af2810e0abe8dcaefe0920e64a99f4" title="le16toh" alt="" coords="1059,56,1129,83"/>
+<area shape="rect" id="node9" href="$endian_8h.html#a3b4e83868bbf53b2572b736fc146a319" title="le32toh" alt="" coords="1059,107,1129,133"/>
+<area shape="rect" id="node11" href="$endian_8h.html#afc03933561fbd136419c5e9649f975df" title="le64toh" alt="" coords="1059,157,1129,184"/>
+<area shape="rect" id="node15" href="$classprevector.html#a8430c39b212986d6cd2ba9d6fa939241" title="prevector::size" alt="" coords="691,208,807,235"/>
+<area shape="rect" id="node16" href="$classprevector.html#a27fda335354582aa9452867c4b610dab" title="prevector::is_direct" alt="" coords="867,208,1011,235"/>
 </map>

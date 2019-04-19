@@ -11,300 +11,313 @@
 <polygon fill="white" stroke="none" points="-4,4 -4,-214 1207,-214 1207,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="0,-71 0,-101 140,-101 140,-71 0,-71"/>
-<text text-anchor="start" x="8" y="-89" font-family="Helvetica,sans-Serif" font-size="10.00">CWallet::MarkReserveKeys</text>
-<text text-anchor="middle" x="70" y="-78" font-family="Helvetica,sans-Serif" font-size="10.00">AsUsed</text>
+<polygon fill="#bfbfbf" stroke="black" points="0,-90 0,-120 140,-120 140,-90 0,-90"/>
+<text text-anchor="start" x="8" y="-108" font-family="Helvetica,sans-Serif" font-size="10.00">CWallet::MarkReserveKeys</text>
+<text text-anchor="middle" x="70" y="-97" font-family="Helvetica,sans-Serif" font-size="10.00">AsUsed</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="class_wallet_batch.html#a4ba38551200a5cbfbaafbb5826a009b8" target="_top" xlink:title="WalletBatch::ReadPool">
-<polygon fill="white" stroke="black" points="177.5,-133.5 177.5,-152.5 299.5,-152.5 299.5,-133.5 177.5,-133.5"/>
-<text text-anchor="middle" x="238.5" y="-140.5" font-family="Helvetica,sans-Serif" font-size="10.00">WalletBatch::ReadPool</text>
+<g id="a_node2"><a xlink:href="net__processing_8cpp.html#a37e6419b0b18c99c5296b5a18c19e954" target="_top" xlink:title="AssertLockHeld">
+<polygon fill="white" stroke="black" points="193,-152.5 193,-171.5 284,-171.5 284,-152.5 193,-152.5"/>
+<text text-anchor="middle" x="238.5" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">AssertLockHeld</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge"><title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M115.182,-101.125C141.633,-110.181 174.888,-121.565 200.045,-130.178"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="199.006,-133.521 209.6,-133.449 201.273,-126.898 199.006,-133.521"/>
+<path fill="none" stroke="midnightblue" d="M111.23,-120.067C130.714,-127.234 154.494,-135.791 176,-143 182.407,-145.148 189.219,-147.341 195.886,-149.438"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="194.899,-152.797 205.488,-152.426 196.979,-146.113 194.899,-152.797"/>
 </g>
-<!-- Node7 -->
-<g id="node7" class="node"><title>Node7</title>
-<g id="a_node7"><a xlink:href="class_c_pub_key.html#a9c1908fef34fd9e1c4b5e0ffd5d3834e" target="_top" xlink:title="Get the KeyID of this public key (hash of its serialization) ">
+<!-- Node3 -->
+<g id="node3" class="node"><title>Node3</title>
+<g id="a_node3"><a xlink:href="class_wallet_batch.html#a4ba38551200a5cbfbaafbb5826a009b8" target="_top" xlink:title="WalletBatch::ReadPool">
+<polygon fill="white" stroke="black" points="177.5,-114.5 177.5,-133.5 299.5,-133.5 299.5,-114.5 177.5,-114.5"/>
+<text text-anchor="middle" x="238.5" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">WalletBatch::ReadPool</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node3 -->
+<g id="edge2" class="edge"><title>Node1&#45;&gt;Node3</title>
+<path fill="none" stroke="midnightblue" d="M140.165,-112.893C149.123,-113.915 158.306,-114.963 167.281,-115.987"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="166.971,-119.474 177.303,-117.131 167.765,-112.519 166.971,-119.474"/>
+</g>
+<!-- Node8 -->
+<g id="node8" class="node"><title>Node8</title>
+<g id="a_node8"><a xlink:href="class_c_pub_key.html#a9c1908fef34fd9e1c4b5e0ffd5d3834e" target="_top" xlink:title="Get the KeyID of this public key (hash of its serialization) ">
 <polygon fill="white" stroke="black" points="193.5,-76.5 193.5,-95.5 283.5,-95.5 283.5,-76.5 193.5,-76.5"/>
 <text text-anchor="middle" x="238.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">CPubKey::GetID</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node7 -->
-<g id="edge6" class="edge"><title>Node1&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M140.165,-86C154.404,-86 169.21,-86 182.85,-86"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="183.025,-89.5001 193.025,-86 183.025,-82.5001 183.025,-89.5001"/>
+<!-- Node1&#45;&gt;Node8 -->
+<g id="edge7" class="edge"><title>Node1&#45;&gt;Node8</title>
+<path fill="none" stroke="midnightblue" d="M140.165,-97.1074C154.404,-95.4824 169.21,-93.7928 182.85,-92.2363"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="183.486,-95.6866 193.025,-91.0753 182.692,-88.7317 183.486,-95.6866"/>
 </g>
-<!-- Node21 -->
-<g id="node21" class="node"><title>Node21</title>
-<g id="a_node21"><a xlink:href="class_wallet_batch.html#a12d883a8b0d8245a3d4f5a85c64fe9fc" target="_top" xlink:title="WalletBatch::ErasePool">
+<!-- Node22 -->
+<g id="node22" class="node"><title>Node22</title>
+<g id="a_node22"><a xlink:href="class_wallet_batch.html#a12d883a8b0d8245a3d4f5a85c64fe9fc" target="_top" xlink:title="WalletBatch::ErasePool">
 <polygon fill="white" stroke="black" points="176,-19.5 176,-38.5 301,-38.5 301,-19.5 176,-19.5"/>
 <text text-anchor="middle" x="238.5" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00">WalletBatch::ErasePool</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node21 -->
-<g id="edge24" class="edge"><title>Node1&#45;&gt;Node21</title>
-<path fill="none" stroke="midnightblue" d="M115.182,-70.8747C141.633,-61.8195 174.888,-50.4346 200.045,-41.8224"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="201.273,-45.1016 209.6,-38.5513 199.006,-38.4789 201.273,-45.1016"/>
+<!-- Node1&#45;&gt;Node22 -->
+<g id="edge25" class="edge"><title>Node1&#45;&gt;Node22</title>
+<path fill="none" stroke="midnightblue" d="M103.895,-89.9848C133.867,-76.3041 177.786,-56.2568 206.988,-42.9273"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="208.642,-46.0198 216.286,-38.6833 205.735,-39.6518 208.642,-46.0198"/>
 </g>
-<!-- Node3 -->
-<g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="class_berkeley_batch.html#afbf2d778e5791c88149b8c6c1cab0ab8" target="_top" xlink:title="BerkeleyBatch::Read">
+<!-- Node4 -->
+<g id="node4" class="node"><title>Node4</title>
+<g id="a_node4"><a xlink:href="class_berkeley_batch.html#afbf2d778e5791c88149b8c6c1cab0ab8" target="_top" xlink:title="BerkeleyBatch::Read">
 <polygon fill="white" stroke="black" points="345,-152.5 345,-171.5 460,-171.5 460,-152.5 345,-152.5"/>
 <text text-anchor="middle" x="402.5" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">BerkeleyBatch::Read</text>
 </a>
 </g>
 </g>
-<!-- Node2&#45;&gt;Node3 -->
-<g id="edge2" class="edge"><title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M299.823,-150.075C311.234,-151.413 323.231,-152.82 334.824,-154.18"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="334.543,-157.671 344.883,-155.36 335.359,-150.719 334.543,-157.671"/>
+<!-- Node3&#45;&gt;Node4 -->
+<g id="edge3" class="edge"><title>Node3&#45;&gt;Node4</title>
+<path fill="none" stroke="midnightblue" d="M280.379,-133.589C301.853,-138.626 328.36,-144.844 351.097,-150.177"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="350.379,-153.604 360.915,-152.48 351.978,-146.789 350.379,-153.604"/>
 </g>
-<!-- Node4 -->
-<g id="node4" class="node"><title>Node4</title>
-<g id="a_node4"><a xlink:href="class_c_data_stream.html#a5542e71bd7af2ab7cd7be0f381d39cb5" target="_top" xlink:title="CDataStream::reserve">
+<!-- Node5 -->
+<g id="node5" class="node"><title>Node5</title>
+<g id="a_node5"><a xlink:href="class_c_data_stream.html#a5542e71bd7af2ab7cd7be0f381d39cb5" target="_top" xlink:title="CDataStream::reserve">
 <polygon fill="white" stroke="black" points="504,-190.5 504,-209.5 629,-209.5 629,-190.5 504,-190.5"/>
 <text text-anchor="middle" x="566.5" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">CDataStream::reserve</text>
 </a>
 </g>
 </g>
-<!-- Node3&#45;&gt;Node4 -->
-<g id="edge3" class="edge"><title>Node3&#45;&gt;Node4</title>
+<!-- Node4&#45;&gt;Node5 -->
+<g id="edge4" class="edge"><title>Node4&#45;&gt;Node5</title>
 <path fill="none" stroke="midnightblue" d="M444.379,-171.589C465.853,-176.626 492.36,-182.844 515.097,-188.177"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="514.379,-191.604 524.915,-190.48 515.978,-184.789 514.379,-191.604"/>
 </g>
-<!-- Node5 -->
-<g id="node5" class="node"><title>Node5</title>
-<g id="a_node5"><a xlink:href="class_c_data_stream.html#a1c0a87d9ea725d5d83562dfda15fbeeb" target="_top" xlink:title="CDataStream::data">
+<!-- Node6 -->
+<g id="node6" class="node"><title>Node6</title>
+<g id="a_node6"><a xlink:href="class_c_data_stream.html#a1c0a87d9ea725d5d83562dfda15fbeeb" target="_top" xlink:title="CDataStream::data">
 <polygon fill="white" stroke="black" points="511.5,-152.5 511.5,-171.5 621.5,-171.5 621.5,-152.5 511.5,-152.5"/>
 <text text-anchor="middle" x="566.5" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">CDataStream::data</text>
 </a>
 </g>
 </g>
-<!-- Node3&#45;&gt;Node5 -->
-<g id="edge4" class="edge"><title>Node3&#45;&gt;Node5</title>
+<!-- Node4&#45;&gt;Node6 -->
+<g id="edge5" class="edge"><title>Node4&#45;&gt;Node6</title>
 <path fill="none" stroke="midnightblue" d="M460.16,-162C473.393,-162 487.581,-162 501.122,-162"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="501.324,-165.5 511.324,-162 501.324,-158.5 501.324,-165.5"/>
 </g>
-<!-- Node6 -->
-<g id="node6" class="node"><title>Node6</title>
-<g id="a_node6"><a xlink:href="class_c_data_stream.html#ac6567f6d600d644d9855b52bb59049cd" target="_top" xlink:title="CDataStream::size">
+<!-- Node7 -->
+<g id="node7" class="node"><title>Node7</title>
+<g id="a_node7"><a xlink:href="class_c_data_stream.html#ac6567f6d600d644d9855b52bb59049cd" target="_top" xlink:title="CDataStream::size">
 <polygon fill="white" stroke="black" points="513,-114.5 513,-133.5 620,-133.5 620,-114.5 513,-114.5"/>
 <text text-anchor="middle" x="566.5" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">CDataStream::size</text>
 </a>
 </g>
 </g>
-<!-- Node3&#45;&gt;Node6 -->
-<g id="edge5" class="edge"><title>Node3&#45;&gt;Node6</title>
+<!-- Node4&#45;&gt;Node7 -->
+<g id="edge6" class="edge"><title>Node4&#45;&gt;Node7</title>
 <path fill="none" stroke="midnightblue" d="M444.379,-152.411C465.853,-147.374 492.36,-141.156 515.097,-135.823"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="515.978,-139.211 524.915,-133.52 514.379,-132.396 515.978,-139.211"/>
 </g>
-<!-- Node8 -->
-<g id="node8" class="node"><title>Node8</title>
-<g id="a_node8"><a xlink:href="class_c_key_i_d.html#a01dbd3c37820a2ffe89d106c6a7cf53d" target="_top" xlink:title="CKeyID::CKeyID">
+<!-- Node9 -->
+<g id="node9" class="node"><title>Node9</title>
+<g id="a_node9"><a xlink:href="class_c_key_i_d.html#a01dbd3c37820a2ffe89d106c6a7cf53d" target="_top" xlink:title="CKeyID::CKeyID">
 <polygon fill="white" stroke="black" points="358,-114.5 358,-133.5 447,-133.5 447,-114.5 358,-114.5"/>
 <text text-anchor="middle" x="402.5" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">CKeyID::CKeyID</text>
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node8 -->
-<g id="edge7" class="edge"><title>Node7&#45;&gt;Node8</title>
+<!-- Node8&#45;&gt;Node9 -->
+<g id="edge8" class="edge"><title>Node8&#45;&gt;Node9</title>
 <path fill="none" stroke="midnightblue" d="M280.379,-95.589C301.853,-100.626 328.36,-106.844 351.097,-112.177"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="350.379,-115.604 360.915,-114.48 351.978,-108.789 350.379,-115.604"/>
 </g>
-<!-- Node9 -->
-<g id="node9" class="node"><title>Node9</title>
-<g id="a_node9"><a xlink:href="hash_8h.html#a4490f70ddae16e9e48460a0416a48a6b" target="_top" xlink:title="Compute the 160&#45;bit hash an object. ">
+<!-- Node10 -->
+<g id="node10" class="node"><title>Node10</title>
+<g id="a_node10"><a xlink:href="hash_8h.html#a4490f70ddae16e9e48460a0416a48a6b" target="_top" xlink:title="Compute the 160&#45;bit hash an object. ">
 <polygon fill="white" stroke="black" points="373,-76.5 373,-95.5 432,-95.5 432,-76.5 373,-76.5"/>
 <text text-anchor="middle" x="402.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">Hash160</text>
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node9 -->
-<g id="edge8" class="edge"><title>Node7&#45;&gt;Node9</title>
+<!-- Node8&#45;&gt;Node10 -->
+<g id="edge9" class="edge"><title>Node8&#45;&gt;Node10</title>
 <path fill="none" stroke="midnightblue" d="M283.767,-86C308.412,-86 338.813,-86 362.549,-86"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="362.608,-89.5001 372.608,-86 362.608,-82.5001 362.608,-89.5001"/>
 </g>
-<!-- Node20 -->
-<g id="node20" class="node"><title>Node20</title>
-<g id="a_node20"><a xlink:href="classbase__blob.html#a449c3f902fcab7af6c74aa9fee099542" target="_top" xlink:title="base_blob\&lt; 160 \&gt;::size">
+<!-- Node21 -->
+<g id="node21" class="node"><title>Node21</title>
+<g id="a_node21"><a xlink:href="classbase__blob.html#a449c3f902fcab7af6c74aa9fee099542" target="_top" xlink:title="base_blob\&lt; 160 \&gt;::size">
 <polygon fill="white" stroke="black" points="337,-38.5 337,-57.5 468,-57.5 468,-38.5 337,-38.5"/>
 <text text-anchor="middle" x="402.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">base_blob&lt; 160 &gt;::size</text>
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node20 -->
-<g id="edge23" class="edge"><title>Node7&#45;&gt;Node20</title>
+<!-- Node8&#45;&gt;Node21 -->
+<g id="edge24" class="edge"><title>Node8&#45;&gt;Node21</title>
 <path fill="none" stroke="midnightblue" d="M280.379,-76.411C301.853,-71.3739 328.36,-65.1562 351.097,-59.8229"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="351.978,-63.2113 360.915,-57.5201 350.379,-56.3963 351.978,-63.2113"/>
 </g>
-<!-- Node10 -->
-<g id="node10" class="node"><title>Node10</title>
-<g id="a_node10"><a xlink:href="class_c_hash160.html#af56cdd9443013eb68b246aa8450217f2" target="_top" xlink:title="CHash160::Write">
+<!-- Node11 -->
+<g id="node11" class="node"><title>Node11</title>
+<g id="a_node11"><a xlink:href="class_c_hash160.html#af56cdd9443013eb68b246aa8450217f2" target="_top" xlink:title="CHash160::Write">
 <polygon fill="white" stroke="black" points="676.5,-10.5 676.5,-29.5 771.5,-29.5 771.5,-10.5 676.5,-10.5"/>
 <text text-anchor="middle" x="724" y="-17.5" font-family="Helvetica,sans-Serif" font-size="10.00">CHash160::Write</text>
 </a>
 </g>
 </g>
-<!-- Node9&#45;&gt;Node10 -->
-<g id="edge9" class="edge"><title>Node9&#45;&gt;Node10</title>
+<!-- Node10&#45;&gt;Node11 -->
+<g id="edge10" class="edge"><title>Node10&#45;&gt;Node11</title>
 <path fill="none" stroke="midnightblue" d="M432.135,-80.0849C484.874,-69.1904 598.227,-45.7747 666.815,-31.6063"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="667.924,-34.9511 677.01,-29.5004 666.508,-28.0958 667.924,-34.9511"/>
 </g>
-<!-- Node16 -->
-<g id="node16" class="node"><title>Node16</title>
-<g id="a_node16"><a xlink:href="class_c_hash160.html#a9bb08e1772002ae1a5d85017ba7952ee" target="_top" xlink:title="CHash160::Finalize">
+<!-- Node17 -->
+<g id="node17" class="node"><title>Node17</title>
+<g id="a_node17"><a xlink:href="class_c_hash160.html#a9bb08e1772002ae1a5d85017ba7952ee" target="_top" xlink:title="CHash160::Finalize">
 <polygon fill="white" stroke="black" points="513,-76.5 513,-95.5 620,-95.5 620,-76.5 513,-76.5"/>
 <text text-anchor="middle" x="566.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">CHash160::Finalize</text>
 </a>
 </g>
 </g>
-<!-- Node9&#45;&gt;Node16 -->
-<g id="edge15" class="edge"><title>Node9&#45;&gt;Node16</title>
+<!-- Node10&#45;&gt;Node17 -->
+<g id="edge16" class="edge"><title>Node10&#45;&gt;Node17</title>
 <path fill="none" stroke="midnightblue" d="M432.089,-86C451.641,-86 478.333,-86 502.706,-86"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="502.982,-89.5001 512.982,-86 502.982,-82.5001 502.982,-89.5001"/>
 </g>
-<!-- Node11 -->
-<g id="node11" class="node"><title>Node11</title>
-<g id="a_node11"><a xlink:href="class_c_s_h_a256.html#a9d7de520a562655da85349372820c883" target="_top" xlink:title="CSHA256::Write">
+<!-- Node12 -->
+<g id="node12" class="node"><title>Node12</title>
+<g id="a_node12"><a xlink:href="class_c_s_h_a256.html#a9d7de520a562655da85349372820c883" target="_top" xlink:title="CSHA256::Write">
 <polygon fill="white" stroke="black" points="826.5,-48.5 826.5,-67.5 918.5,-67.5 918.5,-48.5 826.5,-48.5"/>
 <text text-anchor="middle" x="872.5" y="-55.5" font-family="Helvetica,sans-Serif" font-size="10.00">CSHA256::Write</text>
 </a>
 </g>
 </g>
-<!-- Node10&#45;&gt;Node11 -->
-<g id="edge10" class="edge"><title>Node10&#45;&gt;Node11</title>
+<!-- Node11&#45;&gt;Node12 -->
+<g id="edge11" class="edge"><title>Node11&#45;&gt;Node12</title>
 <path fill="none" stroke="midnightblue" d="M761.968,-29.589C781.126,-34.5583 804.714,-40.6767 825.088,-45.9613"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="824.239,-49.357 834.798,-48.4799 825.997,-42.5812 824.239,-49.357"/>
 </g>
-<!-- Node12 -->
-<g id="node12" class="node"><title>Node12</title>
-<g id="a_node12"><a xlink:href="glibc__compat_8cpp.html#a0f46826ab0466591e136db24394923cf" target="_top" xlink:title="memcpy">
+<!-- Node13 -->
+<g id="node13" class="node"><title>Node13</title>
+<g id="a_node13"><a xlink:href="glibc__compat_8cpp.html#a0f46826ab0466591e136db24394923cf" target="_top" xlink:title="memcpy">
 <polygon fill="white" stroke="black" points="1000.5,-86.5 1000.5,-105.5 1059.5,-105.5 1059.5,-86.5 1000.5,-86.5"/>
 <text text-anchor="middle" x="1030" y="-93.5" font-family="Helvetica,sans-Serif" font-size="10.00">memcpy</text>
 </a>
 </g>
 </g>
-<!-- Node11&#45;&gt;Node12 -->
-<g id="edge11" class="edge"><title>Node11&#45;&gt;Node12</title>
+<!-- Node12&#45;&gt;Node13 -->
+<g id="edge12" class="edge"><title>Node12&#45;&gt;Node13</title>
 <path fill="none" stroke="midnightblue" d="M912.739,-67.589C936.408,-73.3731 966.447,-80.7138 990.062,-86.4846"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="989.537,-89.9592 1000.08,-88.9332 991.199,-83.1593 989.537,-89.9592"/>
 </g>
-<!-- Node15 -->
-<g id="node15" class="node"><title>Node15</title>
-<g id="a_node15"><a xlink:href="namespacesha256__shani.html#a97d2e267c87add9a1172d948e05ba471" target="_top" xlink:title="sha256_shani::Transform">
+<!-- Node16 -->
+<g id="node16" class="node"><title>Node16</title>
+<g id="a_node16"><a xlink:href="namespacesha256__shani.html#a97d2e267c87add9a1172d948e05ba471" target="_top" xlink:title="sha256_shani::Transform">
 <polygon fill="white" stroke="black" points="962,-48.5 962,-67.5 1098,-67.5 1098,-48.5 962,-48.5"/>
 <text text-anchor="middle" x="1030" y="-55.5" font-family="Helvetica,sans-Serif" font-size="10.00">sha256_shani::Transform</text>
 </a>
 </g>
 </g>
-<!-- Node11&#45;&gt;Node15 -->
-<g id="edge14" class="edge"><title>Node11&#45;&gt;Node15</title>
+<!-- Node12&#45;&gt;Node16 -->
+<g id="edge15" class="edge"><title>Node12&#45;&gt;Node16</title>
 <path fill="none" stroke="midnightblue" d="M918.895,-58C929.19,-58 940.406,-58 951.613,-58"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="951.875,-61.5001 961.875,-58 951.875,-54.5001 951.875,-61.5001"/>
 </g>
-<!-- Node13 -->
-<g id="node13" class="node"><title>Node13</title>
-<g id="a_node13"><a xlink:href="glibc__compat_8cpp.html#a9778d49e9029dd75bc53ecbbf9f5e9a1" target="_top" xlink:title="memmove">
+<!-- Node14 -->
+<g id="node14" class="node"><title>Node14</title>
+<g id="a_node14"><a xlink:href="glibc__compat_8cpp.html#a9778d49e9029dd75bc53ecbbf9f5e9a1" target="_top" xlink:title="memmove">
 <polygon fill="white" stroke="black" points="1134,-105.5 1134,-124.5 1203,-124.5 1203,-105.5 1134,-105.5"/>
 <text text-anchor="middle" x="1168.5" y="-112.5" font-family="Helvetica,sans-Serif" font-size="10.00">memmove</text>
 </a>
 </g>
 </g>
-<!-- Node12&#45;&gt;Node13 -->
-<g id="edge12" class="edge"><title>Node12&#45;&gt;Node13</title>
+<!-- Node13&#45;&gt;Node14 -->
+<g id="edge13" class="edge"><title>Node13&#45;&gt;Node14</title>
 <path fill="none" stroke="midnightblue" d="M1059.61,-99.983C1078.16,-102.564 1102.67,-105.976 1123.65,-108.896"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1123.23,-112.372 1133.62,-110.284 1124.2,-105.439 1123.23,-112.372"/>
 </g>
-<!-- Node14 -->
-<g id="node14" class="node"><title>Node14</title>
-<g id="a_node14"><a xlink:href="glibc__compat_8cpp.html#a424ac71631da5ada2976630ff67051d1" target="_top" xlink:title="__chk_fail">
+<!-- Node15 -->
+<g id="node15" class="node"><title>Node15</title>
+<g id="a_node15"><a xlink:href="glibc__compat_8cpp.html#a424ac71631da5ada2976630ff67051d1" target="_top" xlink:title="__chk_fail">
 <polygon fill="white" stroke="black" points="1137.5,-67.5 1137.5,-86.5 1199.5,-86.5 1199.5,-67.5 1137.5,-67.5"/>
 <text text-anchor="middle" x="1168.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">__chk_fail</text>
 </a>
 </g>
 </g>
-<!-- Node12&#45;&gt;Node14 -->
-<g id="edge13" class="edge"><title>Node12&#45;&gt;Node14</title>
+<!-- Node13&#45;&gt;Node15 -->
+<g id="edge14" class="edge"><title>Node13&#45;&gt;Node15</title>
 <path fill="none" stroke="midnightblue" d="M1059.61,-92.017C1079.19,-89.2927 1105.41,-85.6422 1127.11,-82.6226"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1127.61,-86.0869 1137.03,-81.2416 1126.64,-79.1538 1127.61,-86.0869"/>
 </g>
-<!-- Node17 -->
-<g id="node17" class="node"><title>Node17</title>
-<g id="a_node17"><a xlink:href="class_c_s_h_a256.html#a4259230be0caefa590bc324fc12b9b90" target="_top" xlink:title="CSHA256::Finalize">
+<!-- Node18 -->
+<g id="node18" class="node"><title>Node18</title>
+<g id="a_node18"><a xlink:href="class_c_s_h_a256.html#a4259230be0caefa590bc324fc12b9b90" target="_top" xlink:title="CSHA256::Finalize">
 <polygon fill="white" stroke="black" points="672.5,-48.5 672.5,-67.5 775.5,-67.5 775.5,-48.5 672.5,-48.5"/>
 <text text-anchor="middle" x="724" y="-55.5" font-family="Helvetica,sans-Serif" font-size="10.00">CSHA256::Finalize</text>
 </a>
 </g>
 </g>
-<!-- Node16&#45;&gt;Node17 -->
-<g id="edge16" class="edge"><title>Node16&#45;&gt;Node17</title>
+<!-- Node17&#45;&gt;Node18 -->
+<g id="edge17" class="edge"><title>Node17&#45;&gt;Node18</title>
 <path fill="none" stroke="midnightblue" d="M620.145,-76.5205C633.687,-74.0821 648.367,-71.4387 662.282,-68.9331"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="663.03,-72.3548 672.252,-67.138 661.79,-65.4656 663.03,-72.3548"/>
 </g>
-<!-- Node18 -->
-<g id="node18" class="node"><title>Node18</title>
-<g id="a_node18"><a xlink:href="class_c_r_i_p_e_m_d160.html#a221143b9d94af623d07c4f4ba1bf6007" target="_top" xlink:title="CRIPEMD160::Write">
+<!-- Node19 -->
+<g id="node19" class="node"><title>Node19</title>
+<g id="a_node19"><a xlink:href="class_c_r_i_p_e_m_d160.html#a221143b9d94af623d07c4f4ba1bf6007" target="_top" xlink:title="CRIPEMD160::Write">
 <polygon fill="white" stroke="black" points="819,-86.5 819,-105.5 926,-105.5 926,-86.5 819,-86.5"/>
 <text text-anchor="middle" x="872.5" y="-93.5" font-family="Helvetica,sans-Serif" font-size="10.00">CRIPEMD160::Write</text>
 </a>
 </g>
 </g>
-<!-- Node16&#45;&gt;Node18 -->
-<g id="edge18" class="edge"><title>Node16&#45;&gt;Node18</title>
+<!-- Node17&#45;&gt;Node19 -->
+<g id="edge19" class="edge"><title>Node17&#45;&gt;Node19</title>
 <path fill="none" stroke="midnightblue" d="M620.106,-87.7305C672.5,-89.4539 752.951,-92.1004 808.671,-93.9333"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="808.665,-97.4349 818.775,-94.2656 808.895,-90.4386 808.665,-97.4349"/>
 </g>
-<!-- Node19 -->
-<g id="node19" class="node"><title>Node19</title>
-<g id="a_node19"><a xlink:href="class_c_r_i_p_e_m_d160.html#a2a11566fbf9d1339b819833313fc4e51" target="_top" xlink:title="CRIPEMD160::Finalize">
+<!-- Node20 -->
+<g id="node20" class="node"><title>Node20</title>
+<g id="a_node20"><a xlink:href="class_c_r_i_p_e_m_d160.html#a2a11566fbf9d1339b819833313fc4e51" target="_top" xlink:title="CRIPEMD160::Finalize">
 <polygon fill="white" stroke="black" points="665,-124.5 665,-143.5 783,-143.5 783,-124.5 665,-124.5"/>
 <text text-anchor="middle" x="724" y="-131.5" font-family="Helvetica,sans-Serif" font-size="10.00">CRIPEMD160::Finalize</text>
 </a>
 </g>
 </g>
-<!-- Node16&#45;&gt;Node19 -->
-<g id="edge21" class="edge"><title>Node16&#45;&gt;Node19</title>
+<!-- Node17&#45;&gt;Node20 -->
+<g id="edge22" class="edge"><title>Node17&#45;&gt;Node20</title>
 <path fill="none" stroke="midnightblue" d="M598.594,-95.5982C622.643,-103.022 656.141,-113.362 682.32,-121.443"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="681.372,-124.813 691.96,-124.418 683.437,-118.125 681.372,-124.813"/>
 </g>
-<!-- Node17&#45;&gt;Node11 -->
-<g id="edge17" class="edge"><title>Node17&#45;&gt;Node11</title>
+<!-- Node18&#45;&gt;Node12 -->
+<g id="edge18" class="edge"><title>Node18&#45;&gt;Node12</title>
 <path fill="none" stroke="midnightblue" d="M775.827,-58C788.739,-58 802.679,-58 815.818,-58"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="816.148,-61.5001 826.148,-58 816.148,-54.5001 816.148,-61.5001"/>
 </g>
-<!-- Node18&#45;&gt;Node12 -->
-<g id="edge19" class="edge"><title>Node18&#45;&gt;Node12</title>
+<!-- Node19&#45;&gt;Node13 -->
+<g id="edge20" class="edge"><title>Node19&#45;&gt;Node13</title>
 <path fill="none" stroke="midnightblue" d="M926.145,-96C947.11,-96 970.802,-96 990.159,-96"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="990.422,-99.5001 1000.42,-96 990.422,-92.5001 990.422,-99.5001"/>
 </g>
-<!-- Node18&#45;&gt;Node15 -->
-<g id="edge20" class="edge"><title>Node18&#45;&gt;Node15</title>
+<!-- Node19&#45;&gt;Node16 -->
+<g id="edge21" class="edge"><title>Node19&#45;&gt;Node16</title>
 <path fill="none" stroke="midnightblue" d="M912.739,-86.411C933.259,-81.3965 958.567,-75.2119 980.325,-69.8947"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="981.16,-73.294 990.043,-67.5201 979.498,-66.494 981.16,-73.294"/>
 </g>
-<!-- Node19&#45;&gt;Node18 -->
-<g id="edge22" class="edge"><title>Node19&#45;&gt;Node18</title>
+<!-- Node20&#45;&gt;Node19 -->
+<g id="edge23" class="edge"><title>Node20&#45;&gt;Node19</title>
 <path fill="none" stroke="midnightblue" d="M761.968,-124.411C781.126,-119.442 804.714,-113.323 825.088,-108.039"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="825.997,-111.419 834.798,-105.52 824.239,-104.643 825.997,-111.419"/>
 </g>
-<!-- Node22 -->
-<g id="node22" class="node"><title>Node22</title>
-<g id="a_node22"><a xlink:href="class_wallet_batch.html#a9142686ef26de3c4ab3062237a81f345" target="_top" xlink:title="WalletBatch::EraseIC">
+<!-- Node23 -->
+<g id="node23" class="node"><title>Node23</title>
+<g id="a_node23"><a xlink:href="class_wallet_batch.html#a9142686ef26de3c4ab3062237a81f345" target="_top" xlink:title="WalletBatch::EraseIC">
 <polygon fill="white" stroke="black" points="345.5,-0.5 345.5,-19.5 459.5,-19.5 459.5,-0.5 345.5,-0.5"/>
 <text text-anchor="middle" x="402.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">WalletBatch::EraseIC</text>
 </a>
 </g>
 </g>
-<!-- Node21&#45;&gt;Node22 -->
-<g id="edge25" class="edge"><title>Node21&#45;&gt;Node22</title>
+<!-- Node22&#45;&gt;Node23 -->
+<g id="edge26" class="edge"><title>Node22&#45;&gt;Node23</title>
 <path fill="none" stroke="midnightblue" d="M301.207,-21.7627C312.298,-20.462 323.901,-19.1012 335.117,-17.7857"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="335.758,-21.2345 345.282,-16.5934 334.943,-14.2822 335.758,-21.2345"/>
 </g>

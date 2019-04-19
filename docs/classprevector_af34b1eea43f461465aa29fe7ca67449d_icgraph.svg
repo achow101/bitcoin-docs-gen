@@ -11,34 +11,48 @@
 <polygon fill="white" stroke="none" points="-4,4 -4,-339.5 707,-339.5 707,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="0,-205.5 0,-224.5 119,-224.5 119,-205.5 0,-205.5"/>
-<text text-anchor="middle" x="59.5" y="-212.5" font-family="Helvetica,sans-Serif" font-size="10.00">prevector::push_back</text>
+<polygon fill="#bfbfbf" stroke="black" points="0,-266.5 0,-285.5 119,-285.5 119,-266.5 0,-266.5"/>
+<text text-anchor="middle" x="59.5" y="-273.5" font-family="Helvetica,sans-Serif" font-size="10.00">prevector::push_back</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
 <g id="a_node2"><a xlink:href="class_wallet_model.html#aa56ac200db13d7121cedb40ebd43ba2f" target="_top" xlink:title="WalletModel::prepareTransaction">
-<polygon fill="white" stroke="black" points="155,-259.5 155,-278.5 325,-278.5 325,-259.5 155,-259.5"/>
-<text text-anchor="middle" x="240" y="-266.5" font-family="Helvetica,sans-Serif" font-size="10.00">WalletModel::prepareTransaction</text>
+<polygon fill="white" stroke="black" points="155,-310.5 155,-329.5 325,-329.5 325,-310.5 155,-310.5"/>
+<text text-anchor="middle" x="240" y="-317.5" font-family="Helvetica,sans-Serif" font-size="10.00">WalletModel::prepareTransaction</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge"><title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M101.593,-227.432C133.833,-237.185 178.041,-250.559 207.514,-259.475"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="102.586,-224.075 92.0013,-224.53 100.559,-230.776 102.586,-224.075"/>
+<path fill="none" stroke="midnightblue" d="M105.39,-288.231C121.056,-292.405 138.775,-297.02 155,-301 168.069,-304.206 182.331,-307.506 195.332,-310.437"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="105.993,-284.769 95.4279,-285.563 104.182,-291.531 105.993,-284.769"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
-<g id="a_node4"><a xlink:href="rpcwallet_8h.html#aae9bc665151c5bab626a7ffcaeed9c0d" target="_top" xlink:title="EnsureWalletIsUnlocked">
-<polygon fill="white" stroke="black" points="175.5,-152.5 175.5,-171.5 304.5,-171.5 304.5,-152.5 175.5,-152.5"/>
-<text text-anchor="middle" x="240" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">EnsureWalletIsUnlocked</text>
+<g id="a_node4"><a xlink:href="namespacefeebumper.html#a7ce8c12d48338418fbb04b8337fb21ef" target="_top" xlink:title="Create bumpfee transaction based on feerate estimates. ">
+<polygon fill="white" stroke="black" points="161,-261 161,-291 319,-291 319,-261 161,-261"/>
+<text text-anchor="start" x="169" y="-279" font-family="Helvetica,sans-Serif" font-size="10.00">feebumper::CreateRateBump</text>
+<text text-anchor="middle" x="240" y="-268" font-family="Helvetica,sans-Serif" font-size="10.00">Transaction</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge3" class="edge"><title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M102.761,-202.452C134.674,-192.976 177.801,-180.171 206.915,-171.526"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="101.415,-199.2 92.825,-205.402 103.408,-205.911 101.415,-199.2"/>
+<path fill="none" stroke="midnightblue" d="M129.51,-276C139.724,-276 150.311,-276 160.697,-276"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="129.442,-272.5 119.442,-276 129.442,-279.5 129.442,-272.5"/>
+</g>
+<!-- Node7 -->
+<g id="node7" class="node"><title>Node7</title>
+<g id="a_node7"><a xlink:href="rpcwallet_8h.html#aae9bc665151c5bab626a7ffcaeed9c0d" target="_top" xlink:title="EnsureWalletIsUnlocked">
+<polygon fill="white" stroke="black" points="175.5,-152.5 175.5,-171.5 304.5,-171.5 304.5,-152.5 175.5,-152.5"/>
+<text text-anchor="middle" x="240" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">EnsureWalletIsUnlocked</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node7 -->
+<g id="edge6" class="edge"><title>Node1&#45;&gt;Node7</title>
+<path fill="none" stroke="midnightblue" d="M84.0913,-260.933C121.295,-237.173 192.564,-191.656 223.752,-171.738"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="81.9558,-258.144 75.4118,-266.477 85.7235,-264.044 81.9558,-258.144"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
@@ -51,117 +65,21 @@
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge"><title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M287.406,-281.137C314.8,-288.302 349.693,-297.427 378.782,-305.035"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="288.238,-277.737 277.678,-278.593 286.467,-284.509 288.238,-277.737"/>
-</g>
-<!-- Node4&#45;&gt;Node4 -->
-<g id="edge14" class="edge"><title>Node4&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M206.267,-179.891C206.761,-185.541 218.005,-190 240,-190 271.992,-190 281.24,-180.565 267.743,-171.757"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="209.146,-181.885 212.257,-171.757 203.509,-177.734 209.146,-181.885"/>
+<path fill="none" stroke="midnightblue" d="M335.367,-320C350.226,-320 365.181,-320 378.852,-320"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="335.112,-316.5 325.112,-320 335.112,-323.5 335.112,-316.5"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
-<g id="a_node5"><a xlink:href="rpcwallet_8cpp.html#a2f46e2bb304dda9a197b5a68db6106f7" target="_top" xlink:title="importprivkey">
-<polygon fill="white" stroke="black" points="396,-266.5 396,-285.5 478,-285.5 478,-266.5 396,-266.5"/>
-<text text-anchor="middle" x="437" y="-273.5" font-family="Helvetica,sans-Serif" font-size="10.00">importprivkey</text>
+<g id="a_node5"><a xlink:href="rpcwallet_8h.html#a7c13054932c9e3b351bd6277fa9361d7" target="_top" xlink:title="signrawtransactionwithwallet">
+<polygon fill="white" stroke="black" points="361,-266.5 361,-285.5 513,-285.5 513,-266.5 361,-266.5"/>
+<text text-anchor="middle" x="437" y="-273.5" font-family="Helvetica,sans-Serif" font-size="10.00">signrawtransactionwithwallet</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge4" class="edge"><title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M257.413,-178.814C279.161,-200.131 319.627,-236.559 361,-257 371.838,-262.355 384.326,-266.293 395.963,-269.148"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="259.833,-176.284 250.28,-171.702 254.89,-181.241 259.833,-176.284"/>
-</g>
-<!-- Node7 -->
-<g id="node7" class="node"><title>Node7</title>
-<g id="a_node7"><a xlink:href="wallet__tests_8cpp.html#a8c64ef6e0ced69002923098229448758" target="_top" xlink:title="importwallet">
-<polygon fill="white" stroke="black" points="399.5,-76.5 399.5,-95.5 474.5,-95.5 474.5,-76.5 399.5,-76.5"/>
-<text text-anchor="middle" x="437" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">importwallet</text>
-</a>
-</g>
-</g>
-<!-- Node4&#45;&gt;Node7 -->
-<g id="edge6" class="edge"><title>Node4&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M267.555,-147.535C291.455,-134.968 327.816,-116.955 361,-105 373.258,-100.584 386.994,-96.7867 399.329,-93.7732"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="265.613,-144.603 258.427,-152.389 268.9,-150.784 265.613,-144.603"/>
-</g>
-<!-- Node9 -->
-<g id="node9" class="node"><title>Node9</title>
-<g id="a_node9"><a xlink:href="rpcwallet_8cpp.html#ab3f51d8e8fe414dbf91c37485e481ae3" target="_top" xlink:title="dumpprivkey">
-<polygon fill="white" stroke="black" points="398,-228.5 398,-247.5 476,-247.5 476,-228.5 398,-228.5"/>
-<text text-anchor="middle" x="437" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">dumpprivkey</text>
-</a>
-</g>
-</g>
-<!-- Node4&#45;&gt;Node9 -->
-<g id="edge8" class="edge"><title>Node4&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M267.555,-176.465C291.455,-189.032 327.816,-207.045 361,-219 372.753,-223.234 385.864,-226.899 397.796,-229.85"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="268.9,-173.216 258.427,-171.611 265.613,-179.397 268.9,-173.216"/>
-</g>
-<!-- Node10 -->
-<g id="node10" class="node"><title>Node10</title>
-<g id="a_node10"><a xlink:href="wallet__tests_8cpp.html#a73ce3a42e0b56b2e4516e55871d8590e" target="_top" xlink:title="dumpwallet">
-<polygon fill="white" stroke="black" points="401.5,-38.5 401.5,-57.5 472.5,-57.5 472.5,-38.5 401.5,-38.5"/>
-<text text-anchor="middle" x="437" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">dumpwallet</text>
-</a>
-</g>
-</g>
-<!-- Node4&#45;&gt;Node10 -->
-<g id="edge10" class="edge"><title>Node4&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M257.413,-145.186C279.161,-123.869 319.627,-87.4405 361,-67 373.524,-60.8124 388.251,-56.5164 401.323,-53.5964"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="254.89,-142.759 250.28,-152.298 259.833,-147.716 254.89,-142.759"/>
-</g>
-<!-- Node11 -->
-<g id="node11" class="node"><title>Node11</title>
-<g id="a_node11"><a xlink:href="wallet__tests_8cpp.html#af0e3c9469f1d8f368d3d5f38e5580367" target="_top" xlink:title="importmulti">
-<polygon fill="white" stroke="black" points="401,-0.5 401,-19.5 473,-19.5 473,-0.5 401,-0.5"/>
-<text text-anchor="middle" x="437" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">importmulti</text>
-</a>
-</g>
-</g>
-<!-- Node4&#45;&gt;Node11 -->
-<g id="edge12" class="edge"><title>Node4&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M252.452,-143.451C271.361,-114.433 311.943,-58.5684 361,-29 372.964,-21.7888 387.585,-17.3009 400.73,-14.5138"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="249.308,-141.871 246.889,-152.186 255.213,-145.631 249.308,-141.871"/>
-</g>
-<!-- Node13 -->
-<g id="node13" class="node"><title>Node13</title>
-<g id="a_node13"><a xlink:href="rpcwallet_8cpp.html#a74b85c92ee6a84277c73b74f2e212bff" target="_top" xlink:title="listtransactions">
-<polygon fill="white" stroke="black" points="392.5,-190.5 392.5,-209.5 481.5,-209.5 481.5,-190.5 392.5,-190.5"/>
-<text text-anchor="middle" x="437" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">listtransactions</text>
-</a>
-</g>
-</g>
-<!-- Node4&#45;&gt;Node13 -->
-<g id="edge15" class="edge"><title>Node4&#45;&gt;Node13</title>
-<path fill="none" stroke="midnightblue" d="M299.806,-173.46C329.561,-179.258 365.055,-186.175 392.348,-191.493"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="300.44,-170.017 289.955,-171.54 299.101,-176.888 300.44,-170.017"/>
-</g>
-<!-- Node14 -->
-<g id="node14" class="node"><title>Node14</title>
-<g id="a_node14"><a xlink:href="rpcwallet_8h.html#a7c13054932c9e3b351bd6277fa9361d7" target="_top" xlink:title="signrawtransactionwithwallet">
-<polygon fill="white" stroke="black" points="361,-152.5 361,-171.5 513,-171.5 513,-152.5 361,-152.5"/>
-<text text-anchor="middle" x="437" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">signrawtransactionwithwallet</text>
-</a>
-</g>
-</g>
-<!-- Node4&#45;&gt;Node14 -->
-<g id="edge17" class="edge"><title>Node4&#45;&gt;Node14</title>
-<path fill="none" stroke="midnightblue" d="M314.875,-162C329.958,-162 345.843,-162 360.966,-162"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="314.581,-158.5 304.58,-162 314.58,-165.5 314.581,-158.5"/>
-</g>
-<!-- Node15 -->
-<g id="node15" class="node"><title>Node15</title>
-<g id="a_node15"><a xlink:href="rpcwallet_8cpp.html#a61c7a90d1b36888fe11b751e746e18c0" target="_top" xlink:title="sethdseed">
-<polygon fill="white" stroke="black" points="403.5,-114.5 403.5,-133.5 470.5,-133.5 470.5,-114.5 403.5,-114.5"/>
-<text text-anchor="middle" x="437" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">sethdseed</text>
-</a>
-</g>
-</g>
-<!-- Node4&#45;&gt;Node15 -->
-<g id="edge19" class="edge"><title>Node4&#45;&gt;Node15</title>
-<path fill="none" stroke="midnightblue" d="M300.198,-150.464C334.034,-143.87 375.188,-135.851 403.263,-130.38"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="299.101,-147.112 289.955,-152.46 300.44,-153.983 299.101,-147.112"/>
+<path fill="none" stroke="midnightblue" d="M329.276,-276C339.86,-276 350.59,-276 360.961,-276"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="329.19,-272.5 319.19,-276 329.19,-279.5 329.19,-272.5"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node"><title>Node6</title>
@@ -173,57 +91,158 @@
 </g>
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge5" class="edge"><title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M488.002,-264.989C496.446,-262.66 505.047,-259.988 513,-257 548.537,-243.647 587.507,-222.113 608.826,-209.688"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="486.991,-261.635 478.21,-267.564 488.771,-268.405 486.991,-261.635"/>
+<path fill="none" stroke="midnightblue" d="M492.625,-263.683C499.556,-261.677 506.495,-259.444 513,-257 548.537,-243.647 587.507,-222.113 608.826,-209.688"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="491.24,-260.433 482.526,-266.459 493.096,-267.183 491.24,-260.433"/>
+</g>
+<!-- Node7&#45;&gt;Node5 -->
+<g id="edge20" class="edge"><title>Node7&#45;&gt;Node5</title>
+<path fill="none" stroke="midnightblue" d="M257.413,-178.814C279.161,-200.131 319.627,-236.559 361,-257 368.707,-260.808 377.248,-263.899 385.725,-266.394"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="259.833,-176.284 250.28,-171.702 254.89,-181.241 259.833,-176.284"/>
+</g>
+<!-- Node7&#45;&gt;Node7 -->
+<g id="edge17" class="edge"><title>Node7&#45;&gt;Node7</title>
+<path fill="none" stroke="midnightblue" d="M206.267,-179.891C206.761,-185.541 218.005,-190 240,-190 271.992,-190 281.24,-180.565 267.743,-171.757"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="209.146,-181.885 212.257,-171.757 203.509,-177.734 209.146,-181.885"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node"><title>Node8</title>
-<g id="a_node8"><a xlink:href="wallet__tests_8cpp.html#a2a726fa52b0a343883cb50a3f68d0989" target="_top" xlink:title="BOOST_FIXTURE_TEST_CASE">
-<polygon fill="white" stroke="black" points="549,-57.5 549,-76.5 703,-76.5 703,-57.5 549,-57.5"/>
-<text text-anchor="middle" x="626" y="-64.5" font-family="Helvetica,sans-Serif" font-size="10.00">BOOST_FIXTURE_TEST_CASE</text>
+<g id="a_node8"><a xlink:href="rpcwallet_8cpp.html#a2f46e2bb304dda9a197b5a68db6106f7" target="_top" xlink:title="importprivkey">
+<polygon fill="white" stroke="black" points="396,-228.5 396,-247.5 478,-247.5 478,-228.5 396,-228.5"/>
+<text text-anchor="middle" x="437" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">importprivkey</text>
 </a>
 </g>
 </g>
 <!-- Node7&#45;&gt;Node8 -->
 <g id="edge7" class="edge"><title>Node7&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M484.977,-81.227C504.272,-79.2665 527.114,-76.9456 548.691,-74.7533"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="484.54,-77.7532 474.945,-82.2462 485.248,-84.7174 484.54,-77.7532"/>
+<path fill="none" stroke="midnightblue" d="M267.555,-176.465C291.455,-189.032 327.816,-207.045 361,-219 372.121,-223.006 384.458,-226.503 395.862,-229.368"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="268.9,-173.216 258.427,-171.611 265.613,-179.397 268.9,-173.216"/>
 </g>
-<!-- Node9&#45;&gt;Node6 -->
-<g id="edge9" class="edge"><title>Node9&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M486.353,-228.174C514.621,-222.43 550.133,-215.214 578.14,-209.522"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="485.396,-224.797 476.293,-230.218 486.79,-231.657 485.396,-224.797"/>
+<!-- Node9 -->
+<g id="node9" class="node"><title>Node9</title>
+<g id="a_node9"><a xlink:href="wallet__tests_8cpp.html#a8c64ef6e0ced69002923098229448758" target="_top" xlink:title="importwallet">
+<polygon fill="white" stroke="black" points="399.5,-76.5 399.5,-95.5 474.5,-95.5 474.5,-76.5 399.5,-76.5"/>
+<text text-anchor="middle" x="437" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">importwallet</text>
+</a>
 </g>
-<!-- Node10&#45;&gt;Node8 -->
-<g id="edge11" class="edge"><title>Node10&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M482.712,-52.543C502.558,-54.5593 526.476,-56.9896 548.992,-59.2772"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="483.038,-49.0581 472.735,-51.5292 482.33,-56.0222 483.038,-49.0581"/>
+</g>
+<!-- Node7&#45;&gt;Node9 -->
+<g id="edge9" class="edge"><title>Node7&#45;&gt;Node9</title>
+<path fill="none" stroke="midnightblue" d="M267.555,-147.535C291.455,-134.968 327.816,-116.955 361,-105 373.258,-100.584 386.994,-96.7867 399.329,-93.7732"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="265.613,-144.603 258.427,-152.389 268.9,-150.784 265.613,-144.603"/>
+</g>
+<!-- Node11 -->
+<g id="node11" class="node"><title>Node11</title>
+<g id="a_node11"><a xlink:href="rpcwallet_8cpp.html#ab3f51d8e8fe414dbf91c37485e481ae3" target="_top" xlink:title="dumpprivkey">
+<polygon fill="white" stroke="black" points="398,-190.5 398,-209.5 476,-209.5 476,-190.5 398,-190.5"/>
+<text text-anchor="middle" x="437" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">dumpprivkey</text>
+</a>
+</g>
+</g>
+<!-- Node7&#45;&gt;Node11 -->
+<g id="edge11" class="edge"><title>Node7&#45;&gt;Node11</title>
+<path fill="none" stroke="midnightblue" d="M300.009,-173.499C331.742,-179.683 369.955,-187.13 397.783,-192.553"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="300.44,-170.017 289.955,-171.54 299.101,-176.888 300.44,-170.017"/>
 </g>
 <!-- Node12 -->
 <g id="node12" class="node"><title>Node12</title>
-<g id="a_node12"><a xlink:href="wallet__tests_8cpp.html#a102aa881fd1aa3b1be48920b5b27dcc3" target="_top" xlink:title="BOOST_FIXTURE_TEST_CASE">
+<g id="a_node12"><a xlink:href="wallet__tests_8cpp.html#a73ce3a42e0b56b2e4516e55871d8590e" target="_top" xlink:title="dumpwallet">
+<polygon fill="white" stroke="black" points="401.5,-38.5 401.5,-57.5 472.5,-57.5 472.5,-38.5 401.5,-38.5"/>
+<text text-anchor="middle" x="437" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">dumpwallet</text>
+</a>
+</g>
+</g>
+<!-- Node7&#45;&gt;Node12 -->
+<g id="edge13" class="edge"><title>Node7&#45;&gt;Node12</title>
+<path fill="none" stroke="midnightblue" d="M257.413,-145.186C279.161,-123.869 319.627,-87.4405 361,-67 373.524,-60.8124 388.251,-56.5164 401.323,-53.5964"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="254.89,-142.759 250.28,-152.298 259.833,-147.716 254.89,-142.759"/>
+</g>
+<!-- Node13 -->
+<g id="node13" class="node"><title>Node13</title>
+<g id="a_node13"><a xlink:href="wallet__tests_8cpp.html#af0e3c9469f1d8f368d3d5f38e5580367" target="_top" xlink:title="importmulti">
+<polygon fill="white" stroke="black" points="401,-0.5 401,-19.5 473,-19.5 473,-0.5 401,-0.5"/>
+<text text-anchor="middle" x="437" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">importmulti</text>
+</a>
+</g>
+</g>
+<!-- Node7&#45;&gt;Node13 -->
+<g id="edge15" class="edge"><title>Node7&#45;&gt;Node13</title>
+<path fill="none" stroke="midnightblue" d="M252.452,-143.451C271.361,-114.433 311.943,-58.5684 361,-29 372.964,-21.7888 387.585,-17.3009 400.73,-14.5138"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="249.308,-141.871 246.889,-152.186 255.213,-145.631 249.308,-141.871"/>
+</g>
+<!-- Node15 -->
+<g id="node15" class="node"><title>Node15</title>
+<g id="a_node15"><a xlink:href="rpcwallet_8cpp.html#a74b85c92ee6a84277c73b74f2e212bff" target="_top" xlink:title="listtransactions">
+<polygon fill="white" stroke="black" points="392.5,-152.5 392.5,-171.5 481.5,-171.5 481.5,-152.5 392.5,-152.5"/>
+<text text-anchor="middle" x="437" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">listtransactions</text>
+</a>
+</g>
+</g>
+<!-- Node7&#45;&gt;Node15 -->
+<g id="edge18" class="edge"><title>Node7&#45;&gt;Node15</title>
+<path fill="none" stroke="midnightblue" d="M314.827,-162C340.923,-162 369.428,-162 392.232,-162"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="314.581,-158.5 304.58,-162 314.58,-165.5 314.581,-158.5"/>
+</g>
+<!-- Node16 -->
+<g id="node16" class="node"><title>Node16</title>
+<g id="a_node16"><a xlink:href="rpcwallet_8cpp.html#a61c7a90d1b36888fe11b751e746e18c0" target="_top" xlink:title="sethdseed">
+<polygon fill="white" stroke="black" points="403.5,-114.5 403.5,-133.5 470.5,-133.5 470.5,-114.5 403.5,-114.5"/>
+<text text-anchor="middle" x="437" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">sethdseed</text>
+</a>
+</g>
+</g>
+<!-- Node7&#45;&gt;Node16 -->
+<g id="edge21" class="edge"><title>Node7&#45;&gt;Node16</title>
+<path fill="none" stroke="midnightblue" d="M300.198,-150.464C334.034,-143.87 375.188,-135.851 403.263,-130.38"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="299.101,-147.112 289.955,-152.46 300.44,-153.983 299.101,-147.112"/>
+</g>
+<!-- Node8&#45;&gt;Node6 -->
+<g id="edge8" class="edge"><title>Node8&#45;&gt;Node6</title>
+<path fill="none" stroke="midnightblue" d="M488.081,-227.823C516.015,-222.147 550.596,-215.12 578.015,-209.548"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="487.219,-224.427 478.116,-229.848 488.613,-231.286 487.219,-224.427"/>
+</g>
+<!-- Node10 -->
+<g id="node10" class="node"><title>Node10</title>
+<g id="a_node10"><a xlink:href="wallet__tests_8cpp.html#a2a726fa52b0a343883cb50a3f68d0989" target="_top" xlink:title="BOOST_FIXTURE_TEST_CASE">
+<polygon fill="white" stroke="black" points="549,-57.5 549,-76.5 703,-76.5 703,-57.5 549,-57.5"/>
+<text text-anchor="middle" x="626" y="-64.5" font-family="Helvetica,sans-Serif" font-size="10.00">BOOST_FIXTURE_TEST_CASE</text>
+</a>
+</g>
+</g>
+<!-- Node9&#45;&gt;Node10 -->
+<g id="edge10" class="edge"><title>Node9&#45;&gt;Node10</title>
+<path fill="none" stroke="midnightblue" d="M484.977,-81.227C504.272,-79.2665 527.114,-76.9456 548.691,-74.7533"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="484.54,-77.7532 474.945,-82.2462 485.248,-84.7174 484.54,-77.7532"/>
+</g>
+<!-- Node11&#45;&gt;Node6 -->
+<g id="edge12" class="edge"><title>Node11&#45;&gt;Node6</title>
+<path fill="none" stroke="midnightblue" d="M486.477,-200C509.431,-200 537.14,-200 561.725,-200"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="486.294,-196.5 476.293,-200 486.293,-203.5 486.294,-196.5"/>
+</g>
+<!-- Node12&#45;&gt;Node10 -->
+<g id="edge14" class="edge"><title>Node12&#45;&gt;Node10</title>
+<path fill="none" stroke="midnightblue" d="M482.712,-52.543C502.558,-54.5593 526.476,-56.9896 548.992,-59.2772"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="483.038,-49.0581 472.735,-51.5292 482.33,-56.0222 483.038,-49.0581"/>
+</g>
+<!-- Node14 -->
+<g id="node14" class="node"><title>Node14</title>
+<g id="a_node14"><a xlink:href="wallet__tests_8cpp.html#a102aa881fd1aa3b1be48920b5b27dcc3" target="_top" xlink:title="BOOST_FIXTURE_TEST_CASE">
 <polygon fill="white" stroke="black" points="549,-0.5 549,-19.5 703,-19.5 703,-0.5 549,-0.5"/>
 <text text-anchor="middle" x="626" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">BOOST_FIXTURE_TEST_CASE</text>
 </a>
 </g>
 </g>
-<!-- Node11&#45;&gt;Node12 -->
-<g id="edge13" class="edge"><title>Node11&#45;&gt;Node12</title>
+<!-- Node13&#45;&gt;Node14 -->
+<g id="edge16" class="edge"><title>Node13&#45;&gt;Node14</title>
 <path fill="none" stroke="midnightblue" d="M483.381,-10C503.075,-10 526.683,-10 548.927,-10"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="483.173,-6.5001 473.173,-10 483.173,-13.5001 483.173,-6.5001"/>
 </g>
-<!-- Node13&#45;&gt;Node6 -->
-<g id="edge16" class="edge"><title>Node13&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M491.944,-200C513.818,-200 539.233,-200 561.954,-200"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="491.843,-196.5 481.843,-200 491.843,-203.5 491.843,-196.5"/>
-</g>
-<!-- Node14&#45;&gt;Node6 -->
-<g id="edge18" class="edge"><title>Node14&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M495.131,-173.61C521.727,-179.014 552.973,-185.364 578.151,-190.48"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="495.685,-170.151 485.188,-171.589 494.291,-177.01 495.685,-170.151"/>
-</g>
 <!-- Node15&#45;&gt;Node6 -->
-<g id="edge20" class="edge"><title>Node15&#45;&gt;Node6</title>
+<g id="edge19" class="edge"><title>Node15&#45;&gt;Node6</title>
+<path fill="none" stroke="midnightblue" d="M491.994,-172.972C519.247,-178.51 551.986,-185.163 578.163,-190.482"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="492.34,-169.471 481.843,-170.909 490.946,-176.331 492.34,-169.471"/>
+</g>
+<!-- Node16&#45;&gt;Node6 -->
+<g id="edge22" class="edge"><title>Node16&#45;&gt;Node6</title>
 <path fill="none" stroke="midnightblue" d="M480.616,-133.047C491.333,-135.797 502.709,-139.133 513,-143 548.537,-156.353 587.507,-177.887 608.826,-190.312"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="481.147,-129.573 470.601,-130.592 479.481,-136.372 481.147,-129.573"/>
 </g>

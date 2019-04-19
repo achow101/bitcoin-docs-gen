@@ -25,6 +25,8 @@ var searchData=
   ['clientmodel_2eh',['clientmodel.h',['../clientmodel_8h.html',1,'']]],
   ['clientversion_2ecpp',['clientversion.cpp',['../clientversion_8cpp.html',1,'']]],
   ['clientversion_2eh',['clientversion.h',['../clientversion_8h.html',1,'']]],
+  ['coin_2ecpp',['coin.cpp',['../coin_8cpp.html',1,'']]],
+  ['coin_2eh',['coin.h',['../coin_8h.html',1,'']]],
   ['coin_5fselection_2ecpp',['coin_selection.cpp',['../coin__selection_8cpp.html',1,'']]],
   ['coincontrol_2ecpp',['coincontrol.cpp',['../coincontrol_8cpp.html',1,'']]],
   ['coincontrol_2eh',['coincontrol.h',['../coincontrol_8h.html',1,'']]],

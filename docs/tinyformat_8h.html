@@ -112,7 +112,8 @@ Include dependency graph for tinyformat.h:</div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="tinyformat_8h__dep__incl.svg" width="5924" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="tinyformat_8h__dep__incl.svg" width="5976" height="351"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="tinyformat_8h_source.html">Go to the source code of this file.</a></p>
@@ -634,7 +635,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacetinyformat_1_1detail.html#a0a1c25572ad934e2db1c7baa69ae2856">formatTruncated</a>(std::ostream&amp; out, type* value, <span class="keywordtype">int</span> ntrunc) \</div><div class="line">{                                                           \</div><div class="line">    std::streamsize len = 0;                                \</div><div class="line">    while(len &lt; ntrunc &amp;&amp; value[len] != 0)                  \</div><div class="line">        ++len;                                              \</div><div class="line">    out.write(value, len);                                  \</div><div class="line">}</div><div class="ttc" id="namespacetinyformat_1_1detail_html_a0a1c25572ad934e2db1c7baa69ae2856"><div class="ttname"><a href="namespacetinyformat_1_1detail.html#a0a1c25572ad934e2db1c7baa69ae2856">tinyformat::detail::formatTruncated</a></div><div class="ttdeci">void formatTruncated(std::ostream &amp;out, const T &amp;value, int ntrunc)</div><div class="ttdef"><b>Definition:</b> <a href="tinyformat_8h_source.html#l00274">tinyformat.h:274</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacetinyformat_1_1detail.html#a0a1c25572ad934e2db1c7baa69ae2856">formatTruncated</a>(std::ostream&amp; out, type* value, <span class="keywordtype">int</span> ntrunc) \</div><div class="line">{                                                           \</div><div class="line">    std::streamsize len = 0;                                <a class="code" href="net__processing_8cpp.html#a4c3f4b7e7b0e61fb40a351f816b363c5">\</a></div><div class="line"><a class="code" href="net__processing_8cpp.html#a4c3f4b7e7b0e61fb40a351f816b363c5">    while</a>(len &lt; ntrunc &amp;&amp; value[len] != 0)                  \</div><div class="line">        ++len;                                              \</div><div class="line">    out.write(value, len);                                  \</div><div class="line">}</div><div class="ttc" id="namespacetinyformat_1_1detail_html_a0a1c25572ad934e2db1c7baa69ae2856"><div class="ttname"><a href="namespacetinyformat_1_1detail.html#a0a1c25572ad934e2db1c7baa69ae2856">tinyformat::detail::formatTruncated</a></div><div class="ttdeci">void formatTruncated(std::ostream &amp;out, const T &amp;value, int ntrunc)</div><div class="ttdef"><b>Definition:</b> <a href="tinyformat_8h_source.html#l00274">tinyformat.h:274</a></div></div>
+<div class="ttc" id="net__processing_8cpp_html_a4c3f4b7e7b0e61fb40a351f816b363c5"><div class="ttname"><a href="net__processing_8cpp.html#a4c3f4b7e7b0e61fb40a351f816b363c5">while</a></div><div class="ttdeci">while(!done &amp;&amp;!orphan_work_set.empty())</div><div class="ttdef"><b>Definition:</b> <a href="net__processing_8cpp_source.html#l01719">net_processing.cpp:1719</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="tinyformat_8h_source.html#l00281">281</a> of file <a class="el" href="tinyformat_8h_source.html">tinyformat.h</a>.</p>
 
@@ -1452,7 +1454,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 14 2019 14:06:31 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 19 2019 03:49:59 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

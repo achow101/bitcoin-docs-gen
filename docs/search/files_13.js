@@ -13,9 +13,11 @@ var searchData=
   ['univalue_5fread_2ecpp',['univalue_read.cpp',['../univalue__read_8cpp.html',1,'']]],
   ['univalue_5futffilter_2eh',['univalue_utffilter.h',['../univalue__utffilter_8h.html',1,'']]],
   ['univalue_5fwrite_2ecpp',['univalue_write.cpp',['../univalue__write_8cpp.html',1,'']]],
+  ['url_2ecpp',['url.cpp',['../url_8cpp.html',1,'']]],
+  ['url_2eh',['url.h',['../url_8h.html',1,'']]],
   ['util_2ecpp',['util.cpp',['../util_8cpp.html',1,'']]],
-  ['util_2eh',['util.h',['../rpc_2util_8h.html',1,'']]],
   ['util_2eh',['util.h',['../secp256k1_2src_2util_8h.html',1,'']]],
+  ['util_2eh',['util.h',['../rpc_2util_8h.html',1,'']]],
   ['utilitydialog_2ecpp',['utilitydialog.cpp',['../utilitydialog_8cpp.html',1,'']]],
   ['utilitydialog_2eh',['utilitydialog.h',['../utilitydialog_8h.html',1,'']]]
 ];

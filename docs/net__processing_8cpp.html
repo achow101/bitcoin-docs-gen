@@ -122,11 +122,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="system_8h_source.html">util/system.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="moneystr_8h_source.html">util/moneystr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="strencodings_8h_source.html">util/strencodings.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="util_2validation_8h_source.html">util/validation.h</a>&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for net_processing.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="net__processing_8cpp__incl.svg" width="3819" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="net__processing_8cpp__incl.svg" width="4202" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="net__processing_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -140,7 +142,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af597188c824f0469a3164e28e5119f63"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classuint256.html">uint256</a>, <a class="el" href="struct_c_orphan_tx.html">COrphanTx</a> &gt; mapOrphanTransactions&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#af597188c824f0469a3164e28e5119f63">GUARDED_BY</a> (<a class="el" href="net__processing_8cpp.html#ac02c85606709a83ec7aa7f23109fa898">g_cs_orphans</a>)</td></tr>
+<tr class="memitem:af597188c824f0469a3164e28e5119f63"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classuint256.html">uint256</a>, <a class="el" href="struct_c_orphan_tx.html">COrphanTx</a> &gt; mapOrphanTransactions&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#af597188c824f0469a3164e28e5119f63">GUARDED_BY</a> (<a class="el" href="net__processing_8cpp.html#a0bcab6d439b438550865c607e7d90d3a">g_cs_orphans</a>)</td></tr>
 <tr class="separator:af597188c824f0469a3164e28e5119f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a2fcba1719100c7e9a0caf97f6988f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#a4a2fcba1719100c7e9a0caf97f6988f4">EraseOrphansFor</a> (<a class="el" href="net_8h.html#aa637b11e18b77724b35db2229cd12788">NodeId</a> peer)</td></tr>
 <tr class="separator:a4a2fcba1719100c7e9a0caf97f6988f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,15 +154,23 @@ Functions</h2></td></tr>
 <tr class="memitem:af0793c7c14e94d2d642f4ac89067a429"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#af0793c7c14e94d2d642f4ac89067a429">GetNodeStateStats</a> (<a class="el" href="net_8h.html#aa637b11e18b77724b35db2229cd12788">NodeId</a> nodeid, <a class="el" href="struct_c_node_state_stats.html">CNodeStateStats</a> &amp;stats)</td></tr>
 <tr class="memdesc:af0793c7c14e94d2d642f4ac89067a429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get statistics from node state.  <a href="#af0793c7c14e94d2d642f4ac89067a429">More...</a><br /></td></tr>
 <tr class="separator:af0793c7c14e94d2d642f4ac89067a429"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd6140f46766ceef29bf97f4e83bbec1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#abd6140f46766ceef29bf97f4e83bbec1">AddOrphanTx</a> (const <a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx, <a class="el" href="net_8h.html#aa637b11e18b77724b35db2229cd12788">NodeId</a> peer) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="net__processing_8cpp.html#ac02c85606709a83ec7aa7f23109fa898">g_cs_orphans</a>)</td></tr>
+<tr class="memitem:abd6140f46766ceef29bf97f4e83bbec1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#abd6140f46766ceef29bf97f4e83bbec1">AddOrphanTx</a> (const <a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx, <a class="el" href="net_8h.html#aa637b11e18b77724b35db2229cd12788">NodeId</a> peer) <a class="el" href="threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="net__processing_8cpp.html#a0bcab6d439b438550865c607e7d90d3a">g_cs_orphans</a>)</td></tr>
 <tr class="separator:abd6140f46766ceef29bf97f4e83bbec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03c1ac9fc43feb8f1d67e92f17cceb38"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#a03c1ac9fc43feb8f1d67e92f17cceb38">LimitOrphanTxSize</a> (unsigned int nMaxOrphans)</td></tr>
 <tr class="separator:a03c1ac9fc43feb8f1d67e92f17cceb38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37e6419b0b18c99c5296b5a18c19e954"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#a37e6419b0b18c99c5296b5a18c19e954">AssertLockHeld</a> (<a class="el" href="net__processing_8cpp.html#a0bcab6d439b438550865c607e7d90d3a">g_cs_orphans</a>)</td></tr>
+<tr class="separator:a37e6419b0b18c99c5296b5a18c19e954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c3f4b7e7b0e61fb40a351f816b363c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#a4c3f4b7e7b0e61fb40a351f816b363c5">while</a> (!<a class="el" href="net__processing_8cpp.html#a1d39aac66e12dae50a24cd7a9100ef33">done</a> &amp;&amp;!orphan_work_set.empty())</td></tr>
+<tr class="separator:a4c3f4b7e7b0e61fb40a351f816b363c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ac02c85606709a83ec7aa7f23109fa898"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#ac02c85606709a83ec7aa7f23109fa898">g_cs_orphans</a></td></tr>
-<tr class="separator:ac02c85606709a83ec7aa7f23109fa898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bcab6d439b438550865c607e7d90d3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#a0bcab6d439b438550865c607e7d90d3a">g_cs_orphans</a></td></tr>
+<tr class="separator:a0bcab6d439b438550865c607e7d90d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a216e33c20d428fd73b444471958301e0"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="net_8h.html#aa637b11e18b77724b35db2229cd12788">NodeId</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#a216e33c20d428fd73b444471958301e0">setMisbehaving</a></td></tr>
+<tr class="separator:a216e33c20d428fd73b444471958301e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d39aac66e12dae50a24cd7a9100ef33"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#a1d39aac66e12dae50a24cd7a9100ef33">done</a> = false</td></tr>
+<tr class="separator:a1d39aac66e12dae50a24cd7a9100ef33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a450d2be8350b29dcb4f3adc3325f56b2"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="class_c_net_processing_cleanup.html">CNetProcessingCleanup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__processing_8cpp.html#a450d2be8350b29dcb4f3adc3325f56b2">instance_of_cnetprocessingcleanup</a></td></tr>
 <tr class="separator:a450d2be8350b29dcb4f3adc3325f56b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -189,7 +199,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00823">823</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00822">822</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -201,9 +211,26 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="net__processing_8cpp_abd6140f46766ceef29bf97f4e83bbec1_icgraph.svg" width="314" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="net__processing_8cpp_abd6140f46766ceef29bf97f4e83bbec1_icgraph.svg" width="220" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="a37e6419b0b18c99c5296b5a18c19e954"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AssertLockHeld </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="net__processing_8cpp.html#a0bcab6d439b438550865c607e7d90d3a">g_cs_orphans</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -221,7 +248,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00887">887</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00886">886</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -258,7 +285,7 @@ Here is the caller graph for this function:</div>
 
 <p>Get statistics from node state. </p>
 
-<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00792">792</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00791">791</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -276,7 +303,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">std::map&lt;<a class="el" href="classuint256.html">uint256</a>, <a class="el" href="struct_c_orphan_tx.html">COrphanTx</a>&gt; mapOrphanTransactions GUARDED_BY </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="net__processing_8cpp.html#ac02c85606709a83ec7aa7f23109fa898">g_cs_orphans</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="net__processing_8cpp.html#a0bcab6d439b438550865c607e7d90d3a">g_cs_orphans</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -306,7 +333,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00904">904</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00903">903</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -318,7 +345,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="net__processing_8cpp_a03c1ac9fc43feb8f1d67e92f17cceb38_icgraph.svg" width="347" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="net__processing_8cpp_a03c1ac9fc43feb8f1d67e92f17cceb38_icgraph.svg" width="254" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -357,19 +385,21 @@ Here is the caller graph for this function:</div>
 <p>Increase a node's misbehavior score. </p>
 <p>Mark a misbehaving peer to be banned depending upon the value of <code>-banscore</code>.</p>
 
-<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00943">943</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00942">942</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="net__processing_8cpp_a6e5f23e214eabb1ef39b5c6d517ef753_cgraph.svg" width="1519" height="792"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="net__processing_8cpp_a6e5f23e214eabb1ef39b5c6d517ef753_cgraph.svg" width="1519" height="792"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="net__processing_8cpp_a6e5f23e214eabb1ef39b5c6d517ef753_icgraph.svg" width="307" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="net__processing_8cpp_a6e5f23e214eabb1ef39b5c6d517ef753_icgraph.svg" width="307" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -399,22 +429,56 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00731">731</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00730">730</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="ac02c85606709a83ec7aa7f23109fa898"></a>
+<a class="anchor" id="a4c3f4b7e7b0e61fb40a351f816b363c5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a> g_cs_orphans</td>
+          <td class="memname">while </td>
+          <td>(</td>
+          <td class="paramtype">!<a class="el" href="net__processing_8cpp.html#a1d39aac66e12dae50a24cd7a9100ef33">done</a> &amp;&amp;!orphan_work_set.&#160;</td>
+          <td class="paramname"><em>empty</em>()</td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00090">90</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l01719">1719</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a1d39aac66e12dae50a24cd7a9100ef33"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool done = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l01718">1718</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0bcab6d439b438550865c607e7d90d3a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void g_cs_orphans</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    <a class="code" href="net__processing_8cpp.html#a37e6419b0b18c99c5296b5a18c19e954">AssertLockHeld</a>(<a class="code" href="net__processing_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</div><div class="ttc" id="net__processing_8h_html_a1ed8285f0fe3c6799c53265ce72552c8"><div class="ttname"><a href="net__processing_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a></div><div class="ttdeci">CCriticalSection cs_main</div><div class="ttdoc">Mutex to guard access to validation specific variables, such as reading or changing the chainstate...</div><div class="ttdef"><b>Definition:</b> <a href="validation_8cpp_source.html#l00230">validation.cpp:230</a></div></div>
+<div class="ttc" id="net__processing_8cpp_html_a37e6419b0b18c99c5296b5a18c19e954"><div class="ttname"><a href="net__processing_8cpp.html#a37e6419b0b18c99c5296b5a18c19e954">AssertLockHeld</a></div><div class="ttdeci">AssertLockHeld(g_cs_orphans)</div></div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l00091">91</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
 
 </div>
 </div>
@@ -430,10 +494,24 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a216e33c20d428fd73b444471958301e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;<a class="el" href="net_8h.html#aa637b11e18b77724b35db2229cd12788">NodeId</a>&gt; setMisbehaving</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="net__processing_8cpp_source.html#l01717">1717</a> of file <a class="el" href="net__processing_8cpp_source.html">net_processing.cpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 14 2019 14:06:28 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 19 2019 03:49:54 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

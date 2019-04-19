@@ -90,7 +90,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">transaction.h File Reference</div>  </div>
@@ -99,96 +98,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#include &lt;<a class="el" href="attributes_8h_source.html">attributes.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="primitives_2transaction_8h_source.html">primitives/transaction.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="uint256_8h_source.html">uint256.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="error_8h_source.html">util/error.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for transaction.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="node_2transaction_8h__incl.svg" width="1850" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="node_2transaction_8h__incl.svg" width="1951" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="node_2transaction_8h__dep__incl.svg" width="2167" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="node_2transaction_8h__dep__incl.svg" width="2280" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="node_2transaction_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a857c3bfc8da2a43cebacd0582cc867ac"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867ac">TransactionError</a> { <br />
-&#160;&#160;<a class="el" href="node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867acae0aa021e21dddbd6d8cecec71e9cf564">TransactionError::OK</a>, 
-<a class="el" href="node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867aca13c6cc69fcf1526c4cb5d1dc3cd983b2">TransactionError::MISSING_INPUTS</a>, 
-<a class="el" href="node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867acaf59d78645dc2866dd7eb19fa7d9c993f">TransactionError::ALREADY_IN_CHAIN</a>, 
-<a class="el" href="node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867aca3229e157ecf9402202f05de7e0508642">TransactionError::P2P_DISABLED</a>, 
-<br />
-&#160;&#160;<a class="el" href="node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867aca1deedb424b3597eb79cef9aa0e9a7984">TransactionError::MEMPOOL_REJECTED</a>, 
-<a class="el" href="node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867aca466537a158d09305601cc6fd5abda0f3">TransactionError::MEMPOOL_ERROR</a>, 
-<a class="el" href="node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867acab6a6f3fe01996bce6d6d24892483ff17">TransactionError::INVALID_PSBT</a>, 
-<a class="el" href="node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867aca85f2f7870baf93a7ff4497406c23b451">TransactionError::PSBT_MISMATCH</a>, 
-<br />
-&#160;&#160;<a class="el" href="node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867acad2e3cb7ce8f643cef5bdc509fd524bd1">TransactionError::SIGHASH_MISMATCH</a>
-<br />
- }</td></tr>
-<tr class="separator:a857c3bfc8da2a43cebacd0582cc867ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7e21bc6a4c8a3947d6c3410cde529182"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="node_2transaction_8h.html#a7e21bc6a4c8a3947d6c3410cde529182">TransactionErrorString</a> (const <a class="el" href="node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867ac">TransactionError</a> <a class="el" href="system_8h.html#a0605c886f88f190fa6a51ae07ca7558a">error</a>)</td></tr>
-<tr class="separator:a7e21bc6a4c8a3947d6c3410cde529182"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79bd3efb52d56050ad796b0bc07c611e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="attributes_8h.html#abf13e44576a768044e199191d4f26f7e">NODISCARD</a> <a class="el" href="node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867ac">TransactionError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="node_2transaction_8h.html#a79bd3efb52d56050ad796b0bc07c611e">BroadcastTransaction</a> (<a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> tx, <a class="el" href="classuint256.html">uint256</a> &amp;txid, std::string &amp;err_string, const <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;highfee)</td></tr>
+<tr class="memitem:a79bd3efb52d56050ad796b0bc07c611e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="attributes_8h.html#abf13e44576a768044e199191d4f26f7e">NODISCARD</a> <a class="el" href="error_8h.html#a857c3bfc8da2a43cebacd0582cc867ac">TransactionError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="node_2transaction_8h.html#a79bd3efb52d56050ad796b0bc07c611e">BroadcastTransaction</a> (<a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> tx, <a class="el" href="classuint256.html">uint256</a> &amp;txid, std::string &amp;err_string, const <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;highfee)</td></tr>
 <tr class="memdesc:a79bd3efb52d56050ad796b0bc07c611e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast a transaction.  <a href="#a79bd3efb52d56050ad796b0bc07c611e">More...</a><br /></td></tr>
 <tr class="separator:a79bd3efb52d56050ad796b0bc07c611e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="a857c3bfc8da2a43cebacd0582cc867ac"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867ac">TransactionError</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a857c3bfc8da2a43cebacd0582cc867acae0aa021e21dddbd6d8cecec71e9cf564"></a>OK&#160;</td><td class="fielddoc">
-<p>No error. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a857c3bfc8da2a43cebacd0582cc867aca13c6cc69fcf1526c4cb5d1dc3cd983b2"></a>MISSING_INPUTS&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a857c3bfc8da2a43cebacd0582cc867acaf59d78645dc2866dd7eb19fa7d9c993f"></a>ALREADY_IN_CHAIN&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a857c3bfc8da2a43cebacd0582cc867aca3229e157ecf9402202f05de7e0508642"></a>P2P_DISABLED&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a857c3bfc8da2a43cebacd0582cc867aca1deedb424b3597eb79cef9aa0e9a7984"></a>MEMPOOL_REJECTED&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a857c3bfc8da2a43cebacd0582cc867aca466537a158d09305601cc6fd5abda0f3"></a>MEMPOOL_ERROR&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a857c3bfc8da2a43cebacd0582cc867acab6a6f3fe01996bce6d6d24892483ff17"></a>INVALID_PSBT&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a857c3bfc8da2a43cebacd0582cc867aca85f2f7870baf93a7ff4497406c23b451"></a>PSBT_MISMATCH&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a857c3bfc8da2a43cebacd0582cc867acad2e3cb7ce8f643cef5bdc509fd524bd1"></a>SIGHASH_MISMATCH&#160;</td><td class="fielddoc">
-</td></tr>
-</table>
-
-<p>Definition at line <a class="el" href="node_2transaction_8h_source.html#l00012">12</a> of file <a class="el" href="node_2transaction_8h_source.html">transaction.h</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a79bd3efb52d56050ad796b0bc07c611e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="attributes_8h.html#abf13e44576a768044e199191d4f26f7e">NODISCARD</a> <a class="el" href="node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867ac">TransactionError</a> BroadcastTransaction </td>
+          <td class="memname"><a class="el" href="attributes_8h.html#abf13e44576a768044e199191d4f26f7e">NODISCARD</a> <a class="el" href="error_8h.html#a857c3bfc8da2a43cebacd0582cc867ac">TransactionError</a> BroadcastTransaction </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a>&#160;</td>
           <td class="paramname"><em>tx</em>, </td>
@@ -230,44 +168,13 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="node_2transaction_8cpp_source.html#l00041">41</a> of file <a class="el" href="node_2transaction_8cpp_source.html">transaction.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_2transaction_8cpp_source.html#l00016">16</a> of file <a class="el" href="node_2transaction_8cpp_source.html">transaction.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="node_2transaction_8h_a79bd3efb52d56050ad796b0bc07c611e_cgraph.svg" width="1208" height="2304"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="node_2transaction_8h_a79bd3efb52d56050ad796b0bc07c611e_cgraph.svg" width="914" height="408"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="node_2transaction_8h_a79bd3efb52d56050ad796b0bc07c611e_icgraph.svg" width="507" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a7e21bc6a4c8a3947d6c3410cde529182"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string TransactionErrorString </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867ac">TransactionError</a>&#160;</td>
-          <td class="paramname"><em>error</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="node_2transaction_8cpp_source.html#l00015">15</a> of file <a class="el" href="node_2transaction_8cpp_source.html">transaction.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="node_2transaction_8h_a7e21bc6a4c8a3947d6c3410cde529182_icgraph.svg" width="814" height="158"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -276,7 +183,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 14 2019 14:06:28 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 19 2019 03:49:54 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

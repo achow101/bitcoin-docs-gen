@@ -89,11 +89,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">blockfilter.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="blockfilter_8h_source.html">blockfilter.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;mutex&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;<a class="el" href="blockfilter_8h_source.html">blockfilter.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="siphash_8h_source.html">crypto/siphash.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="hash_8h_source.html">hash.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="primitives_2transaction_8h_source.html">primitives/transaction.h</a>&gt;</code><br />
@@ -102,14 +106,161 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for blockfilter.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="blockfilter_8cpp__incl.svg" width="3170" height="874"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockfilter_8cpp__incl.svg" width="3035" height="874"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="blockfilter_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a46a9f84645bfcc15deec64a32f251d62"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blockfilter_8cpp.html#a46a9f84645bfcc15deec64a32f251d62">BlockFilterTypeName</a> (<a class="el" href="blockfilter_8h.html#a530bf73ca0d532a142641644a1605250">BlockFilterType</a> filter_type)</td></tr>
+<tr class="memdesc:a46a9f84645bfcc15deec64a32f251d62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the human-readable name for a filter type.  <a href="#a46a9f84645bfcc15deec64a32f251d62">More...</a><br /></td></tr>
+<tr class="separator:a46a9f84645bfcc15deec64a32f251d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ab98492fe302c5350a5eb269789c8a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blockfilter_8cpp.html#ae7ab98492fe302c5350a5eb269789c8a">BlockFilterTypeByName</a> (const std::string &amp;<a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, <a class="el" href="blockfilter_8h.html#a530bf73ca0d532a142641644a1605250">BlockFilterType</a> &amp;filter_type)</td></tr>
+<tr class="memdesc:ae7ab98492fe302c5350a5eb269789c8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a filter type by its human-readable name.  <a href="#ae7ab98492fe302c5350a5eb269789c8a">More...</a><br /></td></tr>
+<tr class="separator:ae7ab98492fe302c5350a5eb269789c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3752ecfb54bc9085637f7995edb2329e"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="blockfilter_8h.html#a530bf73ca0d532a142641644a1605250">BlockFilterType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blockfilter_8cpp.html#a3752ecfb54bc9085637f7995edb2329e">AllBlockFilterTypes</a> ()</td></tr>
+<tr class="memdesc:a3752ecfb54bc9085637f7995edb2329e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of known filter types.  <a href="#a3752ecfb54bc9085637f7995edb2329e">More...</a><br /></td></tr>
+<tr class="separator:a3752ecfb54bc9085637f7995edb2329e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac23bd49d30a4d16b1d94c29eed8a8113"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blockfilter_8cpp.html#ac23bd49d30a4d16b1d94c29eed8a8113">ListBlockFilterTypes</a> ()</td></tr>
+<tr class="memdesc:ac23bd49d30a4d16b1d94c29eed8a8113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a comma-separated list of known filter type names.  <a href="#ac23bd49d30a4d16b1d94c29eed8a8113">More...</a><br /></td></tr>
+<tr class="separator:ac23bd49d30a4d16b1d94c29eed8a8113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a3752ecfb54bc9085637f7995edb2329e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;<a class="el" href="blockfilter_8h.html#a530bf73ca0d532a142641644a1605250">BlockFilterType</a>&gt;&amp; AllBlockFilterTypes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a list of known filter types. </p>
+
+<p>Definition at line <a class="el" href="blockfilter_8cpp_source.html#l00224">224</a> of file <a class="el" href="blockfilter_8cpp_source.html">blockfilter.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockfilter_8cpp_a3752ecfb54bc9085637f7995edb2329e_icgraph.svg" width="396" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae7ab98492fe302c5350a5eb269789c8a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BlockFilterTypeByName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="blockfilter_8h.html#a530bf73ca0d532a142641644a1605250">BlockFilterType</a> &amp;&#160;</td>
+          <td class="paramname"><em>filter_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Find a filter type by its human-readable name. </p>
+
+<p>Definition at line <a class="el" href="blockfilter_8cpp_source.html#l00214">214</a> of file <a class="el" href="blockfilter_8cpp_source.html">blockfilter.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockfilter_8cpp_ae7ab98492fe302c5350a5eb269789c8a_icgraph.svg" width="430" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a46a9f84645bfcc15deec64a32f251d62"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string&amp; BlockFilterTypeName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="blockfilter_8h.html#a530bf73ca0d532a142641644a1605250">BlockFilterType</a>&#160;</td>
+          <td class="paramname"><em>filter_type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the human-readable name for a filter type. </p>
+<p>Returns empty string for unknown types. </p>
+
+<p>Definition at line <a class="el" href="blockfilter_8cpp_source.html#l00207">207</a> of file <a class="el" href="blockfilter_8cpp_source.html">blockfilter.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockfilter_8cpp_a46a9f84645bfcc15deec64a32f251d62_icgraph.svg" width="838" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac23bd49d30a4d16b1d94c29eed8a8113"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string&amp; ListBlockFilterTypes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a comma-separated list of known filter type names. </p>
+
+<p>Definition at line <a class="el" href="blockfilter_8cpp_source.html#l00239">239</a> of file <a class="el" href="blockfilter_8cpp_source.html">blockfilter.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockfilter_8cpp_ac23bd49d30a4d16b1d94c29eed8a8113_cgraph.svg" width="738" height="180"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="blockfilter_8cpp_ac23bd49d30a4d16b1d94c29eed8a8113_icgraph.svg" width="332" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 14 2019 14:06:27 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 19 2019 03:49:51 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

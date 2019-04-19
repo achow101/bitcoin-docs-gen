@@ -96,13 +96,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Sections Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Keeps track of RPCArgs by transforming them into sections for the purpose of serializing everything to a single string.  
+ <a href="struct_sections.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:adeed1477297cd602a7be6b8e844292a2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sections.html#adeed1477297cd602a7be6b8e844292a2">OuterType</a> { <a class="el" href="struct_sections.html#adeed1477297cd602a7be6b8e844292a2ac703eb65f968f2a9c9145fd07132f72b">OuterType::ARR</a>, 
 <a class="el" href="struct_sections.html#adeed1477297cd602a7be6b8e844292a2af34d534adfb78a9e6432be4621a93eec">OuterType::OBJ</a>, 
 <a class="el" href="struct_sections.html#adeed1477297cd602a7be6b8e844292a2a2e4c3f7ff7d317d704f6443005f2f412">OuterType::NAMED_ARG</a>
- }</td></tr>
+ }<tr class="memdesc:adeed1477297cd602a7be6b8e844292a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializing RPCArgs depends on the outer type.  <a href="struct_sections.html#adeed1477297cd602a7be6b8e844292a2">More...</a><br /></td></tr>
+</td></tr>
 <tr class="separator:adeed1477297cd602a7be6b8e844292a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -110,8 +114,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3507c1c48033a387fe2fa8e7dbf147d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sections.html#a3507c1c48033a387fe2fa8e7dbf147d5">PushSection</a> (const <a class="el" href="struct_section.html">Section</a> &amp;s)</td></tr>
 <tr class="separator:a3507c1c48033a387fe2fa8e7dbf147d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e1e109bca4fa8366ed930f8cfdfe1f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sections.html#a4e1e109bca4fa8366ed930f8cfdfe1f1">Push</a> (const <a class="el" href="struct_r_p_c_arg.html">RPCArg</a> &amp;arg, const size_t current_indent=5, const <a class="el" href="struct_sections.html#adeed1477297cd602a7be6b8e844292a2">OuterType</a> outer_type=<a class="el" href="struct_sections.html#adeed1477297cd602a7be6b8e844292a2a2e4c3f7ff7d317d704f6443005f2f412">OuterType::NAMED_ARG</a>)</td></tr>
+<tr class="memdesc:a4e1e109bca4fa8366ed930f8cfdfe1f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursive helper to translate an <a class="el" href="struct_r_p_c_arg.html">RPCArg</a> into sections.  <a href="#a4e1e109bca4fa8366ed930f8cfdfe1f1">More...</a><br /></td></tr>
 <tr class="separator:a4e1e109bca4fa8366ed930f8cfdfe1f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9399568f0b8bf0bd6d5e7b0fb151b5f1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sections.html#a9399568f0b8bf0bd6d5e7b0fb151b5f1">ToString</a> () const </td></tr>
+<tr class="memdesc:a9399568f0b8bf0bd6d5e7b0fb151b5f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concatenate all sections with proper padding.  <a href="#a9399568f0b8bf0bd6d5e7b0fb151b5f1">More...</a><br /></td></tr>
 <tr class="separator:a9399568f0b8bf0bd6d5e7b0fb151b5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -122,8 +128,9 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ab55712eba7816445818cd77304cc50a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00175">175</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<div class="textblock"><p>Keeps track of RPCArgs by transforming them into sections for the purpose of serializing everything to a single string. </p>
+
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00287">287</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="adeed1477297cd602a7be6b8e844292a2"></a>
 <div class="memitem">
@@ -142,6 +149,10 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Serializing RPCArgs depends on the outer type. </p>
+<p>Only arrays and dictionaries can be nested in json. The top-level outer type is "named
+arguments", a mix between a dictionary and arrays. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="adeed1477297cd602a7be6b8e844292a2ac703eb65f968f2a9c9145fd07132f72b"></a>ARR&#160;</td><td class="fielddoc">
 </td></tr>
@@ -151,7 +162,7 @@ Public Attributes</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00185">185</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00302">302</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 </div>
 </div>
@@ -194,7 +205,9 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00191">191</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Recursive helper to translate an <a class="el" href="struct_r_p_c_arg.html">RPCArg</a> into sections. </p>
+
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00311">311</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -234,7 +247,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00179">179</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00291">291</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 </div>
 </div>
@@ -259,7 +272,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00244">244</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Concatenate all sections with proper padding. </p>
+
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00369">369</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -281,7 +296,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00177">177</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00289">289</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 </div>
 </div>
@@ -295,7 +310,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="util_8cpp_source.html#l00176">176</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="util_8cpp_source.html#l00288">288</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 </div>
 </div>
@@ -305,7 +320,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 14 2019 14:06:37 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 19 2019 03:50:08 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

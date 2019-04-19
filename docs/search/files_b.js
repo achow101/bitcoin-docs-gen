@@ -20,7 +20,6 @@ var searchData=
   ['miner_2ecpp',['miner.cpp',['../miner_8cpp.html',1,'']]],
   ['miner_2eh',['miner.h',['../miner_8h.html',1,'']]],
   ['mining_2ecpp',['mining.cpp',['../mining_8cpp.html',1,'']]],
-  ['mining_2eh',['mining.h',['../mining_8h.html',1,'']]],
   ['misc_2ecpp',['misc.cpp',['../misc_8cpp.html',1,'']]],
   ['modaloverlay_2ecpp',['modaloverlay.cpp',['../modaloverlay_8cpp.html',1,'']]],
   ['modaloverlay_2eh',['modaloverlay.h',['../modaloverlay_8h.html',1,'']]],

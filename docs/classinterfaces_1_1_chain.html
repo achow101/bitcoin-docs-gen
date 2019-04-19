@@ -110,6 +110,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_1_1_lock.html">Lock</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for querying locked chain state, used by legacy code that assumes state won't change between calls.  <a href="classinterfaces_1_1_chain_1_1_lock.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain_1_1_notifications.html">Notifications</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classinterfaces_1_1_chain.html" title="Interface giving clients (wallet processes, maybe other analysis tools in the future) ability to acce...">Chain</a> notifications.  <a href="classinterfaces_1_1_chain_1_1_notifications.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -124,10 +127,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a134d392dd907e3843949a6ae110321f2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#a134d392dd907e3843949a6ae110321f2">findBlock</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;hash, <a class="el" href="class_c_block.html">CBlock</a> *block=nullptr, int64_t *time=nullptr, int64_t *max_time=nullptr)=0</td></tr>
 <tr class="memdesc:a134d392dd907e3843949a6ae110321f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether node has the block and optionally return block metadata or contents.  <a href="#a134d392dd907e3843949a6ae110321f2">More...</a><br /></td></tr>
 <tr class="separator:a134d392dd907e3843949a6ae110321f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59e4717d906280b5da63e1f02a8898a8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#a59e4717d906280b5da63e1f02a8898a8">findCoins</a> (std::map&lt; <a class="el" href="class_c_out_point.html">COutPoint</a>, <a class="el" href="class_coin.html">Coin</a> &gt; &amp;coins)=0</td></tr>
+<tr class="memdesc:a59e4717d906280b5da63e1f02a8898a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look up unspent output information.  <a href="#a59e4717d906280b5da63e1f02a8898a8">More...</a><br /></td></tr>
+<tr class="separator:a59e4717d906280b5da63e1f02a8898a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96232e28fad3f0ad72e6f6a9aa46f3c6"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#a96232e28fad3f0ad72e6f6a9aa46f3c6">guessVerificationProgress</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;block_hash)=0</td></tr>
 <tr class="memdesc:a96232e28fad3f0ad72e6f6a9aa46f3c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate fraction of total transactions verified if blocks up to the specified block hash are verified.  <a href="#a96232e28fad3f0ad72e6f6a9aa46f3c6">More...</a><br /></td></tr>
 <tr class="separator:a96232e28fad3f0ad72e6f6a9aa46f3c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a4a2ab40a8471a23d1018474393bc00"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="rbf_8h.html#a8a266cb2957aad5d08cc4c382ef6d32e">RBFTransactionState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#a2a4a2ab40a8471a23d1018474393bc00">isRBFOptIn</a> (const <a class="el" href="class_c_transaction.html">CTransaction</a> &amp;tx)=0</td></tr>
+<tr class="memitem:a2a4a2ab40a8471a23d1018474393bc00"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="policy_2rbf_8h.html#a8a266cb2957aad5d08cc4c382ef6d32e">RBFTransactionState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#a2a4a2ab40a8471a23d1018474393bc00">isRBFOptIn</a> (const <a class="el" href="class_c_transaction.html">CTransaction</a> &amp;tx)=0</td></tr>
 <tr class="memdesc:a2a4a2ab40a8471a23d1018474393bc00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if transaction is RBF opt in.  <a href="#a2a4a2ab40a8471a23d1018474393bc00">More...</a><br /></td></tr>
 <tr class="separator:a2a4a2ab40a8471a23d1018474393bc00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0af898428367886cd51c77168fcce134"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#a0af898428367886cd51c77168fcce134">hasDescendantsInMempool</a> (const <a class="el" href="classuint256.html">uint256</a> &amp;txid)=0</td></tr>
@@ -151,6 +157,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa95de888c93d5fccece97a2caa587c90"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_fee_rate.html">CFeeRate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#aa95de888c93d5fccece97a2caa587c90">mempoolMinFee</a> ()=0</td></tr>
 <tr class="memdesc:aa95de888c93d5fccece97a2caa587c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mempool minimum fee.  <a href="#aa95de888c93d5fccece97a2caa587c90">More...</a><br /></td></tr>
 <tr class="separator:aa95de888c93d5fccece97a2caa587c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae012dd6873dfd7f15f7f8c0111db9195"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_fee_rate.html">CFeeRate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#ae012dd6873dfd7f15f7f8c0111db9195">relayMinFee</a> ()=0</td></tr>
+<tr class="memdesc:ae012dd6873dfd7f15f7f8c0111db9195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relay current minimum fee (from -minrelaytxfee and -incrementalrelayfee settings).  <a href="#ae012dd6873dfd7f15f7f8c0111db9195">More...</a><br /></td></tr>
+<tr class="separator:ae012dd6873dfd7f15f7f8c0111db9195"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae318388a5382b1a64b8ea3d2bf16d016"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_fee_rate.html">CFeeRate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#ae318388a5382b1a64b8ea3d2bf16d016">relayIncrementalFee</a> ()=0</td></tr>
+<tr class="memdesc:ae318388a5382b1a64b8ea3d2bf16d016"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relay incremental fee setting (-incrementalrelayfee), reflecting cost of relay.  <a href="#ae318388a5382b1a64b8ea3d2bf16d016">More...</a><br /></td></tr>
+<tr class="separator:ae318388a5382b1a64b8ea3d2bf16d016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf34c913136cabba0f573475afc3ded5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_fee_rate.html">CFeeRate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#acf34c913136cabba0f573475afc3ded5">relayDustFee</a> ()=0</td></tr>
+<tr class="memdesc:acf34c913136cabba0f573475afc3ded5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relay dust fee setting (-dustrelayfee), reflecting lowest rate it's economical to spend.  <a href="#acf34c913136cabba0f573475afc3ded5">More...</a><br /></td></tr>
+<tr class="separator:acf34c913136cabba0f573475afc3ded5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7b51f9e155dfe61085cfabf300c3dc7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#aa7b51f9e155dfe61085cfabf300c3dc7">maxTxFee</a> ()=0</td></tr>
 <tr class="memdesc:aa7b51f9e155dfe61085cfabf300c3dc7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classinterfaces_1_1_node.html" title="Top-level interface for a bitcoin node (bitcoind process). ">Node</a> max tx fee setting (-maxtxfee).  <a href="#aa7b51f9e155dfe61085cfabf300c3dc7">More...</a><br /></td></tr>
 <tr class="separator:aa7b51f9e155dfe61085cfabf300c3dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,8 +175,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:affd5b3c5ecc7e3cc799dfa49cab7a69e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#affd5b3c5ecc7e3cc799dfa49cab7a69e">p2pEnabled</a> ()=0</td></tr>
 <tr class="memdesc:affd5b3c5ecc7e3cc799dfa49cab7a69e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if p2p enabled.  <a href="#affd5b3c5ecc7e3cc799dfa49cab7a69e">More...</a><br /></td></tr>
 <tr class="separator:affd5b3c5ecc7e3cc799dfa49cab7a69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e7cd1b3bd0a9aea0464b5407b122ed9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#a6e7cd1b3bd0a9aea0464b5407b122ed9">isReadyToBroadcast</a> ()=0</td></tr>
+<tr class="memdesc:a6e7cd1b3bd0a9aea0464b5407b122ed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the node is ready to broadcast transactions.  <a href="#a6e7cd1b3bd0a9aea0464b5407b122ed9">More...</a><br /></td></tr>
+<tr class="separator:a6e7cd1b3bd0a9aea0464b5407b122ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08d7068f5444a234dc4ff5cf9170cfca"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#a08d7068f5444a234dc4ff5cf9170cfca">isInitialBlockDownload</a> ()=0</td></tr>
+<tr class="memdesc:a08d7068f5444a234dc4ff5cf9170cfca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if in IBD.  <a href="#a08d7068f5444a234dc4ff5cf9170cfca">More...</a><br /></td></tr>
 <tr class="separator:a08d7068f5444a234dc4ff5cf9170cfca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a1ac12c29cd58376bae9452d40dcd75"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#a5a1ac12c29cd58376bae9452d40dcd75">shutdownRequested</a> ()=0</td></tr>
+<tr class="memdesc:a5a1ac12c29cd58376bae9452d40dcd75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if shutdown requested.  <a href="#a5a1ac12c29cd58376bae9452d40dcd75">More...</a><br /></td></tr>
+<tr class="separator:a5a1ac12c29cd58376bae9452d40dcd75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7732397d5f6169e9b2c513fedfa807f3"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#a7732397d5f6169e9b2c513fedfa807f3">getAdjustedTime</a> ()=0</td></tr>
 <tr class="memdesc:a7732397d5f6169e9b2c513fedfa807f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get adjusted time.  <a href="#a7732397d5f6169e9b2c513fedfa807f3">More...</a><br /></td></tr>
 <tr class="separator:a7732397d5f6169e9b2c513fedfa807f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,17 +199,43 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad66341a19b8617d5da9474d9502fc311"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#ad66341a19b8617d5da9474d9502fc311">loadWallet</a> (std::unique_ptr&lt; <a class="el" href="classinterfaces_1_1_wallet.html">Wallet</a> &gt; wallet)=0</td></tr>
 <tr class="memdesc:ad66341a19b8617d5da9474d9502fc311"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send wallet load notification to the GUI.  <a href="#ad66341a19b8617d5da9474d9502fc311">More...</a><br /></td></tr>
 <tr class="separator:ad66341a19b8617d5da9474d9502fc311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a506601d26debce54f49808fe112949aa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#a506601d26debce54f49808fe112949aa">showProgress</a> (const std::string &amp;title, int progress, bool resume_possible)=0</td></tr>
+<tr class="memdesc:a506601d26debce54f49808fe112949aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send progress indicator.  <a href="#a506601d26debce54f49808fe112949aa">More...</a><br /></td></tr>
+<tr class="separator:a506601d26debce54f49808fe112949aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadd51210ba802e28d383632d7581defb"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classinterfaces_1_1_handler.html">Handler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#aadd51210ba802e28d383632d7581defb">handleNotifications</a> (<a class="el" href="classinterfaces_1_1_chain_1_1_notifications.html">Notifications</a> &amp;notifications)=0</td></tr>
+<tr class="memdesc:aadd51210ba802e28d383632d7581defb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register handler for notifications.  <a href="#aadd51210ba802e28d383632d7581defb">More...</a><br /></td></tr>
+<tr class="separator:aadd51210ba802e28d383632d7581defb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6024831e5e07f71739ddd9bdb9f0953d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#a6024831e5e07f71739ddd9bdb9f0953d">waitForNotifications</a> ()=0</td></tr>
+<tr class="memdesc:a6024831e5e07f71739ddd9bdb9f0953d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for pending notifications to be handled.  <a href="#a6024831e5e07f71739ddd9bdb9f0953d">More...</a><br /></td></tr>
+<tr class="separator:a6024831e5e07f71739ddd9bdb9f0953d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac67bdae2c515b5012e9837ded14e5651"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classinterfaces_1_1_handler.html">Handler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#ac67bdae2c515b5012e9837ded14e5651">handleRpc</a> (const <a class="el" href="class_c_r_p_c_command.html">CRPCCommand</a> &amp;command)=0</td></tr>
+<tr class="memdesc:ac67bdae2c515b5012e9837ded14e5651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register handler for RPC.  <a href="#ac67bdae2c515b5012e9837ded14e5651">More...</a><br /></td></tr>
+<tr class="separator:ac67bdae2c515b5012e9837ded14e5651"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d7abc7fe1eec7c3a76fbe1b3789defe"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#a1d7abc7fe1eec7c3a76fbe1b3789defe">rpcEnableDeprecated</a> (const std::string &amp;method)=0</td></tr>
+<tr class="memdesc:a1d7abc7fe1eec7c3a76fbe1b3789defe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if deprecated RPC is enabled.  <a href="#a1d7abc7fe1eec7c3a76fbe1b3789defe">More...</a><br /></td></tr>
+<tr class="separator:a1d7abc7fe1eec7c3a76fbe1b3789defe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0219c6352071d6fc2ad93a4579242e29"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#a0219c6352071d6fc2ad93a4579242e29">rpcRunLater</a> (const std::string &amp;<a class="el" href="rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, std::function&lt; void()&gt; fn, int64_t seconds)=0</td></tr>
+<tr class="memdesc:a0219c6352071d6fc2ad93a4579242e29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run function after given number of seconds. Cancel any previous calls with same name.  <a href="#a0219c6352071d6fc2ad93a4579242e29">More...</a><br /></td></tr>
+<tr class="separator:a0219c6352071d6fc2ad93a4579242e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d8ef0a7e75b56299f523b3c827251f6"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#a1d8ef0a7e75b56299f523b3c827251f6">rpcSerializationFlags</a> ()=0</td></tr>
+<tr class="memdesc:a1d8ef0a7e75b56299f523b3c827251f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current RPC serialization flags.  <a href="#a1d8ef0a7e75b56299f523b3c827251f6">More...</a><br /></td></tr>
+<tr class="separator:a1d8ef0a7e75b56299f523b3c827251f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad090724963989e304ed48f6970946075"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#ad090724963989e304ed48f6970946075">requestMempoolTransactions</a> (<a class="el" href="classinterfaces_1_1_chain_1_1_notifications.html">Notifications</a> &amp;notifications)=0</td></tr>
+<tr class="memdesc:ad090724963989e304ed48f6970946075"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronously send TransactionAddedToMempool notifications about all current mempool transactions to the specified handler and return after the last one is sent.  <a href="#ad090724963989e304ed48f6970946075">More...</a><br /></td></tr>
+<tr class="separator:ad090724963989e304ed48f6970946075"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface giving clients (wallet processes, maybe other analysis tools in the future) ability to access to the chain state, receive notifications, estimate fees, and submit transactions. </p>
 <p>TODO: Current chain methods are too low level, exposing too much of the internal workings of the bitcoin node, and not being very convenient to use. <a class="el" href="classinterfaces_1_1_chain.html" title="Interface giving clients (wallet processes, maybe other analysis tools in the future) ability to acce...">Chain</a> methods should be cleaned up and simplified over time. Examples:</p>
 <ul>
 <li>The <a class="el" href="classinterfaces_1_1_chain.html#ad3a8681b5aeabaebe0e31ee762aa53da" title="Return Lock interface. ">Chain::lock()</a> method, which lets clients delay chain tip updates should be removed when clients are able to respond to updates asynchronously (<a href="https://github.com/bitcoin/bitcoin/pull/10973#issuecomment-380101269">https://github.com/bitcoin/bitcoin/pull/10973#issuecomment-380101269</a>).</li>
+<li>The isPotentialTip() and <a class="el" href="classinterfaces_1_1_chain.html#a6024831e5e07f71739ddd9bdb9f0953d" title="Wait for pending notifications to be handled. ">waitForNotifications()</a> methods are too low-level and should be replaced with a higher level waitForNotificationsUpTo(block_hash) method that the wallet can call instead (<a href="https://github.com/bitcoin/bitcoin/pull/10973#discussion_r266995234">https://github.com/bitcoin/bitcoin/pull/10973#discussion_r266995234</a>).</li>
 <li>The relayTransactions() and submitToMemoryPool() methods could be replaced with a higher-level broadcastTransaction method (<a href="https://github.com/bitcoin/bitcoin/pull/14978#issuecomment-459373984">https://github.com/bitcoin/bitcoin/pull/14978#issuecomment-459373984</a>).</li>
-<li>The initMessages() and <a class="el" href="classinterfaces_1_1_chain.html#ad66341a19b8617d5da9474d9502fc311" title="Send wallet load notification to the GUI. ">loadWallet()</a> methods which the wallet uses to send notifications to the GUI should go away when GUI and wallet can directly communicate with each other without going through the node (<a href="https://github.com/bitcoin/bitcoin/pull/15288#discussion_r253321096">https://github.com/bitcoin/bitcoin/pull/15288#discussion_r253321096</a>). </li>
+<li>The initMessages() and <a class="el" href="classinterfaces_1_1_chain.html#ad66341a19b8617d5da9474d9502fc311" title="Send wallet load notification to the GUI. ">loadWallet()</a> methods which the wallet uses to send notifications to the GUI should go away when GUI and wallet can directly communicate with each other without going through the node (<a href="https://github.com/bitcoin/bitcoin/pull/15288#discussion_r253321096">https://github.com/bitcoin/bitcoin/pull/15288#discussion_r253321096</a>).</li>
+<li>The handleRpc, registerRpcs, rpcEnableDeprecated methods and other RPC methods can go away if wallets listen for HTTP requests on their own ports instead of registering to handle requests on the node HTTP port. </li>
 </ul>
 
-<p>Definition at line <a class="el" href="interfaces_2chain_8h_source.html#l00051">51</a> of file <a class="el" href="interfaces_2chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="interfaces_2chain_8h_source.html#l00064">64</a> of file <a class="el" href="interfaces_2chain_8h_source.html">chain.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac618fba80d2e947f18c3471c9a513f51"></a>
 <div class="memitem">
@@ -210,7 +258,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="interfaces_2chain_8h_source.html#l00054">54</a> of file <a class="el" href="interfaces_2chain_8h_source.html">chain.h</a>.</p>
+<p>Definition at line <a class="el" href="interfaces_2chain_8h_source.html#l00067">67</a> of file <a class="el" href="interfaces_2chain_8h_source.html">chain.h</a>.</p>
 
 </div>
 </div>
@@ -242,7 +290,8 @@ Public Member Functions</h2></td></tr>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_ab5fb8952fb4e44b4d6ecb2f34a783e85_icgraph.svg" width="1208" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_ab5fb8952fb4e44b4d6ecb2f34a783e85_icgraph.svg" width="1208" height="164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -275,7 +324,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_abd39109d5f57042751424b74496cf370_icgraph.svg" width="334" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_abd39109d5f57042751424b74496cf370_icgraph.svg" width="1152" height="443"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -307,7 +357,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_ab83ded195b4e15be8835fabc4f2ece39_icgraph.svg" width="1339" height="494"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_ab83ded195b4e15be8835fabc4f2ece39_icgraph.svg" width="1367" height="514"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -356,7 +407,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_addd83bb64a4dd4b14ffe567defc773cc_icgraph.svg" width="1602" height="494"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_addd83bb64a4dd4b14ffe567defc773cc_icgraph.svg" width="1630" height="480"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -412,7 +464,43 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_a134d392dd907e3843949a6ae110321f2_icgraph.svg" width="872" height="420"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_a134d392dd907e3843949a6ae110321f2_icgraph.svg" width="907" height="471"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a59e4717d906280b5da63e1f02a8898a8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void interfaces::Chain::findCoins </td>
+          <td>(</td>
+          <td class="paramtype">std::map&lt; <a class="el" href="class_c_out_point.html">COutPoint</a>, <a class="el" href="class_coin.html">Coin</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>coins</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Look up unspent output information. </p>
+<p>Returns coins in the mempool and in the current chain UTXO set. Iterates through all the keys in the map and populates the values. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_a59e4717d906280b5da63e1f02a8898a8_icgraph.svg" width="803" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -476,7 +564,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_acff09db3655587b36a51daa649bd3768_icgraph.svg" width="1214" height="346"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_acff09db3655587b36a51daa649bd3768_icgraph.svg" width="1214" height="343"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -525,7 +614,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_a8b16c2dfd9853f1bb9f179c648124c17_icgraph.svg" width="367" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_a8b16c2dfd9853f1bb9f179c648124c17_icgraph.svg" width="396" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -559,6 +649,75 @@ Here is the caller graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_a96232e28fad3f0ad72e6f6a9aa46f3c6_icgraph.svg" width="383" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aadd51210ba802e28d383632d7581defb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::unique_ptr&lt;<a class="el" href="classinterfaces_1_1_handler.html">Handler</a>&gt; interfaces::Chain::handleNotifications </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classinterfaces_1_1_chain_1_1_notifications.html">Notifications</a> &amp;&#160;</td>
+          <td class="paramname"><em>notifications</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Register handler for notifications. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_aadd51210ba802e28d383632d7581defb_icgraph.svg" width="432" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac67bdae2c515b5012e9837ded14e5651"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::unique_ptr&lt;<a class="el" href="classinterfaces_1_1_handler.html">Handler</a>&gt; interfaces::Chain::handleRpc </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_r_p_c_command.html">CRPCCommand</a> &amp;&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Register handler for RPC. </p>
+<p>Command is not copied, so reference needs to remain valid until <a class="el" href="classinterfaces_1_1_handler.html" title="Generic interface for managing an event handler or callback function registered with another interfac...">Handler</a> is disconnected. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_ac67bdae2c515b5012e9837ded14e5651_icgraph.svg" width="426" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -624,7 +783,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_a1b38cef82f936d7acde1304d86fef505_icgraph.svg" width="1208" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_a1b38cef82f936d7acde1304d86fef505_icgraph.svg" width="1208" height="164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -657,7 +817,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_ab2c43f813f8e9c7a7072d859b31edeee_icgraph.svg" width="1208" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_ab2c43f813f8e9c7a7072d859b31edeee_icgraph.svg" width="1208" height="164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -690,7 +851,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_a81277419183620b5fc6141e35e88deb5_icgraph.svg" width="1208" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_a81277419183620b5fc6141e35e88deb5_icgraph.svg" width="1208" height="164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -717,10 +879,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Check if in IBD. </p>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_a08d7068f5444a234dc4ff5cf9170cfca_icgraph.svg" width="576" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_a08d7068f5444a234dc4ff5cf9170cfca_icgraph.svg" width="790" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -734,7 +899,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="rbf_8h.html#a8a266cb2957aad5d08cc4c382ef6d32e">RBFTransactionState</a> interfaces::Chain::isRBFOptIn </td>
+          <td class="memname">virtual <a class="el" href="policy_2rbf_8h.html#a8a266cb2957aad5d08cc4c382ef6d32e">RBFTransactionState</a> interfaces::Chain::isRBFOptIn </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_c_transaction.html">CTransaction</a> &amp;&#160;</td>
           <td class="paramname"><em>tx</em></td><td>)</td>
@@ -754,6 +919,39 @@ Here is the caller graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_a2a4a2ab40a8471a23d1018474393bc00_icgraph.svg" width="872" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e7cd1b3bd0a9aea0464b5407b122ed9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool interfaces::Chain::isReadyToBroadcast </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the node is ready to broadcast transactions. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_a6e7cd1b3bd0a9aea0464b5407b122ed9_icgraph.svg" width="344" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -786,7 +984,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_ad66341a19b8617d5da9474d9502fc311_icgraph.svg" width="1208" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_ad66341a19b8617d5da9474d9502fc311_icgraph.svg" width="1208" height="164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -820,7 +1019,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_ad3a8681b5aeabaebe0e31ee762aa53da_icgraph.svg" width="1420" height="1158"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_ad3a8681b5aeabaebe0e31ee762aa53da_icgraph.svg" width="1463" height="1392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -853,7 +1053,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_aa7b51f9e155dfe61085cfabf300c3dc7_icgraph.svg" width="334" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_aa7b51f9e155dfe61085cfabf300c3dc7_icgraph.svg" width="1358" height="443"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -885,7 +1086,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_aa95de888c93d5fccece97a2caa587c90_icgraph.svg" width="1598" height="494"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_aa95de888c93d5fccece97a2caa587c90_icgraph.svg" width="1626" height="451"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -917,7 +1119,107 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_affd5b3c5ecc7e3cc799dfa49cab7a69e_icgraph.svg" width="872" height="420"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_affd5b3c5ecc7e3cc799dfa49cab7a69e_icgraph.svg" width="872" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acf34c913136cabba0f573475afc3ded5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_c_fee_rate.html">CFeeRate</a> interfaces::Chain::relayDustFee </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Relay dust fee setting (-dustrelayfee), reflecting lowest rate it's economical to spend. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_acf34c913136cabba0f573475afc3ded5_icgraph.svg" width="1358" height="484"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae318388a5382b1a64b8ea3d2bf16d016"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_c_fee_rate.html">CFeeRate</a> interfaces::Chain::relayIncrementalFee </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Relay incremental fee setting (-incrementalrelayfee), reflecting cost of relay. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_ae318388a5382b1a64b8ea3d2bf16d016_icgraph.svg" width="890" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae012dd6873dfd7f15f7f8c0111db9195"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_c_fee_rate.html">CFeeRate</a> interfaces::Chain::relayMinFee </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Relay current minimum fee (from -minrelaytxfee and -incrementalrelayfee settings). </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_ae012dd6873dfd7f15f7f8c0111db9195_icgraph.svg" width="1830" height="526"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -956,13 +1258,281 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="ad090724963989e304ed48f6970946075"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void interfaces::Chain::requestMempoolTransactions </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classinterfaces_1_1_chain_1_1_notifications.html">Notifications</a> &amp;&#160;</td>
+          <td class="paramname"><em>notifications</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Synchronously send TransactionAddedToMempool notifications about all current mempool transactions to the specified handler and return after the last one is sent. </p>
+<p>These notifications aren't coordinated with async notifications sent by handleNotifications, so out of date async notifications from handleNotifications can arrive during and after synchronous notifications from requestMempoolTransactions. Clients need to be prepared to handle this by ignoring notifications about unknown removed transactions and already added new transactions. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_ad090724963989e304ed48f6970946075_icgraph.svg" width="498" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1d7abc7fe1eec7c3a76fbe1b3789defe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool interfaces::Chain::rpcEnableDeprecated </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>method</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if deprecated RPC is enabled. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_a1d7abc7fe1eec7c3a76fbe1b3789defe_icgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0219c6352071d6fc2ad93a4579242e29"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void interfaces::Chain::rpcRunLater </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>seconds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Run function after given number of seconds. Cancel any previous calls with same name. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_a0219c6352071d6fc2ad93a4579242e29_icgraph.svg" width="644" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1d8ef0a7e75b56299f523b3c827251f6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int interfaces::Chain::rpcSerializationFlags </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Current RPC serialization flags. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_a1d8ef0a7e75b56299f523b3c827251f6_icgraph.svg" width="660" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a506601d26debce54f49808fe112949aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void interfaces::Chain::showProgress </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>progress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>resume_possible</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send progress indicator. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_a506601d26debce54f49808fe112949aa_icgraph.svg" width="587" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5a1ac12c29cd58376bae9452d40dcd75"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool interfaces::Chain::shutdownRequested </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if shutdown requested. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_a5a1ac12c29cd58376bae9452d40dcd75_icgraph.svg" width="347" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6024831e5e07f71739ddd9bdb9f0953d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void interfaces::Chain::waitForNotifications </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wait for pending notifications to be handled. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_a6024831e5e07f71739ddd9bdb9f0953d_icgraph.svg" width="435" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/interfaces/<a class="el" href="interfaces_2chain_8h_source.html">chain.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 14 2019 14:06:39 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 19 2019 03:50:10 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

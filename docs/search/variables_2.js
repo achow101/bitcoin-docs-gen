@@ -45,7 +45,6 @@ var searchData=
   ['body',['body',['../struct_h_t_t_p_reply.html#a5ee749be5b0bfcbf30b3983d67426c72',1,'HTTPReply']]],
   ['boundsockets',['boundSockets',['../httpserver_8cpp.html#a41153da092439dd95528d2707da29c33',1,'httpserver.cpp']]],
   ['boutofsync',['bOutOfSync',['../class_wallet_frame.html#a73116c8a3b4c6a08c09e4d594351f57e',1,'WalletFrame']]],
-  ['broadcast',['Broadcast',['../struct_validation_interface_connections.html#aa845f90c8004e182eb9e1fa89e29933e',1,'ValidationInterfaceConnections::Broadcast()'],['../struct_main_signals_instance.html#a9dfed4c55d015c4deac389a83169751d',1,'MainSignalsInstance::Broadcast()']]],
   ['bucketindex',['bucketIndex',['../struct_c_block_policy_estimator_1_1_tx_stats_info.html#acb1b89ef61a16e915596b2f77d6f1766',1,'CBlockPolicyEstimator::TxStatsInfo']]],
   ['bucketmap',['bucketMap',['../class_tx_confirm_stats.html#aa3b8f4272acfd64b9243f444a124823e',1,'TxConfirmStats']]],
   ['buckets',['buckets',['../class_tx_confirm_stats.html#aa97acc15fbf108af2544958765ebd9b2',1,'TxConfirmStats']]],

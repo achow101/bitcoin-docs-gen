@@ -109,13 +109,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="policy_2fees_8h_source.html">policy/fees.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="pow_8h_source.html">pow.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="blockchain_8h_source.html">rpc/blockchain.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="mining_8h_source.html">rpc/mining.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="server_8h_source.html">rpc/server.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="rpc_2util_8h_source.html">rpc/util.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="script_8h_source.html">script/script.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="shutdown_8h_source.html">shutdown.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="txmempool_8h_source.html">txmempool.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="univalue_8h_source.html">univalue.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="util_2fees_8h_source.html">util/fees.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="strencodings_8h_source.html">util/strencodings.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="system_8h_source.html">util/system.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="util_2validation_8h_source.html">util/validation.h</a>&gt;</code><br />
 <code>#include &lt;validation.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="validationinterface_8h_source.html">validationinterface.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="versionbitsinfo_8h_source.html">versionbitsinfo.h</a>&gt;</code><br />
@@ -125,7 +128,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for mining.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="mining_8cpp__incl.svg" width="4516" height="500"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="mining_8cpp__incl.svg" width="4240" height="500"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="mining_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -137,63 +141,11 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4910d289954727eb7c4c24a6b3c50c55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_uni_value.html">UniValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mining_8cpp.html#a4910d289954727eb7c4c24a6b3c50c55">generateBlocks</a> (std::shared_ptr&lt; <a class="el" href="class_c_reserve_script.html">CReserveScript</a> &gt; coinbaseScript, int nGenerate, uint64_t nMaxTries, bool keepScript)</td></tr>
-<tr class="memdesc:a4910d289954727eb7c4c24a6b3c50c55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate blocks (mine)  <a href="#a4910d289954727eb7c4c24a6b3c50c55">More...</a><br /></td></tr>
-<tr class="separator:a4910d289954727eb7c4c24a6b3c50c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeba9d490bedb150373a4c30b49f5cc00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mining_8cpp.html#aeba9d490bedb150373a4c30b49f5cc00">RegisterMiningRPCCommands</a> (<a class="el" href="class_c_r_p_c_table.html">CRPCTable</a> &amp;t)</td></tr>
 <tr class="memdesc:aeba9d490bedb150373a4c30b49f5cc00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register mining RPC commands.  <a href="#aeba9d490bedb150373a4c30b49f5cc00">More...</a><br /></td></tr>
 <tr class="separator:aeba9d490bedb150373a4c30b49f5cc00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a4910d289954727eb7c4c24a6b3c50c55"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_uni_value.html">UniValue</a> generateBlocks </td>
-          <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_c_reserve_script.html">CReserveScript</a> &gt;&#160;</td>
-          <td class="paramname"><em>coinbaseScript</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>nGenerate</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>nMaxTries</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>keepScript</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generate blocks (mine) </p>
-
-<p>Definition at line <a class="el" href="mining_8cpp_source.html#l00101">101</a> of file <a class="el" href="mining_8cpp_source.html">mining.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="mining_8cpp_a4910d289954727eb7c4c24a6b3c50c55_icgraph.svg" width="302" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
-
-</div>
-</div>
 <a class="anchor" id="aeba9d490bedb150373a4c30b49f5cc00"></a>
 <div class="memitem">
 <div class="memproto">
@@ -210,7 +162,7 @@ Here is the caller graph for this function:</div>
 
 <p>Register mining RPC commands. </p>
 
-<p>Definition at line <a class="el" href="mining_8cpp_source.html#l00997">997</a> of file <a class="el" href="mining_8cpp_source.html">mining.cpp</a>.</p>
+<p>Definition at line <a class="el" href="mining_8cpp_source.html#l00993">993</a> of file <a class="el" href="mining_8cpp_source.html">mining.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -224,7 +176,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 14 2019 14:06:29 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 19 2019 03:49:56 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

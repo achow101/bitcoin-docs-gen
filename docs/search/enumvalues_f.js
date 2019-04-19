@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['p2p_5fdisabled',['P2P_DISABLED',['../node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867aca3229e157ecf9402202f05de7e0508642',1,'transaction.h']]],
+  ['p2p_5fdisabled',['P2P_DISABLED',['../error_8h.html#a857c3bfc8da2a43cebacd0582cc867aca3229e157ecf9402202f05de7e0508642',1,'error.h']]],
   ['p2sh',['P2SH',['../rpcdump_8cpp.html#a994c8748aaa60fbb78009ff8a0638deaa4b69887a2296a09d0c227fd7ca37c7ec',1,'rpcdump.cpp']]],
   ['p2sh_5fsegwit',['P2SH_SEGWIT',['../outputtype_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3adca4c7228b48e4a611d32dc21a0e341a',1,'outputtype.h']]],
   ['paymentrequestexpired',['PaymentRequestExpired',['../class_wallet_model.html#afb93f64411320dce4692c2190b7d35ccad7ab4fdf885aa5cb2a0f281523949a40',1,'WalletModel']]],
@@ -18,7 +18,7 @@ var searchData=
   ['proxyusetor',['ProxyUseTor',['../class_options_model.html#a5c6c9ca8a01aca9f53e91f118e4878d2a5733a5155a31d726d67ee5acddc2f099',1,'OptionsModel']]],
   ['prune',['Prune',['../class_options_model.html#a5c6c9ca8a01aca9f53e91f118e4878d2a165c142a89449e98c1cc4fb4858c0002',1,'OptionsModel::Prune()'],['../namespace_b_c_log.html#ad1037484206121adbcda9f9c824ab6b2ab767053245a48741c9ea5cedf1034082',1,'BCLog::PRUNE()']]],
   ['prunesize',['PruneSize',['../class_options_model.html#a5c6c9ca8a01aca9f53e91f118e4878d2ae7898238bf9fbb008c1426aa20980232',1,'OptionsModel']]],
-  ['psbt_5fmismatch',['PSBT_MISMATCH',['../node_2transaction_8h.html#a857c3bfc8da2a43cebacd0582cc867aca85f2f7870baf93a7ff4497406c23b451',1,'transaction.h']]],
+  ['psbt_5fmismatch',['PSBT_MISMATCH',['../error_8h.html#a857c3bfc8da2a43cebacd0582cc867aca85f2f7870baf93a7ff4497406c23b451',1,'error.h']]],
   ['pubkey_5faddress',['PUBKEY_ADDRESS',['../class_c_chain_params.html#aa294058ec2e3586bd8d03d6c39667058af088724f20c49c73e548f94d8f1808dd',1,'CChainParams']]],
   ['put',['PUT',['../class_h_t_t_p_request.html#a1afe92e9caad997b8f88f0cb07dcc5aaa86909f8f99c1272199518e4eb860e175',1,'HTTPRequest']]]
 ];

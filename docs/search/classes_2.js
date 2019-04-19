@@ -138,7 +138,6 @@ var searchData=
   ['crecipient',['CRecipient',['../struct_c_recipient.html',1,'']]],
   ['cregtestparams',['CRegTestParams',['../class_c_reg_test_params.html',1,'']]],
   ['creservekey',['CReserveKey',['../class_c_reserve_key.html',1,'']]],
-  ['creservescript',['CReserveScript',['../class_c_reserve_script.html',1,'']]],
   ['cripemd160',['CRIPEMD160',['../class_c_r_i_p_e_m_d160.html',1,'']]],
   ['crollingbloomfilter',['CRollingBloomFilter',['../class_c_rolling_bloom_filter.html',1,'']]],
   ['crpccommand',['CRPCCommand',['../class_c_r_p_c_command.html',1,'']]],

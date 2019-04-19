@@ -7,10 +7,11 @@ var searchData=
   ['undefined',['UNDEFINED',['../protocol_8h.html#a7f1603e1604ea41e417c77fdbc9b2991a605159e8a4c32319fd69b5d151369d93',1,'protocol.h']]],
   ['unencrypted',['Unencrypted',['../class_wallet_model.html#a58f6f0bb5a7b8b4e4d0812185ccc0616aab8ddcb74c78f880c81f610e327bdcd7',1,'WalletModel']]],
   ['unitrole',['UnitRole',['../class_bitcoin_units.html#a094a1a150647021c419f06a923795959adba268d796f853874a3b830bb92c5c80',1,'BitcoinUnits']]],
-  ['unknown',['UNKNOWN',['../class_h_t_t_p_request.html#a1afe92e9caad997b8f88f0cb07dcc5aaae2331c29519b3237f4926d5be5f7c7a4',1,'HTTPRequest::UNKNOWN()'],['../rbf_8h.html#a8a266cb2957aad5d08cc4c382ef6d32ea696b031073e74bf2cb98e5ef201d4aa3',1,'UNKNOWN():&#160;rbf.h'],['../txmempool_8h.html#a2bc6653552b5871101b6cbefdbaf251fa696b031073e74bf2cb98e5ef201d4aa3',1,'UNKNOWN():&#160;txmempool.h']]],
+  ['unknown',['UNKNOWN',['../class_h_t_t_p_request.html#a1afe92e9caad997b8f88f0cb07dcc5aaae2331c29519b3237f4926d5be5f7c7a4',1,'HTTPRequest::UNKNOWN()'],['../policy_2rbf_8h.html#a8a266cb2957aad5d08cc4c382ef6d32ea696b031073e74bf2cb98e5ef201d4aa3',1,'UNKNOWN():&#160;rbf.h'],['../txmempool_8h.html#a2bc6653552b5871101b6cbefdbaf251fa696b031073e74bf2cb98e5ef201d4aa3',1,'UNKNOWN():&#160;txmempool.h']]],
   ['unlock',['Unlock',['../class_ask_passphrase_dialog.html#a96abf4d3c36c1ef9e268fb546ae76538a2af79cac6134924405d6c620fb0f4c7e',1,'AskPassphraseDialog']]],
   ['unlocked',['Unlocked',['../class_wallet_model.html#a58f6f0bb5a7b8b4e4d0812185ccc0616a60d7f605079e8e1738ba66d543467a3c',1,'WalletModel']]],
   ['unset',['UNSET',['../policy_2fees_8h.html#aff36f74244c52c764c1af21d5f812173a666a87025ab0d8965e221050c8948001',1,'fees.h']]],
+  ['updater',['UPDATER',['../psbt_8h.html#a60377f9d3fc1342a56ec0fdcab343d72a73d722d1f99e14084d41d1f2d375f080',1,'psbt.h']]],
   ['user_5fabort',['USER_ABORT',['../struct_c_wallet_1_1_scan_result.html#aec068c496f8435e5147a5adadeb98dd3a4a48ed5c75b98a6621b9458a3ebcc521',1,'CWallet::ScanResult']]],
   ['user_5fpass',['USER_PASS',['../netbase_8cpp.html#a738c4db0b722cd3846ec7775ad2db20aaa02db508fd839fe6357cfd093858f7d8',1,'netbase.cpp']]],
   ['usernotificationcenter',['UserNotificationCenter',['../class_notificator.html#aaa6bef35e7e183f0ac23e046dc3ea73ea1691fdf2248407f7b714712f0c986d5e',1,'Notificator']]]
