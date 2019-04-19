@@ -42,7 +42,7 @@ var searchData=
   ['readbody',['ReadBody',['../class_h_t_t_p_request.html#ad0dc256f16fe6d13022958d64b7a22a0',1,'HTTPRequest']]],
   ['readcb',['readcb',['../class_tor_control_connection.html#a7d7e2393f19cb41c32223def3df769ea',1,'TorControlConnection']]],
   ['readcompactsize',['ReadCompactSize',['../serialize_8h.html#ae3fd928949b7361accfec79c314aa90f',1,'serialize.h']]],
-  ['readconfigfiles',['readConfigFiles',['../classinterfaces_1_1_node.html#a382a7a3f6b3cee8ac776e942be4e648b',1,'interfaces::Node::readConfigFiles()'],['../class_args_manager.html#aec848fd54ace0df3df48dac446feb7d2',1,'ArgsManager::ReadConfigFiles()']]],
+  ['readconfigfiles',['ReadConfigFiles',['../class_args_manager.html#aec848fd54ace0df3df48dac446feb7d2',1,'ArgsManager::ReadConfigFiles()'],['../classinterfaces_1_1_node.html#a382a7a3f6b3cee8ac776e942be4e648b',1,'interfaces::Node::readConfigFiles()']]],
   ['readconfigstream',['ReadConfigStream',['../class_args_manager.html#ae284a880b09b50a40455eb6ca317df09',1,'ArgsManager']]],
   ['readdata',['readData',['../class_c_net_message.html#adbc1669a56462daea5f37e5e99117f8c',1,'CNetMessage']]],
   ['readfilterfromdisk',['ReadFilterFromDisk',['../class_block_filter_index.html#a00cdd72035a921ab7dfbf7ed2d06fcb9',1,'BlockFilterIndex']]],
