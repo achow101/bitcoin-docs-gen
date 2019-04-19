@@ -188,7 +188,6 @@ var searchData=
   ['getlabeladdresses',['GetLabelAddresses',['../group___actions.html#ga8e77cdf51278f111afa9adaca54cbbc5',1,'CWallet']]],
   ['getlabelname',['GetLabelName',['../group___actions.html#ga9d2833fba7153c6410632008c2f1503b',1,'CWallet']]],
   ['getlastblocktime',['getLastBlockTime',['../classinterfaces_1_1_node.html#a67c8c69943cdb0fce3685a37ed4150d4',1,'interfaces::Node']]],
-  ['getlastcheckpoint',['GetLastCheckpoint',['../namespace_checkpoints.html#afe6d974f9851567cd7f0c6066e0919b5',1,'Checkpoints']]],
   ['getlegacysigopcount',['GetLegacySigOpCount',['../tx__verify_8cpp.html#ad2eaf4f8542c12ea9ee1183609cc6d1a',1,'GetLegacySigOpCount(const CTransaction &amp;tx):&#160;tx_verify.cpp'],['../tx__verify_8h.html#ad2eaf4f8542c12ea9ee1183609cc6d1a',1,'GetLegacySigOpCount(const CTransaction &amp;tx):&#160;tx_verify.cpp']]],
   ['getlen',['GetLen',['../class_c_pub_key.html#a7dc71b3f037c84268dc22de97d7b65fb',1,'CPubKey']]],
   ['getlimit',['GetLimit',['../class_posix_locked_page_allocator.html#adc37728b67ef606b573740768baf0ebd',1,'PosixLockedPageAllocator::GetLimit()'],['../class_locked_page_allocator.html#af419aca1e81f67d4c877f62d52315f5f',1,'LockedPageAllocator::GetLimit()']]],

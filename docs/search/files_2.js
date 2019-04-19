@@ -13,8 +13,6 @@ var searchData=
   ['chainparamsbase_2eh',['chainparamsbase.h',['../chainparamsbase_8h.html',1,'']]],
   ['chainparamsseeds_2eh',['chainparamsseeds.h',['../chainparamsseeds_8h.html',1,'']]],
   ['checkblock_2ecpp',['checkblock.cpp',['../checkblock_8cpp.html',1,'']]],
-  ['checkpoints_2ecpp',['checkpoints.cpp',['../checkpoints_8cpp.html',1,'']]],
-  ['checkpoints_2eh',['checkpoints.h',['../checkpoints_8h.html',1,'']]],
   ['checkqueue_2ecpp',['checkqueue.cpp',['../checkqueue_8cpp.html',1,'']]],
   ['checkqueue_2eh',['checkqueue.h',['../checkqueue_8h.html',1,'']]],
   ['cleanse_2ecpp',['cleanse.cpp',['../cleanse_8cpp.html',1,'']]],
