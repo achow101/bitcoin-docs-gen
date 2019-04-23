@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['cachableamount',['CachableAmount',['../struct_cachable_amount.html',1,'']]],
   ['cache',['cache',['../class_cuckoo_cache_1_1cache.html',1,'CuckooCache']]],
   ['cachingtransactionsignaturechecker',['CachingTransactionSignatureChecker',['../class_caching_transaction_signature_checker.html',1,'']]],
   ['caddrdb',['CAddrDB',['../class_c_addr_d_b.html',1,'']]],

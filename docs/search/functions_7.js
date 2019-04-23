@@ -88,6 +88,7 @@ var searchData=
   ['getbroadcasttransactions',['GetBroadcastTransactions',['../class_c_wallet.html#a5cd44dfe6f6726bf08125e7e52b24615',1,'CWallet']]],
   ['getbucketposition',['GetBucketPosition',['../class_c_addr_info.html#aff26ef9829651c2e6fa40aef88ab704d',1,'CAddrInfo']]],
   ['getbyte',['GetByte',['../class_c_net_addr.html#a0793d30a6baae6e3d4e06084ec33eddd',1,'CNetAddr']]],
+  ['getcachableamount',['GetCachableAmount',['../group__map_wallet.html#ga2c977d2cc49671fd26b34fe6c1583b9a',1,'CWalletTx']]],
   ['getcachesize',['GetCacheSize',['../class_c_coins_view_cache.html#a5e8c37ab1b772d00b57e2b40256a4646',1,'CCoinsViewCache']]],
   ['getcategorymask',['GetCategoryMask',['../class_b_c_log_1_1_logger.html#a23f5cd65ca5981aca6946bd3c71d4bd6',1,'BCLog::Logger']]],
   ['getchainname',['GetChainName',['../class_args_manager.html#ac4fac84b8d194a172b8b14eb996b8404',1,'ArgsManager']]],

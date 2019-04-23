@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['opcodetype',['opcodetype',['../script_8h.html#a63e349a6089a54da9fe09a3d858648bd',1,'script.h']]],
-  ['optional',['Optional',['../struct_r_p_c_arg.html#ae3b97706e3215f0b484d2597108bf927',1,'RPCArg']]],
-  ['optionid',['OptionID',['../class_options_model.html#a5c6c9ca8a01aca9f53e91f118e4878d2',1,'OptionsModel']]],
-  ['optionscategory',['OptionsCategory',['../system_8h.html#a317721a7331c499cfe39b49b39c26cbd',1,'system.h']]],
-  ['outertype',['OuterType',['../struct_sections.html#adeed1477297cd602a7be6b8e844292a2',1,'Sections']]],
-  ['outputtype',['OutputType',['../outputtype_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3',1,'outputtype.h']]]
+  ['network',['Network',['../netaddress_8h.html#acc9a38c714afe79b5035cb36f560dac3',1,'netaddress.h']]],
+  ['numconnections',['NumConnections',['../class_c_connman.html#a78c7481e9b2575bb1fb37078e28a1c6a',1,'CConnman::NumConnections()'],['../clientmodel_8h.html#a7f98da21db559811eecbeda885046030',1,'NumConnections():&#160;clientmodel.h']]]
 ];

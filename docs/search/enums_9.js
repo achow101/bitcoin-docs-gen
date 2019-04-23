@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['logflags',['LogFlags',['../namespace_b_c_log.html#ad1037484206121adbcda9f9c824ab6b2',1,'BCLog']]]
+  ['jtokentype',['jtokentype',['../univalue_8h.html#a7b5443f70646e2cebfefa63f9bf9ba97',1,'univalue.h']]]
 ];

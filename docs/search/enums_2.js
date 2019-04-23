@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['dateenum',['DateEnum',['../class_transaction_view.html#a73d1bbedc72fa131591aadb3aba150f8',1,'TransactionView']]],
-  ['dberrors',['DBErrors',['../walletdb_8h.html#a7558d92e9ea1d446075da1b514c4a944',1,'walletdb.h']]],
-  ['deploymentpos',['DeploymentPos',['../namespace_consensus.html#ac6c2c4d710cea840f692c6312ec91f69',1,'Consensus']]],
-  ['derivetype',['DeriveType',['../descriptor_8cpp.html#aefc2d839ec2eecd42a20f1ecfe24865b',1,'descriptor.cpp']]],
-  ['disconnectresult',['DisconnectResult',['../validation_8cpp.html#aeaef80b01ee5387f474a63ed23c9cc50',1,'validation.cpp']]]
+  ['changetype',['ChangeType',['../ui__interface_8h.html#a293ba931937e469a6327b8d6b4872969',1,'ui_interface.h']]],
+  ['class',['Class',['../class_notificator.html#aa2ff8a05d471e32e77584a2b8dd182ab',1,'Notificator']]],
+  ['columnindex',['ColumnIndex',['../class_address_table_model.html#a432276ac4504e926466072561c5ddb33',1,'AddressTableModel::ColumnIndex()'],['../class_ban_table_model.html#ad1a416d31ef95529e8be0ef01c0b7eed',1,'BanTableModel::ColumnIndex()'],['../class_peer_table_model.html#a10a32ec5f31c9765c80b611760f7e590',1,'PeerTableModel::ColumnIndex()'],['../class_recent_requests_table_model.html#a720ff50ef9f8e016a5d2bbd8fd7fb41d',1,'RecentRequestsTableModel::ColumnIndex()'],['../class_transaction_table_model.html#aca9d1efb507b6e471b31dc8c73c5bb43',1,'TransactionTableModel::ColumnIndex()']]],
+  ['columnwidths',['ColumnWidths',['../class_receive_coins_dialog.html#a348824c8475841e6e0cb35fdf9090656',1,'ReceiveCoinsDialog::ColumnWidths()'],['../class_r_p_c_console.html#a73581a931ea8b13a11ecb590f4bf6fe1',1,'RPCConsole::ColumnWidths()'],['../class_transaction_view.html#a330f6333f7d24ceef963729fa35fe985',1,'TransactionView::ColumnWidths()']]]
 ];

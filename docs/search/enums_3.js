@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['editstatus',['EditStatus',['../class_address_table_model.html#a3d502b85fc09461e779dae4589c29956',1,'AddressTableModel']]],
-  ['encryptionstatus',['EncryptionStatus',['../class_wallet_model.html#a58f6f0bb5a7b8b4e4d0812185ccc0616',1,'WalletModel']]],
-  ['expect_5fbits',['expect_bits',['../univalue__read_8cpp.html#ad3207a8d28df469fcecf6553d44bcd67',1,'univalue_read.cpp']]]
+  ['dateenum',['DateEnum',['../class_transaction_view.html#a73d1bbedc72fa131591aadb3aba150f8',1,'TransactionView']]],
+  ['dberrors',['DBErrors',['../walletdb_8h.html#a7558d92e9ea1d446075da1b514c4a944',1,'walletdb.h']]],
+  ['deploymentpos',['DeploymentPos',['../namespace_consensus.html#ac6c2c4d710cea840f692c6312ec91f69',1,'Consensus']]],
+  ['derivetype',['DeriveType',['../descriptor_8cpp.html#aefc2d839ec2eecd42a20f1ecfe24865b',1,'descriptor.cpp']]],
+  ['disconnectresult',['DisconnectResult',['../validation_8cpp.html#aeaef80b01ee5387f474a63ed23c9cc50',1,'validation.cpp']]]
 ];

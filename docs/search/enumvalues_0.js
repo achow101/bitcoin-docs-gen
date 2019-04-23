@@ -14,7 +14,9 @@ var searchData=
   ['amount_5fminimum_5fcolumn_5fwidth',['AMOUNT_MINIMUM_COLUMN_WIDTH',['../class_receive_coins_dialog.html#a348824c8475841e6e0cb35fdf9090656a9e262df7ff03c821ca5dcadfe4e252a9',1,'ReceiveCoinsDialog::AMOUNT_MINIMUM_COLUMN_WIDTH()'],['../class_transaction_view.html#a330f6333f7d24ceef963729fa35fe985a5c6ab036d55c60a7496c9cb5690c343d',1,'TransactionView::AMOUNT_MINIMUM_COLUMN_WIDTH()']]],
   ['amountexceedsbalance',['AmountExceedsBalance',['../class_wallet_model.html#afb93f64411320dce4692c2190b7d35ccabdabf0af6ddd309de3aef879b2709404',1,'WalletModel']]],
   ['amountrole',['AmountRole',['../class_transaction_table_model.html#a4b248508c36df598476affbf9871d1e6ace07f7f11257526cef9d6613c23cfff4',1,'TransactionTableModel']]],
+  ['amounttype_5fenum_5felements',['AMOUNTTYPE_ENUM_ELEMENTS',['../class_c_wallet_tx.html#a7e2c195e09e22a512c8a390a3d1e6655afce3df8d100cc6582c5979edaaa250a3',1,'CWalletTx']]],
   ['amountwithfeeexceedsbalance',['AmountWithFeeExceedsBalance',['../class_wallet_model.html#afb93f64411320dce4692c2190b7d35cca1f91d49761f7c83d4a07a3755c48c04b',1,'WalletModel']]],
   ['arr',['ARR',['../struct_sections.html#adeed1477297cd602a7be6b8e844292a2ac703eb65f968f2a9c9145fd07132f72b',1,'Sections::ARR()'],['../struct_r_p_c_arg.html#a0ce667013a0bcfc34bf4bc5dd8e4aad2ac703eb65f968f2a9c9145fd07132f72b',1,'RPCArg::ARR()']]],
-  ['atypeunsupported',['ATYPEUNSUPPORTED',['../netbase_8cpp.html#a97f842edf4ac3c020601432e9418c02eacde5ab08ece724d10ae17010257bf356',1,'netbase.cpp']]]
+  ['atypeunsupported',['ATYPEUNSUPPORTED',['../netbase_8cpp.html#a97f842edf4ac3c020601432e9418c02eacde5ab08ece724d10ae17010257bf356',1,'netbase.cpp']]],
+  ['available_5fcredit',['AVAILABLE_CREDIT',['../class_c_wallet_tx.html#a7e2c195e09e22a512c8a390a3d1e6655a839538874a8853091af3fd082d9d1360',1,'CWalletTx']]]
 ];

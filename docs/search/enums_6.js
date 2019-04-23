@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['httpstatuscode',['HTTPStatusCode',['../rpc_2protocol_8h.html#ab0a9668b7d736b4d4d621ec010928a46',1,'protocol.h']]]
+  ['getdatamsg',['GetDataMsg',['../protocol_8h.html#a7f1603e1604ea41e417c77fdbc9b2991',1,'protocol.h']]]
 ];

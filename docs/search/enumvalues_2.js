@@ -31,6 +31,7 @@ var searchData=
   ['connrefused',['CONNREFUSED',['../netbase_8cpp.html#a97f842edf4ac3c020601432e9418c02ea97890bdcbb2a92d614c7ff0339ec4364',1,'netbase.cpp']]],
   ['conservative',['CONSERVATIVE',['../policy_2fees_8h.html#ad4442247e3a53b4e0e9142797e833186a321c4353253381c1d9274aea14ee6d38',1,'CONSERVATIVE():&#160;fees.h'],['../policy_2fees_8h.html#aff36f74244c52c764c1af21d5f812173a321c4353253381c1d9274aea14ee6d38',1,'CONSERVATIVE():&#160;fees.h']]],
   ['corrupt',['CORRUPT',['../walletdb_8h.html#a7558d92e9ea1d446075da1b514c4a944afad2f4d832184f8b063e736cac40012b',1,'walletdb.h']]],
+  ['credit',['CREDIT',['../class_c_wallet_tx.html#a7e2c195e09e22a512c8a390a3d1e6655a6f0b67bdf2ca575f3762b92fd4f7ab94',1,'CWalletTx']]],
   ['critical',['Critical',['../class_notificator.html#aa2ff8a05d471e32e77584a2b8dd182aba596518f9cfdbd57b0fdc68fc95c69ecd',1,'Notificator']]],
   ['ct_5fdeleted',['CT_DELETED',['../ui__interface_8h.html#a293ba931937e469a6327b8d6b4872969a6aa8d1cd0da86fe8886e3a5c47f194ef',1,'ui_interface.h']]],
   ['ct_5fnew',['CT_NEW',['../ui__interface_8h.html#a293ba931937e469a6327b8d6b4872969ae975c67c7f3a5386de0bbde38221b32f',1,'ui_interface.h']]],
