@@ -73,6 +73,7 @@ var searchData=
   ['default_5fgui_5fproxy_5fhost',['DEFAULT_GUI_PROXY_HOST',['../optionsmodel_8cpp.html#aca41893070b47942abeaba2fcad1d7f3',1,'DEFAULT_GUI_PROXY_HOST():&#160;optionsmodel.cpp'],['../optionsmodel_8h.html#a7a3414817b0fc77d4617d55a777c0b7a',1,'DEFAULT_GUI_PROXY_HOST():&#160;optionsmodel.cpp']]],
   ['default_5fpay_5ftx_5ffee',['DEFAULT_PAY_TX_FEE',['../wallet_2wallet_8h.html#af48c14a9f06edf06b555ffb68c3af730',1,'wallet.h']]],
   ['default_5ftor_5fcontrol',['DEFAULT_TOR_CONTROL',['../torcontrol_8cpp.html#a48ca9f53bd923a35d926ac7d60f3bdd7',1,'DEFAULT_TOR_CONTROL():&#160;torcontrol.cpp'],['../torcontrol_8h.html#a48ca9f53bd923a35d926ac7d60f3bdd7',1,'DEFAULT_TOR_CONTROL():&#160;torcontrol.cpp']]],
+  ['default_5ftransaction_5fmaxfee',['DEFAULT_TRANSACTION_MAXFEE',['../wallet_2wallet_8h.html#a53ba8c49f9c34f588ec2294342879ebd',1,'wallet.h']]],
   ['default_5fuiplatform',['DEFAULT_UIPLATFORM',['../class_bitcoin_g_u_i.html#a0bc16c3a925f466ea5a6e8f566198849',1,'BitcoinGUI']]],
   ['default_5fzmq_5fsndhwm',['DEFAULT_ZMQ_SNDHWM',['../class_c_z_m_q_abstract_notifier.html#a326ef144693bb518752f376847d66909',1,'CZMQAbstractNotifier']]],
   ['defaultassumevalid',['defaultAssumeValid',['../struct_consensus_1_1_params.html#a34ec2620d39d1e7a426a24973936f293',1,'Consensus::Params']]],

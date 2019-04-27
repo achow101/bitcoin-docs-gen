@@ -296,6 +296,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9f11e70bff77d0537689f275e7d22080"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ec4ecc1eaa7afb414f9e696e321b10e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="outputtype_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3">OutputType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_wallet.html#a6ec4ecc1eaa7afb414f9e696e321b10e">getDefaultChangeType</a> ()=0</td></tr>
 <tr class="separator:a6ec4ecc1eaa7afb414f9e696e321b10e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a818cc1910cdcc6ebd56b9caa0362e4c9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_wallet.html#a818cc1910cdcc6ebd56b9caa0362e4c9">getDefaultMaxTxFee</a> ()=0</td></tr>
+<tr class="memdesc:a818cc1910cdcc6ebd56b9caa0362e4c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get max tx fee.  <a href="#a818cc1910cdcc6ebd56b9caa0362e4c9">More...</a><br /></td></tr>
+<tr class="separator:a818cc1910cdcc6ebd56b9caa0362e4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6e9390999a0a2329a5fd96d50d10b9b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_wallet.html#ac6e9390999a0a2329a5fd96d50d10b9b">remove</a> ()=0</td></tr>
 <tr class="separator:ac6e9390999a0a2329a5fd96d50d10b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa23ad7e41e9861aa38bcb48ec9aa405c"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classinterfaces_1_1_handler.html">Handler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_wallet.html#aa23ad7e41e9861aa38bcb48ec9aa405c">handleUnload</a> (<a class="el" href="classinterfaces_1_1_wallet.html#a34b4c37600d5516cb862f1eb30e2f2ed">UnloadFn</a> fn)=0</td></tr>
@@ -330,7 +333,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for address book changed messages. </p>
 
-<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00270">270</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00273">273</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -346,7 +349,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for keypool changed messages. </p>
 
-<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00282">282</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00285">285</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -379,7 +382,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for show progress messages. </p>
 
-<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00258">258</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00261">261</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -395,7 +398,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for status changed messages. </p>
 
-<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00262">262</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00265">265</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -411,7 +414,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for transaction changed messages. </p>
 
-<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00274">274</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00277">277</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -427,7 +430,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for unload message. </p>
 
-<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00254">254</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00257">257</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -443,7 +446,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register handler for watchonly changed messages. </p>
 
-<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00278">278</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="interfaces_2wallet_8h_source.html#l00281">281</a> of file <a class="el" href="interfaces_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -1386,6 +1389,39 @@ Here is the caller graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_wallet_a6ec4ecc1eaa7afb414f9e696e321b10e_icgraph.svg" width="431" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a818cc1910cdcc6ebd56b9caa0362e4c9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> interfaces::Wallet::getDefaultMaxTxFee </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get max tx fee. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_wallet_a818cc1910cdcc6ebd56b9caa0362e4c9_icgraph.svg" width="608" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -2813,7 +2849,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2019 14:45:09 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 27 2019 19:48:45 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

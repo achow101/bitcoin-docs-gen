@@ -241,7 +241,7 @@ var searchData=
   ['optionidrowcount',['OptionIDRowCount',['../class_options_model.html#a5c6c9ca8a01aca9f53e91f118e4878d2af11204fc4f72490fa8e35ebbeda3d743',1,'OptionsModel']]],
   ['options',['Options',['../struct_c_connman_1_1_options.html',1,'CConnman']]],
   ['options',['Options',['../struct_block_assembler_1_1_options.html',1,'BlockAssembler']]],
-  ['options',['Options',['../struct_block_assembler_1_1_options.html#a925bbf758862a6397c2299777fc38762',1,'BlockAssembler::Options::Options()'],['../class_c_d_b_wrapper.html#a9137387b16dfc67a3af758576c5f8606',1,'CDBWrapper::options()'],['../system_8h.html#a317721a7331c499cfe39b49b39c26cbda164dd62adb30ca051b5289672a572f9b',1,'OPTIONS():&#160;system.h']]],
+  ['options',['options',['../class_c_d_b_wrapper.html#a9137387b16dfc67a3af758576c5f8606',1,'CDBWrapper::options()'],['../struct_block_assembler_1_1_options.html#a925bbf758862a6397c2299777fc38762',1,'BlockAssembler::Options::Options()'],['../system_8h.html#a317721a7331c499cfe39b49b39c26cbda164dd62adb30ca051b5289672a572f9b',1,'OPTIONS():&#160;system.h']]],
   ['optionsaction',['optionsAction',['../class_bitcoin_g_u_i.html#a9cedb919cf5909cb2529b310c1f968fc',1,'BitcoinGUI']]],
   ['optionscategory',['OptionsCategory',['../system_8h.html#a317721a7331c499cfe39b49b39c26cbd',1,'system.h']]],
   ['optionsclicked',['optionsClicked',['../class_bitcoin_g_u_i.html#a366dfb05459cb49fec8adb7f97bf2ad7',1,'BitcoinGUI']]],

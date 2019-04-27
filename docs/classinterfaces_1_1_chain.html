@@ -166,9 +166,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acf34c913136cabba0f573475afc3ded5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_fee_rate.html">CFeeRate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#acf34c913136cabba0f573475afc3ded5">relayDustFee</a> ()=0</td></tr>
 <tr class="memdesc:acf34c913136cabba0f573475afc3ded5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relay dust fee setting (-dustrelayfee), reflecting lowest rate it's economical to spend.  <a href="#acf34c913136cabba0f573475afc3ded5">More...</a><br /></td></tr>
 <tr class="separator:acf34c913136cabba0f573475afc3ded5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7b51f9e155dfe61085cfabf300c3dc7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#aa7b51f9e155dfe61085cfabf300c3dc7">maxTxFee</a> ()=0</td></tr>
-<tr class="memdesc:aa7b51f9e155dfe61085cfabf300c3dc7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classinterfaces_1_1_node.html" title="Top-level interface for a bitcoin node (bitcoind process). ">Node</a> max tx fee setting (-maxtxfee).  <a href="#aa7b51f9e155dfe61085cfabf300c3dc7">More...</a><br /></td></tr>
-<tr class="separator:aa7b51f9e155dfe61085cfabf300c3dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acff09db3655587b36a51daa649bd3768"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterfaces_1_1_chain.html#acff09db3655587b36a51daa649bd3768">getPruneMode</a> ()=0</td></tr>
 <tr class="memdesc:acff09db3655587b36a51daa649bd3768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if pruning is enabled.  <a href="#acff09db3655587b36a51daa649bd3768">More...</a><br /></td></tr>
 <tr class="separator:acff09db3655587b36a51daa649bd3768"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -494,7 +491,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_a59e4717d906280b5da63e1f02a8898a8_icgraph.svg" width="803" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_a59e4717d906280b5da63e1f02a8898a8_icgraph.svg" width="618" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1009,39 +1007,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="aa7b51f9e155dfe61085cfabf300c3dc7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> interfaces::Chain::maxTxFee </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p><a class="el" href="classinterfaces_1_1_node.html" title="Top-level interface for a bitcoin node (bitcoind process). ">Node</a> max tx fee setting (-maxtxfee). </p>
-<p>This could be replaced by a per-wallet max fee, as proposed at <a href="https://github.com/bitcoin/bitcoin/issues/15355">https://github.com/bitcoin/bitcoin/issues/15355</a> But for the time being, wallets call this to access the node setting. </p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classinterfaces_1_1_chain_aa7b51f9e155dfe61085cfabf300c3dc7_icgraph.svg" width="1358" height="443"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
-
-</div>
-</div>
 <a class="anchor" id="aa95de888c93d5fccece97a2caa587c90"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1502,7 +1467,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2019 14:45:08 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 27 2019 19:48:43 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

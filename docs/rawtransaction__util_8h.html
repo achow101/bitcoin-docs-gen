@@ -90,13 +90,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">rawtransaction_util.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div class="dynheader">
+<div class="textblock"><code>#include &lt;map&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for rawtransaction_util.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="rawtransaction__util_8h__incl.svg" width="174" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="rawtransaction__util_8h__dep__incl.svg" width="582" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
@@ -104,16 +110,11 @@ This graph shows which files directly or indirectly include this file:</div>
 </div>
 <p><a href="rawtransaction__util_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespaceinterfaces"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinterfaces.html">interfaces</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5e724e06b03599639652035640a7d74b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_uni_value.html">UniValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rawtransaction__util_8h.html#a5e724e06b03599639652035640a7d74b">SignTransaction</a> (<a class="el" href="classinterfaces_1_1_chain.html">interfaces::Chain</a> &amp;chain, <a class="el" href="struct_c_mutable_transaction.html">CMutableTransaction</a> &amp;mtx, const <a class="el" href="class_uni_value.html">UniValue</a> &amp;prevTxs, <a class="el" href="class_c_basic_key_store.html">CBasicKeyStore</a> *keystore, bool tempKeystore, const <a class="el" href="class_uni_value.html">UniValue</a> &amp;hashType)</td></tr>
-<tr class="memdesc:a5e724e06b03599639652035640a7d74b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sign a transaction with the given keystore and previous transactions.  <a href="#a5e724e06b03599639652035640a7d74b">More...</a><br /></td></tr>
-<tr class="separator:a5e724e06b03599639652035640a7d74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a240b69a95b972e9f284f156a0699bf7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_uni_value.html">UniValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rawtransaction__util_8h.html#a240b69a95b972e9f284f156a0699bf7c">SignTransaction</a> (<a class="el" href="struct_c_mutable_transaction.html">CMutableTransaction</a> &amp;mtx, const <a class="el" href="class_uni_value.html">UniValue</a> &amp;prevTxs, <a class="el" href="class_c_basic_key_store.html">CBasicKeyStore</a> *keystore, std::map&lt; <a class="el" href="class_c_out_point.html">COutPoint</a>, <a class="el" href="class_coin.html">Coin</a> &gt; &amp;coins, bool tempKeystore, const <a class="el" href="class_uni_value.html">UniValue</a> &amp;hashType)</td></tr>
+<tr class="memdesc:a240b69a95b972e9f284f156a0699bf7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sign a transaction with the given keystore and previous transactions.  <a href="#a240b69a95b972e9f284f156a0699bf7c">More...</a><br /></td></tr>
+<tr class="separator:a240b69a95b972e9f284f156a0699bf7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee85a5d91a985f7e1bc1b4a124870ab3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_mutable_transaction.html">CMutableTransaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rawtransaction__util_8h.html#aee85a5d91a985f7e1bc1b4a124870ab3">ConstructTransaction</a> (const <a class="el" href="class_uni_value.html">UniValue</a> &amp;inputs_in, const <a class="el" href="class_uni_value.html">UniValue</a> &amp;outputs_in, const <a class="el" href="class_uni_value.html">UniValue</a> &amp;locktime, const <a class="el" href="class_uni_value.html">UniValue</a> &amp;rbf)</td></tr>
 <tr class="memdesc:aee85a5d91a985f7e1bc1b4a124870ab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a transaction from univalue parameters.  <a href="#aee85a5d91a985f7e1bc1b4a124870ab3">More...</a><br /></td></tr>
 <tr class="separator:aee85a5d91a985f7e1bc1b4a124870ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,19 +176,13 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a5e724e06b03599639652035640a7d74b"></a>
+<a class="anchor" id="a240b69a95b972e9f284f156a0699bf7c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_uni_value.html">UniValue</a> SignTransaction </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classinterfaces_1_1_chain.html">interfaces::Chain</a> &amp;&#160;</td>
-          <td class="paramname"><em>chain</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="struct_c_mutable_transaction.html">CMutableTransaction</a> &amp;&#160;</td>
           <td class="paramname"><em>mtx</em>, </td>
         </tr>
@@ -202,6 +197,12 @@ Here is the caller graph for this function:</div>
           <td></td>
           <td class="paramtype"><a class="el" href="class_c_basic_key_store.html">CBasicKeyStore</a> *&#160;</td>
           <td class="paramname"><em>keystore</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::map&lt; <a class="el" href="class_c_out_point.html">COutPoint</a>, <a class="el" href="class_coin.html">Coin</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>coins</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -224,20 +225,34 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Sign a transaction with the given keystore and previous transactions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mtx</td><td>The transaction to-be-signed </td></tr>
+    <tr><td class="paramname">prevTxs</td><td>Array of previous txns outputs that tx depends on but may not yet be in the block chain </td></tr>
+    <tr><td class="paramname">keystore</td><td>Temporary keystore containing signing keys </td></tr>
+    <tr><td class="paramname">coins</td><td>Map of unspent outputs - coins in mempool and current chain UTXO set, may be extended by previous txns outputs after call </td></tr>
+    <tr><td class="paramname">tempKeystore</td><td>Whether to use temporary keystore </td></tr>
+    <tr><td class="paramname">hashType</td><td>The signature hash type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON object with details of signed transaction </dd></dl>
 
-<p>Definition at line <a class="el" href="rawtransaction__util_8cpp_source.html#l00155">155</a> of file <a class="el" href="rawtransaction__util_8cpp_source.html">rawtransaction_util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rawtransaction__util_8cpp_source.html#l00152">152</a> of file <a class="el" href="rawtransaction__util_8cpp_source.html">rawtransaction_util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rawtransaction__util_8h_a5e724e06b03599639652035640a7d74b_cgraph.svg" width="1204" height="1700"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rawtransaction__util_8h_a240b69a95b972e9f284f156a0699bf7c_cgraph.svg" width="1204" height="1558"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rawtransaction__util_8h_a5e724e06b03599639652035640a7d74b_icgraph.svg" width="603" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rawtransaction__util_8h_a240b69a95b972e9f284f156a0699bf7c_icgraph.svg" width="603" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -246,7 +261,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2019 14:44:58 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 27 2019 19:47:11 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

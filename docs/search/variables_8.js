@@ -30,6 +30,8 @@ var searchData=
   ['headers',['HEADERS',['../namespace_net_msg_type.html#a216e35db319a5d508043639fd3170776',1,'NetMsgType']]],
   ['height',['height',['../struct_c_updated_block.html#a7d1730ecb178757e95acd762aed135b7',1,'CUpdatedBlock::height()'],['../struct_lock_points.html#ab12516fc3d5da1d122af43527a5f3633',1,'LockPoints::height()']]],
   ['helpmessagedialog',['helpMessageDialog',['../class_bitcoin_g_u_i.html#a6623d99e2f7dfd306ec7689ca13ac980',1,'BitcoinGUI']]],
+  ['high_5fmax_5ftx_5ffee',['HIGH_MAX_TX_FEE',['../wallet_2wallet_8h.html#a172474e43976df5c2adf155e76a8ebc7',1,'wallet.h']]],
+  ['high_5ftx_5ffee_5fper_5fkb',['HIGH_TX_FEE_PER_KB',['../wallet_2wallet_8h.html#a54e331c7ea50b107a634a05013bb5c73',1,'wallet.h']]],
   ['history',['history',['../class_r_p_c_console.html#a2c7675091b26be08d10459b71e2c5d0d',1,'RPCConsole']]],
   ['historyaction',['historyAction',['../class_bitcoin_g_u_i.html#a377a010026691ac00d38520f20ed3f99',1,'BitcoinGUI']]],
   ['historyptr',['historyPtr',['../class_r_p_c_console.html#aad8346c4c4ce85d1189bb8f0ebb9ee90',1,'RPCConsole']]]

@@ -32,7 +32,6 @@ var searchData=
   ['max',['max',['../class_fast_random_context.html#a82a04af97f5051831be0bd0dfaeaaf04',1,'FastRandomContext']]],
   ['max_5fsize',['max_size',['../classindirectmap.html#a546095e0ab91142199b22d0f5b076d73',1,'indirectmap::max_size()'],['../classlimitedmap.html#a3a7d50647833bb8a60bb644f5525b9e0',1,'limitedmap::max_size() const '],['../classlimitedmap.html#a97e3deba25cf9a59658cfc317507d45d',1,'limitedmap::max_size(size_type s)']]],
   ['maxmoney',['maxMoney',['../class_bitcoin_units.html#a310bc10d6973f335b5757a341909b7fe',1,'BitcoinUnits']]],
-  ['maxtxfee',['maxTxFee',['../classinterfaces_1_1_chain.html#aa7b51f9e155dfe61085cfabf300c3dc7',1,'interfaces::Chain']]],
   ['maxusableestimate',['MaxUsableEstimate',['../class_c_block_policy_estimator.html#aa1190c8276ed40774ee972d084bfd501',1,'CBlockPolicyEstimator']]],
   ['maybecompactwalletdb',['MaybeCompactWalletDB',['../walletdb_8cpp.html#a1e1e0409e1e009a4202a703e38ad2cd9',1,'MaybeCompactWalletDB():&#160;walletdb.cpp'],['../walletdb_8h.html#a1e1e0409e1e009a4202a703e38ad2cd9',1,'MaybeCompactWalletDB():&#160;walletdb.cpp']]],
   ['mayberesendwallettxs',['MaybeResendWalletTxs',['../wallet_2wallet_8cpp.html#a3dd76d3c4b1bd804a23bf22519423623',1,'MaybeResendWalletTxs():&#160;wallet.cpp'],['../wallet_2wallet_8h.html#a3dd76d3c4b1bd804a23bf22519423623',1,'MaybeResendWalletTxs():&#160;wallet.cpp']]],

@@ -112,7 +112,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for rawtransaction_util.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rawtransaction__util_8cpp__incl.svg" width="3115" height="590"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rawtransaction__util_8cpp__incl.svg" width="3303" height="590"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="rawtransaction__util_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -122,9 +123,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aee85a5d91a985f7e1bc1b4a124870ab3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_mutable_transaction.html">CMutableTransaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rawtransaction__util_8cpp.html#aee85a5d91a985f7e1bc1b4a124870ab3">ConstructTransaction</a> (const <a class="el" href="class_uni_value.html">UniValue</a> &amp;inputs_in, const <a class="el" href="class_uni_value.html">UniValue</a> &amp;outputs_in, const <a class="el" href="class_uni_value.html">UniValue</a> &amp;locktime, const <a class="el" href="class_uni_value.html">UniValue</a> &amp;rbf)</td></tr>
 <tr class="memdesc:aee85a5d91a985f7e1bc1b4a124870ab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a transaction from univalue parameters.  <a href="#aee85a5d91a985f7e1bc1b4a124870ab3">More...</a><br /></td></tr>
 <tr class="separator:aee85a5d91a985f7e1bc1b4a124870ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bec0bc1459d2c68e4e27dcca359b875"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_uni_value.html">UniValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rawtransaction__util_8cpp.html#a6bec0bc1459d2c68e4e27dcca359b875">SignTransaction</a> (<a class="el" href="classinterfaces_1_1_chain.html">interfaces::Chain</a> &amp;chain, <a class="el" href="struct_c_mutable_transaction.html">CMutableTransaction</a> &amp;mtx, const <a class="el" href="class_uni_value.html">UniValue</a> &amp;prevTxsUnival, <a class="el" href="class_c_basic_key_store.html">CBasicKeyStore</a> *keystore, bool is_temp_keystore, const <a class="el" href="class_uni_value.html">UniValue</a> &amp;hashType)</td></tr>
-<tr class="memdesc:a6bec0bc1459d2c68e4e27dcca359b875"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sign a transaction with the given keystore and previous transactions.  <a href="#a6bec0bc1459d2c68e4e27dcca359b875">More...</a><br /></td></tr>
-<tr class="separator:a6bec0bc1459d2c68e4e27dcca359b875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07e1b9a1fe57066be94da36bff9fd058"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_uni_value.html">UniValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rawtransaction__util_8cpp.html#a07e1b9a1fe57066be94da36bff9fd058">SignTransaction</a> (<a class="el" href="struct_c_mutable_transaction.html">CMutableTransaction</a> &amp;mtx, const <a class="el" href="class_uni_value.html">UniValue</a> &amp;prevTxsUnival, <a class="el" href="class_c_basic_key_store.html">CBasicKeyStore</a> *keystore, std::map&lt; <a class="el" href="class_c_out_point.html">COutPoint</a>, <a class="el" href="class_coin.html">Coin</a> &gt; &amp;coins, bool is_temp_keystore, const <a class="el" href="class_uni_value.html">UniValue</a> &amp;hashType)</td></tr>
+<tr class="memdesc:a07e1b9a1fe57066be94da36bff9fd058"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sign a transaction with the given keystore and previous transactions.  <a href="#a07e1b9a1fe57066be94da36bff9fd058">More...</a><br /></td></tr>
+<tr class="separator:a07e1b9a1fe57066be94da36bff9fd058"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="aee85a5d91a985f7e1bc1b4a124870ab3"></a>
@@ -183,19 +184,13 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a6bec0bc1459d2c68e4e27dcca359b875"></a>
+<a class="anchor" id="a07e1b9a1fe57066be94da36bff9fd058"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_uni_value.html">UniValue</a> SignTransaction </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classinterfaces_1_1_chain.html">interfaces::Chain</a> &amp;&#160;</td>
-          <td class="paramname"><em>chain</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="struct_c_mutable_transaction.html">CMutableTransaction</a> &amp;&#160;</td>
           <td class="paramname"><em>mtx</em>, </td>
         </tr>
@@ -203,7 +198,7 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="class_uni_value.html">UniValue</a> &amp;&#160;</td>
-          <td class="paramname"><em>prevTxsUnival</em>, </td>
+          <td class="paramname"><em>prevTxs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -214,8 +209,14 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">std::map&lt; <a class="el" href="class_c_out_point.html">COutPoint</a>, <a class="el" href="class_coin.html">Coin</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>coins</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>is_temp_keystore</em>, </td>
+          <td class="paramname"><em>tempKeystore</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -232,20 +233,34 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Sign a transaction with the given keystore and previous transactions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mtx</td><td>The transaction to-be-signed </td></tr>
+    <tr><td class="paramname">prevTxs</td><td>Array of previous txns outputs that tx depends on but may not yet be in the block chain </td></tr>
+    <tr><td class="paramname">keystore</td><td>Temporary keystore containing signing keys </td></tr>
+    <tr><td class="paramname">coins</td><td>Map of unspent outputs - coins in mempool and current chain UTXO set, may be extended by previous txns outputs after call </td></tr>
+    <tr><td class="paramname">tempKeystore</td><td>Whether to use temporary keystore </td></tr>
+    <tr><td class="paramname">hashType</td><td>The signature hash type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON object with details of signed transaction </dd></dl>
 
-<p>Definition at line <a class="el" href="rawtransaction__util_8cpp_source.html#l00155">155</a> of file <a class="el" href="rawtransaction__util_8cpp_source.html">rawtransaction_util.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rawtransaction__util_8cpp_source.html#l00152">152</a> of file <a class="el" href="rawtransaction__util_8cpp_source.html">rawtransaction_util.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rawtransaction__util_8cpp_a6bec0bc1459d2c68e4e27dcca359b875_cgraph.svg" width="1204" height="1700"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rawtransaction__util_8cpp_a07e1b9a1fe57066be94da36bff9fd058_cgraph.svg" width="1204" height="1558"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="rawtransaction__util_8cpp_a6bec0bc1459d2c68e4e27dcca359b875_icgraph.svg" width="603" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="rawtransaction__util_8cpp_a07e1b9a1fe57066be94da36bff9fd058_icgraph.svg" width="603" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -254,7 +269,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2019 14:44:58 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 27 2019 19:47:11 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

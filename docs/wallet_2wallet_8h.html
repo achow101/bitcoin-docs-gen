@@ -129,8 +129,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for wallet.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h__incl.svg" width="4304" height="575"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="wallet_2wallet_8h__incl.svg" width="4304" height="575"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -238,6 +237,15 @@ Variables</h2></td></tr>
 <tr class="memitem:af48c14a9f06edf06b555ffb68c3af730"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet_2wallet_8h.html#af48c14a9f06edf06b555ffb68c3af730">DEFAULT_PAY_TX_FEE</a> = 0</td></tr>
 <tr class="memdesc:af48c14a9f06edf06b555ffb68c3af730"><td class="mdescLeft">&#160;</td><td class="mdescRight">-paytxfee default  <a href="#af48c14a9f06edf06b555ffb68c3af730">More...</a><br /></td></tr>
 <tr class="separator:af48c14a9f06edf06b555ffb68c3af730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53ba8c49f9c34f588ec2294342879ebd"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet_2wallet_8h.html#a53ba8c49f9c34f588ec2294342879ebd">DEFAULT_TRANSACTION_MAXFEE</a> {COIN / 10}</td></tr>
+<tr class="memdesc:a53ba8c49f9c34f588ec2294342879ebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">-maxtxfee default  <a href="#a53ba8c49f9c34f588ec2294342879ebd">More...</a><br /></td></tr>
+<tr class="separator:a53ba8c49f9c34f588ec2294342879ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e331c7ea50b107a634a05013bb5c73"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet_2wallet_8h.html#a54e331c7ea50b107a634a05013bb5c73">HIGH_TX_FEE_PER_KB</a> {COIN / 100}</td></tr>
+<tr class="memdesc:a54e331c7ea50b107a634a05013bb5c73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discourage users to set fees higher than this amount (in satoshis) per kB.  <a href="#a54e331c7ea50b107a634a05013bb5c73">More...</a><br /></td></tr>
+<tr class="separator:a54e331c7ea50b107a634a05013bb5c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a172474e43976df5c2adf155e76a8ebc7"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet_2wallet_8h.html#a172474e43976df5c2adf155e76a8ebc7">HIGH_MAX_TX_FEE</a> {100 * <a class="el" href="wallet_2wallet_8h.html#a54e331c7ea50b107a634a05013bb5c73">HIGH_TX_FEE_PER_KB</a>}</td></tr>
+<tr class="memdesc:a172474e43976df5c2adf155e76a8ebc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">-maxtxfee will warn if called with a higher fee than this amount (in satoshis)  <a href="#a172474e43976df5c2adf155e76a8ebc7">More...</a><br /></td></tr>
+<tr class="separator:a172474e43976df5c2adf155e76a8ebc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f4ba77d8a20991b0efeae4918840ff6"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="outputtype_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3">OutputType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wallet_2wallet_8h.html#a1f4ba77d8a20991b0efeae4918840ff6">DEFAULT_ADDRESS_TYPE</a> {<a class="el" href="outputtype_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3adca4c7228b48e4a611d32dc21a0e341a">OutputType::P2SH_SEGWIT</a>}</td></tr>
 <tr class="memdesc:a1f4ba77d8a20991b0efeae4918840ff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default for -addresstype.  <a href="#a1f4ba77d8a20991b0efeae4918840ff6">More...</a><br /></td></tr>
 <tr class="separator:a1f4ba77d8a20991b0efeae4918840ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -256,7 +264,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00204">204</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00210">210</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -291,7 +299,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00089">89</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00095">95</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -316,7 +324,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00113">113</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00119">119</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -580,7 +588,7 @@ Here is the caller graph for this function:</div>
 
 <p>Default for -addresstype. </p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00108">108</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00114">114</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -596,7 +604,7 @@ Here is the caller graph for this function:</div>
 
 <p>Default for -changetype. </p>
 
-<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00111">111</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00117">117</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
 
 </div>
 </div>
@@ -616,10 +624,58 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a53ba8c49f9c34f588ec2294342879ebd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> DEFAULT_TRANSACTION_MAXFEE {COIN / 10}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>-maxtxfee default </p>
+
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00077">77</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a172474e43976df5c2adf155e76a8ebc7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> HIGH_MAX_TX_FEE {100 * <a class="el" href="wallet_2wallet_8h.html#a54e331c7ea50b107a634a05013bb5c73">HIGH_TX_FEE_PER_KB</a>}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>-maxtxfee will warn if called with a higher fee than this amount (in satoshis) </p>
+
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00081">81</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a54e331c7ea50b107a634a05013bb5c73"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> HIGH_TX_FEE_PER_KB {COIN / 100}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Discourage users to set fees higher than this amount (in satoshis) per kB. </p>
+
+<p>Definition at line <a class="el" href="wallet_2wallet_8h_source.html#l00079">79</a> of file <a class="el" href="wallet_2wallet_8h_source.html">wallet.h</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2019 14:44:57 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 27 2019 19:46:51 for Bitcoin Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
