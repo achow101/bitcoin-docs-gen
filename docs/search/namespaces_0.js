@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['bclog',['BCLog',['../namespace_b_c_log.html',1,'']]],
-  ['bech32',['bech32',['../namespacebech32.html',1,'']]],
-  ['benchmark',['benchmark',['../namespacebenchmark.html',1,'']]],
-  ['block_5fbench',['block_bench',['../namespaceblock__bench.html',1,'']]]
+  ['ankerl_0',['ankerl',['../namespaceankerl.html',1,'']]],
+  ['detail_1',['detail',['../namespaceankerl_1_1nanobench_1_1detail.html',1,'ankerl::nanobench']]],
+  ['nanobench_2',['nanobench',['../namespaceankerl_1_1nanobench.html',1,'ankerl']]],
+  ['templates_3',['templates',['../namespaceankerl_1_1nanobench_1_1templates.html',1,'ankerl::nanobench']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_5fdarwin_5fuse_5f64_5fbit_5finode',['_DARWIN_USE_64_BIT_INODE',['../bitcoin-config_8h.html#a41a19566302a3a56b518eb92c8a4cb2b',1,'bitcoin-config.h']]]
+  ['_5f_5fhas_5fbuiltin_0',['__has_builtin',['../secp256k1_2src_2util_8h.html#a447121dcab4275b7839a56082b7a1ab8',1,'util.h']]]
 ];

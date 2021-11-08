@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vformat',['vformat',['../classtinyformat_1_1_format_list.html#a105eb7b498f1353f8da108bd7284af58',1,'tinyformat::FormatList']]]
+  ['span_0',['Span',['../class_span.html#a366eba5cfa37dd3e2ca31cdf6ae5b799',1,'Span']]]
 ];

@@ -1,29 +1,52 @@
 <map id="CKey::GetPubKey" name="CKey::GetPubKey">
-<area shape="rect" id="node2" href="$group__map_wallet.html#ga5abb589b31879b8f4bf1890c22f15f64" title="keystore implementation Generate a new key " alt="" coords="198,9,378,36"/>
-<area shape="rect" id="node3" href="$group__map_wallet.html#gafb01fcc10d890174b2db560a7f27b58a" title="CWallet::DeriveNewChildKey" alt="" coords="949,5,1143,32"/>
-<area shape="rect" id="node4" href="$group__map_wallet.html#gaf72003c77abf215cc1576ab6c50125f7" title="CWallet::DeriveNewSeed" alt="" coords="1220,475,1392,501"/>
-<area shape="rect" id="node6" href="$class_c_key.html#ae79008cec2eb799a2efd37e010996acf" title="Derive BIP32 child key. " alt="" coords="237,212,339,239"/>
-<area shape="rect" id="node7" href="$class_c_key.html#a96b017433a65335775cf3807d73f85ce" title="Check whether the public key corresponding to this private key is (to be) compressed. " alt="" coords="466,212,614,239"/>
-<area shape="rect" id="node11" href="$keystore_8h.html#a2325e8758e074d2f2cd564ba7da2d0e8" title="Checks if a CKey is in the given CKeyStore compressed or otherwise. " alt="" coords="748,111,824,137"/>
-<area shape="rect" id="node20" href="$key_8h.html#a55cc40f04bf887c1000667caccb0684a" title="Check that required EC support is available at runtime. " alt="" coords="213,313,363,340"/>
-<area shape="rect" id="node22" href="$class_c_basic_key_store.html#a9c437c32a05f9977bc5fabe6a976a4bc" title="CBasicKeyStore::GetPubKey" alt="" coords="191,364,385,391"/>
-<area shape="rect" id="node25" href="$class_c_basic_key_store.html#a07950fc7f9bba7f2460d89a882ac544b" title="CBasicKeyStore::AddKey" alt="" coords="201,415,375,441"/>
-<area shape="rect" id="node26" href="$class_c_crypto_key_store.html#a8c0f6b63fb04193df16243c4459b7c61" title="will encrypt previously unencrypted keys " alt="" coords="184,465,392,492"/>
-<area shape="rect" id="node27" href="$rpcwallet_8cpp.html#a2f46e2bb304dda9a197b5a68db6106f7" title="importprivkey" alt="" coords="490,263,590,289"/>
-<area shape="rect" id="node28" href="$wallet__tests_8cpp.html#a8c64ef6e0ced69002923098229448758" title="importwallet" alt="" coords="242,567,334,593"/>
-<area shape="rect" id="node5" href="$rpcwallet_8cpp.html#a61c7a90d1b36888fe11b751e746e18c0" title="sethdseed" alt="" coords="1505,333,1588,360"/>
-<area shape="rect" id="node8" href="$key__io_8h.html#a675809f738ce55f530880389fa330f66" title="EncodeSecret" alt="" coords="734,283,838,309"/>
-<area shape="rect" id="node17" href="$class_mutable_transaction_signature_creator.html#ad66cfa8bc9e1222e30125c90d1ecaddf" title="Create a singular (non&#45;script) signature. " alt="" coords="691,213,881,254"/>
-<area shape="rect" id="node9" href="$rpcwallet_8cpp.html#ab3f51d8e8fe414dbf91c37485e481ae3" title="dumpprivkey" alt="" coords="1258,333,1354,360"/>
-<area shape="rect" id="node10" href="$wallet__tests_8cpp.html#a73ce3a42e0b56b2e4516e55871d8590e" title="dumpwallet" alt="" coords="1002,283,1090,309"/>
-<area shape="rect" id="node12" href="$group___actions.html#gaa869ffae7560168064463f3157633a8b" title="Reserves a key from the keypool and sets nIndex to its index. " alt="" coords="932,107,1160,133"/>
-<area shape="rect" id="node13" href="$class_c_crypto_key_store.html#acc8fed44366c98fb481333ca6e867088" title="CCryptoKeyStore::IsCrypted" alt="" coords="951,56,1141,83"/>
-<area shape="rect" id="node14" href="$rpcwallet_8h.html#ad35d45071ce42aaef4b74910e36eda5a" title="HelpRequiringPassphrase" alt="" coords="1219,81,1393,108"/>
-<area shape="rect" id="node15" href="$rawtransaction_8cpp.html#a5b2abfea4548c97e780cfae39f9ac11b" title="signrawtransaction" alt="" coords="1481,56,1612,83"/>
-<area shape="rect" id="node16" href="$rpcwallet_8h.html#a7c13054932c9e3b351bd6277fa9361d7" title="signrawtransactionwithwallet" alt="" coords="1452,107,1641,133"/>
-<area shape="rect" id="node18" href="$sign_8h.html#a85ce096b6886353ed6dbe400845a4366" title="Combine two script signatures using a generic signature checker, intelligently, possibly with OP_0 pl..." alt="" coords="978,232,1114,259"/>
-<area shape="rect" id="node19" href="$struct_signature_data.html#aee920d76f133d8d46195452fee5c1fa2" title="SignatureData::SignatureData" alt="" coords="1208,232,1404,259"/>
-<area shape="rect" id="node21" href="$struct_c_ext_key.html#aff923572d1c4e4708790cb0ecc922a24" title="CExtKey::Unserialize" alt="" coords="466,313,614,340"/>
-<area shape="rect" id="node23" href="$class_c_crypto_key_store.html#af57d6ee7c31e1d9673e811a32aaa5ebc" title="CCryptoKeyStore::GetPubKey" alt="" coords="440,404,640,431"/>
-<area shape="rect" id="node24" href="$class_describe_wallet_address_visitor.html#ad7be84744abb624a73166d4a047d2905" title="DescribeWalletAddressVisitor\l::operator()" alt="" coords="688,435,884,477"/>
+<area shape="rect" id="node1" title="Compute the public key from a private key." alt="" coords="1271,1260,1404,1287"/>
+<area shape="rect" id="node2" href="$class_fillable_signing_provider.html#ad9d3e5484107cb9e02ed642899cf1fb3" title=" " alt="" coords="1015,209,1186,250"/>
+<area shape="rect" id="node6" href="$test_2fuzz_2key_8cpp.html#a66251cfb4c3b2a863b8f17cf902a79ed" title=" " alt="" coords="485,477,635,504"/>
+<area shape="rect" id="node11" href="$class_list_coins_testing_setup.html#a47c63e21c66e31003f0ad78120305743" title=" " alt="" coords="1019,899,1183,941"/>
+<area shape="rect" id="node12" href="$class_c_wallet.html#aad7d3b023d37ed2d9598f37bb472a9af" title="Add a descriptor to the wallet, return a ScriptPubKeyMan &amp; associated output type." alt="" coords="994,965,1207,992"/>
+<area shape="rect" id="node13" href="$bloom__tests_8cpp.html#aa703c3cbd7e593a372f55a5902e3fa45" title=" " alt="" coords="1005,1016,1196,1043"/>
+<area shape="rect" id="node14" href="$blockfilter__index__tests_8cpp.html#a40f8bbdd01faa299aeb86329fabb3eb4" title=" " alt="" coords="995,1067,1206,1093"/>
+<area shape="rect" id="node15" href="$wallet__tests_8cpp.html#a34ca0cfea637056770775667a97b0032" title=" " alt="" coords="979,1117,1223,1144"/>
+<area shape="rect" id="node17" href="$struct_c_ext_key.html#a589df63664c6d12bfe071b747a245b1d" title=" " alt="" coords="751,797,878,824"/>
+<area shape="rect" id="node18" href="$class_legacy_script_pub_key_man.html#afcee3106f0dc945453fb3f28fd6fee1a" title=" " alt="" coords="469,790,651,831"/>
+<area shape="rect" id="node19" href="$class_legacy_script_pub_key_man.html#abce1d65f9ecbff9c8a05003b71c2c450" title="Generate a new key." alt="" coords="237,739,419,781"/>
+<area shape="rect" id="node23" href="$class_c_key.html#ae79008cec2eb799a2efd37e010996acf" title="Derive BIP32 child key." alt="" coords="1048,747,1153,773"/>
+<area shape="rect" id="node24" href="$class_legacy_script_pub_key_man.html#ae297da8721692890b66fd4ba2f3f4259" title=" " alt="" coords="1010,1169,1191,1210"/>
+<area shape="rect" id="node28" href="$key_8cpp.html#adc8d142f5bcd2ca6646462fb45a7945d" title="Check that required EC support is available at runtime." alt="" coords="1022,1437,1179,1464"/>
+<area shape="rect" id="node31" href="$class_legacy_script_pub_key_man.html#a3b9841acd752f1adfd05a2780061a7f3" title=" " alt="" coords="1010,1489,1191,1530"/>
+<area shape="rect" id="node32" href="$class_descriptor_script_pub_key_man.html#aaffe2ca921a745e097ecae0561a56b3b" title=" " alt="" coords="999,1554,1202,1595"/>
+<area shape="rect" id="node33" href="$class_fillable_signing_provider.html#a0867644fe9c23c1da1717a2d6cadcd9d" title=" " alt="" coords="1015,550,1186,591"/>
+<area shape="rect" id="node36" href="$class_legacy_script_pub_key_man.html#a063d5254ad43189923438e59151434ac" title="Upgrade stored CKeyMetadata objects to store key origin info as KeyOriginInfo." alt="" coords="469,605,651,646"/>
+<area shape="rect" id="node37" href="$rpcdump_8cpp.html#a35de81cdd27ce13a25e7ff01415bcfdd" title=" " alt="" coords="1002,1285,1199,1312"/>
+<area shape="rect" id="node39" href="$rpcwallet_8cpp.html#a750ef446820a1d94f687cac4cea04011" title="Checks if a CKey is in the given CWallet compressed or otherwise." alt="" coords="775,1235,855,1261"/>
+<area shape="rect" id="node40" href="$rpcdump_8cpp.html#a079025162488e32994615b92b76e458d" title=" " alt="" coords="503,1336,617,1363"/>
+<area shape="rect" id="node41" href="$class_legacy_script_pub_key_man.html#a4790b587d8d9c229143cc0fa16bfbf39" title=" " alt="" coords="1010,1619,1191,1661"/>
+<area shape="rect" id="node42" href="$rpcdump_8cpp.html#a34f3709fc7047fcf2cb356fe583b83a9" title=" " alt="" coords="507,1387,613,1413"/>
+<area shape="rect" id="node43" href="$class_list_coins_testing_setup.html#adadca010ddbfc563e99928862ade6027" title=" " alt="" coords="1015,1685,1187,1726"/>
+<area shape="rect" id="node44" href="$struct_test_chain100_setup.html#a025e9d3d70a9ade7340f2fbd2e133c10" title="Mine a series of new blocks on the active chain." alt="" coords="1023,1750,1178,1791"/>
+<area shape="rect" id="node45" href="$struct_c_ext_key.html#a4ea6bbc6c9bda4f8d77cade114155569" title=" " alt="" coords="1037,1867,1164,1893"/>
+<area shape="rect" id="node46" href="$class_descriptor_script_pub_key_man.html#a5d3602f822b9b3d38a1f3f6b4aa53e8c" title="Setup descriptors based on the given CExtkey." alt="" coords="711,1834,918,1875"/>
+<area shape="rect" id="node47" href="$rpcdump_8cpp.html#a917a54aa07ba36741b51d8f51cdb8e03" title=" " alt="" coords="1009,1917,1192,1944"/>
+<area shape="rect" id="node48" href="$rpcdump_8cpp.html#a6c2b781f7a1c05cab80282fb5e2ade91" title=" " alt="" coords="1020,1968,1181,1995"/>
+<area shape="rect" id="node49" href="$class_c_wallet.html#a4321848228520292b6758a0835ae1813" title="Create new DescriptorScriptPubKeyMans and add them to the wallet." alt="" coords="1009,2019,1193,2061"/>
+<area shape="rect" id="node50" href="$verify__script_8cpp.html#a6984f9cb29f77b9bbd88be4405584b1f" title=" " alt="" coords="1033,2085,1169,2112"/>
+<area shape="rect" id="node3" href="$denialofservice__tests_8cpp.html#a8c90f8b9a8e9d4602485e369c862b4c0" title=" " alt="" coords="719,107,910,133"/>
+<area shape="rect" id="node4" href="$txvalidationcache__tests_8cpp.html#a0cede32905e27934cd347c1455ae477b" title=" " alt="" coords="709,157,920,184"/>
+<area shape="rect" id="node5" href="$struct_test_chain100_setup.html#a0ad5ddd070b9cfd693efeec2ca12c2e0" title="Create a transaction and submit to the mempool." alt="" coords="699,209,931,250"/>
+<area shape="rect" id="node7" href="$bitcoin-tx_8cpp.html#a16aafe92ec3f8643450298e50cfb1ac7" title=" " alt="" coords="759,275,871,301"/>
+<area shape="rect" id="node8" href="$transaction__utils_8cpp.html#acbc709f8bed3fd6b495fca41c2330833" title=" " alt="" coords="739,325,890,352"/>
+<area shape="rect" id="node9" href="$rawtransaction_8cpp.html#ad367a5264c22cf4e3d6620fa0a051019" title=" " alt="" coords="716,5,913,32"/>
+<area shape="rect" id="node10" href="$wallet__tests_8cpp.html#a5452717f487064857ace4f939380b227" title=" " alt="" coords="748,56,881,83"/>
+<area shape="rect" id="node16" href="$wallet__tests_8cpp.html#ad481f15cfcf63abbe31f64b5b2d6f8a3" title=" " alt="" coords="709,1067,920,1093"/>
+<area shape="rect" id="node20" href="$class_legacy_script_pub_key_man.html#afca22212ede59cb6f9c4273a8a524dea" title="Fetches a key from the keypool." alt="" coords="5,674,187,715"/>
+<area shape="rect" id="node21" href="$class_legacy_script_pub_key_man.html#a8ea64850b0953330bf90cc927f7ac649" title="Fills internal address pool." alt="" coords="5,739,187,781"/>
+<area shape="rect" id="node22" href="$class_legacy_script_pub_key_man.html#a48868b2824e53c1ac2b4a708cfd6a3e8" title="Like TopUp() but adds keys for inactive HD chains." alt="" coords="5,805,187,846"/>
+<area shape="rect" id="node25" href="$class_legacy_script_pub_key_man.html#aca11c5a43808a115f1b1849466d928f6" title=" " alt="" coords="724,1169,905,1210"/>
+<area shape="rect" id="node26" href="$rpcwallet_8cpp.html#a07378078c8f1febcfecf348dd2b5d56c" title=" " alt="" coords="515,1205,605,1232"/>
+<area shape="rect" id="node27" href="$rpcwallet_8cpp.html#a0f1fb991b53dfc0965c1652a3a032941" title=" " alt="" coords="235,1311,421,1337"/>
+<area shape="rect" id="node29" href="$sanity__tests_8cpp.html#a64393db199b90df61f95069c15f67396" title=" " alt="" coords="719,1437,910,1464"/>
+<area shape="rect" id="node30" href="$namespaceinit.html#a531c52e38c0109fe8ee93918ac4910b9" title="Ensure a usable environment with all necessary library support." alt="" coords="745,1488,884,1515"/>
+<area shape="rect" id="node34" href="$rpc_2util_8cpp.html#af86da2c2b86724988da653824124c798" title=" " alt="" coords="757,528,872,555"/>
+<area shape="rect" id="node35" href="$class_legacy_script_pub_key_man.html#aa036149ddf5435f6a1e73997b9f4ae49" title=" " alt="" coords="724,579,905,621"/>
+<area shape="rect" id="node38" href="$rpcdump_8cpp.html#a5e0e8a39d9dd61d74fa4b97ccb541bb9" title=" " alt="" coords="511,1285,609,1312"/>
 </map>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['bitcoin',['bitcoin',['../namespaceorg_1_1bitcoin.html',1,'org']]],
-  ['org',['org',['../namespaceorg.html',1,'']]]
+  ['memusage_0',['memusage',['../namespacememusage.html',1,'']]],
+  ['miner_5ftests_1',['miner_tests',['../namespaceminer__tests.html',1,'']]]
 ];

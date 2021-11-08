@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['y',['y',['../structsecp256k1__ge.html#a604295983a1f4aa6e8b5b0f1e46f9ee0',1,'secp256k1_ge::y()'],['../structsecp256k1__gej.html#a29d5184060ad790d85a0c89a13820e0d',1,'secp256k1_gej::y()'],['../structsecp256k1__ge__storage.html#af0b13f3e06135a94484cc6f6dd4ef3cc',1,'secp256k1_ge_storage::y()']]],
-  ['yesbutton',['yesButton',['../class_send_confirmation_dialog.html#a58db4e1eff21909c2211ea36b5100c6a',1,'SendConfirmationDialog']]]
+  ['x_0',['x',['../structnontrivial__t.html#a8e7a0a4d3f60d9f9291d419558621370',1,'nontrivial_t::x()'],['../structmemusage_1_1stl__tree__node.html#a7cf0173eb20148af412cf6ff8a31dc94',1,'memusage::stl_tree_node::x()'],['../structsecp256k1__ge.html#a3c04a97b606c82ea87e55d4a06f06b6e',1,'secp256k1_ge::x()'],['../structsecp256k1__gej.html#a7d2451c89411d62628ac466eb28c8ff5',1,'secp256k1_gej::x()'],['../structsecp256k1__ge__storage.html#abace3c7f244d8e7e42ac1b66a071371b',1,'secp256k1_ge_storage::x()']]]
 ];

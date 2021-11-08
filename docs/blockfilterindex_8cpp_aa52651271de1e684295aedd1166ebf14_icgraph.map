@@ -1,14 +1,51 @@
 <map id="ForEachBlockFilterIndex" name="ForEachBlockFilterIndex">
-<area shape="rect" id="node2" href="$class_block_filter_index.html#a5fe9472f907f86d2d909f319279d351c" title="BlockFilterIndex::GetFilterType" alt="" coords="224,117,433,143"/>
-<area shape="rect" id="node9" href="$init_8h.html#ac1c30a63fcff78de5e4924f7ee2b822e" title="Interrupt threads. " alt="" coords="290,201,367,227"/>
-<area shape="rect" id="node13" href="$init_8h.html#aadf7f77f5efa149dc63b413e86cc63f3" title="Shutdown" alt="" coords="286,251,371,278"/>
-<area shape="rect" id="node3" href="$class_block_filter_index.html#a00cdd72035a921ab7dfbf7ed2d06fcb9" title="BlockFilterIndex::ReadFilter\lFromDisk" alt="" coords="481,51,671,92"/>
-<area shape="rect" id="node7" href="$class_block_filter_index.html#ac14d9d3ed6eea05e733e056bf30d1d13" title="BlockFilterIndex::WriteFilter\lToDisk" alt="" coords="481,168,671,209"/>
-<area shape="rect" id="node4" href="$class_block_filter_index.html#a44955303ae47b2b49da61835da369155" title="Get a single filter by block. " alt="" coords="728,5,903,47"/>
-<area shape="rect" id="node6" href="$class_block_filter_index.html#a222f7b7efd06dba27d8ecaf5b7d968a1" title="Get a range of filters between two heights on a chain. " alt="" coords="728,84,903,125"/>
-<area shape="rect" id="node5" href="$blockchain_8cpp.html#af8ae2be64c52204527fac00aefc1151c" title="scantxoutset" alt="" coords="960,13,1065,39"/>
-<area shape="rect" id="node8" href="$class_block_filter_index.html#a80c35affe452d433d73a102dce8c2052" title="Write update index entries for a newly connected block. " alt="" coords="719,175,912,202"/>
-<area shape="rect" id="node10" href="$class_c_connman.html#a81d92308d700e305feae00a93567577d" title="CConnman::Init" alt="" coords="516,234,636,261"/>
-<area shape="rect" id="node11" href="$class_c_connman.html#aec90325a2ae9f38f9d88b567deeac2e4" title="CConnman::CConnman" alt="" coords="729,230,901,257"/>
-<area shape="rect" id="node12" href="$class_c_connman.html#aa4709e5604e0f4369dada0a211493565" title="CConnman::Start" alt="" coords="749,281,882,307"/>
+<area shape="rect" id="node1" title="Iterate over all running block filter indexes, invoking fn on each." alt="" coords="2613,107,2792,133"/>
+<area shape="rect" id="node2" href="$blockfilter__index__tests_8cpp.html#aef245f0855bee68b0d610a6aad06362f" title=" " alt="" coords="2349,5,2559,32"/>
+<area shape="rect" id="node3" href="$class_c_chain_state.html#a82dd9fb80f77ffc64401163c04bd80ee" title="Update the on&#45;disk chain state." alt="" coords="2343,420,2565,447"/>
+<area shape="rect" id="node46" href="$misc_8cpp.html#af5894de8dd321640332f4e4113be2522" title=" " alt="" coords="2402,157,2506,184"/>
+<area shape="rect" id="node48" href="$init_8cpp.html#a27f6301208add8d8af85c9c23a26ed8e" title="Interrupt threads." alt="" coords="283,107,361,133"/>
+<area shape="rect" id="node49" href="$init_8cpp.html#a441fc2acf4e8b6940f4f936fe60464bf" title=" " alt="" coords="279,56,365,83"/>
+<area shape="rect" id="node4" href="$class_c_chain_state.html#a0f24bf7c56280b1beba9648b89d72b8c" title="Store block on disk." alt="" coords="2096,621,2287,648"/>
+<area shape="rect" id="node25" href="$class_c_chain_state.html#a1d10196aeadf2e5c76b94123635b7c7b" title="Find the best known block, and make it the tip of the block chain." alt="" coords="1581,446,1775,487"/>
+<area shape="rect" id="node32" href="$class_c_chain_state.html#a3ff41dbb22a3f8ac8b3e2cceff4294b9" title="Connect a new block to m_chain." alt="" coords="2100,445,2283,472"/>
+<area shape="rect" id="node34" href="$class_c_chain_state.html#ad6c5b7e28f8a714fd2403971005a2978" title="Disconnect m_chain&#39;s tip." alt="" coords="2090,496,2293,523"/>
+<area shape="rect" id="node36" href="$class_c_chain_state.html#ae779736948817631aa6fee5d5d1377a8" title="Unconditionally flush all changes to disk." alt="" coords="1571,277,1785,318"/>
+<area shape="rect" id="node43" href="$class_c_chain_state.html#a62c8d4028eff1c760111280f977ad0c7" title="Prune blockfiles from the disk if necessary and then flush chainstate changes if we pruned." alt="" coords="2088,293,2295,320"/>
+<area shape="rect" id="node44" href="$validation_8cpp.html#a475053a9fbe5020350d7d477dc73aed8" title="Prune block files up to a given height." alt="" coords="2105,555,2278,581"/>
+<area shape="rect" id="node5" href="$class_c_chain_state.html#a7538c8dd8062b475f6e539ad3633d675" title="Resize the CoinsViews caches dynamically and flush state to disk." alt="" coords="1325,614,1519,655"/>
+<area shape="rect" id="node10" href="$class_chainstate_manager.html#a3d980d7ab403c2cd1bcd45f50ac71c38" title="Process an incoming block." alt="" coords="1858,698,2015,739"/>
+<area shape="rect" id="node6" href="$blockstorage_8cpp.html#a38dabbdabba054942a90bc2df6f05411" title=" " alt="" coords="807,565,917,592"/>
+<area shape="rect" id="node7" href="$init_8cpp.html#ad2bfca84e560eb87fbfbe9c20f893374" title="Bitcoin core main initialization." alt="" coords="272,436,372,463"/>
+<area shape="rect" id="node8" href="$bitcoind_8cpp.html#a111f3c7b82a1c083ce04328e970f5aca" title=" " alt="" coords="108,107,176,133"/>
+<area shape="rect" id="node9" href="$bitcoind_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,107,60,133"/>
+<area shape="rect" id="node11" href="$rpc_2mining_8cpp.html#a93c467d89a7d7bf033dfcfda11446382" title=" " alt="" coords="1619,705,1737,732"/>
+<area shape="rect" id="node24" href="$rpc_2mining_8cpp.html#a5195db6e4464b7653c398ff7a362b21e" title=" " alt="" coords="1627,768,1729,795"/>
+<area shape="rect" id="node12" href="$rpc_2mining_8cpp.html#a1e316c650d49e89b9b1255855ac1a283" title=" " alt="" coords="1096,680,1211,707"/>
+<area shape="rect" id="node16" href="$rpc_2mining_8cpp.html#a1abef53fce68bce9f5535aa0dce8519f" title=" " alt="" coords="1361,731,1483,757"/>
+<area shape="rect" id="node13" href="$rpc_2mining_8cpp.html#aeba9d490bedb150373a4c30b49f5cc00" title="Register mining RPC commands." alt="" coords="752,731,972,757"/>
+<area shape="rect" id="node14" href="$register_8h.html#ac918c8838bc97cf6c3c18ddc8330354e" title=" " alt="" coords="468,411,691,437"/>
+<area shape="rect" id="node15" href="$struct_testing_setup.html#ac1d74d948830f0dfc4eba7e4cea94cf9" title=" " alt="" coords="224,385,420,412"/>
+<area shape="rect" id="node17" href="$rpc_2mining_8cpp.html#ac2d9503cb4ad4c6ce30b2b7aaa39e328" title=" " alt="" coords="1081,832,1225,859"/>
+<area shape="rect" id="node23" href="$rpc_2mining_8cpp.html#a1effa13dd357fd1aedfbe2daf36611bb" title=" " alt="" coords="1074,731,1233,757"/>
+<area shape="rect" id="node18" href="$wallet__balance_8cpp.html#a0c046df81e0cc77c62fb0ccc21e38636" title=" " alt="" coords="805,832,919,859"/>
+<area shape="rect" id="node19" href="$wallet__balance_8cpp.html#a0af6f71bf39da3074504103e7cd2ba4a" title=" " alt="" coords="503,857,655,884"/>
+<area shape="rect" id="node20" href="$wallet__balance_8cpp.html#accdadb75c61f330f0f4e29de75cb2ec5" title=" " alt="" coords="506,908,653,935"/>
+<area shape="rect" id="node21" href="$wallet__balance_8cpp.html#a24dda7c072b95960ea7bf9ef2637aa03" title=" " alt="" coords="506,756,653,783"/>
+<area shape="rect" id="node22" href="$wallet__balance_8cpp.html#a91fd9f8227e43b1154cc2cc0ff0a9393" title=" " alt="" coords="502,807,657,833"/>
+<area shape="rect" id="node26" href="$validation__chainstatemanager__tests_8cpp.html#a7b48fa2352b1ffcfba78744a50bac701" title="Basic tests for ChainstateManager." alt="" coords="1327,360,1517,387"/>
+<area shape="rect" id="node27" href="$blockchain_8cpp.html#a13f2c255a092ffba8c2d792b04c02f5a" title=" " alt="" coords="1361,512,1483,539"/>
+<area shape="rect" id="node29" href="$class_c_chain_state.html#ada2d0841e92d6530763f443542a7aacc" title="Mark a block as precious and reorganize." alt="" coords="1321,411,1523,437"/>
+<area shape="rect" id="node31" href="$blockchain_8cpp.html#a0a9035e48950cb1d0d5c6284496c7543" title=" " alt="" coords="1091,461,1216,488"/>
+<area shape="rect" id="node28" href="$blockchain_8cpp.html#ab84c6cdc3bc7186443e3c33633aee492" title="Register block chain RPC commands." alt="" coords="739,411,985,437"/>
+<area shape="rect" id="node30" href="$blockchain_8cpp.html#a5bebedecb04e4ce31e0bb9dacde18ecd" title=" " alt="" coords="1097,411,1209,437"/>
+<area shape="rect" id="node33" href="$class_c_chain_state.html#aedc49ebe3f9474e9764a630eb8477f6e" title="Dictates whether we need to flush the cache to disk or not." alt="" coords="1840,446,2033,487"/>
+<area shape="rect" id="node35" href="$class_c_chain_state.html#ae8ab9222f3ad9a6aab8dba5ffa5eb530" title="Mark a block as invalid." alt="" coords="1573,512,1783,539"/>
+<area shape="rect" id="node37" href="$blockchain_8cpp.html#adee7e039211bbfd010af2874973f49d0" title="Helper to create UTXO snapshots given a chainstate and a file handle." alt="" coords="1341,208,1503,235"/>
+<area shape="rect" id="node41" href="$blockchain_8cpp.html#a2fdd1be76ca13ccdeef6d109942bab90" title=" " alt="" coords="1361,259,1483,285"/>
+<area shape="rect" id="node42" href="$blockchain_8cpp.html#a6ad6986606a4c5a600b1d386c2371edd" title=" " alt="" coords="1369,309,1475,336"/>
+<area shape="rect" id="node38" href="$chainstate_8h.html#a871bc3f7aa3d611ad0d6a0920970767d" title="Create and activate a UTXO snapshot, optionally providing a function to malleate the snapshot." alt="" coords="1033,208,1273,235"/>
+<area shape="rect" id="node40" href="$blockchain_8cpp.html#af108940ad6e4bf5c6a14ff3275ad89f2" title="Serialize the UTXO set to a file for loading elsewhere." alt="" coords="1097,259,1209,285"/>
+<area shape="rect" id="node39" href="$validation__chainstate__tests_8cpp.html#aa32cea3aa8182af8d7209ba4ac2768b3" title="Test UpdateTip behavior for both active and background chainstates." alt="" coords="757,208,967,235"/>
+<area shape="rect" id="node45" href="$blockchain_8cpp.html#ad4ca9d81b3d11c5a24b94761bd73a900" title=" " alt="" coords="1872,563,2001,589"/>
+<area shape="rect" id="node47" href="$misc_8cpp.html#a2a522ba914fc03d2bf483ec266f2939d" title="Register miscellaneous RPC commands." alt="" coords="1833,157,2040,184"/>
 </map>

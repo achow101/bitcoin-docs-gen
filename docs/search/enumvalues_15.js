@@ -1,11 +1,22 @@
 var searchData=
 [
-  ['varr',['VARR',['../class_uni_value.html#a2f9803e567ede73e88302b01e394cc63aa95a3bc9bbb82964abef922146cc73c4',1,'UniValue']]],
-  ['vbool',['VBOOL',['../class_uni_value.html#a2f9803e567ede73e88302b01e394cc63af6f71c0fb8fb8fd72d0ec30d8ec9e1b8',1,'UniValue']]],
-  ['verify_5fok',['VERIFY_OK',['../class_berkeley_environment.html#a898177d0cb22503c06cf8c40d70d6b56a472351361a4f0778fe872c265e811907',1,'BerkeleyEnvironment']]],
-  ['vnull',['VNULL',['../class_uni_value.html#a2f9803e567ede73e88302b01e394cc63a49973f733a7441eacf39e816229891cd',1,'UniValue']]],
-  ['vnum',['VNUM',['../class_uni_value.html#a2f9803e567ede73e88302b01e394cc63aba88a44dcdb6e3be0538d14997ff042b',1,'UniValue']]],
-  ['vobj',['VOBJ',['../class_uni_value.html#a2f9803e567ede73e88302b01e394cc63a4d17ac56db012de25e26ac62daf3f475',1,'UniValue']]],
-  ['voutrole',['VOutRole',['../class_coin_control_dialog.html#a9e152748118de88d3403e10f6d2f6210a255dffb508fb02ebe80e74222ff86ece',1,'CoinControlDialog']]],
-  ['vstr',['VSTR',['../class_uni_value.html#a2f9803e567ede73e88302b01e394cc63a7afa7b747615105024aab97ff5bf4d11',1,'UniValue']]]
+  ['ubtc_0',['uBTC',['../class_bitcoin_units.html#ae41018ba530b4c8bdc74fd163709fb9da113b5e550fe3a434b970510b236b898a',1,'BitcoinUnits']]],
+  ['udp_5fassociate_1',['UDP_ASSOCIATE',['../netbase_8cpp.html#a063679a898bf66a0314e922fdf29300fa04232a69108f17b5e5bcad69b51a1466',1,'netbase.cpp']]],
+  ['unconfirmed_2',['UNCONFIRMED',['../class_c_wallet_tx.html#a0aa4eefad34310d96f2c7f821345f838af4fcc26c11efa1a0c6555286a77571d6',1,'CWalletTx']]],
+  ['unconfirmed_3',['Unconfirmed',['../class_transaction_status.html#aaa6cc19ca3509bbae72d0df1661f85cba6aa37fcd802ffec2cc13db46dcc41c03',1,'TransactionStatus']]],
+  ['undef_4',['UNDEF',['../rest_8cpp.html#aae3901e6d15d9592fd2083926e783d7cab3f7791472924b0d1530bb9112409c01',1,'rest.cpp']]],
+  ['undefined_5',['UNDEFINED',['../protocol_8h.html#ac1162efdf35b533ba996ac9d1c96fc05a605159e8a4c32319fd69b5d151369d93',1,'protocol.h']]],
+  ['unencrypted_6',['Unencrypted',['../class_wallet_model.html#a58f6f0bb5a7b8b4e4d0812185ccc0616aab8ddcb74c78f880c81f610e327bdcd7',1,'WalletModel']]],
+  ['unitrole_7',['UnitRole',['../class_bitcoin_units.html#a094a1a150647021c419f06a923795959adba268d796f853874a3b830bb92c5c80',1,'BitcoinUnits']]],
+  ['unknown_8',['UNKNOWN',['../class_h_t_t_p_request.html#a1afe92e9caad997b8f88f0cb07dcc5aaae2331c29519b3237f4926d5be5f7c7a4',1,'HTTPRequest::UNKNOWN()'],['../policy_2rbf_8h.html#a8a266cb2957aad5d08cc4c382ef6d32ea696b031073e74bf2cb98e5ef201d4aa3',1,'UNKNOWN():&#160;rbf.h']]],
+  ['unlock_9',['Unlock',['../class_ask_passphrase_dialog.html#a96abf4d3c36c1ef9e268fb546ae76538a2af79cac6134924405d6c620fb0f4c7e',1,'AskPassphraseDialog']]],
+  ['unlocked_10',['Unlocked',['../class_wallet_model.html#a58f6f0bb5a7b8b4e4d0812185ccc0616a60d7f605079e8e1738ba66d543467a3c',1,'WalletModel']]],
+  ['unset_11',['UNSET',['../feerate_8h.html#aff36f74244c52c764c1af21d5f812173a666a87025ab0d8965e221050c8948001',1,'feerate.h']]],
+  ['updater_12',['UPDATER',['../psbt_8h.html#a60377f9d3fc1342a56ec0fdcab343d72a73d722d1f99e14084d41d1f2d375f080',1,'psbt.h']]],
+  ['upnp_13',['UPNP',['../mapport_8h.html#a5e25e11ecf58eba05224c2cffc242d76a3cb6b6838f26feeb6bd7d6a7e4a90b8d',1,'mapport.h']]],
+  ['useembeddedmonospacedfont_14',['UseEmbeddedMonospacedFont',['../class_options_model.html#a5c6c9ca8a01aca9f53e91f118e4878d2a089b4e41c05694add1635f20fc34e233',1,'OptionsModel']]],
+  ['user_5fabort_15',['USER_ABORT',['../struct_c_wallet_1_1_scan_result.html#af3f85288acbca69e4142463cdd696a1ba4a48ed5c75b98a6621b9458a3ebcc521',1,'CWallet::ScanResult']]],
+  ['user_5fpass_16',['USER_PASS',['../netbase_8cpp.html#a738c4db0b722cd3846ec7775ad2db20aaa02db508fd839fe6357cfd093858f7d8',1,'netbase.cpp']]],
+  ['usernotificationcenter_17',['UserNotificationCenter',['../class_notificator.html#aaa6bef35e7e183f0ac23e046dc3ea73ea1691fdf2248407f7b714712f0c986d5e',1,'Notificator']]],
+  ['util_18',['UTIL',['../namespace_b_c_log.html#ad1037484206121adbcda9f9c824ab6b2af8d6cf5b2aa93ccad389eb2bdadf9132',1,'BCLog']]]
 ];
